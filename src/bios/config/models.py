@@ -9,6 +9,7 @@ import re
 
 from pydantic import Field, field_validator, model_validator
 
+from bios.common.labels import Dimension
 from bios.common.schema import BiosModel
 
 _EVENT_TYPE_RE = re.compile(r"^[a-z0-9_]+\.[a-z0-9_]+\.[a-z0-9_]+$")
@@ -110,10 +111,13 @@ class ScoringConfig(BiosModel):
     def _weights_positive(self) -> "ScoringConfig":
         if "default" not in self.weight_sets:
             raise ValueError("weight_sets must define a 'default' set")
+        known = {d.value for d in Dimension}
         for phase, weights in self.weight_sets.items():
             if not weights:
                 raise ValueError(f"empty weight set: {phase!r}")
             for dim, w in weights.items():
+                if dim not in known:
+                    raise ValueError(f"unknown dimension {phase}.{dim!r} (known: {sorted(known)})")
                 if w < 0:
                     raise ValueError(f"negative weight {phase}.{dim}={w}")
         return self

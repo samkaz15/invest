@@ -54,7 +54,7 @@ class AuditLogger:
         action: str,
         target: str,
         ts: datetime | None = None,
-        **detail: Any,
+        detail: dict[str, Any] | None = None,
     ) -> AuditRecord:
         record = AuditRecord(
             ts=ts or utc_now(),
@@ -62,7 +62,7 @@ class AuditLogger:
             actor=actor,
             action=action,
             target=target,
-            detail=detail,
+            detail=detail or {},
         )
         self._sink.append(self.AUDIT_STREAM, record)
         return record

@@ -34,7 +34,9 @@ def _run_record(**overrides: object) -> AgentRunRecord:
 
 def test_actions_append_as_jsonl(logger: AuditLogger, tmp_path: Path) -> None:
     logger.log_action(ActorKind.HUMAN, "owner", "event.approve", "evt_2024-01-10_etf-approval")
-    logger.log_action(ActorKind.AGENT, "knowledge_graph", "entity.merge", "ent_x", into="ent_y")
+    logger.log_action(
+        ActorKind.AGENT, "knowledge_graph", "entity.merge", "ent_x", detail={"into": "ent_y"}
+    )
     lines = (tmp_path / "audit_log.jsonl").read_text().splitlines()
     assert len(lines) == 2  # appended, not overwritten
     first, second = (json.loads(line) for line in lines)

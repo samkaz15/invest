@@ -3,7 +3,7 @@
 import json
 import logging
 
-from bios.common.logging import JsonFormatter
+from bios.common.logutil import JsonFormatter
 
 
 def test_json_formatter_emits_parseable_lines() -> None:

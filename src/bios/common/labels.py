@@ -65,6 +65,18 @@ class Action(StrEnum):
     TAKE_PROFIT = "TAKE_PROFIT"
 
 
+class Dimension(StrEnum):
+    """Analysis dimensions (INTELLIGENCE_ENGINE_SPECIFICATION §1.3)."""
+
+    NEWS = "news"
+    SUPPLY = "supply"
+    DEMAND = "demand"
+    ONCHAIN = "onchain"
+    DERIVATIVES = "derivatives"
+    MACRO = "macro"
+    ANOMALY = "anomaly"
+
+
 class RunStatus(StrEnum):
     """Outcome of an agent/pipeline run (audit log)."""
 
