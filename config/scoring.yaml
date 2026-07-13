@@ -1,0 +1,58 @@
+# Scoring Engine weights (INTELLIGENCE_ENGINE_SPECIFICATION §11.3).
+# Governance: weight changes only via backtest evidence + ADR (IES §13.8).
+# weights_version is stamped into every Score Card for old/new comparison.
+weights_version: w_v1
+anomaly_points_cap: 5
+
+# Dimension weights per market phase. v1 = equal-weight starting point with
+# the qualitative tilts documented in IES §11.3; DO NOT tune before the
+# minimum-sample rule (60 decisions) is met.
+weight_sets:
+  default:
+    news: 1.0
+    supply: 1.0
+    demand: 1.0
+    onchain: 1.0
+    derivatives: 1.0
+    macro: 1.0
+    anomaly: 0.25
+  accumulation:
+    news: 0.8
+    supply: 1.0
+    demand: 1.0
+    onchain: 1.4
+    derivatives: 0.8
+    macro: 1.0
+    anomaly: 0.25
+  markup:
+    news: 1.0
+    supply: 1.0
+    demand: 1.2
+    onchain: 0.8
+    derivatives: 1.3
+    macro: 1.0
+    anomaly: 0.25
+  distribution:
+    news: 1.0
+    supply: 1.2
+    demand: 1.0
+    onchain: 1.4
+    derivatives: 1.2
+    macro: 0.8
+    anomaly: 0.25
+  markdown:
+    news: 1.0
+    supply: 1.2
+    demand: 1.0
+    onchain: 1.0
+    derivatives: 1.2
+    macro: 1.2
+    anomaly: 0.25
+  liquidity_tightening:
+    news: 0.8
+    supply: 1.0
+    demand: 1.0
+    onchain: 0.8
+    derivatives: 1.0
+    macro: 1.6
+    anomaly: 0.25

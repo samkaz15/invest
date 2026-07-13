@@ -1,0 +1,25 @@
+# Bitcoin — the first asset instance (P9: BTC is configuration + data,
+# never a code assumption). Second asset must be addable with zero core
+# schema changes (MSD §16.4 acceptance test).
+asset_id: ent_asset_btc
+name: Bitcoin
+asset_class: crypto
+# Asset-specific market-snapshot metrics (stored in asset_metrics JSONB).
+metrics:
+  - funding_rate
+  - open_interest
+  - options_25d_skew
+  - etf_net_flow_usd
+  - exchange_netflow
+  - mvrv
+  - sopr
+  - cdd
+  - dormancy
+  - exchange_reserve
+  - miner_reserve
+  - realized_price
+  - hash_rate
+  - difficulty
+  - stablecoin_supply
+  - orderbook_depth_2pct
+  - bid_ask_imbalance

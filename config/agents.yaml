@@ -1,0 +1,47 @@
+# Agent runtime envelopes (MASTER_SYSTEM_DESIGN §14, AI layer is swappable).
+# Model IDs live HERE, never in code (Constitution Art.8-5). Budgets are
+# per-invocation caps; cost tiers per MSD §14.1-6.
+#
+# NOTE(Sprint 1): placeholders for the agent runtime built in later sprints.
+# Prompt files are created when each agent is implemented.
+agents:
+  news:
+    model: claude-sonnet-5
+    max_input_tokens: 30000
+    max_output_tokens: 4000
+    prompt: news/v001.md
+  knowledge_graph:
+    model: claude-sonnet-5
+    max_input_tokens: 30000
+    max_output_tokens: 4000
+    prompt: knowledge_graph/v001.md
+  similarity:
+    model: claude-fable-5
+    max_input_tokens: 50000
+    max_output_tokens: 6000
+    prompt: similarity/v001.md
+  scenario:
+    model: claude-fable-5
+    max_input_tokens: 80000
+    max_output_tokens: 8000
+    prompt: scenario/v001.md
+  critic:
+    model: claude-fable-5
+    max_input_tokens: 50000
+    max_output_tokens: 4000
+    prompt: critic/v001.md
+  risk:
+    model: claude-fable-5
+    max_input_tokens: 50000
+    max_output_tokens: 4000
+    prompt: risk/v001.md
+  report:
+    model: claude-sonnet-5
+    max_input_tokens: 80000
+    max_output_tokens: 8000
+    prompt: report/v001.md
+  qa:
+    model: claude-haiku-4-5-20251001
+    max_input_tokens: 30000
+    max_output_tokens: 2000
+    prompt: qa/v001.md

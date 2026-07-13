@@ -1,0 +1,74 @@
+# Event type taxonomy (MASTER_SYSTEM_DESIGN §7.3). domain.category.type — exactly 3 levels.
+# Adding a type = one line here (no code change). Removal/renaming requires an ADR.
+types:
+  # onchain — wallet and network activity
+  - onchain.wallet_movement.government
+  - onchain.wallet_movement.estate
+  - onchain.wallet_movement.whale
+  - onchain.wallet_movement.exchange
+  - onchain.metrics.exchange_inflow
+  - onchain.metrics.exchange_outflow
+  - onchain.metrics.threshold_cross
+  # flow — fund flows (asset-agnostic: ETF today, other vehicles tomorrow)
+  - flow.etf.inflow
+  - flow.etf.outflow
+  - flow.etf.launch
+  - flow.fund.rebalance
+  # holdings — treasury changes of corporates / governments
+  - holdings.corporate.purchase
+  - holdings.corporate.sale
+  - holdings.government.seizure
+  - holdings.government.sale
+  - holdings.government.purchase
+  # production — structural supply-side producers (miners for BTC)
+  - production.miner.capitulation
+  - production.miner.reserve_change
+  - production.miner.hashrate_shift
+  # venue — trading venues
+  - venue.exchange.collapse
+  - venue.exchange.listing
+  - venue.exchange.proof_of_reserves
+  - venue.exchange.outage
+  # security — hacks and exploits
+  - security.hack.exchange
+  - security.hack.protocol
+  - security.exploit.other
+  # derivatives
+  - derivatives.positioning.liquidation_cascade
+  - derivatives.positioning.funding_extreme
+  - derivatives.positioning.oi_shift
+  - derivatives.options.expiry
+  # macro
+  - macro.policy.rate_decision
+  - macro.indicator.cpi
+  - macro.indicator.ppi
+  - macro.indicator.nfp
+  - macro.indicator.gdp
+  - macro.indicator.pmi
+  - macro.liquidity.shift
+  - macro.crisis.banking
+  - macro.crisis.geopolitical
+  # regulation
+  - regulation.etf.approval
+  - regulation.etf.rejection
+  - regulation.enforcement.action
+  - regulation.legislation.passed
+  - regulation.legislation.proposed
+  # legal
+  - legal.court.ruling
+  - legal.bankruptcy.filing
+  - legal.bankruptcy.distribution
+  - legal.settlement.reached
+  # supply / demand shocks
+  - supply.schedule.halving
+  - supply.distribution.unlock
+  - supply.shock.other
+  - demand.wave.institutional
+  - demand.wave.retail
+  - demand.adoption.country
+  # anomaly / market structure
+  - anomaly.price.dislocation
+  - anomaly.onchain.unusual
+  - anomaly.correlation.break
+  - market_structure.orderbook.imbalance
+  - market_structure.liquidity.drain

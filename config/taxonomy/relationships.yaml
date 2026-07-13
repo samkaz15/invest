@@ -1,0 +1,41 @@
+# Relationship taxonomy (MASTER_SYSTEM_DESIGN §6): three edge classes.
+
+# Class A: entity–entity, slowly changing, bitemporal (valid_from/valid_to).
+entity_entity:
+  owns: "Ownership (government owns seized wallet cluster)"
+  custodies: "Custody relationship"
+  issues: "Issuer of an instrument (BlackRock issues IBIT)"
+  operates: "Operator of a venue/network"
+  subsidiary_of: "Corporate group membership"
+  belongs_to: "Generic membership/affiliation of orgs"
+  regulated_by: "Under supervision of a regulator"
+  governed_by: "Subject to a specific regulation"
+  listed_on: "Security listed on a venue"
+  located_in: "Jurisdiction/incorporation"
+  affiliated_with: "Person-organization tie (role in detail)"
+  created_by: "Founded/created by"
+  pegged_to: "Peg target of a stablecoin"
+  competitor_of: "Competitive relationship (analysis aid)"
+
+# Class B: event–entity participation roles. Verbs like transferred/purchased/
+# sold/approved are event types + these roles, not static edges.
+participation_roles:
+  actor: "Subject performing the action"
+  target: "Object of the action (approved ETF, hacked exchange)"
+  counterparty: "Other side (transfer destination, trade counterpart)"
+  venue: "Where it happened (exchange, court)"
+  affected: "Materially affected party (creditors, sector)"
+  mentioned: "Weak involvement, mention only"
+
+# Class C: event–event edges. TRIGGERED_BY requires evidence + confidence
+# (enforced by DB constraint in Sprint 3). Never confuse PRECEDES with cause.
+event_event:
+  TRIGGERED_BY: "Direct causal trigger (evidence mandatory)"
+  CAUSED_BY_BG: "Structural background cause"
+  PART_OF: "Belongs to an event chain"
+  PRECEDES: "Temporal order only — no causal claim"
+  SIMILAR_TO: "Historical analog (similarity score attached)"
+  INVALIDATES: "Correction/retraction/refutation"
+  AMPLIFIES: "Concurrent event amplifying impact"
+  OFFSETS: "Concurrent event offsetting impact"
+  FOLLOWS_PATTERN: "Instance of a pattern-ledger pattern"
