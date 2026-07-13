@@ -1,0 +1,7 @@
+source_id: src_fng_alternative
+name: Fear & Greed Index (alternative.me)
+kind: http_json
+url: https://api.alternative.me/fng/?limit=2
+tier: 3
+min_interval_seconds: 60
+notes: Sentiment index, daily.

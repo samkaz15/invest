@@ -1,0 +1,7 @@
+source_id: src_sec_press_rss
+name: SEC Press Releases
+kind: rss
+url: https://www.sec.gov/news/pressreleases.rss
+tier: 1
+min_interval_seconds: 60
+notes: Primary source - US regulator official announcements.

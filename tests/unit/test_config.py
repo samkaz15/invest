@@ -23,6 +23,10 @@ def test_real_config_tree_is_valid() -> None:
     assert "default" in root.scoring.weight_sets
     # every scoring dimension name is snake_case and includes anomaly cap rule
     assert root.scoring.anomaly_points_cap <= 5
+    # source registry + pipelines cross-checked
+    assert "src_sec_press_rss" in root.sources
+    assert root.sources["src_sec_press_rss"].tier == 1
+    assert all(j.source_id in root.sources for j in root.pipelines.jobs if j.task == "collect")
 
 
 def test_event_types_are_three_levels() -> None:

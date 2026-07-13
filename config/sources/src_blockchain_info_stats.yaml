@@ -1,0 +1,7 @@
+source_id: src_blockchain_info_stats
+name: blockchain.info network stats
+kind: http_json
+url: https://api.blockchain.info/stats
+tier: 2
+min_interval_seconds: 60
+notes: Network stats aggregate (tx volume, miner revenue).

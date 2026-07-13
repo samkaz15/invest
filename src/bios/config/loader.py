@@ -13,8 +13,10 @@ from bios.config.models import (
     AssetConfig,
     EntityTaxonomy,
     EventTaxonomy,
+    PipelinesConfig,
     RelationshipTaxonomy,
     ScoringConfig,
+    SourceSpec,
 )
 
 
@@ -48,6 +50,8 @@ class ConfigRoot:
     relationships: RelationshipTaxonomy
     scoring: ScoringConfig
     assets: dict[str, AssetConfig]  # keyed by asset_id
+    sources: dict[str, SourceSpec]  # keyed by source_id (the machine-readable source registry)
+    pipelines: PipelinesConfig
 
 
 def load_config(config_dir: Path) -> ConfigRoot:
@@ -65,7 +69,26 @@ def load_config(config_dir: Path) -> ConfigRoot:
     if not assets:
         raise ConfigError(f"no assets defined under {assets_dir}")
 
+    sources: dict[str, SourceSpec] = {}
+    sources_dir = config_dir / "sources"
+    if sources_dir.is_dir():
+        for path in sorted(sources_dir.glob("*.yaml")):
+            spec = load_model(path, SourceSpec)
+            if spec.source_id in sources:
+                raise ConfigError(f"duplicate source_id {spec.source_id!r} in {path}")
+            sources[spec.source_id] = spec
+
+    pipelines = load_model(config_dir / "pipelines.yaml", PipelinesConfig)
+    for job in pipelines.jobs:
+        if job.task == "collect":
+            if job.source_id is None:
+                raise ConfigError(f"job {job.job_id!r}: collect jobs need source_id")
+            if job.source_id not in sources:
+                raise ConfigError(f"job {job.job_id!r} references unknown source {job.source_id!r}")
+
     return ConfigRoot(
+        sources=sources,
+        pipelines=pipelines,
         agents=load_model(config_dir / "agents.yaml", AgentsConfig),
         events=load_model(config_dir / "taxonomy" / "events.yaml", EventTaxonomy),
         entities=load_model(config_dir / "taxonomy" / "entities.yaml", EntityTaxonomy),

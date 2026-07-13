@@ -1,0 +1,8 @@
+# Tier2 news: crypto market coverage
+source_id: src_coindesk_rss
+name: CoinDesk RSS
+kind: rss
+url: https://www.coindesk.com/arc/outboundfeeds/rss/
+tier: 3
+min_interval_seconds: 60
+notes: General crypto news wire (major outlet).

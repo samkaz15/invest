@@ -6,9 +6,12 @@ levels (MASTER_SYSTEM_DESIGN §7.3) and scoring weights are normalizable.
 """
 
 import re
+from typing import Literal
 
 from pydantic import Field, field_validator, model_validator
 
+from bios.common.errors import InvalidIdError
+from bios.common.ids import IdKind, validate_id
 from bios.common.labels import Dimension
 from bios.common.schema import BiosModel
 
@@ -88,6 +91,80 @@ class RelationshipTaxonomy(BiosModel):
         for name in self.event_event:
             if not re.match(r"^[A-Z0-9_]+$", name):
                 raise ValueError(f"event-event rel_type must be UPPER_SNAKE: {name!r}")
+        return self
+
+
+class SourceSpec(BiosModel):
+    """config/sources/<id>.yaml — one external data source (adapter config).
+
+    Generic by construction: a source is (kind, url, tier, cadence). Adding a
+    provider is a YAML file, never code — unless it needs a new *kind*, which
+    is a reviewed framework change.
+    """
+
+    source_id: str
+    name: str
+    kind: Literal["rss", "http_json"]
+    url: str
+    tier: int = Field(ge=1, le=4)
+    enabled: bool = True
+    min_interval_seconds: float = Field(default=1.0, ge=0)
+    headers: dict[str, str] = Field(default_factory=dict)  # values may use ${ENV_VAR}
+    notes: str = ""
+
+    @field_validator("source_id")
+    @classmethod
+    def _sid(cls, v: str) -> str:
+        try:
+            return validate_id(v, IdKind.SOURCE)
+        except InvalidIdError as exc:
+            raise ValueError(str(exc)) from exc
+
+    @field_validator("url")
+    @classmethod
+    def _scheme(cls, v: str) -> str:
+        if not v.startswith(("https://", "http://")):
+            raise ValueError(f"url must be http(s): {v!r}")
+        return v
+
+
+class ResilienceDefaults(BiosModel):
+    """Retry / breaker parameters (MSD §15.4)."""
+
+    retry_delays_seconds: list[float] = Field(default=[60.0, 300.0, 1800.0])
+    retry_jitter: float = Field(default=0.1, ge=0, le=1)
+    breaker_failure_threshold: int = Field(default=3, ge=1)
+    breaker_cooldown_minutes: int = Field(default=360, ge=1)
+
+
+class JobSpec(BiosModel):
+    """One scheduled job in config/pipelines.yaml."""
+
+    job_id: str
+    task: str  # registered task name, e.g. "collect"
+    source_id: str | None = None  # for task=collect
+    interval_minutes: int = Field(gt=0)
+    enabled: bool = True
+
+    @field_validator("job_id", "task")
+    @classmethod
+    def _names(cls, v: str) -> str:
+        if not _NAME_RE.match(v):
+            raise ValueError(f"must be snake_case: {v!r}")
+        return v
+
+
+class PipelinesConfig(BiosModel):
+    """config/pipelines.yaml"""
+
+    defaults: ResilienceDefaults = Field(default_factory=ResilienceDefaults)
+    jobs: list[JobSpec]
+
+    @model_validator(mode="after")
+    def _unique_jobs(self) -> "PipelinesConfig":
+        ids = [j.job_id for j in self.jobs]
+        if len(set(ids)) != len(ids):
+            raise ValueError("duplicate job_id in pipelines.yaml")
         return self
 
 

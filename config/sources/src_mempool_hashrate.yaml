@@ -1,0 +1,7 @@
+source_id: src_mempool_hashrate
+name: mempool.space hashrate/difficulty
+kind: http_json
+url: https://mempool.space/api/v1/mining/hashrate/3d
+tier: 1
+min_interval_seconds: 60
+notes: On-chain primary - network hashrate and difficulty.

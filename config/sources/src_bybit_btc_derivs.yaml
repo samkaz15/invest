@@ -1,0 +1,7 @@
+source_id: src_bybit_btc_derivs
+name: Bybit BTCUSDT perp ticker
+kind: http_json
+url: https://api.bybit.com/v5/market/tickers?category=linear&symbol=BTCUSDT
+tier: 2
+min_interval_seconds: 60
+notes: Funding rate, open interest, mark price from one major venue.

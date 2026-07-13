@@ -1,0 +1,19 @@
+# Scheduled jobs (MSD §15.1-15.2). Cadence: news ~15m, market ~1h,
+# on-chain/sentiment/macro daily. Driven by `bios run-due` from cron/launchd.
+defaults:
+  retry_delays_seconds: [60, 300, 1800]
+  retry_jitter: 0.1
+  breaker_failure_threshold: 3
+  breaker_cooldown_minutes: 360
+
+jobs:
+  - { job_id: collect_coindesk, task: collect, source_id: src_coindesk_rss, interval_minutes: 15 }
+  - { job_id: collect_cointelegraph, task: collect, source_id: src_cointelegraph_rss, interval_minutes: 15 }
+  - { job_id: collect_sec_press, task: collect, source_id: src_sec_press_rss, interval_minutes: 60 }
+  - { job_id: collect_coingecko_btc, task: collect, source_id: src_coingecko_btc, interval_minutes: 60 }
+  - { job_id: collect_bybit_derivs, task: collect, source_id: src_bybit_btc_derivs, interval_minutes: 60 }
+  - { job_id: collect_fng, task: collect, source_id: src_fng_alternative, interval_minutes: 720 }
+  - { job_id: collect_mempool_hashrate, task: collect, source_id: src_mempool_hashrate, interval_minutes: 720 }
+  - { job_id: collect_blockchain_stats, task: collect, source_id: src_blockchain_info_stats, interval_minutes: 720 }
+  - { job_id: collect_fred_dgs10, task: collect, source_id: src_fred_dgs10, interval_minutes: 720 }
+  - { job_id: collect_fred_cpi, task: collect, source_id: src_fred_cpi, interval_minutes: 1440 }

@@ -1,0 +1,7 @@
+source_id: src_cointelegraph_rss
+name: Cointelegraph RSS
+kind: rss
+url: https://cointelegraph.com/rss
+tier: 4
+min_interval_seconds: 60
+notes: Secondary crypto news; lower tier than wire services.

@@ -16,7 +16,9 @@ ALLOWED: dict[str, set[str]] = {
     "audit": {"common"},
     "storage": {"common", "config"},
     "scheduler": {"common", "config", "audit"},
-    "ingestion": {"common", "config", "audit", "storage"},
+    # ingestion -> scheduler: collector uses the RateLimiter primitive;
+    # scheduler never imports ingestion (tasks are injected), so still one-way.
+    "ingestion": {"common", "config", "audit", "storage", "scheduler"},
     "extraction": {"common", "config", "audit", "storage", "ingestion"},
     "knowledge": {"common", "config", "audit", "storage"},
     "history": {"common", "config", "audit", "storage", "knowledge"},
