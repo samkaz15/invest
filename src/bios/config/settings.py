@@ -21,6 +21,9 @@ class Settings(BaseSettings):
     var_dir: Path = Path("var")
     log_level: str = "INFO"
     log_json: bool = False
+    database_url: str = "postgresql://localhost/bios"
+    migrations_dir: Path = Path("db/migrations")
+    seeds_dir: Path = Path("seeds/chains")
 
     @property
     def audit_dir(self) -> Path:

@@ -1,0 +1,117 @@
+# Mt.Gox chain seed (MSD §10.2). Owner curation pass pending: evidence is
+# tier-3 press references; confidence is 'reported' where no primary doc
+# is attached yet. time_precision=day for historical events.
+sources:
+  - source_id: src_seed_manual
+    name: Manual seed references
+    tier: 3
+
+chain:
+  chain_id: chain_mtgox
+  title: "Mt.Gox 破綻から債権者返済まで"
+  chain_type: collapse_and_distribution
+  status: active
+  started_at: 2014-02-28
+  watch_points:
+    - "残余返済の完了確認（返済期限延長後の進捗）"
+    - "大口債権者ウォレットの取引所入金"
+
+entities:
+  - entity_id: ent_mtgox
+    kind: exchange
+    name: "Mt.Gox"
+    aliases: ["マウントゴックス", "MtGox", "Mount Gox"]
+    attributes: { jurisdiction: "JP", status: "defunct" }
+  - entity_id: ent_mtgox_estate
+    kind: legal_case
+    name: "Mt.Gox 民事再生手続"
+    aliases: ["Mt.Gox Trustee", "Mt.Gox破産財団"]
+    attributes: { court: "東京地裁", trustee: "小林信明" }
+
+events:
+  - event_id: evt_2014-02-28_mtgox-bankruptcy-filing
+    type: legal.bankruptcy.filing
+    title: "Mt.Gox、民事再生法の適用を申請"
+    summary_fact: "2014-02-28、Mt.Goxが東京地裁に民事再生法適用を申請。約85万BTCの喪失を公表した。"
+    occurred_at: 2014-02-28T00:00:00+00:00
+    known_at: 2014-02-28T00:00:00+00:00
+    time_precision: day
+    confidence: reported
+    magnitude_initial: 5
+    assets: [{ asset_id: ent_asset_btc, relevance: 1.0 }]
+    participations:
+      - { entity_id: ent_mtgox, role: actor }
+    evidence:
+      - evidence_id: evd_00000000000000001
+        source_id: src_seed_manual
+        tier: 3
+        url: "https://www.reuters.com/article/us-bitcoin-mtgox-bankruptcy-idUSBREA1R0FX20140228"
+        quote: "Mt. Gox filed for bankruptcy protection in Japan"
+        retrieved_at: 2026-07-14T00:00:00+00:00
+
+  - event_id: evt_2021-11-16_mtgox-rehabilitation-plan-final
+    type: legal.court.ruling
+    title: "再生計画が確定"
+    summary_fact: "2021-11、Mt.Gox民事再生計画が確定し、債権者への弁済手続きへ移行した。"
+    occurred_at: 2021-11-16T00:00:00+00:00
+    known_at: 2021-11-16T00:00:00+00:00
+    time_precision: month
+    confidence: reported
+    magnitude_initial: 3
+    assets: [{ asset_id: ent_asset_btc, relevance: 0.8 }]
+    participations:
+      - { entity_id: ent_mtgox_estate, role: actor }
+    evidence:
+      - evidence_id: evd_00000000000000002
+        source_id: src_seed_manual
+        tier: 3
+        url: "https://www.coindesk.com/markets/2021/11/16/mt-gox-rehabilitation-plan-final/"
+        quote: "rehabilitation plan became final and binding"
+        retrieved_at: 2026-07-14T00:00:00+00:00
+    relations:
+      - { rel_type: PART_OF, from_event: evt_2021-11-16_mtgox-rehabilitation-plan-final, to_event: evt_2014-02-28_mtgox-bankruptcy-filing }
+
+  - event_id: evt_2024-05-28_mtgox-wallet-movement
+    type: onchain.wallet_movement.estate
+    title: "財団ウォレットが約14万BTCを移動"
+    summary_fact: "2024-05-28、Mt.Gox財団の管理ウォレットから約141,000 BTCが移動された（返済準備とみられる）。"
+    occurred_at: 2024-05-28T00:00:00+00:00
+    known_at: 2024-05-28T06:00:00+00:00
+    time_precision: day
+    confidence: reported
+    magnitude_initial: 4
+    assets: [{ asset_id: ent_asset_btc, relevance: 1.0 }]
+    participations:
+      - { entity_id: ent_mtgox_estate, role: actor }
+    evidence:
+      - evidence_id: evd_00000000000000003
+        source_id: src_seed_manual
+        tier: 3
+        url: "https://www.reuters.com/technology/mt-gox-wallets-move-9-bln-worth-bitcoin-2024-05-28/"
+        quote: "Mt Gox moved about $9 billion worth of bitcoin"
+        retrieved_at: 2026-07-14T00:00:00+00:00
+    relations:
+      - { rel_type: PART_OF, from_event: evt_2024-05-28_mtgox-wallet-movement, to_event: evt_2014-02-28_mtgox-bankruptcy-filing }
+
+  - event_id: evt_2024-07-05_mtgox-repayments-begin
+    type: supply.distribution.unlock
+    title: "債権者へのBTC返済が開始"
+    summary_fact: "2024-07-05、Mt.Gox財団が指定取引所経由で債権者へのBTC/BCH返済を開始した。"
+    occurred_at: 2024-07-05T00:00:00+00:00
+    known_at: 2024-07-05T00:00:00+00:00
+    time_precision: day
+    confidence: reported
+    magnitude_initial: 4
+    assets: [{ asset_id: ent_asset_btc, relevance: 1.0 }]
+    participations:
+      - { entity_id: ent_mtgox_estate, role: actor }
+    evidence:
+      - evidence_id: evd_00000000000000004
+        source_id: src_seed_manual
+        tier: 3
+        url: "https://www.coindesk.com/business/2024/07/05/mt-gox-begins-repaying-creditors/"
+        quote: "began repayments in Bitcoin and Bitcoin Cash"
+        retrieved_at: 2026-07-14T00:00:00+00:00
+    relations:
+      - { rel_type: TRIGGERED_BY, from_event: evt_2024-07-05_mtgox-repayments-begin, to_event: evt_2021-11-16_mtgox-rehabilitation-plan-final, confidence: 0.9, evidence_id: evd_00000000000000004 }
+      - { rel_type: PRECEDES, from_event: evt_2024-05-28_mtgox-wallet-movement, to_event: evt_2024-07-05_mtgox-repayments-begin }

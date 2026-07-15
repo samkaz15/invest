@@ -1,0 +1,117 @@
+# FTX collapse chain seed. Same curation caveats as mtgox.yaml.
+sources:
+  - source_id: src_seed_manual
+    name: Manual seed references
+    tier: 3
+
+chain:
+  chain_id: chain_ftx
+  title: "FTX/Alameda 崩壊から資産処分まで"
+  chain_type: collapse_and_contagion
+  status: active
+  started_at: 2022-11-02
+  watch_points:
+    - "FTX財団の残余資産処分（債権者分配の進捗）"
+
+entities:
+  - entity_id: ent_ftx
+    kind: exchange
+    name: "FTX"
+    aliases: ["FTX Trading", "FTX.com"]
+    attributes: { jurisdiction: "BS", status: "defunct" }
+  - entity_id: ent_alameda
+    kind: fund
+    name: "Alameda Research"
+    attributes: { status: "defunct" }
+  - entity_id: ent_sbf
+    kind: person
+    name: "Sam Bankman-Fried"
+    aliases: ["SBF"]
+
+events:
+  - event_id: evt_2022-11-02_alameda-balance-sheet-report
+    type: anomaly.onchain.unusual
+    title: "Alamedaのバランスシート懸念が報道される"
+    summary_fact: "2022-11-02、CoinDeskがAlameda Researchの資産の多くがFTT建てであると報道した。"
+    occurred_at: 2022-11-02T00:00:00+00:00
+    known_at: 2022-11-02T00:00:00+00:00
+    time_precision: day
+    confidence: reported
+    magnitude_initial: 3
+    assets: [{ asset_id: ent_asset_btc, relevance: 0.6 }]
+    participations:
+      - { entity_id: ent_alameda, role: target }
+    evidence:
+      - evidence_id: evd_00000000000000011
+        source_id: src_seed_manual
+        tier: 3
+        url: "https://www.coindesk.com/business/2022/11/02/divisions-in-sam-bankman-frieds-crypto-empire-blur-on-his-trading-titan-alamedas-balance-sheet/"
+        quote: "much of Alameda's balance sheet is the FTT token"
+        retrieved_at: 2026-07-14T00:00:00+00:00
+
+  - event_id: evt_2022-11-08_ftx-halts-withdrawals
+    type: venue.exchange.outage
+    title: "FTXが出金を停止"
+    summary_fact: "2022-11-08、FTXが顧客出金を事実上停止した。"
+    occurred_at: 2022-11-08T00:00:00+00:00
+    known_at: 2022-11-08T00:00:00+00:00
+    time_precision: day
+    confidence: reported
+    magnitude_initial: 5
+    assets: [{ asset_id: ent_asset_btc, relevance: 1.0 }]
+    participations:
+      - { entity_id: ent_ftx, role: actor }
+    evidence:
+      - evidence_id: evd_00000000000000012
+        source_id: src_seed_manual
+        tier: 3
+        url: "https://www.reuters.com/markets/currencies/crypto-exchange-ftx-saw-6-bln-withdrawals-72-hours-2022-11-08/"
+        quote: "FTX halted customer withdrawals"
+        retrieved_at: 2026-07-14T00:00:00+00:00
+    relations:
+      - { rel_type: TRIGGERED_BY, from_event: evt_2022-11-08_ftx-halts-withdrawals, to_event: evt_2022-11-02_alameda-balance-sheet-report, confidence: 0.8, evidence_id: evd_00000000000000012 }
+
+  - event_id: evt_2022-11-11_ftx-chapter11
+    type: legal.bankruptcy.filing
+    title: "FTXがChapter 11を申請"
+    summary_fact: "2022-11-11、FTXグループ約130社が米連邦破産法11章の適用を申請し、SBFがCEOを辞任した。"
+    occurred_at: 2022-11-11T00:00:00+00:00
+    known_at: 2022-11-11T00:00:00+00:00
+    time_precision: day
+    confidence: reported
+    magnitude_initial: 5
+    assets: [{ asset_id: ent_asset_btc, relevance: 1.0 }]
+    participations:
+      - { entity_id: ent_ftx, role: actor }
+      - { entity_id: ent_sbf, role: affected, detail: "CEO辞任" }
+    evidence:
+      - evidence_id: evd_00000000000000013
+        source_id: src_seed_manual
+        tier: 3
+        url: "https://www.reuters.com/markets/currencies/ftx-start-us-bankruptcy-proceedings-ceo-exit-2022-11-11/"
+        quote: "FTX to start U.S. bankruptcy proceedings, CEO to exit"
+        retrieved_at: 2026-07-14T00:00:00+00:00
+    relations:
+      - { rel_type: TRIGGERED_BY, from_event: evt_2022-11-11_ftx-chapter11, to_event: evt_2022-11-08_ftx-halts-withdrawals, confidence: 0.9, evidence_id: evd_00000000000000013 }
+
+  - event_id: evt_2023-11-02_sbf-convicted
+    type: legal.court.ruling
+    title: "SBFに有罪評決"
+    summary_fact: "2023-11-02、NY南部地区連邦地裁の陪審がSBFに対し詐欺等7件で有罪評決を下した。"
+    occurred_at: 2023-11-02T00:00:00+00:00
+    known_at: 2023-11-02T00:00:00+00:00
+    time_precision: day
+    confidence: reported
+    magnitude_initial: 2
+    assets: [{ asset_id: ent_asset_btc, relevance: 0.3 }]
+    participations:
+      - { entity_id: ent_sbf, role: target }
+    evidence:
+      - evidence_id: evd_00000000000000014
+        source_id: src_seed_manual
+        tier: 3
+        url: "https://www.reuters.com/legal/sam-bankman-fried-convicted-2023-11-02/"
+        quote: "jury found Bankman-Fried guilty"
+        retrieved_at: 2026-07-14T00:00:00+00:00
+    relations:
+      - { rel_type: PART_OF, from_event: evt_2023-11-02_sbf-convicted, to_event: evt_2022-11-11_ftx-chapter11 }

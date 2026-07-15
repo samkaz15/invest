@@ -20,15 +20,24 @@ from bios.common.logutil import get_logger, setup_logging
 from bios.common.statestore import JsonStateStore
 from bios.config import ConfigRoot, Settings, load_config
 from bios.config.models import JobSpec, SourceSpec
+from bios.extraction.market import MarketNormalizer
+from bios.extraction.news import NewsExtractor
+from bios.history.seeds import SeedLoader
 from bios.ingestion.collector import CollectError, Collector
 from bios.ingestion.dlq import DeadLetterQueue
 from bios.ingestion.health import HealthTracker
 from bios.ingestion.http import HttpClient
 from bios.ingestion.rawstore import FileRawStore
+from bios.knowledge.graph import ChainRepo, EntityRepo
+from bios.knowledge.snapshots import SnapshotRepo
+from bios.knowledge.store import CurationQueue, EventStore
 from bios.scheduler.breaker import CircuitBreaker
 from bios.scheduler.jobs import JobRunner
 from bios.scheduler.ratelimit import RateLimiter
 from bios.scheduler.retry import RetryPolicy
+from bios.storage.db import Database
+from bios.storage.migrate import MigrationRunner
+from bios.storage.sync import sync_sources
 
 logger = get_logger(__name__)
 
@@ -71,6 +80,8 @@ class App:
     runner: JobRunner
     health: HealthTracker
     dlq: DeadLetterQueue
+    db: Database
+    raw_store: FileRawStore
 
 
 def build_app(settings: Settings | None = None) -> App:
@@ -83,9 +94,11 @@ def build_app(settings: Settings | None = None) -> App:
     metrics_sink = JsonlAuditSink(var / "metrics")
     health = HealthTracker(JsonStateStore(var / "state" / "health.json"))
     dlq = DeadLetterQueue(var / "dlq")
+    db = Database(settings.database_url)
+    raw_store = FileRawStore(var / "raw")
     collector = Collector(
         sources=resolve_sources(config.sources),
-        store=FileRawStore(var / "raw"),
+        store=raw_store,
         client=HttpClient(),
         audit=audit,
         metrics_sink=metrics_sink,
@@ -112,7 +125,46 @@ def build_app(settings: Settings | None = None) -> App:
         collector.collect(job.source_id)
 
     runner.register("collect", collect_task)
-    return App(settings, config, collector, runner, health, dlq)
+    return App(settings, config, collector, runner, health, dlq, db, raw_store)
+
+
+def _cmd_migrate(app: App) -> int:
+    applied = MigrationRunner(app.db, app.settings.migrations_dir).apply_all()
+    n = sync_sources(app.db, app.config.sources)
+    print(f"migrations applied: {applied or 'none (up to date)'}; sources synced: {n}")
+    return 0
+
+
+def _cmd_extract(app: App) -> int:
+    extractor = NewsExtractor(app.db, app.raw_store, CurationQueue(app.db), app.config.sources)
+    stats = extractor.run()
+    print(f"news candidates queued: {stats['queued']} (duplicates skipped: {stats['duplicate']})")
+    return 0
+
+
+def _cmd_snapshot(app: App) -> int:
+    for asset_id in app.config.assets:
+        normalizer = MarketNormalizer(app.raw_store, SnapshotRepo(app.db), asset_id)
+        result = normalizer.build_snapshot()
+        print(
+            f"{asset_id} @ {result['ts'].isoformat()}: price={result['price_usd']} "
+            f"metrics={len(result['metrics'])} gaps={len(result['gaps'])}"
+        )
+        for gap in result["gaps"]:
+            print(f"  gap: {gap}")
+    return 0
+
+
+def _cmd_seed(app: App) -> int:
+    loader = SeedLoader(
+        app.db,
+        EventStore(app.db, app.config.events),
+        EntityRepo(app.db),
+        ChainRepo(app.db),
+    )
+    counts = loader.load_dir(app.settings.seeds_dir)
+    print(f"seeds: {counts}")
+    return 0
 
 
 def _cmd_collect(app: App, source: str | None) -> int:
@@ -145,6 +197,10 @@ def main(argv: list[str] | None = None) -> int:
     p_collect.add_argument("--source", default=None)
     sub.add_parser("run-due", help="run all due scheduled jobs (cron entry point)")
     sub.add_parser("health", help="print per-source health and DLQ counts")
+    sub.add_parser("migrate", help="apply pending DB migrations and sync source registry")
+    sub.add_parser("extract", help="turn unprocessed news raw items into curation candidates")
+    sub.add_parser("snapshot", help="normalize latest market raw data into a snapshot row")
+    sub.add_parser("seed", help="load seeds/chains into the historical database")
     args = parser.parse_args(argv)
 
     try:
@@ -156,6 +212,14 @@ def main(argv: list[str] | None = None) -> int:
             return 1 if any(r.status.value == "failed" for r in results) else 0
         if args.command == "health":
             return _cmd_health(app)
+        if args.command == "migrate":
+            return _cmd_migrate(app)
+        if args.command == "extract":
+            return _cmd_extract(app)
+        if args.command == "snapshot":
+            return _cmd_snapshot(app)
+        if args.command == "seed":
+            return _cmd_seed(app)
     except BiosError as exc:
         logger.error("fatal: %s", exc)
         return 2

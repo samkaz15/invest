@@ -7,6 +7,7 @@ Sprint 2 ships the file implementation; the PostgreSQL ``raw_items`` table
     <root>/<source_id>/_hashes.txt        # dedup ledger, one hash per line
 """
 
+from collections.abc import Iterator
 from pathlib import Path
 from typing import Protocol
 
@@ -20,6 +21,12 @@ class RawStore(Protocol):
     def put(self, item: RawItem) -> bool:
         """Store; return False if an identical payload already exists."""
         ...
+
+    def items(self, source_id: str) -> Iterator[RawItem]:
+        """All stored items for a source, oldest first (id order = time order)."""
+        ...
+
+    def latest(self, source_id: str) -> RawItem | None: ...
 
 
 class FileRawStore:
@@ -53,3 +60,19 @@ class FileRawStore:
             fh.write(item.content_hash + "\n")
         self._hashes(item.source_id).add(item.content_hash)
         return True
+
+    def items(self, source_id: str) -> Iterator[RawItem]:
+        base = self._root / source_id
+        if not base.is_dir():
+            return
+        for path in sorted(base.rglob("raw_*.json")):
+            yield RawItem.model_validate_json(path.read_text(encoding="utf-8"))
+
+    def latest(self, source_id: str) -> RawItem | None:
+        base = self._root / source_id
+        if not base.is_dir():
+            return None
+        paths = sorted(base.rglob("raw_*.json"))
+        if not paths:
+            return None
+        return RawItem.model_validate_json(paths[-1].read_text(encoding="utf-8"))
