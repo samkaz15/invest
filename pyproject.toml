@@ -46,6 +46,9 @@ select = [
     "RUF",       # ruff-specific
     "DTZ",       # naive-datetime ban (known_at discipline depends on tz-aware times)
 ]
+ignore = [
+    "RUF001", "RUF002", "RUF003",  # BIOS emits Japanese text; fullwidth punctuation is intended
+]
 
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = ["DTZ001"]  # tests may build naive datetimes to assert they are rejected

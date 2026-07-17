@@ -14,10 +14,17 @@ import re
 import sys
 from dataclasses import dataclass
 
+from bios.analysis.base import DimensionAnalyzer
+from bios.analysis.derivatives import DerivativesAnalyzer
+from bios.analysis.news_flow import NewsFlowAnalyzer
+from bios.analysis.onchain import OnchainAnalyzer
+from bios.analysis.reactions import ReactionBatch
+from bios.analysis.repo import AnalysisRepo
 from bios.audit import AuditLogger, JsonlAuditSink
 from bios.common.errors import BiosError
 from bios.common.logutil import get_logger, setup_logging
 from bios.common.statestore import JsonStateStore
+from bios.common.timeutil import utc_now
 from bios.config import ConfigRoot, Settings, load_config
 from bios.config.models import JobSpec, SourceSpec
 from bios.extraction.market import MarketNormalizer
@@ -28,6 +35,7 @@ from bios.ingestion.dlq import DeadLetterQueue
 from bios.ingestion.health import HealthTracker
 from bios.ingestion.http import HttpClient
 from bios.ingestion.rawstore import FileRawStore
+from bios.knowledge.curation import approve_candidate
 from bios.knowledge.graph import ChainRepo, EntityRepo
 from bios.knowledge.snapshots import SnapshotRepo
 from bios.knowledge.store import CurationQueue, EventStore
@@ -167,6 +175,78 @@ def _cmd_seed(app: App) -> int:
     return 0
 
 
+def _cmd_analyze(app: App) -> int:
+    from datetime import timedelta
+
+    repo = AnalysisRepo(app.db)
+    queue = CurationQueue(app.db)
+    as_of = utc_now()
+    for asset_id in app.config.assets:
+        history = SnapshotRepo(app.db).range(asset_id, as_of - timedelta(days=90), as_of)
+        analyzers: list[DimensionAnalyzer] = [
+            DerivativesAnalyzer(),
+            OnchainAnalyzer(),
+            NewsFlowAnalyzer(queue_stats={"pending": len(queue.pending(limit=1000))}),
+        ]
+        for analyzer in analyzers:
+            report = analyzer.analyze(asset_id, as_of, history)
+            repo.save_report(report)
+            print(
+                f"{asset_id} {report.dimension.value}: score={report.score:+d} "
+                f"conviction={report.conviction:.2f} signals={len(report.signals)} "
+                f"gaps={len(report.data_gaps)}"
+            )
+            for finding in report.key_findings:
+                print(f"  - {finding}")
+    return 0
+
+
+def _cmd_react(app: App) -> int:
+    batch = ReactionBatch(app.db, AnalysisRepo(app.db))
+    for asset_id in app.config.assets:
+        stats = batch.run(asset_id)
+        print(
+            f"{asset_id}: reactions computed={stats['computed']} "
+            f"pre-snapshot events skipped={stats['events_without_base']}"
+        )
+    return 0
+
+
+def _cmd_curate(app: App, args: argparse.Namespace) -> int:
+    queue = CurationQueue(app.db)
+    if args.curate_command == "list":
+        for c in queue.pending(limit=args.limit):
+            payload = c["payload"]
+            print(f"{c['candidate_id']}  [T{payload.get('tier')}] {payload.get('title')}")
+            print(f"    {payload.get('link')}")
+        return 0
+    if args.curate_command == "approve":
+        candidate = app.db.query_one(
+            "SELECT * FROM curation_queue WHERE candidate_id=%(c)s AND status='pending'",
+            {"c": args.id},
+        )
+        if candidate is None:
+            logger.error("no pending candidate %s", args.id)
+            return 1
+        event = approve_candidate(
+            EventStore(app.db, app.config.events),
+            queue,
+            candidate,
+            event_type=args.type,
+            magnitude=args.magnitude,
+            title=args.title,
+            summary_fact=args.summary,
+            slug=args.slug,
+        )
+        print(f"approved -> {event.event_id} ({event.type}, magnitude {args.magnitude})")
+        return 0
+    if args.curate_command == "reject":
+        queue.resolve(args.id, "rejected", note=args.note)
+        print(f"rejected {args.id}")
+        return 0
+    return 1
+
+
 def _cmd_collect(app: App, source: str | None) -> int:
     source_ids = [source] if source else app.collector.enabled_source_ids()
     failures = 0
@@ -201,6 +281,22 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("extract", help="turn unprocessed news raw items into curation candidates")
     sub.add_parser("snapshot", help="normalize latest market raw data into a snapshot row")
     sub.add_parser("seed", help="load seeds/chains into the historical database")
+    sub.add_parser("analyze", help="run dimension analyzers and store reports")
+    sub.add_parser("react", help="stamp market reactions (+1h..+90d) onto events")
+    p_curate = sub.add_parser("curate", help="process the curation queue (human loop)")
+    curate_sub = p_curate.add_subparsers(dest="curate_command", required=True)
+    p_list = curate_sub.add_parser("list")
+    p_list.add_argument("--limit", type=int, default=10)
+    p_approve = curate_sub.add_parser("approve")
+    p_approve.add_argument("id")
+    p_approve.add_argument("--type", required=True, help="taxonomy type (domain.category.type)")
+    p_approve.add_argument("--magnitude", type=int, required=True, choices=range(1, 6))
+    p_approve.add_argument("--title", default=None)
+    p_approve.add_argument("--summary", default=None)
+    p_approve.add_argument("--slug", default=None)
+    p_reject = curate_sub.add_parser("reject")
+    p_reject.add_argument("id")
+    p_reject.add_argument("--note", default="")
     args = parser.parse_args(argv)
 
     try:
@@ -220,6 +316,12 @@ def main(argv: list[str] | None = None) -> int:
             return _cmd_snapshot(app)
         if args.command == "seed":
             return _cmd_seed(app)
+        if args.command == "analyze":
+            return _cmd_analyze(app)
+        if args.command == "react":
+            return _cmd_react(app)
+        if args.command == "curate":
+            return _cmd_curate(app, args)
     except BiosError as exc:
         logger.error("fatal: %s", exc)
         return 2
