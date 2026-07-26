@@ -1,0 +1,15 @@
+# BIOS cron schedule (MSD §15.1-15.2: ~15m collection, daily analysis chain).
+# Install: crontab ops/crontab.txt  (edit REPO path first if you moved it)
+# Logs go to var/logs/*.log (rotate manually or via logrotate; git-ignored).
+
+REPO=/Users/samukawakazuma/invest
+PY=/Users/samukawakazuma/invest/.venv/bin/python
+
+*/15 * * * * cd $REPO && $PY -m bios.cli run-due >> var/logs/run-due.log 2>&1
+30 5 * * * cd $REPO && $PY -m bios.cli extract >> var/logs/pipeline.log 2>&1
+0 6 * * * cd $REPO && $PY -m bios.cli snapshot >> var/logs/pipeline.log 2>&1
+5 6 * * * cd $REPO && $PY -m bios.cli react >> var/logs/pipeline.log 2>&1
+10 6 * * * cd $REPO && $PY -m bios.cli analyze >> var/logs/pipeline.log 2>&1
+20 6 * * * cd $REPO && $PY -m bios.cli decide >> var/logs/pipeline.log 2>&1
+25 6 * * * cd $REPO && $PY -m bios.cli validate >> var/logs/pipeline.log 2>&1
+0 3 * * 0 $REPO/ops/backup.sh >> var/logs/backup.log 2>&1

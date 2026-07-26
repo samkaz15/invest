@@ -27,8 +27,11 @@ from bios.common.statestore import JsonStateStore
 from bios.common.timeutil import utc_now
 from bios.config import ConfigRoot, Settings, load_config
 from bios.config.models import JobSpec, SourceSpec
+from bios.decision.alerts import AlertEngine
+from bios.decision.backtest import BacktestEngine
 from bios.decision.engine import DecisionJournal, decide
 from bios.decision.outcomes import OutcomeScorer
+from bios.decision.portfolio import VirtualPortfolio
 from bios.extraction.market import MarketNormalizer
 from bios.extraction.news import NewsExtractor
 from bios.history.seeds import SeedLoader
@@ -42,6 +45,7 @@ from bios.knowledge.graph import ChainRepo, EntityRepo
 from bios.knowledge.snapshots import SnapshotRepo
 from bios.knowledge.store import CurationQueue, EventStore
 from bios.reporting.brief import BriefingComposer
+from bios.reporting.why import WhyExplainer
 from bios.scenario.engine import ScenarioRepo, build_scenario_set
 from bios.scheduler.breaker import CircuitBreaker
 from bios.scheduler.jobs import JobRunner
@@ -245,8 +249,30 @@ def _cmd_decide(app: App) -> int:
         scenario_set = build_scenario_set(card, slug)
         ScenarioRepo(app.db).save(scenario_set)
         journal = DecisionJournal(app.db)
-        decision = decide(card, scenario_set, slug, previous=journal.latest(asset_id))
-        journal.save(decision)
+        portfolio = VirtualPortfolio(app.db)
+        position = portfolio.position(asset_id)
+        decision = decide(
+            card,
+            scenario_set,
+            slug,
+            previous=journal.latest(asset_id),
+            position_units=float(position["units"]),
+        )
+        if journal.save(decision):
+            snapshot = SnapshotRepo(app.db).latest(asset_id)
+            if snapshot and snapshot["price_usd"] is not None:
+                trade_note = portfolio.apply(
+                    decision.decision_id,
+                    asset_id,
+                    decision.action,
+                    as_of,
+                    float(snapshot["price_usd"]),
+                )
+                if trade_note.startswith(("opened", "closed")):
+                    print(f"{asset_id}: virtual portfolio: {trade_note}")
+            alerts = AlertEngine(app.db).scan(asset_id)
+            for alert in alerts:
+                print(f"  ALERT[{alert.severity}] {alert.category}: {alert.message}")
         print(
             f"{asset_id}: {decision.action.value} conviction={decision.conviction:.2f} "
             f"composite={card.composite:+d} ({card.verdict_hint}) "
@@ -268,6 +294,40 @@ def _cmd_validate(app: App) -> int:
             f"correct={row['correct']} incorrect={row['incorrect']} "
             f"avg_return={row['avg_return']}"
         )
+    return 0
+
+
+def _cmd_backtest(app: App) -> int:
+    engine = BacktestEngine(app.db)
+    for asset_id in app.config.assets:
+        report = engine.run(asset_id)
+        if report.n_trades == 0:
+            print(f"{asset_id}: {report.note}")
+            continue
+        print(
+            f"{asset_id}: n_trades={report.n_trades} win_rate={report.win_rate:.0%} "
+            f"expectancy={report.expectancy:+.4f} profit_factor={report.profit_factor} "
+            f"sharpe={report.sharpe} max_drawdown={report.max_drawdown} "
+            f"strategy_return={report.strategy_return:+.2%} "
+            f"buy_hold_return={report.buy_hold_return} "
+            f"excess_vs_buy_hold={report.excess_vs_buy_hold}"
+        )
+    return 0
+
+
+def _cmd_alerts(app: App) -> int:
+    engine = AlertEngine(app.db)
+    for asset_id in app.config.assets:
+        for alert in engine.recent(asset_id):
+            print(
+                f"[{alert['ts']}] {asset_id} {alert['severity']}/{alert['category']}: "
+                f"{alert['message']}"
+            )
+    return 0
+
+
+def _cmd_why(app: App, decision_id: str) -> int:
+    print(WhyExplainer(app.db).explain(decision_id))
     return 0
 
 
@@ -351,6 +411,10 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("react", help="stamp market reactions (+1h..+90d) onto events")
     sub.add_parser("decide", help="regime -> score card -> scenarios -> decision (journal)")
     sub.add_parser("validate", help="score past decisions at +1d/+7d/+30d/+90d")
+    sub.add_parser("backtest", help="virtual-portfolio metrics vs Buy&Hold")
+    sub.add_parser("alerts", help="print recent alerts (signals/breakers/gaps)")
+    p_why = sub.add_parser("why", help="show the full evidence chain for a decision")
+    p_why.add_argument("decision_id")
     sub.add_parser("brief", help="print the Morning Briefing (also: おはよう)")
     p_curate = sub.add_parser("curate", help="process the curation queue (human loop)")
     curate_sub = p_curate.add_subparsers(dest="curate_command", required=True)
@@ -398,6 +462,12 @@ def main(argv: list[str] | None = None) -> int:
             return _cmd_decide(app)
         if args.command == "validate":
             return _cmd_validate(app)
+        if args.command == "backtest":
+            return _cmd_backtest(app)
+        if args.command == "alerts":
+            return _cmd_alerts(app)
+        if args.command == "why":
+            return _cmd_why(app, args.decision_id)
         if args.command == "brief":
             return _cmd_brief(app)
     except BiosError as exc:

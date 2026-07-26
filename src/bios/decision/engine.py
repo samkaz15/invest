@@ -2,7 +2,8 @@
 
 Deterministic rules, WAIT-biased by design:
 * BUY only on strong composite AND sufficient data completeness,
-* TAKE_PROFIT requires a tracked position (none in v1 — flat assumed),
+* TAKE_PROFIT only when a virtual position is open AND composite has
+  turned meaningfully bearish (IES §13.3 virtual portfolio),
 * conflict caps conviction; thin data forces WAIT,
 * no decision leaves without an invalidation (DB schema enforces too).
 """
@@ -20,6 +21,7 @@ from bios.storage.db import Database
 VERSION = "decision/v1"
 MIN_COMPLETENESS_FOR_ACTION = 0.6
 BUY_THRESHOLD = 40
+TAKE_PROFIT_THRESHOLD = -20
 CONFLICT_CAP_THRESHOLD = 0.6
 CONFLICT_CONVICTION_CAP = 0.55
 
@@ -62,22 +64,30 @@ def decide(
     scenario_set: ScenarioSet,
     asset_slug: str,
     previous: dict[str, Any] | None,
+    position_units: float = 0.0,
 ) -> Decision:
     reasons: list[str] = []
+    has_position = position_units > 0
     if card.data_completeness < MIN_COMPLETENESS_FOR_ACTION:
         action = Action.WAIT
         reasons.append(
             f"データ完全性 {card.data_completeness:.2f} < {MIN_COMPLETENESS_FOR_ACTION}"
             "（証拠不十分時のデフォルトはWAIT）"
         )
-    elif card.composite >= BUY_THRESHOLD:
+    elif has_position and card.composite <= TAKE_PROFIT_THRESHOLD:
+        action = Action.TAKE_PROFIT
+        reasons.append(
+            f"保有ポジションあり・composite {card.composite:+d} ≤ {TAKE_PROFIT_THRESHOLD}"
+            "（弱気転換のため利確）"
+        )
+    elif not has_position and card.composite >= BUY_THRESHOLD:
         action = Action.BUY
         reasons.append(f"composite {card.composite:+d} ≥ +{BUY_THRESHOLD} かつデータ充足")
     else:
         action = Action.WAIT
         reasons.append(
-            f"composite {card.composite:+d} はBUY閾値未満"
-            "（TAKE_PROFITはポジション追跡未実装のため対象外）"
+            f"composite {card.composite:+d}（保有={'あり' if has_position else 'なし'}）"
+            "はBUY/TAKE_PROFITいずれの閾値も満たさず"
         )
 
     conviction = round(min(0.9, 0.3 + 0.4 * card.data_completeness + abs(card.composite) / 500), 2)
@@ -108,9 +118,14 @@ def decide(
         rationale_refs=refs[:10],
         counter_argument=_counter_argument(card, action),
         invalidation={
-            "condition": bear.invalidation
-            if action is Action.BUY
-            else "composite が +40 を超えデータ完全性0.6以上（WAIT解除条件）",
+            "condition": (
+                bear.invalidation
+                if action is Action.BUY
+                else f"composite が +{BUY_THRESHOLD} を超えデータ完全性"
+                f"{MIN_COMPLETENESS_FOR_ACTION}以上（WAIT解除条件）"
+                if action is Action.WAIT
+                else f"composite が {TAKE_PROFIT_THRESHOLD} を再び上回る（再エントリー検討条件）"
+            ),
             "check": "daily",
         },
         risk_note=(
