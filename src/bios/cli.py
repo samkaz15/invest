@@ -27,6 +27,8 @@ from bios.common.statestore import JsonStateStore
 from bios.common.timeutil import utc_now
 from bios.config import ConfigRoot, Settings, load_config
 from bios.config.models import JobSpec, SourceSpec
+from bios.decision.engine import DecisionJournal, decide
+from bios.decision.outcomes import OutcomeScorer
 from bios.extraction.market import MarketNormalizer
 from bios.extraction.news import NewsExtractor
 from bios.history.seeds import SeedLoader
@@ -39,10 +41,14 @@ from bios.knowledge.curation import approve_candidate
 from bios.knowledge.graph import ChainRepo, EntityRepo
 from bios.knowledge.snapshots import SnapshotRepo
 from bios.knowledge.store import CurationQueue, EventStore
+from bios.reporting.brief import BriefingComposer
+from bios.scenario.engine import ScenarioRepo, build_scenario_set
 from bios.scheduler.breaker import CircuitBreaker
 from bios.scheduler.jobs import JobRunner
 from bios.scheduler.ratelimit import RateLimiter
 from bios.scheduler.retry import RetryPolicy
+from bios.scoring.composite import ScoreCardRepo, build_score_card
+from bios.scoring.regime import classify as classify_regime
 from bios.storage.db import Database
 from bios.storage.migrate import MigrationRunner
 from bios.storage.sync import sync_sources
@@ -138,7 +144,9 @@ def build_app(settings: Settings | None = None) -> App:
 
 def _cmd_migrate(app: App) -> int:
     applied = MigrationRunner(app.db, app.settings.migrations_dir).apply_all()
-    n = sync_sources(app.db, app.config.sources)
+    # Sync the *resolved* registry: sources auto-disabled by missing secrets
+    # must be recorded as disabled so the briefing can disclose the gap.
+    n = sync_sources(app.db, resolve_sources(app.config.sources))
     print(f"migrations applied: {applied or 'none (up to date)'}; sources synced: {n}")
     return 0
 
@@ -209,6 +217,64 @@ def _cmd_react(app: App) -> int:
             f"{asset_id}: reactions computed={stats['computed']} "
             f"pre-snapshot events skipped={stats['events_without_base']}"
         )
+    return 0
+
+
+def _asset_slug(asset_id: str) -> str:
+    return asset_id.removeprefix("ent_asset_")
+
+
+def _cmd_decide(app: App) -> int:
+    from datetime import timedelta
+
+    as_of = utc_now()
+    for asset_id in app.config.assets:
+        slug = _asset_slug(asset_id)
+        history = SnapshotRepo(app.db).range(asset_id, as_of - timedelta(days=90), as_of)
+        regime = classify_regime(history)
+        card_repo = ScoreCardRepo(app.db)
+        card_repo.save_regime(asset_id, as_of, regime)
+        reports = AnalysisRepo(app.db).latest_reports(asset_id)
+        if not reports:
+            logger.error("%s: no dimension reports — run `bios analyze` first", asset_id)
+            return 1
+        card = build_score_card(asset_id, slug, as_of, reports, app.config.scoring, regime)
+        if not card_repo.save(card):
+            print(f"{asset_id}: score card for {card.score_card_id} already exists (append-only)")
+            continue
+        scenario_set = build_scenario_set(card, slug)
+        ScenarioRepo(app.db).save(scenario_set)
+        journal = DecisionJournal(app.db)
+        decision = decide(card, scenario_set, slug, previous=journal.latest(asset_id))
+        journal.save(decision)
+        print(
+            f"{asset_id}: {decision.action.value} conviction={decision.conviction:.2f} "
+            f"composite={card.composite:+d} ({card.verdict_hint}) "
+            f"conflict={card.conflict_index:.2f} -> {decision.decision_id}"
+        )
+    return 0
+
+
+def _cmd_validate(app: App) -> int:
+    scorer = OutcomeScorer(app.db)
+    stats = scorer.run()
+    print(f"outcomes scored: {stats['scored']}")
+    rows = scorer.summary()
+    if not rows:
+        print("（採点可能な判断がまだありません — 判断から+1d経過後に自動採点されます）")
+    for row in rows:
+        print(
+            f"{row['action']:<12} {row['horizon']:<5} n={row['n']:<3} "
+            f"correct={row['correct']} incorrect={row['incorrect']} "
+            f"avg_return={row['avg_return']}"
+        )
+    return 0
+
+
+def _cmd_brief(app: App) -> int:
+    composer = BriefingComposer(app.db)
+    for asset_id, asset in app.config.assets.items():
+        print(composer.compose(asset_id, asset.name))
     return 0
 
 
@@ -283,6 +349,9 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("seed", help="load seeds/chains into the historical database")
     sub.add_parser("analyze", help="run dimension analyzers and store reports")
     sub.add_parser("react", help="stamp market reactions (+1h..+90d) onto events")
+    sub.add_parser("decide", help="regime -> score card -> scenarios -> decision (journal)")
+    sub.add_parser("validate", help="score past decisions at +1d/+7d/+30d/+90d")
+    sub.add_parser("brief", help="print the Morning Briefing (also: おはよう)")
     p_curate = sub.add_parser("curate", help="process the curation queue (human loop)")
     curate_sub = p_curate.add_subparsers(dest="curate_command", required=True)
     p_list = curate_sub.add_parser("list")
@@ -297,7 +366,10 @@ def main(argv: list[str] | None = None) -> int:
     p_reject = curate_sub.add_parser("reject")
     p_reject.add_argument("id")
     p_reject.add_argument("--note", default="")
-    args = parser.parse_args(argv)
+    raw_argv = list(argv) if argv is not None else sys.argv[1:]
+    if raw_argv and raw_argv[0] in ("おはよう", "ohayo", "good-morning"):
+        raw_argv[0] = "brief"
+    args = parser.parse_args(raw_argv)
 
     try:
         app = build_app()
@@ -322,6 +394,12 @@ def main(argv: list[str] | None = None) -> int:
             return _cmd_react(app)
         if args.command == "curate":
             return _cmd_curate(app, args)
+        if args.command == "decide":
+            return _cmd_decide(app)
+        if args.command == "validate":
+            return _cmd_validate(app)
+        if args.command == "brief":
+            return _cmd_brief(app)
     except BiosError as exc:
         logger.error("fatal: %s", exc)
         return 2
