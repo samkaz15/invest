@@ -22,9 +22,11 @@ from typing import Any
 from mios.analysis.repo import MacroScoreRepo
 from mios.common.logutil import get_logger
 from mios.config.loader import ConfigRoot
+from mios.prediction.external import ExternalForecastRepo
 from mios.prediction.repo import ForecastRepo
 from mios.series.repo import ObservationRepo
 from mios.storage.db import Database
+from mios.validation.benchmark import BenchmarkReader
 from mios.validation.metrics import MIN_SAMPLE, MetricsReader
 
 logger = get_logger(__name__)
@@ -99,6 +101,8 @@ class DailyReport:
         self._scores = MacroScoreRepo(db)
         self._forecasts = ForecastRepo(db)
         self._metrics = MetricsReader(db)
+        self._external = ExternalForecastRepo(db)
+        self._benchmark = BenchmarkReader(db)
 
     # -------------------------------------------------------------- pieces
 
@@ -265,6 +269,85 @@ class DailyReport:
             ]
         return rows
 
+    def _consensus(self, as_of: datetime) -> list[str]:
+        """What the institutions say, beside what MIOS says.
+
+        The gap between the two is the single most informative line in this
+        report on any day a release is coming. Beating the naive baseline is
+        routine; disagreeing with a Federal Reserve Bank's published nowcast
+        is a position, and printing both forces it to be one taken
+        deliberately rather than by accident.
+        """
+        lines: list[str] = []
+        shown = 0
+        for target in self._config.forecast.targets:
+            mine = [
+                row
+                for row in self._forecasts.latest_per_target(as_of)
+                if row["target_series_id"] == target.series_id
+            ]
+            if not mine or mine[0]["point_value"] is None:
+                continue
+            period = mine[0]["target_period"]
+            rows = self._external.as_of(target.series_id, period, as_of)
+            if not rows:
+                continue
+            ours = float(mine[0]["point_value"])
+            shown += 1
+            lines.append(f"**{target.label} {period}**")
+            lines.append("")
+            lines.append("| 予測者 | 予測 | MIOS との差 | 公表 | Tier |")
+            lines.append("|---|---:|---:|---|---:|")
+            lines.append(f"| **MIOS** | `{ours:+.4f}` {target.unit_label} | — | — | — |")
+            for row in rows:
+                value = float(row["point_value"])
+                lines.append(
+                    f"| {row['provider_id']} | `{value:+.4f}` {target.unit_label} | "
+                    f"`{value - ours:+.4f}` | {row['published_at'].date()} | {row['tier']} |"
+                )
+            lines.append("")
+
+        if shown == 0:
+            lines.append("機関予測はまだ1件も取得できていません。")
+            lines.append("")
+
+        # Always printed, present or not: a comparison table covering two of
+        # four targets reads as complete unless it says which two it is not.
+        for series_id in self._config.external.uncovered:
+            lines.append(
+                f"- `{series_id}`: 無料で機械可読な機関予測が存在しない。"
+                "比較対象はナイーブ基準のみで、ここでの skill は CPI のそれより弱い主張である。"
+            )
+        return lines
+
+    def _head_to_head(self) -> list[str]:
+        """The scoreboard against the institutions, on equal information."""
+        rows = self._benchmark.comparisons()
+        if not rows:
+            return [
+                "対象期間が発表され次第、機関予測も同じ初回発表値・同じナイーブ基準で採点されます。"
+            ]
+        lines = [
+            "| 予測者 | 対象 | n | MIOS MAE | 相手 MAE | edge |",
+            "|---|---|---:|---:|---:|---:|",
+        ]
+        for row in rows:
+            if not row.sufficient:
+                lines.append(
+                    f"| {row.provider_id} | {row.target_series_id} | {row.n} | "
+                    f"— | — | n<{MIN_SAMPLE} のため未算出 |"
+                )
+                continue
+            lines.append(
+                f"| {row.provider_id} | {row.target_series_id} | {row.n} | "
+                f"`{row.mios_mae:.5f}` | `{row.provider_mae:.5f}` | `{row.edge:+.5f}` |"
+            )
+        lines.append("")
+        lines.append(
+            "edge が正なら、同じ情報量の時点で MIOS の方が誤差が小さかったことを意味する。"
+        )
+        return lines
+
     def _data_quality(self, as_of: datetime) -> list[str]:
         coverage = {row["series_id"]: row for row in self._observations.coverage()}
         empty = sorted(
@@ -399,8 +482,14 @@ class DailyReport:
         out += ["", "## Macro Dimensions", ""]
         out += self._dimensions_table(as_of)
 
+        out += ["", "## Consensus / Institutional Forecasts", ""]
+        out += self._consensus(as_of)
+
         out += ["", "## Forecast Accuracy", ""]
         out += self._accuracy()
+
+        out += ["", "### 機関予測との比較（同じ情報量の時点同士）", ""]
+        out += self._head_to_head()
 
         out += ["", "## Data Quality / Missing Data", ""]
         out += self._data_quality(as_of)
@@ -410,11 +499,11 @@ class DailyReport:
             "以下は指示書が求めているが、本レポートにはまだ存在しない。"
             "空欄ではなく欠落として明示する。",
             "",
-            "- **Economic Calendar** — 発表予定の取得は未実装（Phase 5 予定）",
-            "- **Institutional Forecasts** — 機関投資家予測の収集は未実装（Phase 6）",
+            "- **Economic Calendar** — 発表予定の取得は未実装",
             "- **Important News** — ニュース分類は未実装（Phase 6）",
-            "- **Consensus** — コンセンサス予想の取得元が未定のため、"
-            "予測の比較対象はナイーブ予測のみ",
+            "- **雇用統計のコンセンサス** — NFP・失業率の月次コンセンサスは"
+            "有料（Bloomberg / Reuters 調査）でしか手に入らない。"
+            "この2つは機関予測と比較できず、ナイーブ基準のみが比較対象",
             "- **日本の CPI・賃金** — e-Stat の取り込みが未実装",
         ]
 

@@ -37,12 +37,23 @@ class IdKind(StrEnum):
     EVENT = "evt"
     RELEASE = "rel"  # one publication of an indicator, e.g. rel_2026-09-11_us-cpi
     FORECAST = "fc"  # one prediction vintage, e.g. fc_2026-09-12_us-cpi-2026-08
+    # An outside institution's forecast of the same target, stored as its
+    # own kind so a consensus figure can never be mistaken for ours.
+    EXTERNAL_FORECAST = "xf"
     SCORE_CARD = "sc"
 
 
 OPAQUE_KINDS = frozenset({IdKind.RAW_ITEM, IdKind.EVIDENCE, IdKind.AGENT_RUN})
 SLUG_KINDS = frozenset({IdKind.SOURCE, IdKind.ENTITY, IdKind.CHAIN, IdKind.SERIES})
-DATED_KINDS = frozenset({IdKind.EVENT, IdKind.RELEASE, IdKind.FORECAST, IdKind.SCORE_CARD})
+DATED_KINDS = frozenset(
+    {
+        IdKind.EVENT,
+        IdKind.RELEASE,
+        IdKind.FORECAST,
+        IdKind.EXTERNAL_FORECAST,
+        IdKind.SCORE_CARD,
+    }
+)
 
 _OPAQUE_RE = re.compile(r"^[a-z]+_[0-9a-f]{17}$")
 _SNAKE_SLUG_RE = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*$")

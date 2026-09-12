@@ -15,6 +15,7 @@ from datetime import date, datetime
 from decimal import Decimal
 from statistics import fmean, pstdev
 
+from mios.config.forecast import TargetSpec
 from mios.series.repo import Observation, ObservationRepo
 
 #: Below this many usable observations, a trend or a spread is noise
@@ -81,6 +82,23 @@ def mom_series(series: Series) -> list[float]:
 def diff_series(series: Series) -> list[float]:
     """Period-over-period differences in level (for counts like payrolls)."""
     return [series.values[i] - series.values[i - 1] for i in range(1, len(series))]
+
+
+def changes_of(series: Series, spec: TargetSpec) -> list[float]:
+    """The target expressed as the thing actually being forecast.
+
+    An index (CPI) is forecast as a month-over-month percent change; a level
+    (payrolls) as a month-over-month difference. Forecasting the level
+    itself would make a 0.3% miss look like a rounding error next to a
+    325-point index.
+
+    This lives here rather than in the bridge because the benchmark scorer
+    needs the identical transform: it recomputes the naive baseline at an
+    outside forecaster's vintage so both sides are scored against the same
+    number. Two definitions that drifted apart would turn every MIOS-versus-
+    consensus comparison into an artefact of the drift.
+    """
+    return mom_series(series) if spec.transform == "pct_change" else diff_series(series)
 
 
 def trailing_mean(values: list[float], window: int, min_n: int = 3) -> float | None:

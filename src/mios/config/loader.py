@@ -9,6 +9,7 @@ from pydantic import BaseModel, ValidationError
 
 from mios.common.errors import ConfigError
 from mios.config.analysis import AnalysisConfig
+from mios.config.external import ExternalConfig
 from mios.config.forecast import ForecastConfig
 from mios.config.models import (
     AssetConfig,
@@ -54,6 +55,7 @@ class ConfigRoot:
     sources: dict[str, SourceSpec]  # keyed by source_id (the machine-readable source registry)
     series: SeriesRegistry
     forecast: ForecastConfig
+    external: ExternalConfig
     analysis: AnalysisConfig
     pipelines: PipelinesConfig
 
@@ -104,6 +106,36 @@ def load_config(config_dir: Path) -> ConfigRoot:
                 f"series {sorted(unknown)}"
             )
 
+    external = load_model(config_dir / "external.yaml", ExternalConfig)
+    forecast_targets = {t.series_id for t in forecast.targets}
+    for provider in external.providers:
+        if provider.provider_id not in sources:
+            raise ConfigError(
+                f"external provider {provider.provider_id!r} has no source file under "
+                f"{sources_dir} — it has to be collectable before it can be compared against"
+            )
+        unknown = [
+            t.target_series_id
+            for t in provider.targets
+            if t.target_series_id not in forecast_targets
+        ]
+        if unknown:
+            raise ConfigError(
+                f"external provider {provider.provider_id!r} forecasts {sorted(unknown)}, "
+                "which MIOS does not itself forecast — there would be nothing to compare it to"
+            )
+    # `uncovered` is what the scoreboard cannot benchmark. Naming a target
+    # that is both covered and uncovered, or one that is not forecast at all,
+    # would make that declaration misleading rather than incomplete.
+    covered = {t.target_series_id for p in external.providers for t in p.targets}
+    for series_id in external.uncovered:
+        if series_id not in forecast_targets:
+            raise ConfigError(
+                f"external.uncovered names {series_id!r}, which is not a forecast target"
+            )
+        if series_id in covered:
+            raise ConfigError(f"external.uncovered names {series_id!r}, but a provider covers it")
+
     analysis = load_model(config_dir / "analysis.yaml", AnalysisConfig)
     for dimension in analysis.dimensions:
         unknown = [s.series_id for s in dimension.signals if s.series_id not in known_series]
@@ -129,6 +161,7 @@ def load_config(config_dir: Path) -> ConfigRoot:
         sources=sources,
         series=series,
         forecast=forecast,
+        external=external,
         analysis=analysis,
         pipelines=pipelines,
         events=load_model(config_dir / "taxonomy" / "events.yaml", EventTaxonomy),

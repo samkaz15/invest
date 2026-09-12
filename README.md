@@ -28,7 +28,7 @@ Data Quality > Reproducibility > Validation > Simplicity > Feature Count
 | [REPOSITORY_AUDIT.md](docs/REPOSITORY_AUDIT.md) | BIOS からの転換にあたっての全ファイル監査と移行計画 |
 | [DELETION_LOG.md](docs/DELETION_LOG.md) | 何を・なぜ削除したか・どう復元するか |
 | [DATA_SOURCE_REGISTRY.md](docs/DATA_SOURCE_REGISTRY.md) | データソース台帳と信頼Tier |
-| [EVALUATION.md](docs/EVALUATION.md) | 予測精度の測り方（MAE / RMSE / 方向 / キャリブレーション） |
+| [EVALUATION.md](docs/EVALUATION.md) | 予測精度の測り方（MAE / RMSE / 方向 / キャリブレーション / 機関予測との比較） |
 | docs/adr/ | 技術判断の記録 |
 
 設計と実装が矛盾した場合は**設計が正**。実装側の都合で設計を変えない（変更は ADR）。
@@ -57,9 +57,10 @@ mios observations ser_us_cpi_index --as-of 2026-09-01T00:00:00Z
 mios revisions ser_us_cpi_index 2026-08-01
 mios forecast      # 予測を実行し、その日の vintage を保存（上書きしない）
 mios forecasts ser_us_core_cpi_index 2026-09-01   # ある期間への予測の全履歴
-mios validate      # 発表済みの対象期間について予測を採点
+mios consensus     # 機関予測を保存し、自分の予測と並べて表示
+mios validate      # 発表済みの対象期間について予測を採点（機関予測も同時に）
 mios analyze       # マクロ8次元スコア + Gold / USDJPY のマクロバイアス
-mios accuracy      # MAE / 対ナイーブ skill / 方向的中 / キャリブレーション
+mios accuracy      # MAE / 対ナイーブ skill / 方向的中 / キャリブレーション / 機関予測との比較
 mios report        # reports/daily/YYYY-MM-DD.md を生成
 
 mios daily         # 上記を migrate から report まで一気通貫で実行
@@ -84,7 +85,8 @@ mios health        # ソース別の死活（失敗があれば exit 1）
 | 3 | Data layer（series / observations / releases / calendar、CSV adapter） | ✅ 完了 |
 | 4 | Historical / Vintage（ALFRED 真vintage、as-of 漏れの静的検出、JGB） | ✅ 完了 |
 | 5 | Forecast layer（CPI / NFP 予測、予測vintageの保存） | ✅ 完了 |
-| 6 | News / Institutional forecasts | 未着手（APIキー・外部到達が必要） |
+| 6a | Institutional forecasts（機関予測との比較） | ✅ 完了（ADR-012） |
+| 6b | News Intelligence | 未着手（`ANTHROPIC_API_KEY` と外部到達が必要） |
 | 7 | Cross asset（Gold / USDJPY 解釈） | ✅ 完了 |
 | 8 | Daily reports（`reports/daily/YYYY-MM-DD.md`） | ✅ 完了 |
 | 9 | Validation（予測精度の検証） | ✅ 完了（Phase 6-8 に先行） |

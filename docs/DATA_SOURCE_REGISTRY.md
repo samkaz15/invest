@@ -81,8 +81,10 @@ Phase 1 は**無料〜低額ソースのみ**で開始し、見逃し検知（EV
 | 為替 | USDJPY / ドル指数 | Twelve Data（ADR-011）＋ FRED（DEXJPUS / DTWEXBGS） | 2 / 1 | ✅ 設定済。クロス円は未着手 |
 | コモディティ | Gold / Silver / Oil / Copper | Twelve Data | 2 | ✅ Gold 設定済。他は未着手 |
 | リスク | VIX | FRED（VIXCLS） | 1 | ✅ 設定済。株価指数は未着手 |
-| 機関予測 | 各社の**公開**リサーチ・公開記事 | 各社サイト、大手報道 | 2-3 | Phase 6。**有料情報は取得しない** |
-| ニュース | Fed / BOJ 公式、大手金融報道 RSS | 各公式、Reuters / Bloomberg / 日経 | 1-3 | Phase 6 |
+| 機関予測 | **CPI / コア CPI の月次 nowcast** | Cleveland Fed inflation nowcasting（ADR-012） | 1 | ✅ 設定済（**URL・列名は未検証**）。MIOS と同条件で採点される |
+| 機関予測 | **NFP / 失業率の月次コンセンサス** | — | — | **存在しない。** 有料調査（Bloomberg / Reuters）のみで、中央銀行は月次発表値の予測を出していない。`config/external.yaml` の `uncovered` に明示列挙 |
+| 機関予測 | 各社の**公開**リサーチ・公開記事 | 各社サイト、大手報道 | 2-3 | 未着手。**有料情報は取得しない** |
+| ニュース | Fed / BOJ 公式、大手金融報道 RSS | 各公式、Reuters / Bloomberg / 日経 | 1-3 | Phase 6b |
 
 **「未定」「要確認」「未着手」を空欄にせず明記する。** 取得できないものは欠損として扱い、
 推測値で埋めない（憲法第4条3項）。

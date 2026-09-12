@@ -38,6 +38,7 @@ from mios.config.forecast import DriverSpec, TargetSpec
 from mios.prediction.features import (
     MIN_HISTORY,
     Series,
+    changes_of,
     deviation_from_trend,
     diff_series,
     load,
@@ -69,17 +70,6 @@ class _Assembly:
 
     drivers: list[Driver]
     gaps: list[str]
-
-
-def _target_changes(series: Series, spec: TargetSpec) -> list[float]:
-    """The target expressed as the thing actually being forecast.
-
-    An index (CPI) is forecast as a month-over-month percent change; a
-    level (payrolls) as a month-over-month difference. Forecasting the
-    level itself would make a 0.3% miss look like a rounding error next to
-    a 325-point index.
-    """
-    return mom_series(series) if spec.transform == "pct_change" else diff_series(series)
 
 
 def _driver_reading(
@@ -132,7 +122,7 @@ def forecast_target(
         logger.warning("%s: no observations as of %s", spec.series_id, as_of.isoformat())
         return None
 
-    changes = _target_changes(target, spec)
+    changes = changes_of(target, spec)
     baseline = trailing_mean(changes, window=spec.baseline_window)
     if baseline is None:
         logger.warning(

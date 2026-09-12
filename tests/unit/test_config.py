@@ -85,3 +85,46 @@ def test_missing_file_is_config_error(tmp_path: Path) -> None:
 def test_missing_assets_dir_rejected(tmp_path: Path) -> None:
     with pytest.raises(ConfigError, match="assets"):
         load_config(tmp_path)
+
+
+# --------------------------------------------- institutional forecast config
+
+
+def test_every_forecast_target_is_either_benchmarked_or_declared_uncovered() -> None:
+    """The declaration that keeps the scoreboard from reading as complete.
+
+    Two of the four targets have no free institutional forecast. A
+    head-to-head table covering only the other two looks like the whole
+    picture unless the gap is named, so `uncovered` is required and is
+    checked against the target list here rather than trusted.
+    """
+    root = load_config(REPO_CONFIG)
+    targets = {t.series_id for t in root.forecast.targets}
+    covered = {t.target_series_id for p in root.external.providers for t in p.targets}
+    assert covered | set(root.external.uncovered) == targets, (
+        "every forecast target must be either benchmarked or explicitly declared uncovered"
+    )
+    assert not covered & set(root.external.uncovered)
+
+
+def test_every_external_provider_is_also_a_collectable_source() -> None:
+    """A provider with no source file is a benchmark nothing ever fetches."""
+    root = load_config(REPO_CONFIG)
+    for provider in root.external.providers:
+        assert provider.provider_id in root.sources
+
+
+def test_an_external_provider_must_state_its_conversion_and_its_url() -> None:
+    """Both are load-bearing.
+
+    Without the scale, a figure published in percent is compared against a
+    fraction and the provider looks wrong by two orders of magnitude — which
+    reads as a finding rather than as a bug. Without the URL, a stored
+    forecast is a number nobody can go and check (指示書 §26).
+    """
+    root = load_config(REPO_CONFIG)
+    for provider in root.external.providers:
+        assert provider.source_url.startswith("https://")
+        for target in provider.targets:
+            assert target.scale > 0
+            assert target.raw_unit

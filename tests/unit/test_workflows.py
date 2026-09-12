@@ -76,6 +76,9 @@ def test_the_chain_covers_every_step_from_collection_to_report() -> None:
         "collect",
         "normalize",
         "forecast",
+        # After forecast: the consensus is printed beside the day's own call,
+        # so there has to be a call for it to sit beside.
+        "consensus",
         "analyze",
         "validate",
         "report",
@@ -91,7 +94,7 @@ def test_collection_may_fail_but_the_report_may_not_be_skipped() -> None:
     from mios.cli import DAILY_CHAIN
 
     tolerant = {step: ok for step, ok in DAILY_CHAIN}
-    for step in ("collect", "normalize", "forecast", "analyze", "validate"):
+    for step in ("collect", "normalize", "forecast", "consensus", "analyze", "validate"):
         assert tolerant[step] is True, f"{step} must not abort the run before the report"
     assert tolerant["report"] is False
     assert tolerant["migrate"] is False

@@ -34,7 +34,10 @@ L4 分析    analysis    次元スコア（Signal の集合 → DimensionReport�
    ↓
 L5 統合    scoring     DimensionReport → Score Card（weight・対立・完全性）
 L6 予測    prediction  先行指標 → CPI / NFP 予測（毎日1行・上書き禁止）
+                       機関予測の取り込みも同居（external.py）——
+                       「他人の予測」も予測 vintage であり、同じ規律で保存する
 L7 検証    validation  予測 × 初回発表値 → 誤差・対ナイーブ skill・キャリブレーション
+                       + 機関予測との head-to-head（benchmark.py）
 L8 出力    reports     保存済み成果物の整形 → reports/daily/YYYY-MM-DD.md
 ```
 
@@ -267,8 +270,9 @@ mios forecast [--as-of ISO8601]                   # 予測を実行し、その�
 mios forecasts <series_id> <YYYY-MM-DD>           # ある対象期間への予測の全履歴
 mios analyze [--as-of ISO8601]                    # マクロ8次元 + Gold / USDJPY ビュー
 mios report [--as-of ISO8601]                     # reports/daily/YYYY-MM-DD.md を生成
-mios validate [--as-of ISO8601]                   # 発表済みの対象期間の予測を採点
-mios accuracy [--series <id>]                     # MAE / 対ナイーブ skill / 方向 / キャリブレーション
+mios consensus [--as-of ISO8601]                  # 機関予測を保存し、自分の予測と並べて表示
+mios validate [--as-of ISO8601]                   # 発表済みの対象期間の予測を採点（機関予測も同時に採点）
+mios accuracy [--series <id>]                     # MAE / 対ナイーブ skill / 方向 / キャリブレーション / 機関予測との比較
 mios extract       # 未処理のニュース raw を候補キューへ
 mios health        # ソース別の死活・DLQ 件数（失敗があれば exit 1）
 ```
@@ -333,6 +337,8 @@ mios health        # ソース別の死活・DLQ 件数（失敗があれば exi
 | A-2 | ~~`market_snapshots` に vintage がない~~ | ✅ Phase 3 完了：`0005` で `observations`（vintage付き）を追加。旧テーブルは DROP せず参照を止めた |
 | A-3 | **FRED の series_id・Treasury CSV の列名・Twelve Data のレスポンス形状・MOF の CSV 形式がいずれも未検証**（本作業環境からは外部到達がゲートウェイで 403 拒否される）。parser は記録済み fixture に対してのみ検証済み | **`mios verify-sources` で30秒で確認できる**（`.github/workflows/verify-sources.yml` から手動実行可）。全ソースを取得・parse し、**何も保存しない**。誤りは元々「収集失敗」として表面化する設計なので静かな誤データにはならないが、毎朝07:10に気づくのは遅すぎる |
 | A-4 | ~~統合テストは PostgreSQL がないと skip される~~ | ✅ Phase 2 完了：CI に PostgreSQL サービスを用意し、skip したらビルドを落とす |
+| A-9 | **NFP と失業率には無料の機関予測が存在しない**（月次コンセンサスは Bloomberg / Reuters の有料調査、SEP・SPF は四半期の別の問い）。この2つの skill はナイーブ基準に対する主張でしかなく、CPI 側より弱い | 構造的な限界（ADR-012）。`config/external.yaml` の `uncovered` に明示列挙し、スキーマが空リストを拒否する。`mios accuracy` と日次レポートが毎回名指しで表示する |
+| A-10 | **Cleveland Fed nowcast の URL・列名が未検証**。A-3 と同じ理由 | `mios verify-sources` が取得だけでなく **parse まで**検査する（`ExtraParse` を注入）。列名が違えば**実在する列名を列挙して**失敗するので、修正は `config/external.yaml` の1行 |
 | A-5 | 日本の **CPI・賃金**が未登録（JGB は Phase 4 で追加済）。e-Stat は API キーと専用 parser を要する | 未定。**データのない系列を先に登録しない**（placeholder は作らない） |
 | A-6 | ~~`vintage_at` が取得時刻でしかない~~ | ✅ Phase 4 完了：主要な改定系列は ALFRED の `realtime_start` から真の vintage を取り込む（`_vintage` 系列）。ALFRED を引かない系列は取得時刻のままで、`mios series` が `published` / `fetched` で区別を表示する |
 | A-8 | **driver 系列の多くは ALFRED を引いていない**ため、過去日のバックテストでは driver の読みが当時の値ではなく「取得時点の値」になる。`_vintage` 系列を持つ5指標のみ厳密 | driver 側にも ALFRED を広げるかを、収集コストと精度改善を見て判断する。`mios series` の `published` / `fetched` 列で現状が分かる |

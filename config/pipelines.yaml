@@ -47,6 +47,10 @@ jobs:
   - { job_id: collect_td_xauusd, task: collect, source_id: src_twelvedata_xauusd, interval_minutes: 360 }
   - { job_id: collect_td_usdjpy, task: collect, source_id: src_twelvedata_usdjpy, interval_minutes: 360 }
   - { job_id: collect_mof_jgb, task: collect, source_id: src_mof_jgb_yields, interval_minutes: 360 }
+  # The Cleveland Fed nowcast moves most days, so it is polled like a
+  # daily series rather than like a monthly release. Each fetch that
+  # carries a changed figure becomes a new forecast vintage.
+  - { job_id: collect_clevelandfed_nowcast, task: collect, source_id: src_clevelandfed_nowcast, interval_minutes: 360 }
   - { job_id: collect_alfred_cpiaucsl, task: collect, source_id: src_alfred_cpiaucsl, interval_minutes: 10080 }
   - { job_id: collect_alfred_cpilfesl, task: collect, source_id: src_alfred_cpilfesl, interval_minutes: 10080 }
   - { job_id: collect_alfred_payems, task: collect, source_id: src_alfred_payems, interval_minutes: 10080 }

@@ -19,6 +19,7 @@ the parser notices.
 from collections.abc import Callable
 from dataclasses import dataclass, field
 
+from mios.common.errors import MiosError
 from mios.common.logutil import get_logger
 from mios.config.models import SourceSpec
 from mios.config.series import SeriesRegistry
@@ -36,6 +37,25 @@ class SeriesCheck:
     ok: bool
     detail: str
     points: int = 0
+
+
+@dataclass(frozen=True)
+class ExtraParse:
+    """A parse check this module cannot reach for itself.
+
+    Some sources carry no time series at all — an institutional forecast
+    file is read by the prediction layer, which imports ingestion and so
+    cannot be imported back. Without this the verifier would fetch such a
+    source, find no series pointing at it, and report it healthy on an HTTP
+    200 alone — which is precisely the check that does not catch a renamed
+    column.
+
+    So the composition root injects the parse. ``parse`` takes the payload
+    and returns how many usable values it found, raising on failure.
+    """
+
+    label: str
+    parse: Callable[[str], int]
 
 
 @dataclass
@@ -82,11 +102,13 @@ class SourceVerifier:
         registry: SeriesRegistry,
         client: HttpClient | None = None,
         adapter_factory: Callable[[SourceSpec], SourceAdapter] = build_adapter,
+        extra: dict[str, list[ExtraParse]] | None = None,
     ) -> None:
         self._sources = sources
         self._registry = registry
         self._client = client or HttpClient()
         self._adapter = adapter_factory
+        self._extra = extra or {}
 
     def check(self, source_id: str | None = None) -> VerifyReport:
         report = VerifyReport()
@@ -147,6 +169,13 @@ class SourceVerifier:
 
         payload = result.drafts[0].payload_text
         checks: list[SeriesCheck] = []
+        for extra in self._extra.get(source_id, []):
+            try:
+                found = extra.parse(payload)
+            except MiosError as exc:
+                checks.append(SeriesCheck(extra.label, False, str(exc)))
+                continue
+            checks.append(SeriesCheck(extra.label, True, f"{found} value(s)", found))
         for series_spec in self._registry.for_source(source_id):
             try:
                 points = get_parser(series_spec.parser)(payload, series_spec)

@@ -28,7 +28,11 @@ ALLOWED: dict[str, set[str]] = {
     "ingestion": {"common", "config", "audit", "storage", "scheduler", "series"},
     "extraction": {"common", "config", "audit", "storage", "ingestion", "knowledge"},
     "series": {"common", "config", "audit", "storage", "ingestion"},
-    "prediction": {"common", "config", "audit", "storage", "series"},
+    # prediction -> ingestion: the external-forecast ingestor reads raw
+    # payloads out of the raw store, exactly as the series normalizer
+    # does. It is the same "bytes already fetched become rows" step, one
+    # layer over; ingestion still knows nothing about prediction.
+    "prediction": {"common", "config", "audit", "storage", "series", "ingestion"},
     "validation": {"common", "config", "audit", "storage", "series", "prediction"},
     # reports sits at the bottom of the graph: it may read everything and is
     # read by nothing, which is what keeps it a formatter rather than a
