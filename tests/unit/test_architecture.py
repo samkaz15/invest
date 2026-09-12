@@ -27,8 +27,21 @@ ALLOWED: dict[str, set[str]] = {
     "series": {"common", "config", "audit", "storage", "ingestion"},
     "prediction": {"common", "config", "audit", "storage", "series"},
     "validation": {"common", "config", "audit", "storage", "series", "prediction"},
+    # reports sits at the bottom of the graph: it may read everything and is
+    # read by nothing, which is what keeps it a formatter rather than a
+    # second place analysis quietly happens.
+    "reports": {
+        "common",
+        "config",
+        "audit",
+        "storage",
+        "series",
+        "prediction",
+        "analysis",
+        "validation",
+    },
     "knowledge": {"common", "config", "audit", "storage"},
-    "analysis": {"common", "config", "audit", "storage", "knowledge"},
+    "analysis": {"common", "config", "audit", "storage", "knowledge", "series", "prediction"},
     "scoring": {"common", "config", "audit", "storage", "knowledge", "analysis"},
 }
 

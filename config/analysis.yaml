@@ -1,0 +1,169 @@
+# Macro dimensions and the two asset views.
+#
+# Every dimension and every view must state its blind_spots, and the schema
+# refuses an empty list. A yield-and-dollar model of gold is not wrong, it is
+# incomplete — and the incompleteness is invisible in the output unless
+# someone writes it down. Requiring the field means nobody can add a
+# dimension without saying what it cannot see.
+#
+# Weights are points per standard deviation, signed. The sign lives in the
+# weight, not in the reader's head: more jobless claims is a weaker labour
+# market, so that weight is negative.
+method_version: analysis/v1
+
+dimensions:
+  - dimension: inflation
+    label: US inflation
+    stance_words: [hot, balanced, cooling]
+    blind_spots:
+      - "Tariffs and administered prices move CPI without showing up in any market series here."
+      - "Shelter enters the CPI with a long lag, so a turn in market rents is invisible for months."
+    signals:
+      - { series_id: ser_us_core_cpi_index, label: Core CPI, measure: trend_z, weight: 12.0 }
+      - { series_id: ser_us_cpi_shelter, label: Shelter, measure: trend_z, weight: 6.0 }
+      - { series_id: ser_us_cpi_services_ex_energy, label: Services ex energy, measure: trend_z, weight: 6.0 }
+      - { series_id: ser_us_breakeven_10y, label: 10Y breakeven, measure: change_z, weight: 5.0 }
+      - { series_id: ser_us_gasoline_price, label: Gasoline, measure: trend_z, weight: 3.0 }
+
+  - dimension: labor
+    label: US labour market
+    stance_words: [tight, balanced, loosening]
+    blind_spots:
+      - "Strikes, weather and seasonal-adjustment quirks distort claims for weeks at a time."
+      - "Immigration and participation shifts change payroll growth without changing labour tightness."
+    signals:
+      - { series_id: ser_us_initial_claims, label: Initial claims, measure: level_z, weight: -8.0 }
+      - { series_id: ser_us_continuing_claims, label: Continuing claims, measure: level_z, weight: -6.0 }
+      - { series_id: ser_us_unemployment_rate, label: Unemployment rate, measure: change_z, weight: -8.0 }
+      - { series_id: ser_us_nfp_level, label: Payrolls, measure: change_z, weight: 8.0 }
+      - { series_id: ser_us_temp_help, label: Temporary help, measure: change_z, weight: 4.0 }
+      - { series_id: ser_us_avg_hourly_earnings, label: Average hourly earnings, measure: trend_z, weight: 4.0 }
+
+  - dimension: growth
+    label: US growth
+    stance_words: [expanding, steady, slowing]
+    blind_spots:
+      - "Only two monthly activity series feed this; surveys and housing are not collected yet."
+      - "Quarterly GDP is far too slow to register a turn within the month."
+    signals:
+      - { series_id: ser_us_retail_sales, label: Retail sales, measure: trend_z, weight: 10.0 }
+      - { series_id: ser_us_industrial_production, label: Industrial production, measure: trend_z, weight: 8.0 }
+
+  - dimension: rates
+    label: US rates
+    stance_words: [rising, stable, falling]
+    blind_spots:
+      - "Issuance, auction demand and Treasury refunding move yields for reasons unrelated to the macro picture."
+    signals:
+      - { series_id: ser_us_treasury_2y, label: UST 2Y, measure: change_z, weight: 10.0 }
+      - { series_id: ser_us_treasury_10y, label: UST 10Y, measure: change_z, weight: 8.0 }
+      - { series_id: ser_us_real_yield_10y, label: 10Y real yield, measure: change_z, weight: 8.0 }
+
+  - dimension: fed
+    label: Fed policy stance
+    stance_words: [hawkish, neutral, dovish]
+    blind_spots:
+      - "Market-implied cut probabilities are not collected, so this reads policy expectations only through the 2Y and the effective rate."
+      - "Speeches, the dot plot and the minutes carry information no yield series shows."
+    signals:
+      - { series_id: ser_us_treasury_2y, label: UST 2Y, measure: change_z, weight: 12.0 }
+      - { series_id: ser_us_fed_funds_effective, label: Effective fed funds, measure: change_z, weight: 8.0 }
+      - { series_id: ser_us_real_yield_5y, label: 5Y real yield, measure: change_z, weight: 6.0 }
+
+  - dimension: boj
+    label: BOJ policy stance
+    stance_words: [hawkish, neutral, dovish]
+    blind_spots:
+      - "Japanese CPI and wage data are not collected yet, so this reads BOJ expectations only through JGB yields."
+      - "Yield-curve-control operations move JGBs directly and are not distinguishable here from a change in stance."
+    signals:
+      - { series_id: ser_jp_jgb_2y, label: JGB 2Y, measure: change_z, weight: 12.0 }
+      - { series_id: ser_jp_jgb_10y, label: JGB 10Y, measure: change_z, weight: 10.0 }
+
+  - dimension: fx
+    label: Dollar
+    stance_words: [strengthening, stable, weakening]
+    blind_spots:
+      - "MOF intervention in USDJPY leaves no trace in any series collected here."
+    signals:
+      - { series_id: ser_us_dxy, label: Broad dollar index, measure: trend_z, weight: 12.0 }
+
+  - dimension: risk
+    label: Risk appetite
+    stance_words: [risk-off, calm, risk-on]
+    blind_spots:
+      - "Equity indices and credit spreads are not collected, so this reads risk only through the VIX."
+      - "Geopolitical escalation registers only once it reaches implied volatility, which can be days late."
+    signals:
+      - { series_id: ser_us_vix, label: VIX, measure: level_z, weight: 12.0 }
+
+views:
+  # Inflation -> Fed expectations -> real yield -> dollar -> gold.
+  - view_id: gold_bias
+    asset_id: ent_asset_xauusd
+    label: Gold macro bias
+    stance_words: [supportive, neutral, unsupportive]
+    blind_spots:
+      - "Central-bank gold buying has been a first-order driver and appears in no yield or dollar series."
+      - "Geopolitical risk premium enters gold before it enters the VIX."
+      - "Physical demand from India and China is seasonal and entirely unobserved here."
+      - "This is an interpretation of macro conditions, not a price forecast. MIOS does not forecast prices."
+    links:
+      - dimension: rates
+        weight: -0.30
+        rationale: >-
+          Gold pays no coupon, so a rising real yield raises the cost of
+          holding it. This is the single strongest observable channel.
+      - dimension: fed
+        weight: -0.25
+        rationale: >-
+          A hawkish Fed raises real yields and the dollar together, which is
+          why this is weighted alongside rates rather than inside it.
+      - dimension: fx
+        weight: -0.25
+        rationale: >-
+          Gold is priced in dollars, so a stronger dollar mechanically
+          weighs on it for non-dollar buyers.
+      - dimension: inflation
+        weight: 0.10
+        rationale: >-
+          Small and deliberately so: inflation supports gold only when it
+          outruns the policy response, and the rates and fed links already
+          carry that response.
+      - dimension: risk
+        weight: -0.20
+        rationale: >-
+          Negative because the risk dimension scores risk-on as negative;
+          a flight to safety therefore reads as supportive for gold.
+
+  # US data -> Fed -> US 2Y, against Japan data -> BOJ -> JGB.
+  - view_id: usdjpy_bias
+    asset_id: ent_asset_usdjpy
+    label: USDJPY macro bias
+    stance_words: [higher, neutral, lower]
+    blind_spots:
+      - "MOF intervention can reverse weeks of rate-differential drift in a day and is not observable here."
+      - "Japanese CPI and wage data are not collected, so the BOJ side reads through JGB yields alone."
+      - "Carry unwinds driven by positioning move USDJPY without any change in the differential."
+      - "This is an interpretation of macro conditions, not a price forecast. MIOS does not forecast prices."
+    links:
+      - dimension: fed
+        weight: 0.35
+        rationale: >-
+          The US leg of the rate differential. A hawkish Fed widens the gap
+          in the dollar's favour.
+      - dimension: rates
+        weight: 0.25
+        rationale: >-
+          US yields carry the differential directly, whatever the Fed is
+          saying about them.
+      - dimension: boj
+        weight: -0.30
+        rationale: >-
+          The Japan leg, with the opposite sign: a hawkish BOJ narrows the
+          differential and pulls USDJPY down.
+      - dimension: risk
+        weight: 0.15
+        rationale: >-
+          The yen strengthens in a flight to safety, so risk-on conditions
+          (a negative risk score) read as yen-weak here.

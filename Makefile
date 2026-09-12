@@ -5,7 +5,7 @@ VENV := .venv
 PIP := $(VENV)/bin/pip
 RUN := $(VENV)/bin/python -m
 
-.PHONY: install lint fmt typecheck test check collect health clean
+.PHONY: install lint fmt typecheck test check collect health daily-report clean
 
 $(VENV)/bin/python:
 	$(PYTHON) -m venv $(VENV)
@@ -35,6 +35,15 @@ collect:  ## Collect every enabled source once
 
 health:  ## Per-source health; non-zero exit if any source is failing
 	$(RUN) mios.cli health
+
+daily-report:  ## The full daily chain, ending in reports/daily/YYYY-MM-DD.md
+	$(RUN) mios.cli migrate
+	$(RUN) mios.cli collect
+	$(RUN) mios.cli normalize
+	$(RUN) mios.cli forecast
+	$(RUN) mios.cli analyze
+	$(RUN) mios.cli validate
+	$(RUN) mios.cli report
 
 clean:
 	rm -rf $(VENV) .mypy_cache .ruff_cache .pytest_cache htmlcov .coverage

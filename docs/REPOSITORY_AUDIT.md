@@ -689,8 +689,8 @@ MAE / RMSE / Directional Accuracy / Upside-Downside Accuracy / Calibration
 | **4** | Historical / Vintage | ALFRED vintage 取り込み、`as_of` 必須のクエリAPI、as-of リーク検出テスト、JGB（MOF CSV） | +450 | ✅ **完了**（110テスト緑。1回のALFRED取込から9月末・8月中旬・12月の3時点を再現） |
 | **5** | Forecast layer | `mios.prediction`（core CPI / headline CPI / NFP / 失業率）、`predictions` テーブル、先行指標15系列、上書き禁止トリガ | +900 | ✅ **完了**（140テスト緑。同日再実行は no-op、日次で vintage が積み上がることを確認） |
 | **6** | News / Institutional | `mios.news`（20分類 taxonomy）、`mios.forecasts`（機関予測の**変化**を保存）、LLMは分類・要約のみ（数値生成禁止） | +600 | LLM出力に数値フィールドが存在しないことをテストで保証 |
-| **7** | Cross Asset | `mios.analysis`（macro_scores → USDJPY / Gold バイアス）、各スコアに入力・weight・式・timestamp を保存 | +500 | `why` コマンドでスコアの再現計算が全て表示される |
-| **8** | Daily Reports | `mios.reports` → `reports/daily/YYYY-MM-DD.md`（17ブロック）、`daily_deltas`（昨日差分） | +500 | `make daily-report` が実行でき、欠損が明示される |
+| **7** | Cross Asset | `mios.analysis`（マクロ8次元 → USDJPY / Gold バイアス）、各スコアに入力・weight・寄与・**blind_spots** を保存 | +600 | ✅ **完了**。168テスト緑。スコアは保存行だけから再現可能 |
+| **8** | Daily Reports | `mios.reports` → `reports/daily/YYYY-MM-DD.md`、前日差分は vintage の引き算で算出（別テーブル不要） | +550 | ✅ **完了**。`make daily-report` が通り、未取得系列・未実装セクションを明示 |
 | **9** | Validation | `mios.validation`（MAE/RMSE/bias/方向/キャリブレーション）、ナイーブとの比較（`skill`）、`forecast_errors` | +550 | ✅ **完了（Phase 6-8 に先行実施）**。154テスト緑。1年分の予測を as-of 再生 → 採点 → scoreboard まで疎通 |
 | **10** | GitHub Actions | `.github/workflows/{ci,daily}.yml`、PostgreSQLサービスコンテナで**統合テストをCIで実行**、失敗ソース・欠損・レポート生成可否をログに明示、意味のあるcommit message | +200(yaml) | CIが緑、日次ワークフローが手動実行で通る |
 
@@ -704,7 +704,12 @@ observations / predictions だけで完結し、しかも**憲法第2条が定�
 成功条件そのもの**だから。予測が毎日積み上がっても、それを測る仕組みが
 無ければ「半年後に検証できる状態」には到達しない。
 
-残りは Phase 7（クロスアセット）→ 8（日次レポート）→ 6（ニュース）→ 10（Actions）。
+Phase 7・8 も完了し、残るは Phase 6（ニュース・機関予測）と Phase 10（GitHub Actions）のみ。
+
+なお `daily_deltas` テーブルは**作らなかった**。observations・predictions・
+macro_scores がすべて vintage 付きで保存されるため、前日差分は
+別テーブルに書き出すまでもなく引き算で出る。
+差分を二重に持てば、いつか食い違う。
 
 ### 17.2 重要な順序上の注意
 

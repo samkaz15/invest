@@ -35,7 +35,13 @@ L4 分析    analysis    次元スコア（Signal の集合 → DimensionReport�
 L5 統合    scoring     DimensionReport → Score Card（weight・対立・完全性）
 L6 予測    prediction  先行指標 → CPI / NFP 予測（毎日1行・上書き禁止）
 L7 検証    validation  予測 × 初回発表値 → 誤差・対ナイーブ skill・キャリブレーション
+L8 出力    reports     保存済み成果物の整形 → reports/daily/YYYY-MM-DD.md
 ```
+
+`analysis` はマクロ8次元スコアと Gold / USDJPY の2ビューを作る。
+`reports` は**保存済みの行を整形するだけ**で、計算を一切行わない
+（`tests/integration/test_analysis_report_db.py` が
+ report モジュールが scorer/forecaster を import しないことを検査する）。
 
 ### 1.1 残りの層（✅ 以外は**現在は未実装**）
 
@@ -47,8 +53,8 @@ L7 検証    validation  予測 × 初回発表値 → 誤差・対ナイーブ 
 | `forecasts/` | 4 | 機関投資家予測（値そのものより**変化**） | 6 |
 | `news/` | 5 | Gold / USDJPY / マクロ予測に影響するニュースのみ分類 | 6 |
 | ~~`prediction/`~~ | 6 | **CPI / NFP 予測** — ✅ Phase 5 完了 | ✅ |
-| `analysis/` | 7 | マクロスコア → クロスアセット → Gold / USDJPY 解釈 | 7 |
-| `reports/` | 8 | 日次 Markdown（前日差分を必ず含む） | 8 |
+| ~~`analysis/`~~ | 7 | マクロスコア → クロスアセット → Gold / USDJPY 解釈 — ✅ Phase 7 完了 | ✅ |
+| ~~`reports/`~~ | 8 | 日次 Markdown（前日差分を必ず含む） — ✅ Phase 8 完了 | ✅ |
 | ~~`validation/`~~ | – | 予測精度検証 — ✅ Phase 9 完了（順序を前倒し） | ✅ |
 
 **Agent は8つ。増やさない。** 1サブパッケージ = 1責務。
@@ -191,7 +197,22 @@ driver は2種類：
 `ScoreCard` は各次元の score・weight・contribution・top signals を保存する。
 「なぜ +0.8 なのか」が保存された行だけから答えられない計算は作らない。
 
-### 3.9 欠損は成果物に出す
+### 3.9 「見えていないもの」を必ず書く
+
+すべてのマクロ次元・資産ビューは `blind_spots` を**必須**とし、
+設定スキーマが空リストを拒否する。
+
+実質金利とドルで金を説明するモデルは、間違ってはいないが**不完全**である。
+そして不完全さは出力からは見えない。誰かが書き留めない限り、
+読み手はモデルの沈黙を「そういう要因が無かった」と読む。
+
+例（`config/analysis.yaml` より）：
+
+- 中央銀行の金購入は一次的な要因だが、どの利回り系列にも現れない
+- MOF の為替介入は金利差ドリフトを1日で反転させるが、観測できない
+- 地政学リスクプレミアムは VIX に現れる前に金に現れる
+
+### 3.10 欠損は成果物に出す
 
 `DimensionReport.data_gaps` と、無効化されたソースの一覧は必ずレポートに載る。
 `mios health` は失敗中のソースがあれば非ゼロで終了する。
@@ -211,6 +232,7 @@ driver は2種類：
 | `config/scoring.yaml` | 次元ウェイト（`weights_version` が全 score card に刻印される） |
 | `config/pipelines.yaml` | ジョブとその実行間隔、リトライ・ブレーカのパラメータ |
 | `config/forecast.yaml` | 予測対象と先行指標・weight・その根拠（`method_version` が全予測に刻印される） |
+| `config/analysis.yaml` | マクロ次元・資産ビューの構成・weight・伝播経路の根拠・**blind_spots（必須）** |
 
 新しいプロバイダの追加は YAML 1枚。
 新しい *kind*（`rss` / `http_json` / `http_csv` 以外）の追加だけがコード変更になる。
@@ -242,6 +264,8 @@ mios observations <series_id> [--as-of ISO8601]   # その時点で知り得た�
 mios revisions <series_id> <YYYY-MM-DD>           # ある参照期間の全vintage
 mios forecast [--as-of ISO8601]                   # 予測を実行し、その日の vintage を保存
 mios forecasts <series_id> <YYYY-MM-DD>           # ある対象期間への予測の全履歴
+mios analyze [--as-of ISO8601]                    # マクロ8次元 + Gold / USDJPY ビュー
+mios report [--as-of ISO8601]                     # reports/daily/YYYY-MM-DD.md を生成
 mios validate [--as-of ISO8601]                   # 発表済みの対象期間の予測を採点
 mios accuracy [--series <id>]                     # MAE / 対ナイーブ skill / 方向 / キャリブレーション
 mios extract       # 未処理のニュース raw を候補キューへ

@@ -36,6 +36,11 @@ class Settings(BaseSettings):
         return self.var_dir / "audit"
 
     @property
+    def reports_dir(self) -> Path:
+        """Generated reports. Committed: they are the human deliverable."""
+        return Path("reports")
+
+    @property
     def raw_dir(self) -> Path:
         """Raw store root: ``data/raw/<source_id>/<YYYY-MM>/<raw_item_id>.json``"""
         return self.data_dir / "raw"

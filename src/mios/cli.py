@@ -19,6 +19,8 @@ import re
 import sys
 from dataclasses import dataclass
 
+from mios.analysis.macro import MacroScore, asset_view, score_dimension
+from mios.analysis.repo import MacroScoreRepo
 from mios.audit import AuditLogger, JsonlAuditSink
 from mios.common.errors import MiosError
 from mios.common.logutil import get_logger, setup_logging
@@ -35,6 +37,7 @@ from mios.ingestion.rawstore import FileRawStore
 from mios.knowledge.store import CurationQueue
 from mios.prediction.bridge import forecast_target
 from mios.prediction.repo import ForecastRepo
+from mios.reports.daily import write_report
 from mios.scheduler.breaker import CircuitBreaker
 from mios.scheduler.jobs import JobRunner
 from mios.scheduler.ratelimit import RateLimiter
@@ -285,6 +288,59 @@ def _cmd_forecasts(app: App, series_id: str, period: str) -> int:
     return 0
 
 
+def _cmd_analyze(app: App, as_of: str | None) -> int:
+    """Score the macro dimensions and build the two asset views.
+
+    The views are interpretations of macro conditions, not price forecasts —
+    MIOS does not forecast prices (CONSTITUTION.md Art.10). Each one prints
+    what it cannot see alongside what it can, because a reader who is not
+    told will read the model's silence as absence.
+    """
+    cutoff = parse_utc(as_of) if as_of else utc_now()
+    observations = ObservationRepo(app.db)
+    repo = MacroScoreRepo(app.db)
+    config = app.config.analysis
+
+    scores: dict[str, MacroScore] = {}
+    for dimension_spec in config.dimensions:
+        score = score_dimension(observations, dimension_spec, cutoff)
+        scores[dimension_spec.dimension] = score
+        repo.save(score)
+        gaps = f"  gaps={len(score.data_gaps)}" if score.data_gaps else ""
+        print(
+            f"{dimension_spec.label:<24} {score.score:+6.0f}  {score.stance:<12} "
+            f"confidence={score.confidence:.2f}  signals={len(score.signals)}{gaps}"
+        )
+
+    print()
+    for view_spec in config.views:
+        view = asset_view(view_spec, scores, cutoff)
+        repo.save(view)
+        print(
+            f"■ {view_spec.label}: {view.score:+.0f} ({view.stance}) "
+            f"confidence={view.confidence:.2f}"
+        )
+        for signal in sorted(view.signals, key=lambda s: -abs(s.points)):
+            print(f"    {signal.points:+4d}pt  {signal.rationale}")
+        for contradiction in view.contradictions:
+            print(f"    against  {contradiction}")
+        for gap in view.data_gaps:
+            print(f"    gap      {gap}")
+        print("    見えていないもの:")
+        for blind in view.blind_spots:
+            print(f"      - {blind}")
+        print()
+    return 0
+
+
+def _cmd_report(app: App, as_of: str | None) -> int:
+    """Write reports/daily/YYYY-MM-DD.md from what is already stored."""
+    cutoff = parse_utc(as_of) if as_of else utc_now()
+    path = write_report(app.db, app.config, cutoff, app.settings.reports_dir)
+    print(f"report written: {path}")
+    return 0
+
+
 def _cmd_validate(app: App, as_of: str | None) -> int:
     """Score every forecast whose target period has since printed.
 
@@ -453,8 +509,12 @@ def main(argv: list[str] | None = None) -> int:
     p_fcs = sub.add_parser("forecasts", help="every forecast made for one target period")
     p_fcs.add_argument("series_id")
     p_fcs.add_argument("period", help="target period, YYYY-MM-DD")
+    p_an = sub.add_parser("analyze", help="macro dimension scores and the Gold / USDJPY views")
+    p_an.add_argument("--as-of", default=None, help="build from data knowable at this instant")
     p_val = sub.add_parser("validate", help="score forecasts whose period has printed")
     p_val.add_argument("--as-of", default=None, help="score as at a past instant (ISO-8601)")
+    p_rep = sub.add_parser("report", help="write today's daily Markdown report")
+    p_rep.add_argument("--as-of", default=None, help="render as at a past instant (ISO-8601)")
     p_acc = sub.add_parser("accuracy", help="MAE / skill vs naive / directional / calibration")
     p_acc.add_argument("--series", default=None, help="limit to one target series_id")
     args = parser.parse_args(list(argv) if argv is not None else sys.argv[1:])
@@ -486,10 +546,14 @@ def main(argv: list[str] | None = None) -> int:
             return _cmd_forecast(app, args.as_of)
         if args.command == "forecasts":
             return _cmd_forecasts(app, args.series_id, args.period)
+        if args.command == "analyze":
+            return _cmd_analyze(app, args.as_of)
         if args.command == "validate":
             return _cmd_validate(app, args.as_of)
         if args.command == "accuracy":
             return _cmd_accuracy(app, args.series)
+        if args.command == "report":
+            return _cmd_report(app, args.as_of)
     except MiosError as exc:
         logger.error("fatal: %s", exc)
         return 2

@@ -1,80 +1,87 @@
-"""Persistence for analysis outputs (derived data — recomputable)."""
+"""Persistence for macro scores.
+
+Append-only, unlike the BIOS analysis repository this replaces. That one
+upserted on (asset, dimension, as_of), so a recomputation silently
+overwrote what the system had thought and "what did the analysis say on the
+5th?" had no answer (docs/REPOSITORY_AUDIT.md §14 L3).
+"""
 
 import json
 from datetime import datetime
 from typing import Any
 
-from mios.analysis.models import DimensionReport
+from mios.analysis.macro import MacroScore
+from mios.common.logutil import get_logger
 from mios.storage.db import Database
 
+logger = get_logger(__name__)
 
-class AnalysisRepo:
+
+class MacroScoreRepo:
     def __init__(self, db: Database) -> None:
         self._db = db
 
-    def save_report(self, report: DimensionReport) -> None:
-        data = report.model_dump(mode="json")
-        for key in ("signals", "key_findings", "watch_items", "data_gaps"):
-            data[key] = json.dumps(data[key], ensure_ascii=False)
-        self._db.execute(
+    def save(self, score: MacroScore) -> bool:
+        """Store a score. Returns False if this as-of already has one."""
+        payload = {
+            "score_id": score.score_id,
+            "dimension": score.dimension,
+            "as_of": score.as_of,
+            "score": score.score,
+            "stance": score.stance,
+            "confidence": score.confidence,
+            "signals": json.dumps(
+                [s.model_dump(mode="json") for s in score.signals], ensure_ascii=False
+            ),
+            "contradictions": json.dumps(score.contradictions, ensure_ascii=False),
+            "data_gaps": json.dumps(score.data_gaps, ensure_ascii=False),
+            "blind_spots": json.dumps(score.blind_spots, ensure_ascii=False),
+            "method_version": score.method_version,
+        }
+        with self._db.transaction() as conn:
+            row = conn.execute(
+                """
+                INSERT INTO macro_scores (score_id, dimension, as_of, score, stance,
+                    confidence, signals, contradictions, data_gaps, blind_spots,
+                    method_version)
+                VALUES (%(score_id)s, %(dimension)s, %(as_of)s, %(score)s, %(stance)s,
+                    %(confidence)s, %(signals)s, %(contradictions)s, %(data_gaps)s,
+                    %(blind_spots)s, %(method_version)s)
+                ON CONFLICT (score_id) DO NOTHING
+                RETURNING score_id
+                """,
+                payload,
+            ).fetchone()
+        return row is not None
+
+    def latest(self, dimension: str, as_of: datetime) -> dict[str, Any] | None:
+        """The newest score for a dimension that existed at ``as_of``."""
+        return self._db.query_one(
             """
-            INSERT INTO dimension_reports (asset_id, dimension, as_of, score, conviction,
-                signals, key_findings, watch_items, data_gaps, invalidation, analyzer_version)
-            VALUES (%(asset_id)s, %(dimension)s, %(as_of)s, %(score)s, %(conviction)s,
-                %(signals)s, %(key_findings)s, %(watch_items)s, %(data_gaps)s,
-                %(invalidation)s, %(analyzer_version)s)
-            ON CONFLICT (asset_id, dimension, as_of) DO UPDATE SET
-                score=EXCLUDED.score, conviction=EXCLUDED.conviction,
-                signals=EXCLUDED.signals, key_findings=EXCLUDED.key_findings,
-                watch_items=EXCLUDED.watch_items, data_gaps=EXCLUDED.data_gaps,
-                invalidation=EXCLUDED.invalidation, analyzer_version=EXCLUDED.analyzer_version
+            SELECT * FROM macro_scores
+            WHERE dimension = %(d)s AND as_of <= %(a)s
+            ORDER BY as_of DESC LIMIT 1
             """,
-            data,
+            {"d": dimension, "a": as_of},
         )
 
-    def latest_reports(self, asset_id: str) -> list[dict[str, Any]]:
+    def all_latest(self, as_of: datetime) -> list[dict[str, Any]]:
         return self._db.query(
             """
-            SELECT DISTINCT ON (dimension) * FROM dimension_reports
-            WHERE asset_id=%(a)s ORDER BY dimension, as_of DESC
+            SELECT DISTINCT ON (dimension) * FROM macro_scores
+            WHERE as_of <= %(a)s ORDER BY dimension, as_of DESC
             """,
-            {"a": asset_id},
+            {"a": as_of},
         )
 
-    def save_reaction(
-        self,
-        event_id: str,
-        asset_id: str,
-        horizon: str,
-        base_ts: datetime,
-        base_price: float,
-        target_ts: datetime,
-        target_price: float,
-    ) -> None:
-        self._db.execute(
+    def previous(self, dimension: str, before: datetime) -> dict[str, Any] | None:
+        """The score that stood before ``before`` — the "yesterday" column of
+        a daily report (指示書 §12)."""
+        return self._db.query_one(
             """
-            INSERT INTO market_reactions (event_id, asset_id, horizon, base_ts, base_price,
-                target_ts, target_price, return)
-            VALUES (%(e)s, %(a)s, %(h)s, %(bts)s, %(bp)s, %(tts)s, %(tp)s, %(r)s)
-            ON CONFLICT (event_id, asset_id, horizon) DO UPDATE SET
-                base_ts=EXCLUDED.base_ts, base_price=EXCLUDED.base_price,
-                target_ts=EXCLUDED.target_ts, target_price=EXCLUDED.target_price,
-                return=EXCLUDED.return, computed_at=now()
+            SELECT * FROM macro_scores
+            WHERE dimension = %(d)s AND as_of < %(b)s
+            ORDER BY as_of DESC LIMIT 1
             """,
-            {
-                "e": event_id,
-                "a": asset_id,
-                "h": horizon,
-                "bts": base_ts,
-                "bp": base_price,
-                "tts": target_ts,
-                "tp": target_price,
-                "r": target_price / base_price - 1,
-            },
-        )
-
-    def reactions_for(self, event_id: str) -> list[dict[str, Any]]:
-        return self._db.query(
-            "SELECT * FROM market_reactions WHERE event_id=%(e)s ORDER BY horizon",
-            {"e": event_id},
+            {"d": dimension, "b": before},
         )

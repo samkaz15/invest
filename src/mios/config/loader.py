@@ -8,6 +8,7 @@ import yaml
 from pydantic import BaseModel, ValidationError
 
 from mios.common.errors import ConfigError
+from mios.config.analysis import AnalysisConfig
 from mios.config.forecast import ForecastConfig
 from mios.config.models import (
     AssetConfig,
@@ -53,6 +54,7 @@ class ConfigRoot:
     sources: dict[str, SourceSpec]  # keyed by source_id (the machine-readable source registry)
     series: SeriesRegistry
     forecast: ForecastConfig
+    analysis: AnalysisConfig
     pipelines: PipelinesConfig
 
 
@@ -102,6 +104,19 @@ def load_config(config_dir: Path) -> ConfigRoot:
                 f"series {sorted(unknown)}"
             )
 
+    analysis = load_model(config_dir / "analysis.yaml", AnalysisConfig)
+    for dimension in analysis.dimensions:
+        unknown = [s.series_id for s in dimension.signals if s.series_id not in known_series]
+        if unknown:
+            raise ConfigError(
+                f"dimension {dimension.dimension!r} references unregistered "
+                f"series {sorted(unknown)}"
+            )
+    known_assets = set(assets)
+    for view in analysis.views:
+        if view.asset_id not in known_assets:
+            raise ConfigError(f"view {view.view_id!r} references unknown asset {view.asset_id!r}")
+
     pipelines = load_model(config_dir / "pipelines.yaml", PipelinesConfig)
     for job in pipelines.jobs:
         if job.task == "collect":
@@ -114,6 +129,7 @@ def load_config(config_dir: Path) -> ConfigRoot:
         sources=sources,
         series=series,
         forecast=forecast,
+        analysis=analysis,
         pipelines=pipelines,
         events=load_model(config_dir / "taxonomy" / "events.yaml", EventTaxonomy),
         entities=load_model(config_dir / "taxonomy" / "entities.yaml", EntityTaxonomy),
