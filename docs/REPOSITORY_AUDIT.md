@@ -691,10 +691,22 @@ MAE / RMSE / Directional Accuracy / Upside-Downside Accuracy / Calibration
 | **6** | News / Institutional | `mios.news`（20分類 taxonomy）、`mios.forecasts`（機関予測の**変化**を保存）、LLMは分類・要約のみ（数値生成禁止） | +600 | LLM出力に数値フィールドが存在しないことをテストで保証 |
 | **7** | Cross Asset | `mios.analysis`（macro_scores → USDJPY / Gold バイアス）、各スコアに入力・weight・式・timestamp を保存 | +500 | `why` コマンドでスコアの再現計算が全て表示される |
 | **8** | Daily Reports | `mios.reports` → `reports/daily/YYYY-MM-DD.md`（17ブロック）、`daily_deltas`（昨日差分） | +500 | `make daily-report` が実行でき、欠損が明示される |
-| **9** | Validation | `mios.validation`（MAE/RMSE/方向/キャリブレーション）、コンセンサス・ナイーブとの比較、`forecast_errors` | +500 | 合成データで既知の誤差指標を再現するテストが緑 |
+| **9** | Validation | `mios.validation`（MAE/RMSE/bias/方向/キャリブレーション）、ナイーブとの比較（`skill`）、`forecast_errors` | +550 | ✅ **完了（Phase 6-8 に先行実施）**。154テスト緑。1年分の予測を as-of 再生 → 採点 → scoreboard まで疎通 |
 | **10** | GitHub Actions | `.github/workflows/{ci,daily}.yml`、PostgreSQLサービスコンテナで**統合テストをCIで実行**、失敗ソース・欠損・レポート生成可否をログに明示、意味のあるcommit message | +200(yaml) | CIが緑、日次ワークフローが手動実行で通る |
 
-### 17.1 重要な順序上の注意
+### 17.1 実施順序の変更（2026-09-12）
+
+**Phase 9（検証）を Phase 6-8 より先に実施した。**
+
+理由：Phase 6（ニュース・機関予測）は `ANTHROPIC_API_KEY` 未設定と
+外部到達不可により実質ブロックされている一方、Phase 9 は既存の
+observations / predictions だけで完結し、しかも**憲法第2条が定める
+成功条件そのもの**だから。予測が毎日積み上がっても、それを測る仕組みが
+無ければ「半年後に検証できる状態」には到達しない。
+
+残りは Phase 7（クロスアセット）→ 8（日次レポート）→ 6（ニュース）→ 10（Actions）。
+
+### 17.2 重要な順序上の注意
 
 - **Phase 4（vintage）は Phase 5（予測）より必ず先。** 逆にすると、予測が非vintageデータで学習され、
   後から全て作り直しになる。

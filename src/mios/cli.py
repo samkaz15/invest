@@ -44,6 +44,8 @@ from mios.series.repo import ObservationRepo, SeriesRepo
 from mios.storage.db import Database
 from mios.storage.migrate import MigrationRunner
 from mios.storage.sync import sync_sources
+from mios.validation.metrics import MIN_SAMPLE, MetricsReader
+from mios.validation.scoring import Scorer
 
 logger = get_logger(__name__)
 
@@ -283,6 +285,86 @@ def _cmd_forecasts(app: App, series_id: str, period: str) -> int:
     return 0
 
 
+def _cmd_validate(app: App, as_of: str | None) -> int:
+    """Score every forecast whose target period has since printed.
+
+    Idempotent: a forecast already scored is left alone, so this can run
+    daily without rewriting evidence.
+    """
+    cutoff = parse_utc(as_of) if as_of else utc_now()
+    scorer = Scorer(app.db, ObservationRepo(app.db), app.config.forecast.by_id())
+    report = scorer.run(cutoff)
+    print(
+        f"validate: newly scored={report.scored} "
+        f"awaiting actuals={report.unresolved} already scored={report.already_scored}"
+    )
+    return 0
+
+
+def _cmd_accuracy(app: App, series_id: str | None) -> int:
+    """The scoreboard.
+
+    Leads with how much evidence exists, because until that is in the
+    dozens every figure below it is an anecdote — and a precise-looking
+    table built on four rows is worse than an honest "not yet".
+    """
+    reader = MetricsReader(app.db)
+    coverage = reader.coverage()
+    print(
+        f"scored forecasts: {coverage['scored']} "
+        f"across {coverage['targets']} target(s) and {coverage['periods']} period(s); "
+        f"{coverage['awaiting_actuals']} still awaiting actuals"
+    )
+    if coverage["scored"] == 0:
+        print("\n（まだ採点できる予測がありません — 対象期間が発表されてから採点されます）")
+        return 0
+
+    print(f"\n{'target':<32} {'horizon':<8} {'n':>4}  {'MAE':>9} {'baseline':>9} {'skill':>9}  dir")
+    for row in reader.accuracy(series_id):
+        if not row.sufficient:
+            print(
+                f"{row.target_series_id:<32} {row.horizon:<8} {row.n:>4}  "
+                f"（n<{MIN_SAMPLE} のため未算出）"
+            )
+            continue
+        verdict = "beats naive" if row.beats_naive else "loses to naive"
+        direction = (
+            f"{row.directional_accuracy:.0%}" if row.directional_accuracy is not None else "  -"
+        )
+        print(
+            f"{row.target_series_id:<32} {row.horizon:<8} {row.n:>4}  "
+            f"{row.mae:>9.5f} {row.baseline_mae:>9.5f} {row.skill:>+9.5f}  "
+            f"{direction}  {verdict}"
+        )
+
+    buckets = reader.calibration(series_id)
+    graded = sum(b.n for b in buckets)
+    print("\ncalibration — 「上振れ N%」と言った時、実際に何%上振れしたか")
+    if graded < MIN_SAMPLE:
+        # Bins of one or two are arithmetic, not evidence. Saying so beside
+        # the table is the difference between a reader learning something
+        # and a reader being misled by a precise-looking percentage.
+        print(
+            f"  （確率つき採点済み予測は {graded} 件のみ。"
+            f"{MIN_SAMPLE} 件に満たないため過信/過小の判定は保留）"
+        )
+    for bucket in buckets:
+        if bucket.n == 0:
+            continue
+        note = ""
+        if bucket.overconfident is True:
+            note = "  ← 過信"
+        elif bucket.overconfident is False:
+            note = "  ← 過小"
+        realised = f"{bucket.realised:.0%}" if bucket.realised is not None else "-"
+        stated = f"{bucket.stated:.0%}" if bucket.stated is not None else "-"
+        print(
+            f"  {bucket.lower:.0%}-{min(bucket.upper, 1.0):.0%}  n={bucket.n:<4} "
+            f"stated={stated:<5} realised={realised}{note}"
+        )
+    return 0
+
+
 def _cmd_revisions(app: App, series_id: str, period: str) -> int:
     """Every vintage of one reference period — what we thought, and when."""
     rows = ObservationRepo(app.db).revisions(series_id, parse_utc(f"{period}T00:00:00Z").date())
@@ -371,6 +453,10 @@ def main(argv: list[str] | None = None) -> int:
     p_fcs = sub.add_parser("forecasts", help="every forecast made for one target period")
     p_fcs.add_argument("series_id")
     p_fcs.add_argument("period", help="target period, YYYY-MM-DD")
+    p_val = sub.add_parser("validate", help="score forecasts whose period has printed")
+    p_val.add_argument("--as-of", default=None, help="score as at a past instant (ISO-8601)")
+    p_acc = sub.add_parser("accuracy", help="MAE / skill vs naive / directional / calibration")
+    p_acc.add_argument("--series", default=None, help="limit to one target series_id")
     args = parser.parse_args(list(argv) if argv is not None else sys.argv[1:])
 
     try:
@@ -400,6 +486,10 @@ def main(argv: list[str] | None = None) -> int:
             return _cmd_forecast(app, args.as_of)
         if args.command == "forecasts":
             return _cmd_forecasts(app, args.series_id, args.period)
+        if args.command == "validate":
+            return _cmd_validate(app, args.as_of)
+        if args.command == "accuracy":
+            return _cmd_accuracy(app, args.series)
     except MiosError as exc:
         logger.error("fatal: %s", exc)
         return 2

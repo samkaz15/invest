@@ -56,6 +56,8 @@ mios observations ser_us_cpi_index --as-of 2026-09-01T00:00:00Z
 mios revisions ser_us_cpi_index 2026-08-01
 mios forecast      # 予測を実行し、その日の vintage を保存（上書きしない）
 mios forecasts ser_us_core_cpi_index 2026-09-01   # ある期間への予測の全履歴
+mios validate      # 発表済みの対象期間について予測を採点
+mios accuracy      # MAE / 対ナイーブ skill / 方向的中 / キャリブレーション
 mios extract       # 未処理ニュースを候補キューへ
 mios health        # ソース別の死活（失敗があれば exit 1）
 ```
@@ -74,10 +76,10 @@ mios health        # ソース別の死活（失敗があれば exit 1）
 | 3 | Data layer（series / observations / releases / calendar、CSV adapter） | ✅ 完了 |
 | 4 | Historical / Vintage（ALFRED 真vintage、as-of 漏れの静的検出、JGB） | ✅ 完了 |
 | 5 | Forecast layer（CPI / NFP 予測、予測vintageの保存） | ✅ 完了 |
-| 6 | News / Institutional forecasts | 未着手 |
+| 6 | News / Institutional forecasts | 未着手（APIキー・外部到達が必要） |
 | 7 | Cross asset（Gold / USDJPY 解釈） | 未着手 |
 | 8 | Daily reports（`reports/daily/YYYY-MM-DD.md`） | 未着手 |
-| 9 | Validation（予測精度の検証） | 未着手 |
+| 9 | Validation（予測精度の検証） | ✅ 完了（Phase 6-8 に先行） |
 | 10 | GitHub Actions（日次自動化） | 未着手 |
 
 ## リポジトリ構成

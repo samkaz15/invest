@@ -7,7 +7,8 @@ checked the same way the layer boundaries are — by reading the source.
 
 Three things are guaranteed here:
 
-1. Nothing outside the repository reaches `observations` with raw SQL.
+1. Nothing outside a named owner module reaches `observations` or
+   `predictions` with raw SQL.
 2. Every as-of read takes an explicit instant; none default to "now".
 3. A revisable series has no accessor that returns "the current value".
 
@@ -23,12 +24,20 @@ from mios.series.repo import ObservationRepo
 SRC = Path(__file__).resolve().parents[2] / "src" / "mios"
 REPO_MODULE = SRC / "series" / "repo.py"
 
-#: The one module allowed to write SQL against the vintage tables. Adding a
-#: name here means taking on the as-of discipline by hand, so it should stay
-#: a very short list.
-SQL_OWNERS = {REPO_MODULE}
+#: Modules allowed to write SQL against the time-ordered tables. Each one
+#: takes on the as-of discipline by hand, so the list should stay short:
+#: every name here is a place the guarantee has to be re-checked in review.
+SQL_OWNERS = {
+    REPO_MODULE,
+    SRC / "prediction" / "repo.py",
+    SRC / "validation" / "scoring.py",
+    SRC / "validation" / "metrics.py",
+}
 
-VINTAGE_TABLES = ("observations", "normalize_state")
+#: Tables where reading without a cutoff is a look-ahead bug rather than a
+#: style problem. `forecast_errors` is deliberately absent: it is a
+#: present-time view of accumulated evidence, not a historical replay.
+VINTAGE_TABLES = ("observations", "normalize_state", "predictions")
 
 
 def _python_files() -> list[Path]:

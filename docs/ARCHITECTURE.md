@@ -34,6 +34,7 @@ L4 分析    analysis    次元スコア（Signal の集合 → DimensionReport�
    ↓
 L5 統合    scoring     DimensionReport → Score Card（weight・対立・完全性）
 L6 予測    prediction  先行指標 → CPI / NFP 予測（毎日1行・上書き禁止）
+L7 検証    validation  予測 × 初回発表値 → 誤差・対ナイーブ skill・キャリブレーション
 ```
 
 ### 1.1 残りの層（✅ 以外は**現在は未実装**）
@@ -48,7 +49,7 @@ L6 予測    prediction  先行指標 → CPI / NFP 予測（毎日1行・上書
 | ~~`prediction/`~~ | 6 | **CPI / NFP 予測** — ✅ Phase 5 完了 | ✅ |
 | `analysis/` | 7 | マクロスコア → クロスアセット → Gold / USDJPY 解釈 | 7 |
 | `reports/` | 8 | 日次 Markdown（前日差分を必ず含む） | 8 |
-| `validation/` | – | 予測精度検証（MAE / RMSE / 方向 / キャリブレーション） | 9 |
+| ~~`validation/`~~ | – | 予測精度検証 — ✅ Phase 9 完了（順序を前倒し） | ✅ |
 
 **Agent は8つ。増やさない。** 1サブパッケージ = 1責務。
 
@@ -169,13 +170,28 @@ driver は2種類：
 また **5%〜95% に丸める** — 未較正の事前分布に基づく手法が
 99% を主張する資格はない（憲法第5条）。
 
-### 3.7 説明可能なスコアだけを保存する
+### 3.7 採点は「初回発表値」に対して行う
+
+実績には**最初に発表された値**を使う。最新の改定値ではない。
+
+予測者が当てようとしているのは「発表される数字」である。3ヶ月後に
+改定された値で採点するのは、誰も問うていない問いで採点することであり、
+さらに悪いことに**採点を走らせるたびに答えが変わる**（的が動く）。
+初回 vintage は永久に固定されるので、今日計算した採点と来年計算した
+採点が一致する。
+
+そして、あらゆる数値は**ナイーブ予測との相対**で述べる。
+「MAE は 0.08pp でした」は単独では反証不能な飾りであり、
+「MAE は 0.08pp、何もしなければ 0.11pp だった」が発見である。
+この差を `skill` として保存する。
+
+### 3.8 説明可能なスコアだけを保存する
 
 `Signal` は `value` / `points` / `label` / `rationale` / `evidence_refs` を持ち、
 `ScoreCard` は各次元の score・weight・contribution・top signals を保存する。
 「なぜ +0.8 なのか」が保存された行だけから答えられない計算は作らない。
 
-### 3.8 欠損は成果物に出す
+### 3.9 欠損は成果物に出す
 
 `DimensionReport.data_gaps` と、無効化されたソースの一覧は必ずレポートに載る。
 `mios health` は失敗中のソースがあれば非ゼロで終了する。
@@ -226,6 +242,8 @@ mios observations <series_id> [--as-of ISO8601]   # その時点で知り得た�
 mios revisions <series_id> <YYYY-MM-DD>           # ある参照期間の全vintage
 mios forecast [--as-of ISO8601]                   # 予測を実行し、その日の vintage を保存
 mios forecasts <series_id> <YYYY-MM-DD>           # ある対象期間への予測の全履歴
+mios validate [--as-of ISO8601]                   # 発表済みの対象期間の予測を採点
+mios accuracy [--series <id>]                     # MAE / 対ナイーブ skill / 方向 / キャリブレーション
 mios extract       # 未処理のニュース raw を候補キューへ
 mios health        # ソース別の死活・DLQ 件数（失敗があれば exit 1）
 ```
@@ -245,4 +263,5 @@ mios health        # ソース別の死活・DLQ 件数（失敗があれば exi
 | A-4 | ~~統合テストは PostgreSQL がないと skip される~~ | ✅ Phase 2 完了：CI に PostgreSQL サービスを用意し、skip したらビルドを落とす |
 | A-5 | 日本の **CPI・賃金**が未登録（JGB は Phase 4 で追加済）。e-Stat は API キーと専用 parser を要する | 未定。**データのない系列を先に登録しない**（placeholder は作らない） |
 | A-6 | ~~`vintage_at` が取得時刻でしかない~~ | ✅ Phase 4 完了：主要な改定系列は ALFRED の `realtime_start` から真の vintage を取り込む（`_vintage` 系列）。ALFRED を引かない系列は取得時刻のままで、`mios series` が `published` / `fetched` で区別を表示する |
+| A-8 | **driver 系列の多くは ALFRED を引いていない**ため、過去日のバックテストでは driver の読みが当時の値ではなく「取得時点の値」になる。`_vintage` 系列を持つ5指標のみ厳密 | driver 側にも ALFRED を広げるかを、収集コストと精度改善を見て判断する。`mios series` の `published` / `fetched` 列で現状が分かる |
 | A-7 | ALFRED の vintage は**日付**であり時刻ではない。発表当日の日中は、実際より早く知り得たことになる | 構造的な限界。UTC 0時として扱い、**遅く知る方向に倒している**（早漏れはしない）。発表時刻が必要になるのは Phase 5 のカレンダー連携時 |

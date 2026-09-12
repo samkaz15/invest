@@ -26,6 +26,7 @@ ALLOWED: dict[str, set[str]] = {
     "extraction": {"common", "config", "audit", "storage", "ingestion", "knowledge"},
     "series": {"common", "config", "audit", "storage", "ingestion"},
     "prediction": {"common", "config", "audit", "storage", "series"},
+    "validation": {"common", "config", "audit", "storage", "series", "prediction"},
     "knowledge": {"common", "config", "audit", "storage"},
     "analysis": {"common", "config", "audit", "storage", "knowledge"},
     "scoring": {"common", "config", "audit", "storage", "knowledge", "analysis"},
