@@ -1,74 +1,68 @@
-# Event type taxonomy (MASTER_SYSTEM_DESIGN §7.3). domain.category.type — exactly 3 levels.
-# Adding a type = one line here (no code change). Removal/renaming requires an ADR.
+# Event type taxonomy. domain.category.type — exactly 3 levels.
+# Adding a type = one line here (no code change). Removal/renaming needs an ADR.
+#
+# An "event" here is something that happened and is now known: a data
+# release, a policy decision, a statement. Scheduled *future* releases are
+# not events — they live in the economic calendar, because an event's
+# known_at can never precede its occurrence by more than a day
+# (docs/REPOSITORY_AUDIT.md §4.1 problem C).
 types:
-  # onchain — wallet and network activity
-  - onchain.wallet_movement.government
-  - onchain.wallet_movement.estate
-  - onchain.wallet_movement.whale
-  - onchain.wallet_movement.exchange
-  - onchain.metrics.exchange_inflow
-  - onchain.metrics.exchange_outflow
-  - onchain.metrics.threshold_cross
-  # flow — fund flows (asset-agnostic: ETF today, other vehicles tomorrow)
-  - flow.etf.inflow
-  - flow.etf.outflow
-  - flow.etf.launch
-  - flow.fund.rebalance
-  # holdings — treasury changes of corporates / governments
-  - holdings.corporate.purchase
-  - holdings.corporate.sale
-  - holdings.government.seizure
-  - holdings.government.sale
-  - holdings.government.purchase
-  # production — structural supply-side producers (miners for BTC)
-  - production.miner.capitulation
-  - production.miner.reserve_change
-  - production.miner.hashrate_shift
-  # venue — trading venues
-  - venue.exchange.collapse
-  - venue.exchange.listing
-  - venue.exchange.proof_of_reserves
-  - venue.exchange.outage
-  # security — hacks and exploits
-  - security.hack.exchange
-  - security.hack.protocol
-  - security.exploit.other
-  # derivatives
-  - derivatives.positioning.liquidation_cascade
-  - derivatives.positioning.funding_extreme
-  - derivatives.positioning.oi_shift
-  - derivatives.options.expiry
-  # macro
-  - macro.policy.rate_decision
-  - macro.indicator.cpi
-  - macro.indicator.ppi
-  - macro.indicator.nfp
-  - macro.indicator.gdp
-  - macro.indicator.pmi
-  - macro.liquidity.shift
-  - macro.crisis.banking
-  - macro.crisis.geopolitical
-  # regulation
-  - regulation.etf.approval
-  - regulation.etf.rejection
-  - regulation.enforcement.action
-  - regulation.legislation.passed
-  - regulation.legislation.proposed
-  # legal
-  - legal.court.ruling
-  - legal.bankruptcy.filing
-  - legal.bankruptcy.distribution
-  - legal.settlement.reached
-  # supply / demand shocks
-  - supply.schedule.halving
-  - supply.distribution.unlock
-  - supply.shock.other
-  - demand.wave.institutional
-  - demand.wave.retail
-  - demand.adoption.country
-  # anomaly / market structure
-  - anomaly.price.dislocation
-  - anomaly.onchain.unusual
-  - anomaly.correlation.break
-  - market_structure.orderbook.imbalance
-  - market_structure.liquidity.drain
+  # release — a statistical agency published a number
+  - release.us_inflation.cpi
+  - release.us_inflation.core_cpi
+  - release.us_inflation.ppi
+  - release.us_inflation.pce
+  - release.us_inflation.core_pce
+  - release.us_inflation.import_prices
+  - release.us_employment.nfp
+  - release.us_employment.unemployment_rate
+  - release.us_employment.average_hourly_earnings
+  - release.us_employment.jolts
+  - release.us_employment.initial_claims
+  - release.us_employment.continuing_claims
+  - release.us_employment.adp
+  - release.us_employment.challenger
+  - release.us_growth.retail_sales
+  - release.us_growth.industrial_production
+  - release.us_growth.durable_goods
+  - release.us_growth.housing
+  - release.us_growth.ism_manufacturing
+  - release.us_growth.ism_services
+  - release.us_growth.consumer_confidence
+  - release.us_growth.gdp
+  - release.jp_inflation.cpi
+  - release.jp_inflation.core_cpi
+  - release.jp_employment.wages
+  - release.jp_employment.unemployment_rate
+  - release.jp_growth.tankan
+  - release.jp_growth.gdp
+  # policy — a central bank decided or signalled something
+  - policy.fed.rate_decision
+  - policy.fed.statement
+  - policy.fed.minutes
+  - policy.fed.projections
+  - policy.fed.speech
+  - policy.boj.rate_decision
+  - policy.boj.statement
+  - policy.boj.outlook_report
+  - policy.boj.speech
+  - policy.boj.intervention
+  - policy.treasury.refunding
+  - policy.mof.intervention
+  # market — a price or yield did something that needs explaining
+  - market.rates.curve_shift
+  - market.rates.real_yield_shift
+  - market.fx.sharp_move
+  - market.gold.sharp_move
+  - market.risk.shock
+  # forecast — someone published or changed a published forecast
+  - forecast.institution.published
+  - forecast.institution.revised
+  - forecast.consensus.shift
+  # macro context — everything that moves the backdrop
+  - context.fiscal.action
+  - context.trade.action
+  - context.geopolitics.escalation
+  - context.geopolitics.deescalation
+  - context.china.policy
+  - context.energy.supply_shock

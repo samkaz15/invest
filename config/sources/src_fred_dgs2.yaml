@@ -1,0 +1,9 @@
+source_id: src_fred_dgs2
+name: FRED US 2Y Treasury constant maturity (DGS2)
+kind: http_json
+url: https://api.stlouisfed.org/fred/series/observations?series_id=DGS2&api_key=${FRED_API_KEY}&file_type=json&sort_order=desc&limit=60
+tier: 1
+min_interval_seconds: 60
+notes: >-
+  The US leg of the US-Japan rate differential that drives USDJPY.
+  Requires FRED_API_KEY (free); auto-disabled and reported as a gap until set.

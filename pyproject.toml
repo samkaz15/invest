@@ -3,18 +3,18 @@ requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "bios"
-version = "0.1.0"
-description = "Bitcoin Intelligence Operating System — fact-structuring analysis OS (not a price-prediction AI)"
+name = "mios"
+version = "0.2.0"
+description = "Macro Intelligence Operating System — a research infrastructure for forecasting US/Japan macro releases and interpreting Gold and USDJPY"
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "Proprietary" }
 dependencies = [
-    # Constitution Art.8: minimal dependencies. Every addition needs an ADR.
+    # CONSTITUTION.md Art.8: minimal dependencies. Every addition needs an ADR.
     "pydantic>=2.7",
     "pydantic-settings>=2.2",
     "PyYAML>=6.0",
-    "psycopg[binary]>=3.2",  # ADR-009: PostgreSQL driver (single-DB design, ADR-002)
+    "psycopg[binary]>=3.2",  # ADR-009 driver, ADR-010 managed PostgreSQL
 ]
 
 [project.optional-dependencies]
@@ -47,7 +47,7 @@ select = [
     "DTZ",       # naive-datetime ban (known_at discipline depends on tz-aware times)
 ]
 ignore = [
-    "RUF001", "RUF002", "RUF003",  # BIOS emits Japanese text; fullwidth punctuation is intended
+    "RUF001", "RUF002", "RUF003",  # MIOS emits Japanese text; fullwidth punctuation is intended
 ]
 
 [tool.ruff.lint.per-file-ignores]
@@ -57,7 +57,7 @@ ignore = [
 python_version = "3.12"
 strict = true
 mypy_path = "src"
-packages = ["bios"]
+packages = ["mios"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

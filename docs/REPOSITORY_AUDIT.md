@@ -683,8 +683,8 @@ MAE / RMSE / Directional Accuracy / Upside-Downside Accuracy / Calibration
 
 | Phase | 内容 | 主要成果物 | 概算LOC | 完了判定 |
 |---|---|---|---|---|
-| **1** | **監査（本書）** | `docs/REPOSITORY_AUDIT.md` | – | ✅ **本書をもって完了** |
-| **2** | Architecture cleanup | `bios`→`mios` リネーム、§9の削除実行、`DELETION_LOG.md`、`archive/` 退避、`test_architecture.py` 更新、README/Constitution 書き換え | −1,300 / +200 | `make check` PASS、src が3,900行程度に減る |
+| **1** | **監査（本書）** | `docs/REPOSITORY_AUDIT.md` | – | ✅ **完了** |
+| **2** | Architecture cleanup | `bios`→`mios` リネーム、§9の削除実行、`DELETION_LOG.md`、`archive/` 退避、`test_architecture.py` 更新、README/Constitution 書き換え、**CI導入** | −1,300 / +200 | ✅ **完了**（src 5,219→3,384行 / 74→52ファイル。`make check` PASS、統合テストも実PostgreSQLで56件PASS） |
 | **3** | Data layer（骨格） | `0005_mios_core.sql`（series / observations / releases / economic_calendar）、`csv` adapter、FRED/ALFRED・Treasury・BLS のソースYAML、`mios.data` / `mios.markets` | +900 | fixtureからobservationsに書き込めるテストが緑 |
 | **4** | Historical / Vintage | ALFRED vintage 取り込み、`as_of` 必須のクエリAPI、as-of リーク検出テスト | +400 | 「2026-09-01時点の値」を再現するテストが緑 |
 | **5** | Forecast layer | `mios.prediction`（CPI / NFP）、`predictions` テーブル、先行指標マッピング、上書き禁止トリガ | +700 | 同日2回実行しても2行目が拒否され、日次で行が増える |
@@ -710,10 +710,10 @@ MAE / RMSE / Directional Accuracy / Upside-Downside Accuracy / Calibration
 
 | # | 論点 | 選択肢 |
 |---|---|---|
-| Q-1 | **FX / Gold / 株価の価格ソース** | 公開・無料で規約上問題のないソースが限られる。Stooq / Yahoo / 各社API など、**利用規約を含めてオーナーが決める**必要がある。決まるまでは「欠損」として明示し、推測値を入れない |
+| Q-1 | ~~FX / Gold / 株価の価格ソース~~ | **決定済（2026-09-12）：Twelve Data を Tier2 として採用。ADR-011 参照。** 金利・経済指標は引き続き Tier1（FRED/BLS/BEA/Treasury/日銀）を正とする |
 | Q-2 | **Fed政策期待（利下げ確率）の取得元** | CME FedWatch はスクレイピング前提になりがち。取得できない場合は「欠損」を明示するか、FF先物から自前計算するか |
 | Q-3 | **機関投資家予測の取得範囲** | 有料レポートは対象外（指示書 §7）。公開記事のみだと網羅性が落ちる。「取れた分だけ・出典URL付き」で妥協するのが妥当か |
-| Q-4 | **PostgreSQL の稼働場所** | 現在はオーナーのローカルMac想定。GitHub Actions で日次実行するなら、マネージドDB（Supabase / Neon 等）かリポジトリ内SQLite/Parquetかを決める必要がある。**これは Phase 3 の前に決める必要がある** |
+| Q-4 | ~~PostgreSQL の稼働場所~~ | **決定済（2026-09-12）：マネージドPostgreSQL。ADR-010 参照。** 既存の psycopg 層・マイグレーション・append-onlyトリガをそのまま継承する |
 | Q-5 | **旧BIOSの停止タイミング** | `ops/crontab.txt` の8ジョブは現在も動いている可能性がある。Phase 2 開始前に停止するか、並走させるか |
 | Q-6 | LLM利用 | `ANTHROPIC_API_KEY` は未設定。Phase 6 まではLLM不要で進められる |
 

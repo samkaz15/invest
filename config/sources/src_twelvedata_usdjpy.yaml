@@ -1,0 +1,8 @@
+# ADR-011: Twelve Data is the price source for FX/commodities/indices.
+source_id: src_twelvedata_usdjpy
+name: Twelve Data USD/JPY daily
+kind: http_json
+url: https://api.twelvedata.com/time_series?symbol=USD/JPY&interval=1day&outputsize=90&apikey=${TWELVEDATA_API_KEY}
+tier: 2
+min_interval_seconds: 10
+notes: USDJPY spot, daily OHLC. Requires TWELVEDATA_API_KEY.

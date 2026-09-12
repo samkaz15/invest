@@ -4,9 +4,9 @@ from pathlib import Path
 
 import pytest
 
-from bios.common import ConfigError
-from bios.config import EventTaxonomy, load_config
-from bios.config.loader import load_model
+from mios.common import ConfigError
+from mios.config import EventTaxonomy, load_config
+from mios.config.loader import load_model
 
 REPO_CONFIG = Path(__file__).resolve().parents[2] / "config"
 
@@ -15,17 +15,17 @@ def test_real_config_tree_is_valid() -> None:
     """The committed config/ tree must always load. This is the guard that
     keeps 'one YAML line' taxonomy edits honest."""
     root = load_config(REPO_CONFIG)
-    assert "ent_asset_btc" in root.assets
-    assert root.assets["ent_asset_btc"].asset_class == "crypto"
+    # Both analysed assets are configuration, never a code assumption.
+    assert {"ent_asset_xauusd", "ent_asset_usdjpy"} <= set(root.assets)
+    assert root.assets["ent_asset_xauusd"].symbol == "XAU/USD"
+    assert root.assets["ent_asset_usdjpy"].asset_class == "fx"
     assert "TRIGGERED_BY" in root.relationships.event_event
     assert "actor" in root.relationships.participation_roles
-    assert "asset" in root.entities.kinds
+    assert "economic_indicator" in root.entities.kinds
     assert "default" in root.scoring.weight_sets
-    # every scoring dimension name is snake_case and includes anomaly cap rule
-    assert root.scoring.anomaly_points_cap <= 5
-    # source registry + pipelines cross-checked
-    assert "src_sec_press_rss" in root.sources
-    assert root.sources["src_sec_press_rss"].tier == 1
+    # Official statistics outrank redistributors: the CPI source is tier 1.
+    assert root.sources["src_fred_cpi"].tier == 1
+    # Every collect job points at a source that actually exists.
     assert all(j.source_id in root.sources for j in root.pipelines.jobs if j.task == "collect")
 
 
@@ -33,7 +33,7 @@ def test_event_types_are_three_levels() -> None:
     root = load_config(REPO_CONFIG)
     for t in root.events.types:
         assert len(t.split(".")) == 3, t
-    assert {"onchain", "macro", "supply", "demand"} <= root.events.domains()
+    assert {"release", "policy", "market", "forecast", "context"} <= root.events.domains()
 
 
 def test_typo_in_yaml_fails_loudly(tmp_path: Path) -> None:
@@ -45,7 +45,7 @@ def test_typo_in_yaml_fails_loudly(tmp_path: Path) -> None:
 
 def test_bad_event_type_shape_rejected(tmp_path: Path) -> None:
     bad = tmp_path / "events.yaml"
-    bad.write_text("types: ['onchain.only_two']\n", encoding="utf-8")
+    bad.write_text("types: ['release.only_two']\n", encoding="utf-8")
     with pytest.raises(ConfigError, match=r"domain\.category\.type"):
         load_model(bad, EventTaxonomy)
 

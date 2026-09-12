@@ -1,0 +1,13 @@
+# USDJPY. Analysed through the US-Japan rate differential, driven from both
+# sides: US data -> Fed expectations -> US 2Y, and Japan data -> BOJ
+# expectations -> JGB (docs/REPOSITORY_AUDIT.md §13.2).
+asset_id: ent_asset_usdjpy
+name: USD/JPY
+symbol: USD/JPY
+asset_class: fx
+quote_currency: JPY
+drivers:
+  - ser_us_treasury_2y
+  - ser_jp_jgb_10y
+  - ser_jp_cpi_core_yoy
+  - ser_us_cpi_yoy

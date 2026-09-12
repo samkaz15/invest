@@ -1,8 +1,8 @@
-"""ID convention tests (bios.common.ids) — three families."""
+"""ID convention tests (mios.common.ids) — three families."""
 
 import pytest
 
-from bios.common import (
+from mios.common import (
     DATED_KINDS,
     OPAQUE_KINDS,
     SLUG_KINDS,
@@ -14,7 +14,7 @@ from bios.common import (
     new_id,
     validate_id,
 )
-from bios.common.ids import slugify
+from mios.common.ids import slugify
 
 
 def test_families_cover_all_kinds() -> None:
@@ -35,22 +35,22 @@ def test_new_id_refuses_non_opaque_kinds() -> None:
         new_id(IdKind.ENTITY)
 
 
-def test_slug_ids_match_design_examples() -> None:
-    # Human-readable master data ids straight from MASTER_SYSTEM_DESIGN
-    assert validate_id("ent_mtgox", IdKind.ENTITY)
-    assert validate_id("ent_asset_btc", IdKind.ENTITY)
-    assert validate_id("src_sec_press", IdKind.SOURCE)
-    assert validate_id("chain_mtgox", IdKind.CHAIN)
-    assert validate_id("pat_government_sale", IdKind.PATTERN)
-    assert make_slug_id(IdKind.ENTITY, "Mt.Gox") == "ent_mt_gox"
+def test_slug_ids_are_human_readable_master_data() -> None:
+    assert validate_id("ent_asset_usdjpy", IdKind.ENTITY)
+    assert validate_id("ent_federal_reserve", IdKind.ENTITY)
+    assert validate_id("src_fred_cpi", IdKind.SOURCE)
+    assert validate_id("ser_us_cpi_yoy", IdKind.SERIES)
+    assert make_slug_id(IdKind.ENTITY, "Federal Reserve") == "ent_federal_reserve"
     with pytest.raises(InvalidIdError):
-        validate_id("ent_MtGox", IdKind.ENTITY)  # uppercase forbidden
+        validate_id("ent_FederalReserve", IdKind.ENTITY)  # uppercase forbidden
 
 
-def test_dated_ids_match_design_examples() -> None:
-    assert make_event_id("2024-01-10", "ETF Approval!") == "evt_2024-01-10_etf-approval"
-    assert make_dated_id(IdKind.DECISION, "2026-07-14", "btc") == "dcs_2026-07-14_btc"
-    assert validate_id("scn_2026-07-14_btc", IdKind.SCENARIO_SET)
+def test_dated_ids_carry_the_day_they_belong_to() -> None:
+    assert make_event_id("2026-09-11", "US CPI August!") == "evt_2026-09-11_us-cpi-august"
+    assert make_dated_id(IdKind.RELEASE, "2026-09-11", "us-cpi") == "rel_2026-09-11_us-cpi"
+    # A forecast id carries the day it was made, not the period it targets:
+    # that is what keeps prediction vintages distinct (audit §4.1 problem B).
+    assert validate_id("fc_2026-09-12_us-cpi-2026-08", IdKind.FORECAST)
     with pytest.raises(InvalidIdError):
         make_event_id("2024-13-45", "impossible-date")
     with pytest.raises(InvalidIdError):

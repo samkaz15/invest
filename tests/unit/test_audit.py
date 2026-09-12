@@ -7,8 +7,8 @@ from pathlib import Path
 import pytest
 from pydantic import ValidationError
 
-from bios.audit import ActorKind, AgentRunRecord, AuditLogger, JsonlAuditSink
-from bios.common import IdKind, RunStatus, new_id
+from mios.audit import ActorKind, AgentRunRecord, AuditLogger, JsonlAuditSink
+from mios.common import IdKind, RunStatus, new_id
 
 
 @pytest.fixture

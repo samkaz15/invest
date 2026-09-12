@@ -3,12 +3,12 @@
 import json
 import logging
 
-from bios.common.logutil import JsonFormatter
+from mios.common.logutil import JsonFormatter
 
 
 def test_json_formatter_emits_parseable_lines() -> None:
     record = logging.LogRecord(
-        name="bios.test",
+        name="mios.test",
         level=logging.INFO,
         pathname=__file__,
         lineno=1,

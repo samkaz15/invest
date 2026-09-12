@@ -5,13 +5,13 @@ from pathlib import Path
 
 import pytest
 
-from bios.config.models import SourceSpec
-from bios.ingestion.adapter import AdapterError, conditional_headers
-from bios.ingestion.adapters.http_json import JsonApiAdapter
-from bios.ingestion.adapters.rss import RssAdapter
-from bios.ingestion.http import HttpResponse
-from bios.ingestion.rawitem import RawDraft, build_raw_item, content_hash_of
-from bios.ingestion.rawstore import FileRawStore
+from mios.config.models import SourceSpec
+from mios.ingestion.adapter import AdapterError, conditional_headers
+from mios.ingestion.adapters.http_json import JsonApiAdapter
+from mios.ingestion.adapters.rss import RssAdapter
+from mios.ingestion.http import HttpResponse
+from mios.ingestion.rawitem import RawDraft, build_raw_item, content_hash_of
+from mios.ingestion.rawstore import FileRawStore
 
 RSS_SAMPLE = """<?xml version="1.0"?>
 <rss version="2.0"><channel><title>Feed</title>

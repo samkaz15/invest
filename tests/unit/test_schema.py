@@ -3,14 +3,14 @@
 import pytest
 from pydantic import ValidationError
 
-from bios.common import BiosModel, BiosRecord
+from mios.common import MiosModel, MiosRecord
 
 
-class Working(BiosModel):
+class Working(MiosModel):
     name: str
 
 
-class Stored(BiosRecord):
+class Stored(MiosRecord):
     name: str
 
 

@@ -1,0 +1,12 @@
+# ADR-011: Twelve Data is the price source for FX/commodities/indices.
+# Tier 2 — a redistributor, never overriding a Tier 1 official print.
+source_id: src_twelvedata_xauusd
+name: Twelve Data XAU/USD daily
+kind: http_json
+url: https://api.twelvedata.com/time_series?symbol=XAU/USD&interval=1day&outputsize=90&apikey=${TWELVEDATA_API_KEY}
+tier: 2
+# Free tier is rate-limited per minute; the collector's RateLimiter spaces
+# calls out. Exact limits and the response shape are verified against the
+# live API in Phase 3 (this file was written without network access).
+min_interval_seconds: 10
+notes: Gold spot, daily OHLC. Requires TWELVEDATA_API_KEY.

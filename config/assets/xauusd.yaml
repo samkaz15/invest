@@ -1,0 +1,13 @@
+# Gold. Analysed through the real-yield / dollar channel, with independent
+# risk-off and central-bank-demand factors that the yield channel alone
+# does not explain (docs/REPOSITORY_AUDIT.md §13.2).
+asset_id: ent_asset_xauusd
+name: Gold (XAU/USD)
+symbol: XAU/USD
+asset_class: commodity
+quote_currency: USD
+drivers:
+  - ser_us_real_yield_10y
+  - ser_us_breakeven_10y
+  - ser_us_dxy
+  - ser_us_cpi_yoy

@@ -1,34 +1,89 @@
-# BIOS — Bitcoin Intelligence Operating System
+# MIOS — Macro Intelligence Operating System
 
-事実を構造化し、因果と統計で確率を推定する**分析OS**。価格予想AIではない。
+毎日、世界のマクロ経済状態をスナップショットとして保存し、
+**次回の CPI / NFP などの重要経済指標が上振れするか下振れするか**を判断し、
+その判断が当たっていたのかを**半年後に統計的に検証できる**リサーチ基盤。
 
-## ドキュメント（Single Source of Truth）
+対象マーケットは **Gold（XAUUSD）** と **USDJPY**。
+
+価格予想AIではない。ニュース要約AIでもない。
+
+## 成功の定義
+
+> 半年後に「このシステムは CPI / NFP 予測に本当に役立っているのか？」を
+> 統計的に検証できる状態にあること。
+
+機能が増えることを成功と呼ばない。優先順位は常に：
+
+```
+Data Quality > Reproducibility > Validation > Simplicity > Feature Count
+```
+
+## ドキュメント
 
 | 文書 | 役割 |
 |---|---|
-| [PROJECT_CONSTITUTION.md](docs/PROJECT_CONSTITUTION.md) | 憲法（最上位。全設計・実装はこれに従属） |
-| [MASTER_SYSTEM_DESIGN.md](docs/MASTER_SYSTEM_DESIGN.md) | システム構造・データモデル・Agent仕様 |
-| [INTELLIGENCE_ENGINE_SPECIFICATION.md](docs/INTELLIGENCE_ENGINE_SPECIFICATION.md) | 分析・スコアリング・レポート・検証 |
-| [DATA_SOURCE_REGISTRY.md](docs/DATA_SOURCE_REGISTRY.md) | データソース台帳・信頼Tier |
-| docs/sprints/ | Sprint毎の実装報告（設計との差分・判断理由） |
+| [CONSTITUTION.md](docs/CONSTITUTION.md) | 憲法（最上位。全設計・実装はこれに従属） |
+| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | 層構造・データフロー・中核規律・未解決事項 |
+| [REPOSITORY_AUDIT.md](docs/REPOSITORY_AUDIT.md) | BIOS からの転換にあたっての全ファイル監査と移行計画 |
+| [DELETION_LOG.md](docs/DELETION_LOG.md) | 何を・なぜ削除したか・どう復元するか |
+| [DATA_SOURCE_REGISTRY.md](docs/DATA_SOURCE_REGISTRY.md) | データソース台帳と信頼Tier |
+| [EVALUATION.md](docs/EVALUATION.md) | 予測精度の測り方（MAE / RMSE / 方向 / キャリブレーション） |
+| docs/adr/ | 技術判断の記録 |
 
-設計と実装が矛盾した場合は**設計が正**。実装側の都合で設計を変えない（変更はADR＋オーナー承認）。
+設計と実装が矛盾した場合は**設計が正**。実装側の都合で設計を変えない（変更は ADR）。
+
+前身の Bitcoin Intelligence OS（BIOS）の設計文書と歴史データは `archive/` に保存されている。
 
 ## セットアップ
 
 ```bash
-make install   # Python 3.12+ 必須（.venv を作成）
-cp .env.example .env
-make check     # lint + typecheck + test（コミット前の必須ゲート）
+make install          # Python 3.12+ 必須（.venv を作成）
+cp .env.example .env  # API キーと DATABASE_URL を記入
+make check            # lint + typecheck + test（コミット前の必須ゲート）
 ```
+
+## 実行
+
+```bash
+mios migrate     # マイグレーション適用 + ソース台帳の同期
+mios sources     # 設定済みソース一覧
+mios collect     # 有効な全ソースを収集
+mios run-due     # 実行期限が来たジョブだけ実行
+mios extract     # 未処理ニュースを候補キューへ
+mios health      # ソース別の死活（失敗があれば exit 1）
+```
+
+**コマンドは、その裏のコードが存在するときにだけ追加する。**
+予測・分析・レポートのコマンドは、それぞれの層とともに Phase 5〜9 で現れる。
+
+## 現在地
+
+転換は10フェーズで進む（[REPOSITORY_AUDIT.md §17](docs/REPOSITORY_AUDIT.md)）。
+
+| Phase | 内容 | 状態 |
+|---|---|---|
+| 1 | Repository audit | ✅ 完了 |
+| 2 | Architecture cleanup（Bitcoin固有部分の削除、`bios`→`mios`、CI導入） | ✅ 完了 |
+| 3 | Data layer（series / observations / releases / calendar、CSV adapter） | 未着手 |
+| 4 | Historical / Vintage（ALFRED、as-of 必須クエリ） | 未着手 |
+| 5 | Forecast layer（CPI / NFP 予測、予測vintageの保存） | 未着手 |
+| 6 | News / Institutional forecasts | 未着手 |
+| 7 | Cross asset（Gold / USDJPY 解釈） | 未着手 |
+| 8 | Daily reports（`reports/daily/YYYY-MM-DD.md`） | 未着手 |
+| 9 | Validation（予測精度の検証） | 未着手 |
+| 10 | GitHub Actions（日次自動化） | 未着手 |
 
 ## リポジトリ構成
 
-MASTER_SYSTEM_DESIGN.md §2 を参照。要点：
-
-- `src/bios/` — アプリ本体（層＝サブパッケージ、import は上流→下流の一方向）
-- `config/` — 全設定（タクソノミ・Agent・重み。コード変更なしで挙動を変える層）
-- `prompts/` — Agentプロンプト（Git履歴＝バージョン管理）
-- `seeds/` — 歴史イベント初期データ
-- `db/migrations/` — スキーママイグレーション（後方互換必須）
-- `var/` — 実行時状態（git管理外。監査ログ等）
+```
+config/       全設定（ソース・資産・タクソノミ・ウェイト・ジョブ）
+data/raw/     取得した生ペイロード。永久保存・コミット対象
+db/migrations 連番SQLマイグレーション（後方互換必須）
+docs/         設計書と ADR
+reports/      生成された日次レポート（Phase 8〜）
+src/mios/     本体（層＝サブパッケージ、import は上流→下流の一方向）
+tests/        unit / integration
+var/          実行時の使い捨て状態（git管理外）
+archive/      BIOS 期の設計文書と歴史データ
+```

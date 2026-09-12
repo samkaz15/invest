@@ -1,11 +1,11 @@
-# BIOS developer entry points. `make check` must pass before every commit.
+# MIOS developer entry points. `make check` must pass before every commit.
 
 PYTHON ?= python3.12
 VENV := .venv
 PIP := $(VENV)/bin/pip
 RUN := $(VENV)/bin/python -m
 
-.PHONY: install lint fmt typecheck test check clean
+.PHONY: install lint fmt typecheck test check collect health clean
 
 $(VENV)/bin/python:
 	$(PYTHON) -m venv $(VENV)
@@ -25,10 +25,16 @@ fmt:  ## Auto-format and fix lint
 typecheck:  ## Strict mypy over the package
 	$(RUN) mypy
 
-test:  ## Unit tests
+test:  ## Tests (integration tests skip without PostgreSQL; CI runs them)
 	$(RUN) pytest
 
 check: lint typecheck test  ## Full local gate (mirrors CI)
+
+collect:  ## Collect every enabled source once
+	$(RUN) mios.cli collect
+
+health:  ## Per-source health; non-zero exit if any source is failing
+	$(RUN) mios.cli health
 
 clean:
 	rm -rf $(VENV) .mypy_cache .ruff_cache .pytest_cache htmlcov .coverage

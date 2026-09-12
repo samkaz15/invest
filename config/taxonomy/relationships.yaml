@@ -1,41 +1,32 @@
-# Relationship taxonomy (MASTER_SYSTEM_DESIGN §6): three edge classes.
+# Relationship taxonomy: three edge classes.
 
-# Class A: entity–entity, slowly changing, bitemporal (valid_from/valid_to).
+# Class A: entity-entity, slowly changing.
 entity_entity:
-  owns: "Ownership (government owns seized wallet cluster)"
-  custodies: "Custody relationship"
-  issues: "Issuer of an instrument (BlackRock issues IBIT)"
-  operates: "Operator of a venue/network"
-  subsidiary_of: "Corporate group membership"
-  belongs_to: "Generic membership/affiliation of orgs"
-  regulated_by: "Under supervision of a regulator"
-  governed_by: "Subject to a specific regulation"
-  listed_on: "Security listed on a venue"
-  located_in: "Jurisdiction/incorporation"
-  affiliated_with: "Person-organization tie (role in detail)"
-  created_by: "Founded/created by"
-  pegged_to: "Peg target of a stablecoin"
-  competitor_of: "Competitive relationship (analysis aid)"
+  publishes: "Agency publishes an indicator (BLS publishes CPI)"
+  sets_policy_for: "Central bank sets policy for a currency/country"
+  member_of: "Person sits on a committee (FOMC, BOJ Policy Board)"
+  located_in: "Jurisdiction"
+  denominated_in: "Asset quoted in a currency"
+  forecasts: "Institution publishes forecasts for an indicator"
 
-# Class B: event–entity participation roles. Verbs like transferred/purchased/
-# sold/approved are event types + these roles, not static edges.
+# Class B: event-entity participation roles. Verbs are event types plus
+# these roles, never static edges.
 participation_roles:
-  actor: "Subject performing the action"
-  target: "Object of the action (approved ETF, hacked exchange)"
-  counterparty: "Other side (transfer destination, trade counterpart)"
-  venue: "Where it happened (exchange, court)"
-  affected: "Materially affected party (creditors, sector)"
+  actor: "Who acted or published"
+  subject: "What the event is about (the indicator, the asset)"
+  affected: "Materially affected party"
+  venue: "Where it happened"
   mentioned: "Weak involvement, mention only"
 
-# Class C: event–event edges. TRIGGERED_BY requires evidence + confidence
-# (enforced by DB constraint in Sprint 3). Never confuse PRECEDES with cause.
+# Class C: event-event edges. TRIGGERED_BY requires evidence + confidence
+# (enforced by a DB constraint). PRECEDES is never a causal claim.
 event_event:
   TRIGGERED_BY: "Direct causal trigger (evidence mandatory)"
   CAUSED_BY_BG: "Structural background cause"
-  PART_OF: "Belongs to an event chain"
+  PART_OF: "Belongs to a chain"
   PRECEDES: "Temporal order only — no causal claim"
-  SIMILAR_TO: "Historical analog (similarity score attached)"
-  INVALIDATES: "Correction/retraction/refutation"
+  SIMILAR_TO: "Historical analog"
+  INVALIDATES: "Correction, revision or retraction of an earlier print"
+  REVISES: "A later vintage of the same release"
   AMPLIFIES: "Concurrent event amplifying impact"
   OFFSETS: "Concurrent event offsetting impact"
-  FOLLOWS_PATTERN: "Instance of a pattern-ledger pattern"

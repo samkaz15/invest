@@ -1,20 +1,20 @@
 #!/bin/bash
-# Daily backup (Constitution Art.8-3: data is the asset).
-# Priority order: DB dump (events/evidences/decisions) + raw store.
-# Schedule via cron/launchd; quarterly restore drill per docs/runbooks/.
+# Database backup (CONSTITUTION.md Art.8-3: data is the asset).
+#
+# ADR-010 puts the normalized truth in a managed PostgreSQL, outside git.
+# data/raw/ and reports/ are committed, so git is their backup; the database
+# is not, and losing it loses every past prediction vintage. That is the
+# thing this script exists to prevent.
 set -euo pipefail
 
-BACKUP_DIR="${BIOS_BACKUP_DIR:-$HOME/bios-backups}"
+BACKUP_DIR="${MIOS_BACKUP_DIR:-$HOME/mios-backups}"
 STAMP="$(date -u +%Y%m%d)"
-PG_DUMP="${PG_DUMP:-/opt/homebrew/opt/postgresql@16/bin/pg_dump}"
-DB_URL="${BIOS_DATABASE_URL:-postgresql://localhost/bios}"
-REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+PG_DUMP="${PG_DUMP:-pg_dump}"
+DB_URL="${MIOS_DATABASE_URL:?MIOS_DATABASE_URL must be set}"
 
 mkdir -p "$BACKUP_DIR"
-"$PG_DUMP" --format=custom --file="$BACKUP_DIR/bios-$STAMP.dump" "$DB_URL"
-tar -czf "$BACKUP_DIR/raw-$STAMP.tar.gz" -C "$REPO_DIR" var/raw 2>/dev/null || true
+"$PG_DUMP" --format=custom --file="$BACKUP_DIR/mios-$STAMP.dump" "$DB_URL"
 
-# Retain 30 days locally; offsite sync is the owner's rclone/cloud step.
-find "$BACKUP_DIR" -name "*.dump" -mtime +30 -delete
-find "$BACKUP_DIR" -name "*.tar.gz" -mtime +30 -delete
-echo "backup complete: $BACKUP_DIR/bios-$STAMP.dump"
+# Retain 30 days locally; offsite sync is the owner's step.
+find "$BACKUP_DIR" -name "mios-*.dump" -mtime +30 -delete
+echo "backup complete: $BACKUP_DIR/mios-$STAMP.dump"

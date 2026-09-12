@@ -13,7 +13,9 @@ dist/
 .coverage
 htmlcov/
 
-# Secrets & local state (Constitution Art.8: secrets never in git)
+# Secrets & disposable runtime state.
+# NOTE: data/ and reports/ are deliberately NOT ignored — raw payloads and
+# generated reports are committed (ADR-010). Only var/ is throwaway.
 .env
 var/
 

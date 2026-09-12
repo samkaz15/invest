@@ -6,20 +6,20 @@ from pathlib import Path
 
 import pytest
 
-from bios.audit import AuditLogger, JsonlAuditSink
-from bios.common import RunStatus
-from bios.common.statestore import JsonStateStore
-from bios.config.models import JobSpec, PipelinesConfig, ResilienceDefaults, SourceSpec
-from bios.ingestion.adapter import AdapterError, FetchResult, ParseFailure, SourceAdapter
-from bios.ingestion.collector import CollectError, Collector
-from bios.ingestion.dlq import DeadLetterQueue
-from bios.ingestion.health import HealthTracker
-from bios.ingestion.rawitem import RawDraft
-from bios.ingestion.rawstore import FileRawStore
-from bios.scheduler.breaker import CircuitBreaker
-from bios.scheduler.jobs import JobRunner
-from bios.scheduler.ratelimit import RateLimiter
-from bios.scheduler.retry import RetryPolicy
+from mios.audit import AuditLogger, JsonlAuditSink
+from mios.common import RunStatus
+from mios.common.statestore import JsonStateStore
+from mios.config.models import JobSpec, PipelinesConfig, ResilienceDefaults, SourceSpec
+from mios.ingestion.adapter import AdapterError, FetchResult, ParseFailure, SourceAdapter
+from mios.ingestion.collector import CollectError, Collector
+from mios.ingestion.dlq import DeadLetterQueue
+from mios.ingestion.health import HealthTracker
+from mios.ingestion.rawitem import RawDraft
+from mios.ingestion.rawstore import FileRawStore
+from mios.scheduler.breaker import CircuitBreaker
+from mios.scheduler.jobs import JobRunner
+from mios.scheduler.ratelimit import RateLimiter
+from mios.scheduler.retry import RetryPolicy
 
 SPEC = SourceSpec(
     source_id="src_fake", name="fake", kind="http_json", url="https://example.com", tier=2
