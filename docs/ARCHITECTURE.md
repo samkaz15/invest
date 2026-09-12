@@ -39,7 +39,7 @@ L5 統合    scoring     DimensionReport → Score Card（weight・対立・完�
 
 | パッケージ | Agent | 内容 | Phase |
 |---|---|---|---|
-| `calendar/` | 1 | 経済指標発表予定、FOMC / BOJ 日程、次回までの日数 | 4 |
+| `calendar/` | 1 | 経済指標発表予定、FOMC / BOJ 日程、次回までの日数 | 5 |
 | ~~`data/`~~ | 2 | **`series/` に統合済**（Phase 3 完了） | ✅ |
 | ~~`markets/`~~ | 3 | **`series/` に統合済**（Phase 3 完了） | ✅ |
 | `forecasts/` | 4 | 機関投資家予測（値そのものより**変化**） | 6 |
@@ -105,7 +105,15 @@ naive datetime は境界で拒否される（`common/timeutil.ensure_utc`）。
 
 ### 3.2 as-of クエリ
 
-時系列の読み出しは **必ず** as-of を伴う。
+時系列の読み出しは **必ず** as-of を伴う。これは規約ではなく
+`tests/unit/test_no_lookahead.py` が機械的に検査する：
+
+- `observations` への生SQLは repository 以外に書けない
+- `as_of` 引数にデフォルト値を与えられない
+- repository は時計（`utc_now`）を参照できない
+
+as-of 規律は**静かに壊れる**（テストは通り、半年後にバックテストが
+不自然に良く見えて初めて気づく）ため、人間の注意力に任せない。
 
 ```sql
 SELECT DISTINCT ON (series_id, observation_date) *
@@ -161,6 +169,18 @@ observation は `source_id` と取得元 URL を持つ。
 新しいプロバイダの追加は YAML 1枚。
 新しい *kind*（`rss` / `http_json` / `http_csv` 以外）の追加だけがコード変更になる。
 
+### 4.1 vintage の二種類
+
+| parser | `vintage_at` の意味 | 用途 |
+|---|---|---|
+| `alfred_json` | **公表された日**（`realtime_start`） | 改定される指標。MIOS が稼働していなかった期間のバックテストに耐える |
+| その他 | **取得した時刻** | 改定されない日次系列、および ALFRED を引かない系列 |
+
+同じ指標の「現在値」と「vintage付き履歴」は**別系列**として登録する
+（`ser_us_cpi_index` と `ser_us_cpi_index_vintage`）。
+フラグではなく別系列にしているのは、両者が世界に対する別の観測だから：
+前者は「今いくつか」、後者は「いくつだと言われ、それはいつだったか」に答える。
+
 ---
 
 ## 5. 現在の実行コマンド
@@ -191,5 +211,6 @@ mios health        # ソース別の死活・DLQ 件数（失敗があれば exi
 | A-2 | ~~`market_snapshots` に vintage がない~~ | ✅ Phase 3 完了：`0005` で `observations`（vintage付き）を追加。旧テーブルは DROP せず参照を止めた |
 | A-3 | **FRED の series_id・Treasury CSV の列名・Twelve Data のレート制限とレスポンス形状がいずれも未検証**（本作業環境から外部へ到達できない）。parser は記録済み fixture に対してのみ検証済み | 最初の実接続（Actions またはローカル）で確認する。**誤りは「収集失敗」として表面化する設計**（parser は想定外の形を黙って空扱いせず ParseError を投げる）であり、静かな誤データにはならない |
 | A-4 | ~~統合テストは PostgreSQL がないと skip される~~ | ✅ Phase 2 完了：CI に PostgreSQL サービスを用意し、skip したらビルドを落とす |
-| A-5 | 日本（CPI・賃金・JGB）の系列が未登録。e-Stat / 財務省は独自の payload 形式を持つ | Phase 4：専用 parser とともに追加する。**データのない系列を先に登録しない**（placeholder は作らない） |
-| A-6 | `vintage_at` は取得時刻であり、真の初出時刻ではない。FRED を毎日叩く限り誤差は1日以内だが、過去に遡って正確な vintage は得られない | Phase 4：ALFRED（`realtime_start`）から真の vintage を取り込む |
+| A-5 | 日本の **CPI・賃金**が未登録（JGB は Phase 4 で追加済）。e-Stat は API キーと専用 parser を要する | 未定。**データのない系列を先に登録しない**（placeholder は作らない） |
+| A-6 | ~~`vintage_at` が取得時刻でしかない~~ | ✅ Phase 4 完了：主要な改定系列は ALFRED の `realtime_start` から真の vintage を取り込む（`_vintage` 系列）。ALFRED を引かない系列は取得時刻のままで、`mios series` が `published` / `fetched` で区別を表示する |
+| A-7 | ALFRED の vintage は**日付**であり時刻ではない。発表当日の日中は、実際より早く知り得たことになる | 構造的な限界。UTC 0時として扱い、**遅く知る方向に倒している**（早漏れはしない）。発表時刻が必要になるのは Phase 5 のカレンダー連携時 |

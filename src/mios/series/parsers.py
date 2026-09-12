@@ -17,6 +17,7 @@ import csv
 import io
 import json
 from collections.abc import Callable
+from dataclasses import dataclass
 from datetime import UTC, date, datetime
 from decimal import Decimal, InvalidOperation
 
@@ -28,30 +29,33 @@ class ParseError(MiosError):
     """A payload could not be read as the shape its series expects."""
 
 
+@dataclass(frozen=True)
 class ParsedPoint:
     """One (reference period, value) pair lifted out of a payload.
 
     ``value is None`` records that the publisher explicitly reported no
     figure for the period — distinct from the period being absent, which
     means we simply have not seen it.
+
+    ``vintage_at`` is set only by feeds that actually know when a value
+    became public: ALFRED does, a plain FRED or vendor response does not.
+    When it is None the normalizer falls back to the fetch time, which is
+    the earliest moment this system could have known — honest, if coarse.
+    Inventing a publication time for a feed that does not report one would
+    be fabricating provenance (CONSTITUTION.md Art.4).
     """
 
-    __slots__ = ("observation_date", "value")
-
-    def __init__(self, observation_date: date, value: Decimal | None) -> None:
-        self.observation_date = observation_date
-        self.value = value
-
-    def __repr__(self) -> str:  # pragma: no cover - debugging aid
-        return f"ParsedPoint({self.observation_date.isoformat()}, {self.value})"
-
-    def __eq__(self, other: object) -> bool:
-        if not isinstance(other, ParsedPoint):
-            return NotImplemented
-        return self.observation_date == other.observation_date and self.value == other.value
+    observation_date: date
+    value: Decimal | None
+    vintage_at: datetime | None = None
 
 
 Parser = Callable[[str, SeriesSpec], list[ParsedPoint]]
+
+
+def utc_midnight(day: date) -> datetime:
+    """A calendar date as a tz-aware instant at the start of that day."""
+    return datetime(day.year, day.month, day.day, tzinfo=UTC)
 
 
 def _decimal(text: str, context: str) -> Decimal:
@@ -196,10 +200,127 @@ def twelvedata_json(payload: str, spec: SeriesSpec) -> list[ParsedPoint]:
     return points
 
 
+def alfred_json(payload: str, spec: SeriesSpec) -> list[ParsedPoint]:
+    """ALFRED series/observations — FRED's archive, with real vintages.
+
+    Same endpoint and payload shape as :func:`fred_json`, but requested
+    across a range of realtime dates, so one response carries *every*
+    vintage of every period rather than just the current one::
+
+        {"observations": [
+            {"realtime_start": "2026-09-11", "date": "2026-08-01", "value": "325.4"},
+            {"realtime_start": "2026-10-13", "date": "2026-08-01", "value": "325.6"},
+            ...]}
+
+    ``realtime_start`` is when that figure became the published value, so
+    it is used as the vintage directly. This is the difference between
+    "MIOS first saw 325.4 when it polled" and "the BLS published 325.4 on
+    the 11th" — and it is what makes a backtest of a period MIOS was not
+    running for honest rather than approximate.
+
+    Same-day granularity is all ALFRED offers: a vintage is a date, not a
+    timestamp. It is read as UTC midnight, which places the value at the
+    start of the day it became public. That errs toward *later* knowledge
+    being hidden, never toward it leaking early.
+    """
+    document = _load_json(payload, spec.series_id)
+    if not isinstance(document, dict):
+        raise ParseError(f"{spec.series_id}: ALFRED payload is not an object")
+    if "error_message" in document:
+        raise ParseError(f"{spec.series_id}: ALFRED error: {document['error_message']}")
+    rows = document.get("observations")
+    if not isinstance(rows, list):
+        raise ParseError(
+            f"{spec.series_id}: ALFRED payload has no 'observations' list "
+            f"(keys: {sorted(document)})"
+        )
+
+    points: list[ParsedPoint] = []
+    for row in rows:
+        if not isinstance(row, dict) or not {"date", "value", "realtime_start"} <= set(row):
+            raise ParseError(
+                f"{spec.series_id}: ALFRED row lacks date/value/realtime_start: {row!r}"
+            )
+        observation_date = _iso_date(str(row["date"]), spec.series_id)
+        vintage = utc_midnight(_iso_date(str(row["realtime_start"]), spec.series_id))
+        raw = str(row["value"]).strip()
+        value = None if raw in (".", "") else _decimal(raw, f"{spec.series_id} {observation_date}")
+        points.append(ParsedPoint(observation_date, value, vintage))
+    return points
+
+
+def mof_jgb_csv(payload: str, spec: SeriesSpec) -> list[ParsedPoint]:
+    """Japan MOF daily JGB yields.
+
+    The USDJPY chain needs the Japanese leg of the rate differential, and
+    the MOF publishes it as a CSV whose header row names tenors in Japanese
+    ("2年", "10年"), with dates in the Japanese era calendar (R8.9.11 =
+    Reiwa 8). Both are handled here rather than being normalised upstream,
+    because the raw store keeps exactly what the server sent.
+
+    Reiwa began in 2019, so Reiwa N is 2018 + N. Only Reiwa is accepted: a
+    future era change must fail loudly rather than silently produce dates
+    decades off.
+
+    UNVERIFIED against the live endpoint — see docs/ARCHITECTURE.md §6 A-3.
+    A wrong guess surfaces as a collection failure, not as bad data.
+    """
+    reader = csv.reader(io.StringIO(payload))
+    rows = [r for r in reader if r and any(c.strip() for c in r)]
+    if not rows:
+        raise ParseError(f"{spec.series_id}: MOF CSV is empty")
+
+    header_index = next(
+        (i for i, r in enumerate(rows) if any(c.strip() == spec.provider_code for c in r)),
+        None,
+    )
+    if header_index is None:
+        sample = [c.strip() for c in rows[0]][:12]
+        raise ParseError(
+            f"{spec.series_id}: tenor {spec.provider_code!r} not found in MOF CSV "
+            f"(first row: {sample})"
+        )
+    header = [c.strip() for c in rows[header_index]]
+    column = header.index(spec.provider_code)
+
+    points: list[ParsedPoint] = []
+    for row in rows[header_index + 1 :]:
+        cells = [c.strip() for c in row]
+        if not cells or not cells[0]:
+            continue
+        observation_date = _japanese_era_date(cells[0], spec.series_id)
+        raw = cells[column] if column < len(cells) else ""
+        value = None if raw in ("", "-") else _decimal(raw, f"{spec.series_id} {observation_date}")
+        points.append(ParsedPoint(observation_date, value))
+    if not points:
+        raise ParseError(f"{spec.series_id}: MOF CSV contained no data rows")
+    return points
+
+
+_REIWA_EPOCH = 2018  # Reiwa 1 = 2019
+
+
+def _japanese_era_date(text: str, context: str) -> date:
+    """``R8.9.11`` -> 2026-09-11. Also accepts a plain ISO date."""
+    if "-" in text:
+        return _iso_date(text, context)
+    body = text.upper().removeprefix("R")
+    parts = body.split(".")
+    if len(parts) != 3:
+        raise ParseError(f"{context}: {text!r} is not an R<era>.<month>.<day> date")
+    try:
+        era_year, month, day = (int(p) for p in parts)
+        return date(_REIWA_EPOCH + era_year, month, day)
+    except ValueError as exc:
+        raise ParseError(f"{context}: {text!r} is not an R<era>.<month>.<day> date") from exc
+
+
 PARSERS: dict[str, Parser] = {
     "fred_json": fred_json,
+    "alfred_json": alfred_json,
     "treasury_csv": treasury_csv,
     "twelvedata_json": twelvedata_json,
+    "mof_jgb_csv": mof_jgb_csv,
 }
 
 
@@ -208,8 +329,3 @@ def get_parser(name: str) -> Parser:
     if parser is None:
         raise ParseError(f"unknown parser {name!r} (registered: {sorted(PARSERS)})")
     return parser
-
-
-def utc_midnight(day: date) -> datetime:
-    """A reference date as a tz-aware instant, for comparisons against vintages."""
-    return datetime(day.year, day.month, day.day, tzinfo=UTC)

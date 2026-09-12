@@ -70,7 +70,7 @@ mios health        # ソース別の死活（失敗があれば exit 1）
 | 1 | Repository audit | ✅ 完了 |
 | 2 | Architecture cleanup（Bitcoin固有部分の削除、`bios`→`mios`、CI導入） | ✅ 完了 |
 | 3 | Data layer（series / observations / releases / calendar、CSV adapter） | ✅ 完了 |
-| 4 | Historical / Vintage（ALFRED、as-of 必須クエリ） | 未着手 |
+| 4 | Historical / Vintage（ALFRED 真vintage、as-of 漏れの静的検出、JGB） | ✅ 完了 |
 | 5 | Forecast layer（CPI / NFP 予測、予測vintageの保存） | 未着手 |
 | 6 | News / Institutional forecasts | 未着手 |
 | 7 | Cross asset（Gold / USDJPY 解釈） | 未着手 |

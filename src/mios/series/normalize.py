@@ -18,7 +18,7 @@ from mios.common.logutil import get_logger
 from mios.config.series import SeriesRegistry
 from mios.ingestion.rawstore import RawStore
 from mios.series.parsers import ParseError, get_parser
-from mios.series.repo import ObservationRepo, WriteResult
+from mios.series.repo import NormalizeState, ObservationRepo
 from mios.storage.db import Database
 
 logger = get_logger(__name__)
@@ -47,34 +47,13 @@ class Normalizer:
         registry: SeriesRegistry,
         observations: ObservationRepo,
     ) -> None:
-        self._db = db
         self._store = store
         self._registry = registry
         self._observations = observations
-
-    def _processed(self) -> set[tuple[str, str]]:
-        rows = self._db.query("SELECT raw_item_id, series_id FROM normalize_state")
-        return {(r["raw_item_id"], r["series_id"]) for r in rows}
-
-    def _mark(self, raw_item_id: str, series_id: str, result: WriteResult) -> None:
-        self._db.execute(
-            """
-            INSERT INTO normalize_state (raw_item_id, series_id, written, skipped)
-            VALUES (%(r)s, %(s)s, %(w)s, %(k)s)
-            ON CONFLICT (raw_item_id) DO UPDATE SET
-                series_id=EXCLUDED.series_id, written=EXCLUDED.written,
-                skipped=EXCLUDED.skipped, processed_at=now()
-            """,
-            {
-                "r": raw_item_id,
-                "s": series_id,
-                "w": result.written,
-                "k": result.skipped,
-            },
-        )
+        self._state = NormalizeState(db)
 
     def run(self, series_id: str | None = None) -> NormalizeReport:
-        """Normalize every unprocessed raw item into observations.
+        """Turn every unprocessed raw item into vintage-keyed rows.
 
         A parse failure is recorded and the run continues: one broken
         provider must not stop the other twenty. The failures land in the
@@ -82,7 +61,7 @@ class Normalizer:
         a run that could not read its data is not a successful run.
         """
         report = NormalizeReport()
-        done = self._processed()
+        done = self._state.processed()
         wanted = self._registry.series
         if series_id is not None:
             wanted = [s for s in wanted if s.series_id == series_id]
@@ -113,13 +92,16 @@ class Normalizer:
                         report.failures.append(f"{sid} <- {item.raw_item_id}: {exc}")
                         logger.error("parse failed for %s: %s", sid, exc)
                         continue
-                    result = self._observations.write_vintage(
+                    result = self._observations.write_points(
                         spec,
-                        [(p.observation_date, p.value) for p in points],
-                        vintage_at=item.retrieved_at,
+                        [(p.observation_date, p.value, p.vintage_at) for p in points],
                         raw_item_id=item.raw_item_id,
+                        # Feeds that report when a value became public (ALFRED)
+                        # carry their own vintage per point; the rest fall back
+                        # to the fetch time.
+                        default_vintage=item.retrieved_at,
                     )
-                    self._mark(item.raw_item_id, sid, result)
+                    self._state.mark(item.raw_item_id, sid, result.written, result.skipped)
                     report.written += result.written
                     report.skipped += result.skipped
                     report.revisions += result.revisions

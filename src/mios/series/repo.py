@@ -19,6 +19,7 @@ from typing import Any
 
 from mios.common.logutil import get_logger
 from mios.config.series import SeriesSpec
+from mios.series.planner import Vintage, plan_writes
 from mios.storage.db import Database
 
 logger = get_logger(__name__)
@@ -87,72 +88,105 @@ class SeriesRepo:
         return self._db.query("SELECT * FROM series ORDER BY category, series_id")
 
 
+class NormalizeState:
+    """Which raw items have already been turned into observations.
+
+    Lives here rather than in the normalizer so that every statement
+    touching the vintage tables is in one module, which is what lets
+    tests/unit/test_no_lookahead.py assert that nothing else reads them
+    without an as-of.
+    """
+
+    def __init__(self, db: Database) -> None:
+        self._db = db
+
+    def processed(self) -> set[tuple[str, str]]:
+        rows = self._db.query("SELECT raw_item_id, series_id FROM normalize_state")
+        return {(r["raw_item_id"], r["series_id"]) for r in rows}
+
+    def mark(self, raw_item_id: str, series_id: str, written: int, skipped: int) -> None:
+        self._db.execute(
+            """
+            INSERT INTO normalize_state (raw_item_id, series_id, written, skipped)
+            VALUES (%(r)s, %(s)s, %(w)s, %(k)s)
+            ON CONFLICT (raw_item_id) DO UPDATE SET
+                series_id=EXCLUDED.series_id, written=EXCLUDED.written,
+                skipped=EXCLUDED.skipped, processed_at=now()
+            """,
+            {"r": raw_item_id, "s": series_id, "w": written, "k": skipped},
+        )
+
+
 class ObservationRepo:
     def __init__(self, db: Database) -> None:
         self._db = db
 
     # ---------------------------------------------------------------- write
 
-    def _latest_values(self, series_id: str) -> dict[date, tuple[Decimal | None, int]]:
-        """Newest vintage per reference period: ``{date: (value, revision_n)}``.
+    def _vintages(self, series_id: str) -> dict[date, list[Vintage]]:
+        """Every stored vintage, grouped by reference period.
 
-        Loaded in one query and compared in memory. A series carries a few
-        hundred periods at most, so this trades a trivial amount of memory
-        for not issuing one SELECT per point.
+        Loaded in one query and planned against in memory. A series holds a
+        few hundred periods with a handful of vintages each, so this trades
+        trivial memory for not issuing a query per point.
         """
         rows = self._db.query(
             """
-            SELECT DISTINCT ON (observation_date) observation_date, value, revision_n
-            FROM observations WHERE series_id = %(s)s
-            ORDER BY observation_date, vintage_at DESC
+            SELECT observation_date, vintage_at, value FROM observations
+            WHERE series_id = %(s)s ORDER BY observation_date, vintage_at
             """,
             {"s": series_id},
         )
-        return {r["observation_date"]: (r["value"], r["revision_n"]) for r in rows}
+        grouped: dict[date, list[Vintage]] = {}
+        for row in rows:
+            grouped.setdefault(row["observation_date"], []).append(
+                (row["vintage_at"], row["value"])
+            )
+        return grouped
 
-    def write_vintage(
+    def write_points(
         self,
         spec: SeriesSpec,
-        points: list[tuple[date, Decimal | None]],
-        vintage_at: datetime,
+        points: list[tuple[date, Decimal | None, datetime | None]],
         raw_item_id: str,
+        default_vintage: datetime,
     ) -> WriteResult:
-        """Record ``points`` as seen at ``vintage_at``; skip unchanged values.
+        """Record parsed points, writing only what is new information.
+
+        ``default_vintage`` is used for any point whose feed did not report
+        when the value became public — the fetch time, which is the earliest
+        this system could have known it.
 
         The skip is the point of the method. Without it, a daily poll of a
         series with 400 periods of history would write 400 rows every day
         and drown the genuine revisions it exists to capture.
         """
-        known = self._latest_values(spec.series_id)
-        to_write: list[dict[str, Any]] = []
-        skipped = revisions = 0
+        existing = self._vintages(spec.series_id)
+        incoming: dict[date, list[Vintage]] = {}
+        for observation_date, value, vintage_at in points:
+            incoming.setdefault(observation_date, []).append((vintage_at or default_vintage, value))
 
-        for observation_date, value in points:
-            previous = known.get(observation_date)
-            if previous is not None:
-                previous_value, previous_revision = previous
-                if _same_value(previous_value, value):
-                    skipped += 1
-                    continue
-                revision_n = previous_revision + 1
-                revisions += 1
-            else:
-                revision_n = 0
-            to_write.append(
-                {
-                    "series_id": spec.series_id,
-                    "observation_date": observation_date,
-                    "vintage_at": vintage_at,
-                    "value": value,
-                    "revision_n": revision_n,
-                    "source_id": spec.source_id,
-                    "raw_item_id": raw_item_id,
-                }
-            )
+        rows: list[dict[str, Any]] = []
+        seen = revisions = 0
+        for observation_date, candidates in incoming.items():
+            seen += len(candidates)
+            for planned in plan_writes(existing.get(observation_date, []), candidates):
+                revisions += 1 if planned.is_revision else 0
+                rows.append(
+                    {
+                        "series_id": spec.series_id,
+                        "observation_date": observation_date,
+                        "vintage_at": planned.vintage_at,
+                        "value": planned.value,
+                        "revision_n": planned.revision_n,
+                        "source_id": spec.source_id,
+                        "raw_item_id": raw_item_id,
+                    }
+                )
 
-        if to_write:
+        if rows:
             with self._db.transaction() as conn:
-                for row in to_write:
+                for row in rows:
                     conn.execute(
                         """
                         INSERT INTO observations (series_id, observation_date, vintage_at,
@@ -164,13 +198,23 @@ class ObservationRepo:
                         row,
                     )
         if revisions:
-            logger.info(
-                "%s: %d revision(s) recorded at vintage %s",
-                spec.series_id,
-                revisions,
-                vintage_at.isoformat(),
-            )
-        return WriteResult(written=len(to_write), skipped=skipped, revisions=revisions)
+            logger.info("%s: %d revision(s) recorded", spec.series_id, revisions)
+        return WriteResult(written=len(rows), skipped=seen - len(rows), revisions=revisions)
+
+    def write_vintage(
+        self,
+        spec: SeriesSpec,
+        points: list[tuple[date, Decimal | None]],
+        vintage_at: datetime,
+        raw_item_id: str,
+    ) -> WriteResult:
+        """:meth:`write_points` for a feed where every point shares a vintage."""
+        return self.write_points(
+            spec,
+            [(day, value, None) for day, value in points],
+            raw_item_id,
+            default_vintage=vintage_at,
+        )
 
     # ----------------------------------------------------------------- read
 
@@ -257,14 +301,3 @@ class ObservationRepo:
             ORDER BY s.category, s.series_id
             """
         )
-
-
-def _same_value(left: Decimal | None, right: Decimal | None) -> bool:
-    """Compare two readings, treating a published gap as a real value.
-
-    Decimal comparison is numeric, so a provider reformatting 3.20 as 3.2
-    does not masquerade as a revision.
-    """
-    if left is None or right is None:
-        return left is None and right is None
-    return left == right

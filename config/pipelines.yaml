@@ -3,6 +3,10 @@
 # polling faster only burns the providers' rate limits.
 #
 # `mios run-due` runs whatever is due; GitHub Actions calls it (Phase 10).
+#
+# The ALFRED jobs run weekly, not daily: each response carries the entire
+# revision history of a series, and that history does not change between
+# polls. Pulling it daily would be a large download to learn nothing.
 defaults:
   retry_delays_seconds: [60, 300, 1800]
   retry_jitter: 0.1
@@ -42,3 +46,9 @@ jobs:
   - { job_id: collect_treasury_curve, task: collect, source_id: src_treasury_yield_curve, interval_minutes: 360 }
   - { job_id: collect_td_xauusd, task: collect, source_id: src_twelvedata_xauusd, interval_minutes: 360 }
   - { job_id: collect_td_usdjpy, task: collect, source_id: src_twelvedata_usdjpy, interval_minutes: 360 }
+  - { job_id: collect_mof_jgb, task: collect, source_id: src_mof_jgb_yields, interval_minutes: 360 }
+  - { job_id: collect_alfred_cpiaucsl, task: collect, source_id: src_alfred_cpiaucsl, interval_minutes: 10080 }
+  - { job_id: collect_alfred_cpilfesl, task: collect, source_id: src_alfred_cpilfesl, interval_minutes: 10080 }
+  - { job_id: collect_alfred_payems, task: collect, source_id: src_alfred_payems, interval_minutes: 10080 }
+  - { job_id: collect_alfred_unrate, task: collect, source_id: src_alfred_unrate, interval_minutes: 10080 }
+  - { job_id: collect_alfred_pcepilfe, task: collect, source_id: src_alfred_pcepilfe, interval_minutes: 10080 }

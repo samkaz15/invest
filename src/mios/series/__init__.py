@@ -12,6 +12,7 @@ where it belongs.
 
 from mios.series.normalize import Normalizer, NormalizeReport
 from mios.series.parsers import PARSERS, ParsedPoint, ParseError, get_parser
+from mios.series.planner import PlannedWrite, plan_writes
 from mios.series.repo import Observation, ObservationRepo, SeriesRepo, WriteResult
 
 __all__ = [
@@ -22,7 +23,9 @@ __all__ = [
     "ObservationRepo",
     "ParseError",
     "ParsedPoint",
+    "PlannedWrite",
     "SeriesRepo",
     "WriteResult",
     "get_parser",
+    "plan_writes",
 ]

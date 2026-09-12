@@ -11,9 +11,17 @@
 # series without an as-of filter is a look-ahead bug, and the repository
 # refuses to do it (CONSTITUTION.md Art.6).
 #
-# Japan (CPI, wages, JGB) is deliberately absent: e-Stat and MOF need their
-# own payload readers, which land in Phase 4. An empty series with no source
-# would be a placeholder, and placeholders are what this project deletes.
+# Japan CPI and wages are still absent: e-Stat needs an API key and a
+# payload reader of its own. JGB yields are here because USDJPY cannot be
+# analysed with only the US half of the rate differential. A series with no
+# source would be a placeholder, and placeholders are what this project
+# deletes — so they appear when their reader does, not before.
+#
+# The `_vintage` series are the same numbers pulled from ALFRED, which
+# reports when each figure became public. They are separate series rather
+# than a flag because they are a different observation of the world: the
+# plain series answers "what is it now", the vintage series answers "what
+# was it said to be, and when".
 series:
   - series_id: ser_us_cpi_index
     name: "US CPI, all items (index)"
@@ -448,3 +456,132 @@ series:
     seasonal_adjustment: not_applicable
     notes: >-
       Tier 2 vendor price (ADR-011).
+  - series_id: ser_us_cpi_index_vintage
+    name: "US CPI, all items — every published vintage"
+    country: US
+    category: inflation
+    unit: index
+    frequency: monthly
+    source_id: src_alfred_cpiaucsl
+    provider_code: "CPIAUCSL"
+    parser: alfred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      True vintages from ALFRED: vintage_at is the date the figure became
+      public, not the date MIOS happened to fetch it.
+  - series_id: ser_us_core_cpi_index_vintage
+    name: "US core CPI — every published vintage"
+    country: US
+    category: inflation
+    unit: index
+    frequency: monthly
+    source_id: src_alfred_cpilfesl
+    provider_code: "CPILFESL"
+    parser: alfred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      True vintages from ALFRED: vintage_at is the date the figure became
+      public, not the date MIOS happened to fetch it.
+  - series_id: ser_us_nfp_level_vintage
+    name: "US nonfarm payrolls — every published vintage"
+    country: US
+    category: employment
+    unit: thousands
+    frequency: monthly
+    source_id: src_alfred_payems
+    provider_code: "PAYEMS"
+    parser: alfred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      True vintages from ALFRED: vintage_at is the date the figure became
+      public, not the date MIOS happened to fetch it.
+  - series_id: ser_us_unemployment_rate_vintage
+    name: "US unemployment rate — every published vintage"
+    country: US
+    category: employment
+    unit: percent
+    frequency: monthly
+    source_id: src_alfred_unrate
+    provider_code: "UNRATE"
+    parser: alfred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      True vintages from ALFRED: vintage_at is the date the figure became
+      public, not the date MIOS happened to fetch it.
+  - series_id: ser_us_core_pce_index_vintage
+    name: "US core PCE — every published vintage"
+    country: US
+    category: inflation
+    unit: index
+    frequency: monthly
+    source_id: src_alfred_pcepilfe
+    provider_code: "PCEPILFE"
+    parser: alfred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      True vintages from ALFRED: vintage_at is the date the figure became
+      public, not the date MIOS happened to fetch it.
+  - series_id: ser_jp_jgb_2y
+    name: "Japan JGB 2Y"
+    country: JP
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_mof_jgb_yields
+    provider_code: "2年"
+    parser: mof_jgb_csv
+    revisable: false
+    seasonal_adjustment: not_applicable
+    notes: >-
+      Japan's short leg of the US-Japan rate differential.
+  - series_id: ser_jp_jgb_5y
+    name: "Japan JGB 5Y"
+    country: JP
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_mof_jgb_yields
+    provider_code: "5年"
+    parser: mof_jgb_csv
+    revisable: false
+    seasonal_adjustment: not_applicable
+  - series_id: ser_jp_jgb_10y
+    name: "Japan JGB 10Y"
+    country: JP
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_mof_jgb_yields
+    provider_code: "10年"
+    parser: mof_jgb_csv
+    revisable: false
+    seasonal_adjustment: not_applicable
+    notes: >-
+      The yield-curve-control anchor; the headline BOJ policy read.
+  - series_id: ser_jp_jgb_20y
+    name: "Japan JGB 20Y"
+    country: JP
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_mof_jgb_yields
+    provider_code: "20年"
+    parser: mof_jgb_csv
+    revisable: false
+    seasonal_adjustment: not_applicable
+  - series_id: ser_jp_jgb_30y
+    name: "Japan JGB 30Y"
+    country: JP
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_mof_jgb_yields
+    provider_code: "30年"
+    parser: mof_jgb_csv
+    revisable: false
+    seasonal_adjustment: not_applicable

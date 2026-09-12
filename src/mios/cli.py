@@ -172,15 +172,21 @@ def _cmd_series(app: App) -> int:
     """
     coverage = {row["series_id"]: row for row in ObservationRepo(app.db).coverage()}
     gaps = 0
-    for spec in sorted(app.config.series.series, key=lambda s: (s.category, s.series_id)):
+    for spec in sorted(
+        app.config.series.series, key=lambda s: (s.country, s.category, s.series_id)
+    ):
         row = coverage.get(spec.series_id)
         vintages = int(row["vintages"]) if row else 0
         gaps += 1 if vintages == 0 else 0
         latest = row["latest_period"] if row and row["latest_period"] else "-"
+        # Whether a vintage means "when it was published" or only "when we
+        # fetched it" changes what a backtest of this series is worth, so it
+        # belongs on the line rather than in the config file.
+        vintage_kind = "published" if spec.parser.startswith("alfred") else "fetched"
         print(
-            f"{spec.series_id:<32} {spec.category:<11} {spec.frequency:<9} "
-            f"{'revisable' if spec.revisable else 'final':<9} "
-            f"vintages={vintages:<6} latest={latest}"
+            f"{spec.series_id:<34} {spec.country} {spec.category:<11} {spec.frequency:<9} "
+            f"{'revisable' if spec.revisable else 'final':<9} {vintage_kind:<9} "
+            f"rows={vintages:<6} latest={latest}"
         )
     print(f"\n{len(app.config.series.series)} series, {gaps} with no data yet")
     return 0

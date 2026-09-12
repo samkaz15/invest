@@ -308,3 +308,97 @@ def test_normalizer_reports_a_parse_failure_instead_of_an_empty_success(
     assert not report.ok
     assert report.written == 0
     assert any("no 'observations' list" in f for f in report.failures)
+
+
+# ------------------------------------------------------- true vintages
+
+
+def test_an_alfred_backfill_lands_real_publication_dates(
+    db: Database, repo: ObservationRepo
+) -> None:
+    """The Phase 4 deliverable, end to end.
+
+    A single ALFRED payload carries every vintage of every period. After
+    normalizing it, asking for the series "as of late September" must
+    return the figure that was public then — even though MIOS never ran in
+    September and learned all of it in one fetch today.
+    """
+    from mios.config.loader import load_config
+    from mios.ingestion.rawitem import RawItem
+    from mios.series.normalize import Normalizer
+
+    series_id = "ser_us_cpi_index_vintage"
+    payload = (REPO / "tests" / "fixtures" / "alfred_cpiaucsl.json").read_text(encoding="utf-8")
+
+    class OneItemStore:
+        def __init__(self, item: RawItem) -> None:
+            self._item = item
+
+        def seen(self, source_id: str, content_hash: str) -> bool:
+            return False
+
+        def put(self, item: RawItem) -> bool:
+            return True
+
+        def items(self, source_id: str):  # type: ignore[no-untyped-def]
+            if source_id == self._item.source_id:
+                yield self._item
+
+        def latest(self, source_id: str) -> RawItem | None:
+            return self._item
+
+    item = RawItem(
+        raw_item_id="raw_0123456789abcdea1",
+        source_id="src_alfred_cpiaucsl",
+        # Fetched long after every vintage in the payload: if the fetch time
+        # leaked into the rows, the as-of reads below would all be empty.
+        retrieved_at=_at("2026-12-01"),
+        content_hash="alfred",
+        content_type="application/json",
+        payload_text=payload,
+        url="https://api.stlouisfed.org/fred/series/observations",
+    )
+    config = load_config(REPO / "config")
+    report = Normalizer(db, OneItemStore(item), config.series, repo).run(series_id=series_id)
+    assert report.ok, report.failures
+
+    # Late September: July has been restated once, August is on its first print.
+    september = {o.observation_date: o.value for o in repo.as_of(series_id, _at("2026-09-30"))}
+    assert september == {
+        date(2026, 7, 1): Decimal("324.988"),
+        date(2026, 8, 1): Decimal("325.412"),
+    }
+
+    # Mid-August: only the first July print existed, and August had not been
+    # published at all.
+    august = {o.observation_date: o.value for o in repo.as_of(series_id, _at("2026-08-20"))}
+    assert august == {date(2026, 7, 1): Decimal("324.900")}
+
+    # Today: August has been revised up.
+    today = {o.observation_date: o.value for o in repo.as_of(series_id, _at("2026-12-01"))}
+    assert today[date(2026, 8, 1)] == Decimal("325.601")
+    assert today[date(2026, 9, 1)] is None  # published as a gap
+
+
+def test_replaying_the_same_backfill_writes_nothing_new(
+    db: Database, repo: ObservationRepo
+) -> None:
+    """Weekly ALFRED pulls overlap almost entirely.
+
+    If a replay wrote rows, the table would grow without bound and the
+    revision counts would stop meaning anything.
+    """
+    from mios.config.loader import load_config
+    from mios.series.parsers import alfred_json
+
+    series_id = "ser_us_cpi_index_vintage"
+    spec = load_config(REPO / "config").series.by_id()[series_id]
+    payload = (REPO / "tests" / "fixtures" / "alfred_cpiaucsl.json").read_text(encoding="utf-8")
+    points = [(p.observation_date, p.value, p.vintage_at) for p in alfred_json(payload, spec)]
+
+    first = repo.write_points(spec, points, "raw_a", default_vintage=_at("2026-12-01"))
+    second = repo.write_points(spec, points, "raw_b", default_vintage=_at("2026-12-08"))
+
+    assert first.written == 5  # four changes plus the published gap
+    assert second.written == 0
+    assert second.skipped == 5
