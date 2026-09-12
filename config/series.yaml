@@ -1,0 +1,450 @@
+# The registry of every time series MIOS tracks.
+#
+# This file is the source of truth; `mios migrate` syncs it into the
+# `series` table so observations can carry a foreign key.
+#
+# `parser` names the payload reader (src/mios/series/parsers.py), NOT the
+# provider: FRED, Treasury and the price vendor each have one payload shape,
+# and a series only has to say which shape its source speaks.
+#
+# `revisable: true` means the publisher restates past values. Reading such a
+# series without an as-of filter is a look-ahead bug, and the repository
+# refuses to do it (CONSTITUTION.md Art.6).
+#
+# Japan (CPI, wages, JGB) is deliberately absent: e-Stat and MOF need their
+# own payload readers, which land in Phase 4. An empty series with no source
+# would be a placeholder, and placeholders are what this project deletes.
+series:
+  - series_id: ser_us_cpi_index
+    name: "US CPI, all items (index)"
+    country: US
+    category: inflation
+    unit: index
+    frequency: monthly
+    source_id: src_fred_cpiaucsl
+    provider_code: "CPIAUCSL"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      Headline CPI level. YoY/MoM are derived, never stored as a separate fetched series.
+  - series_id: ser_us_core_cpi_index
+    name: "US core CPI, ex food and energy (index)"
+    country: US
+    category: inflation
+    unit: index
+    frequency: monthly
+    source_id: src_fred_cpilfesl
+    provider_code: "CPILFESL"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      The number the Fed actually watches, and the primary CPI forecast target.
+  - series_id: ser_us_ppi_final_demand
+    name: "US PPI, final demand"
+    country: US
+    category: inflation
+    unit: index
+    frequency: monthly
+    source_id: src_fred_ppifis
+    provider_code: "PPIFIS"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      Leads CPI in goods and in some services components.
+  - series_id: ser_us_pce_index
+    name: "US PCE price index"
+    country: US
+    category: inflation
+    unit: index
+    frequency: monthly
+    source_id: src_fred_pcepi
+    provider_code: "PCEPI"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      The Fed's target measure.
+  - series_id: ser_us_core_pce_index
+    name: "US core PCE price index"
+    country: US
+    category: inflation
+    unit: index
+    frequency: monthly
+    source_id: src_fred_pcepilfe
+    provider_code: "PCEPILFE"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      The Fed's 2% target is defined on this.
+  - series_id: ser_us_import_price_index
+    name: "US import price index"
+    country: US
+    category: inflation
+    unit: index
+    frequency: monthly
+    source_id: src_fred_ir
+    provider_code: "IR"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: nsa
+    notes: >-
+      Imported goods inflation; feeds the CPI goods channel.
+  - series_id: ser_us_nfp_level
+    name: "US nonfarm payrolls (level, thousands)"
+    country: US
+    category: employment
+    unit: thousands
+    frequency: monthly
+    source_id: src_fred_payems
+    provider_code: "PAYEMS"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      NFP is reported as a monthly change; the level is stored and the change derived, so revisions to the level are visible.
+  - series_id: ser_us_unemployment_rate
+    name: "US unemployment rate"
+    country: US
+    category: employment
+    unit: percent
+    frequency: monthly
+    source_id: src_fred_unrate
+    provider_code: "UNRATE"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+  - series_id: ser_us_participation_rate
+    name: "US labor force participation rate"
+    country: US
+    category: employment
+    unit: percent
+    frequency: monthly
+    source_id: src_fred_civpart
+    provider_code: "CIVPART"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+  - series_id: ser_us_avg_hourly_earnings
+    name: "US average hourly earnings, total private"
+    country: US
+    category: employment
+    unit: level
+    frequency: monthly
+    source_id: src_fred_ces0500000003
+    provider_code: "CES0500000003"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      Wage pressure input to services inflation.
+  - series_id: ser_us_avg_weekly_hours
+    name: "US average weekly hours, total private"
+    country: US
+    category: employment
+    unit: level
+    frequency: monthly
+    source_id: src_fred_awhaetp
+    provider_code: "AWHAETP"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      Hours usually turn before headcount does.
+  - series_id: ser_us_initial_claims
+    name: "US initial jobless claims"
+    country: US
+    category: employment
+    unit: level
+    frequency: weekly
+    source_id: src_fred_icsa
+    provider_code: "ICSA"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      Highest-frequency labor signal available; the backbone of the NFP nowcast.
+  - series_id: ser_us_continuing_claims
+    name: "US continuing claims"
+    country: US
+    category: employment
+    unit: level
+    frequency: weekly
+    source_id: src_fred_ccsa
+    provider_code: "CCSA"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      Distinguishes 'fewer hires' from 'more layoffs' when read against initial claims.
+  - series_id: ser_us_jolts_openings
+    name: "US JOLTS job openings"
+    country: US
+    category: employment
+    unit: thousands
+    frequency: monthly
+    source_id: src_fred_jtsjol
+    provider_code: "JTSJOL"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+  - series_id: ser_us_jolts_quits
+    name: "US JOLTS quits"
+    country: US
+    category: employment
+    unit: thousands
+    frequency: monthly
+    source_id: src_fred_jtsqul
+    provider_code: "JTSQUL"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      Quits track worker confidence and lead wage growth.
+  - series_id: ser_us_temp_help
+    name: "US temporary help services employment"
+    country: US
+    category: employment
+    unit: thousands
+    frequency: monthly
+    source_id: src_fred_temphelps
+    provider_code: "TEMPHELPS"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      Classic leading indicator: temp staffing is cut before permanent staff.
+  - series_id: ser_us_retail_sales
+    name: "US advance retail sales, total"
+    country: US
+    category: growth
+    unit: level
+    frequency: monthly
+    source_id: src_fred_rsafs
+    provider_code: "RSAFS"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+  - series_id: ser_us_industrial_production
+    name: "US industrial production index"
+    country: US
+    category: growth
+    unit: index
+    frequency: monthly
+    source_id: src_fred_indpro
+    provider_code: "INDPRO"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+  - series_id: ser_us_real_gdp
+    name: "US real GDP"
+    country: US
+    category: growth
+    unit: level
+    frequency: quarterly
+    source_id: src_fred_gdpc1
+    provider_code: "GDPC1"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+  - series_id: ser_us_treasury_2y
+    name: "US Treasury 2Y constant maturity"
+    country: US
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_fred_dgs2
+    provider_code: "DGS2"
+    parser: fred_json
+    revisable: false
+    seasonal_adjustment: not_applicable
+    notes: >-
+      The US leg of the rate differential that drives USDJPY.
+  - series_id: ser_us_treasury_10y
+    name: "US Treasury 10Y constant maturity"
+    country: US
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_fred_dgs10
+    provider_code: "DGS10"
+    parser: fred_json
+    revisable: false
+    seasonal_adjustment: not_applicable
+  - series_id: ser_us_real_yield_10y
+    name: "US 10Y TIPS real yield"
+    country: US
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_fred_dfii10
+    provider_code: "DFII10"
+    parser: fred_json
+    revisable: false
+    seasonal_adjustment: not_applicable
+    notes: >-
+      The single most important rates input for Gold.
+  - series_id: ser_us_real_yield_5y
+    name: "US 5Y TIPS real yield"
+    country: US
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_fred_dfii5
+    provider_code: "DFII5"
+    parser: fred_json
+    revisable: false
+    seasonal_adjustment: not_applicable
+  - series_id: ser_us_breakeven_10y
+    name: "US 10Y breakeven inflation rate"
+    country: US
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_fred_t10yie
+    provider_code: "T10YIE"
+    parser: fred_json
+    revisable: false
+    seasonal_adjustment: not_applicable
+    notes: >-
+      Market-implied inflation expectations; separates real from nominal moves.
+  - series_id: ser_us_breakeven_5y
+    name: "US 5Y breakeven inflation rate"
+    country: US
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_fred_t5yie
+    provider_code: "T5YIE"
+    parser: fred_json
+    revisable: false
+    seasonal_adjustment: not_applicable
+  - series_id: ser_us_fed_funds_effective
+    name: "US effective federal funds rate"
+    country: US
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_fred_dff
+    provider_code: "DFF"
+    parser: fred_json
+    revisable: false
+    seasonal_adjustment: not_applicable
+  - series_id: ser_us_dxy
+    name: "US nominal broad dollar index"
+    country: US
+    category: fx
+    unit: index
+    frequency: daily
+    source_id: src_fred_dtwexbgs
+    provider_code: "DTWEXBGS"
+    parser: fred_json
+    revisable: false
+    seasonal_adjustment: not_applicable
+    notes: >-
+      Tier 1 dollar index. Preferred over any vendor DXY proxy.
+  - series_id: ser_usdjpy_fred
+    name: "USD/JPY spot (FRED, daily)"
+    country: US
+    category: fx
+    unit: level
+    frequency: daily
+    source_id: src_fred_dexjpus
+    provider_code: "DEXJPUS"
+    parser: fred_json
+    revisable: false
+    seasonal_adjustment: not_applicable
+    notes: >-
+      Tier 1 fallback for USDJPY if the vendor price feed dies (CONSTITUTION.md Art.8-4).
+  - series_id: ser_us_vix
+    name: "CBOE volatility index"
+    country: US
+    category: risk
+    unit: level
+    frequency: daily
+    source_id: src_fred_vixcls
+    provider_code: "VIXCLS"
+    parser: fred_json
+    revisable: false
+    seasonal_adjustment: not_applicable
+  - series_id: ser_us_treasury_curve_2y
+    name: "US Treasury 2Y (Treasury daily curve)"
+    country: US
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_treasury_yield_curve
+    provider_code: "2 Yr"
+    parser: treasury_csv
+    revisable: false
+    seasonal_adjustment: not_applicable
+    notes: >-
+      Tier 1 duplicate of the FRED DGS series, kept as the documented fallback.
+  - series_id: ser_us_treasury_curve_5y
+    name: "US Treasury 5Y (Treasury daily curve)"
+    country: US
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_treasury_yield_curve
+    provider_code: "5 Yr"
+    parser: treasury_csv
+    revisable: false
+    seasonal_adjustment: not_applicable
+    notes: >-
+      Tier 1 duplicate of the FRED DGS series, kept as the documented fallback.
+  - series_id: ser_us_treasury_curve_10y
+    name: "US Treasury 10Y (Treasury daily curve)"
+    country: US
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_treasury_yield_curve
+    provider_code: "10 Yr"
+    parser: treasury_csv
+    revisable: false
+    seasonal_adjustment: not_applicable
+    notes: >-
+      Tier 1 duplicate of the FRED DGS series, kept as the documented fallback.
+  - series_id: ser_us_treasury_curve_30y
+    name: "US Treasury 30Y (Treasury daily curve)"
+    country: US
+    category: rates
+    unit: percent
+    frequency: daily
+    source_id: src_treasury_yield_curve
+    provider_code: "30 Yr"
+    parser: treasury_csv
+    revisable: false
+    seasonal_adjustment: not_applicable
+    notes: >-
+      Tier 1 duplicate of the FRED DGS series, kept as the documented fallback.
+  - series_id: ser_xauusd
+    name: "Gold spot (XAU/USD)"
+    country: US
+    category: commodity
+    unit: level
+    frequency: daily
+    source_id: src_twelvedata_xauusd
+    provider_code: "XAU/USD"
+    parser: twelvedata_json
+    revisable: false
+    seasonal_adjustment: not_applicable
+    notes: >-
+      Tier 2 vendor price (ADR-011).
+  - series_id: ser_usdjpy
+    name: "USD/JPY spot"
+    country: US
+    category: fx
+    unit: level
+    frequency: daily
+    source_id: src_twelvedata_usdjpy
+    provider_code: "USD/JPY"
+    parser: twelvedata_json
+    revisable: false
+    seasonal_adjustment: not_applicable
+    notes: >-
+      Tier 2 vendor price (ADR-011).

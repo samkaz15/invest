@@ -24,9 +24,36 @@ def test_real_config_tree_is_valid() -> None:
     assert "economic_indicator" in root.entities.kinds
     assert "default" in root.scoring.weight_sets
     # Official statistics outrank redistributors: the CPI source is tier 1.
-    assert root.sources["src_fred_cpi"].tier == 1
+    assert root.sources["src_fred_cpiaucsl"].tier == 1
     # Every collect job points at a source that actually exists.
     assert all(j.source_id in root.sources for j in root.pipelines.jobs if j.task == "collect")
+
+
+def test_every_series_resolves_to_a_source_and_is_reachable_by_a_job() -> None:
+    """A series whose source nobody collects is data that never arrives.
+
+    The loader already refuses an unknown source_id; this covers the other
+    half, where the source exists but no scheduled job ever fetches it.
+    """
+    root = load_config(REPO_CONFIG)
+    scheduled = {j.source_id for j in root.pipelines.jobs if j.task == "collect"}
+    orphans = sorted({s.series_id for s in root.series.series if s.source_id not in scheduled})
+    assert not orphans, f"series with no collect job: {orphans}"
+
+
+def test_price_series_are_not_marked_revisable() -> None:
+    """Guards the distinction the whole vintage design rests on.
+
+    A spot price is published once; an economic statistic is restated. Only
+    the second kind needs its history preserved, and mislabelling the second
+    as the first is how look-ahead bias gets in.
+    """
+    root = load_config(REPO_CONFIG)
+    for spec in root.series.series:
+        if spec.category in ("fx", "commodity", "risk"):
+            assert not spec.revisable, spec.series_id
+        if spec.category in ("inflation", "employment", "growth"):
+            assert spec.revisable, f"{spec.series_id}: official statistics get revised"
 
 
 def test_event_types_are_three_levels() -> None:

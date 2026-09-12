@@ -685,7 +685,7 @@ MAE / RMSE / Directional Accuracy / Upside-Downside Accuracy / Calibration
 |---|---|---|---|---|
 | **1** | **監査（本書）** | `docs/REPOSITORY_AUDIT.md` | – | ✅ **完了** |
 | **2** | Architecture cleanup | `bios`→`mios` リネーム、§9の削除実行、`DELETION_LOG.md`、`archive/` 退避、`test_architecture.py` 更新、README/Constitution 書き換え、**CI導入** | −1,300 / +200 | ✅ **完了**（src 5,219→3,384行 / 74→52ファイル。`make check` PASS、統合テストも実PostgreSQLで56件PASS） |
-| **3** | Data layer（骨格） | `0005_mios_core.sql`（series / observations / releases / economic_calendar）、`csv` adapter、FRED/ALFRED・Treasury・BLS のソースYAML、`mios.data` / `mios.markets` | +900 | fixtureからobservationsに書き込めるテストが緑 |
+| **3** | Data layer（骨格） | `0005_series_vintage.sql`（series / observations / releases / economic_calendar / normalize_state）、`http_csv` adapter、FRED 29系列＋Treasury CSV＋Twelve Data、**`mios.series`（`data`/`markets` を統合）** | +1,100 | ✅ **完了**（unit 72 / integration 20 とも実PostgreSQLで緑。CLIで raw→observations→as-of 参照まで疎通確認） |
 | **4** | Historical / Vintage | ALFRED vintage 取り込み、`as_of` 必須のクエリAPI、as-of リーク検出テスト | +400 | 「2026-09-01時点の値」を再現するテストが緑 |
 | **5** | Forecast layer | `mios.prediction`（CPI / NFP）、`predictions` テーブル、先行指標マッピング、上書き禁止トリガ | +700 | 同日2回実行しても2行目が拒否され、日次で行が増える |
 | **6** | News / Institutional | `mios.news`（20分類 taxonomy）、`mios.forecasts`（機関予測の**変化**を保存）、LLMは分類・要約のみ（数値生成禁止） | +600 | LLM出力に数値フィールドが存在しないことをテストで保証 |

@@ -53,7 +53,7 @@ def store(db: Database) -> EventStore:
 def _evidence(n: int) -> EvidenceRecord:
     return EvidenceRecord(
         evidence_id=f"evd_{n:017d}",
-        source_id="src_fred_cpi",
+        source_id="src_fred_cpiaucsl",
         tier=SourceTier.OFFICIAL,
         url="https://www.bls.gov/news.release/cpi.nr0.htm",
         quote="The CPI rose 0.3 percent in August",
@@ -194,8 +194,8 @@ def test_snapshot_upsert_merges_metrics(db: Database) -> None:
 
 def test_curation_queue_dedupes_and_resolves(db: Database) -> None:
     queue = CurationQueue(db)
-    assert queue.enqueue("src_fred_cpi", {"title": "x"}, dedupe_key="k1") is True
-    assert queue.enqueue("src_fred_cpi", {"title": "x again"}, dedupe_key="k1") is False
+    assert queue.enqueue("src_fred_cpiaucsl", {"title": "x"}, dedupe_key="k1") is True
+    assert queue.enqueue("src_fred_cpiaucsl", {"title": "x again"}, dedupe_key="k1") is False
     pending = queue.pending()
     assert len(pending) == 1
     queue.resolve(pending[0]["candidate_id"], "rejected", note="not market relevant")

@@ -32,7 +32,10 @@
 
 ## 2. ソース台帳スキーマ
 
-`config/sources/<source_id>.yaml`（`src/mios/config/models.py::SourceSpec` で検証）：
+ソースは `config/sources/<source_id>.yaml`（`SourceSpec` で検証）、
+その payload から取り出す時系列は `config/series.yaml`（`SeriesSpec` で検証）に書く。
+FRED は1回の呼び出しで1系列を返すので 1ソース = 1系列だが、
+Treasury の日次カーブは1つの CSV に全年限が入るため 1ソース = 複数系列になる。
 
 ```yaml
 source_id: src_fred_cpi          # ser/src/ent と同じ slug ID 規約
@@ -57,31 +60,36 @@ Phase 1 は**無料〜低額ソースのみ**で開始し、見逃し検知（EV
 
 | カテゴリ | 系列 | ソース計画 | Tier | 状態 |
 |---|---|---|---|---|
-| 米 物価 | CPI / Core CPI / PPI / 輸入物価 | BLS API、FRED | 1 | CPI のみ設定済 |
-| 米 物価 | PCE / Core PCE | BEA、FRED | 1 | Phase 3 |
-| 米 雇用 | NFP / 失業率 / 平均時給 / 労働参加率 | BLS API、FRED | 1 | Phase 3 |
-| 米 雇用 | JOLTS / 新規失業保険 / 継続受給 | BLS、DOL、FRED | 1 | Phase 3 |
-| 米 雇用 | ADP / Challenger | 各社公表 | 2-3 | Phase 3（取得可否を要確認） |
-| 米 景気 | 小売売上 / 鉱工業生産 / 耐久財 / 住宅 | Census、FRB、FRED | 1 | Phase 3 |
-| 米 景気 | ISM 製造業・非製造業（雇用・価格支払含む） | ISM 公表 | 2 | Phase 3（取得可否を要確認） |
-| 米 景気 | 消費者信頼感 / ミシガン大 | Conference Board、UMich | 2 | Phase 3 |
-| 米 金利 | UST 2Y / 5Y / 10Y / 30Y | US Treasury（CSV）、FRED | 1 | 2Y / 10Y 設定済 |
-| 米 金利 | 実質金利 5Y / 10Y（DFII5 / DFII10） | FRED | 1 | Phase 3 |
-| 期待インフレ | BEI 5Y / 10Y（T5YIE / T10YIE） | FRED | 1 | Phase 3 |
-| Fed | FOMC 日程 / 声明 / 議事要旨 / SEP | Federal Reserve | 1 | Phase 3 |
+| 米 物価 | CPI / Core CPI / PPI / 輸入物価 | FRED（CPIAUCSL / CPILFESL / PPIFIS / IR） | 1 | ✅ 設定済 |
+| 米 物価 | PCE / Core PCE | FRED（PCEPI / PCEPILFE） | 1 | ✅ 設定済 |
+| 米 雇用 | NFP / 失業率 / 平均時給 / 週労働時間 / 労働参加率 | FRED（PAYEMS / UNRATE / CES0500000003 / AWHAETP / CIVPART） | 1 | ✅ 設定済 |
+| 米 雇用 | JOLTS 求人・離職 / 新規失業保険 / 継続受給 / 人材派遣 | FRED（JTSJOL / JTSQUL / ICSA / CCSA / TEMPHELPS） | 1 | ✅ 設定済 |
+| 米 雇用 | ADP / Challenger | 各社公表 | 2-3 | **未着手**（取得可否を要確認） |
+| 米 景気 | 小売売上 / 鉱工業生産 / 実質GDP | FRED（RSAFS / INDPRO / GDPC1） | 1 | ✅ 設定済。耐久財・住宅は未着手 |
+| 米 景気 | ISM 製造業・非製造業（雇用・価格支払含む） | ISM 公表 | 2 | **未着手**（取得可否を要確認） |
+| 米 景気 | 消費者信頼感 / ミシガン大 | Conference Board、UMich | 2 | **未着手** |
+| 米 金利 | UST 2Y / 5Y / 10Y / 30Y | US Treasury 日次CSV（全期間）＋ FRED（DGS2 / DGS10） | 1 | ✅ 設定済（二重化＝フォールバック） |
+| 米 金利 | 実質金利 5Y / 10Y / 実効FF | FRED（DFII5 / DFII10 / DFF） | 1 | ✅ 設定済 |
+| 期待インフレ | BEI 5Y / 10Y | FRED（T5YIE / T10YIE） | 1 | ✅ 設定済 |
+| Fed | FOMC 日程 / 声明 / 議事要旨 / SEP | Federal Reserve | 1 | Phase 4（カレンダー層とともに） |
 | Fed | 利下げ確率（政策期待） | 要検討 | 2 | **未定**。取得できなければ欠損として明示する |
-| 日本 物価 | CPI / コアCPI | 総務省統計局、e-Stat | 1 | Phase 3 |
-| 日本 賃金・雇用 | 毎月勤労統計 / 失業率 | 厚労省、総務省 | 1 | Phase 3 |
-| BOJ | 政策決定会合 / 声明 / 展望レポート | 日本銀行 | 1 | Phase 3 |
-| JGB | 2Y / 5Y / 10Y / 20Y / 30Y | 財務省 金利情報（CSV） | 1 | Phase 3 |
-| 為替 | USDJPY / DXY / EURUSD / EURJPY 他 | Twelve Data（ADR-011）、FRED（DEXJPUS / DTWEXBGS） | 2 / 1 | USDJPY 設定済 |
-| コモディティ | Gold / Silver / Oil / Copper | Twelve Data | 2 | Gold 設定済 |
-| リスク | VIX / S&P500 / Nasdaq | Twelve Data | 2 | Phase 3 |
+| 日本 物価 | CPI / コアCPI | 総務省統計局、e-Stat | 1 | Phase 4（専用 parser が必要） |
+| 日本 賃金・雇用 | 毎月勤労統計 / 失業率 | 厚労省、総務省 | 1 | Phase 4 |
+| BOJ | 政策決定会合 / 声明 / 展望レポート | 日本銀行 | 1 | Phase 4 |
+| JGB | 2Y / 5Y / 10Y / 20Y / 30Y | 財務省 金利情報（CSV） | 1 | Phase 4（USDJPY 分析の必須入力） |
+| 為替 | USDJPY / ドル指数 | Twelve Data（ADR-011）＋ FRED（DEXJPUS / DTWEXBGS） | 2 / 1 | ✅ 設定済。クロス円は未着手 |
+| コモディティ | Gold / Silver / Oil / Copper | Twelve Data | 2 | ✅ Gold 設定済。他は未着手 |
+| リスク | VIX | FRED（VIXCLS） | 1 | ✅ 設定済。株価指数は未着手 |
 | 機関予測 | 各社の**公開**リサーチ・公開記事 | 各社サイト、大手報道 | 2-3 | Phase 6。**有料情報は取得しない** |
 | ニュース | Fed / BOJ 公式、大手金融報道 RSS | 各公式、Reuters / Bloomberg / 日経 | 1-3 | Phase 6 |
 
-**「未定」「要確認」を空欄にせず明記する。** 取得できないものは欠損として扱い、
+**「未定」「要確認」「未着手」を空欄にせず明記する。** 取得できないものは欠損として扱い、
 推測値で埋めない（憲法第4条3項）。
+
+**✅ は「設定済」であって「データが入っている」ではない。**
+実際の蓄積状況は `mios series` が DB を見て表示する。
+API キー未設定・URL 誤り・仕様変更はいずれも「収集失敗」として表面化し、
+`mios health` が非ゼロで終了する。
 
 ---
 

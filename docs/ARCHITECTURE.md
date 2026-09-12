@@ -25,7 +25,8 @@ L0 横断    common      ID・時刻・schema・共通語彙・エラー・状�
 L1 収集    ingestion   adapter framework / HTTP / 生データ永久保存 / DLQ / 死活
            scheduler   実行期限判定・リトライ・レート制限・サーキットブレーカ
    ↓
-L2 正規化  extraction  生データ → 型付きレコード
+L2 正規化  extraction  生データ → 型付きレコード（ニュース）
+           series      生データ → vintage付き観測値（Agent 2 + 3）
    ↓
 L3 知識    knowledge   Event Store / Entity / as-of Timeline
    ↓
@@ -34,13 +35,13 @@ L4 分析    analysis    次元スコア（Signal の集合 → DimensionReport�
 L5 統合    scoring     DimensionReport → Score Card（weight・対立・完全性）
 ```
 
-### 1.1 これから追加される層（Phase 3 以降・**現在は未実装**）
+### 1.1 残りの層（✅ 以外は**現在は未実装**）
 
 | パッケージ | Agent | 内容 | Phase |
 |---|---|---|---|
-| `calendar/` | 1 | 経済指標発表予定、FOMC / BOJ 日程、次回までの日数 | 3 |
-| `data/` | 2 | 米・日のマクロ指標の正規化と vintage 保存 | 3-4 |
-| `markets/` | 3 | UST / JGB / 実質金利 / BEI / FX / コモディティ / リスク指標 | 3 |
+| `calendar/` | 1 | 経済指標発表予定、FOMC / BOJ 日程、次回までの日数 | 4 |
+| ~~`data/`~~ | 2 | **`series/` に統合済**（Phase 3 完了） | ✅ |
+| ~~`markets/`~~ | 3 | **`series/` に統合済**（Phase 3 完了） | ✅ |
 | `forecasts/` | 4 | 機関投資家予測（値そのものより**変化**） | 6 |
 | `news/` | 5 | Gold / USDJPY / マクロ予測に影響するニュースのみ分類 | 6 |
 | `prediction/` | 6 | **CPI / NFP 予測（最重要）** | 5 |
@@ -49,6 +50,13 @@ L5 統合    scoring     DimensionReport → Score Card（weight・対立・完�
 | `validation/` | – | 予測精度検証（MAE / RMSE / 方向 / キャリブレーション） | 9 |
 
 **Agent は8つ。増やさない。** 1サブパッケージ = 1責務。
+
+ただし Agent 2（マクロ指標）と Agent 3（金利・市場データ）は `series/` 1つに統合した。
+両者の違いは**どの系列を担当するか**であって、**バイトを数値にする方法**ではない。
+同じ payload parser・同じ vintage テーブル・同じ as-of クエリを使う以上、
+分けると parser と repository が二重化する。これは指示書 §3 が禁じる
+「同じデータを複数Agentが取得する構造」そのものになる。
+担当の区別は `config/series.yaml` の `category` が持つ。
 「Agent」と呼ぶが、必ずしも LLM ではない。数値を扱う処理は決定論的コードであり、
 LLM は分類・要約・抽出・文章生成にのみ使う（憲法第5条）。
 
@@ -60,7 +68,7 @@ LLM は分類・要約・抽出・文章生成にのみ使う（憲法第5条）
 config/sources/*.yaml
       ↓  ingestion（YAML 1枚でプロバイダ追加。コード変更なし）
 data/raw/<source_id>/<YYYY-MM>/<raw_item_id>.json     ← 取得したまま永久保存
-      ↓  data / markets / calendar / forecasts / news
+      ↓  series（実装済） / calendar / forecasts / news
 observations（vintage付き）/ releases / institutional_forecasts / news_items
       ↓  prediction
 predictions（毎日1行・上書き禁止）
@@ -144,6 +152,7 @@ observation は `source_id` と取得元 URL を持つ。
 | ファイル | 内容 |
 |---|---|
 | `config/sources/*.yaml` | データソース（URL・Tier・呼び出し間隔・必要な環境変数） |
+| `config/series.yaml` | 追跡する時系列（担当カテゴリ・単位・頻度・改定の有無・parser） |
 | `config/assets/*.yaml` | 分析対象資産とその driver 系列 |
 | `config/taxonomy/*.yaml` | イベント種別・エンティティ種別・関係種別 |
 | `config/scoring.yaml` | 次元ウェイト（`weights_version` が全 score card に刻印される） |
@@ -157,12 +166,16 @@ observation は `source_id` と取得元 URL を持つ。
 ## 5. 現在の実行コマンド
 
 ```bash
-mios migrate     # マイグレーション適用 + ソース台帳の同期
-mios sources     # 設定済みソース一覧
-mios collect     # 有効な全ソースを収集（--source で1件指定）
-mios run-due     # 実行期限が来たジョブだけ実行
-mios extract     # 未処理のニュース raw を候補キューへ
-mios health      # ソース別の死活・DLQ 件数（失敗があれば exit 1）
+mios migrate       # マイグレーション適用 + ソース台帳・系列台帳の同期
+mios sources       # 設定済みソース一覧（解決後の状態）
+mios series        # 系列台帳と各系列の実データ蓄積状況
+mios collect       # 有効な全ソースを収集（--source で1件指定）
+mios run-due       # 実行期限が来たジョブだけ実行
+mios normalize     # 生データ → vintage付き観測値（parse失敗があれば exit 1）
+mios observations <series_id> [--as-of ISO8601]   # その時点で知り得た系列
+mios revisions <series_id> <YYYY-MM-DD>           # ある参照期間の全vintage
+mios extract       # 未処理のニュース raw を候補キューへ
+mios health        # ソース別の死活・DLQ 件数（失敗があれば exit 1）
 ```
 
 **コマンドは、その裏のコードが存在するときにだけ追加する。**
@@ -175,6 +188,8 @@ mios health      # ソース別の死活・DLQ 件数（失敗があれば exit 
 | # | 内容 | 対応予定 |
 |---|---|---|
 | A-1 | 監査ログが JSONL ファイル（`var/audit/`）に出る。GitHub Actions のランナーは使い捨てなので、このままでは実行記録が残らない | Phase 10：`audit_log` / `agent_runs` テーブルへのシンクに切り替える（テーブルは 0001 で作成済み） |
-| A-2 | `db/migrations/0001`〜`0004` は BIOS 期のスキーマで、`market_snapshots` に vintage がない | Phase 3：`0005` 以降で新スキーマを追加。旧テーブルは DROP せず参照を止める |
-| A-3 | Twelve Data のレート制限・レスポンス形状が未検証（本リポジトリの作業環境から外部へ到達できない） | Phase 3：実接続で確認し、`min_interval_seconds` を実測値に合わせる |
-| A-4 | 統合テストは PostgreSQL がないと skip される | Phase 2 で CI にサービスコンテナを用意し、CI では必ず実行する |
+| A-2 | ~~`market_snapshots` に vintage がない~~ | ✅ Phase 3 完了：`0005` で `observations`（vintage付き）を追加。旧テーブルは DROP せず参照を止めた |
+| A-3 | **FRED の series_id・Treasury CSV の列名・Twelve Data のレート制限とレスポンス形状がいずれも未検証**（本作業環境から外部へ到達できない）。parser は記録済み fixture に対してのみ検証済み | 最初の実接続（Actions またはローカル）で確認する。**誤りは「収集失敗」として表面化する設計**（parser は想定外の形を黙って空扱いせず ParseError を投げる）であり、静かな誤データにはならない |
+| A-4 | ~~統合テストは PostgreSQL がないと skip される~~ | ✅ Phase 2 完了：CI に PostgreSQL サービスを用意し、skip したらビルドを落とす |
+| A-5 | 日本（CPI・賃金・JGB）の系列が未登録。e-Stat / 財務省は独自の payload 形式を持つ | Phase 4：専用 parser とともに追加する。**データのない系列を先に登録しない**（placeholder は作らない） |
+| A-6 | `vintage_at` は取得時刻であり、真の初出時刻ではない。FRED を毎日叩く限り誤差は1日以内だが、過去に遡って正確な vintage は得られない | Phase 4：ALFRED（`realtime_start`）から真の vintage を取り込む |

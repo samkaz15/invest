@@ -1,6 +1,8 @@
 # Scheduled jobs. Macro data moves on publication calendars, not on ticks:
-# daily series are polled a few times a day, monthly series hourly around
-# their release window. Driven by `mios run-due`.
+# nothing here needs to be polled more often than a few times a day, and
+# polling faster only burns the providers' rate limits.
+#
+# `mios run-due` runs whatever is due; GitHub Actions calls it (Phase 10).
 defaults:
   retry_delays_seconds: [60, 300, 1800]
   retry_jitter: 0.1
@@ -8,8 +10,35 @@ defaults:
   breaker_cooldown_minutes: 360
 
 jobs:
-  - { job_id: collect_fred_cpi, task: collect, source_id: src_fred_cpi, interval_minutes: 360 }
-  - { job_id: collect_fred_dgs2, task: collect, source_id: src_fred_dgs2, interval_minutes: 360 }
-  - { job_id: collect_fred_dgs10, task: collect, source_id: src_fred_dgs10, interval_minutes: 360 }
+  - { job_id: collect_cpiaucsl, task: collect, source_id: src_fred_cpiaucsl, interval_minutes: 720 }
+  - { job_id: collect_cpilfesl, task: collect, source_id: src_fred_cpilfesl, interval_minutes: 720 }
+  - { job_id: collect_ppifis, task: collect, source_id: src_fred_ppifis, interval_minutes: 720 }
+  - { job_id: collect_pcepi, task: collect, source_id: src_fred_pcepi, interval_minutes: 720 }
+  - { job_id: collect_pcepilfe, task: collect, source_id: src_fred_pcepilfe, interval_minutes: 720 }
+  - { job_id: collect_ir, task: collect, source_id: src_fred_ir, interval_minutes: 720 }
+  - { job_id: collect_payems, task: collect, source_id: src_fred_payems, interval_minutes: 720 }
+  - { job_id: collect_unrate, task: collect, source_id: src_fred_unrate, interval_minutes: 720 }
+  - { job_id: collect_civpart, task: collect, source_id: src_fred_civpart, interval_minutes: 720 }
+  - { job_id: collect_ces0500000003, task: collect, source_id: src_fred_ces0500000003, interval_minutes: 720 }
+  - { job_id: collect_awhaetp, task: collect, source_id: src_fred_awhaetp, interval_minutes: 720 }
+  - { job_id: collect_icsa, task: collect, source_id: src_fred_icsa, interval_minutes: 720 }
+  - { job_id: collect_ccsa, task: collect, source_id: src_fred_ccsa, interval_minutes: 720 }
+  - { job_id: collect_jtsjol, task: collect, source_id: src_fred_jtsjol, interval_minutes: 720 }
+  - { job_id: collect_jtsqul, task: collect, source_id: src_fred_jtsqul, interval_minutes: 720 }
+  - { job_id: collect_temphelps, task: collect, source_id: src_fred_temphelps, interval_minutes: 720 }
+  - { job_id: collect_rsafs, task: collect, source_id: src_fred_rsafs, interval_minutes: 720 }
+  - { job_id: collect_indpro, task: collect, source_id: src_fred_indpro, interval_minutes: 720 }
+  - { job_id: collect_gdpc1, task: collect, source_id: src_fred_gdpc1, interval_minutes: 720 }
+  - { job_id: collect_dgs2, task: collect, source_id: src_fred_dgs2, interval_minutes: 360 }
+  - { job_id: collect_dgs10, task: collect, source_id: src_fred_dgs10, interval_minutes: 360 }
+  - { job_id: collect_dfii10, task: collect, source_id: src_fred_dfii10, interval_minutes: 360 }
+  - { job_id: collect_dfii5, task: collect, source_id: src_fred_dfii5, interval_minutes: 360 }
+  - { job_id: collect_t10yie, task: collect, source_id: src_fred_t10yie, interval_minutes: 360 }
+  - { job_id: collect_t5yie, task: collect, source_id: src_fred_t5yie, interval_minutes: 360 }
+  - { job_id: collect_dff, task: collect, source_id: src_fred_dff, interval_minutes: 360 }
+  - { job_id: collect_dtwexbgs, task: collect, source_id: src_fred_dtwexbgs, interval_minutes: 360 }
+  - { job_id: collect_dexjpus, task: collect, source_id: src_fred_dexjpus, interval_minutes: 360 }
+  - { job_id: collect_vixcls, task: collect, source_id: src_fred_vixcls, interval_minutes: 360 }
+  - { job_id: collect_treasury_curve, task: collect, source_id: src_treasury_yield_curve, interval_minutes: 360 }
   - { job_id: collect_td_xauusd, task: collect, source_id: src_twelvedata_xauusd, interval_minutes: 360 }
   - { job_id: collect_td_usdjpy, task: collect, source_id: src_twelvedata_usdjpy, interval_minutes: 360 }

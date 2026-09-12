@@ -17,6 +17,7 @@ from mios.config.models import (
     ScoringConfig,
     SourceSpec,
 )
+from mios.config.series import SeriesRegistry
 
 
 def _read_yaml(path: Path) -> dict[str, Any]:
@@ -49,6 +50,7 @@ class ConfigRoot:
     scoring: ScoringConfig
     assets: dict[str, AssetConfig]  # keyed by asset_id
     sources: dict[str, SourceSpec]  # keyed by source_id (the machine-readable source registry)
+    series: SeriesRegistry
     pipelines: PipelinesConfig
 
 
@@ -76,6 +78,14 @@ def load_config(config_dir: Path) -> ConfigRoot:
                 raise ConfigError(f"duplicate source_id {spec.source_id!r} in {path}")
             sources[spec.source_id] = spec
 
+    series = load_model(config_dir / "series.yaml", SeriesRegistry)
+    for series_spec in series.series:
+        if series_spec.source_id not in sources:
+            raise ConfigError(
+                f"series {series_spec.series_id!r} references unknown "
+                f"source {series_spec.source_id!r}"
+            )
+
     pipelines = load_model(config_dir / "pipelines.yaml", PipelinesConfig)
     for job in pipelines.jobs:
         if job.task == "collect":
@@ -86,6 +96,7 @@ def load_config(config_dir: Path) -> ConfigRoot:
 
     return ConfigRoot(
         sources=sources,
+        series=series,
         pipelines=pipelines,
         events=load_model(config_dir / "taxonomy" / "events.yaml", EventTaxonomy),
         entities=load_model(config_dir / "taxonomy" / "entities.yaml", EntityTaxonomy),

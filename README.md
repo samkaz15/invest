@@ -46,12 +46,16 @@ make check            # lint + typecheck + test（コミット前の必須ゲー
 ## 実行
 
 ```bash
-mios migrate     # マイグレーション適用 + ソース台帳の同期
-mios sources     # 設定済みソース一覧
-mios collect     # 有効な全ソースを収集
-mios run-due     # 実行期限が来たジョブだけ実行
-mios extract     # 未処理ニュースを候補キューへ
-mios health      # ソース別の死活（失敗があれば exit 1）
+mios migrate       # マイグレーション適用 + ソース台帳・系列台帳の同期
+mios sources       # 設定済みソース一覧
+mios series        # 系列台帳と各系列の蓄積状況（未取得の系列は欠損として表示）
+mios collect       # 有効な全ソースを収集
+mios run-due       # 実行期限が来たジョブだけ実行
+mios normalize     # 生データ → vintage付き観測値
+mios observations ser_us_cpi_index --as-of 2026-09-01T00:00:00Z
+mios revisions ser_us_cpi_index 2026-08-01
+mios extract       # 未処理ニュースを候補キューへ
+mios health        # ソース別の死活（失敗があれば exit 1）
 ```
 
 **コマンドは、その裏のコードが存在するときにだけ追加する。**
@@ -65,7 +69,7 @@ mios health      # ソース別の死活（失敗があれば exit 1）
 |---|---|---|
 | 1 | Repository audit | ✅ 完了 |
 | 2 | Architecture cleanup（Bitcoin固有部分の削除、`bios`→`mios`、CI導入） | ✅ 完了 |
-| 3 | Data layer（series / observations / releases / calendar、CSV adapter） | 未着手 |
+| 3 | Data layer（series / observations / releases / calendar、CSV adapter） | ✅ 完了 |
 | 4 | Historical / Vintage（ALFRED、as-of 必須クエリ） | 未着手 |
 | 5 | Forecast layer（CPI / NFP 予測、予測vintageの保存） | 未着手 |
 | 6 | News / Institutional forecasts | 未着手 |
@@ -77,7 +81,7 @@ mios health      # ソース別の死活（失敗があれば exit 1）
 ## リポジトリ構成
 
 ```
-config/       全設定（ソース・資産・タクソノミ・ウェイト・ジョブ）
+config/       全設定（ソース・系列・資産・タクソノミ・ウェイト・ジョブ）
 data/raw/     取得した生ペイロード。永久保存・コミット対象
 db/migrations 連番SQLマイグレーション（後方互換必須）
 docs/         設計書と ADR

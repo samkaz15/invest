@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "symbol": "XAU/USD",
+    "interval": "1day",
+    "currency": "USD",
+    "exchange_timezone": "UTC",
+    "exchange": "PHYSICAL CURRENCY",
+    "type": "Physical Currency"
+  },
+  "values": [
+    {"datetime": "2026-09-11", "open": "2401.10", "high": "2418.55", "low": "2398.02", "close": "2412.30"},
+    {"datetime": "2026-09-10", "open": "2395.40", "high": "2404.90", "low": "2390.11", "close": "2401.05"}
+  ],
+  "status": "ok"
+}

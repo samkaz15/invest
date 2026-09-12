@@ -24,6 +24,7 @@ ALLOWED: dict[str, set[str]] = {
     # scheduler never imports ingestion (tasks are injected), so still one-way.
     "ingestion": {"common", "config", "audit", "storage", "scheduler"},
     "extraction": {"common", "config", "audit", "storage", "ingestion", "knowledge"},
+    "series": {"common", "config", "audit", "storage", "ingestion"},
     "knowledge": {"common", "config", "audit", "storage"},
     "analysis": {"common", "config", "audit", "storage", "knowledge"},
     "scoring": {"common", "config", "audit", "storage", "knowledge", "analysis"},

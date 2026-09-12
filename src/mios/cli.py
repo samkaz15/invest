@@ -8,10 +8,9 @@ Actions (and for a human at a terminal):
     python -m mios.cli run-due
     python -m mios.cli health
 
-Phase 2 deliberately exposes only the commands whose implementation
-survived the BIOS→MIOS cleanup. Forecast, analysis and report commands
-arrive with their layers in Phases 5-9; a command is added when the code
-behind it exists, never before (docs/REPOSITORY_AUDIT.md §8 U-1..U-4).
+A command exists only when the code behind it does: forecast, analysis and
+report commands arrive with their layers in Phases 5-9, not before
+(docs/REPOSITORY_AUDIT.md §8 U-1..U-4).
 """
 
 import argparse
@@ -24,6 +23,7 @@ from mios.audit import AuditLogger, JsonlAuditSink
 from mios.common.errors import MiosError
 from mios.common.logutil import get_logger, setup_logging
 from mios.common.statestore import JsonStateStore
+from mios.common.timeutil import parse_utc, utc_now
 from mios.config import ConfigRoot, Settings, load_config
 from mios.config.models import JobSpec, SourceSpec
 from mios.extraction.news import NewsExtractor
@@ -37,6 +37,8 @@ from mios.scheduler.breaker import CircuitBreaker
 from mios.scheduler.jobs import JobRunner
 from mios.scheduler.ratelimit import RateLimiter
 from mios.scheduler.retry import RetryPolicy
+from mios.series.normalize import Normalizer
+from mios.series.repo import ObservationRepo, SeriesRepo
 from mios.storage.db import Database
 from mios.storage.migrate import MigrationRunner
 from mios.storage.sync import sync_sources
@@ -135,7 +137,83 @@ def _cmd_migrate(app: App) -> int:
     # Sync the *resolved* registry: sources auto-disabled by missing secrets
     # must be recorded as disabled so reports can disclose the gap.
     n = sync_sources(app.db, resolve_sources(app.config.sources))
-    print(f"migrations applied: {applied or 'none (up to date)'}; sources synced: {n}")
+    series = SeriesRepo(app.db).sync(app.config.series.series)
+    print(
+        f"migrations applied: {applied or 'none (up to date)'}; "
+        f"sources synced: {n}; series synced: {series}"
+    )
+    return 0
+
+
+def _cmd_normalize(app: App, series_id: str | None) -> int:
+    """Turn collected payloads into vintage-keyed observations.
+
+    Exits non-zero on any parse failure. A run that could not read a
+    provider's response is not a successful run, and reporting it as one is
+    how a dead source becomes invisible (CONSTITUTION.md Art.4-4).
+    """
+    normalizer = Normalizer(app.db, app.raw_store, app.config.series, ObservationRepo(app.db))
+    report = normalizer.run(series_id)
+    print(
+        f"normalize: raw_items={report.raw_items} written={report.written} "
+        f"unchanged={report.skipped} revisions={report.revisions}"
+    )
+    for failure in report.failures:
+        print(f"  FAILED: {failure}")
+    return 0 if report.ok else 1
+
+
+def _cmd_series(app: App) -> int:
+    """The series registry with its actual coverage.
+
+    Coverage comes from the database, so a series that is configured but
+    has never produced an observation prints as a gap rather than as a
+    line item that looks like data.
+    """
+    coverage = {row["series_id"]: row for row in ObservationRepo(app.db).coverage()}
+    gaps = 0
+    for spec in sorted(app.config.series.series, key=lambda s: (s.category, s.series_id)):
+        row = coverage.get(spec.series_id)
+        vintages = int(row["vintages"]) if row else 0
+        gaps += 1 if vintages == 0 else 0
+        latest = row["latest_period"] if row and row["latest_period"] else "-"
+        print(
+            f"{spec.series_id:<32} {spec.category:<11} {spec.frequency:<9} "
+            f"{'revisable' if spec.revisable else 'final':<9} "
+            f"vintages={vintages:<6} latest={latest}"
+        )
+    print(f"\n{len(app.config.series.series)} series, {gaps} with no data yet")
+    return 0
+
+
+def _cmd_observations(app: App, series_id: str, as_of: str | None, limit: int) -> int:
+    """Print a series as it was knowable at an instant.
+
+    `--as-of` defaults to now for interactive use, but the repository API it
+    calls has no default: reproducing a past view must be an explicit act.
+    """
+    cutoff = parse_utc(as_of) if as_of else utc_now()
+    rows = ObservationRepo(app.db).as_of(series_id, cutoff)
+    if not rows:
+        print(f"{series_id}: no observations knowable at {cutoff.isoformat()}")
+        return 0
+    print(f"{series_id} as of {cutoff.isoformat()} ({len(rows)} periods)")
+    for obs in rows[-limit:]:
+        value = "(no figure published)" if obs.value is None else obs.value
+        revision = f" rev{obs.revision_n}" if obs.revision_n else ""
+        print(f"  {obs.observation_date}  {value}{revision}  vintage={obs.vintage_at.isoformat()}")
+    return 0
+
+
+def _cmd_revisions(app: App, series_id: str, period: str) -> int:
+    """Every vintage of one reference period — what we thought, and when."""
+    rows = ObservationRepo(app.db).revisions(series_id, parse_utc(f"{period}T00:00:00Z").date())
+    if not rows:
+        print(f"{series_id} {period}: no observations")
+        return 0
+    for obs in rows:
+        value = "(no figure published)" if obs.value is None else obs.value
+        print(f"  rev{obs.revision_n}  {value}  known from {obs.vintage_at.isoformat()}")
     return 0
 
 
@@ -200,6 +278,16 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("sources", help="list the configured source registry")
     sub.add_parser("migrate", help="apply pending DB migrations and sync source registry")
     sub.add_parser("extract", help="turn unprocessed news raw items into curation candidates")
+    p_norm = sub.add_parser("normalize", help="raw payloads -> vintage-keyed observations")
+    p_norm.add_argument("--series", default=None, help="normalize only this series_id")
+    sub.add_parser("series", help="the series registry and how much data each one has")
+    p_obs = sub.add_parser("observations", help="a series as it was knowable at an instant")
+    p_obs.add_argument("series_id")
+    p_obs.add_argument("--as-of", default=None, help="ISO-8601 UTC instant (default: now)")
+    p_obs.add_argument("--limit", type=int, default=20)
+    p_rev = sub.add_parser("revisions", help="every vintage of one reference period")
+    p_rev.add_argument("series_id")
+    p_rev.add_argument("period", help="reference period, YYYY-MM-DD")
     args = parser.parse_args(list(argv) if argv is not None else sys.argv[1:])
 
     try:
@@ -217,6 +305,14 @@ def main(argv: list[str] | None = None) -> int:
             return _cmd_migrate(app)
         if args.command == "extract":
             return _cmd_extract(app)
+        if args.command == "normalize":
+            return _cmd_normalize(app, args.series)
+        if args.command == "series":
+            return _cmd_series(app)
+        if args.command == "observations":
+            return _cmd_observations(app, args.series_id, args.as_of, args.limit)
+        if args.command == "revisions":
+            return _cmd_revisions(app, args.series_id, args.period)
     except MiosError as exc:
         logger.error("fatal: %s", exc)
         return 2

@@ -14,6 +14,7 @@ from mios.config.models import (
     ScoringConfig,
     SourceSpec,
 )
+from mios.config.series import SeriesRegistry, SeriesSpec
 from mios.config.settings import Settings
 
 __all__ = [
@@ -23,6 +24,8 @@ __all__ = [
     "EventTaxonomy",
     "RelationshipTaxonomy",
     "ScoringConfig",
+    "SeriesRegistry",
+    "SeriesSpec",
     "Settings",
     "SourceSpec",
     "load_config",
