@@ -54,6 +54,8 @@ mios run-due       # 実行期限が来たジョブだけ実行
 mios normalize     # 生データ → vintage付き観測値
 mios observations ser_us_cpi_index --as-of 2026-09-01T00:00:00Z
 mios revisions ser_us_cpi_index 2026-08-01
+mios forecast      # 予測を実行し、その日の vintage を保存（上書きしない）
+mios forecasts ser_us_core_cpi_index 2026-09-01   # ある期間への予測の全履歴
 mios extract       # 未処理ニュースを候補キューへ
 mios health        # ソース別の死活（失敗があれば exit 1）
 ```
@@ -71,7 +73,7 @@ mios health        # ソース別の死活（失敗があれば exit 1）
 | 2 | Architecture cleanup（Bitcoin固有部分の削除、`bios`→`mios`、CI導入） | ✅ 完了 |
 | 3 | Data layer（series / observations / releases / calendar、CSV adapter） | ✅ 完了 |
 | 4 | Historical / Vintage（ALFRED 真vintage、as-of 漏れの静的検出、JGB） | ✅ 完了 |
-| 5 | Forecast layer（CPI / NFP 予測、予測vintageの保存） | 未着手 |
+| 5 | Forecast layer（CPI / NFP 予測、予測vintageの保存） | ✅ 完了 |
 | 6 | News / Institutional forecasts | 未着手 |
 | 7 | Cross asset（Gold / USDJPY 解釈） | 未着手 |
 | 8 | Daily reports（`reports/daily/YYYY-MM-DD.md`） | 未着手 |

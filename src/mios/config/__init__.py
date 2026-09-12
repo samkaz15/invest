@@ -5,6 +5,7 @@ schedules, weights — lives in YAML under ``config/`` and is loaded here into
 typed, validated objects. Unknown keys are rejected (typos fail loudly).
 """
 
+from mios.config.forecast import DriverSpec, ForecastConfig, TargetSpec
 from mios.config.loader import ConfigRoot, load_config
 from mios.config.models import (
     AssetConfig,
@@ -20,13 +21,16 @@ from mios.config.settings import Settings
 __all__ = [
     "AssetConfig",
     "ConfigRoot",
+    "DriverSpec",
     "EntityTaxonomy",
     "EventTaxonomy",
+    "ForecastConfig",
     "RelationshipTaxonomy",
     "ScoringConfig",
     "SeriesRegistry",
     "SeriesSpec",
     "Settings",
     "SourceSpec",
+    "TargetSpec",
     "load_config",
 ]

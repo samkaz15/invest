@@ -33,6 +33,8 @@ from mios.ingestion.health import HealthTracker
 from mios.ingestion.http import HttpClient
 from mios.ingestion.rawstore import FileRawStore
 from mios.knowledge.store import CurationQueue
+from mios.prediction.bridge import forecast_target
+from mios.prediction.repo import ForecastRepo
 from mios.scheduler.breaker import CircuitBreaker
 from mios.scheduler.jobs import JobRunner
 from mios.scheduler.ratelimit import RateLimiter
@@ -211,6 +213,76 @@ def _cmd_observations(app: App, series_id: str, as_of: str | None, limit: int) -
     return 0
 
 
+def _cmd_forecast(app: App, as_of: str | None) -> int:
+    """Run every configured forecast and record today's vintage.
+
+    `--as-of` replays a past day: the forecast is built only from data that
+    was knowable then, which is what makes a backtested call comparable to
+    a live one. `predicted_at` follows the cutoff so the replayed row sits
+    in history where it belongs rather than claiming to have been made
+    today.
+    """
+    repo = ObservationRepo(app.db)
+    journal = ForecastRepo(app.db)
+    cutoff = parse_utc(as_of) if as_of else utc_now()
+    produced = recorded = 0
+    for target in app.config.forecast.targets:
+        forecast = forecast_target(repo, target, as_of=cutoff, predicted_at=cutoff)
+        if forecast is None:
+            print(f"{target.series_id}: not enough history as of {cutoff.date()} — no forecast")
+            continue
+        produced += 1
+        stored = journal.save(forecast)
+        recorded += 1 if stored else 0
+        mark = "recorded" if stored else "already recorded today (left untouched)"
+        print(
+            f"{target.label} {forecast.target_period}: "
+            f"{forecast.point_value:+.4f} {target.unit_label} "
+            f"(baseline {forecast.baseline_value:+.4f}, "
+            f"adjustment {forecast.adjustment:+.4f}) "
+            f"confidence={forecast.confidence:.2f} — {mark}"
+        )
+        if forecast.upside_prob is not None and forecast.downside_prob is not None:
+            print(
+                f"    上振れ {forecast.upside_prob:.0%} / "
+                f"下振れ {forecast.downside_prob:.0%} (vs baseline)"
+            )
+        for driver in sorted(forecast.drivers, key=lambda d: -abs(d.contribution))[:4]:
+            print(f"    driver  {driver.rationale}")
+        for contradiction in forecast.contradictions:
+            print(f"    against {contradiction}")
+        for gap in forecast.data_gaps:
+            print(f"    gap     {gap}")
+    print(f"\n{produced} forecast(s) produced, {recorded} newly recorded")
+    return 0
+
+
+def _cmd_forecasts(app: App, series_id: str, period: str) -> int:
+    """Every forecast ever made for one period, oldest first.
+
+    The question the predictions table exists to answer: what did we think,
+    and when did we change our mind?
+    """
+    rows = ForecastRepo(app.db).vintages(series_id, parse_utc(f"{period}T00:00:00Z").date())
+    if not rows:
+        print(f"{series_id} {period}: no forecasts recorded")
+        return 0
+    print(f"{series_id} for {period} — {len(rows)} vintage(s)")
+    previous: float | None = None
+    for row in rows:
+        point = float(row["point_value"]) if row["point_value"] is not None else None
+        change = ""
+        if point is not None and previous is not None:
+            change = f"  ({point - previous:+.4f} vs previous)"
+        print(
+            f"  {row['predicted_at'].date()}  {point:+.4f}"
+            f"  confidence={float(row['confidence']):.2f}"
+            f"  method={row['method_version']}{change}"
+        )
+        previous = point
+    return 0
+
+
 def _cmd_revisions(app: App, series_id: str, period: str) -> int:
     """Every vintage of one reference period — what we thought, and when."""
     rows = ObservationRepo(app.db).revisions(series_id, parse_utc(f"{period}T00:00:00Z").date())
@@ -294,6 +366,11 @@ def main(argv: list[str] | None = None) -> int:
     p_rev = sub.add_parser("revisions", help="every vintage of one reference period")
     p_rev.add_argument("series_id")
     p_rev.add_argument("period", help="reference period, YYYY-MM-DD")
+    p_fc = sub.add_parser("forecast", help="run the forecasts and record today's vintage")
+    p_fc.add_argument("--as-of", default=None, help="replay a past day (ISO-8601 UTC)")
+    p_fcs = sub.add_parser("forecasts", help="every forecast made for one target period")
+    p_fcs.add_argument("series_id")
+    p_fcs.add_argument("period", help="target period, YYYY-MM-DD")
     args = parser.parse_args(list(argv) if argv is not None else sys.argv[1:])
 
     try:
@@ -319,6 +396,10 @@ def main(argv: list[str] | None = None) -> int:
             return _cmd_observations(app, args.series_id, args.as_of, args.limit)
         if args.command == "revisions":
             return _cmd_revisions(app, args.series_id, args.period)
+        if args.command == "forecast":
+            return _cmd_forecast(app, args.as_of)
+        if args.command == "forecasts":
+            return _cmd_forecasts(app, args.series_id, args.period)
     except MiosError as exc:
         logger.error("fatal: %s", exc)
         return 2

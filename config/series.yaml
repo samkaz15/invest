@@ -585,3 +585,101 @@ series:
     parser: mof_jgb_csv
     revisable: false
     seasonal_adjustment: not_applicable
+  - series_id: ser_us_gasoline_price
+    name: "US regular gasoline price, weekly"
+    country: US
+    category: inflation
+    unit: level
+    frequency: weekly
+    source_id: src_fred_gasregw
+    provider_code: "GASREGW"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: nsa
+    notes: >-
+      The energy channel into headline CPI is near-mechanical: the pump price moves, the CPI energy component follows within the month.
+  - series_id: ser_us_wti_oil
+    name: "WTI crude oil spot"
+    country: US
+    category: commodity
+    unit: level
+    frequency: daily
+    source_id: src_fred_dcoilwtico
+    provider_code: "DCOILWTICO"
+    parser: fred_json
+    revisable: false
+    seasonal_adjustment: not_applicable
+    notes: >-
+      Leads gasoline by a few weeks; the earliest read on the energy channel.
+  - series_id: ser_us_cpi_shelter
+    name: "US CPI shelter"
+    country: US
+    category: inflation
+    unit: index
+    frequency: monthly
+    source_id: src_fred_cusr0000sah1
+    provider_code: "CUSR0000SAH1"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      About a third of the CPI basket and highly persistent, which makes it the single most forecastable core component.
+  - series_id: ser_us_cpi_rent
+    name: "US CPI rent of primary residence"
+    country: US
+    category: inflation
+    unit: index
+    frequency: monthly
+    source_id: src_fred_cusr0000seha
+    provider_code: "CUSR0000SEHA"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+  - series_id: ser_us_cpi_oer
+    name: "US CPI owners equivalent rent"
+    country: US
+    category: inflation
+    unit: index
+    frequency: monthly
+    source_id: src_fred_cusr0000sehc
+    provider_code: "CUSR0000SEHC"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+  - series_id: ser_us_cpi_used_cars
+    name: "US CPI used cars and trucks"
+    country: US
+    category: inflation
+    unit: index
+    frequency: monthly
+    source_id: src_fred_cusr0000seta02
+    provider_code: "CUSR0000SETA02"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      Small weight, large variance — a frequent source of core CPI surprises.
+  - series_id: ser_us_cpi_medical
+    name: "US CPI medical care"
+    country: US
+    category: inflation
+    unit: index
+    frequency: monthly
+    source_id: src_fred_cpimedsl
+    provider_code: "CPIMEDSL"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+  - series_id: ser_us_cpi_services_ex_energy
+    name: "US CPI services less energy services"
+    country: US
+    category: inflation
+    unit: index
+    frequency: monthly
+    source_id: src_fred_cusr0000sasle
+    provider_code: "CUSR0000SASLE"
+    parser: fred_json
+    revisable: true
+    seasonal_adjustment: sa
+    notes: >-
+      The wage-sensitive half of core inflation.

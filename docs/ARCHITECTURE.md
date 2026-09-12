@@ -33,6 +33,7 @@ L3 知識    knowledge   Event Store / Entity / as-of Timeline
 L4 分析    analysis    次元スコア（Signal の集合 → DimensionReport）
    ↓
 L5 統合    scoring     DimensionReport → Score Card（weight・対立・完全性）
+L6 予測    prediction  先行指標 → CPI / NFP 予測（毎日1行・上書き禁止）
 ```
 
 ### 1.1 残りの層（✅ 以外は**現在は未実装**）
@@ -44,7 +45,7 @@ L5 統合    scoring     DimensionReport → Score Card（weight・対立・完�
 | ~~`markets/`~~ | 3 | **`series/` に統合済**（Phase 3 完了） | ✅ |
 | `forecasts/` | 4 | 機関投資家予測（値そのものより**変化**） | 6 |
 | `news/` | 5 | Gold / USDJPY / マクロ予測に影響するニュースのみ分類 | 6 |
-| `prediction/` | 6 | **CPI / NFP 予測（最重要）** | 5 |
+| ~~`prediction/`~~ | 6 | **CPI / NFP 予測** — ✅ Phase 5 完了 | ✅ |
 | `analysis/` | 7 | マクロスコア → クロスアセット → Gold / USDJPY 解釈 | 7 |
 | `reports/` | 8 | 日次 Markdown（前日差分を必ず含む） | 8 |
 | `validation/` | – | 予測精度検証（MAE / RMSE / 方向 / キャリブレーション） | 9 |
@@ -140,13 +141,41 @@ observation は `source_id` と取得元 URL を持つ。
 統計量は標本数が足りなければ `None` を返す（`analysis/stats.py`, 既定 n≥30）。
 呼び出し側は欠損として記録する。薄い履歴から数字をひねり出さない。
 
-### 3.6 説明可能なスコアだけを保存する
+### 3.6 予測は「ナイーブ + 説明可能な調整」
+
+```
+point = baseline + Σ (先行指標の読み × 設定された weight)
+```
+
+`baseline`（直近数期の平均＝ナイーブ予測）を**予測と一緒に保存する**。
+「調整が仕事をしたのか」を行だけから答えられるようにするため。
+調整が常にゼロ近傍なら、先行指標は飾りであり、検証がそう言う。
+
+**weight は「事前分布」であって推定値ではない。** 今フィットしても
+数十期しかなく、in-sample だけ良く見えるものができるだけである。
+各 weight には `justification` が必須で、誤差が溜まった時点で
+再推定する権利を得る（`docs/EVALUATION.md` §3）。
+
+driver は2種類：
+
+| mode | 変換 | 例 |
+|---|---|---|
+| `elastic` | バスケット構成比で直接換算（ほぼ機械的） | ガソリン価格 → headline CPI |
+| `standard` | 自然な換算が無いので σ で表現し、事前分布で換算 | 失業保険申請 → NFP |
+
+確率は「実績が baseline を上回る確率」であり、
+**この手法自身の過去の baseline 誤差の広がり**から導く。
+履歴が足りなければ `None` を返す（50% は捏造）。
+また **5%〜95% に丸める** — 未較正の事前分布に基づく手法が
+99% を主張する資格はない（憲法第5条）。
+
+### 3.7 説明可能なスコアだけを保存する
 
 `Signal` は `value` / `points` / `label` / `rationale` / `evidence_refs` を持ち、
 `ScoreCard` は各次元の score・weight・contribution・top signals を保存する。
 「なぜ +0.8 なのか」が保存された行だけから答えられない計算は作らない。
 
-### 3.7 欠損は成果物に出す
+### 3.8 欠損は成果物に出す
 
 `DimensionReport.data_gaps` と、無効化されたソースの一覧は必ずレポートに載る。
 `mios health` は失敗中のソースがあれば非ゼロで終了する。
@@ -165,6 +194,7 @@ observation は `source_id` と取得元 URL を持つ。
 | `config/taxonomy/*.yaml` | イベント種別・エンティティ種別・関係種別 |
 | `config/scoring.yaml` | 次元ウェイト（`weights_version` が全 score card に刻印される） |
 | `config/pipelines.yaml` | ジョブとその実行間隔、リトライ・ブレーカのパラメータ |
+| `config/forecast.yaml` | 予測対象と先行指標・weight・その根拠（`method_version` が全予測に刻印される） |
 
 新しいプロバイダの追加は YAML 1枚。
 新しい *kind*（`rss` / `http_json` / `http_csv` 以外）の追加だけがコード変更になる。
@@ -194,6 +224,8 @@ mios run-due       # 実行期限が来たジョブだけ実行
 mios normalize     # 生データ → vintage付き観測値（parse失敗があれば exit 1）
 mios observations <series_id> [--as-of ISO8601]   # その時点で知り得た系列
 mios revisions <series_id> <YYYY-MM-DD>           # ある参照期間の全vintage
+mios forecast [--as-of ISO8601]                   # 予測を実行し、その日の vintage を保存
+mios forecasts <series_id> <YYYY-MM-DD>           # ある対象期間への予測の全履歴
 mios extract       # 未処理のニュース raw を候補キューへ
 mios health        # ソース別の死活・DLQ 件数（失敗があれば exit 1）
 ```

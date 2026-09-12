@@ -52,3 +52,11 @@ jobs:
   - { job_id: collect_alfred_payems, task: collect, source_id: src_alfred_payems, interval_minutes: 10080 }
   - { job_id: collect_alfred_unrate, task: collect, source_id: src_alfred_unrate, interval_minutes: 10080 }
   - { job_id: collect_alfred_pcepilfe, task: collect, source_id: src_alfred_pcepilfe, interval_minutes: 10080 }
+  - { job_id: collect_gasregw, task: collect, source_id: src_fred_gasregw, interval_minutes: 720 }
+  - { job_id: collect_dcoilwtico, task: collect, source_id: src_fred_dcoilwtico, interval_minutes: 360 }
+  - { job_id: collect_cusr0000sah1, task: collect, source_id: src_fred_cusr0000sah1, interval_minutes: 720 }
+  - { job_id: collect_cusr0000seha, task: collect, source_id: src_fred_cusr0000seha, interval_minutes: 720 }
+  - { job_id: collect_cusr0000sehc, task: collect, source_id: src_fred_cusr0000sehc, interval_minutes: 720 }
+  - { job_id: collect_cusr0000seta02, task: collect, source_id: src_fred_cusr0000seta02, interval_minutes: 720 }
+  - { job_id: collect_cpimedsl, task: collect, source_id: src_fred_cpimedsl, interval_minutes: 720 }
+  - { job_id: collect_cusr0000sasle, task: collect, source_id: src_fred_cusr0000sasle, interval_minutes: 720 }

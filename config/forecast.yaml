@@ -1,0 +1,241 @@
+# What MIOS forecasts, and from what.
+#
+# Every weight below is a STATED PRIOR, not a fitted parameter. There is
+# nothing yet to fit on: a regression estimated today would see a handful of
+# periods and would look far better in sample than it could ever perform out
+# of it. Each weight therefore carries a justification, and the project
+# earns the right to re-estimate them once enough forecast errors have
+# accumulated (docs/EVALUATION.md §3).
+#
+# Two driver modes:
+#   elastic  — the driver is a share of the target by construction, so its
+#              own percent move converts directly. The weight is a basket
+#              share and is defensible on its face.
+#   standard — no natural conversion exists, so the reading is expressed in
+#              standard deviations and converted by a prior. These are the
+#              weights most in need of re-estimation.
+#
+# Raising method_version marks forecasts as coming from a different method,
+# so old ones stay interpretable. Change it whenever a weight changes.
+method_version: forecast/v1
+
+targets:
+  # ------------------------------------------------------------ core CPI
+  - series_id: ser_us_core_cpi_index
+    label: US core CPI
+    frequency: monthly
+    transform: pct_change
+    unit_label: pp
+    baseline_window: 3
+    # Core CPI monthly changes live in a narrow band; ±0.15pp is already a
+    # large call against a baseline that is usually right within ~0.1pp.
+    max_adjustment: 0.0015
+    drivers:
+      - series_id: ser_us_cpi_shelter
+        label: Shelter
+        mode: elastic
+        weight: 0.44
+        window: 12
+        justification: >-
+          Shelter is roughly 44% of the core CPI basket and is the most
+          persistent component, so its own deviation from trend carries
+          almost directly into core at its basket share.
+      - series_id: ser_us_cpi_oer
+        label: Owners equivalent rent
+        mode: elastic
+        weight: 0.11
+        window: 12
+        justification: >-
+          OER is inside shelter, so it is weighted only for the incremental
+          signal it adds when it diverges from the shelter aggregate.
+      - series_id: ser_us_cpi_used_cars
+        label: Used cars and trucks
+        mode: elastic
+        weight: 0.04
+        window: 12
+        justification: >-
+          About 4% of core but with several times the variance of any other
+          component, which makes it a recurring source of core surprises.
+      - series_id: ser_us_cpi_medical
+        label: Medical care
+        mode: elastic
+        weight: 0.09
+        window: 12
+        justification: Roughly 9% of the core basket.
+      - series_id: ser_us_cpi_services_ex_energy
+        label: Services ex energy
+        mode: elastic
+        weight: 0.25
+        window: 12
+        justification: >-
+          The wage-sensitive half of core, weighted below its basket share
+          because shelter already carries part of the same signal.
+      - series_id: ser_us_ppi_final_demand
+        label: PPI final demand
+        mode: standard
+        weight: 0.0002
+        window: 12
+        justification: >-
+          PRIOR, to be re-estimated. Producer prices lead some core goods
+          components, but the pass-through is neither stable nor fast, so
+          the weight is set small enough to tilt rather than drive.
+      - series_id: ser_us_avg_hourly_earnings
+        label: Average hourly earnings
+        mode: standard
+        weight: 0.0002
+        window: 12
+        justification: >-
+          PRIOR, to be re-estimated. Wages feed services inflation with a
+          long and variable lag; small weight for the same reason as PPI.
+
+  # ------------------------------------------------------- headline CPI
+  - series_id: ser_us_cpi_index
+    label: US headline CPI
+    frequency: monthly
+    transform: pct_change
+    unit_label: pp
+    baseline_window: 3
+    # Wider than core: headline carries energy, which genuinely can move it
+    # by a third of a point in a month.
+    max_adjustment: 0.0035
+    drivers:
+      - series_id: ser_us_gasoline_price
+        label: Regular gasoline
+        mode: elastic
+        weight: 0.035
+        window: 8
+        justification: >-
+          Motor fuel is about 3.5% of the CPI basket and the pump price is
+          the same price the index measures, so this is close to mechanical
+          rather than a fitted relationship.
+      - series_id: ser_us_cpi_shelter
+        label: Shelter
+        mode: elastic
+        weight: 0.35
+        window: 12
+        justification: Shelter is roughly 35% of the headline basket.
+      - series_id: ser_us_cpi_services_ex_energy
+        label: Services ex energy
+        mode: elastic
+        weight: 0.20
+        window: 12
+        justification: >-
+          Weighted below its basket share because shelter already carries
+          part of the same signal.
+      - series_id: ser_us_wti_oil
+        label: WTI crude
+        mode: standard
+        weight: 0.0003
+        window: 20
+        justification: >-
+          PRIOR, to be re-estimated. Crude leads the pump price by a few
+          weeks, so it adds early signal that gasoline has not shown yet;
+          small weight because gasoline already carries most of it.
+
+  # ------------------------------------------------------------------ NFP
+  - series_id: ser_us_nfp_level
+    label: US nonfarm payrolls
+    frequency: monthly
+    transform: diff
+    unit_label: k jobs
+    baseline_window: 3
+    # Payrolls are reported in thousands, so this is a ±75k bound — large,
+    # because the labour data genuinely can shift that much, but short of
+    # the swings a single distorted claims week could otherwise produce.
+    max_adjustment: 75.0
+    drivers:
+      - series_id: ser_us_initial_claims
+        label: Initial jobless claims
+        mode: standard
+        weight: -18.0
+        transform: level
+        window: 12
+        justification: >-
+          PRIOR, to be re-estimated. The highest-frequency labour signal
+          available and the backbone of the nowcast. Negative because more
+          claims mean fewer jobs; ~18k per standard deviation is a
+          deliberately modest reading of a noisy weekly series.
+      - series_id: ser_us_continuing_claims
+        label: Continuing claims
+        mode: standard
+        weight: -12.0
+        transform: level
+        window: 12
+        justification: >-
+          PRIOR, to be re-estimated. Separates "fewer hires" from "more
+          layoffs" when read against initial claims; slower-moving, so
+          weighted below it.
+      - series_id: ser_us_temp_help
+        label: Temporary help services
+        mode: standard
+        weight: 10.0
+        transform: diff
+        window: 12
+        justification: >-
+          PRIOR, to be re-estimated. Temp staffing is cut before permanent
+          headcount, making it a classic leading indicator of turns.
+      - series_id: ser_us_jolts_openings
+        label: JOLTS job openings
+        mode: standard
+        weight: 8.0
+        transform: diff
+        window: 12
+        justification: >-
+          PRIOR, to be re-estimated. Openings lead hiring, but JOLTS lags
+          by a month, so it informs the trend more than the month itself.
+      - series_id: ser_us_avg_weekly_hours
+        label: Average weekly hours
+        mode: standard
+        weight: 9.0
+        transform: diff
+        window: 12
+        justification: >-
+          PRIOR, to be re-estimated. Employers add hours before adding
+          workers, so a rise in hours often precedes payroll strength.
+      - series_id: ser_us_jolts_quits
+        label: JOLTS quits
+        mode: standard
+        weight: 5.0
+        transform: diff
+        window: 12
+        justification: >-
+          PRIOR, to be re-estimated. Quits track worker confidence, which
+          is a weaker and slower signal than the claims series.
+
+  # ---------------------------------------------------- unemployment rate
+  - series_id: ser_us_unemployment_rate
+    label: US unemployment rate
+    frequency: monthly
+    transform: diff
+    unit_label: pp
+    baseline_window: 3
+    max_adjustment: 0.2
+    drivers:
+      - series_id: ser_us_initial_claims
+        label: Initial jobless claims
+        mode: standard
+        weight: 0.04
+        transform: level
+        window: 12
+        justification: >-
+          PRIOR, to be re-estimated. Positive because more claims raise the
+          unemployment rate — the opposite sign to the payrolls bridge,
+          which is the arithmetic check that the two are consistent.
+      - series_id: ser_us_continuing_claims
+        label: Continuing claims
+        mode: standard
+        weight: 0.05
+        transform: level
+        window: 12
+        justification: >-
+          PRIOR, to be re-estimated. Continuing claims map more directly
+          onto the stock of unemployed than initial claims do.
+      - series_id: ser_us_participation_rate
+        label: Labor force participation
+        mode: standard
+        weight: 0.03
+        transform: diff
+        window: 12
+        justification: >-
+          PRIOR, to be re-estimated. A rising participation rate can raise
+          measured unemployment even when hiring is healthy.
