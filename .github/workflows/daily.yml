@@ -1,23 +1,19 @@
-# The daily run. Collect, normalize, forecast, interpret, score, report,
-# commit.
+# The daily run.
 #
-# Two rules shape this file.
+# The chain itself lives in `mios daily`, not here. It used to be written out
+# step by step in this file *and* in the Makefile, and the two drifted: the
+# workflow tolerated a failing collection and still wrote the report, while
+# `make daily-report` stopped at the first error and produced nothing. One
+# definition, called from both.
 #
-# **A partial failure must still produce a report.** One dead provider is
-# routine; losing the day's snapshot because of it is not. Every collection
-# step therefore continues on error, and the report — which names every
-# missing series on its face — is generated regardless.
-#
-# **A failure must never look like a success.** The steps record what broke,
-# the job summary says so, and the job fails at the end, *after* the data and
-# the report have been committed. Failing early would mean the one artifact
-# that documents the failure never gets written down.
+# What this file is responsible for is everything around the chain: secrets,
+# committing the output, and making sure a failure is visible without
+# discarding the artifact that documents it.
 name: Daily
 
 on:
   schedule:
-    # 07:10 UTC on weekdays: after the US data window (08:30 ET releases are
-    # 12:30/13:30 UTC the previous day) and before the Tokyo morning.
+    # 07:10 UTC on weekdays: after the US data window and before Tokyo opens.
     - cron: "10 7 * * 1-5"
   workflow_dispatch:
     inputs:
@@ -42,7 +38,6 @@ jobs:
       FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
       TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
       MIOS_LOG_JSON: "true"
-      AS_OF_ARG: ${{ inputs.as_of && format('--as-of {0}', inputs.as_of) || '' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -62,46 +57,21 @@ jobs:
             exit 1
           fi
 
-      - name: Migrate and sync registries
-        run: python -m mios.cli migrate
-
-      - name: Collect
-        id: collect
+      - name: Daily chain
+        id: chain
+        # Not a failure gate: a dead provider must not cost the day's
+        # snapshot. The exit code is honoured at the end of the job, after
+        # the report it produced has been committed.
         continue-on-error: true
-        run: python -m mios.cli collect
-
-      - name: Normalize
-        id: normalize
-        continue-on-error: true
-        run: python -m mios.cli normalize
-
-      - name: Forecast
-        id: forecast
-        continue-on-error: true
-        run: python -m mios.cli forecast $AS_OF_ARG
-
-      - name: Analyze
-        id: analyze
-        continue-on-error: true
-        run: python -m mios.cli analyze $AS_OF_ARG
-
-      - name: Validate
-        id: validate
-        continue-on-error: true
-        run: python -m mios.cli validate $AS_OF_ARG
-
-      - name: Report
-        # Not continue-on-error: if the report itself cannot be written there
-        # is nothing left worth committing.
-        run: python -m mios.cli report $AS_OF_ARG
-
-      - name: Source health
-        id: health
-        continue-on-error: true
-        run: python -m mios.cli health
+        run: |
+          set -o pipefail
+          AS_OF_ARG=""
+          if [ -n "${{ inputs.as_of }}" ]; then
+            AS_OF_ARG="--as-of ${{ inputs.as_of }}"
+          fi
+          python -m mios.cli daily $AS_OF_ARG 2>&1 | tee /tmp/daily.log
 
       - name: Commit
-        id: commit
         run: |
           set -euo pipefail
           git config user.name  "mios-bot"
@@ -109,66 +79,46 @@ jobs:
           DAY="$(date -u +%Y-%m-%d)"
 
           # Separate commits so `git log -- data/` and `git log -- reports/`
-          # each read as a history of one thing (指示書 §23).
-          if ! git diff --quiet -- data/ || [ -n "$(git ls-files -o --exclude-standard -- data/)" ]; then
-            git add data/
-            git commit -m "data: update macro and market data ${DAY}"
-          fi
-          if ! git diff --quiet -- reports/ || [ -n "$(git ls-files -o --exclude-standard -- reports/)" ]; then
-            git add reports/
-            git commit -m "report: daily macro report ${DAY}"
-          fi
+          # each read as the history of one thing (指示書 §23).
+          git add -A data/
+          git diff --cached --quiet || git commit -m "data: update macro and market data ${DAY}"
+          git add -A reports/
+          git diff --cached --quiet || git commit -m "report: daily macro report ${DAY}"
 
-          if git diff --quiet HEAD@{upstream} HEAD 2>/dev/null; then
+          if git diff --quiet '@{upstream}' HEAD 2>/dev/null; then
             echo "nothing to push"
           else
             for attempt in 1 2 3 4; do
-              git pull --rebase --autostash && git push && break
+              if git pull --rebase --autostash && git push; then
+                exit 0
+              fi
               echo "push attempt ${attempt} failed; retrying"
               sleep $((2 ** attempt))
             done
+            echo "::error::could not push after 4 attempts"
+            exit 1
           fi
 
       - name: Summary
-        # Always: the point of this step is to describe failures.
         if: always()
         run: |
           {
             echo "## Daily run — $(date -u +%Y-%m-%dT%H:%M:%SZ)"
             echo
-            echo "| step | outcome |"
-            echo "|---|---|"
-            echo "| collect | ${{ steps.collect.outcome }} |"
-            echo "| normalize | ${{ steps.normalize.outcome }} |"
-            echo "| forecast | ${{ steps.forecast.outcome }} |"
-            echo "| analyze | ${{ steps.analyze.outcome }} |"
-            echo "| validate | ${{ steps.validate.outcome }} |"
-            echo "| source health | ${{ steps.health.outcome }} |"
+            echo '```'
+            # The chain prints its own per-step outcome table.
+            sed -n '/── summary/,$p' /tmp/daily.log 2>/dev/null || echo "(chain produced no output)"
+            echo '```'
             echo
             echo "Missing series and failing sources are listed in the report's"
             echo "**Data Quality / Missing Data** section, which is committed"
             echo "whether or not this run succeeded."
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Fail if any step broke
+      - name: Fail if the chain reported an error
         # Last, deliberately: the data and the report are already committed,
         # so the record of what went wrong survives the failure.
-        if: always()
+        if: steps.chain.outcome == 'failure'
         run: |
-          failed=""
-          for step in "collect:${{ steps.collect.outcome }}" \
-                      "normalize:${{ steps.normalize.outcome }}" \
-                      "forecast:${{ steps.forecast.outcome }}" \
-                      "analyze:${{ steps.analyze.outcome }}" \
-                      "validate:${{ steps.validate.outcome }}" \
-                      "health:${{ steps.health.outcome }}"; do
-            name="${step%%:*}"; outcome="${step##*:}"
-            if [ "$outcome" = "failure" ]; then
-              echo "::error::${name} failed — see the step log and the report's data-quality section"
-              failed="${failed} ${name}"
-            fi
-          done
-          if [ -n "$failed" ]; then
-            echo "failed steps:${failed}"
-            exit 1
-          fi
+          echo "::error::the daily chain reported a failure — see the summary and the committed report"
+          exit 1

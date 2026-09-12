@@ -37,13 +37,10 @@ health:  ## Per-source health; non-zero exit if any source is failing
 	$(RUN) mios.cli health
 
 daily-report:  ## The full daily chain, ending in reports/daily/YYYY-MM-DD.md
-	$(RUN) mios.cli migrate
-	$(RUN) mios.cli collect
-	$(RUN) mios.cli normalize
-	$(RUN) mios.cli forecast
-	$(RUN) mios.cli analyze
-	$(RUN) mios.cli validate
-	$(RUN) mios.cli report
+	# One definition of the chain, in mios.cli, so this and the GitHub
+	# workflow cannot drift apart. A failing provider does not stop the
+	# report; the exit code still reflects it.
+	$(RUN) mios.cli daily
 
 clean:
 	rm -rf $(VENV) .mypy_cache .ruff_cache .pytest_cache htmlcov .coverage

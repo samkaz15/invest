@@ -341,6 +341,64 @@ def _cmd_analyze(app: App, as_of: str | None) -> int:
     return 0
 
 
+#: The daily chain, in order. Kept here rather than in a Makefile or a
+#: workflow because it existed in two places once and they drifted: the
+#: workflow tolerated a failing collection and still wrote the report, while
+#: `make daily-report` stopped at the first error and produced nothing. One
+#: definition, called by both.
+#:
+#: ``tolerant`` marks the steps where one dead provider must not cost the
+#: day's snapshot. The report is not tolerant — if it cannot be written there
+#: is nothing left worth committing — and it runs whatever else failed,
+#: because it names every gap on its face and is most valuable on exactly
+#: those days.
+DAILY_CHAIN: list[tuple[str, bool]] = [
+    ("migrate", False),
+    ("collect", True),
+    ("normalize", True),
+    ("forecast", True),
+    ("analyze", True),
+    ("validate", True),
+    ("report", False),
+]
+
+
+def _cmd_daily(app: App, as_of: str | None) -> int:
+    """Run the whole daily chain, then fail if any step broke.
+
+    Failing at the end rather than at the first error is deliberate: the
+    report is the artifact that documents what went wrong, so aborting early
+    would throw away the evidence.
+    """
+    takes_as_of = {"forecast", "analyze", "validate", "report"}
+    outcomes: list[tuple[str, str]] = []
+    for step, tolerant in DAILY_CHAIN:
+        argv = [step, *(["--as-of", as_of] if as_of and step in takes_as_of else [])]
+        print(f"\n── {step} " + "─" * (60 - len(step)))
+        try:
+            code = _dispatch(app, _parse(argv))
+        except MiosError as exc:
+            logger.error("%s: %s", step, exc)
+            code = 2
+        outcomes.append((step, "ok" if code == 0 else "FAILED"))
+        if code != 0 and not tolerant:
+            outcomes.extend((remaining, "skipped") for remaining, _ in DAILY_CHAIN[len(outcomes) :])
+            break
+
+    print("\n── summary " + "─" * 52)
+    for step, outcome in outcomes:
+        print(f"  {step:<12} {outcome}")
+    failed = [step for step, outcome in outcomes if outcome == "FAILED"]
+    if failed:
+        print(
+            f"\n{len(failed)} step(s) failed: {', '.join(failed)}.\n"
+            "欠損している系列と失敗したソースは、生成済みレポートの "
+            "「Data Quality / Missing Data」に記載されている。"
+        )
+        return 1
+    return 0
+
+
 def _cmd_report(app: App, as_of: str | None) -> int:
     """Write reports/daily/YYYY-MM-DD.md from what is already stored."""
     cutoff = parse_utc(as_of) if as_of else utc_now()
@@ -492,7 +550,7 @@ def _cmd_sources(app: App) -> int:
     return 0
 
 
-def main(argv: list[str] | None = None) -> int:
+def _parse(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(prog="mios")
     sub = parser.add_subparsers(dest="command", required=True)
     p_collect = sub.add_parser("collect", help="collect one source (or all enabled)")
@@ -523,49 +581,61 @@ def main(argv: list[str] | None = None) -> int:
     p_val.add_argument("--as-of", default=None, help="score as at a past instant (ISO-8601)")
     p_rep = sub.add_parser("report", help="write today's daily Markdown report")
     p_rep.add_argument("--as-of", default=None, help="render as at a past instant (ISO-8601)")
+    p_daily = sub.add_parser(
+        "daily", help="the whole chain: migrate, collect, normalize, forecast, analyze, report"
+    )
+    p_daily.add_argument("--as-of", default=None, help="replay a past day (ISO-8601 UTC)")
     p_acc = sub.add_parser("accuracy", help="MAE / skill vs naive / directional / calibration")
     p_acc.add_argument("--series", default=None, help="limit to one target series_id")
-    args = parser.parse_args(list(argv) if argv is not None else sys.argv[1:])
+    return parser.parse_args(argv)
 
+
+def _dispatch(app: App, args: argparse.Namespace) -> int:
+    if args.command == "collect":
+        return _cmd_collect(app, args.source)
+    if args.command == "run-due":
+        results = app.runner.run_due()
+        return 1 if any(r.status.value == "failed" for r in results) else 0
+    if args.command == "health":
+        return _cmd_health(app)
+    if args.command == "sources":
+        return _cmd_sources(app)
+    if args.command == "migrate":
+        return _cmd_migrate(app)
+    if args.command == "extract":
+        return _cmd_extract(app)
+    if args.command == "normalize":
+        return _cmd_normalize(app, args.series)
+    if args.command == "series":
+        return _cmd_series(app)
+    if args.command == "observations":
+        return _cmd_observations(app, args.series_id, args.as_of, args.limit)
+    if args.command == "revisions":
+        return _cmd_revisions(app, args.series_id, args.period)
+    if args.command == "forecast":
+        return _cmd_forecast(app, args.as_of)
+    if args.command == "forecasts":
+        return _cmd_forecasts(app, args.series_id, args.period)
+    if args.command == "analyze":
+        return _cmd_analyze(app, args.as_of)
+    if args.command == "validate":
+        return _cmd_validate(app, args.as_of)
+    if args.command == "accuracy":
+        return _cmd_accuracy(app, args.series)
+    if args.command == "report":
+        return _cmd_report(app, args.as_of)
+    if args.command == "daily":
+        return _cmd_daily(app, args.as_of)
+    return 0
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = _parse(list(argv) if argv is not None else sys.argv[1:])
     try:
-        app = build_app()
-        if args.command == "collect":
-            return _cmd_collect(app, args.source)
-        if args.command == "run-due":
-            results = app.runner.run_due()
-            return 1 if any(r.status.value == "failed" for r in results) else 0
-        if args.command == "health":
-            return _cmd_health(app)
-        if args.command == "sources":
-            return _cmd_sources(app)
-        if args.command == "migrate":
-            return _cmd_migrate(app)
-        if args.command == "extract":
-            return _cmd_extract(app)
-        if args.command == "normalize":
-            return _cmd_normalize(app, args.series)
-        if args.command == "series":
-            return _cmd_series(app)
-        if args.command == "observations":
-            return _cmd_observations(app, args.series_id, args.as_of, args.limit)
-        if args.command == "revisions":
-            return _cmd_revisions(app, args.series_id, args.period)
-        if args.command == "forecast":
-            return _cmd_forecast(app, args.as_of)
-        if args.command == "forecasts":
-            return _cmd_forecasts(app, args.series_id, args.period)
-        if args.command == "analyze":
-            return _cmd_analyze(app, args.as_of)
-        if args.command == "validate":
-            return _cmd_validate(app, args.as_of)
-        if args.command == "accuracy":
-            return _cmd_accuracy(app, args.series)
-        if args.command == "report":
-            return _cmd_report(app, args.as_of)
+        return _dispatch(build_app(), args)
     except MiosError as exc:
         logger.error("fatal: %s", exc)
         return 2
-    return 0
 
 
 if __name__ == "__main__":

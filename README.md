@@ -61,7 +61,10 @@ mios analyze       # マクロ8次元スコア + Gold / USDJPY のマクロバ�
 mios accuracy      # MAE / 対ナイーブ skill / 方向的中 / キャリブレーション
 mios report        # reports/daily/YYYY-MM-DD.md を生成
 
-make daily-report  # 上記を collect から report まで一気通貫で実行
+mios daily         # 上記を migrate から report まで一気通貫で実行
+                   # （プロバイダが1つ落ちてもレポートは出る。終了コードには反映される）
+
+make daily-report  # `mios daily` を呼ぶだけ。workflow と定義を共有する
 mios extract       # 未処理ニュースを候補キューへ
 mios health        # ソース別の死活（失敗があれば exit 1）
 ```
