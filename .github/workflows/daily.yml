@@ -1,0 +1,174 @@
+# The daily run. Collect, normalize, forecast, interpret, score, report,
+# commit.
+#
+# Two rules shape this file.
+#
+# **A partial failure must still produce a report.** One dead provider is
+# routine; losing the day's snapshot because of it is not. Every collection
+# step therefore continues on error, and the report — which names every
+# missing series on its face — is generated regardless.
+#
+# **A failure must never look like a success.** The steps record what broke,
+# the job summary says so, and the job fails at the end, *after* the data and
+# the report have been committed. Failing early would mean the one artifact
+# that documents the failure never gets written down.
+name: Daily
+
+on:
+  schedule:
+    # 07:10 UTC on weekdays: after the US data window (08:30 ET releases are
+    # 12:30/13:30 UTC the previous day) and before the Tokyo morning.
+    - cron: "10 7 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      as_of:
+        description: "Replay a past day (ISO-8601 UTC). Leave blank for now."
+        required: false
+        type: string
+
+concurrency:
+  # Never two writers against the same database and the same branch.
+  group: daily
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    env:
+      MIOS_DATABASE_URL: ${{ secrets.MIOS_DATABASE_URL }}
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+      TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
+      MIOS_LOG_JSON: "true"
+      AS_OF_ARG: ${{ inputs.as_of && format('--as-of {0}', inputs.as_of) || '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Refuse to run without a database
+        # Everything downstream would "succeed" against nothing.
+        run: |
+          if [ -z "$MIOS_DATABASE_URL" ]; then
+            echo "::error::MIOS_DATABASE_URL is not set — see ADR-010"
+            exit 1
+          fi
+
+      - name: Migrate and sync registries
+        run: python -m mios.cli migrate
+
+      - name: Collect
+        id: collect
+        continue-on-error: true
+        run: python -m mios.cli collect
+
+      - name: Normalize
+        id: normalize
+        continue-on-error: true
+        run: python -m mios.cli normalize
+
+      - name: Forecast
+        id: forecast
+        continue-on-error: true
+        run: python -m mios.cli forecast $AS_OF_ARG
+
+      - name: Analyze
+        id: analyze
+        continue-on-error: true
+        run: python -m mios.cli analyze $AS_OF_ARG
+
+      - name: Validate
+        id: validate
+        continue-on-error: true
+        run: python -m mios.cli validate $AS_OF_ARG
+
+      - name: Report
+        # Not continue-on-error: if the report itself cannot be written there
+        # is nothing left worth committing.
+        run: python -m mios.cli report $AS_OF_ARG
+
+      - name: Source health
+        id: health
+        continue-on-error: true
+        run: python -m mios.cli health
+
+      - name: Commit
+        id: commit
+        run: |
+          set -euo pipefail
+          git config user.name  "mios-bot"
+          git config user.email "mios-bot@users.noreply.github.com"
+          DAY="$(date -u +%Y-%m-%d)"
+
+          # Separate commits so `git log -- data/` and `git log -- reports/`
+          # each read as a history of one thing (指示書 §23).
+          if ! git diff --quiet -- data/ || [ -n "$(git ls-files -o --exclude-standard -- data/)" ]; then
+            git add data/
+            git commit -m "data: update macro and market data ${DAY}"
+          fi
+          if ! git diff --quiet -- reports/ || [ -n "$(git ls-files -o --exclude-standard -- reports/)" ]; then
+            git add reports/
+            git commit -m "report: daily macro report ${DAY}"
+          fi
+
+          if git diff --quiet HEAD@{upstream} HEAD 2>/dev/null; then
+            echo "nothing to push"
+          else
+            for attempt in 1 2 3 4; do
+              git pull --rebase --autostash && git push && break
+              echo "push attempt ${attempt} failed; retrying"
+              sleep $((2 ** attempt))
+            done
+          fi
+
+      - name: Summary
+        # Always: the point of this step is to describe failures.
+        if: always()
+        run: |
+          {
+            echo "## Daily run — $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo
+            echo "| step | outcome |"
+            echo "|---|---|"
+            echo "| collect | ${{ steps.collect.outcome }} |"
+            echo "| normalize | ${{ steps.normalize.outcome }} |"
+            echo "| forecast | ${{ steps.forecast.outcome }} |"
+            echo "| analyze | ${{ steps.analyze.outcome }} |"
+            echo "| validate | ${{ steps.validate.outcome }} |"
+            echo "| source health | ${{ steps.health.outcome }} |"
+            echo
+            echo "Missing series and failing sources are listed in the report's"
+            echo "**Data Quality / Missing Data** section, which is committed"
+            echo "whether or not this run succeeded."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Fail if any step broke
+        # Last, deliberately: the data and the report are already committed,
+        # so the record of what went wrong survives the failure.
+        if: always()
+        run: |
+          failed=""
+          for step in "collect:${{ steps.collect.outcome }}" \
+                      "normalize:${{ steps.normalize.outcome }}" \
+                      "forecast:${{ steps.forecast.outcome }}" \
+                      "analyze:${{ steps.analyze.outcome }}" \
+                      "validate:${{ steps.validate.outcome }}" \
+                      "health:${{ steps.health.outcome }}"; do
+            name="${step%%:*}"; outcome="${step##*:}"
+            if [ "$outcome" = "failure" ]; then
+              echo "::error::${name} failed — see the step log and the report's data-quality section"
+              failed="${failed} ${name}"
+            fi
+          done
+          if [ -n "$failed" ]; then
+            echo "failed steps:${failed}"
+            exit 1
+          fi

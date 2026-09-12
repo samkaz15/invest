@@ -692,7 +692,7 @@ MAE / RMSE / Directional Accuracy / Upside-Downside Accuracy / Calibration
 | **7** | Cross Asset | `mios.analysis`（マクロ8次元 → USDJPY / Gold バイアス）、各スコアに入力・weight・寄与・**blind_spots** を保存 | +600 | ✅ **完了**。168テスト緑。スコアは保存行だけから再現可能 |
 | **8** | Daily Reports | `mios.reports` → `reports/daily/YYYY-MM-DD.md`、前日差分は vintage の引き算で算出（別テーブル不要） | +550 | ✅ **完了**。`make daily-report` が通り、未取得系列・未実装セクションを明示 |
 | **9** | Validation | `mios.validation`（MAE/RMSE/bias/方向/キャリブレーション）、ナイーブとの比較（`skill`）、`forecast_errors` | +550 | ✅ **完了（Phase 6-8 に先行実施）**。154テスト緑。1年分の予測を as-of 再生 → 採点 → scoreboard まで疎通 |
-| **10** | GitHub Actions | `.github/workflows/{ci,daily}.yml`、PostgreSQLサービスコンテナで**統合テストをCIで実行**、失敗ソース・欠損・レポート生成可否をログに明示、意味のあるcommit message | +200(yaml) | CIが緑、日次ワークフローが手動実行で通る |
+| **10** | GitHub Actions | `daily.yml`（部分失敗でもレポート生成／コミット後に失敗）、`PostgresAuditSink`、workflow と CLI の整合性テスト | +350 | ✅ **完了**。177テスト緑。ネットワーク遮断下で collect が exit 1 になってもチェーンが完走しレポートが出ることを実機確認 |
 
 ### 17.1 実施順序の変更（2026-09-12）
 
@@ -704,7 +704,9 @@ observations / predictions だけで完結し、しかも**憲法第2条が定�
 成功条件そのもの**だから。予測が毎日積み上がっても、それを測る仕組みが
 無ければ「半年後に検証できる状態」には到達しない。
 
-Phase 7・8 も完了し、残るは Phase 6（ニュース・機関予測）と Phase 10（GitHub Actions）のみ。
+Phase 7・8・10 も完了し、**残るは Phase 6（ニュース・機関予測）のみ**。
+Phase 6 は `ANTHROPIC_API_KEY` と外部到達性の両方を必要とするため、
+本作業環境では実装しても検証できない。
 
 なお `daily_deltas` テーブルは**作らなかった**。observations・predictions・
 macro_scores がすべて vintage 付きで保存されるため、前日差分は
@@ -715,9 +717,9 @@ macro_scores がすべて vintage 付きで保存されるため、前日差分�
 
 - **Phase 4（vintage）は Phase 5（予測）より必ず先。** 逆にすると、予測が非vintageデータで学習され、
   後から全て作り直しになる。
-- **Phase 10（Actions）は最後だが、Phase 3 の時点で最小のCI（`make check` のみ）を先行導入すべき。**
-  現在CIが無いため、Phase 2〜9 の間ずっと品質保証がローカル依存になる。
-  → **推奨：Phase 2 の PR に `.github/workflows/ci.yml`（lint/typecheck/unit test）だけ含める。**
+- ~~Phase 10 は最後だが、最小のCIを先行導入すべき~~
+  → **実施済み：Phase 2 で `ci.yml` を導入した**（PostgreSQL サービス付き、
+  統合テストが skip したらビルドを落とす）。
 - **Phase 6 は外部到達性に依存する。** 本サンドボックスでは検証できないため、
   Actionsで初回実行するまで「実装済み・未検証」として扱う。
 

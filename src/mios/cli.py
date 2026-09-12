@@ -21,7 +21,7 @@ from dataclasses import dataclass
 
 from mios.analysis.macro import MacroScore, asset_view, score_dimension
 from mios.analysis.repo import MacroScoreRepo
-from mios.audit import AuditLogger, JsonlAuditSink
+from mios.audit import AuditLogger, AuditSink, JsonlAuditSink, PostgresAuditSink, TeeAuditSink
 from mios.common.errors import MiosError
 from mios.common.logutil import get_logger, setup_logging
 from mios.common.statestore import JsonStateStore
@@ -101,11 +101,19 @@ def build_app(settings: Settings | None = None) -> App:
     config = load_config(settings.config_dir)
 
     var = settings.var_dir
-    audit = AuditLogger(JsonlAuditSink(settings.audit_dir))
+    db = Database(settings.database_url)
+    # Files for local greppability, the database for durability: an Actions
+    # runner is destroyed after the run, and an audit trail that dies with
+    # it is not an audit trail (docs/ARCHITECTURE.md §6 A-1).
+    sinks: list[AuditSink] = [JsonlAuditSink(settings.audit_dir)]
+    if db.ping():
+        sinks.append(PostgresAuditSink(db.execute))
+    else:
+        logger.warning("database unreachable: audit records will only be written to files")
+    audit = AuditLogger(TeeAuditSink(*sinks))
     metrics_sink = JsonlAuditSink(var / "metrics")
     health = HealthTracker(JsonStateStore(var / "state" / "health.json"))
     dlq = DeadLetterQueue(var / "dlq")
-    db = Database(settings.database_url)
     raw_store = FileRawStore(settings.raw_dir)
     collector = Collector(
         sources=resolve_sources(config.sources),

@@ -277,11 +277,41 @@ mios health        # ソース別の死活・DLQ 件数（失敗があれば exi
 
 ---
 
+## 5.1 日次自動実行（GitHub Actions）
+
+`.github/workflows/daily.yml` が平日 07:10 UTC に全チェーンを実行する。
+設計は2つの原則で決まっている。
+
+**部分的な失敗でもレポートは必ず生成する。**
+プロバイダが1つ死ぬのは日常であり、そのせいでその日のスナップショットを
+失うのは日常ではない。収集系のステップは `continue-on-error` とし、
+レポート生成だけは常に実行する。**レポートは欠損を明記するので、
+何かが壊れた日にこそ最も価値がある。**
+
+**失敗を成功に見せない。**
+壊れたステップは job summary に出し、ジョブは**最後に**失敗する。
+先に失敗させると、失敗を記録した唯一の成果物がコミットされない。
+
+コミットは `data:` と `report:` で分ける（指示書 §23）。
+`git log -- data/` と `git log -- reports/` がそれぞれ
+1つの事柄の履歴として読めるようにするため。
+
+必要な secrets：`MIOS_DATABASE_URL`（ADR-010）、`FRED_API_KEY`、
+`TWELVEDATA_API_KEY`（ADR-011）。
+`MIOS_DATABASE_URL` が未設定なら**着手前に失敗する** —
+無いDBに対しては下流のすべてが「成功」してしまうため。
+
+`tests/unit/test_workflows.py` が workflow の YAML を読み、
+呼び出しているコマンドが実際に CLI に存在することを検査する。
+コマンド名を変えた時に、毎朝07:10に静かに失敗し続けるのを防ぐ。
+
+---
+
 ## 6. 既知の未解決事項
 
 | # | 内容 | 対応予定 |
 |---|---|---|
-| A-1 | 監査ログが JSONL ファイル（`var/audit/`）に出る。GitHub Actions のランナーは使い捨てなので、このままでは実行記録が残らない | Phase 10：`audit_log` / `agent_runs` テーブルへのシンクに切り替える（テーブルは 0001 で作成済み） |
+| A-1 | ~~監査ログがファイルにしか出ない~~ | ✅ Phase 10 完了：`PostgresAuditSink` を追加し、ファイルとDBの両方へ書く（`TeeAuditSink`）。DB到達不可時は警告を出してファイルのみに退避する |
 | A-2 | ~~`market_snapshots` に vintage がない~~ | ✅ Phase 3 完了：`0005` で `observations`（vintage付き）を追加。旧テーブルは DROP せず参照を止めた |
 | A-3 | **FRED の series_id・Treasury CSV の列名・Twelve Data のレート制限とレスポンス形状がいずれも未検証**（本作業環境から外部へ到達できない）。parser は記録済み fixture に対してのみ検証済み | 最初の実接続（Actions またはローカル）で確認する。**誤りは「収集失敗」として表面化する設計**（parser は想定外の形を黙って空扱いせず ParseError を投げる）であり、静かな誤データにはならない |
 | A-4 | ~~統合テストは PostgreSQL がないと skip される~~ | ✅ Phase 2 完了：CI に PostgreSQL サービスを用意し、skip したらビルドを落とす |

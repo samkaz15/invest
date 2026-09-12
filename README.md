@@ -84,7 +84,22 @@ mios health        # ソース別の死活（失敗があれば exit 1）
 | 7 | Cross asset（Gold / USDJPY 解釈） | ✅ 完了 |
 | 8 | Daily reports（`reports/daily/YYYY-MM-DD.md`） | ✅ 完了 |
 | 9 | Validation（予測精度の検証） | ✅ 完了（Phase 6-8 に先行） |
-| 10 | GitHub Actions（日次自動化） | 未着手 |
+| 10 | GitHub Actions（日次自動化） | ✅ 完了 |
+
+## 自動実行
+
+`.github/workflows/daily.yml` が平日 07:10 UTC に全チェーンを実行し、
+`data/` と `reports/` をコミットする。必要な GitHub secrets：
+
+| secret | 用途 |
+|---|---|
+| `MIOS_DATABASE_URL` | マネージドPostgreSQL（ADR-010）。未設定なら着手前に失敗する |
+| `FRED_API_KEY` | FRED / ALFRED（無料） |
+| `TWELVEDATA_API_KEY` | 価格データ（ADR-011） |
+
+プロバイダが1つ死んでも**レポートは必ず生成される**。
+レポートは欠損を明記するので、何かが壊れた日にこそ価値がある。
+壊れたステップはジョブ要約に出て、ジョブは**コミットの後に**失敗する。
 
 ## リポジトリ構成
 

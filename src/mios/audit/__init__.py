@@ -7,11 +7,18 @@ Two record streams:
   versions, token usage and cost.
 
 Records are immutable (:class:`mios.common.schema.MiosRecord`) and sinks are
-append-only. Sprint 1 ships the JSONL file sink; the PostgreSQL sink arrives
-with the storage layer (Sprint 3) behind the same ``AuditSink`` protocol.
+append-only. Two sinks exist behind the same protocol: JSONL files under
+``var/`` for local work, and PostgreSQL for anywhere the filesystem does not
+survive the run — which includes every GitHub Actions runner.
 """
 
-from mios.audit.logger import AuditLogger, AuditSink, JsonlAuditSink
+from mios.audit.logger import (
+    AuditLogger,
+    AuditSink,
+    JsonlAuditSink,
+    PostgresAuditSink,
+    TeeAuditSink,
+)
 from mios.audit.records import ActorKind, AgentRunRecord, AuditRecord
 
 __all__ = [
@@ -21,4 +28,6 @@ __all__ = [
     "AuditRecord",
     "AuditSink",
     "JsonlAuditSink",
+    "PostgresAuditSink",
+    "TeeAuditSink",
 ]
