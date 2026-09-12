@@ -34,6 +34,7 @@ from mios.ingestion.dlq import DeadLetterQueue
 from mios.ingestion.health import HealthTracker
 from mios.ingestion.http import HttpClient
 from mios.ingestion.rawstore import FileRawStore
+from mios.ingestion.verify import SourceVerifier
 from mios.knowledge.store import CurationQueue
 from mios.prediction.bridge import forecast_target
 from mios.prediction.repo import ForecastRepo
@@ -537,6 +538,42 @@ def _cmd_health(app: App) -> int:
     return 1 if degraded else 0
 
 
+def _cmd_verify(app: App, source: str | None) -> int:
+    """Fetch every source, parse it, store nothing, report what broke.
+
+    Much of the source configuration was written without network access, so
+    the series ids, column names and response shapes are plausible rather
+    than confirmed (docs/ARCHITECTURE.md §6 A-3). They all fail loudly, so
+    none of them can produce bad data — but finding out at 07:10 every
+    morning is a poor way to learn it. This is the check that turns that
+    into a thirty-second answer.
+    """
+    verifier = SourceVerifier(resolve_sources(app.config.sources), app.config.series)
+    report = verifier.check(source)
+
+    for check in report.checks:
+        if check.skipped:
+            print(f"[--] {check.source_id:<30} {check.detail}")
+            continue
+        mark = "ok" if check.ok else "!!"
+        print(f"[{mark}] {check.source_id:<30} T{check.tier}  {check.detail}")
+        for series in check.series:
+            symbol = " ok " if series.ok else "FAIL"
+            print(f"       {symbol}  {series.series_id:<34} {series.detail}")
+
+    print(
+        f"\n{len(report.checks)} source(s): "
+        f"{len(report.checks) - len(report.failures) - len(report.skipped)} ok, "
+        f"{len(report.failures)} failed, {len(report.skipped)} skipped for missing credentials"
+    )
+    if report.skipped:
+        print(
+            "\nスキップされたソースは「壊れている」のではなく「キー未設定」である。"
+            "両者を混同すると、どちらも見えなくなる。"
+        )
+    return 1 if report.failures else 0
+
+
 def _cmd_sources(app: App) -> int:
     """List the registry as the collector actually sees it.
 
@@ -558,6 +595,10 @@ def _parse(argv: list[str]) -> argparse.Namespace:
     sub.add_parser("run-due", help="run all due scheduled jobs (scheduler entry point)")
     sub.add_parser("health", help="print per-source health and DLQ counts")
     sub.add_parser("sources", help="list the configured source registry")
+    p_ver = sub.add_parser(
+        "verify-sources", help="fetch and parse every source without storing anything"
+    )
+    p_ver.add_argument("--source", default=None, help="check only this source_id")
     sub.add_parser("migrate", help="apply pending DB migrations and sync source registry")
     sub.add_parser("extract", help="turn unprocessed news raw items into curation candidates")
     p_norm = sub.add_parser("normalize", help="raw payloads -> vintage-keyed observations")
@@ -600,6 +641,8 @@ def _dispatch(app: App, args: argparse.Namespace) -> int:
         return _cmd_health(app)
     if args.command == "sources":
         return _cmd_sources(app)
+    if args.command == "verify-sources":
+        return _cmd_verify(app, args.source)
     if args.command == "migrate":
         return _cmd_migrate(app)
     if args.command == "extract":

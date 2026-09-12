@@ -256,6 +256,7 @@ driver は2種類：
 ```bash
 mios migrate       # マイグレーション適用 + ソース台帳・系列台帳の同期
 mios sources       # 設定済みソース一覧（解決後の状態）
+mios verify-sources [--source <id>]               # 全ソースを取得・parse（保存はしない）
 mios series        # 系列台帳と各系列の実データ蓄積状況
 mios collect       # 有効な全ソースを収集（--source で1件指定）
 mios run-due       # 実行期限が来たジョブだけ実行
@@ -308,6 +309,12 @@ mios health        # ソース別の死活・DLQ 件数（失敗があれば exi
 
 必要な secrets：`MIOS_DATABASE_URL`（ADR-010）、`FRED_API_KEY`、
 `TWELVEDATA_API_KEY`（ADR-011）。
+
+別に `verify-sources.yml` があり、Actions タブから手動実行できる。
+全ソースを取得して parse し、**何も保存しない**ので、
+本番の認証情報に対していつ実行しても安全。週1回も自動で走る
+（プロバイダは予告なく列名を変え、series を廃止する。
+思い出した時だけ走る検査は検査ではない）。
 `MIOS_DATABASE_URL` が未設定なら**着手前に失敗する** —
 無いDBに対しては下流のすべてが「成功」してしまうため。
 
@@ -324,7 +331,7 @@ mios health        # ソース別の死活・DLQ 件数（失敗があれば exi
 |---|---|---|
 | A-1 | ~~監査ログがファイルにしか出ない~~ | ✅ Phase 10 完了：`PostgresAuditSink` を追加し、ファイルとDBの両方へ書く（`TeeAuditSink`）。DB到達不可時は警告を出してファイルのみに退避する |
 | A-2 | ~~`market_snapshots` に vintage がない~~ | ✅ Phase 3 完了：`0005` で `observations`（vintage付き）を追加。旧テーブルは DROP せず参照を止めた |
-| A-3 | **FRED の series_id・Treasury CSV の列名・Twelve Data のレート制限とレスポンス形状がいずれも未検証**（本作業環境から外部へ到達できない）。parser は記録済み fixture に対してのみ検証済み | 最初の実接続（Actions またはローカル）で確認する。**誤りは「収集失敗」として表面化する設計**（parser は想定外の形を黙って空扱いせず ParseError を投げる）であり、静かな誤データにはならない |
+| A-3 | **FRED の series_id・Treasury CSV の列名・Twelve Data のレスポンス形状・MOF の CSV 形式がいずれも未検証**（本作業環境からは外部到達がゲートウェイで 403 拒否される）。parser は記録済み fixture に対してのみ検証済み | **`mios verify-sources` で30秒で確認できる**（`.github/workflows/verify-sources.yml` から手動実行可）。全ソースを取得・parse し、**何も保存しない**。誤りは元々「収集失敗」として表面化する設計なので静かな誤データにはならないが、毎朝07:10に気づくのは遅すぎる |
 | A-4 | ~~統合テストは PostgreSQL がないと skip される~~ | ✅ Phase 2 完了：CI に PostgreSQL サービスを用意し、skip したらビルドを落とす |
 | A-5 | 日本の **CPI・賃金**が未登録（JGB は Phase 4 で追加済）。e-Stat は API キーと専用 parser を要する | 未定。**データのない系列を先に登録しない**（placeholder は作らない） |
 | A-6 | ~~`vintage_at` が取得時刻でしかない~~ | ✅ Phase 4 完了：主要な改定系列は ALFRED の `realtime_start` から真の vintage を取り込む（`_vintage` 系列）。ALFRED を引かない系列は取得時刻のままで、`mios series` が `published` / `fetched` で区別を表示する |

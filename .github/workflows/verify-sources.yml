@@ -1,0 +1,69 @@
+# Check every configured source against the live providers.
+#
+# Much of the source configuration was written without network access, so
+# the FRED series ids, the Treasury CSV's column names, the vendor response
+# shapes and the MOF file's layout are plausible rather than confirmed
+# (docs/ARCHITECTURE.md §6 A-3). They all fail loudly, so none of them can
+# produce bad data — but finding out at 07:10 every morning is a poor way to
+# learn it.
+#
+# Run this from the Actions tab after setting the secrets. It fetches,
+# parses and reports; it writes nothing to the raw store or the database, so
+# it is safe against production credentials at any time.
+name: Verify sources
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Check only this source_id (blank = all)"
+        required: false
+        type: string
+  schedule:
+    # Weekly. Providers rename columns and retire series ids without notice,
+    # and a check that only runs when someone remembers is not a check.
+    - cron: "40 6 * * 1"
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+      TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
+      # Deliberately absent: this command touches no database.
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Verify
+        id: verify
+        run: |
+          set -o pipefail
+          ARG=""
+          if [ -n "${{ inputs.source }}" ]; then
+            ARG="--source ${{ inputs.source }}"
+          fi
+          python -m mios.cli verify-sources $ARG 2>&1 | tee /tmp/verify.log
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## Source verification — $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo
+            echo '```'
+            cat /tmp/verify.log 2>/dev/null || echo "(no output)"
+            echo '```'
+            echo
+            echo "\`FAIL\` on a series means its \`provider_code\` in"
+            echo "\`config/series.yaml\` is wrong, or the provider changed its"
+            echo "response. \`[--]\` means the credential is unset, which is a"
+            echo "configuration state rather than a provider outage."
+          } >> "$GITHUB_STEP_SUMMARY"

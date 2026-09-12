@@ -48,6 +48,7 @@ make check            # lint + typecheck + test（コミット前の必須ゲー
 ```bash
 mios migrate       # マイグレーション適用 + ソース台帳・系列台帳の同期
 mios sources       # 設定済みソース一覧
+mios verify-sources # 全ソースを実接続で検査（取得・parse するが保存しない）
 mios series        # 系列台帳と各系列の蓄積状況（未取得の系列は欠損として表示）
 mios collect       # 有効な全ソースを収集
 mios run-due       # 実行期限が来たジョブだけ実行
@@ -99,6 +100,11 @@ mios health        # ソース別の死活（失敗があれば exit 1）
 | `MIOS_DATABASE_URL` | マネージドPostgreSQL（ADR-010）。未設定なら着手前に失敗する |
 | `FRED_API_KEY` | FRED / ALFRED（無料） |
 | `TWELVEDATA_API_KEY` | 価格データ（ADR-011） |
+
+secrets を設定したら、まず Actions タブから **Verify sources** を手動実行してください。
+全ソースの series_id・列名・レスポンス形状を実接続で検査し、何も保存しません。
+設定の大半はネットワーク非接続の環境で書かれているため、
+ここで誤りが出るのは想定内です（`docs/ARCHITECTURE.md §6 A-3`）。
 
 プロバイダが1つ死んでも**レポートは必ず生成される**。
 レポートは欠損を明記するので、何かが壊れた日にこそ価値がある。

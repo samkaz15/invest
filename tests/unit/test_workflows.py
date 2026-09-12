@@ -114,6 +114,24 @@ def test_the_run_refuses_to_start_without_a_database() -> None:
     assert "MIOS_DATABASE_URL is not set" in text
 
 
+def test_the_verify_workflow_touches_no_database() -> None:
+    """A check that writes is not a check.
+
+    `verify-sources` fetches and parses and stores nothing, which is what
+    makes it safe to run against production credentials at any time. Handing
+    it a database URL would invite that to change quietly.
+    """
+    document = yaml.safe_load((WORKFLOWS / "verify-sources.yml").read_text(encoding="utf-8"))
+    [job] = document["jobs"].values()
+    assert "MIOS_DATABASE_URL" not in job.get("env", {})
+
+
+def test_the_verify_workflow_calls_the_verify_command() -> None:
+    used = _workflow_commands(WORKFLOWS / "verify-sources.yml")
+    assert used == {"verify-sources"}
+    assert "verify-sources" in _known_commands()
+
+
 def test_ci_runs_the_same_gate_as_make_check() -> None:
     document = yaml.safe_load((WORKFLOWS / "ci.yml").read_text(encoding="utf-8"))
     [job] = document["jobs"].values()

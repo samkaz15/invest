@@ -22,7 +22,10 @@ ALLOWED: dict[str, set[str]] = {
     "scheduler": {"common", "config", "audit"},
     # ingestion -> scheduler: the collector uses the RateLimiter primitive;
     # scheduler never imports ingestion (tasks are injected), so still one-way.
-    "ingestion": {"common", "config", "audit", "storage", "scheduler"},
+    # ingestion -> series: the source verifier parses a payload to prove the
+    # provider still speaks the shape its series expect. It stores nothing,
+    # so this is a read of the parser table, not a data path.
+    "ingestion": {"common", "config", "audit", "storage", "scheduler", "series"},
     "extraction": {"common", "config", "audit", "storage", "ingestion", "knowledge"},
     "series": {"common", "config", "audit", "storage", "ingestion"},
     "prediction": {"common", "config", "audit", "storage", "series"},
