@@ -11,7 +11,10 @@ from dataclasses import dataclass, field
 
 from mios.common.errors import MiosError
 
-DEFAULT_USER_AGENT = "BIOS-collector/0.1 (personal research; contact: repo owner)"
+#: Identifies the collector to the servers it reads. Some agencies — the
+#: BLS among them — refuse requests whose agent does not say who is asking,
+#: so this is a working requirement rather than politeness.
+DEFAULT_USER_AGENT = "MIOS-collector/1.0 (macro research; +https://github.com/samkaz15/invest)"
 
 
 class TransportError(MiosError):
@@ -34,7 +37,22 @@ class HttpClient:
         self._timeout = timeout_seconds
         self._user_agent = user_agent
 
-    def get(self, url: str, headers: dict[str, str] | None = None) -> HttpResponse:
+    def get(
+        self,
+        url: str,
+        headers: dict[str, str] | None = None,
+        encoding: str | None = None,
+    ) -> HttpResponse:
+        """Fetch and decode.
+
+        ``encoding`` overrides what the server declares, and exists because
+        some servers declare nothing. Japan's MOF serves its JGB CSV in
+        Shift-JIS without saying so, and the UTF-8 fallback turned every
+        Japanese tenor header into replacement characters — so the parser
+        looked for "2年" in a row that had become mojibake and reported the
+        column missing. Decoding is a property of the source, and when the
+        source does not state it, the configuration has to.
+        """
         if not url.startswith(("https://", "http://")):
             raise TransportError(f"unsupported url scheme: {url!r}")
         request = urllib.request.Request(
@@ -42,7 +60,7 @@ class HttpClient:
         )
         try:
             with urllib.request.urlopen(request, timeout=self._timeout) as resp:
-                charset = resp.headers.get_content_charset() or "utf-8"
+                charset = encoding or resp.headers.get_content_charset() or "utf-8"
                 return HttpResponse(
                     status=resp.status,
                     text=resp.read().decode(charset, errors="replace"),

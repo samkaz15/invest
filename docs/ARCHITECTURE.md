@@ -340,10 +340,12 @@ mios health        # ソース別の死活・DLQ 件数（失敗があれば exi
 |---|---|---|
 | A-1 | ~~監査ログがファイルにしか出ない~~ | ✅ Phase 10 完了：`PostgresAuditSink` を追加し、ファイルとDBの両方へ書く（`TeeAuditSink`）。DB到達不可時は警告を出してファイルのみに退避する |
 | A-2 | ~~`market_snapshots` に vintage がない~~ | ✅ Phase 3 完了：`0005` で `observations`（vintage付き）を追加。旧テーブルは DROP せず参照を止めた |
-| A-3 | **FRED の series_id・Treasury CSV の列名・Twelve Data のレスポンス形状・MOF の CSV 形式がいずれも未検証**（本作業環境からは外部到達がゲートウェイで 403 拒否される）。parser は記録済み fixture に対してのみ検証済み | **`mios verify-sources` で30秒で確認できる**（`.github/workflows/verify-sources.yml` から手動実行可）。全ソースを取得・parse し、**何も保存しない**。誤りは元々「収集失敗」として表面化する設計なので静かな誤データにはならないが、毎朝07:10に気づくのは遅すぎる |
+| A-3 | ~~FRED の series_id・Treasury CSV の列名・Twelve Data のレスポンス形状が未検証~~ | ✅ **2026-09-14 の初回 verify-sources で解決。55ソース中50が実データで成功。** FRED 46系列の series_id、ALFRED の vintage 取得、Treasury CSV の全年限の列名、Twelve Data の形状、FRED releases API —— **すべて設定通りで正しかった**。残った失敗は下の A-10 / A-16 / A-17 に分割して記録 |
 | A-4 | ~~統合テストは PostgreSQL がないと skip される~~ | ✅ Phase 2 完了：CI に PostgreSQL サービスを用意し、skip したらビルドを落とす |
 | A-9 | **NFP と失業率には無料の機関予測が存在しない**（月次コンセンサスは Bloomberg / Reuters の有料調査、SEP・SPF は四半期の別の問い）。この2つの skill はナイーブ基準に対する主張でしかなく、CPI 側より弱い | 構造的な限界（ADR-012）。`config/external.yaml` の `uncovered` に明示列挙し、スキーマが空リストを拒否する。`mios accuracy` と日次レポートが毎回名指しで表示する |
-| A-10 | **Cleveland Fed nowcast の URL・列名が未検証**。A-3 と同じ理由 | `mios verify-sources` が取得だけでなく **parse まで**検査する（`ExtraParse` を注入）。列名が違えば**実在する列名を列挙して**失敗するので、修正は `config/external.yaml` の1行 |
+| A-10 | **Cleveland Fed nowcast の URL が誤っていた**（初回 verify で HTTP 404）。推測で書いた配信URLが存在しない | **ソースを無効化した。** 404 を毎朝出し続けると本物の失敗が埋もれるため（産経と同じ判断）。**この間 CPI には機関ベンチマークが存在せず**、ADR-012 が「本当の問い」と呼んだ比較ができない。日次レポートがプロバイダ名を挙げて毎回明示する。正しいダウンロードURLが分かれば `enabled: true` に戻すだけ |
+| A-16 | **MOF の JGB CSV は Shift-JIS を charset 宣言なしで返す**。UTF-8 にフォールバックして年限見出しが置換文字になり、parser は「'2年' という列が無い」と**原因とは違うことを報告していた** | ✅ 解決：`SourceSpec.encoding` を追加し、MOF に `cp932` を明示。宣言しないサーバに対しては設定が宣言する。次の verify-sources で確認する |
+| A-17 | **BLS が HTTP 403 を返す。** User-Agent が前身プロジェクト名（`BIOS-collector/0.1`）のままで連絡先も無かった | UA を `MIOS-collector/1.0 (+リポジトリURL)` に修正。次の verify で答えが出る。なお 403 が続く場合は UA ではなく IP（Actions ランナー）への拒否であり、その時はソースを削除する |
 | A-14 | **経済カレンダーの「予想」列（外為どっとコム等）は自動取得しない。** その数値はほぼ確実にベンダーからのライセンスデータであり、自動収集して公開リポジトリにコミットすることは再配布にあたる | 構造的な判断（ADR-014）。人が読んで書き写す経路を `input/consensus.csv` として用意し、出典URLと入力時点を行ごとに必須にした。取り込みは `mios consensus` |
 | A-15 | **日本語の報道ソースが1つも無い**。産経は公開RSSを提供していないことが判明して外した（DELETION_LOG 参照）。日銀・財務省まわりの文脈は BOJ 公式（Tier 1）だけで読んでいる | 公開RSSを出している日本語媒体が見つかれば追加する。見つからない場合は「日本側の報道は見ていない」ことがレポート上の明示された欠損として残る |
 | A-11 | **Reuters と Bloomberg には公開RSSが存在しない**（Reuters は2020年頃に廃止、Bloomberg は元々非公開）。有料APIを使わない限り収集経路がない | 構造的な制約。日次レポートの「Not Yet Implemented」に毎回明記する。一次情報は Fed / BOJ / BLS の公式RSSで代替し、報道は FT / CNBC（いずれも Tier 3）で拾う |

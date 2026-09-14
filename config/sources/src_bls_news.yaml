@@ -1,5 +1,11 @@
 # 米労働統計局 公式。Tier 1、キー不要。CPI と雇用統計を発表する当事者。
-# UNVERIFIED（docs/ARCHITECTURE.md §6 A-3）：URL は未検証。
+# 2026-09-14 の verify-sources で **HTTP 403** を返した。BLS は User-Agent が
+# 誰の要求か名乗らないアクセスを拒否する。旧 UA は `BIOS-collector/0.1` という
+# 前身プロジェクトの名前のままで、連絡先も無かった。
+# UA を `MIOS-collector/1.0 (+リポジトリURL)` に直したので、次の verify-sources が
+# 答えを出す。それでも 403 なら、拒否は UA ではなく IP に対するもの（GitHub
+# Actions のランナーからの自動アクセス）であり、その場合はこのソースを削除する。
+# 404 や 403 を出し続けるソースを残さない方針は産経で決めた通り。
 source_id: src_bls_news
 name: BLS latest news releases (RSS)
 kind: rss

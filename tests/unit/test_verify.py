@@ -169,7 +169,14 @@ def _forecast_verifier(payload: str) -> SourceVerifier:
         return stub
 
     return SourceVerifier(
-        {provider.provider_id: config.sources[provider.provider_id]},
+        # Enabled explicitly: the source is switched off in config while its
+        # download URL is unknown (it 404'd in the first real run), but what
+        # is under test here is the parse path, not that switch.
+        {
+            provider.provider_id: config.sources[provider.provider_id].model_copy(
+                update={"enabled": True}
+            )
+        },
         config.series,
         adapter_factory=factory,
         extra={
@@ -202,3 +209,35 @@ def test_a_forecast_file_that_answers_200_with_the_wrong_columns_fails() -> None
     assert check.reachable is True  # it answered
     assert not check.ok  # but it did not answer with what config expects
     assert "columns present" in check.series[0].detail
+
+
+def test_a_feed_reports_how_many_entries_came_back_not_one_entry_s_size() -> None:
+    """The first real verification run made healthy feeds look broken.
+
+    A feed adapter splits its response into one draft per article, and the
+    verifier was reporting the size of draft zero — so a working Fed press
+    feed showed as "540 bytes" and read like an error page. What a reader
+    needs from a feed is the entry count, because a feed that has quietly
+    become empty is the failure a byte count cannot show.
+    """
+    config = _config()
+    spec = config.sources["src_fed_press"]
+
+    class _Feed(SourceAdapter):
+        def fetch(
+            self, client: HttpGetter, conditional: dict[str, str] | None = None
+        ) -> FetchResult:
+            return FetchResult(
+                drafts=[
+                    RawDraft(payload_text='{"title": "a"}', content_type="application/json"),
+                    RawDraft(payload_text='{"title": "b"}', content_type="application/json"),
+                    RawDraft(payload_text='{"title": "c"}', content_type="application/json"),
+                ]
+            )
+
+    verifier = SourceVerifier(
+        {"src_fed_press": spec}, config.series, adapter_factory=lambda s: _Feed(s)
+    )
+    [check] = verifier.check().checks
+    assert check.ok
+    assert check.detail == "3 entrie(s)"

@@ -400,6 +400,22 @@ class DailyReport:
             lines.append("機関予測はまだ1件も取得できていません。")
             lines.append("")
 
+        # A provider configured but switched off is not the same as one that
+        # is merely quiet, and the difference decides whether a reader should
+        # wait or act. Naming it matters most for CPI, whose whole
+        # institutional benchmark is this one provider (ADR-012).
+        for provider in self._config.external.providers:
+            source = self._config.sources.get(provider.provider_id)
+            if source is not None and not source.enabled:
+                covered = ", ".join(f"`{t.target_series_id}`" for t in provider.targets)
+                lines.append(
+                    f"- **{provider.label} は現在無効**（`{provider.provider_id}`）。"
+                    f"そのため {covered} にも機関ベンチマークが無く、"
+                    "比較対象はナイーブ基準のみになっている。"
+                    "設定ファイルの先頭に有効化の手順がある。"
+                )
+        lines.append("")
+
         # Always printed, present or not: a comparison table covering two of
         # four targets reads as complete unless it says which two it is not.
         for series_id in self._config.external.uncovered:

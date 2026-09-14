@@ -110,7 +110,11 @@ mios health        # ソース別の死活（失敗があれば exit 1）
 | `FRED_API_KEY` | FRED / ALFRED（無料） |
 | `TWELVEDATA_API_KEY` | 価格データ（ADR-011） |
 
-secrets を設定したら、まず Actions タブから **Verify sources** を手動実行してください。
+**初回検証は 2026-09-14 に完了しました：55ソース中50が実データで成功。**
+FRED の series_id、Treasury の列名、Twelve Data の形状はすべて設定通りでした。
+残りは `docs/ARCHITECTURE.md §6` の A-10 / A-16 / A-17 に記録してあります。
+
+設定を変えたら、Actions タブから **Verify sources** を再実行してください。
 全ソースの series_id・列名・レスポンス形状を実接続で検査し、何も保存しません。
 設定の大半はネットワーク非接続の環境で書かれているため、
 ここで誤りが出るのは想定内です（`docs/ARCHITECTURE.md §6 A-3`）。
