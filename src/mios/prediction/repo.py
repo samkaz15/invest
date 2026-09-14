@@ -92,6 +92,24 @@ class ForecastRepo:
             {"as_of": as_of},
         )
 
+    def all_with_scores(self) -> list[dict[str, Any]]:
+        """Every forecast ever made, with its score where one exists.
+
+        Deliberately unfiltered and deliberately here. This is a present-time
+        export of accumulated evidence rather than a historical replay, so it
+        takes no as-of — but it still lives in the repository, because the
+        rule is that nothing else writes SQL against `predictions` at all.
+        A reader allowed to make an exception is a reader that will.
+        """
+        return self._db.query(
+            """
+            SELECT p.*, e.actual, e.error, e.skill, e.direction_hit
+            FROM predictions p
+            LEFT JOIN forecast_errors e USING (forecast_id)
+            ORDER BY p.target_series_id, p.target_period, p.predicted_at
+            """
+        )
+
     def previous(
         self, target_series_id: str, target_period: date, before: datetime
     ) -> dict[str, Any] | None:

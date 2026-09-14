@@ -46,6 +46,9 @@ ALLOWED: dict[str, set[str]] = {
         "prediction",
         "analysis",
         "validation",
+        # knowledge: the headline list reads the curation queue. Reading, as
+        # always here — the report formats what other layers stored.
+        "knowledge",
     },
     "knowledge": {"common", "config", "audit", "storage"},
     "analysis": {"common", "config", "audit", "storage", "knowledge", "series", "prediction"},

@@ -9,6 +9,7 @@ from pydantic import BaseModel, ValidationError
 
 from mios.common.errors import ConfigError
 from mios.config.analysis import AnalysisConfig
+from mios.config.calendar import UNCATEGORISED, CalendarConfig
 from mios.config.external import ExternalConfig
 from mios.config.forecast import ForecastConfig
 from mios.config.models import (
@@ -56,6 +57,7 @@ class ConfigRoot:
     series: SeriesRegistry
     forecast: ForecastConfig
     external: ExternalConfig
+    calendar: CalendarConfig
     analysis: AnalysisConfig
     pipelines: PipelinesConfig
 
@@ -136,6 +138,19 @@ def load_config(config_dir: Path) -> ConfigRoot:
         if series_id in covered:
             raise ConfigError(f"external.uncovered names {series_id!r}, but a provider covers it")
 
+    calendar = load_model(config_dir / "calendar.yaml", CalendarConfig)
+    for watched in calendar.watch:
+        unknown = [s for s in watched.series if s not in known_series]
+        if unknown:
+            raise ConfigError(
+                f"calendar entry {watched.release_name!r} references unregistered "
+                f"series {sorted(unknown)}"
+            )
+    names = [w.release_name for w in calendar.watch]
+    duplicate = {n for n in names if names.count(n) > 1}
+    if duplicate:
+        raise ConfigError(f"duplicate calendar release_name {sorted(duplicate)}")
+
     analysis = load_model(config_dir / "analysis.yaml", AnalysisConfig)
     for dimension in analysis.dimensions:
         unknown = [s.series_id for s in dimension.signals if s.series_id not in known_series]
@@ -157,14 +172,22 @@ def load_config(config_dir: Path) -> ConfigRoot:
             if job.source_id not in sources:
                 raise ConfigError(f"job {job.job_id!r} references unknown source {job.source_id!r}")
 
+    events = load_model(config_dir / "taxonomy" / "events.yaml", EventTaxonomy)
+    unknown_types = sorted(
+        {w.event_type for w in calendar.watch} - set(events.types) - {UNCATEGORISED}
+    )
+    if unknown_types:
+        raise ConfigError(f"calendar uses event types absent from the taxonomy: {unknown_types}")
+
     return ConfigRoot(
         sources=sources,
         series=series,
         forecast=forecast,
         external=external,
+        calendar=calendar,
         analysis=analysis,
         pipelines=pipelines,
-        events=load_model(config_dir / "taxonomy" / "events.yaml", EventTaxonomy),
+        events=events,
         entities=load_model(config_dir / "taxonomy" / "entities.yaml", EntityTaxonomy),
         relationships=load_model(
             config_dir / "taxonomy" / "relationships.yaml", RelationshipTaxonomy

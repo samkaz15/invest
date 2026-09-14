@@ -75,6 +75,12 @@ def test_the_chain_covers_every_step_from_collection_to_report() -> None:
         "migrate",
         "collect",
         "normalize",
+        # After normalize: the calendar reads its own collected payload, and
+        # releases read the observations normalize just wrote.
+        "calendar",
+        "releases",
+        # Feed entries become queued headlines before the report reads them.
+        "extract",
         "forecast",
         # After forecast: the consensus is printed beside the day's own call,
         # so there has to be a call for it to sit beside.
@@ -82,6 +88,9 @@ def test_the_chain_covers_every_step_from_collection_to_report() -> None:
         "analyze",
         "validate",
         "report",
+        # After report: the CSVs render what is already stored, so a failure
+        # here loses a convenience rather than a record.
+        "export",
     ]
 
 
@@ -94,7 +103,18 @@ def test_collection_may_fail_but_the_report_may_not_be_skipped() -> None:
     from mios.cli import DAILY_CHAIN
 
     tolerant = {step: ok for step, ok in DAILY_CHAIN}
-    for step in ("collect", "normalize", "forecast", "consensus", "analyze", "validate"):
+    for step in (
+        "collect",
+        "normalize",
+        "calendar",
+        "releases",
+        # Feed entries become queued headlines before the report reads them.
+        "extract",
+        "forecast",
+        "consensus",
+        "analyze",
+        "validate",
+    ):
         assert tolerant[step] is True, f"{step} must not abort the run before the report"
     assert tolerant["report"] is False
     assert tolerant["migrate"] is False

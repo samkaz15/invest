@@ -1,0 +1,10 @@
+# 日本銀行 公式。Tier 1、キー不要。USDJPY の日本側を報道経由でなく原文で読む。
+# UNVERIFIED（docs/ARCHITECTURE.md §6 A-3）：URL は未検証。
+source_id: src_boj_news
+name: Bank of Japan what's new (RSS)
+kind: rss
+url: https://www.boj.or.jp/rss/whatsnew.xml
+tier: 1
+min_interval_seconds: 5
+notes: >-
+  金融政策決定会合の結果・総裁会見・展望レポートが出る。日本語。

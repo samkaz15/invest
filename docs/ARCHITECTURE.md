@@ -27,6 +27,7 @@ L1 収集    ingestion   adapter framework / HTTP / 生データ永久保存 / D
    ↓
 L2 正規化  extraction  生データ → 型付きレコード（ニュース）
            series      生データ → vintage付き観測値（Agent 2 + 3）
+                       + 発表カレンダー（calendar.py・唯一 upsert する場所）
    ↓
 L3 知識    knowledge   Event Store / Entity / as-of Timeline
    ↓
@@ -39,6 +40,7 @@ L6 予測    prediction  先行指標 → CPI / NFP 予測（毎日1行・上書
 L7 検証    validation  予測 × 初回発表値 → 誤差・対ナイーブ skill・キャリブレーション
                        + 機関予測との head-to-head（benchmark.py）
 L8 出力    reports     保存済み成果物の整形 → reports/daily/YYYY-MM-DD.md
+                       + exports/*.csv（スプレッドシート用・ADR-013）
 ```
 
 `analysis` はマクロ8次元スコアと Gold / USDJPY の2ビューを作る。
@@ -261,6 +263,9 @@ mios migrate       # マイグレーション適用 + ソース台帳・系列�
 mios sources       # 設定済みソース一覧（解決後の状態）
 mios verify-sources [--source <id>]               # 全ソースを取得・parse（保存はしない）
 mios series        # 系列台帳と各系列の実データ蓄積状況
+mios calendar [--as-of ISO8601] [--days N]        # 発表予定の取り込みと表示
+mios releases      # 発表済みの数字を releases に記録
+mios export [--as-of ISO8601]                     # exports/*.csv を書き出す
 mios collect       # 有効な全ソースを収集（--source で1件指定）
 mios run-due       # 実行期限が来たジョブだけ実行
 mios normalize     # 生データ → vintage付き観測値（parse失敗があれば exit 1）
@@ -339,6 +344,9 @@ mios health        # ソース別の死活・DLQ 件数（失敗があれば exi
 | A-4 | ~~統合テストは PostgreSQL がないと skip される~~ | ✅ Phase 2 完了：CI に PostgreSQL サービスを用意し、skip したらビルドを落とす |
 | A-9 | **NFP と失業率には無料の機関予測が存在しない**（月次コンセンサスは Bloomberg / Reuters の有料調査、SEP・SPF は四半期の別の問い）。この2つの skill はナイーブ基準に対する主張でしかなく、CPI 側より弱い | 構造的な限界（ADR-012）。`config/external.yaml` の `uncovered` に明示列挙し、スキーマが空リストを拒否する。`mios accuracy` と日次レポートが毎回名指しで表示する |
 | A-10 | **Cleveland Fed nowcast の URL・列名が未検証**。A-3 と同じ理由 | `mios verify-sources` が取得だけでなく **parse まで**検査する（`ExtraParse` を注入）。列名が違えば**実在する列名を列挙して**失敗するので、修正は `config/external.yaml` の1行 |
+| A-11 | **Reuters と Bloomberg には公開RSSが存在しない**（Reuters は2020年頃に廃止、Bloomberg は元々非公開）。有料APIを使わない限り収集経路がない | 構造的な制約。日次レポートの「Not Yet Implemented」に毎回明記する。一次情報は Fed / BOJ / BLS の公式RSSで代替し、報道は FT / CNBC / 産経（いずれも Tier 3）で拾う |
+| A-12 | **ニュースの分類・要約が未実装**。収集と重複除去までは動くが、テーマ分類も要約もない | LLM を使う唯一の箇所になる予定で `ANTHROPIC_API_KEY` が必要。憲法第5条により、LLM は分類・要約・文章生成のみを行い**数値は生成しない** |
+| A-13 | **FRED の releases/dates が将来日程を返すか未検証**、および release_name の綴りが未検証 | `mios verify-sources` と初回の `mios calendar` で判明する。照合ゼロ件として表面化し、静かな誤データにはならない。実データの名前一覧は `mios calendar` の出力から拾える |
 | A-5 | 日本の **CPI・賃金**が未登録（JGB は Phase 4 で追加済）。e-Stat は API キーと専用 parser を要する | 未定。**データのない系列を先に登録しない**（placeholder は作らない） |
 | A-6 | ~~`vintage_at` が取得時刻でしかない~~ | ✅ Phase 4 完了：主要な改定系列は ALFRED の `realtime_start` から真の vintage を取り込む（`_vintage` 系列）。ALFRED を引かない系列は取得時刻のままで、`mios series` が `published` / `fetched` で区別を表示する |
 | A-8 | **driver 系列の多くは ALFRED を引いていない**ため、過去日のバックテストでは driver の読みが当時の値ではなく「取得時点の値」になる。`_vintage` 系列を持つ5指標のみ厳密 | driver 側にも ALFRED を広げるかを、収集コストと精度改善を見て判断する。`mios series` の `published` / `fetched` 列で現状が分かる |

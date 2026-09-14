@@ -84,6 +84,11 @@ jobs:
           git diff --cached --quiet || git commit -m "data: update macro and market data ${DAY}"
           git add -A reports/
           git diff --cached --quiet || git commit -m "report: daily macro report ${DAY}"
+          # The CSVs a spreadsheet reads. Committed rather than uploaded as
+          # an artifact so a Google Sheet can pull them with IMPORTDATA and
+          # refresh itself whenever this job runs.
+          git add -A exports/
+          git diff --cached --quiet || git commit -m "export: spreadsheet CSVs ${DAY}"
 
           if git diff --quiet '@{upstream}' HEAD 2>/dev/null; then
             echo "nothing to push"

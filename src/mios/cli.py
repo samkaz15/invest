@@ -19,6 +19,7 @@ import re
 import sys
 from collections.abc import Callable
 from dataclasses import dataclass
+from datetime import timedelta
 
 from mios.analysis.macro import MacroScore, asset_view, score_dimension
 from mios.analysis.repo import MacroScoreRepo
@@ -46,10 +47,12 @@ from mios.prediction.external import (
 )
 from mios.prediction.repo import ForecastRepo
 from mios.reports.daily import write_report
+from mios.reports.export import Exporter
 from mios.scheduler.breaker import CircuitBreaker
 from mios.scheduler.jobs import JobRunner
 from mios.scheduler.ratelimit import RateLimiter
 from mios.scheduler.retry import RetryPolicy
+from mios.series.calendar import CalendarIngestor, CalendarRepo
 from mios.series.normalize import Normalizer
 from mios.series.repo import ObservationRepo, SeriesRepo
 from mios.storage.db import Database
@@ -57,6 +60,7 @@ from mios.storage.migrate import MigrationRunner
 from mios.storage.sync import sync_sources
 from mios.validation.benchmark import BenchmarkReader, BenchmarkScorer
 from mios.validation.metrics import MIN_SAMPLE, MetricsReader
+from mios.validation.releases import ReleaseBuilder
 from mios.validation.scoring import Scorer
 
 logger = get_logger(__name__)
@@ -365,6 +369,13 @@ DAILY_CHAIN: list[tuple[str, bool]] = [
     ("migrate", False),
     ("collect", True),
     ("normalize", True),
+    # After normalize: the calendar reads its own payload, releases read the
+    # observations normalize just wrote.
+    ("calendar", True),
+    ("releases", True),
+    # Feed entries -> queued headlines. Tolerant: a dead feed costs the
+    # headline list, never the report.
+    ("extract", True),
     ("forecast", True),
     # After forecast, so the day's own call is on the table to print the
     # consensus beside. Tolerant: a dead provider costs the comparison, not
@@ -373,6 +384,9 @@ DAILY_CHAIN: list[tuple[str, bool]] = [
     ("analyze", True),
     ("validate", True),
     ("report", False),
+    # Last, and tolerant: the CSVs are a rendering of what is already stored,
+    # so a failure here loses a convenience, never a record.
+    ("export", True),
 ]
 
 
@@ -383,7 +397,7 @@ def _cmd_daily(app: App, as_of: str | None) -> int:
     report is the artifact that documents what went wrong, so aborting early
     would throw away the evidence.
     """
-    takes_as_of = {"forecast", "consensus", "analyze", "validate", "report"}
+    takes_as_of = {"forecast", "consensus", "analyze", "validate", "report", "calendar", "export"}
     outcomes: list[tuple[str, str]] = []
     for step, tolerant in DAILY_CHAIN:
         argv = [step, *(["--as-of", as_of] if as_of and step in takes_as_of else [])]
@@ -417,6 +431,89 @@ def _cmd_report(app: App, as_of: str | None) -> int:
     cutoff = parse_utc(as_of) if as_of else utc_now()
     path = write_report(app.db, app.config, cutoff, app.settings.reports_dir)
     print(f"report written: {path}")
+    return 0
+
+
+CALENDAR_SOURCE = "src_fred_release_dates"
+
+
+def _cmd_calendar(app: App, as_of: str | None, days: int) -> int:
+    """Ingest the publication schedule, then print what is coming.
+
+    This is the question everyone actually asks first — "what comes out
+    today?" — and `economic_calendar` sat empty from migration 0005 until
+    now, so nothing could answer it.
+    """
+    cutoff = parse_utc(as_of) if as_of else utc_now()
+    repo = CalendarRepo(app.db)
+    spec = app.config.sources.get(CALENDAR_SOURCE)
+    report = CalendarIngestor(
+        app.raw_store,
+        repo,
+        app.config.calendar,
+        CALENDAR_SOURCE,
+        spec.url if spec else "",
+    ).run()
+    print(
+        f"calendar: scheduled={report.scheduled} 追跡中={report.matched} "
+        f"未設定={report.unmatched} failures={len(report.failures)}"
+    )
+    for failure in report.failures:
+        print(f"    FAIL {failure}")
+
+    start = cutoff.replace(hour=0, minute=0, second=0, microsecond=0)
+    window = start + timedelta(days=days)
+    rows = repo.between(start, window)
+    if not rows:
+        print(f"\n{start.date()} から {days} 日間に予定されている発表はありません。")
+        return 0 if report.ok else 1
+
+    print(f"\n{start.date()} から {days} 日間の発表予定")
+    current_day = None
+    for row in rows:
+        day = row["scheduled_at"].date()
+        if day != current_day:
+            current_day = day
+            print(f"\n  ── {day} ──")
+        if row["time_precision"] == "exact":
+            when = row["scheduled_at"].strftime("%H:%M UTC")
+        else:
+            # The provider gave a date. Printing 00:00 would invent an hour.
+            when = "時刻未定"
+        stars = "★" * int(row["importance"])
+        series = f"  [{row['series_id']}]" if row["series_id"] else ""
+        print(f"    {when:<10} {stars:<5} {row['title']}{series}")
+    return 0 if report.ok else 1
+
+
+def _cmd_releases(app: App, as_of: str | None) -> int:
+    """Record every period that has printed: actual / previous / 改定 / surprise."""
+    cutoff = parse_utc(as_of) if as_of else utc_now()
+    report = ReleaseBuilder(
+        app.db,
+        ObservationRepo(app.db),
+        ExternalForecastRepo(app.db),
+        app.config.forecast.by_id(),
+        app.config.series,
+    ).run(cutoff, [s.series_id for s in app.config.series.series])
+    print(
+        f"releases: 新規={report.written} 記録済={report.already_recorded} "
+        f"未確定={report.unresolved}"
+    )
+    return 0 if report.ok else 1
+
+
+def _cmd_export(app: App, as_of: str | None) -> int:
+    """Write the CSVs a spreadsheet reads.
+
+    PostgreSQL stays the master and these are a rendering of it, rewritten
+    every run — so a sheet someone typed notes into is never mistaken for
+    data, and a broken one costs nothing.
+    """
+    cutoff = parse_utc(as_of) if as_of else utc_now()
+    files = Exporter(app.db, app.config, app.settings.data_dir.parent / "exports").run(cutoff)
+    for exported in files:
+        print(f"{exported.path}: {exported.rows} 行")
     return 0
 
 
@@ -765,6 +862,14 @@ def _parse(argv: list[str]) -> argparse.Namespace:
     p_fcs.add_argument("period", help="target period, YYYY-MM-DD")
     p_an = sub.add_parser("analyze", help="macro dimension scores and the Gold / USDJPY views")
     p_an.add_argument("--as-of", default=None, help="build from data knowable at this instant")
+    p_cal = sub.add_parser("calendar", help="発表予定を取り込み、これから出るものを表示")
+    p_cal.add_argument("--as-of", default=None, help="この時点を起点にする (ISO-8601)")
+    p_cal.add_argument("--days", type=int, default=7, help="何日先まで表示するか")
+    sub.add_parser(
+        "releases", help="発表済みの数字を releases に記録（actual/前回/改定/サプライズ）"
+    )
+    p_exp = sub.add_parser("export", help="スプレッドシート用の CSV を書き出す")
+    p_exp.add_argument("--as-of", default=None, help="この時点として書き出す (ISO-8601)")
     p_con = sub.add_parser(
         "consensus", help="store institutional forecasts and show them beside ours"
     )
@@ -813,6 +918,12 @@ def _dispatch(app: App, args: argparse.Namespace) -> int:
         return _cmd_forecasts(app, args.series_id, args.period)
     if args.command == "analyze":
         return _cmd_analyze(app, args.as_of)
+    if args.command == "calendar":
+        return _cmd_calendar(app, args.as_of, args.days)
+    if args.command == "releases":
+        return _cmd_releases(app, None)
+    if args.command == "export":
+        return _cmd_export(app, args.as_of)
     if args.command == "consensus":
         return _cmd_consensus(app, args.as_of)
     if args.command == "validate":

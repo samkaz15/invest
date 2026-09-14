@@ -34,6 +34,7 @@ SQL_OWNERS = {
     SRC / "validation" / "scoring.py",
     SRC / "validation" / "metrics.py",
     SRC / "validation" / "benchmark.py",
+    SRC / "validation" / "releases.py",
 }
 
 #: Tables where reading without a cutoff is a look-ahead bug rather than a

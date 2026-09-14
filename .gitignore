@@ -14,8 +14,9 @@ dist/
 htmlcov/
 
 # Secrets & disposable runtime state.
-# NOTE: data/ and reports/ are deliberately NOT ignored — raw payloads and
-# generated reports are committed (ADR-010). Only var/ is throwaway.
+# NOTE: data/, reports/ and exports/ are deliberately NOT ignored — raw
+# payloads, generated reports and the spreadsheet CSVs are committed
+# (ADR-010, ADR-013). Only var/ is throwaway.
 .env
 var/
 

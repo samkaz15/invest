@@ -22,8 +22,10 @@ from typing import Any
 from mios.analysis.repo import MacroScoreRepo
 from mios.common.logutil import get_logger
 from mios.config.loader import ConfigRoot
+from mios.knowledge.store import CurationQueue
 from mios.prediction.external import ExternalForecastRepo
 from mios.prediction.repo import ForecastRepo
+from mios.series.calendar import CalendarRepo
 from mios.series.repo import ObservationRepo
 from mios.storage.db import Database
 from mios.validation.benchmark import BenchmarkReader
@@ -103,6 +105,8 @@ class DailyReport:
         self._metrics = MetricsReader(db)
         self._external = ExternalForecastRepo(db)
         self._benchmark = BenchmarkReader(db)
+        self._calendar = CalendarRepo(db)
+        self._news = CurationQueue(db)
 
     # -------------------------------------------------------------- pieces
 
@@ -268,6 +272,91 @@ class DailyReport:
                 "差分は推測ではなく引き算で出ます）。",
             ]
         return rows
+
+    def _today(self, as_of: datetime) -> list[str]:
+        """What is published today, and what is coming this week.
+
+        The first question anyone asks in the morning, and the one this
+        report could not answer until the calendar existed. Entries whose
+        publication clock is known show a time; the rest show a day, because
+        the provider gave a date and printing an hour would invent one.
+        """
+        start = as_of.replace(hour=0, minute=0, second=0, microsecond=0)
+        today = self._calendar.between(start, start + timedelta(days=1))
+        week = self._calendar.between(start + timedelta(days=1), start + timedelta(days=8))
+
+        if not today and not week:
+            if not self._calendar.coverage().get("entries"):
+                return [
+                    "発表予定がまだ1件も取得できていません"
+                    "（`mios collect --source src_fred_release_dates` → `mios calendar`）。"
+                ]
+            return ["今日から1週間、登録された発表予定はありません。"]
+
+        lines: list[str] = []
+        lines.append("**本日**")
+        lines.append("")
+        if not today:
+            lines.append("- 本日の発表予定はありません。")
+        else:
+            lines.append("| 時刻 | 重要度 | 発表 | 対象系列 |")
+            lines.append("|---|---|---|---|")
+            for row in today:
+                when = (
+                    row["scheduled_at"].strftime("%H:%M UTC")
+                    if row["time_precision"] == "exact"
+                    else "**時刻未定**"
+                )
+                series = f"`{row['series_id']}`" if row["series_id"] else "—"
+                stars = "★" * int(row["importance"])
+                lines.append(f"| {when} | {stars} | {row['title']} | {series} |")
+        lines.append("")
+        lines.append("**今週（本日を除く）**")
+        lines.append("")
+        if not week:
+            lines.append("- 予定はありません。")
+        for row in week:
+            day = row["scheduled_at"].date()
+            when = (
+                row["scheduled_at"].strftime("%H:%M UTC")
+                if row["time_precision"] == "exact"
+                else "時刻未定"
+            )
+            lines.append(f"- {day} {when} — {row['title']}（{'★' * int(row['importance'])}）")
+        return lines
+
+    def _headlines(self) -> list[str]:
+        """Collected headlines, newest first, labelled by source tier.
+
+        Headlines and the publisher's own summary, nothing more. No
+        classification, no summarisation, no theme — none of that exists
+        yet, and a section that silently presented a keyword match as
+        analysis would be worse than one that presents a list.
+
+        The tier is printed beside every item on purpose. A Tier 3 report is
+        not a fact; it becomes one only when a Tier 1-2 source confirms it
+        (CONSTITUTION.md Art.4), and a reader skimming a list has no other
+        way to see the difference.
+        """
+        rows = self._news.pending(limit=25)
+        if not rows:
+            return ["ニュースはまだ1件も取得できていません（`mios collect` → `mios extract`）。"]
+        tiers = {sid: spec.tier for sid, spec in self._config.sources.items()}
+        lines: list[str] = []
+        for row in rows:
+            payload = row["payload"]
+            title = payload.get("title") or "(no title)"
+            link = payload.get("link") or ""
+            tier = tiers.get(row["source_id"], payload.get("tier", 4))
+            published = payload.get("published_raw") or ""
+            label = f"[{title}]({link})" if link else title
+            lines.append(f"- **T{tier}** {label}  \n  `{row['source_id']}` {published}")
+        lines.append("")
+        lines.append(
+            "分類・要約・テーマ抽出は**未実装**。ここにあるのは配信元が出した"
+            "見出しと要約そのままであり、MIOS による解釈は含まれない。"
+        )
+        return lines
 
     def _consensus(self, as_of: datetime) -> list[str]:
         """What the institutions say, beside what MIOS says.
@@ -444,7 +533,10 @@ class DailyReport:
             "",
         ]
 
-        out += ["## Executive Summary", ""]
+        out += ["## 本日の発表 / Economic Calendar", ""]
+        out += self._today(as_of)
+
+        out += ["", "## Executive Summary", ""]
         out += self._summary(as_of)
         out += ["", "## Changes From Yesterday", ""]
         out += self._changes(as_of, yesterday)
@@ -482,6 +574,9 @@ class DailyReport:
         out += ["", "## Macro Dimensions", ""]
         out += self._dimensions_table(as_of)
 
+        out += ["", "## Headlines", ""]
+        out += self._headlines()
+
         out += ["", "## Consensus / Institutional Forecasts", ""]
         out += self._consensus(as_of)
 
@@ -500,7 +595,11 @@ class DailyReport:
             "空欄ではなく欠落として明示する。",
             "",
             "- **Economic Calendar** — 発表予定の取得は未実装",
-            "- **Important News** — ニュース分類は未実装（Phase 6）",
+            "- **ニュースの分類・要約** — 見出しの収集は動くが、テーマ分類も"
+            "要約も未実装。LLM を使う唯一の箇所になる予定で、"
+            "`ANTHROPIC_API_KEY` が必要（憲法第5条：LLM は数値を作らない）",
+            "- **Reuters / Bloomberg** — 公開RSSが存在しないため収集経路がない。"
+            "有料APIを使わない限り取得できない",
             "- **雇用統計のコンセンサス** — NFP・失業率の月次コンセンサスは"
             "有料（Bloomberg / Reuters 調査）でしか手に入らない。"
             "この2つは機関予測と比較できず、ナイーブ基準のみが比較対象",

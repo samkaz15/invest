@@ -36,6 +36,11 @@ types:
   - release.jp_employment.unemployment_rate
   - release.jp_growth.tankan
   - release.jp_growth.gdp
+  # A release the provider's calendar carries that MIOS has not
+  # categorised. It still belongs on the calendar — "something is out
+  # today" is information — but pretending to know which category it
+  # falls in would be worse than saying it is uncategorised.
+  - release.other.uncategorised
   # policy — a central bank decided or signalled something
   - policy.fed.rate_decision
   - policy.fed.statement

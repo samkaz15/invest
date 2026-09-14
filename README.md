@@ -28,6 +28,7 @@ Data Quality > Reproducibility > Validation > Simplicity > Feature Count
 | [REPOSITORY_AUDIT.md](docs/REPOSITORY_AUDIT.md) | BIOS からの転換にあたっての全ファイル監査と移行計画 |
 | [DELETION_LOG.md](docs/DELETION_LOG.md) | 何を・なぜ削除したか・どう復元するか |
 | [DATA_SOURCE_REGISTRY.md](docs/DATA_SOURCE_REGISTRY.md) | データソース台帳と信頼Tier |
+| [adr/ADR-013](docs/adr/ADR-013-spreadsheet-exports.md) | スプレッドシート出力の設計（DBが正、CSVは出力） |
 | [EVALUATION.md](docs/EVALUATION.md) | 予測精度の測り方（MAE / RMSE / 方向 / キャリブレーション / 機関予測との比較） |
 | docs/adr/ | 技術判断の記録 |
 
@@ -50,6 +51,9 @@ mios migrate       # マイグレーション適用 + ソース台帳・系列�
 mios sources       # 設定済みソース一覧
 mios verify-sources # 全ソースを実接続で検査（取得・parse するが保存しない）
 mios series        # 系列台帳と各系列の蓄積状況（未取得の系列は欠損として表示）
+mios calendar      # 発表予定を取り込み、これから出るものを表示（★重要度つき）
+mios releases      # 発表済みの数字を記録（actual/前回/改定/サプライズ）
+mios export        # スプレッドシート用 CSV を exports/ へ書き出す
 mios collect       # 有効な全ソースを収集
 mios run-due       # 実行期限が来たジョブだけ実行
 mios normalize     # 生データ → vintage付き観測値
@@ -86,7 +90,9 @@ mios health        # ソース別の死活（失敗があれば exit 1）
 | 4 | Historical / Vintage（ALFRED 真vintage、as-of 漏れの静的検出、JGB） | ✅ 完了 |
 | 5 | Forecast layer（CPI / NFP 予測、予測vintageの保存） | ✅ 完了 |
 | 6a | Institutional forecasts（機関予測との比較） | ✅ 完了（ADR-012） |
-| 6b | News Intelligence | 未着手（`ANTHROPIC_API_KEY` と外部到達が必要） |
+| 6b | News collection（Fed / BOJ / BLS / FT / CNBC / 産経 の RSS） | ✅ 完了 |
+| 6c | News classification（分類・要約） | 未着手（`ANTHROPIC_API_KEY` が必要） |
+| 11 | Economic calendar + releases + スプレッドシート出力 | ✅ 完了（ADR-013） |
 | 7 | Cross asset（Gold / USDJPY 解釈） | ✅ 完了 |
 | 8 | Daily reports（`reports/daily/YYYY-MM-DD.md`） | ✅ 完了 |
 | 9 | Validation（予測精度の検証） | ✅ 完了（Phase 6-8 に先行） |
@@ -119,7 +125,8 @@ config/       全設定（ソース・系列・資産・タクソノミ・ウェ
 data/raw/     取得した生ペイロード。永久保存・コミット対象
 db/migrations 連番SQLマイグレーション（後方互換必須）
 docs/         設計書と ADR
-reports/      生成された日次レポート（Phase 8〜）
+reports/      生成された日次レポート
+exports/      スプレッドシート用 CSV（毎回書き直し・コミット対象）
 src/mios/     本体（層＝サブパッケージ、import は上流→下流の一方向）
 tests/        unit / integration
 var/          実行時の使い捨て状態（git管理外）
