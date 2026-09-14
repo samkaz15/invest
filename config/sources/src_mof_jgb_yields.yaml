@@ -1,0 +1,16 @@
+# Japan MOF daily JGB par yields. Tier 1, no key. The Japanese leg of the
+# rate differential that drives USDJPY — without it the USDJPY chain has
+# only its US half.
+#
+# UNVERIFIED against the live endpoint (docs/ARCHITECTURE.md §6 A-3): this
+# file was written without network access. A wrong URL or layout surfaces
+# as a collection failure, never as bad data.
+source_id: src_mof_jgb_yields
+name: Japan MOF daily JGB yields (CSV)
+kind: http_csv
+url: https://www.mof.go.jp/jgbs/reference/interest_rate/jgbcm.csv
+tier: 1
+min_interval_seconds: 5
+notes: >-
+  Whole curve in one call. Dates arrive in the Japanese era calendar and
+  tenors are named in Japanese; both are handled by the mof_jgb_csv parser.

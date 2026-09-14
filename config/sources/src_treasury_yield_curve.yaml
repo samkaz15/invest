@@ -1,0 +1,14 @@
+# US Treasury publishes the daily par yield curve as CSV. Tier 1, no key.
+# The `field_tdr_date_value` year is rewritten each January; the collector
+# reports a failure rather than silently returning an empty curve.
+source_id: src_treasury_yield_curve
+name: US Treasury daily par yield curve (CSV)
+kind: http_csv
+url: https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv
+tier: 1
+min_interval_seconds: 5
+notes: >-
+  Tier 1 source for the whole curve in one call, and the fallback if FRED's
+  DGS series become unavailable. Column headers and the URL shape are
+  verified against the live endpoint in CI, not here (this file was written
+  without network access).

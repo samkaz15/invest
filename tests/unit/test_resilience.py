@@ -5,11 +5,11 @@ from pathlib import Path
 
 import pytest
 
-from bios.common import BiosError
-from bios.common.statestore import JsonStateStore
-from bios.scheduler.breaker import BreakerOpenError, CircuitBreaker
-from bios.scheduler.ratelimit import RateLimiter
-from bios.scheduler.retry import RetryPolicy
+from mios.common import MiosError
+from mios.common.statestore import JsonStateStore
+from mios.scheduler.breaker import BreakerOpenError, CircuitBreaker
+from mios.scheduler.ratelimit import RateLimiter
+from mios.scheduler.retry import RetryPolicy
 
 
 class Flaky:
@@ -20,7 +20,7 @@ class Flaky:
     def __call__(self) -> str:
         self.calls += 1
         if self.calls <= self._fail_times:
-            raise BiosError(f"boom {self.calls}")
+            raise MiosError(f"boom {self.calls}")
         return "ok"
 
 
@@ -39,7 +39,7 @@ def test_retry_succeeds_after_failures_with_backoff() -> None:
 def test_retry_gives_up_after_max_attempts() -> None:
     sleeps: list[float] = []
     fn = Flaky(fail_times=99)
-    with pytest.raises(BiosError, match="boom 4"):
+    with pytest.raises(MiosError, match="boom 4"):
         _policy([1, 2, 3], sleeps).run(fn)
     assert fn.calls == 4
 
@@ -101,5 +101,5 @@ def test_state_store_atomic_roundtrip_and_corruption(tmp_path: Path) -> None:
     store.save({"a": 1})
     assert store.load() == {"a": 1}
     (tmp_path / "s.json").write_text("{broken", encoding="utf-8")
-    with pytest.raises(BiosError, match="corrupt"):
+    with pytest.raises(MiosError, match="corrupt"):
         store.load()

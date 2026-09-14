@@ -1,0 +1,109 @@
+# 発表カレンダー：MIOS が追っている指標の「いつ出るか」。
+#
+# FRED の releases/dates エンドポイントは**日付しか返さない**。
+# 時刻は各機関の公表規則として広く知られており、ここに明示する。
+# ここに書かれた発表だけが `time_precision: exact` として扱われ、
+# それ以外の FRED リリースは日付のまま（`date_only`）保存される。
+# **無い時刻を作らない** —— これが2つの状態を分けている理由である。
+#
+# `release_name` は FRED のレスポンスに現れる名前と**完全一致**させる。
+# 数値の release_id ではなく名前で照合するのは、名前なら人間が目で検証でき、
+# 一致しなければ**実在する名前を列挙して失敗する**ようにできるからである。
+# 一覧は `mios calendar --catalog` で実データから取得できる。
+#
+# UNVERIFIED（docs/ARCHITECTURE.md §6 A-3）：release_name の綴りは未検証。
+# 誤っていても静かな誤データにはならず、「照合ゼロ件」として表面化する。
+
+# 発表時刻の出典：各機関が公表している定例時刻。
+# BLS・BEA・Census は米東部時間。夏時間は zoneinfo が処理するので、
+# 固定オフセットではなくタイムゾーン名で持つ（08:30 ET は夏 12:30 UTC、冬 13:30 UTC）。
+watch:
+  - release_name: "Consumer Price Index"
+    country: US
+    importance: 5
+    local_time: "08:30"
+    timezone: America/New_York
+    event_type: release.us_inflation.cpi
+    series:
+      - ser_us_cpi_index
+      - ser_us_core_cpi_index
+
+  - release_name: "Employment Situation"
+    country: US
+    importance: 5
+    local_time: "08:30"
+    timezone: America/New_York
+    event_type: release.us_employment.nfp
+    series:
+      - ser_us_nfp_level
+      - ser_us_unemployment_rate
+      - ser_us_avg_hourly_earnings
+      - ser_us_participation_rate
+      - ser_us_avg_weekly_hours
+
+  - release_name: "Personal Income and Outlays"
+    country: US
+    importance: 4
+    local_time: "08:30"
+    timezone: America/New_York
+    event_type: release.us_inflation.pce
+    series:
+      - ser_us_pce_index
+      - ser_us_core_pce_index
+
+  - release_name: "Producer Price Index"
+    country: US
+    importance: 3
+    local_time: "08:30"
+    timezone: America/New_York
+    event_type: release.us_inflation.ppi
+    series:
+      - ser_us_ppi_final_demand
+
+  - release_name: "Unemployment Insurance Weekly Claims Report"
+    country: US
+    importance: 3
+    local_time: "08:30"
+    timezone: America/New_York
+    event_type: release.us_employment.initial_claims
+    series:
+      - ser_us_initial_claims
+      - ser_us_continuing_claims
+
+  - release_name: "Job Openings and Labor Turnover Survey"
+    country: US
+    importance: 3
+    # JOLTS は 10:00 ET。他の労働統計と違う点で、間違えやすい。
+    local_time: "10:00"
+    timezone: America/New_York
+    event_type: release.us_employment.jolts
+    series:
+      - ser_us_jolts_openings
+      - ser_us_jolts_quits
+
+  - release_name: "Advance Monthly Sales for Retail and Food Services"
+    country: US
+    importance: 3
+    local_time: "08:30"
+    timezone: America/New_York
+    event_type: release.us_growth.retail_sales
+    series:
+      - ser_us_retail_sales
+
+  - release_name: "Industrial Production and Capacity Utilization"
+    country: US
+    importance: 2
+    local_time: "09:15"
+    timezone: America/New_York
+    event_type: release.us_growth.industrial_production
+    series:
+      - ser_us_industrial_production
+
+  - release_name: "Gross Domestic Product"
+    country: US
+    importance: 4
+    local_time: "08:30"
+    timezone: America/New_York
+    event_type: release.us_growth.gdp
+    series:
+      - ser_us_real_gdp

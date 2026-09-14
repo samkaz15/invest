@@ -1,0 +1,16 @@
+# ALFRED is FRED's archive: the same endpoint asked for a range of
+# realtime dates returns every vintage of every period, so a backtest can
+# use the figure that was actually published rather than today's revised
+# one. realtime_start=1776-07-04 is FRED's documented "from the beginning"
+# sentinel; realtime_end=9999-12-31 means "to the latest".
+source_id: src_alfred_cpilfesl
+name: ALFRED CPILFESL — US core CPI — every published vintage
+kind: http_json
+url: https://api.stlouisfed.org/fred/series/observations?series_id=CPILFESL&api_key=${FRED_API_KEY}&file_type=json&realtime_start=1776-07-04&realtime_end=9999-12-31
+tier: 1
+# Deliberately slow: this response is large and the history behind it does
+# not change between polls. Weekly is plenty (see config/pipelines.yaml).
+min_interval_seconds: 30
+notes: >-
+  Feeds ser_us_core_cpi_index_vintage. Every revision of CPILFESL with the date it became public.
+  Requires FRED_API_KEY; auto-disabled and reported as a gap until set.

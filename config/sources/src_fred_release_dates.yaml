@@ -1,0 +1,23 @@
+# FRED release dates — 「今日は何が出るのか」の取得元。
+#
+# 選んだ理由は1つ：**すでに持っている FRED_API_KEY で叩ける**。
+# Investing.com や Trading Economics のカレンダーはスクレイピング規約が曖昧で、
+# 新しい認証情報も要る。こちらは公式APIで機械可読、Tier 1。
+#
+# 返るのは**日付だけで時刻は無い**。BLS は CPI を 08:30 America/New_York に
+# 発表するが、FRED は「15日」としか言わない。時刻は config/calendar.yaml に
+# 明示したものだけを 'exact' として扱い、それ以外は 'date_only' として
+# 日付のまま表示する（migration 0010）。無い時刻を作らない。
+#
+# UNVERIFIED（docs/ARCHITECTURE.md §6 A-3）：この環境からは外部に到達できないため、
+# 将来日程が本当に返るか、レスポンス形状が想定通りかは未検証。
+# parser は想定と違えば**実際に返ってきたキーを列挙して**失敗する。
+source_id: src_fred_release_dates
+name: FRED release dates (economic calendar)
+kind: http_json
+url: https://api.stlouisfed.org/fred/releases/dates?api_key=${FRED_API_KEY}&file_type=json&include_release_dates_with_no_data=true&sort_order=asc&limit=1000
+tier: 1
+min_interval_seconds: 2
+notes: >-
+  発表予定日の一覧。include_release_dates_with_no_data=true で、まだデータが
+  紐づいていない将来の予定も返す。economic_calendar を埋める唯一のソース。

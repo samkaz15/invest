@@ -1,0 +1,10 @@
+# 米労働統計局 公式。Tier 1、キー不要。CPI と雇用統計を発表する当事者。
+# UNVERIFIED（docs/ARCHITECTURE.md §6 A-3）：URL は未検証。
+source_id: src_bls_news
+name: BLS latest news releases (RSS)
+kind: rss
+url: https://www.bls.gov/feed/bls_latest.rss
+tier: 1
+min_interval_seconds: 5
+notes: >-
+  MIOS が予測している当の数字を発表している機関。発表の事実確認に使う。

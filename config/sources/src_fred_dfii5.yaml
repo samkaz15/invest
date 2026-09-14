@@ -1,0 +1,9 @@
+source_id: src_fred_dfii5
+name: FRED DFII5 — US 5Y TIPS real yield
+kind: http_json
+url: https://api.stlouisfed.org/fred/series/observations?series_id=DFII5&api_key=${FRED_API_KEY}&file_type=json&sort_order=desc&limit=400
+tier: 1
+min_interval_seconds: 2
+notes: >-
+  Feeds ser_us_real_yield_5y. Requires FRED_API_KEY (free); the source is auto-disabled and
+  reported as a data gap until the key is set.

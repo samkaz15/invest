@@ -1,14 +1,18 @@
 """Layer-boundary guard: import direction is a design rule, not a habit.
 
-MASTER_SYSTEM_DESIGN §2.1: imports flow one way. Each bios subpackage may
-import only from the packages listed here. Adding an edge is an
-architectural decision — change this table consciously, in review.
+Imports flow one way. Each mios subpackage may import only from the
+packages listed here. Adding an edge is an architectural decision — change
+this table consciously, in review.
+
+This test is the reason the Bitcoin-specific layers could be removed
+without the rest unravelling, so it is the first thing that gets updated
+when a layer is added (docs/REPOSITORY_AUDIT.md §6.1).
 """
 
 import ast
 from pathlib import Path
 
-SRC = Path(__file__).resolve().parents[2] / "src" / "bios"
+SRC = Path(__file__).resolve().parents[2] / "src" / "mios"
 
 ALLOWED: dict[str, set[str]] = {
     "common": set(),
@@ -16,42 +20,51 @@ ALLOWED: dict[str, set[str]] = {
     "audit": {"common"},
     "storage": {"common", "config"},
     "scheduler": {"common", "config", "audit"},
-    # ingestion -> scheduler: collector uses the RateLimiter primitive;
+    # ingestion -> scheduler: the collector uses the RateLimiter primitive;
     # scheduler never imports ingestion (tasks are injected), so still one-way.
-    "ingestion": {"common", "config", "audit", "storage", "scheduler"},
+    # ingestion -> series: the source verifier parses a payload to prove the
+    # provider still speaks the shape its series expect. It stores nothing,
+    # so this is a read of the parser table, not a data path.
+    "ingestion": {"common", "config", "audit", "storage", "scheduler", "series"},
     "extraction": {"common", "config", "audit", "storage", "ingestion", "knowledge"},
-    "knowledge": {"common", "config", "audit", "storage"},
-    "history": {"common", "config", "audit", "storage", "knowledge"},
-    "analysis": {"common", "config", "audit", "storage", "knowledge", "history"},
-    "similarity": {"common", "config", "audit", "storage", "knowledge", "history"},
-    "scoring": {"common", "config", "audit", "storage", "knowledge", "analysis", "similarity"},
-    "scenario": {"common", "config", "audit", "storage", "knowledge", "similarity", "scoring"},
-    "decision": {"common", "config", "audit", "storage", "scenario", "scoring"},
-    "reporting": {
+    "series": {"common", "config", "audit", "storage", "ingestion"},
+    # prediction -> ingestion: the external-forecast ingestor reads raw
+    # payloads out of the raw store, exactly as the series normalizer
+    # does. It is the same "bytes already fetched become rows" step, one
+    # layer over; ingestion still knows nothing about prediction.
+    "prediction": {"common", "config", "audit", "storage", "series", "ingestion"},
+    "validation": {"common", "config", "audit", "storage", "series", "prediction"},
+    # reports sits at the bottom of the graph: it may read everything and is
+    # read by nothing, which is what keeps it a formatter rather than a
+    # second place analysis quietly happens.
+    "reports": {
         "common",
         "config",
         "audit",
         "storage",
-        "knowledge",
+        "series",
+        "prediction",
         "analysis",
-        "similarity",
-        "scoring",
-        "scenario",
-        "decision",
+        "validation",
+        # knowledge: the headline list reads the curation queue. Reading, as
+        # always here — the report formats what other layers stored.
+        "knowledge",
     },
-    "agents": {"common", "config", "audit"},
+    "knowledge": {"common", "config", "audit", "storage"},
+    "analysis": {"common", "config", "audit", "storage", "knowledge", "series", "prediction"},
+    "scoring": {"common", "config", "audit", "storage", "knowledge", "analysis"},
 }
 
 
-def _bios_imports(path: Path) -> set[str]:
+def _mios_imports(path: Path) -> set[str]:
     tree = ast.parse(path.read_text(encoding="utf-8"))
     found: set[str] = set()
     for node in ast.walk(tree):
-        if isinstance(node, ast.ImportFrom) and node.module and node.module.startswith("bios."):
+        if isinstance(node, ast.ImportFrom) and node.module and node.module.startswith("mios."):
             found.add(node.module.split(".")[1])
         elif isinstance(node, ast.Import):
             for alias in node.names:
-                if alias.name.startswith("bios."):
+                if alias.name.startswith("mios."):
                     found.add(alias.name.split(".")[1])
     return found
 
@@ -66,12 +79,25 @@ def test_import_direction_is_one_way() -> None:
         pkg = pkg_dir.name
         allowed = ALLOWED.get(pkg, set()) | {pkg}
         for py in pkg_dir.rglob("*.py"):
-            for imported in _bios_imports(py):
+            for imported in _mios_imports(py):
                 if imported not in allowed:
-                    violations.append(f"{py.relative_to(SRC)}: imports bios.{imported}")
+                    violations.append(f"{py.relative_to(SRC)}: imports mios.{imported}")
     assert not violations, "layer-boundary violations:\n" + "\n".join(violations)
 
 
 def test_every_package_is_registered() -> None:
     unknown = {p.name for p in _packages()} - set(ALLOWED)
     assert not unknown, f"register new packages in ALLOWED consciously: {unknown}"
+
+
+def test_no_empty_placeholder_packages() -> None:
+    """A package that holds only a docstring is a promise, not code.
+
+    BIOS carried two of them (``agents``, ``similarity``) for six sprints
+    (docs/REPOSITORY_AUDIT.md §8 U-1, U-2). A package now earns its
+    directory by containing at least one module.
+    """
+    empty = [
+        p.name for p in _packages() if not [f for f in p.rglob("*.py") if f.name != "__init__.py"]
+    ]
+    assert not empty, f"packages with no modules — create them when they have code: {empty}"

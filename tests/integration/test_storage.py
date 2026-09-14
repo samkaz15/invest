@@ -1,4 +1,4 @@
-"""Storage-layer integration tests against a real PostgreSQL (bios_test).
+"""Storage-layer integration tests against a real PostgreSQL (mios_test).
 
 Skipped automatically when the test database is unreachable, so the unit
 suite stays runnable anywhere. Each test session rebuilds the schema from
@@ -11,27 +11,27 @@ from pathlib import Path
 
 import pytest
 
-from bios.common import SourceTier
-from bios.common.labels import ChainStatus, EventConfidence
-from bios.common.timeutil import TimePrecision
-from bios.config.loader import load_config
-from bios.knowledge.graph import ChainRepo, EntityRepo
-from bios.knowledge.models import (
+from mios.common import SourceTier
+from mios.common.labels import ChainStatus, EventConfidence
+from mios.common.timeutil import TimePrecision
+from mios.config.loader import load_config
+from mios.knowledge.graph import ChainRepo, EntityRepo
+from mios.knowledge.models import (
     ChainRecord,
     EntityRecord,
     EventRecord,
     EvidenceRecord,
     RelationRecord,
 )
-from bios.knowledge.snapshots import SnapshotRepo
-from bios.knowledge.store import CurationQueue, EventStore, IntegrityError
-from bios.knowledge.timeline import TimelineEngine
-from bios.storage.db import Database, StorageError
-from bios.storage.migrate import MigrationRunner
-from bios.storage.sync import sync_sources
+from mios.knowledge.snapshots import SnapshotRepo
+from mios.knowledge.store import CurationQueue, EventStore, IntegrityError
+from mios.knowledge.timeline import TimelineEngine
+from mios.storage.db import Database, StorageError
+from mios.storage.migrate import MigrationRunner
+from mios.storage.sync import sync_sources
 
 REPO = Path(__file__).resolve().parents[2]
-TEST_DSN = os.environ.get("BIOS_TEST_DATABASE_URL", "postgresql://localhost/bios_test")
+TEST_DSN = os.environ.get("MIOS_TEST_DATABASE_URL", "postgresql://localhost/mios_test")
 
 
 @pytest.fixture(scope="module")
@@ -53,10 +53,10 @@ def store(db: Database) -> EventStore:
 def _evidence(n: int) -> EvidenceRecord:
     return EvidenceRecord(
         evidence_id=f"evd_{n:017d}",
-        source_id="src_sec_press_rss",
-        tier=SourceTier.PRIMARY,
-        url="https://www.sec.gov/x",
-        quote="approved",
+        source_id="src_fred_cpiaucsl",
+        tier=SourceTier.OFFICIAL,
+        url="https://www.bls.gov/news.release/cpi.nr0.htm",
+        quote="The CPI rose 0.3 percent in August",
         retrieved_at=datetime(2024, 1, 11, tzinfo=UTC),
     )
 
@@ -64,7 +64,7 @@ def _evidence(n: int) -> EvidenceRecord:
 def _event(event_id: str, occurred: datetime, chain_id: str | None = None) -> EventRecord:
     return EventRecord(
         event_id=event_id,
-        type="regulation.etf.approval",
+        type="release.us_inflation.cpi",
         title="t",
         summary_fact="s",
         occurred_at=occurred,
@@ -72,7 +72,7 @@ def _event(event_id: str, occurred: datetime, chain_id: str | None = None) -> Ev
         time_precision=TimePrecision.DAY,
         confidence=EventConfidence.VERIFIED,
         chain_id=chain_id,
-        assets=[{"asset_id": "ent_asset_btc", "relevance": 1.0}],
+        assets=[{"asset_id": "ent_asset_xauusd", "relevance": 1.0}],
     )
 
 
@@ -83,7 +83,7 @@ def test_migrations_are_idempotent(db: Database) -> None:
 def test_event_requires_evidence(store: EventStore) -> None:
     with pytest.raises(IntegrityError, match="at least one evidence"):
         store.insert_event(
-            _event("evt_2024-01-10_no-evidence", datetime(2024, 1, 10, tzinfo=UTC)), []
+            _event("evt_2026-01-10_no-evidence", datetime(2024, 1, 10, tzinfo=UTC)), []
         )
 
 
@@ -164,28 +164,89 @@ def test_timeline_as_of_hides_later_knowledge(db: Database, store: EventStore) -
 def test_entity_upsert_and_alias_lookup(db: Database) -> None:
     EntityRepo(db).upsert(
         EntityRecord(
-            entity_id="ent_mtgox", kind="exchange", name="Mt.Gox", aliases=["マウントゴックス"]
+            entity_id="ent_federal_reserve",
+            kind="central_bank",
+            name="Federal Reserve",
+            aliases=["FRB", "連邦準備制度"],
         )
     )
-    found = EntityRepo(db).find_by_name("マウントゴックス")
-    assert found and found[0]["entity_id"] == "ent_mtgox"
+    found = EntityRepo(db).find_by_name("連邦準備制度")
+    assert found and found[0]["entity_id"] == "ent_federal_reserve"
 
 
 def test_snapshot_upsert_merges_metrics(db: Database) -> None:
+    """Pins the CURRENT behaviour of the legacy market_snapshots table.
+
+    This merge-in-place is exactly why the table cannot hold economic data:
+    a revised print would overwrite what was knowable at the time
+    (docs/REPOSITORY_AUDIT.md §4.1 problem A). Phase 3 replaces it with
+    vintage-keyed `observations`; until then this test documents what the
+    table does, not what MIOS should do.
+    """
     repo = SnapshotRepo(db)
     ts = datetime(2026, 7, 14, 6, tzinfo=UTC)
-    repo.upsert("ent_asset_btc", ts, 100000.0, None, {"funding_rate": 0.0001})
-    repo.upsert("ent_asset_btc", ts, 100000.0, None, {"fear_greed": 55.0})
-    latest = repo.latest("ent_asset_btc")
+    repo.upsert("ent_asset_xauusd", ts, 100000.0, None, {"funding_rate": 0.0001})
+    repo.upsert("ent_asset_xauusd", ts, 100000.0, None, {"fear_greed": 55.0})
+    latest = repo.latest("ent_asset_xauusd")
     assert latest is not None
     assert latest["asset_metrics"] == {"funding_rate": 0.0001, "fear_greed": 55.0}
 
 
 def test_curation_queue_dedupes_and_resolves(db: Database) -> None:
     queue = CurationQueue(db)
-    assert queue.enqueue("src_coindesk_rss", {"title": "x"}, dedupe_key="k1") is True
-    assert queue.enqueue("src_coindesk_rss", {"title": "x again"}, dedupe_key="k1") is False
+    assert queue.enqueue("src_fred_cpiaucsl", {"title": "x"}, dedupe_key="k1") is True
+    assert queue.enqueue("src_fred_cpiaucsl", {"title": "x again"}, dedupe_key="k1") is False
     pending = queue.pending()
     assert len(pending) == 1
     queue.resolve(pending[0]["candidate_id"], "rejected", note="not market relevant")
     assert queue.pending() == []
+
+
+def test_audit_records_reach_the_database(db: Database) -> None:
+    """A GitHub Actions runner is destroyed after the run.
+
+    An audit trail written only to that runner's filesystem is not an audit
+    trail, so the database sink is what makes the record survive
+    (docs/ARCHITECTURE.md §6 A-1).
+    """
+    from mios.audit import ActorKind, AgentRunRecord, AuditLogger, PostgresAuditSink
+    from mios.common.labels import RunStatus
+
+    logger = AuditLogger(PostgresAuditSink(db.execute))
+    logger.log_action(
+        ActorKind.SYSTEM,
+        actor="collector",
+        action="collect",
+        target="src_fred_cpiaucsl",
+        detail={"stored": 3},
+    )
+    logger.log_agent_run(
+        AgentRunRecord(
+            run_id="run_0123456789abcdef0",
+            agent="collector.src_fred_cpiaucsl",
+            started_at=datetime(2026, 9, 11, 13, tzinfo=UTC),
+            ended_at=datetime(2026, 9, 11, 13, 0, 2, tzinfo=UTC),
+            prompt_version="-",
+            model="-",
+            status=RunStatus.SUCCESS,
+            input_refs=["src_fred_cpiaucsl"],
+            output_refs=["raw_0123456789abcdef0"],
+        )
+    )
+
+    [action] = db.query("SELECT * FROM audit_log WHERE target = 'src_fred_cpiaucsl'")
+    assert action["detail"] == {"stored": 3}
+    [run] = db.query("SELECT * FROM agent_runs WHERE run_id = 'run_0123456789abcdef0'")
+    assert run["status"] == "success"
+
+
+def test_the_audit_trail_cannot_be_rewritten(db: Database) -> None:
+    """Same protection as every other append-only table: an audit record
+    that could be edited is not evidence."""
+    from mios.audit import ActorKind, AuditLogger, PostgresAuditSink
+
+    AuditLogger(PostgresAuditSink(db.execute)).log_action(
+        ActorKind.SYSTEM, actor="test", action="probe", target="nothing"
+    )
+    with pytest.raises(StorageError, match="append-only"):
+        db.execute("UPDATE audit_log SET action = 'tampered'")

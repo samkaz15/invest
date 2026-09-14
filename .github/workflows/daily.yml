@@ -1,0 +1,129 @@
+# The daily run.
+#
+# The chain itself lives in `mios daily`, not here. It used to be written out
+# step by step in this file *and* in the Makefile, and the two drifted: the
+# workflow tolerated a failing collection and still wrote the report, while
+# `make daily-report` stopped at the first error and produced nothing. One
+# definition, called from both.
+#
+# What this file is responsible for is everything around the chain: secrets,
+# committing the output, and making sure a failure is visible without
+# discarding the artifact that documents it.
+name: Daily
+
+on:
+  schedule:
+    # 07:10 UTC on weekdays: after the US data window and before Tokyo opens.
+    - cron: "10 7 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      as_of:
+        description: "Replay a past day (ISO-8601 UTC). Leave blank for now."
+        required: false
+        type: string
+
+concurrency:
+  # Never two writers against the same database and the same branch.
+  group: daily
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    env:
+      MIOS_DATABASE_URL: ${{ secrets.MIOS_DATABASE_URL }}
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+      TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
+      MIOS_LOG_JSON: "true"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Refuse to run without a database
+        # Everything downstream would "succeed" against nothing.
+        run: |
+          if [ -z "$MIOS_DATABASE_URL" ]; then
+            echo "::error::MIOS_DATABASE_URL is not set — see ADR-010"
+            exit 1
+          fi
+
+      - name: Daily chain
+        id: chain
+        # Not a failure gate: a dead provider must not cost the day's
+        # snapshot. The exit code is honoured at the end of the job, after
+        # the report it produced has been committed.
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          AS_OF_ARG=""
+          if [ -n "${{ inputs.as_of }}" ]; then
+            AS_OF_ARG="--as-of ${{ inputs.as_of }}"
+          fi
+          python -m mios.cli daily $AS_OF_ARG 2>&1 | tee /tmp/daily.log
+
+      - name: Commit
+        run: |
+          set -euo pipefail
+          git config user.name  "mios-bot"
+          git config user.email "mios-bot@users.noreply.github.com"
+          DAY="$(date -u +%Y-%m-%d)"
+
+          # Separate commits so `git log -- data/` and `git log -- reports/`
+          # each read as the history of one thing (指示書 §23).
+          git add -A data/
+          git diff --cached --quiet || git commit -m "data: update macro and market data ${DAY}"
+          git add -A reports/
+          git diff --cached --quiet || git commit -m "report: daily macro report ${DAY}"
+          # The CSVs a spreadsheet reads. Committed rather than uploaded as
+          # an artifact so a Google Sheet can pull them with IMPORTDATA and
+          # refresh itself whenever this job runs.
+          git add -A exports/
+          git diff --cached --quiet || git commit -m "export: spreadsheet CSVs ${DAY}"
+
+          if git diff --quiet '@{upstream}' HEAD 2>/dev/null; then
+            echo "nothing to push"
+          else
+            for attempt in 1 2 3 4; do
+              if git pull --rebase --autostash && git push; then
+                exit 0
+              fi
+              echo "push attempt ${attempt} failed; retrying"
+              sleep $((2 ** attempt))
+            done
+            echo "::error::could not push after 4 attempts"
+            exit 1
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## Daily run — $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo
+            echo '```'
+            # The chain prints its own per-step outcome table.
+            sed -n '/── summary/,$p' /tmp/daily.log 2>/dev/null || echo "(chain produced no output)"
+            echo '```'
+            echo
+            echo "Missing series and failing sources are listed in the report's"
+            echo "**Data Quality / Missing Data** section, which is committed"
+            echo "whether or not this run succeeded."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Fail if the chain reported an error
+        # Last, deliberately: the data and the report are already committed,
+        # so the record of what went wrong survives the failure.
+        if: steps.chain.outcome == 'failure'
+        run: |
+          echo "::error::the daily chain reported a failure — see the summary and the committed report"
+          exit 1

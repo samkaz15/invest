@@ -1,0 +1,11 @@
+# 産経新聞 経済。Tier 3。国内の政治・財政の文脈を拾う。
+# UNVERIFIED（docs/ARCHITECTURE.md §6 A-3）：URL は未検証。
+# 産経のRSS提供状況は変わりやすく、これは verify-sources で真っ先に確認すべき1件。
+source_id: src_sankei_economy
+name: 産経新聞 経済 (RSS)
+kind: rss
+url: https://www.sankei.com/rss/news/economy.xml
+tier: 3
+min_interval_seconds: 10
+notes: >-
+  日本の財政・為替介入まわりの文脈用。Tier 3 のため単独で数値の根拠にしない。

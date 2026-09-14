@@ -1,0 +1,9 @@
+source_id: src_fred_indpro
+name: FRED INDPRO — US industrial production index
+kind: http_json
+url: https://api.stlouisfed.org/fred/series/observations?series_id=INDPRO&api_key=${FRED_API_KEY}&file_type=json&sort_order=desc&limit=400
+tier: 1
+min_interval_seconds: 2
+notes: >-
+  Feeds ser_us_industrial_production. Requires FRED_API_KEY (free); the source is auto-disabled and
+  reported as a data gap until the key is set.
