@@ -26,7 +26,7 @@ CONTENT_TYPE = "text/csv"
 class CsvAdapter(SourceAdapter):
     def fetch(self, client: HttpGetter, conditional: dict[str, str] | None = None) -> FetchResult:
         headers = {**self.spec.headers, **(conditional or {})}
-        resp = client.get(self.spec.url, headers=headers or None)
+        resp = client.get(self.spec.url, headers=headers or None, encoding=self.spec.encoding)
         if resp.not_modified:
             return FetchResult(not_modified=True)
 

@@ -2,15 +2,20 @@
 # rate differential that drives USDJPY — without it the USDJPY chain has
 # only its US half.
 #
-# UNVERIFIED against the live endpoint (docs/ARCHITECTURE.md §6 A-3): this
-# file was written without network access. A wrong URL or layout surfaces
-# as a collection failure, never as bad data.
+# URL は 2026-09-14 の verify-sources で到達を確認済み（HTTP 200、1,129 bytes）。
+#
+# encoding を明示しているのは、**MOF が Shift-JIS を charset 宣言なしで返す**ため。
+# 宣言が無いと UTF-8 にフォールバックし、日本語の年限見出しが全て置換文字になる。
+# その結果 parser は「'2年' という列が無い」と報告し、本当の原因（文字コード）を
+# 誰も指さない。初回の verify-sources がまさにこれを出した。
 source_id: src_mof_jgb_yields
 name: Japan MOF daily JGB yields (CSV)
 kind: http_csv
 url: https://www.mof.go.jp/jgbs/reference/interest_rate/jgbcm.csv
 tier: 1
 min_interval_seconds: 5
+# 宣言されない Shift-JIS。cp932 は Shift-JIS の上位互換で、機種依存文字も読める。
+encoding: cp932
 notes: >-
   Whole curve in one call. Dates arrive in the Japanese era calendar and
   tenors are named in Japanese; both are handled by the mof_jgb_csv parser.

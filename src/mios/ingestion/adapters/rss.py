@@ -25,7 +25,7 @@ CONTENT_TYPE = "application/x-bios-feed-entry+json"
 
 class RssAdapter(SourceAdapter):
     def fetch(self, client: HttpGetter, conditional: dict[str, str] | None = None) -> FetchResult:
-        resp = client.get(self.spec.url, headers=conditional or None)
+        resp = client.get(self.spec.url, headers=conditional or None, encoding=self.spec.encoding)
         if resp.not_modified:
             return FetchResult(not_modified=True)
         try:

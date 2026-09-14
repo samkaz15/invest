@@ -6,16 +6,27 @@
 # most days, so each fetch is a new forecast vintage, stored and never
 # overwritten exactly like MIOS's own.
 #
-# UNVERIFIED against the live endpoint (docs/ARCHITECTURE.md §6 A-3): this
-# file was written without network access, so the URL and the column names
-# are plausible rather than confirmed. The parser fails loudly and names
-# every column it actually found, so one `mios verify-sources` run turns the
-# guess into a one-line config fix. A wrong guess cannot produce bad data.
+# **URL が誤っていることが 2026-09-14 の verify-sources で判明した（HTTP 404）。**
+# 外部到達のない環境で書いた推測だったため。正しい配信URLが分かるまで無効化する。
+#
+# 毎朝404を出し続けさせない。収集失敗が1件増えるだけなら実害は無いが、
+# **本物の失敗が埋もれる**方が高くつく（産経を消したのと同じ理由）。
+#
+# 有効化の手順：Cleveland Fed の inflation nowcasting ページで
+# データのダウンロードリンクを右クリック →「リンクのアドレスをコピー」→
+# 下の url に貼って enabled: true に戻す。列名（config/external.yaml の
+# provider_code）も未確認なので、parser が実在する列名を列挙して失敗する。
+# その1回で設定が確定する。
+#
+# これが無効な間、**CPI の機関ベンチマークは存在しない**。つまり MIOS の
+# 予測はナイーブ基準としか比較されず、ADR-012 が「本当の問い」と呼んだ
+# 比較ができない状態にある。日次レポートがこれを毎回明示する。
 source_id: src_clevelandfed_nowcast
 name: Cleveland Fed inflation nowcast (CSV)
 kind: http_csv
 url: https://www.clevelandfed.org/-/media/files/webcharts/inflationnowcasting/inflation-nowcast-data.csv
 tier: 1
+enabled: false
 min_interval_seconds: 5
 notes: >-
   Headline and core CPI nowcasts for the current and next month. Read by the

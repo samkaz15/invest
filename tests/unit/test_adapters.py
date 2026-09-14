@@ -7,6 +7,7 @@ import pytest
 
 from mios.config.models import SourceSpec
 from mios.ingestion.adapter import AdapterError, conditional_headers
+from mios.ingestion.adapters.http_csv import CsvAdapter
 from mios.ingestion.adapters.http_json import JsonApiAdapter
 from mios.ingestion.adapters.rss import RssAdapter
 from mios.ingestion.http import HttpResponse
@@ -31,9 +32,16 @@ class FakeClient:
     def __init__(self, response: HttpResponse) -> None:
         self.response = response
         self.requested_headers: dict[str, str] | None = None
+        self.requested_encoding: str | None = None
 
-    def get(self, url: str, headers: dict[str, str] | None = None) -> HttpResponse:
+    def get(
+        self,
+        url: str,
+        headers: dict[str, str] | None = None,
+        encoding: str | None = None,
+    ) -> HttpResponse:
         self.requested_headers = headers
+        self.requested_encoding = encoding
         return self.response
 
 
@@ -98,3 +106,24 @@ def test_raw_store_dedupes_and_is_append_only(tmp_path: Path) -> None:
     assert len(files) == 1
     # cold restart re-reads the ledger
     assert FileRawStore(tmp_path).seen("src_test_feed", item1.content_hash)
+
+
+def test_a_source_encoding_reaches_the_client() -> None:
+    """The MOF serves Shift-JIS and declares no charset.
+
+    Without this the UTF-8 fallback turns every Japanese tenor header into
+    replacement characters, and the parser then reports a missing column —
+    an error message pointing at the wrong thing entirely. That is what the
+    first real verification run produced.
+    """
+    spec = SourceSpec(
+        source_id="src_test_feed",
+        name="t",
+        kind="http_csv",
+        url="https://example.com/x.csv",
+        tier=1,
+        encoding="cp932",
+    )
+    client = FakeClient(HttpResponse(200, "a,b\n1,2\n"))
+    CsvAdapter(spec).fetch(client)
+    assert client.requested_encoding == "cp932"

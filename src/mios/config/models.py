@@ -90,6 +90,12 @@ class SourceSpec(MiosModel):
     enabled: bool = True
     min_interval_seconds: float = Field(default=1.0, ge=0)
     headers: dict[str, str] = Field(default_factory=dict)  # values may use ${ENV_VAR}
+    #: Text encoding of the response body, when the server does not declare
+    #: one correctly. Japan's MOF serves Shift-JIS CSV with no charset in its
+    #: Content-Type, and the UTF-8 fallback produces mojibake rather than an
+    #: error — the parser then reports a missing column and nothing points at
+    #: the real cause. Left as None, whatever the server says is used.
+    encoding: str | None = None
     notes: str = ""
 
     @property

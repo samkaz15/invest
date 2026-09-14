@@ -178,6 +178,18 @@ class SourceVerifier:
             )
 
         payload = result.drafts[0].payload_text
+        # A feed adapter splits its response into one draft per article, so
+        # the first draft is one entry rather than the whole document.
+        # Reporting its size as the source's size made healthy feeds look
+        # like 300-byte error pages in the first real verification run. What
+        # a feed's reader actually wants to know is how many entries came
+        # back: a feed that has quietly become empty is the failure, and it
+        # is invisible in a byte count.
+        detail = (
+            f"{len(result.drafts)} entrie(s)"
+            if len(result.drafts) > 1
+            else f"{len(payload):,} bytes"
+        )
         checks: list[SeriesCheck] = []
         for extra in self._extra.get(source_id, []):
             try:
@@ -221,6 +233,6 @@ class SourceVerifier:
             name=spec.name,
             tier=spec.tier,
             reachable=True,
-            detail=f"{len(payload):,} bytes",
+            detail=detail,
             series=checks,
         )

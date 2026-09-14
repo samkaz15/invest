@@ -23,7 +23,12 @@ class AdapterError(MiosError):
 
 
 class HttpGetter(Protocol):
-    def get(self, url: str, headers: dict[str, str] | None = None) -> HttpResponse: ...
+    def get(
+        self,
+        url: str,
+        headers: dict[str, str] | None = None,
+        encoding: str | None = None,
+    ) -> HttpResponse: ...
 
 
 class ParseFailure(MiosModel):
