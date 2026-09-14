@@ -91,7 +91,7 @@ mios health        # ソース別の死活（失敗があれば exit 1）
 | 4 | Historical / Vintage（ALFRED 真vintage、as-of 漏れの静的検出、JGB） | ✅ 完了 |
 | 5 | Forecast layer（CPI / NFP 予測、予測vintageの保存） | ✅ 完了 |
 | 6a | Institutional forecasts（機関予測との比較） | ✅ 完了（ADR-012） |
-| 6b | News collection（Fed / BOJ / BLS / FT / CNBC / 産経 の RSS） | ✅ 完了 |
+| 6b | News collection（Fed / BOJ / BLS / FT / CNBC の RSS） | ✅ 完了 |
 | 6c | News classification（分類・要約） | 未着手（`ANTHROPIC_API_KEY` が必要） |
 | 11 | Economic calendar + releases + スプレッドシート出力 | ✅ 完了（ADR-013） |
 | 7 | Cross asset（Gold / USDJPY 解釈） | ✅ 完了 |

@@ -345,7 +345,8 @@ mios health        # ソース別の死活・DLQ 件数（失敗があれば exi
 | A-9 | **NFP と失業率には無料の機関予測が存在しない**（月次コンセンサスは Bloomberg / Reuters の有料調査、SEP・SPF は四半期の別の問い）。この2つの skill はナイーブ基準に対する主張でしかなく、CPI 側より弱い | 構造的な限界（ADR-012）。`config/external.yaml` の `uncovered` に明示列挙し、スキーマが空リストを拒否する。`mios accuracy` と日次レポートが毎回名指しで表示する |
 | A-10 | **Cleveland Fed nowcast の URL・列名が未検証**。A-3 と同じ理由 | `mios verify-sources` が取得だけでなく **parse まで**検査する（`ExtraParse` を注入）。列名が違えば**実在する列名を列挙して**失敗するので、修正は `config/external.yaml` の1行 |
 | A-14 | **経済カレンダーの「予想」列（外為どっとコム等）は自動取得しない。** その数値はほぼ確実にベンダーからのライセンスデータであり、自動収集して公開リポジトリにコミットすることは再配布にあたる | 構造的な判断（ADR-014）。人が読んで書き写す経路を `input/consensus.csv` として用意し、出典URLと入力時点を行ごとに必須にした。取り込みは `mios consensus` |
-| A-11 | **Reuters と Bloomberg には公開RSSが存在しない**（Reuters は2020年頃に廃止、Bloomberg は元々非公開）。有料APIを使わない限り収集経路がない | 構造的な制約。日次レポートの「Not Yet Implemented」に毎回明記する。一次情報は Fed / BOJ / BLS の公式RSSで代替し、報道は FT / CNBC / 産経（いずれも Tier 3）で拾う |
+| A-15 | **日本語の報道ソースが1つも無い**。産経は公開RSSを提供していないことが判明して外した（DELETION_LOG 参照）。日銀・財務省まわりの文脈は BOJ 公式（Tier 1）だけで読んでいる | 公開RSSを出している日本語媒体が見つかれば追加する。見つからない場合は「日本側の報道は見ていない」ことがレポート上の明示された欠損として残る |
+| A-11 | **Reuters と Bloomberg には公開RSSが存在しない**（Reuters は2020年頃に廃止、Bloomberg は元々非公開）。有料APIを使わない限り収集経路がない | 構造的な制約。日次レポートの「Not Yet Implemented」に毎回明記する。一次情報は Fed / BOJ / BLS の公式RSSで代替し、報道は FT / CNBC（いずれも Tier 3）で拾う |
 | A-12 | **ニュースの分類・要約が未実装**。収集と重複除去までは動くが、テーマ分類も要約もない | LLM を使う唯一の箇所になる予定で `ANTHROPIC_API_KEY` が必要。憲法第5条により、LLM は分類・要約・文章生成のみを行い**数値は生成しない** |
 | A-13 | **FRED の releases/dates が将来日程を返すか未検証**、および release_name の綴りが未検証 | `mios verify-sources` と初回の `mios calendar` で判明する。照合ゼロ件として表面化し、静かな誤データにはならない。実データの名前一覧は `mios calendar` の出力から拾える |
 | A-5 | 日本の **CPI・賃金**が未登録（JGB は Phase 4 で追加済）。e-Stat は API キーと専用 parser を要する | 未定。**データのない系列を先に登録しない**（placeholder は作らない） |

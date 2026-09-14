@@ -90,3 +90,22 @@ git checkout 2b9f925 -- <path>     # 作業ツリーへ復元
 | `src/mios/extraction/news.py` | RSS → curation queue は資産非依存。Phase 6 の News Agent の土台になる |
 | `src/mios/analysis/{models,stats,repo}.py` | `Signal`/`DimensionReport` の説明可能性と min-sample 規律は MIOS の中核要件 |
 | `src/mios/scoring/composite.py` | weight × score・対立指数・データ完全性の算術は資産非依存 |
+
+---
+
+## 2026-09-14 — 産経新聞 RSS（`src_sankei_economy`）
+
+| 項目 | 内容 |
+|---|---|
+| 対象 | `config/sources/src_sankei_economy.yaml` と `config/pipelines.yaml` の収集ジョブ1件 |
+| 理由 | **公開RSSを提供していないことが判明したため。** 設定は外部到達のない環境で書かれており、URL は推測だった（当時 §6 A-3 として記録）。オーナーが実際に確認した結果、配信元が意図した機械可読な経路が存在しないと分かった |
+| 復元方法 | `git show 0e6d928:config/sources/src_sankei_economy.yaml` |
+| 失われたデータ | **なし。** 一度も収集が実行されておらず、`data/raw/src_sankei_economy/` は存在しない |
+
+**残った欠損を記録しておく。** これで**日本語の報道ソースが1つも無くなった**。
+日銀・財務省まわりの文脈は BOJ 公式 RSS（Tier 1）だけで読むことになる。
+MOF の介入や国内の財政判断が報道先行で動く場面は、構造的に見えない。
+`docs/ARCHITECTURE.md §6 A-15` に未解決事項として残した。
+
+**404 する URL を「いつか直る」として置いておかない。** 収集失敗が毎朝1件増えるだけで、
+本当の失敗が埋もれる。存在しないと分かったソースは消し、欠損として明示するのが正しい。

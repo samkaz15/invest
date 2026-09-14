@@ -54,7 +54,6 @@ jobs:
   - { job_id: collect_bls_news, task: collect, source_id: src_bls_news, interval_minutes: 60 }
   - { job_id: collect_cnbc_economy, task: collect, source_id: src_cnbc_economy, interval_minutes: 60 }
   - { job_id: collect_ft_home, task: collect, source_id: src_ft_home, interval_minutes: 120 }
-  - { job_id: collect_sankei_economy, task: collect, source_id: src_sankei_economy, interval_minutes: 120 }
   # 発表予定。日に数回で十分で、日程変更はそう頻繁には起きない。
   - { job_id: collect_release_dates, task: collect, source_id: src_fred_release_dates, interval_minutes: 360 }
   # The Cleveland Fed nowcast moves most days, so it is polled like a
