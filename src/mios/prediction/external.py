@@ -221,6 +221,23 @@ class ExternalForecastRepo:
             {"s": target_series_id, "d": target_period, "a": as_of},
         )
 
+    def count_for(self, target_series_id: str) -> int:
+        """How many forecasts of any provenance exist for one target.
+
+        `config/external.yaml`'s `uncovered` list says which targets no free,
+        machine-readable institutional forecast covers — a structural fact
+        about what exists in the world. It says nothing about whether someone
+        typed one in by hand, and a message that conflated the two would keep
+        announcing "no benchmark" beside a benchmark.
+        """
+        row = self._db.query_one(
+            """
+            SELECT count(*) AS n FROM external_forecasts WHERE target_series_id = %(s)s
+            """,
+            {"s": target_series_id},
+        )
+        return int(row["n"]) if row else 0
+
     def unscored(self) -> list[dict[str, Any]]:
         return self._db.query(
             """

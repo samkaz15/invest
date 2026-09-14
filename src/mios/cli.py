@@ -45,6 +45,8 @@ from mios.prediction.external import (
     ExternalIngestor,
     get_external_parser,
 )
+from mios.prediction.manual import PROVIDER_ID as MANUAL_PROVIDER
+from mios.prediction.manual import ManualConsensusIngestor
 from mios.prediction.repo import ForecastRepo
 from mios.reports.daily import write_report
 from mios.reports.export import Exporter
@@ -539,6 +541,28 @@ def _cmd_consensus(app: App, as_of: str | None) -> int:
     for failure in report.failures:
         print(f"    FAIL {failure}")
 
+    # Hand-typed consensus, ingested into the same table under the same
+    # rules. NFP and the unemployment rate have no free machine-readable
+    # forecast (ADR-012), and scraping a broker's calendar would be
+    # redistributing someone else's licensed data — so this is the path.
+    manual_spec = app.config.sources.get(MANUAL_PROVIDER)
+    if manual_spec is not None:
+        manual = ManualConsensusIngestor(
+            app.settings.config_dir.parent / "input" / "consensus.csv",
+            external,
+            ObservationRepo(app.db),
+            app.config.forecast.by_id(),
+            manual_spec.url,
+            manual_spec.tier,
+        ).run()
+        print(
+            f"手入力コンセンサス: {manual.rows} 行 → 新規={manual.written} "
+            f"変更なし={manual.unchanged}"
+        )
+        for failure in manual.failures:
+            print(f"    FAIL {failure}")
+        report.failures.extend(manual.failures)
+
     forecasts = ForecastRepo(app.db)
     for target in app.config.forecast.targets:
         mine = [
@@ -565,7 +589,11 @@ def _cmd_consensus(app: App, as_of: str | None) -> int:
             )
 
     for series_id in app.config.external.uncovered:
-        print(f"\nno institutional benchmark for {series_id} — naive baseline only")
+        typed = external.count_for(series_id)
+        if typed:
+            print(f"\n{series_id}: 無料の機関予測は存在しないが、手入力が {typed} 件ある")
+        else:
+            print(f"\n{series_id}: 無料の機関予測が存在しない。比較対象はナイーブ基準のみ")
     return 0 if report.ok else 1
 
 

@@ -128,6 +128,16 @@ class SourceVerifier:
         return report
 
     def _check_one(self, source_id: str, spec: SourceSpec) -> SourceCheck:
+        if not spec.automated:
+            # Nothing to reach. Reporting it as a failure would bury the real
+            # ones; reporting it as healthy would claim a check that never ran.
+            return SourceCheck(
+                source_id=source_id,
+                name=spec.name,
+                tier=spec.tier,
+                reachable=None,
+                detail="manual source — transcribed by a human, never fetched",
+            )
         if not spec.enabled:
             return SourceCheck(
                 source_id=source_id,

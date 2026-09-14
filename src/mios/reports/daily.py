@@ -403,10 +403,19 @@ class DailyReport:
         # Always printed, present or not: a comparison table covering two of
         # four targets reads as complete unless it says which two it is not.
         for series_id in self._config.external.uncovered:
-            lines.append(
-                f"- `{series_id}`: 無料で機械可読な機関予測が存在しない。"
-                "比較対象はナイーブ基準のみで、ここでの skill は CPI のそれより弱い主張である。"
-            )
+            typed = self._external.count_for(series_id)
+            if typed:
+                lines.append(
+                    f"- `{series_id}`: 無料で機械可読な機関予測は存在しないが、"
+                    f"**手入力のコンセンサスが {typed} 件**ある（`input/consensus.csv`）。"
+                    "出典と入力時点は行ごとに記録されている。"
+                )
+            else:
+                lines.append(
+                    f"- `{series_id}`: 無料で機械可読な機関予測が存在しない。"
+                    "比較対象はナイーブ基準のみで、ここでの skill は CPI のそれより"
+                    "弱い主張である。手入力すれば比較できる（`input/README.md`）。"
+                )
         return lines
 
     def _head_to_head(self) -> list[str]:

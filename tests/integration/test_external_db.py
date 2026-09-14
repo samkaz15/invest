@@ -277,3 +277,78 @@ def test_a_provider_forecast_published_after_ours_is_never_the_one_compared(
     late = repo.as_of(TARGET, date(2026, 7, 1), _at("2026-07-25T00:00:00"))
     assert [r["point_value"] for r in late] == [Decimal("0.0045")]
     assert observations is not None
+
+
+# ------------------------------------------------- hand-typed consensus
+
+
+def test_a_quoted_level_becomes_a_change_against_what_was_knowable_then(
+    clean: Database,
+) -> None:
+    """The unemployment rate is quoted as 4.3 and forecast as a change.
+
+    Storing 4.3 unconverted would record a consensus of "+4.3 percentage
+    points" — wrong by two orders of magnitude, and in the direction that
+    makes every human forecaster look catastrophically bad. The subtraction
+    uses the previous value *as it stood when the forecast was read*, never
+    today's restated one, because that is what the forecaster could see.
+    """
+    from mios.config.loader import load_config
+    from mios.prediction.manual import ConsensusRow, convert
+    from mios.series.repo import ObservationRepo
+
+    config = load_config(REPO / "config")
+    spec = config.series.by_id()["ser_us_unemployment_rate"]
+    observations = ObservationRepo(clean)
+
+    # August's rate was 4.1 when the consensus was read...
+    observations.write_vintage(
+        spec,
+        [(date(2026, 8, 1), Decimal("4.1"))],
+        _at("2026-09-05T12:30:00"),
+        "raw_0000000000000000d",
+    )
+    # ...and was later restated to 4.2, after the fact.
+    observations.write_vintage(
+        spec,
+        [(date(2026, 8, 1), Decimal("4.2"))],
+        _at("2026-10-05T12:30:00"),
+        "raw_0000000000000000e",
+    )
+
+    row = ConsensusRow(
+        target_series_id="ser_us_unemployment_rate",
+        target_period=date(2026, 9, 1),
+        value=Decimal("4.3"),
+        unit="level",
+        observed_at=_at("2026-09-25T09:00:00"),
+        source_url="https://www.gaikaex.com/gaikaex/mark/calendar/",
+        note="",
+    )
+    target = config.forecast.by_id()["ser_us_unemployment_rate"]
+    # 4.3 - 4.1 = 0.2, using the vintage in force on 2026-09-25.
+    assert convert(row, target, observations) == pytest.approx(
+        Decimal("0.2"), abs=Decimal("0.0001")
+    )
+
+
+def test_a_level_consensus_with_no_prior_observation_refuses_to_guess(
+    clean: Database,
+) -> None:
+    """Without the previous level there is no conversion, only an invention."""
+    from mios.config.loader import load_config
+    from mios.prediction.manual import ConsensusInputError, ConsensusRow, convert
+    from mios.series.repo import ObservationRepo
+
+    config = load_config(REPO / "config")
+    row = ConsensusRow(
+        target_series_id="ser_us_unemployment_rate",
+        target_period=date(2026, 9, 1),
+        value=Decimal("4.3"),
+        unit="level",
+        observed_at=_at("2026-09-25T09:00:00"),
+        source_url="https://www.gaikaex.com/gaikaex/mark/calendar/",
+        note="",
+    )
+    with pytest.raises(ConsensusInputError, match="needs the previous period"):
+        convert(row, config.forecast.by_id()["ser_us_unemployment_rate"], ObservationRepo(clean))

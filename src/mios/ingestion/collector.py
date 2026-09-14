@@ -86,7 +86,7 @@ class Collector:
         self._adapter_factory = adapter_factory
 
     def enabled_source_ids(self) -> list[str]:
-        return [sid for sid, spec in self._sources.items() if spec.enabled]
+        return [sid for sid, spec in self._sources.items() if spec.enabled and spec.automated]
 
     def disabled_source_ids(self) -> list[str]:
         """Sources turned off in config or auto-disabled by a missing secret.
