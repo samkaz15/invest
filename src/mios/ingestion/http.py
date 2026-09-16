@@ -16,9 +16,7 @@ from mios.common.errors import MiosError
 #: the old value in the first live run. That value was `BIOS-collector/0.1`,
 #: the predecessor project's name, left behind by the very commit whose
 #: purpose was renaming bios to mios.
-DEFAULT_USER_AGENT = (
-    "MIOS-collector/1.0 (macro research; +https://github.com/samkaz15/invest)"
-)
+DEFAULT_USER_AGENT = "MIOS-collector/1.0 (macro research; +https://github.com/samkaz15/invest)"
 
 
 class TransportError(MiosError):

@@ -21,7 +21,13 @@ dependencies = [
 dev = [
     "pytest>=8.0",
     "pytest-cov>=5.0",
-    "ruff>=0.4",
+    # Pinned exactly, unlike the others. A formatter's output is allowed to
+    # change between patch releases, and `ruff format --check` in CI turns
+    # any such change into a failed build on an unrelated commit. With
+    # `>=0.4` the runner installed whatever was newest while a developer's
+    # environment kept whatever it had — 0.16.7 locally against 0.16.8 in
+    # CI was enough to disagree about one line and fail the build.
+    "ruff==0.16.8",
     "mypy>=1.10",
     "types-PyYAML",
 ]
