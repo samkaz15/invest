@@ -10,7 +10,6 @@ from pydantic import BaseModel, ValidationError
 from mios.common.errors import ConfigError
 from mios.config.analysis import AnalysisConfig
 from mios.config.calendar import UNCATEGORISED, CalendarConfig
-from mios.config.external import ExternalConfig
 from mios.config.forecast import ForecastConfig
 from mios.config.models import (
     AssetConfig,
@@ -56,7 +55,6 @@ class ConfigRoot:
     sources: dict[str, SourceSpec]  # keyed by source_id (the machine-readable source registry)
     series: SeriesRegistry
     forecast: ForecastConfig
-    external: ExternalConfig
     calendar: CalendarConfig
     analysis: AnalysisConfig
     pipelines: PipelinesConfig
@@ -108,36 +106,6 @@ def load_config(config_dir: Path) -> ConfigRoot:
                 f"series {sorted(unknown)}"
             )
 
-    external = load_model(config_dir / "external.yaml", ExternalConfig)
-    forecast_targets = {t.series_id for t in forecast.targets}
-    for provider in external.providers:
-        if provider.provider_id not in sources:
-            raise ConfigError(
-                f"external provider {provider.provider_id!r} has no source file under "
-                f"{sources_dir} — it has to be collectable before it can be compared against"
-            )
-        unknown = [
-            t.target_series_id
-            for t in provider.targets
-            if t.target_series_id not in forecast_targets
-        ]
-        if unknown:
-            raise ConfigError(
-                f"external provider {provider.provider_id!r} forecasts {sorted(unknown)}, "
-                "which MIOS does not itself forecast — there would be nothing to compare it to"
-            )
-    # `uncovered` is what the scoreboard cannot benchmark. Naming a target
-    # that is both covered and uncovered, or one that is not forecast at all,
-    # would make that declaration misleading rather than incomplete.
-    covered = {t.target_series_id for p in external.providers for t in p.targets}
-    for series_id in external.uncovered:
-        if series_id not in forecast_targets:
-            raise ConfigError(
-                f"external.uncovered names {series_id!r}, which is not a forecast target"
-            )
-        if series_id in covered:
-            raise ConfigError(f"external.uncovered names {series_id!r}, but a provider covers it")
-
     calendar = load_model(config_dir / "calendar.yaml", CalendarConfig)
     for watched in calendar.watch:
         unknown = [s for s in watched.series if s not in known_series]
@@ -160,9 +128,20 @@ def load_config(config_dir: Path) -> ConfigRoot:
                 f"series {sorted(unknown)}"
             )
     known_assets = set(assets)
+    known_dimensions = {d.dimension for d in analysis.dimensions}
     for view in analysis.views:
         if view.asset_id not in known_assets:
             raise ConfigError(f"view {view.view_id!r} references unknown asset {view.asset_id!r}")
+        # A link to a dimension that no longer exists would not raise: the
+        # view would simply score it as a gap and read as a slightly less
+        # confident version of itself, forever. Removing the BOJ dimension
+        # (ADR-015) is exactly the change that produces this, so it is
+        # caught at load rather than left to be noticed.
+        dangling = [link.dimension for link in view.links if link.dimension not in known_dimensions]
+        if dangling:
+            raise ConfigError(
+                f"view {view.view_id!r} links to dimensions that do not exist: {sorted(dangling)}"
+            )
 
     pipelines = load_model(config_dir / "pipelines.yaml", PipelinesConfig)
     for job in pipelines.jobs:
@@ -183,7 +162,6 @@ def load_config(config_dir: Path) -> ConfigRoot:
         sources=sources,
         series=series,
         forecast=forecast,
-        external=external,
         calendar=calendar,
         analysis=analysis,
         pipelines=pipelines,

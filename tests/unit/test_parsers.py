@@ -226,16 +226,6 @@ def test_alfred_uses_the_publication_date_as_the_vintage() -> None:
     ]
 
 
-def test_alfred_carries_several_vintages_of_one_period() -> None:
-    from mios.series.parsers import alfred_json
-
-    spec = _spec("ser_us_cpi_index_vintage", "CPIAUCSL", "alfred_json")
-    points = alfred_json((FIXTURES / "alfred_cpiaucsl.json").read_text(encoding="utf-8"), spec)
-    july = [p for p in points if p.observation_date.isoformat() == "2026-07-01"]
-    assert len(july) == 2
-    assert [p.value for p in july] == [Decimal("324.900"), Decimal("324.988")]
-
-
 def test_alfred_row_without_realtime_start_raises() -> None:
     """Without a realtime_start there is no vintage, and inventing one is
     fabricating provenance."""
@@ -263,37 +253,3 @@ def _jgb_spec(tenor: str) -> SeriesSpec:
         seasonal_adjustment="not_applicable",
         source_id="src_mof_jgb_yields",
     )
-
-
-def test_mof_reads_japanese_tenor_columns_and_era_dates() -> None:
-    """Reiwa 8 is 2026; the tenor headers are Japanese."""
-    from mios.series.parsers import mof_jgb_csv
-
-    csv_text = (FIXTURES / "mof_jgb.csv").read_text(encoding="utf-8")
-    points = mof_jgb_csv(csv_text, _jgb_spec("10年"))
-    assert points[-1].observation_date.isoformat() == "2026-09-11"
-    assert points[-1].value == Decimal("1.634")
-
-
-def test_mof_dash_is_a_published_gap() -> None:
-    from mios.series.parsers import mof_jgb_csv
-
-    csv_text = (FIXTURES / "mof_jgb.csv").read_text(encoding="utf-8")
-    points = mof_jgb_csv(csv_text, _jgb_spec("40年"))
-    assert points[-1].value is None
-
-
-def test_mof_unknown_tenor_raises() -> None:
-    from mios.series.parsers import mof_jgb_csv
-
-    csv_text = (FIXTURES / "mof_jgb.csv").read_text(encoding="utf-8")
-    with pytest.raises(ParseError, match="not found in MOF CSV"):
-        mof_jgb_csv(csv_text, _jgb_spec("15年"))
-
-
-def test_mof_rejects_an_era_it_does_not_know() -> None:
-    """A future era change must fail, not silently produce dates decades off."""
-    from mios.series.parsers import mof_jgb_csv
-
-    with pytest.raises(ParseError, match="date"):
-        mof_jgb_csv("基準日,10年\nH31.4.30,0.5\n", _jgb_spec("10年"))

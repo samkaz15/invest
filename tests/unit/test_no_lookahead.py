@@ -30,28 +30,18 @@ REPO_MODULE = SRC / "series" / "repo.py"
 SQL_OWNERS = {
     REPO_MODULE,
     SRC / "prediction" / "repo.py",
-    SRC / "prediction" / "external.py",
     SRC / "validation" / "scoring.py",
     SRC / "validation" / "metrics.py",
-    SRC / "validation" / "benchmark.py",
     SRC / "validation" / "releases.py",
 }
 
 #: Tables where reading without a cutoff is a look-ahead bug rather than a
-#: style problem. The two `*_forecast_errors` tables are deliberately
-#: absent: they are present-time views of accumulated evidence, not
-#: historical replays.
-#:
-#: `external_forecasts` is here for a reason worth stating. Backfilling an
-#: outside forecaster's history gives rows whose published_at is old and
-#: whose vintage_at is the day MIOS fetched them. A read that forgets the
-#: cutoff would credit MIOS with having known a year of nowcasts it had not
-#: yet downloaded, and the resulting comparison would look excellent.
+#: style problem. `forecast_errors` is deliberately absent: it is a
+#: present-time view of accumulated evidence, not a historical replay.
 VINTAGE_TABLES = (
     "observations",
     "normalize_state",
     "predictions",
-    "external_forecasts",
 )
 
 

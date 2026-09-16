@@ -11,11 +11,13 @@
 # series without an as-of filter is a look-ahead bug, and the repository
 # refuses to do it (CONSTITUTION.md Art.6).
 #
-# Japan CPI and wages are still absent: e-Stat needs an API key and a
-# payload reader of its own. JGB yields are here because USDJPY cannot be
-# analysed with only the US half of the rate differential. A series with no
-# source would be a placeholder, and placeholders are what this project
-# deletes — so they appear when their reader does, not before.
+# 日本の系列は1つも無い。JGB は MOF が文字コードを宣言せず、CPI・賃金は
+# e-Stat が専用の reader を要する。いずれも「機関ごとに個別対応」という
+# 種類の作業で、収集の難所がそこに集中していたため、2026-09-16 に対象外と
+# 決めた（docs/adr/ADR-015）。
+#
+# 結果として **USDJPY の見方は米国側だけで構成される**。これは弱点であり、
+# config/analysis.yaml の usdjpy_bias が blind_spots として毎日明示する。
 #
 # The `_vintage` series are the same numbers pulled from ALFRED, which
 # reports when each figure became public. They are separate series rather
@@ -526,65 +528,6 @@ series:
     notes: >-
       True vintages from ALFRED: vintage_at is the date the figure became
       public, not the date MIOS happened to fetch it.
-  - series_id: ser_jp_jgb_2y
-    name: "Japan JGB 2Y"
-    country: JP
-    category: rates
-    unit: percent
-    frequency: daily
-    source_id: src_mof_jgb_yields
-    provider_code: "2年"
-    parser: mof_jgb_csv
-    revisable: false
-    seasonal_adjustment: not_applicable
-    notes: >-
-      Japan's short leg of the US-Japan rate differential.
-  - series_id: ser_jp_jgb_5y
-    name: "Japan JGB 5Y"
-    country: JP
-    category: rates
-    unit: percent
-    frequency: daily
-    source_id: src_mof_jgb_yields
-    provider_code: "5年"
-    parser: mof_jgb_csv
-    revisable: false
-    seasonal_adjustment: not_applicable
-  - series_id: ser_jp_jgb_10y
-    name: "Japan JGB 10Y"
-    country: JP
-    category: rates
-    unit: percent
-    frequency: daily
-    source_id: src_mof_jgb_yields
-    provider_code: "10年"
-    parser: mof_jgb_csv
-    revisable: false
-    seasonal_adjustment: not_applicable
-    notes: >-
-      The yield-curve-control anchor; the headline BOJ policy read.
-  - series_id: ser_jp_jgb_20y
-    name: "Japan JGB 20Y"
-    country: JP
-    category: rates
-    unit: percent
-    frequency: daily
-    source_id: src_mof_jgb_yields
-    provider_code: "20年"
-    parser: mof_jgb_csv
-    revisable: false
-    seasonal_adjustment: not_applicable
-  - series_id: ser_jp_jgb_30y
-    name: "Japan JGB 30Y"
-    country: JP
-    category: rates
-    unit: percent
-    frequency: daily
-    source_id: src_mof_jgb_yields
-    provider_code: "30年"
-    parser: mof_jgb_csv
-    revisable: false
-    seasonal_adjustment: not_applicable
   - series_id: ser_us_gasoline_price
     name: "US regular gasoline price, weekly"
     country: US

@@ -109,3 +109,44 @@ MOF の介入や国内の財政判断が報道先行で動く場面は、構造�
 
 **404 する URL を「いつか直る」として置いておかない。** 収集失敗が毎朝1件増えるだけで、
 本当の失敗が埋もれる。存在しないと分かったソースは消し、欠損として明示するのが正しい。
+
+
+---
+
+## 2026-09-16 — 収集対象を米国の数値データに絞る（ADR-015）
+
+初回の `verify-sources` が示した通り、**経済指標のソース47個中46個は初回で成功**し、
+失敗はその周辺（日本の統計・報道・コンセンサス予想）に集中していた。
+オーナー判断で、その周辺をコードごと落とす。
+
+### A. 4区分の削除
+
+| 対象 | 復元 | 失われたデータ |
+|---|---|---|
+| `config/sources/src_mof_jgb_yields.yaml` と JGB 5系列、`mof_jgb_csv` parser | `git show b049304:<path>` | **なし**（収集が成功したことが一度もない） |
+| RSS 5媒体、`src/mios/ingestion/adapters/rss.py`、`src/mios/extraction/` | 同上 | **なし** |
+| `src_clevelandfed_nowcast`、`config/external.yaml`、`src/mios/config/external.py`、`src/mios/prediction/external.py`、`src/mios/validation/benchmark.py` | 同上 | **なし** |
+| `src_manual_consensus`、`src/mios/prediction/manual.py`、`input/` | 同上 | **なし**（1行も入力されていない） |
+
+### B. 連鎖して判明した死んでいたコード
+
+到達可能性を機械的に調べた結果、**ニュースとは無関係に死んでいたもの**が出た。
+
+| 対象 | 状態 | 復元 |
+|---|---|---|
+| `src/mios/knowledge/`（6モジュール） | テストからのみ参照。本番経路から到達不能 | `git show b049304:src/mios/knowledge/` |
+| `src/mios/scoring/` | 参照ゼロ | 同上 |
+| `src/mios/analysis/stats.py` | 参照ゼロ | 同上 |
+
+**Phase 2 の監査でこれらを「資産非依存だから残す」と判断したのは誤りだった。**
+本ログの「削除しなかったもの（記録）」にその判断が残っている。
+指示書 §26 の「いつか使うかもしれないからと残さない」に違反していたのは、
+削除を検討した側ではなく、残すと決めた側である。
+
+### C. 削除しなかったもの
+
+| 対象 | 理由 |
+|---|---|
+| マイグレーション `0003`・`0009`（curation_queue / external_forecasts 等） | **適用済みマイグレーションは編集・削除しない**（後方互換原則）。参照を止めるだけ |
+| `releases.forecast` / `surprise` 列 | 同上。恒久的に NULL になる。CSV 出力からは落とした |
+| `src/mios/analysis/{models,repo}.py` | Signal / DimensionReport は分析層が現役で使っている |

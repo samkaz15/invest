@@ -25,20 +25,13 @@ L0 横断    common      ID・時刻・schema・共通語彙・エラー・状�
 L1 収集    ingestion   adapter framework / HTTP / 生データ永久保存 / DLQ / 死活
            scheduler   実行期限判定・リトライ・レート制限・サーキットブレーカ
    ↓
-L2 正規化  extraction  生データ → 型付きレコード（ニュース）
-           series      生データ → vintage付き観測値（Agent 2 + 3）
+L2 正規化  series      生データ → vintage付き観測値
                        + 発表カレンダー（calendar.py・唯一 upsert する場所）
-   ↓
-L3 知識    knowledge   Event Store / Entity / as-of Timeline
    ↓
 L4 分析    analysis    次元スコア（Signal の集合 → DimensionReport）
    ↓
-L5 統合    scoring     DimensionReport → Score Card（weight・対立・完全性）
 L6 予測    prediction  先行指標 → CPI / NFP 予測（毎日1行・上書き禁止）
-                       機関予測の取り込みも同居（external.py）——
-                       「他人の予測」も予測 vintage であり、同じ規律で保存する
 L7 検証    validation  予測 × 初回発表値 → 誤差・対ナイーブ skill・キャリブレーション
-                       + 機関予測との head-to-head（benchmark.py）
 L8 出力    reports     保存済み成果物の整形 → reports/daily/YYYY-MM-DD.md
                        + exports/*.csv（スプレッドシート用・ADR-013）
 ```
@@ -275,10 +268,8 @@ mios forecast [--as-of ISO8601]                   # 予測を実行し、その�
 mios forecasts <series_id> <YYYY-MM-DD>           # ある対象期間への予測の全履歴
 mios analyze [--as-of ISO8601]                    # マクロ8次元 + Gold / USDJPY ビュー
 mios report [--as-of ISO8601]                     # reports/daily/YYYY-MM-DD.md を生成
-mios consensus [--as-of ISO8601]                  # 機関予測を保存し、自分の予測と並べて表示
-mios validate [--as-of ISO8601]                   # 発表済みの対象期間の予測を採点（機関予測も同時に採点）
-mios accuracy [--series <id>]                     # MAE / 対ナイーブ skill / 方向 / キャリブレーション / 機関予測との比較
-mios extract       # 未処理のニュース raw を候補キューへ
+mios validate [--as-of ISO8601]                   # 発表済みの対象期間の予測を採点
+mios accuracy [--series <id>]                     # MAE / 対ナイーブ skill / 方向 / キャリブレーション
 mios health        # ソース別の死活・DLQ 件数（失敗があれば exit 1）
 ```
 
@@ -341,15 +332,9 @@ mios health        # ソース別の死活・DLQ 件数（失敗があれば exi
 | A-1 | ~~監査ログがファイルにしか出ない~~ | ✅ Phase 10 完了：`PostgresAuditSink` を追加し、ファイルとDBの両方へ書く（`TeeAuditSink`）。DB到達不可時は警告を出してファイルのみに退避する |
 | A-2 | ~~`market_snapshots` に vintage がない~~ | ✅ Phase 3 完了：`0005` で `observations`（vintage付き）を追加。旧テーブルは DROP せず参照を止めた |
 | A-3 | **FRED の series_id・Treasury CSV の列名・Twelve Data のレスポンス形状・MOF の CSV 形式がいずれも未検証**（本作業環境からは外部到達がゲートウェイで 403 拒否される）。parser は記録済み fixture に対してのみ検証済み | **`mios verify-sources` で30秒で確認できる**（`.github/workflows/verify-sources.yml` から手動実行可）。全ソースを取得・parse し、**何も保存しない**。誤りは元々「収集失敗」として表面化する設計なので静かな誤データにはならないが、毎朝07:10に気づくのは遅すぎる |
+| A-18 | **ニュース・機関予測・日本のデータを収集しない**（ADR-015 で対象外と決定）。したがって (1) 比較対象はナイーブ基準のみで「市場がすでに知っていたことより良かったか」に答えられない、(2) USDJPY は金利差の米国側だけで構成される、(3) 出来事は系列の数字に現れるまで見えない | 意図的な範囲の限定であり、未実装ではない。日次レポートの「このレポートが見ていないもの」節が毎回明示する。再開する場合は ADR-015 の判断を覆す ADR を書く |
 | A-4 | ~~統合テストは PostgreSQL がないと skip される~~ | ✅ Phase 2 完了：CI に PostgreSQL サービスを用意し、skip したらビルドを落とす |
-| A-9 | **NFP と失業率には無料の機関予測が存在しない**（月次コンセンサスは Bloomberg / Reuters の有料調査、SEP・SPF は四半期の別の問い）。この2つの skill はナイーブ基準に対する主張でしかなく、CPI 側より弱い | 構造的な限界（ADR-012）。`config/external.yaml` の `uncovered` に明示列挙し、スキーマが空リストを拒否する。`mios accuracy` と日次レポートが毎回名指しで表示する |
-| A-10 | **Cleveland Fed nowcast の URL・列名が未検証**。A-3 と同じ理由 | `mios verify-sources` が取得だけでなく **parse まで**検査する（`ExtraParse` を注入）。列名が違えば**実在する列名を列挙して**失敗するので、修正は `config/external.yaml` の1行 |
-| A-14 | **経済カレンダーの「予想」列（外為どっとコム等）は自動取得しない。** その数値はほぼ確実にベンダーからのライセンスデータであり、自動収集して公開リポジトリにコミットすることは再配布にあたる | 構造的な判断（ADR-014）。人が読んで書き写す経路を `input/consensus.csv` として用意し、出典URLと入力時点を行ごとに必須にした。取り込みは `mios consensus` |
-| A-15 | **日本語の報道ソースが1つも無い**。産経は公開RSSを提供していないことが判明して外した（DELETION_LOG 参照）。日銀・財務省まわりの文脈は BOJ 公式（Tier 1）だけで読んでいる | 公開RSSを出している日本語媒体が見つかれば追加する。見つからない場合は「日本側の報道は見ていない」ことがレポート上の明示された欠損として残る |
-| A-11 | **Reuters と Bloomberg には公開RSSが存在しない**（Reuters は2020年頃に廃止、Bloomberg は元々非公開）。有料APIを使わない限り収集経路がない | 構造的な制約。日次レポートの「Not Yet Implemented」に毎回明記する。一次情報は Fed / BOJ / BLS の公式RSSで代替し、報道は FT / CNBC（いずれも Tier 3）で拾う |
-| A-12 | **ニュースの分類・要約が未実装**。収集と重複除去までは動くが、テーマ分類も要約もない | LLM を使う唯一の箇所になる予定で `ANTHROPIC_API_KEY` が必要。憲法第5条により、LLM は分類・要約・文章生成のみを行い**数値は生成しない** |
 | A-13 | **FRED の releases/dates が将来日程を返すか未検証**、および release_name の綴りが未検証 | `mios verify-sources` と初回の `mios calendar` で判明する。照合ゼロ件として表面化し、静かな誤データにはならない。実データの名前一覧は `mios calendar` の出力から拾える |
-| A-5 | 日本の **CPI・賃金**が未登録（JGB は Phase 4 で追加済）。e-Stat は API キーと専用 parser を要する | 未定。**データのない系列を先に登録しない**（placeholder は作らない） |
 | A-6 | ~~`vintage_at` が取得時刻でしかない~~ | ✅ Phase 4 完了：主要な改定系列は ALFRED の `realtime_start` から真の vintage を取り込む（`_vintage` 系列）。ALFRED を引かない系列は取得時刻のままで、`mios series` が `published` / `fetched` で区別を表示する |
 | A-8 | **driver 系列の多くは ALFRED を引いていない**ため、過去日のバックテストでは driver の読みが当時の値ではなく「取得時点の値」になる。`_vintage` 系列を持つ5指標のみ厳密 | driver 側にも ALFRED を広げるかを、収集コストと精度改善を見て判断する。`mios series` の `published` / `fetched` 列で現状が分かる |
 | A-7 | ALFRED の vintage は**日付**であり時刻ではない。発表当日の日中は、実際より早く知り得たことになる | 構造的な限界。UTC 0時として扱い、**遅く知る方向に倒している**（早漏れはしない）。発表時刻が必要になるのは Phase 5 のカレンダー連携時 |

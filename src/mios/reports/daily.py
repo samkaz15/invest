@@ -22,13 +22,10 @@ from typing import Any
 from mios.analysis.repo import MacroScoreRepo
 from mios.common.logutil import get_logger
 from mios.config.loader import ConfigRoot
-from mios.knowledge.store import CurationQueue
-from mios.prediction.external import ExternalForecastRepo
 from mios.prediction.repo import ForecastRepo
 from mios.series.calendar import CalendarRepo
 from mios.series.repo import ObservationRepo
 from mios.storage.db import Database
-from mios.validation.benchmark import BenchmarkReader
 from mios.validation.metrics import MIN_SAMPLE, MetricsReader
 
 logger = get_logger(__name__)
@@ -42,11 +39,6 @@ RATES_BLOCK = [
     ("ser_us_real_yield_10y", "US 10Y real", "%"),
     ("ser_us_breakeven_10y", "US 10Y breakeven", "%"),
     ("ser_us_fed_funds_effective", "Effective fed funds", "%"),
-]
-JGB_BLOCK = [
-    ("ser_jp_jgb_2y", "JGB 2Y", "%"),
-    ("ser_jp_jgb_10y", "JGB 10Y", "%"),
-    ("ser_jp_jgb_30y", "JGB 30Y", "%"),
 ]
 FX_BLOCK = [
     ("ser_usdjpy", "USDJPY", ""),
@@ -103,10 +95,7 @@ class DailyReport:
         self._scores = MacroScoreRepo(db)
         self._forecasts = ForecastRepo(db)
         self._metrics = MetricsReader(db)
-        self._external = ExternalForecastRepo(db)
-        self._benchmark = BenchmarkReader(db)
         self._calendar = CalendarRepo(db)
-        self._news = CurationQueue(db)
 
     # -------------------------------------------------------------- pieces
 
@@ -251,7 +240,7 @@ class DailyReport:
                     f"{past_value:+.4f} | {today_value:+.4f} | {today_value - past_value:+.4f} |"
                 )
 
-        for series_id, label, unit in RATES_BLOCK + JGB_BLOCK + FX_BLOCK + GOLD_BLOCK:
+        for series_id, label, unit in RATES_BLOCK + FX_BLOCK + GOLD_BLOCK:
             current_level, _ = self._series_value(series_id, as_of)
             previous_level, _ = self._series_value(series_id, yesterday)
             if current_level is None or previous_level is None or current_level == previous_level:
@@ -323,127 +312,6 @@ class DailyReport:
                 else "時刻未定"
             )
             lines.append(f"- {day} {when} — {row['title']}（{'★' * int(row['importance'])}）")
-        return lines
-
-    def _headlines(self) -> list[str]:
-        """Collected headlines, newest first, labelled by source tier.
-
-        Headlines and the publisher's own summary, nothing more. No
-        classification, no summarisation, no theme — none of that exists
-        yet, and a section that silently presented a keyword match as
-        analysis would be worse than one that presents a list.
-
-        The tier is printed beside every item on purpose. A Tier 3 report is
-        not a fact; it becomes one only when a Tier 1-2 source confirms it
-        (CONSTITUTION.md Art.4), and a reader skimming a list has no other
-        way to see the difference.
-        """
-        rows = self._news.pending(limit=25)
-        if not rows:
-            return ["ニュースはまだ1件も取得できていません（`mios collect` → `mios extract`）。"]
-        tiers = {sid: spec.tier for sid, spec in self._config.sources.items()}
-        lines: list[str] = []
-        for row in rows:
-            payload = row["payload"]
-            title = payload.get("title") or "(no title)"
-            link = payload.get("link") or ""
-            tier = tiers.get(row["source_id"], payload.get("tier", 4))
-            published = payload.get("published_raw") or ""
-            label = f"[{title}]({link})" if link else title
-            lines.append(f"- **T{tier}** {label}  \n  `{row['source_id']}` {published}")
-        lines.append("")
-        lines.append(
-            "分類・要約・テーマ抽出は**未実装**。ここにあるのは配信元が出した"
-            "見出しと要約そのままであり、MIOS による解釈は含まれない。"
-        )
-        return lines
-
-    def _consensus(self, as_of: datetime) -> list[str]:
-        """What the institutions say, beside what MIOS says.
-
-        The gap between the two is the single most informative line in this
-        report on any day a release is coming. Beating the naive baseline is
-        routine; disagreeing with a Federal Reserve Bank's published nowcast
-        is a position, and printing both forces it to be one taken
-        deliberately rather than by accident.
-        """
-        lines: list[str] = []
-        shown = 0
-        for target in self._config.forecast.targets:
-            mine = [
-                row
-                for row in self._forecasts.latest_per_target(as_of)
-                if row["target_series_id"] == target.series_id
-            ]
-            if not mine or mine[0]["point_value"] is None:
-                continue
-            period = mine[0]["target_period"]
-            rows = self._external.as_of(target.series_id, period, as_of)
-            if not rows:
-                continue
-            ours = float(mine[0]["point_value"])
-            shown += 1
-            lines.append(f"**{target.label} {period}**")
-            lines.append("")
-            lines.append("| 予測者 | 予測 | MIOS との差 | 公表 | Tier |")
-            lines.append("|---|---:|---:|---|---:|")
-            lines.append(f"| **MIOS** | `{ours:+.4f}` {target.unit_label} | — | — | — |")
-            for row in rows:
-                value = float(row["point_value"])
-                lines.append(
-                    f"| {row['provider_id']} | `{value:+.4f}` {target.unit_label} | "
-                    f"`{value - ours:+.4f}` | {row['published_at'].date()} | {row['tier']} |"
-                )
-            lines.append("")
-
-        if shown == 0:
-            lines.append("機関予測はまだ1件も取得できていません。")
-            lines.append("")
-
-        # Always printed, present or not: a comparison table covering two of
-        # four targets reads as complete unless it says which two it is not.
-        for series_id in self._config.external.uncovered:
-            typed = self._external.count_for(series_id)
-            if typed:
-                lines.append(
-                    f"- `{series_id}`: 無料で機械可読な機関予測は存在しないが、"
-                    f"**手入力のコンセンサスが {typed} 件**ある（`input/consensus.csv`）。"
-                    "出典と入力時点は行ごとに記録されている。"
-                )
-            else:
-                lines.append(
-                    f"- `{series_id}`: 無料で機械可読な機関予測が存在しない。"
-                    "比較対象はナイーブ基準のみで、ここでの skill は CPI のそれより"
-                    "弱い主張である。手入力すれば比較できる（`input/README.md`）。"
-                )
-        return lines
-
-    def _head_to_head(self) -> list[str]:
-        """The scoreboard against the institutions, on equal information."""
-        rows = self._benchmark.comparisons()
-        if not rows:
-            return [
-                "対象期間が発表され次第、機関予測も同じ初回発表値・同じナイーブ基準で採点されます。"
-            ]
-        lines = [
-            "| 予測者 | 対象 | n | MIOS MAE | 相手 MAE | edge |",
-            "|---|---|---:|---:|---:|---:|",
-        ]
-        for row in rows:
-            if not row.sufficient:
-                lines.append(
-                    f"| {row.provider_id} | {row.target_series_id} | {row.n} | "
-                    f"— | — | n<{MIN_SAMPLE} のため未算出 |"
-                )
-                continue
-            lines.append(
-                f"| {row.provider_id} | {row.target_series_id} | {row.n} | "
-                f"`{row.mios_mae:.5f}` | `{row.provider_mae:.5f}` | `{row.edge:+.5f}` |"
-            )
-        lines.append("")
-        lines.append(
-            "edge が正なら、同じ情報量の時点で MIOS の方が誤差が小さかったことを意味する。"
-        )
         return lines
 
     def _data_quality(self, as_of: datetime) -> list[str]:
@@ -562,13 +430,9 @@ class DailyReport:
 
         out += ["", "## Fed Outlook", ""]
         out += self._dimension_section("fed", as_of)
-        out += ["", "## BOJ Outlook", ""]
-        out += self._dimension_section("boj", as_of)
 
         out += ["", "## US Treasury", ""]
         out += self._market_table(RATES_BLOCK, as_of, yesterday)
-        out += ["", "## Japan Government Bonds", ""]
-        out += self._market_table(JGB_BLOCK, as_of, yesterday)
 
         out += ["", "## USDJPY", ""]
         out += self._market_table(FX_BLOCK, as_of, yesterday)
@@ -583,36 +447,28 @@ class DailyReport:
         out += ["", "## Macro Dimensions", ""]
         out += self._dimensions_table(as_of)
 
-        out += ["", "## Headlines", ""]
-        out += self._headlines()
-
-        out += ["", "## Consensus / Institutional Forecasts", ""]
-        out += self._consensus(as_of)
-
         out += ["", "## Forecast Accuracy", ""]
         out += self._accuracy()
-
-        out += ["", "### 機関予測との比較（同じ情報量の時点同士）", ""]
-        out += self._head_to_head()
 
         out += ["", "## Data Quality / Missing Data", ""]
         out += self._data_quality(as_of)
 
-        out += ["", "## Not Yet Implemented", ""]
+        out += ["", "## このレポートが見ていないもの", ""]
         out += [
-            "以下は指示書が求めているが、本レポートにはまだ存在しない。"
-            "空欄ではなく欠落として明示する。",
+            "収集対象を米国の数値データに絞った（ADR-015）。"
+            "以下は**意図的に対象外**であり、未完成なのではない。"
+            "空欄にせず毎回明示するのは、書かれていない欠落が"
+            "「無かった」と読まれるためである。",
             "",
-            "- **Economic Calendar** — 発表予定の取得は未実装",
-            "- **ニュースの分類・要約** — 見出しの収集は動くが、テーマ分類も"
-            "要約も未実装。LLM を使う唯一の箇所になる予定で、"
-            "`ANTHROPIC_API_KEY` が必要（憲法第5条：LLM は数値を作らない）",
-            "- **Reuters / Bloomberg** — 公開RSSが存在しないため収集経路がない。"
-            "有料APIを使わない限り取得できない",
-            "- **雇用統計のコンセンサス** — NFP・失業率の月次コンセンサスは"
-            "有料（Bloomberg / Reuters 調査）でしか手に入らない。"
-            "この2つは機関予測と比較できず、ナイーブ基準のみが比較対象",
-            "- **日本の CPI・賃金** — e-Stat の取り込みが未実装",
+            "- **ニュース** — 収集していない。金やドル円を動かした出来事が"
+            "あっても、それが系列の数字に現れるまで、このレポートには何も出ない",
+            "- **機関予測** — 比較対象はナイーブ基準のみ。"
+            "「何もしないより良かったか」には答えられるが、"
+            "**「市場がすでに知っていたことより良かったか」には答えられない**",
+            "- **日本のデータ** — JGB・CPI・賃金のいずれも収集していない。"
+            "USDJPY の見方は**金利差のうち米国側だけ**で構成されており、"
+            "日銀の動きはそれが米国側の系列に波及するまで見えない",
+            "- **株価指数・クレジットスプレッド** — リスクは VIX 一本で読んでいる",
         ]
 
         out += ["", "## Sources", ""]

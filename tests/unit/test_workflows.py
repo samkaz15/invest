@@ -79,12 +79,7 @@ def test_the_chain_covers_every_step_from_collection_to_report() -> None:
         # releases read the observations normalize just wrote.
         "calendar",
         "releases",
-        # Feed entries become queued headlines before the report reads them.
-        "extract",
         "forecast",
-        # After forecast: the consensus is printed beside the day's own call,
-        # so there has to be a call for it to sit beside.
-        "consensus",
         "analyze",
         "validate",
         "report",
@@ -108,10 +103,7 @@ def test_collection_may_fail_but_the_report_may_not_be_skipped() -> None:
         "normalize",
         "calendar",
         "releases",
-        # Feed entries become queued headlines before the report reads them.
-        "extract",
         "forecast",
-        "consensus",
         "analyze",
         "validate",
     ):

@@ -16,7 +16,6 @@ from pathlib import Path
 import pytest
 
 from mios.config.loader import load_config
-from mios.prediction.external import ExternalForecastRepo
 from mios.series.repo import ObservationRepo, SeriesRepo
 from mios.storage.db import Database
 from mios.storage.migrate import MigrationRunner
@@ -43,7 +42,7 @@ def db() -> Database:
 
 @pytest.fixture()
 def repo(db: Database) -> ObservationRepo:
-    for table in ("releases", "external_forecasts", "observations"):
+    for table in ("releases", "observations"):
         db.execute(f"ALTER TABLE {table} DISABLE TRIGGER {table}_append_only")
         db.execute(f"DELETE FROM {table}")
         db.execute(f"ALTER TABLE {table} ENABLE TRIGGER {table}_append_only")
@@ -56,13 +55,7 @@ def _at(text: str) -> datetime:
 
 def _builder(db: Database) -> ReleaseBuilder:
     config = load_config(REPO / "config")
-    return ReleaseBuilder(
-        db,
-        ObservationRepo(db),
-        ExternalForecastRepo(db),
-        config.forecast.by_id(),
-        config.series,
-    )
+    return ReleaseBuilder(db, ObservationRepo(db), config.series)
 
 
 def _write(repo: ObservationRepo, points: list[tuple[date, str]], vintage: str, raw: str) -> None:
@@ -152,41 +145,3 @@ def test_recording_is_idempotent_and_cannot_be_rewritten(
 
     with pytest.raises(MiosError):
         db.execute("UPDATE releases SET actual = 999")
-
-
-def test_the_consensus_is_converted_into_the_level_it_implied(
-    db: Database, repo: ObservationRepo
-) -> None:
-    """Forecasts are stored as changes and releases as levels.
-
-    Subtracting one from the other without converting would make `surprise`
-    off by roughly the whole index — about 316, on a figure whose real range
-    is a few tenths.
-    """
-    _backfill(repo)
-    _write(repo, [(date(2026, 7, 1), "307.5")], "2026-08-12T12:30:00", "raw_00000000000000002")
-
-    # A consensus of +0.20% against June's 306.000 implies 306.612.
-    ExternalForecastRepo(db).save(
-        {
-            "external_forecast_id": "xf_2026-08-01_clevelandfed-core-cpi-2026-07",
-            "provider_id": "src_clevelandfed_nowcast",
-            "target_series_id": CPI,
-            "target_period": date(2026, 7, 1),
-            "published_at": _at("2026-08-01T12:00:00"),
-            "vintage_at": _at("2026-08-01T12:00:00"),
-            "point_value": Decimal("0.0020"),
-            "raw_value": Decimal("0.20"),
-            "raw_unit": "percent_mom",
-            "tier": 1,
-            "method": "nowcast",
-            "source_url": "https://www.clevelandfed.org/",
-            "raw_item_id": None,
-        }
-    )
-
-    _builder(db).run(_at("2026-08-13T00:00:00"), [CPI])
-    [row] = db.query("SELECT * FROM releases WHERE period = '2026-07-01'")
-    assert row["forecast"] == pytest.approx(Decimal("306.612"), abs=Decimal("0.001"))
-    # And the surprise is now a number a human can read: about +0.9 index points.
-    assert row["surprise"] == pytest.approx(Decimal("0.888"), abs=Decimal("0.001"))

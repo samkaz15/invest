@@ -249,70 +249,7 @@ def alfred_json(payload: str, spec: SeriesSpec) -> list[ParsedPoint]:
     return points
 
 
-def mof_jgb_csv(payload: str, spec: SeriesSpec) -> list[ParsedPoint]:
-    """Japan MOF daily JGB yields.
-
-    The USDJPY chain needs the Japanese leg of the rate differential, and
-    the MOF publishes it as a CSV whose header row names tenors in Japanese
-    ("2年", "10年"), with dates in the Japanese era calendar (R8.9.11 =
-    Reiwa 8). Both are handled here rather than being normalised upstream,
-    because the raw store keeps exactly what the server sent.
-
-    Reiwa began in 2019, so Reiwa N is 2018 + N. Only Reiwa is accepted: a
-    future era change must fail loudly rather than silently produce dates
-    decades off.
-
-    UNVERIFIED against the live endpoint — see docs/ARCHITECTURE.md §6 A-3.
-    A wrong guess surfaces as a collection failure, not as bad data.
-    """
-    reader = csv.reader(io.StringIO(payload))
-    rows = [r for r in reader if r and any(c.strip() for c in r)]
-    if not rows:
-        raise ParseError(f"{spec.series_id}: MOF CSV is empty")
-
-    header_index = next(
-        (i for i, r in enumerate(rows) if any(c.strip() == spec.provider_code for c in r)),
-        None,
-    )
-    if header_index is None:
-        sample = [c.strip() for c in rows[0]][:12]
-        raise ParseError(
-            f"{spec.series_id}: tenor {spec.provider_code!r} not found in MOF CSV "
-            f"(first row: {sample})"
-        )
-    header = [c.strip() for c in rows[header_index]]
-    column = header.index(spec.provider_code)
-
-    points: list[ParsedPoint] = []
-    for row in rows[header_index + 1 :]:
-        cells = [c.strip() for c in row]
-        if not cells or not cells[0]:
-            continue
-        observation_date = _japanese_era_date(cells[0], spec.series_id)
-        raw = cells[column] if column < len(cells) else ""
-        value = None if raw in ("", "-") else _decimal(raw, f"{spec.series_id} {observation_date}")
-        points.append(ParsedPoint(observation_date, value))
-    if not points:
-        raise ParseError(f"{spec.series_id}: MOF CSV contained no data rows")
-    return points
-
-
 _REIWA_EPOCH = 2018  # Reiwa 1 = 2019
-
-
-def _japanese_era_date(text: str, context: str) -> date:
-    """``R8.9.11`` -> 2026-09-11. Also accepts a plain ISO date."""
-    if "-" in text:
-        return _iso_date(text, context)
-    body = text.upper().removeprefix("R")
-    parts = body.split(".")
-    if len(parts) != 3:
-        raise ParseError(f"{context}: {text!r} is not an R<era>.<month>.<day> date")
-    try:
-        era_year, month, day = (int(p) for p in parts)
-        return date(_REIWA_EPOCH + era_year, month, day)
-    except ValueError as exc:
-        raise ParseError(f"{context}: {text!r} is not an R<era>.<month>.<day> date") from exc
 
 
 PARSERS: dict[str, Parser] = {
@@ -320,7 +257,6 @@ PARSERS: dict[str, Parser] = {
     "alfred_json": alfred_json,
     "treasury_csv": treasury_csv,
     "twelvedata_json": twelvedata_json,
-    "mof_jgb_csv": mof_jgb_csv,
 }
 
 

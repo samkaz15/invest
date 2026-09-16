@@ -23,11 +23,11 @@ same period as restated *by* this release. When they differ, the agency
 revised history, and that difference is frequently the real news; collapsing
 them into one column would delete it (指示書 §14, §26).
 
-**The consensus is converted, not assumed.** Institutional forecasts are
-stored as period-over-period changes and releases are stored as levels, so
-the consensus is turned into the level it implies using the previous level
-the forecaster themselves would have been working from. The arithmetic is
-written down here once rather than in each reader.
+**The consensus column stays empty, and that is now permanent.** MIOS
+collects no institutional forecasts (ADR-015), so `forecast` is written as
+NULL and `surprise` — a generated column over it — is NULL with it. The
+columns are left in the schema because applied migrations are not edited,
+but nothing will fill them, and the export no longer pretends otherwise.
 """
 
 from dataclasses import dataclass, field
@@ -36,9 +36,7 @@ from decimal import Decimal
 
 from mios.common.ids import IdKind, make_dated_id, slugify
 from mios.common.logutil import get_logger
-from mios.config.forecast import TargetSpec
 from mios.config.series import SeriesRegistry
-from mios.prediction.external import ExternalForecastRepo
 from mios.series.repo import ObservationRepo
 from mios.storage.db import Database
 from mios.validation.scoring import first_print
@@ -68,14 +66,10 @@ class ReleaseBuilder:
         self,
         db: Database,
         observations: ObservationRepo,
-        external: ExternalForecastRepo,
-        targets: dict[str, TargetSpec],
         registry: SeriesRegistry,
     ) -> None:
         self._db = db
         self._observations = observations
-        self._external = external
-        self._targets = targets
         self._registry = registry
 
     def run(self, as_of: datetime, series_ids: list[str]) -> ReleaseReport:
@@ -140,7 +134,6 @@ class ReleaseBuilder:
             # so each of its prints does have a prior state and does qualify.
             return False
 
-        consensus = self._consensus_level(series_id, period, vintage, before)
         source = self._source_of(series_id)
         if source is None:
             return False
@@ -165,7 +158,7 @@ class ReleaseBuilder:
                 "period": period,
                 "release_at": vintage,
                 "actual": Decimal(str(actual)),
-                "forecast": consensus,
+                "forecast": None,
                 "previous": before,
                 "revised_previous": after,
                 "source_id": source[0],
@@ -179,34 +172,6 @@ class ReleaseBuilder:
         rows = self._observations.as_of(series_id, as_of, start=period, end=period)
         usable = [r for r in rows if r.value is not None]
         return usable[-1].value if usable else None
-
-    def _consensus_level(
-        self,
-        series_id: str,
-        period: date,
-        vintage: datetime,
-        previous: Decimal | None,
-    ) -> Decimal | None:
-        """The consensus, converted into the level it implied.
-
-        Institutional forecasts are stored as period-over-period changes; a
-        release is stored as a level. Converting needs the previous level the
-        forecaster was working from — which is the level in force before the
-        print, not today's restated one.
-        """
-        spec = self._targets.get(series_id)
-        if spec is None or previous is None:
-            return None
-        rows = self._external.as_of(series_id, period, _just_before(vintage))
-        if not rows:
-            return None
-        # One provider today. With several, this is where a median would go —
-        # and it would need its own decision about how to weight them, so it
-        # is deliberately not guessed at now.
-        change = Decimal(str(rows[0]["point_value"]))
-        if spec.transform == "pct_change":
-            return previous * (Decimal(1) + change)
-        return previous + change
 
     def _source_of(self, series_id: str) -> tuple[str, str] | None:
         """Where this figure came from, read from the registry.
