@@ -70,16 +70,6 @@ dimensions:
       - { series_id: ser_us_fed_funds_effective, label: Effective fed funds, measure: change_z, weight: 8.0 }
       - { series_id: ser_us_real_yield_5y, label: 5Y real yield, measure: change_z, weight: 6.0 }
 
-  - dimension: boj
-    label: BOJ policy stance
-    stance_words: [hawkish, neutral, dovish]
-    blind_spots:
-      - "Japanese CPI and wage data are not collected yet, so this reads BOJ expectations only through JGB yields."
-      - "Yield-curve-control operations move JGBs directly and are not distinguishable here from a change in stance."
-    signals:
-      - { series_id: ser_jp_jgb_2y, label: JGB 2Y, measure: change_z, weight: 12.0 }
-      - { series_id: ser_jp_jgb_10y, label: JGB 10Y, measure: change_z, weight: 10.0 }
-
   - dimension: fx
     label: Dollar
     stance_words: [strengthening, stable, weakening]
@@ -136,14 +126,16 @@ views:
           Negative because the risk dimension scores risk-on as negative;
           a flight to safety therefore reads as supportive for gold.
 
-  # US data -> Fed -> US 2Y, against Japan data -> BOJ -> JGB.
+  # US data -> Fed -> US 2Y。日本側の脚は持っていない（ADR-015）。
   - view_id: usdjpy_bias
     asset_id: ent_asset_usdjpy
     label: USDJPY macro bias
     stance_words: [higher, neutral, lower]
     blind_spots:
       - "MOF intervention can reverse weeks of rate-differential drift in a day and is not observable here."
-      - "Japanese CPI and wage data are not collected, so the BOJ side reads through JGB yields alone."
+      - "**日本側の入力が一切ない。** JGB・日本のCPI・賃金はいずれも収集対象外に
+        したため（ADR-015）、この見方は金利差のうち米国側だけで構成されている。
+        日銀の政策変更は、それが米国側の系列に波及するまで見えない。"
       - "Carry unwinds driven by positioning move USDJPY without any change in the differential."
       - "This is an interpretation of macro conditions, not a price forecast. MIOS does not forecast prices."
     links:
@@ -157,11 +149,6 @@ views:
         rationale: >-
           US yields carry the differential directly, whatever the Fed is
           saying about them.
-      - dimension: boj
-        weight: -0.30
-        rationale: >-
-          The Japan leg, with the opposite sign: a hawkish BOJ narrows the
-          differential and pulls USDJPY down.
       - dimension: risk
         weight: 0.15
         rationale: >-

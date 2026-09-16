@@ -1,6 +1,5 @@
 """Adapter tests: raw store, RSS/Atom/JSON parsing, canonical payloads."""
 
-import json
 from pathlib import Path
 
 import pytest
@@ -8,9 +7,8 @@ import pytest
 from mios.config.models import SourceSpec
 from mios.ingestion.adapter import AdapterError, conditional_headers
 from mios.ingestion.adapters.http_json import JsonApiAdapter
-from mios.ingestion.adapters.rss import RssAdapter
 from mios.ingestion.http import HttpResponse
-from mios.ingestion.rawitem import RawDraft, build_raw_item, content_hash_of
+from mios.ingestion.rawitem import RawDraft, build_raw_item
 from mios.ingestion.rawstore import FileRawStore
 
 RSS_SAMPLE = """<?xml version="1.0"?>
@@ -37,43 +35,16 @@ class FakeClient:
         return self.response
 
 
-def _spec(kind: str = "rss") -> SourceSpec:
+def _spec(kind: str = "http_json") -> SourceSpec:
     return SourceSpec(
-        source_id="src_test_feed", name="t", kind=kind, url="https://example.com/feed", tier=3
+        source_id="src_test_feed", name="t", kind=kind, url="https://example.com/x", tier=3
     )
-
-
-def test_rss_entries_become_canonical_drafts_and_bad_entry_fails_soft() -> None:
-    result = RssAdapter(_spec()).fetch(FakeClient(HttpResponse(200, RSS_SAMPLE)))
-    assert len(result.drafts) == 2  # third entry has no title -> parse failure
-    assert len(result.parse_failures) == 1
-    first = json.loads(result.drafts[0].payload_text)
-    assert first == {
-        "guid": "g1",
-        "title": "SEC approves ETF",
-        "link": "https://x/1",
-        "published": "Wed, 10 Jan 2024 21:00:00 GMT",
-        "summary": "d1",
-    }
-    # canonical payload -> stable hash across refetches
-    assert content_hash_of(result.drafts[0].payload_text) == content_hash_of(
-        RssAdapter(_spec()).fetch(FakeClient(HttpResponse(200, RSS_SAMPLE))).drafts[0].payload_text
-    )
-
-
-def test_atom_feed_supported() -> None:
-    result = RssAdapter(_spec()).fetch(FakeClient(HttpResponse(200, ATOM_SAMPLE)))
-    assert len(result.drafts) == 1
-    assert json.loads(result.drafts[0].payload_text)["link"] == "https://a/1"
-
-
-def test_malformed_feed_raises_adapter_error() -> None:
-    with pytest.raises(AdapterError, match="unparsable feed"):
-        RssAdapter(_spec()).fetch(FakeClient(HttpResponse(200, "<not-xml")))
 
 
 def test_not_modified_short_circuits() -> None:
-    result = RssAdapter(_spec()).fetch(FakeClient(HttpResponse(304, "")))
+    """A 304 must produce no drafts: re-storing an unchanged payload would
+    make the raw store grow without learning anything."""
+    result = JsonApiAdapter(_spec()).fetch(FakeClient(HttpResponse(304, "")))
     assert result.not_modified and not result.drafts
 
 

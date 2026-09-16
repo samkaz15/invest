@@ -11,7 +11,12 @@ from dataclasses import dataclass, field
 
 from mios.common.errors import MiosError
 
-DEFAULT_USER_AGENT = "BIOS-collector/0.1 (personal research; contact: repo owner)"
+#: Identifies the collector to the servers it reads. Some agencies refuse
+#: requests whose agent does not say who is asking — the BLS answered 403 to
+#: the old value in the first live run. That value was `BIOS-collector/0.1`,
+#: the predecessor project's name, left behind by the very commit whose
+#: purpose was renaming bios to mios.
+DEFAULT_USER_AGENT = "MIOS-collector/1.0 (macro research; +https://github.com/samkaz15/invest)"
 
 
 class TransportError(MiosError):

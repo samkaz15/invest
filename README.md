@@ -8,6 +8,10 @@
 
 価格予想AIではない。ニュース要約AIでもない。
 
+**収集するのは米国の数値データだけ**（FRED / ALFRED / US Treasury / Twelve Data）。
+ニュース・機関予測・日本のデータは意図的に対象外（[ADR-015](docs/adr/ADR-015-numbers-only.md)）。
+何が見えていないかは日次レポートが毎回明示する。
+
 ## 成功の定義
 
 > 半年後に「このシステムは CPI / NFP 予測に本当に役立っているのか？」を
@@ -29,7 +33,7 @@ Data Quality > Reproducibility > Validation > Simplicity > Feature Count
 | [DELETION_LOG.md](docs/DELETION_LOG.md) | 何を・なぜ削除したか・どう復元するか |
 | [DATA_SOURCE_REGISTRY.md](docs/DATA_SOURCE_REGISTRY.md) | データソース台帳と信頼Tier |
 | [adr/ADR-013](docs/adr/ADR-013-spreadsheet-exports.md) | スプレッドシート出力の設計（DBが正、CSVは出力） |
-| [adr/ADR-014](docs/adr/ADR-014-manual-consensus.md) | コンセンサス予想を手入力で取り込む理由 |
+| [adr/ADR-015](docs/adr/ADR-015-numbers-only.md) | **収集対象を米国の数値データに絞った判断と、それで失うもの** |
 | [EVALUATION.md](docs/EVALUATION.md) | 予測精度の測り方（MAE / RMSE / 方向 / キャリブレーション / 機関予測との比較） |
 | docs/adr/ | 技術判断の記録 |
 
@@ -62,17 +66,15 @@ mios observations ser_us_cpi_index --as-of 2026-09-01T00:00:00Z
 mios revisions ser_us_cpi_index 2026-08-01
 mios forecast      # 予測を実行し、その日の vintage を保存（上書きしない）
 mios forecasts ser_us_core_cpi_index 2026-09-01   # ある期間への予測の全履歴
-mios consensus     # 機関予測＋手入力コンセンサスを保存し、自分の予測と並べて表示
-mios validate      # 発表済みの対象期間について予測を採点（機関予測も同時に）
+mios validate      # 発表済みの対象期間について予測を採点
 mios analyze       # マクロ8次元スコア + Gold / USDJPY のマクロバイアス
-mios accuracy      # MAE / 対ナイーブ skill / 方向的中 / キャリブレーション / 機関予測との比較
+mios accuracy      # MAE / 対ナイーブ skill / 方向的中 / キャリブレーション
 mios report        # reports/daily/YYYY-MM-DD.md を生成
 
 mios daily         # 上記を migrate から report まで一気通貫で実行
                    # （プロバイダが1つ落ちてもレポートは出る。終了コードには反映される）
 
 make daily-report  # `mios daily` を呼ぶだけ。workflow と定義を共有する
-mios extract       # 未処理ニュースを候補キューへ
 mios health        # ソース別の死活（失敗があれば exit 1）
 ```
 
@@ -90,9 +92,7 @@ mios health        # ソース別の死活（失敗があれば exit 1）
 | 3 | Data layer（series / observations / releases / calendar、CSV adapter） | ✅ 完了 |
 | 4 | Historical / Vintage（ALFRED 真vintage、as-of 漏れの静的検出、JGB） | ✅ 完了 |
 | 5 | Forecast layer（CPI / NFP 予測、予測vintageの保存） | ✅ 完了 |
-| 6a | Institutional forecasts（機関予測との比較） | ✅ 完了（ADR-012） |
-| 6b | News collection（Fed / BOJ / BLS / FT / CNBC の RSS） | ✅ 完了 |
-| 6c | News classification（分類・要約） | 未着手（`ANTHROPIC_API_KEY` が必要） |
+| 6 | News / Institutional forecasts | ❌ **対象外に決定**（ADR-015） |
 | 11 | Economic calendar + releases + スプレッドシート出力 | ✅ 完了（ADR-013） |
 | 7 | Cross asset（Gold / USDJPY 解釈） | ✅ 完了 |
 | 8 | Daily reports（`reports/daily/YYYY-MM-DD.md`） | ✅ 完了 |
@@ -123,7 +123,6 @@ secrets を設定したら、まず Actions タブから **Verify sources** を�
 
 ```
 config/       全設定（ソース・系列・資産・タクソノミ・ウェイト・ジョブ）
-input/        人が手で書き写すデータ（コンセンサス予想）。input/README.md 参照
 data/raw/     取得した生ペイロード。永久保存・コミット対象
 db/migrations 連番SQLマイグレーション（後方互換必須）
 docs/         設計書と ADR

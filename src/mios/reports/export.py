@@ -34,7 +34,6 @@ from typing import Any
 
 from mios.common.logutil import get_logger
 from mios.config.loader import ConfigRoot
-from mios.knowledge.store import CurationQueue
 from mios.prediction.repo import ForecastRepo
 from mios.series.calendar import CalendarRepo
 from mios.series.repo import ObservationRepo
@@ -93,7 +92,6 @@ class Exporter:
         self._calendar = CalendarRepo(db)
         self._forecast_repo = ForecastRepo(db)
         self._observations = ObservationRepo(db)
-        self._news = CurationQueue(db)
 
     def run(self, as_of: datetime) -> list[ExportedFile]:
         self._out.mkdir(parents=True, exist_ok=True)
@@ -104,7 +102,6 @@ class Exporter:
             self._write("forecasts.csv", *self._forecasts()),
             self._write("accuracy.csv", *self._accuracy()),
             self._write("series.csv", *self._series()),
-            self._write("news.csv", *self._news_rows()),
         ]
         logger.info("export: %d file(s) to %s", len(written), self._out)
         return written
@@ -336,30 +333,6 @@ class Exporter:
                 _num(row["baseline_error"]),
                 _num(row["skill"]),
                 "" if row["direction_hit"] is None else ("yes" if row["direction_hit"] else "no"),
-            ]
-            for row in rows
-        ]
-
-    # ----------------------------------------------------------------- news
-
-    def _news_rows(self) -> tuple[list[str], list[list[str]]]:
-        """Collected headlines with their source tier.
-
-        The tier column is the important one. A Tier 3 headline is a report,
-        not a fact, and a spreadsheet that lost that distinction would make
-        every row look equally solid (CONSTITUTION.md Art.4).
-        """
-        tiers = {sid: spec.tier for sid, spec in self._config.sources.items()}
-        header = ["取得日時(UTC)", "tier", "ソース", "見出し", "配信元の公開日時", "URL"]
-        rows = self._news.pending(limit=1000)
-        return header, [
-            [
-                _when(row["created_at"]),
-                f"T{tiers.get(row['source_id'], row['payload'].get('tier', 4))}",
-                row["source_id"],
-                row["payload"].get("title") or "",
-                row["payload"].get("published_raw") or "",
-                row["payload"].get("link") or "",
             ]
             for row in rows
         ]

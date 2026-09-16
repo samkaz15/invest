@@ -18,8 +18,7 @@ from mios.config.models import SourceSpec
 from mios.ingestion.adapter import AdapterError, FetchResult, HttpGetter, SourceAdapter
 from mios.ingestion.http import TransportError
 from mios.ingestion.rawitem import RawDraft
-from mios.ingestion.verify import ExtraParse, SourceVerifier
-from mios.prediction.external import get_external_parser
+from mios.ingestion.verify import SourceVerifier
 
 REPO = Path(__file__).resolve().parents[2]
 FIXTURES = REPO / "tests" / "fixtures"
@@ -151,54 +150,3 @@ def test_the_verifier_covers_every_configured_source() -> None:
     # walks the whole registry.
     report = verifier.check()
     assert len(report.checks) == len(config.sources)
-
-
-# ------------------------------------------------- injected forecast checks
-
-
-def _forecast_verifier(payload: str) -> SourceVerifier:
-    """A verifier for a source that carries no time series at all."""
-    config = _config()
-    provider = config.external.providers[0]
-    target = provider.targets[0]
-    reader = get_external_parser(provider.parser)
-
-    def factory(spec: SourceSpec) -> SourceAdapter:
-        stub = _Stub(spec)
-        stub.payload = payload
-        return stub
-
-    return SourceVerifier(
-        {provider.provider_id: config.sources[provider.provider_id]},
-        config.series,
-        adapter_factory=factory,
-        extra={
-            provider.provider_id: [
-                ExtraParse(
-                    label=target.target_series_id,
-                    parse=lambda text: len(reader(text, provider, target)),
-                )
-            ]
-        },
-    )
-
-
-def test_a_forecast_file_is_parsed_rather_than_merely_reached() -> None:
-    """No series points at an institutional forecast file.
-
-    Without an injected parse check the verifier would fetch it, find
-    nothing to read, and report it healthy on an HTTP 200 alone — which is
-    exactly the check that fails to notice a renamed column.
-    """
-    report = _forecast_verifier("Date,CPI,Core CPI\n2026-08-01,0.31,0.28\n").check()
-    [check] = report.checks
-    assert check.ok
-    assert check.series and check.series[0].points == 1
-
-
-def test_a_forecast_file_that_answers_200_with_the_wrong_columns_fails() -> None:
-    report = _forecast_verifier("Date,Headline,Core\n2026-08-01,0.31,0.28\n").check()
-    [check] = report.checks
-    assert check.reachable is True  # it answered
-    assert not check.ok  # but it did not answer with what config expects
-    assert "columns present" in check.series[0].detail

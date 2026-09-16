@@ -17,7 +17,6 @@ import argparse
 import os
 import re
 import sys
-from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import timedelta
 
@@ -29,24 +28,14 @@ from mios.common.logutil import get_logger, setup_logging
 from mios.common.statestore import JsonStateStore
 from mios.common.timeutil import parse_utc, utc_now
 from mios.config import ConfigRoot, Settings, load_config
-from mios.config.external import ExternalTargetSpec, ProviderSpec
 from mios.config.models import JobSpec, SourceSpec
-from mios.extraction.news import NewsExtractor
 from mios.ingestion.collector import CollectError, Collector
 from mios.ingestion.dlq import DeadLetterQueue
 from mios.ingestion.health import HealthTracker
 from mios.ingestion.http import HttpClient
 from mios.ingestion.rawstore import FileRawStore
-from mios.ingestion.verify import ExtraParse, SourceVerifier
-from mios.knowledge.store import CurationQueue
+from mios.ingestion.verify import SourceVerifier
 from mios.prediction.bridge import forecast_target
-from mios.prediction.external import (
-    ExternalForecastRepo,
-    ExternalIngestor,
-    get_external_parser,
-)
-from mios.prediction.manual import PROVIDER_ID as MANUAL_PROVIDER
-from mios.prediction.manual import ManualConsensusIngestor
 from mios.prediction.repo import ForecastRepo
 from mios.reports.daily import write_report
 from mios.reports.export import Exporter
@@ -60,7 +49,6 @@ from mios.series.repo import ObservationRepo, SeriesRepo
 from mios.storage.db import Database
 from mios.storage.migrate import MigrationRunner
 from mios.storage.sync import sync_sources
-from mios.validation.benchmark import BenchmarkReader, BenchmarkScorer
 from mios.validation.metrics import MIN_SAMPLE, MetricsReader
 from mios.validation.releases import ReleaseBuilder
 from mios.validation.scoring import Scorer
@@ -375,14 +363,7 @@ DAILY_CHAIN: list[tuple[str, bool]] = [
     # observations normalize just wrote.
     ("calendar", True),
     ("releases", True),
-    # Feed entries -> queued headlines. Tolerant: a dead feed costs the
-    # headline list, never the report.
-    ("extract", True),
     ("forecast", True),
-    # After forecast, so the day's own call is on the table to print the
-    # consensus beside. Tolerant: a dead provider costs the comparison, not
-    # the report.
-    ("consensus", True),
     ("analyze", True),
     ("validate", True),
     ("report", False),
@@ -399,7 +380,7 @@ def _cmd_daily(app: App, as_of: str | None) -> int:
     report is the artifact that documents what went wrong, so aborting early
     would throw away the evidence.
     """
-    takes_as_of = {"forecast", "consensus", "analyze", "validate", "report", "calendar", "export"}
+    takes_as_of = {"forecast", "analyze", "validate", "report", "calendar", "export"}
     outcomes: list[tuple[str, str]] = []
     for step, tolerant in DAILY_CHAIN:
         argv = [step, *(["--as-of", as_of] if as_of and step in takes_as_of else [])]
@@ -489,15 +470,11 @@ def _cmd_calendar(app: App, as_of: str | None, days: int) -> int:
 
 
 def _cmd_releases(app: App, as_of: str | None) -> int:
-    """Record every period that has printed: actual / previous / 改定 / surprise."""
+    """Record every period that has printed: actual / previous / 改定."""
     cutoff = parse_utc(as_of) if as_of else utc_now()
-    report = ReleaseBuilder(
-        app.db,
-        ObservationRepo(app.db),
-        ExternalForecastRepo(app.db),
-        app.config.forecast.by_id(),
-        app.config.series,
-    ).run(cutoff, [s.series_id for s in app.config.series.series])
+    report = ReleaseBuilder(app.db, ObservationRepo(app.db), app.config.series).run(
+        cutoff, [s.series_id for s in app.config.series.series]
+    )
     print(
         f"releases: 新規={report.written} 記録済={report.already_recorded} "
         f"未確定={report.unresolved}"
@@ -519,84 +496,6 @@ def _cmd_export(app: App, as_of: str | None) -> int:
     return 0
 
 
-def _cmd_consensus(app: App, as_of: str | None) -> int:
-    """Turn collected institutional payloads into stored forecast vintages.
-
-    Prints what each provider currently says, beside MIOS's own call for the
-    same period, so the gap is visible on the day rather than only in the
-    scoreboard six months later.
-    """
-    cutoff = parse_utc(as_of) if as_of else utc_now()
-    external = ExternalForecastRepo(app.db)
-    report = ExternalIngestor(
-        app.raw_store,
-        external,
-        app.config.external,
-        {sid: spec.tier for sid, spec in app.config.sources.items()},
-    ).run()
-    print(
-        f"consensus: raw_items={report.raw_items} new vintages={report.written} "
-        f"unchanged={report.unchanged} failures={len(report.failures)}"
-    )
-    for failure in report.failures:
-        print(f"    FAIL {failure}")
-
-    # Hand-typed consensus, ingested into the same table under the same
-    # rules. NFP and the unemployment rate have no free machine-readable
-    # forecast (ADR-012), and scraping a broker's calendar would be
-    # redistributing someone else's licensed data — so this is the path.
-    manual_spec = app.config.sources.get(MANUAL_PROVIDER)
-    if manual_spec is not None:
-        manual = ManualConsensusIngestor(
-            app.settings.config_dir.parent / "input" / "consensus.csv",
-            external,
-            ObservationRepo(app.db),
-            app.config.forecast.by_id(),
-            manual_spec.url,
-            manual_spec.tier,
-        ).run()
-        print(
-            f"手入力コンセンサス: {manual.rows} 行 → 新規={manual.written} "
-            f"変更なし={manual.unchanged}"
-        )
-        for failure in manual.failures:
-            print(f"    FAIL {failure}")
-        report.failures.extend(manual.failures)
-
-    forecasts = ForecastRepo(app.db)
-    for target in app.config.forecast.targets:
-        mine = [
-            row
-            for row in forecasts.latest_per_target(cutoff)
-            if row["target_series_id"] == target.series_id
-        ]
-        period = mine[0]["target_period"] if mine else None
-        if period is None:
-            continue
-        rows = external.as_of(target.series_id, period, cutoff)
-        if not rows:
-            continue
-        ours = float(mine[0]["point_value"]) if mine[0]["point_value"] is not None else None
-        print(f"\n{target.label} {period}")
-        if ours is not None:
-            print(f"    {'MIOS':<28}{ours:+.4f} {target.unit_label}")
-        for row in rows:
-            value = float(row["point_value"])
-            gap = f" (差 {value - ours:+.4f})" if ours is not None else ""
-            print(
-                f"    {row['provider_id']:<28}{value:+.4f} {target.unit_label}"
-                f"{gap}  published {row['published_at'].date()}"
-            )
-
-    for series_id in app.config.external.uncovered:
-        typed = external.count_for(series_id)
-        if typed:
-            print(f"\n{series_id}: 無料の機関予測は存在しないが、手入力が {typed} 件ある")
-        else:
-            print(f"\n{series_id}: 無料の機関予測が存在しない。比較対象はナイーブ基準のみ")
-    return 0 if report.ok else 1
-
-
 def _cmd_validate(app: App, as_of: str | None) -> int:
     """Score every forecast whose target period has since printed.
 
@@ -611,13 +510,6 @@ def _cmd_validate(app: App, as_of: str | None) -> int:
         f"validate: newly scored={report.scored} "
         f"awaiting actuals={report.unresolved} already scored={report.already_scored}"
     )
-    # The outside forecasters are scored in the same pass, against the same
-    # first print and a baseline recomputed at their own vintage. Scoring
-    # them elsewhere would eventually mean scoring them differently.
-    benchmark = BenchmarkScorer(app.db, observations, ExternalForecastRepo(app.db), targets).run(
-        cutoff
-    )
-    print(f"benchmark: newly scored={benchmark.scored} awaiting actuals={benchmark.unresolved}")
     return 0
 
 
@@ -683,44 +575,7 @@ def _cmd_accuracy(app: App, series_id: str | None) -> int:
             f"stated={stated:<5} realised={realised}{note}"
         )
 
-    _print_head_to_head(app)
     return 0
-
-
-def _print_head_to_head(app: App) -> None:
-    """MIOS against the institutions, on equal information.
-
-    Beating the naive baseline is the low bar; this is the one that decides
-    whether the project was worth building. Each pair is a MIOS forecast and
-    the provider's newest figure that was knowable at that forecast's own
-    cutoff — never a later one, which would hand MIOS information the
-    provider did not have and call the result an edge.
-    """
-    reader = BenchmarkReader(app.db)
-    coverage = reader.coverage()
-    print("\nhead-to-head — 機関予測との比較（同じ情報量の時点同士）")
-    if coverage.get("stored", 0) == 0:
-        print("  （機関予測がまだ1件も取得できていません — `mios consensus` 未実行）")
-    for series_id in app.config.external.uncovered:
-        print(f"  {series_id}: 無料の機関予測が存在しない。ナイーブ基準のみが比較対象")
-    rows = reader.comparisons()
-    if not rows:
-        if coverage.get("stored", 0):
-            print(f"  （取得済み {coverage['stored']} 件。対象期間が発表されてから採点されます）")
-        return
-    print(f"\n  {'provider':<22}{'target':<30}{'n':>4}  {'MIOS':>9}{'them':>9}{'edge':>10}")
-    for row in rows:
-        if not row.sufficient:
-            print(
-                f"  {row.provider_id:<22}{row.target_series_id:<30}{row.n:>4}  "
-                f"（n<{MIN_SAMPLE} のため未算出）"
-            )
-            continue
-        verdict = "MIOS が優位" if row.beats_provider else "機関予測が優位"
-        print(
-            f"  {row.provider_id:<22}{row.target_series_id:<30}{row.n:>4}  "
-            f"{row.mios_mae:>9.5f}{row.provider_mae:>9.5f}{row.edge:>+10.5f}  {verdict}"
-        )
 
 
 def _cmd_revisions(app: App, series_id: str, period: str) -> int:
@@ -732,13 +587,6 @@ def _cmd_revisions(app: App, series_id: str, period: str) -> int:
     for obs in rows:
         value = "(no figure published)" if obs.value is None else obs.value
         print(f"  rev{obs.revision_n}  {value}  known from {obs.vintage_at.isoformat()}")
-    return 0
-
-
-def _cmd_extract(app: App) -> int:
-    extractor = NewsExtractor(app.db, app.raw_store, CurationQueue(app.db), app.config.sources)
-    stats = extractor.run()
-    print(f"news candidates queued: {stats['queued']} (duplicates skipped: {stats['duplicate']})")
     return 0
 
 
@@ -773,35 +621,6 @@ def _cmd_health(app: App) -> int:
     return 1 if degraded else 0
 
 
-def _forecast_parse(provider: ProviderSpec, target: ExternalTargetSpec) -> Callable[[str], int]:
-    """One provider/target reader, bound to its own arguments."""
-    reader = get_external_parser(provider.parser)
-
-    def parse(payload: str) -> int:
-        return len(reader(payload, provider, target))
-
-    return parse
-
-
-def _external_checks(app: App) -> dict[str, list[ExtraParse]]:
-    """Parse checks for the institutional forecast providers.
-
-    Wired here rather than inside the verifier because the readers live in
-    the prediction layer, which imports ingestion; importing it back would
-    make the dependency a cycle.
-    """
-    checks: dict[str, list[ExtraParse]] = {}
-    for provider in app.config.external.providers:
-        for target in provider.targets:
-            checks.setdefault(provider.provider_id, []).append(
-                ExtraParse(
-                    label=f"{target.target_series_id} (forecast)",
-                    parse=_forecast_parse(provider, target),
-                )
-            )
-    return checks
-
-
 def _cmd_verify(app: App, source: str | None) -> int:
     """Fetch every source, parse it, store nothing, report what broke.
 
@@ -812,15 +631,7 @@ def _cmd_verify(app: App, source: str | None) -> int:
     morning is a poor way to learn it. This is the check that turns that
     into a thirty-second answer.
     """
-    verifier = SourceVerifier(
-        resolve_sources(app.config.sources),
-        app.config.series,
-        # Institutional forecast files carry no time series, so nothing in
-        # the series registry points at them. Without these they would be
-        # called healthy on an HTTP 200 alone — exactly the check that does
-        # not notice a renamed column.
-        extra=_external_checks(app),
-    )
+    verifier = SourceVerifier(resolve_sources(app.config.sources), app.config.series)
     report = verifier.check(source)
 
     for check in report.checks:
@@ -872,7 +683,6 @@ def _parse(argv: list[str]) -> argparse.Namespace:
     )
     p_ver.add_argument("--source", default=None, help="check only this source_id")
     sub.add_parser("migrate", help="apply pending DB migrations and sync source registry")
-    sub.add_parser("extract", help="turn unprocessed news raw items into curation candidates")
     p_norm = sub.add_parser("normalize", help="raw payloads -> vintage-keyed observations")
     p_norm.add_argument("--series", default=None, help="normalize only this series_id")
     sub.add_parser("series", help="the series registry and how much data each one has")
@@ -898,17 +708,13 @@ def _parse(argv: list[str]) -> argparse.Namespace:
     )
     p_exp = sub.add_parser("export", help="スプレッドシート用の CSV を書き出す")
     p_exp.add_argument("--as-of", default=None, help="この時点として書き出す (ISO-8601)")
-    p_con = sub.add_parser(
-        "consensus", help="store institutional forecasts and show them beside ours"
-    )
-    p_con.add_argument("--as-of", default=None, help="compare as at a past instant (ISO-8601)")
     p_val = sub.add_parser("validate", help="score forecasts whose period has printed")
     p_val.add_argument("--as-of", default=None, help="score as at a past instant (ISO-8601)")
     p_rep = sub.add_parser("report", help="write today's daily Markdown report")
     p_rep.add_argument("--as-of", default=None, help="render as at a past instant (ISO-8601)")
     p_daily = sub.add_parser(
         "daily",
-        help="the whole chain: migrate, collect, normalize, forecast, consensus, analyze, report",
+        help="the whole chain: migrate, collect, normalize, forecast, analyze, report",
     )
     p_daily.add_argument("--as-of", default=None, help="replay a past day (ISO-8601 UTC)")
     p_acc = sub.add_parser("accuracy", help="MAE / skill vs naive / directional / calibration")
@@ -930,8 +736,6 @@ def _dispatch(app: App, args: argparse.Namespace) -> int:
         return _cmd_verify(app, args.source)
     if args.command == "migrate":
         return _cmd_migrate(app)
-    if args.command == "extract":
-        return _cmd_extract(app)
     if args.command == "normalize":
         return _cmd_normalize(app, args.series)
     if args.command == "series":
@@ -952,8 +756,6 @@ def _dispatch(app: App, args: argparse.Namespace) -> int:
         return _cmd_releases(app, None)
     if args.command == "export":
         return _cmd_export(app, args.as_of)
-    if args.command == "consensus":
-        return _cmd_consensus(app, args.as_of)
     if args.command == "validate":
         return _cmd_validate(app, args.as_of)
     if args.command == "accuracy":

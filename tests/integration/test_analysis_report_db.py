@@ -272,7 +272,7 @@ def test_the_report_renders_on_an_empty_database(db: Database, repo: Observation
     assert text.startswith("# Daily Macro Report — 2026-03-02")
     assert "本日述べられることはまだない" in text
     assert "Data Quality / Missing Data" in text
-    assert "Not Yet Implemented" in text
+    assert "このレポートが見ていないもの" in text
 
 
 def test_the_report_names_what_is_not_implemented_rather_than_leaving_it_blank(
@@ -288,31 +288,27 @@ def test_the_report_names_what_is_not_implemented_rather_than_leaving_it_blank(
     """
     text = DailyReport(db, load_config(REPO / "config")).render(_at("2026-03-02"))
     for missing in (
-        # Collected, but not classified or summarised: the one place an LLM
-        # will ever be used, and it needs a key this project does not have.
-        "ニュースの分類・要約",
-        # No public feed exists, so there is no collection path at all.
-        "Reuters / Bloomberg",
-        # e-Stat needs an API key and a reader of its own.
-        "日本の CPI・賃金",
-        # Monthly NFP consensus is a commercial product (ADR-012).
-        "雇用統計のコンセンサス",
+        # Every non-US-number source was dropped in ADR-015. What the report
+        # must keep doing is saying so, rather than reading as though the
+        # picture were complete.
+        "ニュース",
+        "機関予測",
+        "日本",
     ):
         assert missing in text, f"the report must still name this gap: {missing}"
 
 
-def test_the_sections_that_were_gaps_are_now_sections(db: Database, repo: ObservationRepo) -> None:
-    """They render on an empty database, saying they have no data yet.
+def test_the_calendar_section_renders_on_an_empty_database(
+    db: Database, repo: ObservationRepo
+) -> None:
+    """A report that crashes without data is a report nobody can schedule.
 
-    A report that crashes without data is a report nobody can schedule, and
-    these three are exactly the ones that spend their first days empty.
+    The calendar spends its first days empty by construction, so it has to
+    say so rather than raise.
     """
     text = DailyReport(db, load_config(REPO / "config")).render(_at("2026-03-02"))
     assert "## 本日の発表 / Economic Calendar" in text
-    assert "## Headlines" in text
-    assert "## Consensus / Institutional Forecasts" in text
     assert "発表予定がまだ1件も取得できていません" in text
-    assert "ニュースはまだ1件も取得できていません" in text
 
 
 def test_the_report_shows_stored_scores_and_their_blind_spots(

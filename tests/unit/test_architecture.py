@@ -26,13 +26,8 @@ ALLOWED: dict[str, set[str]] = {
     # provider still speaks the shape its series expect. It stores nothing,
     # so this is a read of the parser table, not a data path.
     "ingestion": {"common", "config", "audit", "storage", "scheduler", "series"},
-    "extraction": {"common", "config", "audit", "storage", "ingestion", "knowledge"},
     "series": {"common", "config", "audit", "storage", "ingestion"},
-    # prediction -> ingestion: the external-forecast ingestor reads raw
-    # payloads out of the raw store, exactly as the series normalizer
-    # does. It is the same "bytes already fetched become rows" step, one
-    # layer over; ingestion still knows nothing about prediction.
-    "prediction": {"common", "config", "audit", "storage", "series", "ingestion"},
+    "prediction": {"common", "config", "audit", "storage", "series"},
     "validation": {"common", "config", "audit", "storage", "series", "prediction"},
     # reports sits at the bottom of the graph: it may read everything and is
     # read by nothing, which is what keeps it a formatter rather than a
@@ -46,13 +41,8 @@ ALLOWED: dict[str, set[str]] = {
         "prediction",
         "analysis",
         "validation",
-        # knowledge: the headline list reads the curation queue. Reading, as
-        # always here — the report formats what other layers stored.
-        "knowledge",
     },
-    "knowledge": {"common", "config", "audit", "storage"},
-    "analysis": {"common", "config", "audit", "storage", "knowledge", "series", "prediction"},
-    "scoring": {"common", "config", "audit", "storage", "knowledge", "analysis"},
+    "analysis": {"common", "config", "audit", "storage", "series", "prediction"},
 }
 
 

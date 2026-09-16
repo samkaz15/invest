@@ -80,22 +80,13 @@ class SourceSpec(MiosModel):
 
     source_id: str
     name: str
-    #: "manual" is a source a human transcribes rather than one MIOS
-    #: fetches. It still belongs in the registry — it has a tier, a name and
-    #: a URL where the figure can be checked — but nothing collects it, and
-    #: `automated` is what every caller filters on.
-    kind: Literal["rss", "http_json", "http_csv", "manual"]
+    kind: Literal["http_json", "http_csv"]
     url: str
     tier: int = Field(ge=1, le=4)
     enabled: bool = True
     min_interval_seconds: float = Field(default=1.0, ge=0)
     headers: dict[str, str] = Field(default_factory=dict)  # values may use ${ENV_VAR}
     notes: str = ""
-
-    @property
-    def automated(self) -> bool:
-        """Whether the collector should ever fetch this."""
-        return self.kind != "manual"
 
     @field_validator("source_id")
     @classmethod
