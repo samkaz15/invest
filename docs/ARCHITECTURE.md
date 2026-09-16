@@ -331,7 +331,7 @@ mios health        # ソース別の死活・DLQ 件数（失敗があれば exi
 |---|---|---|
 | A-1 | ~~監査ログがファイルにしか出ない~~ | ✅ Phase 10 完了：`PostgresAuditSink` を追加し、ファイルとDBの両方へ書く（`TeeAuditSink`）。DB到達不可時は警告を出してファイルのみに退避する |
 | A-2 | ~~`market_snapshots` に vintage がない~~ | ✅ Phase 3 完了：`0005` で `observations`（vintage付き）を追加。旧テーブルは DROP せず参照を止めた |
-| A-3 | **FRED の series_id・Treasury CSV の列名・Twelve Data のレスポンス形状・MOF の CSV 形式がいずれも未検証**（本作業環境からは外部到達がゲートウェイで 403 拒否される）。parser は記録済み fixture に対してのみ検証済み | **`mios verify-sources` で30秒で確認できる**（`.github/workflows/verify-sources.yml` から手動実行可）。全ソースを取得・parse し、**何も保存しない**。誤りは元々「収集失敗」として表面化する設計なので静かな誤データにはならないが、毎朝07:10に気づくのは遅すぎる |
+| A-3 | ~~FRED の series_id・Treasury CSV の列名・Twelve Data のレスポンス形状が未検証~~ | ✅ **2026-09-14 の初回 verify-sources で解決。** 実プロバイダに接続し、FRED 46系列の series_id、ALFRED の vintage 取得、Treasury カーブの全年限の列名、Twelve Data の形状、FRED releases API —— **すべて設定通りで正しかった**。これらは外部到達のない環境で書いたもので、最大の未検証リスクだった。設定を変えたら `verify-sources` を再実行する |
 | A-18 | **ニュース・機関予測・日本のデータを収集しない**（ADR-015 で対象外と決定）。したがって (1) 比較対象はナイーブ基準のみで「市場がすでに知っていたことより良かったか」に答えられない、(2) USDJPY は金利差の米国側だけで構成される、(3) 出来事は系列の数字に現れるまで見えない | 意図的な範囲の限定であり、未実装ではない。日次レポートの「このレポートが見ていないもの」節が毎回明示する。再開する場合は ADR-015 の判断を覆す ADR を書く |
 | A-4 | ~~統合テストは PostgreSQL がないと skip される~~ | ✅ Phase 2 完了：CI に PostgreSQL サービスを用意し、skip したらビルドを落とす |
 | A-13 | **FRED の releases/dates が将来日程を返すか未検証**、および release_name の綴りが未検証 | `mios verify-sources` と初回の `mios calendar` で判明する。照合ゼロ件として表面化し、静かな誤データにはならない。実データの名前一覧は `mios calendar` の出力から拾える |
