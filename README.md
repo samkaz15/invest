@@ -101,7 +101,7 @@ mios health        # ソース別の死活（失敗があれば exit 1）
 
 ## 自動実行
 
-`.github/workflows/daily.yml` が平日 07:10 UTC に全チェーンを実行し、
+`.github/workflows/daily.yml` が**日本時間の平日 朝7時**（22:00 UTC の翌朝）に全チェーンを実行し、
 `data/` と `reports/` をコミットする。必要な GitHub secrets：
 
 | secret | 用途 |

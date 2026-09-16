@@ -13,8 +13,18 @@ name: Daily
 
 on:
   schedule:
-    # 07:10 UTC on weekdays: after the US data window and before Tokyo opens.
-    - cron: "10 7 * * 1-5"
+    # 22:00 UTC = 07:00 JST the following morning, Monday through Friday in
+    # Tokyo. Cron is evaluated in UTC, so weekday-mornings-in-Japan is
+    # Sunday-through-Thursday here (0-4), not 1-5.
+    #
+    # This also fixes what the previous schedule got wrong. 07:10 UTC was
+    # documented as "after the US data window", and it was not: the BLS
+    # publishes at 08:30 America/New_York, which is 12:30 or 13:30 UTC
+    # depending on daylight saving. The run happened five hours *before* the
+    # day's US releases, so a report dated today never contained today's
+    # numbers. 22:00 UTC is after the data window and after the US close
+    # (20:00/21:00 UTC) in both halves of the year.
+    - cron: "0 22 * * 0-4"
   workflow_dispatch:
     inputs:
       as_of:
