@@ -1,7 +1,7 @@
 """The workflows must stay in step with the CLI.
 
 A renamed command is a silent breakage: the workflow keeps running on its
-schedule and fails every night at 07:10 UTC, which is the worst possible
+schedule and fails every night at 22:00 UTC, which is the worst possible
 place to discover it. These tests read the YAML and check it against the
 actual argument parser.
 """
@@ -153,3 +153,36 @@ def test_ci_runs_the_same_gate_as_make_check() -> None:
     commands = " ".join(step.get("run", "") for step in job["steps"])
     for tool in ("ruff check", "ruff format --check", "mypy", "pytest"):
         assert tool in commands, f"CI does not run {tool}"
+
+
+def test_the_daily_run_happens_after_the_us_releases_it_reports_on() -> None:
+    """The schedule has a reason, and the reason is what this checks.
+
+    A report dated today must contain today's US numbers. The BLS publishes
+    at 08:30 America/New_York — 12:30 UTC in summer, 13:30 in winter — and
+    the US session closes at 20:00/21:00 UTC. The run has to be after both,
+    in both halves of the year.
+
+    The previous schedule, 07:10 UTC, was documented as "after the US data
+    window" and was in fact five hours before it. Nothing failed; the report
+    was simply always a day behind on the numbers it existed to show. That is
+    the kind of error a comment cannot prevent, so it is asserted instead.
+
+    07:00 JST is 22:00 UTC the previous day, which clears both. And because
+    cron is evaluated in UTC, weekday mornings in Tokyo are Sunday through
+    Thursday here — an off-by-one that would quietly shift the whole week.
+    """
+    import re
+
+    daily = (REPO / ".github" / "workflows" / "daily.yml").read_text(encoding="utf-8")
+    [cron] = re.findall(r'cron:\s*"([^"]+)"', daily)
+    minute, hour, _dom, _mon, dow = cron.split()
+
+    latest_us_release_utc = 13  # 08:30 EST
+    us_close_utc = 21  # 16:00 EST
+    assert int(hour) > max(latest_us_release_utc, us_close_utc), (
+        f"the daily run at {hour}:{minute} UTC lands before the US data it reports on"
+    )
+    # Tokyo weekday mornings are Sun-Thu in UTC. 1-5 would shift the week by a day.
+    assert dow == "0-4", f"07:00 JST on weekdays is Sun-Thu in UTC, not {dow!r}"
+    assert (int(hour) + 9) % 24 == 7, "the run should land at 07:00 Japan time"
