@@ -1,0 +1,29 @@
+name: US knowledge database sync
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/knowledge/us/**'
+      - 'ops/import_us_knowledge.py'
+      - 'db/migrations/0011_us_knowledge.sql'
+      - '.github/workflows/us-knowledge.yml'
+  schedule:
+    - cron: '17 * * * *'
+permissions:
+  contents: read
+concurrency:
+  group: us-knowledge-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -e .
+      - run: python ops/import_us_knowledge.py
+        env:
+          MIOS_DATABASE_URL: ${{ secrets.MIOS_DATABASE_URL }}
