@@ -1,0 +1,40 @@
+{
+  "id": "ustreas-4316643-20261102-daily-real-yield-curve",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/4316643",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Real Yield Curve Rates Update",
+  "title_ja": "米財務省：日次国債実質イールドカーブの更新通知",
+  "published_at": null,
+  "received_at": "2026-11-02T20:56:26.000Z",
+  "topics": [
+    "treasuries",
+    "gold"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Real Yield Curve Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\r\n\r\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026",
+  "translation_ja": "米財務省の日次国債実質イールドカーブを購読されています。この情報が最近更新され、現在閲覧できるようになりました。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026",
+  "facts_ja": [
+    "メール本文に発表日時・対象日・具体的数値はない。受信時刻を発表時刻として扱わない。",
+    "リンク先で2026年11月2日の数値を確認した。数値はメール本文ではなく公式データページからの抽出。"
+  ],
+  "inference_ja": [],
+  "data_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026",
+  "verification_status": "email_and_november_2_data_verified",
+  "official_data": {
+    "date": "2026-11-02",
+    "unit": "percent",
+    "values": {
+      "5年": 2.31,
+      "7年": 2.45,
+      "10年": 2.62,
+      "20年": 2.91,
+      "30年": 3.06
+    },
+    "previous_date": "2026-10-30",
+    "previous_values": {
+      "5年": 2.25,
+      "7年": 2.42,
+      "10年": 2.6,
+      "20年": 2.92,
+      "30年": 3.08
+    }
+  }
+}
