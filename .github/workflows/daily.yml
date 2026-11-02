@@ -97,6 +97,8 @@ jobs:
           # The CSVs a spreadsheet reads. Committed rather than uploaded as
           # an artifact so a Google Sheet can pull them with IMPORTDATA and
           # refresh itself whenever this job runs.
+          # A failed migration can stop the chain before export creates this directory.
+          mkdir -p exports/
           git add -A exports/
           git diff --cached --quiet || git commit -m "export: spreadsheet CSVs ${DAY}"
 
