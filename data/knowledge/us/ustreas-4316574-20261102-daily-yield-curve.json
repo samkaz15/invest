@@ -1,0 +1,57 @@
+{
+  "id": "ustreas-4316574-20261102-daily-yield-curve",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/4316574",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Yield Curve Rates Update",
+  "title_ja": "米財務省：日次国債イールドカーブの更新通知",
+  "published_at": null,
+  "received_at": "2026-11-02T20:56:30.000Z",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Yield Curve Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\r\n\r\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "translation_ja": "米財務省の日次国債イールドカーブを購読されています。この情報が最近更新され、現在閲覧できるようになりました。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "facts_ja": [
+    "メール本文に発表日時・対象日・具体的数値はない。受信時刻を発表時刻として扱わない。",
+    "リンク先で2026年11月2日の数値を確認した。数値はメール本文ではなく公式データページからの抽出。"
+  ],
+  "inference_ja": [],
+  "data_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "verification_status": "email_and_november_2_data_verified",
+  "official_data": {
+    "date": "2026-11-02",
+    "unit": "percent",
+    "values": {
+      "1か月": 4.05,
+      "1.5か月": 4.09,
+      "2か月": 4.16,
+      "3か月": 4.21,
+      "4か月": 4.19,
+      "6か月": 4.25,
+      "1年": 4.38,
+      "2年": 4.59,
+      "3年": 4.65,
+      "5年": 4.7,
+      "7年": 4.79,
+      "10年": 4.91,
+      "20年": 5.31,
+      "30年": 5.28
+    },
+    "previous_date": "2026-10-30",
+    "previous_values": {
+      "1か月": 4.06,
+      "1.5か月": 4.09,
+      "2か月": 4.16,
+      "3か月": 4.16,
+      "4か月": 4.18,
+      "6か月": 4.25,
+      "1年": 4.36,
+      "2年": 4.56,
+      "3年": 4.65,
+      "5年": 4.71,
+      "7年": 4.8,
+      "10年": 4.94,
+      "20年": 5.34,
+      "30年": 5.31
+    }
+  }
+}
