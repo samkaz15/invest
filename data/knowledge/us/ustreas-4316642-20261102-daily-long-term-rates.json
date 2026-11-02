@@ -1,0 +1,20 @@
+{
+  "id": "ustreas-4316642-20261102-daily-long-term-rates",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/4316642",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Long-Term Rates Update",
+  "title_ja": "米財務省：日次長期国債金利の更新通知",
+  "published_at": null,
+  "received_at": "2026-11-02T20:56:12.000Z",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Long-Term Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\r\n\r\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "translation_ja": "米財務省の日次長期国債金利を購読されています。この情報が最近更新され、現在閲覧できるようになりました。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "facts_ja": [
+    "メール本文に発表日時・対象日・具体的数値はない。受信時刻を発表時刻として扱わない。",
+    "リンク先の取得ページは2026年10月30日まで。11月2日の更新値は未確認であり、過去値を今回の値で補わない。"
+  ],
+  "inference_ja": [],
+  "data_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "verification_status": "email_verified_latest_rates_unconfirmed"
+}
