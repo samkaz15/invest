@@ -1,0 +1,21 @@
+{
+  "id": "ustreas-431663d-20261102-daily-bill-rates-update",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/431663d",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Bill Rates Update",
+  "title_ja": "米財務省：日次短期国債金利の更新通知",
+  "published_at": null,
+  "received_at": "2026-11-02T20:55:46.000Z",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Bill Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\r\n\r\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026",
+  "translation_ja": "米財務省の日次短期国債金利を購読されています。この情報が最近更新され、現在閲覧できるようになりました。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026",
+  "facts_ja": [
+    "財務省の実メールは短期国債金利の更新通知。メール本文に金利の具体的な数値・対象データ日・発表日時はない。",
+    "メール受信は2026-11-03T05:55:46+09:00。受信時刻を公表時刻として扱わない。",
+    "リンク先を取得したが、取得できたページの最終掲載日は2026-10-30だった。11月2日の新しい金利数値は未確認。10月30日値を今回更新値として取り込まない。"
+  ],
+  "inference_ja": [],
+  "data_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026",
+  "verification_status": "email_verified_latest_rates_unconfirmed"
+}
