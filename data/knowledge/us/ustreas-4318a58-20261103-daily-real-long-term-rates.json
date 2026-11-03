@@ -1,0 +1,46 @@
+{
+  "id": "ustreas-4318a58-20261103-daily-real-long-term-rates",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/4318a58",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Real Long-Term Rates Update",
+  "title_ja": "米財務省：日次長期実質金利の更新通知",
+  "published_at": null,
+  "received_at": "2026-11-03T20:56:07.000Z",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Real Long-Term Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\r\n\r\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+  "translation_ja": "米財務省の日次長期実質金利を購読されています。この情報が最近更新され、現在閲覧できるようになりました。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+  "facts_ja": [
+    "実メールの本文全体を読み、実質的な本文は上記の更新通知と公式資料リンクのみであることを確認。登録管理・配信解除・広告・配送情報は除外した。",
+    "メール本文には公表日時と金利数値の記載がない。公表時刻は不明のためnullとし、受信時刻で代用していない。",
+    "メール内の公開一次資料を別途確認し、2026年11月3日および11月2日の金利行を確認した。以下の数値はメール本文ではなくリンク先公式表から取得した。",
+    "残存期間が10年を超える物価連動国債（TIPS）の買い気配実質利回りの単純平均。"
+  ],
+  "inference_ja": [],
+  "data_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+  "verification_status": "email_and_november_3_official_data_verified",
+  "source_excerpts": [
+    {
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+      "unit": "percent",
+      "columns": [
+        "LT Real Average (10> Yrs)"
+      ],
+      "rows": [
+        {
+          "date": "2026-11-02",
+          "values": [
+            3.05
+          ]
+        },
+        {
+          "date": "2026-11-03",
+          "values": [
+            3.08
+          ]
+        }
+      ]
+    }
+  ]
+}
