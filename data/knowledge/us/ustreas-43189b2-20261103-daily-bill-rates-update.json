@@ -1,0 +1,84 @@
+{
+  "id": "ustreas-43189b2-20261103-daily-bill-rates-update",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/43189b2",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Bill Rates Update",
+  "title_ja": "米財務省：日次短期国債金利の更新通知",
+  "published_at": null,
+  "received_at": "2026-11-03T20:56:09.000Z",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Bill Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\r\n\r\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026",
+  "translation_ja": "米財務省の日次短期国債金利を購読されています。この情報が最近更新され、現在閲覧できるようになりました。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026",
+  "facts_ja": [
+    "実メールの本文全体を読み、実質的な本文は上記の更新通知と公式資料リンクのみであることを確認。登録管理・配信解除・広告・配送情報は除外した。",
+    "メール本文には公表日時と金利数値の記載がない。公表時刻は不明のためnullとし、受信時刻で代用していない。",
+    "メール内の公開一次資料を別途確認し、2026年11月3日および11月2日の金利行を確認した。以下の数値はメール本文ではなくリンク先公式表から取得した。",
+    "各年限で直近に入札された短期国債の流通市場気配。銀行割引率とクーポン換算利回りは算出基準が異なる。"
+  ],
+  "inference_ja": [],
+  "data_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026",
+  "verification_status": "email_and_november_3_official_data_verified",
+  "source_excerpts": [
+    {
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026",
+      "unit": "percent",
+      "columns": [
+        "4 weeks bank discount",
+        "4 weeks coupon equivalent",
+        "6 weeks bank discount",
+        "6 weeks coupon equivalent",
+        "8 weeks bank discount",
+        "8 weeks coupon equivalent",
+        "13 weeks bank discount",
+        "13 weeks coupon equivalent",
+        "17 weeks bank discount",
+        "17 weeks coupon equivalent",
+        "26 weeks bank discount",
+        "26 weeks coupon equivalent",
+        "52 weeks bank discount",
+        "52 weeks coupon equivalent"
+      ],
+      "rows": [
+        {
+          "date": "2026-11-02",
+          "values": [
+            3.9,
+            3.97,
+            3.9,
+            3.97,
+            4,
+            4.08,
+            4.03,
+            4.13,
+            4.08,
+            4.19,
+            4.14,
+            4.29,
+            4.18,
+            4.38
+          ]
+        },
+        {
+          "date": "2026-11-03",
+          "values": [
+            3.88,
+            3.95,
+            3.94,
+            4.01,
+            3.99,
+            4.07,
+            4.03,
+            4.13,
+            4.08,
+            4.19,
+            4.15,
+            4.3,
+            4.2,
+            4.4
+          ]
+        }
+      ]
+    }
+  ]
+}
