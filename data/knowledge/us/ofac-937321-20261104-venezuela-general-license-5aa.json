@@ -1,0 +1,25 @@
+{
+  "id": "ofac-937321-20261104-venezuela-general-license-5aa",
+  "source_url": "https://ofac.treasury.gov/media/937321/download?inline",
+  "title_en": "GENERAL LICENSE NO. 5AA: Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After December 18, 2026",
+  "title_ja": "ベネズエラ一般許可5AA：PdVSA社債関連取引の許可開始日を2026年12月18日に設定",
+  "published_at": null,
+  "received_at": "2026-11-04T18:20:09.000Z",
+  "topics": [
+    "oil",
+    "sanctions",
+    "other_us"
+  ],
+  "original_text": "DEPARTMENT OF THE TREASURY\nWASHINGTON, D.C.\nOFFICE OF FOREIGN ASSETS CONTROL\nVenezuela Sanctions Regulations\n31 CFR Part 591\nGENERAL LICENSE NO. 5AA\nAuthorizing Certain Transactions Related to the\nPetróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After December 18, 2026\n(a) Except as provided in paragraph (b) of this general license, on or after December 18, 2026, all transactions related to, the provision of financing for, and other dealings in the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond that would be prohibited by subsection 1(a)(iii) of Executive Order (E.O.) 13835 of May 21, 2018, as amended by E.O. 13857 of January 25, 2019, and incorporated into the Venezuela Sanctions Regulations, 31 CFR part 591 (the VSR), are authorized.\n(b) This general license does not authorize any transactions or activities otherwise prohibited by the VSR, or any other part of 31 CFR chapter V.\n(c) Effective November 4, 2026, General License No. 5Z, dated September 16, 2026, is replaced and superseded in its entirety by this General License No. 5AA.\nBradley T. Smith\nDirector\nOffice of Foreign Assets Control\nDated: November 4, 2026\nBradley T. Smith Digitally signed by Bradley T. Smith\nDate: 2026.11.04 08:36:11 -05'00'",
+  "translation_ja": "米財務省、ワシントンD.C.、外国資産管理局\nベネズエラ制裁規則、連邦規則集第31編第591部\n一般許可第5AA号\n2026年12月18日以降の、Petróleos de Venezuela, S.A.の2020年償還・利率8.5%債に関連する一定の取引を許可する\n\n(a) 本一般許可の(b)項に定める場合を除き、2026年12月18日以降、2019年1月25日付大統領令13857によって改正され、ベネズエラ制裁規則（連邦規則集第31編第591部、VSR）に組み込まれた2018年5月21日付大統領令13835の第1条(a)(iii)項によって禁止されることとなる、Petróleos de Venezuela, S.A.の2020年償還・利率8.5%債に関連するすべての取引、同債への資金提供、同債に係るその他の取引を許可する。\n\n(b) 本一般許可は、VSRまたは連邦規則集第31編第V章のその他の部分によって別途禁止される取引・活動を許可するものではない。\n\n(c) 2026年11月4日付で、2026年9月16日付一般許可第5Z号は、本一般許可第5AA号によって全体が置き換えられ、失効する。\n\n外国資産管理局長 Bradley T. Smith\n日付：2026年11月4日\nBradley T. Smithによる電子署名日時：2026年11月4日08:36:11（UTC−05:00、日本時間同日22:36:11）。これは電子署名の時刻であり、公表時刻とは確認していない。",
+  "facts_ja": [
+    "受信メール内の公式リンクから1ページのPDF全文を取得した。",
+    "一般許可5AAは2026年11月4日付。2026年12月18日以降に対象取引を許可し、他の禁止事項は解除しない。一般許可5Zを全面的に置き換える。",
+    "電子署名の時刻は記載されているが、公表時刻と同一とは確認できないためpublished_at=null。受信日時はこの資料へのリンクを含むメールの受信日時。",
+    "先行する一般許可5Zは当リポジトリには保存されていないため、supersedesに架空の旧レコードIDを作らない。"
+  ],
+  "inference_ja": [],
+  "publication_date": "2026-11-04",
+  "supersedes_source_url": null,
+  "verification_status": "official_pdf_full_text_verified"
+}
