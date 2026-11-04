@@ -1,0 +1,84 @@
+{
+  "id": "ustreas-431ae0a-20261104-daily-yield-curve",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/431ae0a",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Yield Curve Rates Update",
+  "title_ja": "米財務省：日次国債利回り曲線の更新通知",
+  "published_at": null,
+  "received_at": "2026-11-04T20:56:27.000Z",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Yield Curve Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\r\n\r\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "translation_ja": "米財務省の日次国債利回り曲線を購読されています。この情報が最近更新され、現在閲覧できるようになりました。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "facts_ja": [
+    "実メール本文全体を確認。実質的な本文は更新案内と公式資料URLのみ。購読管理・解除案内・広告・配送情報を除外した。",
+    "本文には数値、対象データ日、公表時刻の記載がない。公表時刻は不明で、受信時刻では代用しない。",
+    "リンク先公式表で2026年11月4日と11月3日の数値を別途確認。source_excerptsの数値はメール本文ではなく公式表に由来する。",
+    "既存の11月3日付配信文書とは公開配信URLが異なり、公式表の対象日も異なる。訂正や旧文書の上書きではなく新規文書として保存。"
+  ],
+  "inference_ja": [],
+  "data_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "verification_status": "email_and_november_4_official_data_verified",
+  "source_excerpts": [
+    {
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+      "unit": "percent",
+      "columns": [
+        "1 Mo",
+        "1.5 Mo",
+        "2 Mo",
+        "3 Mo",
+        "4 Mo",
+        "6 Mo",
+        "1 Yr",
+        "2 Yr",
+        "3 Yr",
+        "5 Yr",
+        "7 Yr",
+        "10 Yr",
+        "20 Yr",
+        "30 Yr"
+      ],
+      "rows": [
+        {
+          "date": "2026-11-03",
+          "values": [
+            4.03,
+            4.09,
+            4.15,
+            4.21,
+            4.18,
+            4.26,
+            4.4,
+            4.61,
+            4.68,
+            4.74,
+            4.83,
+            4.95,
+            5.35,
+            5.32
+          ]
+        },
+        {
+          "date": "2026-11-04",
+          "values": [
+            4.01,
+            4.08,
+            4.15,
+            4.21,
+            4.2,
+            4.25,
+            4.39,
+            4.58,
+            4.64,
+            4.69,
+            4.77,
+            4.9,
+            5.3,
+            5.28
+          ]
+        }
+      ]
+    }
+  ]
+}
