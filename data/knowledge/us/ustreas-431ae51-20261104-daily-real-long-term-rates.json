@@ -1,0 +1,46 @@
+{
+  "id": "ustreas-431ae51-20261104-daily-real-long-term-rates",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/431ae51",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Real Long-Term Rates Update",
+  "title_ja": "米財務省：日次長期実質金利の更新通知",
+  "published_at": null,
+  "received_at": "2026-11-04T20:56:51.000Z",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Real Long-Term Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\r\n\r\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+  "translation_ja": "米財務省の日次長期実質金利を購読されています。この情報が最近更新され、現在閲覧できるようになりました。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+  "facts_ja": [
+    "実メール本文全体を確認。実質的な本文は更新案内と公式資料URLのみ。購読管理・解除案内・広告・配送情報を除外した。",
+    "本文には数値、対象データ日、公表時刻の記載がない。公表時刻は不明で、受信時刻では代用しない。",
+    "リンク先公式表で2026年11月4日と11月3日の数値を別途確認。source_excerptsの数値はメール本文ではなく公式表に由来する。",
+    "既存の11月3日付配信文書とは公開配信URLが異なり、公式表の対象日も異なる。訂正や旧文書の上書きではなく新規文書として保存。"
+  ],
+  "inference_ja": [],
+  "data_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+  "verification_status": "email_and_november_4_official_data_verified",
+  "source_excerpts": [
+    {
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+      "unit": "percent",
+      "columns": [
+        "LT Real Average (10> Yrs)"
+      ],
+      "rows": [
+        {
+          "date": "2026-11-03",
+          "values": [
+            3.08
+          ]
+        },
+        {
+          "date": "2026-11-04",
+          "values": [
+            3.06
+          ]
+        }
+      ]
+    }
+  ]
+}
