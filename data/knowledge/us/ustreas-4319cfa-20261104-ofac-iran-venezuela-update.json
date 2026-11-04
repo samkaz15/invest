@@ -1,0 +1,31 @@
+{
+  "id": "ustreas-4319cfa-20261104-ofac-iran-venezuela-update",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/4319cfa",
+  "title_en": "OFAC SDN List and SSI List Update: Iran-related Designations; Updates to Certain Iran-related Listings; Publication of Iran-related OFAC Alert; Issuance of Amended Venezuela-related General License and Frequently Asked Question",
+  "title_ja": "OFAC：イラン関連リスト・注意喚起とベネズエラ一般許可5AA・FAQの更新",
+  "published_at": null,
+  "received_at": "2026-11-04T18:20:09.000Z",
+  "topics": [
+    "oil",
+    "sanctions",
+    "other_us"
+  ],
+  "original_text": "Update to OFAC's list of Specially Designated Nationals (SDN) and Blocked Persons and OFAC's list of Sectoral Sanctions Identifications (SSI); Publication of Iran-related OFAC Alert; Issuance of Amended Venezuela-related General License and Frequently Asked Question\r\n\r\nThe Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing an Iran-related Alert [ https://ofac.treasury.gov/media/937316/download?inline ], \"Iranian Shadow Fleet Reliance on False Flags for Sanctions Evasion.\"\r\n\r\nAdditionally, OFAC is issuing Venezuela-related General License 5AA [ https://ofac.treasury.gov/media/937321/download?inline ], \"Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After December 18, 2026.\" OFAC is also issuing one amended Frequently Asked Question, FAQ 595 [ https://ofac.treasury.gov/faqs/595 ].\r\n\r\nLastly, OFAC has made the following changes to the list of Specially Designated Nationals and Blocked Persons (SDN List) and the list of Sectoral Sanctions Identifications (SSI List). Please visit this page to access the latest version of the SDN list [ https://ofac.treasury.gov/sanctions-list-service ]. Check this page periodically as it may also be updated if a new list-related format or product is offered.\r\n\r\nPlease visit this link for more information on today's update [ https://ofac.treasury.gov/recent-actions/20261104 ].",
+  "translation_ja": "OFACの特別指定国民・資産凍結対象者リスト（SDNリスト）および分野別制裁対象者リスト（SSIリスト）の更新、イラン関連のOFAC注意喚起の公表、改訂されたベネズエラ関連一般許可とFAQの発行\n\n米財務省外国資産管理局（OFAC）は、イラン関連の注意喚起「制裁回避のための偽装船籍に対するイランの影の船団の依存」を公表しています。\nhttps://ofac.treasury.gov/media/937316/download?inline\n\nまた、OFACは、ベネズエラ関連一般許可5AA「2026年12月18日以降の、Petróleos de Venezuela, S.A.の2020年償還・利率8.5%債に関連する一定の取引を許可する」を発行しています。OFACは、改訂したFAQ595も公表しています。\n一般許可5AA：https://ofac.treasury.gov/media/937321/download?inline\nFAQ595：https://ofac.treasury.gov/faqs/595\n\n最後に、OFACはSDNリストおよびSSIリストに以下の変更を加えました。SDNリストの最新版は次のページで確認してください。新しいリスト関連の形式や提供物が追加された場合も更新される可能性があるため、定期的に確認してください。\nhttps://ofac.treasury.gov/sanctions-list-service\n\n本日の更新の詳細は次のリンクを参照してください。\nhttps://ofac.treasury.gov/recent-actions/20261104",
+  "facts_ja": [
+    "実メール本文全体を取得した。新規の公開配信URLであり、既存の431a6b8の制裁プレスリリースとは別文書。イラン関連の共通事項は重複扱いとし、新たなOFAC通知およびベネズエラ関連一般許可の情報を保存した。",
+    "公表時刻は不明で、受信時刻では代用しない。",
+    "一般許可5AAのPDF全文と、2026年11月4日更新のFAQ595本文を別途取得して確認した。一般許可5AAは別JSONに保存する。",
+    "FAQ595によれば、PdVSA 2020年償還・利率8.5%債の担保であるCITGO株式に関する許可の効力発生は2026年12月18日まで延期され、それまでは当該社債に関連するCITGO株式の売却・移転取引は個別許可がなければ禁止される。",
+    "この社債はベネズエラ国営石油会社の社債であり、米国債ではない。",
+    "公開配信ページ、イラン関連注意喚起PDF、2026年11月4日付アクションページは取得できなかった。個別のリスト追加・変更対象名は今回のメール本文に列挙されておらず、未確認。"
+  ],
+  "inference_ja": [],
+  "primary_source_urls": [
+    "https://ofac.treasury.gov/media/937316/download?inline",
+    "https://ofac.treasury.gov/media/937321/download?inline",
+    "https://ofac.treasury.gov/faqs/595",
+    "https://ofac.treasury.gov/recent-actions/20261104"
+  ],
+  "verification_status": "email_and_general_license_5aa_and_faq595_verified_iran_alert_unavailable"
+}
