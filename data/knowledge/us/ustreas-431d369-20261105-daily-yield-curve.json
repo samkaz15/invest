@@ -1,0 +1,22 @@
+{
+  "id": "ustreas-431d369-20261105-daily-yield-curve",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/431d369",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Yield Curve Rates Update",
+  "title_ja": "米財務省：日次国債利回り曲線の更新通知",
+  "published_at": null,
+  "received_at": "2026-11-05T20:56:49.000Z",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Yield Curve Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\r\n\r\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "translation_ja": "米財務省の日次国債利回り曲線を購読されています。この情報が最近更新され、現在閲覧できるようになりました。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "facts_ja": [
+    "実メール本文全体を取得した。実質的な本文は更新案内と公式資料リンクのみで、数値・対象データ日・公表時刻の記載はない。",
+    "公表時刻は不明のためpublished_at=nullとし、受信時刻で代用しない。",
+    "既存レコードの公開配信URLを照合し、従来の配信文書とは異なる新規公開配信URLであることを確認。旧レコードは上書きしない。",
+    "リンク先公式表を取得し再確認したが、取得範囲の最終掲載日は2026年11月4日だった。今回更新後の金利数値・対象データ日は未確認で、前日値を今回の新しい値として取り込まない。"
+  ],
+  "inference_ja": [],
+  "data_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "verification_status": "email_verified_latest_rates_unconfirmed"
+}
