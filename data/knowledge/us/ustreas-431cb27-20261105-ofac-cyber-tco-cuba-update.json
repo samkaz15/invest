@@ -1,0 +1,37 @@
+{
+  "id": "ustreas-431cb27-20261105-ofac-cyber-tco-cuba-update",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/431cb27",
+  "title_en": "OFAC SDN List Update: Cyber-related and Transnational Criminal Organizations Designations; Cuba Designations; Publication of Cuba-related Determination",
+  "title_ja": "OFAC：サイバー・国際犯罪組織・キューバ関連の指定とキューバ部門別決定の公表",
+  "published_at": null,
+  "received_at": "2026-11-05T18:02:48.000Z",
+  "topics": [
+    "sanctions",
+    "other_us"
+  ],
+  "original_text": "Cyber-related and Transnational Criminal Organizations Designations; Cuba Designations; Publication of Cuba-related Determination\r\n\r\nThe Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing a Cuba-related Determination Pursuant to Section 2(a)(i)(A) of Executive Order 14404 [ https://ofac.treasury.gov/media/937326/download?inline ], \"Electronics, Manufacturing, Marine, and Technology Sectors of the Cuban Economy.\"\r\n\r\nAdditionally, OFAC has made the following changes to the list of Specially Designated Nationals and Blocked Persons (SDN List). Please visit this page to access the latest version of the SDN list [ https://ofac.treasury.gov/sanctions-list-service ]. Check this page periodically as it may also be updated if a new list-related format or product is offered.\r\n\r\nPlease visit this link for more information on today's update [ https://ofac.treasury.gov/recent-actions/20261105 ].",
+  "translation_ja": "サイバー関連および国際犯罪組織に関する指定、キューバ関連の指定、キューバ関連の決定の公表\n\n米財務省外国資産管理局（OFAC）は、大統領令14404第2条(a)(i)(A)項に基づくキューバ関連の決定「キューバ経済の電子機器、製造、海事および技術部門」を公表しています。\nhttps://ofac.treasury.gov/media/937326/download?inline\n\nまた、OFACは特別指定国民・資産凍結対象者リスト（SDNリスト）に以下の変更を加えました。SDNリストの最新版は、次のページで確認してください。新しいリスト関連の形式や提供物が追加された場合にも更新される可能性があるため、定期的に確認してください。\nhttps://ofac.treasury.gov/sanctions-list-service\n\n本日の更新の詳細は、次のリンクを参照してください。\nhttps://ofac.treasury.gov/recent-actions/20261105",
+  "facts_ja": [
+    "実メール本文全体を取得し、サイバー関連・国際犯罪組織・キューバ関連指定と、キューバの電子機器・製造・海事・技術部門に関する決定の公表を確認した。",
+    "公表時刻は本文に記載されておらずpublished_at=null。2026年11月5日という日付はメールが示すOFACアクションURLに基づく。",
+    "公開配信ページ、今回のOFACアクションページ、部門別決定PDFはいずれも取得不可だった。検索でも今回の文書本文は確認できず、古いキューバ制裁情報で代用しなかった。",
+    "メール本文に個々の指定対象者・船舶の一覧は含まれていない。PDFの部門の定義、発効時刻、適用範囲、個別のSDN変更対象者は未確認。",
+    "既存の11月4日付イラン・ベネズエラ通知とは公開資料URLおよび内容が異なる新規文書。個人化URL、メールアドレス、配送情報、登録管理の定型文は保存しない。"
+  ],
+  "inference_ja": [],
+  "publication_date": "2026-11-05",
+  "primary_source_urls": [
+    "https://ofac.treasury.gov/media/937326/download?inline",
+    "https://ofac.treasury.gov/recent-actions/20261105"
+  ],
+  "verification_status": "full_email_verified_linked_documents_unavailable",
+  "notification_relevance": {
+    "is_target": null,
+    "status": "no_target_information_confirmed_in_read_text",
+    "reason_ja": "取得した本文には金・関税・原油・米国債との具体的な関連は確認できない。海事部門への言及のみで原油輸送との関連を推定しない。未取得の決定PDF・指定対象一覧における関連性は未判定。"
+  },
+  "retrieval_pending_urls": [
+    "https://ofac.treasury.gov/media/937326/download?inline",
+    "https://ofac.treasury.gov/recent-actions/20261105"
+  ]
+}
