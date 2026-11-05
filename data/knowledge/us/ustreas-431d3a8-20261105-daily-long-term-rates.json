@@ -1,0 +1,48 @@
+{
+  "id": "ustreas-431d3a8-20261105-daily-long-term-rates",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/431d3a8",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Long-Term Rates Update",
+  "title_ja": "米財務省：日次長期国債金利の更新通知",
+  "published_at": null,
+  "received_at": "2026-11-05T20:56:33.000Z",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Long-Term Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\r\n\r\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "translation_ja": "米財務省の日次長期国債金利を購読されています。この情報が最近更新され、現在閲覧できるようになりました。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "facts_ja": [
+    "実メール本文全体を取得した。実質的な本文は更新案内と公式資料リンクのみで、数値・対象データ日・公表時刻の記載はない。",
+    "公表時刻は不明のためpublished_at=nullとし、受信時刻で代用しない。",
+    "既存レコードの公開配信URLを照合し、従来の配信文書とは異なる新規公開配信URLであることを確認。旧レコードは上書きしない。",
+    "リンク先公式表の2026年11月5日および11月4日の行を確認した。source_excerptsの数値はメール本文ではなく公式表に由来する。"
+  ],
+  "inference_ja": [],
+  "data_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "verification_status": "email_and_november_5_official_data_verified",
+  "source_excerpts": [
+    {
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+      "unit": "percent",
+      "columns": [
+        "LT COMPOSITE (>10 Yrs)",
+        "TREASURY 20-Yr CMT"
+      ],
+      "rows": [
+        {
+          "date": "2026-11-04",
+          "values": [
+            5.26,
+            5.3
+          ]
+        },
+        {
+          "date": "2026-11-05",
+          "values": [
+            5.23,
+            5.27
+          ]
+        }
+      ]
+    }
+  ]
+}
