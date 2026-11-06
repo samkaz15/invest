@@ -1,0 +1,29 @@
+{
+  "id": "california-20261106-election-canvass-notice",
+  "source_url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026",
+  "title_en": "General Election November 3, 2026: canvass notice excerpt",
+  "title_ja": "カリフォルニア州：集計継続と認証予定の案内（抜粋）",
+  "published_at": null,
+  "publication_date": null,
+  "received_at": "2026-11-06T08:17:17Z",
+  "received_at_kind": "web_retrieved",
+  "published_at_status": "案内自体の公表日時不明。11月3日の選挙日で代用しない。",
+  "topics": [
+    "elections"
+  ],
+  "original_text": "Vote-by-mail ballots must be postmarked on or before Election Day and received by November 10, 2026.\nBallots continue to be counted after Election Day during the official canvass period.\nCounty elections officials must complete final official results by December 3, 2026.\nThe Secretary of State will certify results on December 11, 2026.",
+  "translation_ja": "郵便投票は選挙日までの消印があり、2026年11月10日までに到着する必要がある。投票日の後も公式集計期間中に開票が続く。郡選挙当局は12月3日までに最終公式結果を完成させ、州務長官は12月11日に認証する予定。これは認証完了や候補者当選を示すものではない。",
+  "facts_ja": [
+    "州当局は12月11日の認証予定を案内。"
+  ],
+  "inference_ja": [
+    "速報と州認証を区別し、この案内から議会の政党支配を確定しない。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "同ページの他の選挙案内・全リンク先は未保存・未翻訳。"
+  ],
+  "notification_eligible": false,
+  "content_sha256": "8ba7167cfed8ce7ceaca371e6c4145db1ee406e7ae0d01c2bb340e9eb4d6d59b"
+}
