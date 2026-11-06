@@ -1,0 +1,30 @@
+{
+  "id": "great-recession-2007-2009",
+  "period": {
+    "start": "2007-12",
+    "end": "2009-06"
+  },
+  "source_url": "https://www.federalreservehistory.org/essays/great-recession-of-200709",
+  "source_kind": "official_retrospective_history",
+  "facts_ja": [
+    "住宅・信用市場の危機が深刻な景気後退につながった。",
+    "FRBは利下げに加え、資産購入などの非伝統的政策を用いた。"
+  ],
+  "comparison_dimensions": [
+    "信用収縮",
+    "資金流動性",
+    "需要ショック",
+    "金融緩和"
+  ],
+  "differences_to_check_ja": [
+    "危機の起点、銀行の資本・規制、初期の政策金利を確認する。"
+  ],
+  "market_returns": null,
+  "missing_parts": [
+    "通貨・金・国債の時系列未取得",
+    "当時公表値のvintage未取得"
+  ],
+  "status": "qualitative_seed_not_backtested",
+  "retrieved_at": "2026-11-06T06:02:42Z",
+  "historical_source_caveat": "後年の解説は当時の予測情報として使用不可"
+}

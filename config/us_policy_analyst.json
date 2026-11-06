@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "name": "US Policy Macro Analyst",
+  "language": "ja",
+  "timezone": "Asia/Tokyo",
+  "mode": "qualitative_research_no_execution",
+  "sources": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "topics": [
+        "treasuries",
+        "investment_policy",
+        "sanctions"
+      ],
+      "role": "借入見通し、四半期定例入札、財政・投資政策"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "topics": [
+        "treasuries"
+      ],
+      "role": "入札予定・結果。リンク先の個別発表を読む"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "topics": [
+        "treasuries"
+      ],
+      "role": "財務省買い戻し。FRB購入と区別"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "topics": [
+        "monetary_policy"
+      ],
+      "role": "FOMC声明、実施要領、議事要旨、見通し。FRBは独立中央銀行"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "topics": [
+        "treasuries",
+        "monetary_policy"
+      ],
+      "role": "SOMA国債購入・売却。財務省の債務管理と区別"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "topics": [
+        "war",
+        "elections",
+        "oil",
+        "investment_policy",
+        "tariffs"
+      ],
+      "role": "大統領令・覚書。提案と施行を区別、戦況は政府の主張として帰属"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "topics": [
+        "sanctions",
+        "war",
+        "oil"
+      ],
+      "role": "制裁・一般許可。適用日と発表日を区別"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "topics": [
+        "oil"
+      ],
+      "role": "原油・製品在庫、生産、輸出入。対象週と公表日を区別"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "topics": [
+        "elections"
+      ],
+      "role": "州選挙当局への入口。開票速報・当確報道・認証を区別。FECを速報扱いしない"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "topics": [
+        "investment_policy"
+      ],
+      "role": "対米投資審査、規制、公開政策。個別投資助言ではない"
+    }
+  ],
+  "history_status": "three_seed_cases_not_full_history",
+  "instructions": "docs/agents/us-policy-analyst.md",
+  "fetch_policy": {
+    "initial_lookback_hours": 72,
+    "overlap_hours": 24,
+    "canonical_url_and_publication_dedup": true
+  },
+  "outputs": {
+    "documents": "data/knowledge/us/",
+    "analyses": "data/analysis/us_policy/",
+    "reports": "docs/reports/us_policy/",
+    "history": "data/history/us_policy/"
+  },
+  "currencies": [
+    "USD",
+    "JPY",
+    "EUR",
+    "CHF",
+    "CAD",
+    "AUD"
+  ],
+  "horizons": [
+    "days",
+    "weeks",
+    "months"
+  ],
+  "schedule_managed_by": "ChatGPT automation",
+  "coverage": "best_effort_record_missing_sources"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "oil-shock-1973-1974",
+  "period": {
+    "start": "1973-10",
+    "end": "1974-03"
+  },
+  "source_url": "https://www.federalreservehistory.org/essays/oil-shock-of-1973-74",
+  "source_kind": "official_retrospective_history",
+  "facts_ja": [
+    "1973年の禁輸と減産が石油供給を制約した。",
+    "原油高はインフレと景気の両面で金融政策を難しくした。"
+  ],
+  "comparison_dimensions": [
+    "供給ショック",
+    "エネルギー輸入依存",
+    "インフレ期待",
+    "金融政策"
+  ],
+  "differences_to_check_ja": [
+    "当時と現在の為替制度、エネルギー構造、中央銀行の信認は同一でない。"
+  ],
+  "market_returns": null,
+  "missing_parts": [
+    "通貨・金・国債の時系列未取得",
+    "当時公表値のvintage未取得"
+  ],
+  "status": "qualitative_seed_not_backtested",
+  "retrieved_at": "2026-11-06T06:02:42Z",
+  "historical_source_caveat": "後年の解説は当時の予測情報として使用不可"
+}

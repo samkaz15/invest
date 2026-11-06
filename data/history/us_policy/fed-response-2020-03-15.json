@@ -1,0 +1,30 @@
+{
+  "id": "fed-response-2020-03-15",
+  "period": {
+    "start": "2020-03-15",
+    "end": "2020-03-16"
+  },
+  "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200315a1.htm",
+  "source_kind": "contemporaneous_official_release",
+  "facts_ja": [
+    "FRBは2020年3月15日の実施要領でFF金利の目標範囲を0〜0.25％とした。",
+    "市場機能を支えるため国債保有を少なくとも5,000億ドル、政府機関MBSを少なくとも2,000億ドル増やす方針を示した。"
+  ],
+  "comparison_dimensions": [
+    "市場機能",
+    "中央銀行資産購入",
+    "政策金利",
+    "流動性"
+  ],
+  "differences_to_check_ja": [
+    "政策発表直後とその後の資産反応は分け、現在のインフレ制約と比較する。"
+  ],
+  "market_returns": null,
+  "missing_parts": [
+    "通貨・金・国債の時系列未取得",
+    "発表後の実績検証未実施"
+  ],
+  "status": "qualitative_seed_not_backtested",
+  "retrieved_at": "2026-11-06T06:02:42Z",
+  "historical_source_caveat": "後年の解説は当時の予測情報として使用不可"
+}
