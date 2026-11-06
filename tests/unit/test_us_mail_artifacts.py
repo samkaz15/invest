@@ -50,9 +50,7 @@ class ArtifactsTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 artifacts.publish(doc, tmp)
 
-    @unittest.skipUnless(
-        shutil.which("pdfinfo") and shutil.which("pdftotext"), "Poppler required"
-    )
+    @unittest.skipUnless(shutil.which("pdfinfo") and shutil.which("pdftotext"), "Poppler required")
     def test_real_pdf_all_pages_and_translation_coverage(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "two.pdf"
@@ -72,9 +70,7 @@ class ArtifactsTest(unittest.TestCase):
             for n in (1, 2):
                 stream = f"BT /F1 12 Tf 40 700 Td (Public Treasury example page {n}) Tj ET".encode()
                 objects.append(
-                    f"<< /Length {len(stream)} >>\nstream\n".encode()
-                    + stream
-                    + b"\nendstream"
+                    f"<< /Length {len(stream)} >>\nstream\n".encode() + stream + b"\nendstream"
                 )
             data, offsets = b"%PDF-1.4\n", [0]
             for n, obj in enumerate(objects, 1):
@@ -82,9 +78,7 @@ class ArtifactsTest(unittest.TestCase):
                 data += f"{n} 0 obj\n".encode() + obj + b"\nendobj\n"
             start = len(data)
             data += b"xref\n0 8\n0000000000 65535 f \n"
-            data += b"".join(
-                f"{offset:010} 00000 n \n".encode() for offset in offsets[1:]
-            )
+            data += b"".join(f"{offset:010} 00000 n \n".encode() for offset in offsets[1:])
             data += f"trailer\n<< /Size 8 /Root 1 0 R >>\nstartxref\n{start}\n%%EOF".encode()
             path.write_bytes(data)
             pdf = artifacts.extract_pdf(path)

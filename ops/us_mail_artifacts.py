@@ -12,9 +12,7 @@ from pathlib import Path
 def extract_pdf(path, ocr=False):
     """Return every page, including missing pages; never claim OCR certainty."""
     path = Path(path).resolve()
-    info = subprocess.run(
-        ["pdfinfo", str(path)], check=True, capture_output=True, text=True
-    )
+    info = subprocess.run(["pdfinfo", str(path)], check=True, capture_output=True, text=True)
     count = int(re.search(r"^Pages:\s+(\d+)", info.stdout, re.M)[1])
     with tempfile.TemporaryDirectory() as tmp:
         source = path
@@ -82,9 +80,7 @@ def validate(doc):
     if doc.get("notification_eligible"):
         summary = doc.get("summary_ja_40", "")
         if len(summary) != 40 or any(c in summary for c in "\r\n"):
-            raise ValueError(
-                "notification summary must be exactly 40 Unicode characters"
-            )
+            raise ValueError("notification summary must be exactly 40 Unicode characters")
     pdf = doc.get("pdf")
     if pdf and doc.get("translation_status") == "complete":
         pages = pdf.get("pages", [])
@@ -121,9 +117,7 @@ def publish(doc, root, pdf_path=None, redistribution_allowed=False, write_record
             raise ValueError("PDF redistribution permission must be established")
         extracted = extract_pdf(pdf_path)
         text = "\n".join(p["original_text"] for p in extracted["pages"])
-        if not text or any(
-            p["extraction_status"] == "missing" for p in extracted["pages"]
-        ):
+        if not text or any(p["extraction_status"] == "missing" for p in extracted["pages"]):
             raise ValueError("cannot privacy-check unread PDF pages")
         if re.search(
             r"[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}|unsubscribe|verification=|"
