@@ -1,0 +1,42 @@
+name: US mail Japanese artifacts
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/knowledge/us/*.json'
+      - 'ops/us_mail_artifacts.py'
+      - '.github/workflows/us-mail-artifacts.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: us-mail-artifacts
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate and render Japanese text
+        run: |
+          python - <<'PY'
+          import json
+          import runpy
+          from pathlib import Path
+          publish = runpy.run_path('ops/us_mail_artifacts.py')['publish']
+          for path in sorted(Path('data/knowledge/us').glob('*.json')):
+              publish(json.loads(path.read_text()), '.', write_record=False)
+          PY
+      - name: Commit Japanese artifacts
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add docs/translations/us
+          if ! git diff --cached --quiet; then
+            git commit -m 'docs: render Japanese US knowledge translations'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
