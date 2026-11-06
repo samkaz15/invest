@@ -1,0 +1,39 @@
+{
+  "id": "treasury-sb0687-20261106-fatf",
+  "source_url": "https://home.treasury.gov/news/press-releases/sb0687/",
+  "title_en": "FATF Recognizes Effectiveness of U.S. AML/CFT System, Advances Key Illicit Finance Initiatives",
+  "title_ja": "FATFが米国のマネーロンダリング・テロ資金対策制度の有効性を認め、不正金融に関する主要な取組を推進。",
+  "published_at": null,
+  "publication_date": "2026-11-06",
+  "publication_timezone": null,
+  "publication_time_status": "unknown",
+  "received_at": "2026-11-06T23:38:11.071636+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-06T23:38:11.071636+00:00",
+  "topics": [
+    "sanctions",
+    "investment_policy",
+    "other_us"
+  ],
+  "original_text": "Press Releases\nFATF Recognizes Effectiveness of U.S. AML/CFT System, Advances Key Illicit Finance Initiatives\nNovember 6, 2026\nPARIS\n—Last week, senior Treasury officials led a U.S. government delegation to the Financial Action Task Force’s(FATF) plenary meetings.  The FATF, the global standard-setting body for countering money laundering, terror financing, and proliferation financing, concluded its first Plenary under the United Kingdom presidency.  The FATF adopted the Mutual Evaluation Reports of the United States and Mexico, reiterated the call to impose countermeasures on Iran, agreed to publish a new report on scam centers, and agreed to accelerate global implementation of digital asset-related standards.\nSTOPPING IRANIAN ILLICIT FINANCE\nIran remains on the FATF’s blacklist, and the FATF called upon all nations to implement reimposed United Nations Security Council Resolutions related to Iran’s ongoing lack of compliance with its nuclear agreements. The FATF also reminded all jurisdictions to impose countermeasures on Iran to restrict correspondent banking, digital asset transactions, and business relationships with Iran.\nDISMANTLING SOUTHEAST ASIAN SCAM COMPOUNDS\nThe FATF also adopted a landmark report examining the financial flows fueling scam compounds, laying the groundwork for a stronger, more coordinated global response to fraud.  Building on these findings, the FATF will advance concrete measures to use its full range of tools to drive more decisive action to disrupt these criminal networks, hold jurisdictions accountable for failing to address these risks, and protect victims and the global financial system.  Scams orchestrated at these compounds often target older and vulnerable Americans, and the Trump Administration has taken numerous sanctions actions to stop the fraud.\nADVANCING THE DIGITAL ASSETS SECTOR\nThe FATF also agreed to launch a targeted review of certain jurisdictions with longstanding deficiencies related to the virtual assets sector that heighten illicit finance risks.  This review will outline decision points for the next FATF plenary on what the FATF can do to ensure accountability for jurisdictions with systemic weaknesses that enable fraudsters, drug traffickers, and proliferators to launder funds through exchanges.\nClick\nhere\nto read the Outcomes of the FATF Plenary, 6 November 2026.",
+  "translation_ja": "FATFが米国のマネーロンダリング・テロ資金対策制度の有効性を認め、不正金融に関する主要な取組を推進。\n2026年11月6日、パリ。\n先週、財務省高官が率いる米政府代表団が金融活動作業部会（FATF）の総会に参加した。マネーロンダリング、テロ資金供与および大量破壊兵器の拡散金融への対策で国際基準を定めるFATFは、英国議長国の下で初めての総会を終えた。FATFは米国とメキシコの相互審査報告書を採択し、イランへの対抗措置を求める呼びかけを再確認し、詐欺拠点に関する新報告書の公表と、デジタル資産関連基準の世界的な実施加速に合意した。\n\nイランの不正金融の阻止：\nイランは引き続きFATFのブラックリストに掲載されている。FATFは、イランが核合意を継続的に遵守していないことに関連して再適用された国連安全保障理事会決議を、すべての国が実施するよう求めた。また、イランとのコルレス銀行業務、デジタル資産取引および取引関係を制限する対抗措置を講じるよう、すべての法域に改めて求めた。\n\n東南アジアの詐欺拠点の解体：\nFATFは、詐欺拠点を支える資金の流れを調べた重要な報告書も採択した。これは詐欺への、より強力で協調的な世界的対応の基礎となる。これらの知見を踏まえ、FATFは利用可能な手段を全面的に使う具体策を進め、犯罪ネットワークの活動を妨げ、こうしたリスクに対処しない法域の責任を問い、被害者と世界の金融システムを守る。これらの拠点による詐欺は高齢者や弱い立場の米国人を標的にすることが多く、トランプ政権は詐欺を止めるため多数の制裁措置を取ってきた。\n\nデジタル資産分野の前進：\nFATFは、不正金融リスクを高める仮想資産分野の長年の不備がある一部の法域について、対象を絞った審査の開始にも合意した。この審査は、詐欺師、麻薬密売人、拡散関与者が交換業者を通じて資金洗浄できるような制度上の弱点を持つ法域に責任を求めるため、次回総会でFATFが取り得る措置の判断事項を示す。\n\nリンク案内：財務省は「2026年11月6日のFATF総会の結果」を参照するよう案内している。［リンク先の実際の本文日付は10月30日、会期は10月28～30日。発表日と会議日を混同しない。］",
+  "facts_ja": [
+    "米財務省が11/6にFATFの総会結果について発表した。",
+    "イランのブラックリスト継続・対抗措置の再確認、仮想資産分野の審査開始を説明。新たな戦況・原油減産数量・米国政策金利変更の発表ではない。",
+    "米国評価報告書の全文・評点は未取得。タイトルにある制度の有効性という評価は米財務省の表現として帰属。"
+  ],
+  "inference_ja": [
+    "実装による決済費用・資金調達への波及は条件付き。送金規則の特定改正案撤回と国際基準の実施促進は異なる制度の措置で、単純な矛盾・全面規制緩和とはしない。"
+  ],
+  "content_sha256": "1d546d0b2c90c85b4f5209c83724832a431a08d5f442d95370fc48fb40fb0fdb",
+  "translation_status": "complete",
+  "content_scope": "full_translation",
+  "notification_eligible": true,
+  "missing_parts": [],
+  "supersedes": null,
+  "summary_ja_40": "財務省がイランへの金融対抗措置と暗号資産基準の実施加速を巡るＦＡＴＦ合意を公表。",
+  "related_document_ids": [
+    "fatf-20261030-plenary-us-iran-context",
+    "fatf-20261030-iran-call-context"
+  ]
+}

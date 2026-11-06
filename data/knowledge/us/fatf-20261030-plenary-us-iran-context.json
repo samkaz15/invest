@@ -1,0 +1,43 @@
+{
+  "id": "fatf-20261030-plenary-us-iran-context",
+  "source_url": "https://www.fatf-gafi.org/en/publications/Fatfgeneral/outcomes-fatf-plenary-october-2026.html",
+  "title_en": "Outcomes FATF Plenary October 2026",
+  "title_ja": "FATF総会結果の補助資料要約",
+  "published_at": null,
+  "publication_date": "2026-10-30",
+  "publication_timezone": null,
+  "publication_time_status": "unknown",
+  "received_at": "2026-11-06T23:42:15+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-06T23:42:15+00:00",
+  "topics": [
+    "sanctions",
+    "investment_policy",
+    "other_us"
+  ],
+  "original_text": "The reports will be published in December 2026, following a quality and consistency review.",
+  "translation_ja": "FATF総会結果の補助資料要約\n本文の日付は10月30日、会期は10月28～30日。米国・メキシコ評価報告は12月公表予定。重要な仮想資産市場を持つ法域に対象審査と迅速なフォローアップを導入し、結果は2027年6月・10月公表予定。10月30日付の既存決定の検証用で、本日の新決定とは扱わない。",
+  "facts_ja": [
+    "米財務省の11/6発表を検証する過去の公的一次資料。新着通知対象外。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "4572f7959c9ef0dc05cee252f498b2e73e55ed90664c71414ddced125a4e8af1",
+  "translation_status": "partial",
+  "content_scope": "detail_summary",
+  "notification_eligible": false,
+  "missing_parts": [
+    {
+      "kind": "rights_scope",
+      "description": "FATF/OECDの著作権表示を確認。許諾未確認のため原文全文・全文訳は複製せず短い原文抜粋と日本語要約に限定。本文はWeb取得で確認、通常取得はHTTPError（応答コード未記録）。別リンク文書を全て取得した意味ではない。"
+    }
+  ],
+  "supersedes": null,
+  "retrieved_at_kind": "review_completed_after_web_body_read",
+  "original_text_scope": "short_excerpt_only",
+  "translation_ja_kind": "detail_summary_not_full_translation",
+  "provenance": {
+    "web_body_reference": "turn170view0",
+    "publication_time_unknown": true,
+    "native_retrieval_failed": true
+  }
+}
