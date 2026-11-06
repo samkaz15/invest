@@ -25,6 +25,9 @@ NFPは初回公表値、予想はReuters調査の事後記事に記載された�
 
 ## 市場反応の例：報道による事後観察
 
+- 2025-12-16発表：NFPは6.4万人、予想5万人と上振れた一方、失業率は4.6%。Reutersは発表後の金上昇とドル指数低下を報道。雇用者数だけでは説明が足りない例。[Reuters配信](https://www.kitco.com/news/off-the-wire/2025-12-16/gold-inches-us-unemployment-rate-rises-november)
+- 2026-05-08発表：NFPは11.5万人、予想6.2万人と上振れ。Reutersは金の上昇と米金利・ドル指数の低下を報道し、他の市場環境も挙げた。[Reuters配信](https://uk.marketscreener.com/news/gold-on-track-for-weekly-gain-markets-focus-on-us-iran-peace-deal-prospects-ce7f5bdade89f021) [市場概況](https://www.investing.com/news/economy-news/april-jobs-report-shows-continued-strength-4672795)
+
 - 2026-09-04発表：NFPは16.2万人、予想5.6万人。Reutersは発表後の金下落とドル・米金利上昇を報道。ただし発表後5分や30分の騰落率を確認したものではない。[Reuters配信](https://www.kitco.com/news/off-the-wire/2026-09-04/gold-slides-after-robust-us-payrolls-boosts-rate-hike-bets)
 - 2026-10-02発表：NFPは2.9万人、予想9万人。Reutersは金が一時上昇後に反落したと報道。[Reuters](https://www.reuters.com/world/india/gold-slips-before-us-payrolls-data-set-second-weekly-loss-2026-10-02/)
 - 2026-03-06発表：NFPはマイナス9.2万人、予想プラス5.9万人。Reuters報道では、ドル円は発表直前157.905から早朝取引時157.85だったが、厳密な5分・30分値ではない。[Reuters配信](https://www.lse.co.uk/news/us-dollar-holds-gains-after-unexpected-drop-in-february-payrolls-khc00ykltc1a9q5.html)
