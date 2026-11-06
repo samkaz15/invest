@@ -1,0 +1,35 @@
+{
+  "analysis_id": "20261106T082158Z-e024e0c8",
+  "observed_at": "2026-11-06T08:25:06.367Z",
+  "github": {
+    "status": "success",
+    "content_commit": "6e69deb770655933d09ebf2e9181a2298540e10a",
+    "verified_artifact_count": 32,
+    "japanese_artifacts_workflow": {
+      "run_id": 42187339852,
+      "conclusion": "success"
+    }
+  },
+  "postgres": {
+    "status": "failed",
+    "workflow": "US knowledge database sync",
+    "run_id": 42187339749,
+    "job_id": 127790701264,
+    "head_sha": "6e69deb770655933d09ebf2e9181a2298540e10a",
+    "failure": "password authentication failed for user postgres",
+    "database_rows_imported_confirmed": false,
+    "retry_required": true
+  },
+  "pc": {
+    "status": "unverified",
+    "note": "Mac実機の常駐・音声・OS通知到達は未確認。"
+  },
+  "retry_queue": [
+    {
+      "component": "postgres",
+      "status": "pending",
+      "reason": "認証失敗。接続設定修正後に保存済みJSONから再同期可能。"
+    }
+  ],
+  "note": "元の分析・報告を上書きせず、保存後の結果を追記。"
+}
