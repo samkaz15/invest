@@ -1,0 +1,39 @@
+{
+  "published_at": null,
+  "published_date": null,
+  "topics": [
+    "treasuries"
+  ],
+  "inference_ja": [],
+  "pdf_original": {
+    "saved": false,
+    "reason": "メール添付PDFなし。リンク先はHTML金利表。対象本文内にPDFリンクはない。"
+  },
+  "content_exclusions": [
+    "共通ナビゲーション、配信・登録解除案内、メールアドレスと連絡先を除外。"
+  ],
+  "dedup_checked_records": 63,
+  "id": "ustreas-431f8a9-20261106-long-term",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/431f8a9",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Long-Term Rates Update",
+  "title_ja": "米財務省の日次長期名目金利更新通知",
+  "received_at": "2026-11-06T20:55:50.000Z",
+  "received_at_kind": "email_received",
+  "original_text": "You are subscribed to Daily Treasury Long-Term Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\r\n\r\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "translation_ja": "米財務省の「日次長期名目金利」の配信に登録されています。この情報が更新され、現在利用できます。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "facts_ja": [
+    "実際のメール本文を取得。メール本体は更新案内と公開金利表へのリンクのみで、数値そのものは記載されない。",
+    "関連の公開表で11月6日の数値を確認し別文書に保存。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "notification_decision": "対応する公開金利表の文書で日本語通知に一括掲載し、同じ更新の二重通知を避ける。",
+  "related_document_ids": [
+    "treasury-rates-20261106-long-term"
+  ],
+  "data_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "publication_time_note": "受信日時はGmailの受信時刻。これを公開時刻として代用しない。",
+  "content_sha256": "45d44dc94c89ea31832d4bfb357acebf8efd911cbe5d1e58dbbc1eee65ba13c8"
+}
