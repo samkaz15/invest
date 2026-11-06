@@ -1,0 +1,54 @@
+{
+  "id": "ustreas-431e914-20261106-bessent-he-lifeng-call",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/431e914",
+  "title_en": "READOUT: Secretary of the Treasury Scott Bessent’s Call with China’s Vice Premier He Lifeng",
+  "title_ja": "米中経済協議：ベッセント長官、中国に釜山合意の履行を要求",
+  "published_at": null,
+  "published_date": "2026-11-06",
+  "received_at": "2026-11-06T17:34:31Z",
+  "received_at_kind": "email_received",
+  "topics": [
+    "tariffs",
+    "other_us"
+  ],
+  "original_text": "READOUT: Secretary of the Treasury Scott Bessent’s Call with China’s Vice Premier He Lifeng\n\nWASHINGTON— Today, Secretary of the Treasury Scott Bessent and United States Trade Representative Jameison Greer spoke with Vice Premier He Lifeng of the People’s Republic of China to discuss the bilateral economic relationship and implementation of the Busan arrangement. The two officials reaffirmed the value of maintaining direct and candid communication.\n\nSecretary Bessent emphasized the importance of China fully and immediately implementing its commitments made in Busan and raised concerns about recent Chinese actions. He underscored that continued progress depends on concrete results and that the United States will closely assess China’s implementation of the arrangement.\n\nSecretary Bessent reiterated the Trump Administration’s commitment to pursuing trade and economic policies that benefit American workers, farmers, and businesses and strengthen U.S. economic and national security.",
+  "translation_ja": "会談概要：スコット・ベッセント米財務長官と中国の何立峰副首相との電話協議\n\nワシントン — 本日、スコット・ベッセント米財務長官とジェミソン・グリア米通商代表は、中華人民共和国の何立峰副首相と電話で協議し、二国間の経済関係と釜山合意の履行について話し合った。両当局者は、直接かつ率直な意思疎通を維持することの意義を改めて確認した。\n\nベッセント長官は、中国が釜山で約束した事項を完全かつ即時に履行することの重要性を強調し、中国の最近の行動に対する懸念を伝えた。また、今後も前進するためには具体的な成果が必要であり、米国は中国による合意の履行状況を注意深く評価すると強調した。\n\nベッセント長官は、米国の労働者、農業従事者、企業に利益をもたらし、米国の経済安全保障と国家安全保障を強化する通商・経済政策を追求するという、トランプ政権の方針を改めて表明した。",
+  "facts_ja": [
+    "米財務省の実メール本文と公開配信ページを確認した。本文は一致しており、登録確認・解除案内・広告ではない。",
+    "財務省は、ベッセント長官とグリア通商代表が何立峰副首相と二国間経済関係と釜山合意の履行を協議したと発表した。",
+    "財務省は、中国への完全かつ即時の履行要求、中国の最近の行動への懸念、今後の履行評価を表明した。中国側の独立した説明や実際の履行状況は今回確認していない。",
+    "本文には新たな関税率・発効日・制裁措置・原油供給量・国債売買決定の記載はない。",
+    "公表日は2026-11-06、個別発表時刻は不明。公開ページの配信表示12:33 PM ESTは公開配信時刻として別記し、公表時刻の代用にはしない。",
+    "実質的な発表は見出しと3段落。独立した追加資料リンク・表・脚注・添付PDFは確認されない。公開配信ページは同一文書の確認先として扱った。"
+  ],
+  "inference_ja": [
+    "米中合意の履行をめぐる懸念は通商・関税リスクに間接的に関連するため通知対象とした。関税変更が決定したとは解釈しない。",
+    "摩擦が拡大した場合は供給網・輸入費用・需要・リスク選好を通じ金や原油、金利に波及し得るが、この発表だけでは価格方向を判断できない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務長官が中国副首相と協議し釜山合意の即時完全履行を求め懸念を表明したと発表。",
+  "publication_time_status": "unknown",
+  "bulletin_dispatched_at": "2026-11-06T12:33:00-05:00",
+  "bulletin_dispatched_at_precision": "minute",
+  "content_exclusions": [
+    "配信ヘッダー、問い合わせ用メールアドレス、登録・解除・共有・配送フッター、追跡画像・個人化URLは市場情報本文から除外した。"
+  ],
+  "verification_status": "official_email_and_public_bulletin_body_verified",
+  "source_access": {
+    "public_bulletin": "HTTP 200 via direct retrieval; web tool access failed",
+    "treasury_article": "現時点の財務省一覧と公式ドメイン検索では対応する個別記事URLを確認できなかった。2025年の同名に近い発表とは区別する。"
+  },
+  "pdf_original": {
+    "saved": false,
+    "reason": "本文・公開配信ページに実質的なPDF資料の添付・リンクなし。"
+  },
+  "retry_urls": [
+    "https://home.treasury.gov/news/press-releases/readouts"
+  ],
+  "content_sha256": "7e627c00a40fd752defdefb536b73df206670bda14b44d08d3f9de798fa17c05",
+  "retrieved_at": "2026-11-06T17:37:46Z",
+  "dedup_checked_records": 56
+}
