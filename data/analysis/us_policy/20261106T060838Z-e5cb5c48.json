@@ -1,0 +1,312 @@
+{
+  "id": "20261106T060838Z-e5cb5c48",
+  "as_of": "2026-11-06T06:08:38Z",
+  "document_ids": [
+    "ustreas-sb0678-20261104-quarterly-refunding",
+    "eia-wpsr-20261104-summary",
+    "whitehouse-20261105-oleshky-meeting-excerpt"
+  ],
+  "initial_run": true,
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "status": "partial",
+      "note": "11/4借換え声明本文・表を取得。11/4TBAC議事録は閲覧済み・全文訳未完了。TBAC報告書の個別取得も未完了。既存制裁/投資メール文書を照合し再通知除外。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "status": "incomplete",
+      "note": "入口を取得したが個別の入札結果の行データは取得できず。実施額・応札倍率は未確認。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "status": "partial",
+      "note": "11/4暫定日程PDFの1ページ分テキストを取得。視覚確認・全表訳・原本保存未完了。XMLは非対応形式。個別実績は未確認。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "status": "checked_index",
+      "note": "最新掲載会合10/27-28、72時間内の新規決定は一覧で未確認。声明を今回再取得しておらず、既存政策値を推測しない。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "status": "incomplete",
+      "note": "オペページを取得したが実績行データなし。API案内は抽出空。購入/売却実施額は未確認。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "status": "partial",
+      "note": "大統領令一覧と声明一覧を取得し11/5限定停戦関連本文を閲覧。説明部分を訳して保存、演説原稿の訳は保留。他の全カテゴリー・全発表の網羅は未完了。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "status": "checked_duplicate",
+      "note": "11/4・11/5の新規指定が既存記録にあることを照合。11/4個別一次ページも取得。通知は重複除外。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "status": "partial",
+      "note": "11/4アーカイブとSummary本文を取得しSummary全訳。別添全表・全PDFは未取得。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "status": "incomplete",
+      "note": "FECの結果案内と更新情報を確認。11/4選挙サイクル開始の案内は開いたが市場への実質的新規情報として除外。各州の集計・認証は未取得。政党支配の確定を推測しない。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "status": "checked_index",
+      "note": "ニュース一覧の最新は8/7。72時間内の新規掲載を一覧で確認できず。サイト外の未掲載発表までないとは断定しない。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "status": "partial",
+      "note": "11/4借換え声明本文・表を取得。11/4TBAC議事録は閲覧済み・全文訳未完了。TBAC報告書の個別取得も未完了。既存制裁/投資メール文書を照合し再通知除外。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "status": "incomplete",
+      "note": "入口を取得したが個別の入札結果の行データは取得できず。実施額・応札倍率は未確認。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "status": "partial",
+      "note": "11/4暫定日程PDFの1ページ分テキストを取得。視覚確認・全表訳・原本保存未完了。XMLは非対応形式。個別実績は未確認。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "status": "incomplete",
+      "note": "オペページを取得したが実績行データなし。API案内は抽出空。購入/売却実施額は未確認。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "status": "partial",
+      "note": "大統領令一覧と声明一覧を取得し11/5限定停戦関連本文を閲覧。説明部分を訳して保存、演説原稿の訳は保留。他の全カテゴリー・全発表の網羅は未完了。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "status": "partial",
+      "note": "11/4アーカイブとSummary本文を取得しSummary全訳。別添全表・全PDFは未取得。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "status": "incomplete",
+      "note": "FECの結果案内と更新情報を確認。11/4選挙サイクル開始の案内は開いたが市場への実質的新規情報として除外。各州の集計・認証は未取得。政党支配の確定を推測しない。",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "checked_at": "2026-11-06T06:08:38Z",
+      "coverage": "表示・取得できた範囲のみ。完全網羅の証明ではない"
+    }
+  ],
+  "facts": [
+    {
+      "label": "FACT",
+      "document_id": "ustreas-sb0678-20261104-quarterly-refunding",
+      "text": "借換え発行予定1,250億ドル、新規資金約280億ドル。"
+    },
+    {
+      "label": "FACT",
+      "document_id": "ustreas-sb0678-20261104-quarterly-refunding",
+      "text": "次四半期買い戻し上限は流動性支援700億ドル、資金管理250億ドル。実施額ではない。"
+    },
+    {
+      "label": "FACT",
+      "document_id": "eia-wpsr-20261104-summary",
+      "text": "商業原油在庫は90万バレル減、留出油在庫は360万バレル減。"
+    },
+    {
+      "label": "FACT",
+      "document_id": "eia-wpsr-20261104-summary",
+      "text": "商業石油在庫全体は820万バレル減。"
+    },
+    {
+      "label": "FACT",
+      "document_id": "whitehouse-20261105-oleshky-meeting-excerpt",
+      "text": "ホワイトハウスが限定地域の停戦と人道避難に関する会合を発表した。"
+    }
+  ],
+  "reported": [
+    {
+      "label": "REPORTED",
+      "document_id": "whitehouse-20261105-oleshky-meeting-excerpt",
+      "text": "停戦の実施状況や避難人数は米政府の説明で、独立確認なし。"
+    }
+  ],
+  "causal_channels": [
+    {
+      "label": "INFERENCE",
+      "text": "入札供給を需要が吸収できなければ利回りの上昇圧力。買い戻しは既発債の流動性支援であり、FRBの量的緩和とは別。利回り方向の確定には実際の入札・金利データが不足。"
+    },
+    {
+      "label": "INFERENCE",
+      "text": "原油・留出油在庫の減少→供給余力の低下→原油価格とインフレへの上向きリスク。ただし需要減退や供給増が打ち消し得る。"
+    },
+    {
+      "label": "INFERENCE",
+      "text": "限定的な人道停戦は全面停戦・制裁解除・石油輸出回復と同義ではない。"
+    }
+  ],
+  "historical_comparisons": [
+    {
+      "case_id": "oil-shock-1973-1974",
+      "similarity": "供給余力と物価の関係を検討する枠組み",
+      "difference": "今回確認したのは週間在庫統計であり禁輸と同一でない。現在のエネルギー構造・インフレ・実質金利・市場織り込みの照合は不足。",
+      "status": "qualitative_only"
+    },
+    {
+      "case_id": "great-recession-2007-2009",
+      "similarity": "国債市場機能・資金需給を分けて見る対照例",
+      "difference": "今回の資料だけで信用危機や需要崩壊を示す証拠はない。",
+      "status": "qualitative_only"
+    },
+    {
+      "case_id": "fed-response-2020-03-15",
+      "similarity": "公的機関による購入の目的を区別する比較",
+      "difference": "2020年FRB資産購入と今回の財務省債務管理を同一視しない。",
+      "status": "qualitative_only"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "基本",
+      "horizon": "days-weeks",
+      "conditions": "実際の入札需要と追加在庫統計を待つ",
+      "interpretation": "方向判断保留。政府発表の予定と実施を分離。"
+    },
+    {
+      "name": "インフレ上振れ",
+      "horizon": "weeks-months",
+      "conditions": "在庫減が継続し価格上昇が物価・金利予想に波及",
+      "interpretation": "実質金利上昇は金の逆風になり得るが、地政学的需要と競合。"
+    },
+    {
+      "name": "需要下振れ",
+      "horizon": "weeks-months",
+      "conditions": "需要減退や供給正常化で在庫減の影響が相殺",
+      "interpretation": "金利低下方向の経路があり得るが、実データによる確認が必要。"
+    }
+  ],
+  "currency_pairs": [
+    {
+      "pair": "USDJPY",
+      "status": "判断保留",
+      "reason": "今回、相手国側の最新金利・景気と同時点為替を未取得。相対的な買われやすさは判定しない。"
+    },
+    {
+      "pair": "EURUSD",
+      "status": "判断保留",
+      "reason": "今回、相手国側の最新金利・景気と同時点為替を未取得。相対的な買われやすさは判定しない。"
+    },
+    {
+      "pair": "USDCHF",
+      "status": "判断保留",
+      "reason": "今回、相手国側の最新金利・景気と同時点為替を未取得。相対的な買われやすさは判定しない。"
+    },
+    {
+      "pair": "USDCAD",
+      "status": "判断保留",
+      "reason": "今回、相手国側の最新金利・景気と同時点為替を未取得。相対的な買われやすさは判定しない。"
+    },
+    {
+      "pair": "AUDUSD",
+      "status": "判断保留",
+      "reason": "今回、相手国側の最新金利・景気と同時点為替を未取得。相対的な買われやすさは判定しない。"
+    }
+  ],
+  "invalidations": [
+    "次回統計で在庫増・需要低下が確認される",
+    "入札実績で十分な需要が確認される",
+    "政府による具体的な停戦範囲拡大・制裁解除が公表される"
+  ],
+  "review_after": "2026-11-13T06:08:38Z",
+  "review_status": "過去分析なし。初回のため期限到来レビューなし。",
+  "history_validation": "初期3件のみ。市場時系列・予測精度未検証",
+  "retry_queue": [
+    {
+      "url": "https://home.treasury.gov/news/press-releases/sb0680/",
+      "reason": "TBAC議事録の全文保存・翻訳未完了"
+    },
+    {
+      "url": "https://home.treasury.gov/system/files/221/Tentative-Buyback-Schedule.pdf",
+      "reason": "視覚確認・全表訳・原本保存未完了"
+    },
+    {
+      "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-unites-russia-and-ukraine-at-the-white-house-following-historic-ceasefire/",
+      "reason": "後半の演説原稿の原文保存・翻訳未完了",
+      "supersedes": "whitehouse-20261105-oleshky-meeting-excerpt"
+    },
+    {
+      "url": "https://home.treasury.gov/news/press-releases",
+      "reason": "11/4 TBAC reportの個別原文未取得"
+    }
+  ],
+  "github_status": "保存用レコード作成。保存結果はGitHub commit/refで別途確認する",
+  "postgres_status": "今回分は未確認。GitHub保存と区別",
+  "pc_status": "実機配信未確認"
+}

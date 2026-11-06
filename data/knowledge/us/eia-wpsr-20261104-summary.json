@@ -1,0 +1,34 @@
+{
+  "id": "eia-wpsr-20261104-summary",
+  "source_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_11_04/wpsr_2026_11_04.php",
+  "title_en": "Weekly Petroleum Status Report Summary, week ending October 30, 2026",
+  "title_ja": "EIA：10月30日終了週の商業石油在庫が減少",
+  "publication_date": "2026-11-04",
+  "topics": [
+    "oil"
+  ],
+  "original_text": "For the week ending October 30, 2026, U.S. refineries processed 16.7 million barrels per day (b/d), up 199,000 b/d from the previous week, at 94.5% capacity utilization. Gasoline output averaged 9.7 million b/d, and distillate production decreased to 5.2 million b/d.\n\nCrude oil imports decreased 1,000 b/d to 6.4 million b/d, although the four-week average of 6.1 million b/d is 9.5% above the year-ago level. Gasoline imports averaged 351,000 b/d; distillate imports averaged 117,000 b/d.\nCommercial crude oil inventories (excluding the Strategic Petroleum Reserve) decreased 0.9 million barrels to 409.8 million barrels, 4% below the five-year average. Gasoline inventories decreased 0.2 million barrels, 2% below the five-year average. Distillate inventories decreased 3.6 million barrels, 13% below the five-year average. Propane/propylene inventories decreased 1.6 million barrels, 10% above the five-year average.\nTotal commercial petroleum inventories decreased by 8.2 million barrels for the week.\n\nOver the past four weeks, total product supplied averaged 21.2 million b/d, up 4.2% year over year. The four-week average for gasoline product supplied decreased 0.4% year over year to 8.6 million b/d, while the four-week average for distillate product supplied increased 8.7% to 4.2 million b/d. The four-week average for jet fuel product supplied decreased 2.8% year over year.",
+  "translation_ja": "2026年10月30日終了週の米製油所の原油処理量は日量1,670万バレルで、前週から19万9,000バレル増加。設備稼働率は94.5％。ガソリン生産は日量970万バレル、留出油生産は日量520万バレルへ減少した。\n\n原油輸入は日量1,000バレル減の640万バレル。4週間平均は日量610万バレルで前年同期を9.5％上回った。ガソリン輸入は日量35万1,000バレル、留出油輸入は日量11万7,000バレル。\n\n戦略石油備蓄を除く商業原油在庫は90万バレル減の4億980万バレルで、過去5年平均を4％下回った。ガソリン在庫は20万バレル減で5年平均を2％下回った。留出油在庫は360万バレル減で5年平均を13％下回った。プロパン・プロピレン在庫は160万バレル減で5年平均を10％上回った。\n商業石油在庫全体は週間で820万バレル減少した。\n\n過去4週間の石油製品供給量は平均日量2,120万バレルで前年同期比4.2％増。ガソリン供給量の4週間平均は日量860万バレルで前年同期比0.4％減、留出油は日量420万バレルで8.7％増。ジェット燃料は前年同期比2.8％減だった。",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "document_scope": "公式Summaryテキストのみ。全統計報告書の翻訳ではない",
+  "text_source_url": "https://ir.eia.gov/wpsr/summary.txt",
+  "linked_document_gaps": [
+    "詳細表・PDFの全文は未取得。供給量を最終消費量と断定しない"
+  ],
+  "facts_ja": [
+    "商業原油在庫は90万バレル減、留出油在庫は360万バレル減。",
+    "商業石油在庫全体は820万バレル減。"
+  ],
+  "inference_ja": [
+    "在庫減は供給余力の縮小と整合するが、価格上昇を単独で保証しない。"
+  ],
+  "published_at": null,
+  "published_at_status": "日付のみ確認、公表時刻不明。日本時間への日付換算は未確定",
+  "received_at": "2026-11-06T06:08:38Z",
+  "received_at_kind": "web_retrieved",
+  "notification_eligible": true,
+  "summary_ja_40": "米国の商業石油在庫が週間で減少し、原油と留出油の在庫減をＥＩＡの一次資料で確認。",
+  "content_sha256": "1ad45fcb9dfd9c40cc3d66ae543faca5cf660d4a9610c316714a26397a46b54d"
+}
