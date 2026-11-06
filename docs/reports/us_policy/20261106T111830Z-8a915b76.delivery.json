@@ -1,0 +1,49 @@
+{
+  "analysis_id": "20261106T111830Z-8a915b76",
+  "checked_at": "2026-11-06T11:22:08Z",
+  "content_commit": "3c67edd9c0764116143ba7dd0ca5406a094f9df7",
+  "github": {
+    "status": "verified",
+    "artifact_count": 5,
+    "matching_blob_hashes": 5,
+    "prior_files_unchanged": true,
+    "knowledge_record_count": 56,
+    "report_url": "https://github.com/samkaz15/invest/blob/3c67edd9c0764116143ba7dd0ca5406a094f9df7/docs/reports/us_policy/20261106T111830Z-8a915b76.ja.md"
+  },
+  "validation": {
+    "japanese_artifacts": {
+      "run_id": 42209382881,
+      "conclusion": "success"
+    },
+    "ci": {
+      "run_id": 42209382855,
+      "conclusion": "success"
+    }
+  },
+  "postgres": {
+    "run_id": 42209382994,
+    "job_id": 127863970671,
+    "head_sha": "3c67edd9c0764116143ba7dd0ca5406a094f9df7",
+    "status": "failure",
+    "error": "password authentication failed for user postgres",
+    "database_rows_verified": false,
+    "imported_count": null
+  },
+  "retry_queue": [
+    {
+      "source": "postgres",
+      "path": "data/knowledge/us/",
+      "reason": "保存済みJSONから再試行対象を維持。GitHub保存とDB反映成功を区別。"
+    }
+  ],
+  "notification": {
+    "new_important_release_count": 0,
+    "backfill_document_ids": [
+      "ustreas-dealer-agenda-202611-6240a8ae"
+    ],
+    "decision": "既報資料群の未回答質問票の補完で、新たな政策発表として再通知しない。",
+    "pc_status": "実機到達未確認。今回の補完文書は通知対象外。",
+    "external_gmail_sent": false
+  },
+  "persistent_task_changes": "なし"
+}
