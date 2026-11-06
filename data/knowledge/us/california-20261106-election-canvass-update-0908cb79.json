@@ -1,0 +1,37 @@
+{
+  "id": "california-20261106-election-canvass-update-0908cb79",
+  "source_url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026",
+  "title_en": "General Election November 3, 2026: canvass notice and results link excerpt",
+  "title_ja": "カリフォルニア州：集計・認証予定と選挙結果リンクの更新（抜粋）",
+  "published_at": null,
+  "publication_date": null,
+  "received_at": "2026-11-06T17:52:29.916951Z",
+  "received_at_kind": "web_retrieved",
+  "published_at_status": "案内自体の公表日時不明。11月3日の選挙日で代用しない。",
+  "topics": [
+    "elections"
+  ],
+  "original_text": "Vote-by-mail ballots must be postmarked on or before Election Day and received by November 10, 2026.\nBallots continue to be counted after Election Day during the official canvass period.\nCounty elections officials must complete final official results by December 3, 2026.\nThe Secretary of State will certify results on December 11, 2026.\nNovember 3, 2026, General Election Results\nFor up-to-date election results please visit: https://electionresults.sos.ca.gov/",
+  "translation_ja": "郵便投票は選挙日までの消印があり、2026年11月10日までに到着する必要がある。\n投票日の後も公式集計期間中に開票が続く。\n郡選挙当局は2026年12月3日までに最終公式結果を完成させる必要がある。\n州務長官は2026年12月11日に結果を認証する予定。\n\n2026年11月3日の一般選挙の結果\n最新の選挙結果は https://electionresults.sos.ca.gov/ を参照してください。",
+  "facts_ja": [
+    "取得ページで、郵便投票返送統計へのリンクから選挙結果サイトへのリンクに差し替わったことを確認した。",
+    "認証予定は12月11日のまま。認証完了、候補者当選、全国議席数を意味しない。",
+    "選挙結果サイトは追加のセキュリティ確認ページが表示され、票数・議席数の本文・表を取得できなかった。"
+  ],
+  "inference_ja": [
+    "案内リンクの変更だけから財政・通商政策や通貨の方向を判断しない。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "ページ内のその他の選挙案内と全リンク先は未保存・未翻訳。",
+    "https://electionresults.sos.ca.gov/ は追加のセキュリティ確認が必要で、実際の集計結果を未取得。"
+  ],
+  "notification_eligible": false,
+  "content_sha256": "28d84adbbe3b0601940df9af80fc95fb8e0582d16be2ec21a5fbe1db0784d26b",
+  "supersedes": "california-20261106-election-canvass-notice",
+  "retry_urls": [
+    "https://electionresults.sos.ca.gov/"
+  ],
+  "source_revision_note": "掲載本文の変更を新IDで保存。ページ更新時刻は不明。検証用・追跡用のリダイレクトURLは保存しない。"
+}
