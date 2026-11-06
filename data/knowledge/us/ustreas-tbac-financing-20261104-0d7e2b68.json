@@ -1,0 +1,77 @@
+{
+  "id": "ustreas-tbac-financing-20261104-0d7e2b68",
+  "source_url": "https://home.treasury.gov/system/files/221/TBACRecommendedFinancingTableByRefundingQuarter-11042026.pdf",
+  "title_en": "TBAC Recommended US Treasury Financing Schedule for November 2026–January 2027 Quarter",
+  "title_ja": "TBAC資金調達推奨表：過去実績・今期推奨・次期暫定案",
+  "published_at": null,
+  "publication_date": "2026-11-04",
+  "published_at_status": "財務省の四半期借換え文書一覧と資料名で公表日を確認。個別資料の正確な公表時刻は未確認。PDF作成時刻を公表時刻に使わない。",
+  "publication_date_source": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
+  "received_at": "2026-11-06T09:24:15Z",
+  "received_at_kind": "web_retrieved",
+  "received_at_note": "本文取得・視覚確認・翻訳検証の完了時刻。メール受信時刻ではない。",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "original_text": "TBAC RECOMMENDED US TREASURY FINANCING SCHEDULE FOR NOVEMBER 2026-JANUARY 2027 QUARTER\n\n                                                            * BILLIONS OF DOLLARS\n\n                         Auction       2-Year    3-Year     5-Year    7-Year    10-Year    20-Year    30-Year    5-Year    10-Year   30-Year     2-Year\n                         Month         Notes     Notes      Notes     Notes      Notes      Bonds      Bonds      TIPS      TIPS      TIPS        FRN\n                         May-26          69        58         70         44        42         16        25                   19                      28\n                         Jun-26          69        58         70         44        39         13        22         24                                28\n     Historical          Jul-26          69        58         70         44        39         13        22                   21                      30\n     Reference           Aug-26          69        58         70         44        42         16        25                               8           28\n                         Sep-26          69        58         70         44        39         13        22                   19                      28\n                         Oct-26          69        58         70         44        39         13        22         26                                30\n                         Nov-26          69        58         70         44        42         16        25                   19                      28\n Recommendations\n                         Dec-26          69        58         70         44        39         13        22         24                                28\n for this Refunding\n                         Jan-27          69        58         70         44        39         13        22                   21                      30\n     Provisional         Feb-27          69        58         70         44        42         16        25                               9           28\n   Indications for       Mar-27          69        58         70         44        39         13        22                   19                      28\n   Next Refunding        Apr-27          69        58         70         44        39         13        22         26                                30\n\n\n* This financing table is meant to be illustrative based on meeting discussions and does not indicate how Treasury will actually issue debt in the\nfuture.\n** Shaded area indicates actual prior auction sizes provided for reference.",
+  "translation_ja": "TBAC推奨・米国財務省資金調達日程：2026年11月～2027年1月期\n単位：十億米ドル（1＝10億米ドル）。空欄は原表の空欄を保持し、ゼロへ置換しない。TIPSは物価連動国債、FRNは変動利付国債。\n\n|区分|入札月|2年ノート|3年ノート|5年ノート|7年ノート|10年ノート|20年ボンド|30年ボンド|5年TIPS|10年TIPS|30年TIPS|2年FRN|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|過去実績・参考|2026-05|69|58|70|44|42|16|25||19||28|\n|過去実績・参考|2026-06|69|58|70|44|39|13|22|24|||28|\n|過去実績・参考|2026-07|69|58|70|44|39|13|22||21||30|\n|過去実績・参考|2026-08|69|58|70|44|42|16|25|||8|28|\n|過去実績・参考|2026-09|69|58|70|44|39|13|22||19||28|\n|過去実績・参考|2026-10|69|58|70|44|39|13|22|26|||30|\n|今回の借換えに対する推奨|2026-11|69|58|70|44|42|16|25||19||28|\n|今回の借換えに対する推奨|2026-12|69|58|70|44|39|13|22|24|||28|\n|今回の借換えに対する推奨|2027-01|69|58|70|44|39|13|22||21||30|\n|次回の借換えに対する暫定的示唆|2027-02|69|58|70|44|42|16|25|||9|28|\n|次回の借換えに対する暫定的示唆|2027-03|69|58|70|44|39|13|22||19||28|\n|次回の借換えに対する暫定的示唆|2027-04|69|58|70|44|39|13|22|26|||30|\n\n* この資金調達表は会合での討議に基づく例示を意図しており、財務省が将来実際にどのように債務を発行するかを示すものではない。\n** 灰色の部分は参考として示した過去の実際の入札規模。日本語表では「過去実績・参考」と表記した2026年5月～10月が該当する。\n",
+  "facts_ja": [
+    "TBACが2026年11月～2027年1月の年限別入札規模を推奨し、2027年2～4月を暫定的示唆として掲示。",
+    "表は例示で、将来の財務省の実際の発行を示さないと明記。",
+    "過去実績の網掛けと今期推奨・次期暫定案を区別。空欄をゼロにしない。"
+  ],
+  "inference_ja": [
+    "既存の四半期声明とTBAC議事録を補う表であり、新たな財務省の確定発行決定とは扱わない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "notification_reason": "11月4日付の既報の四半期借換え・TBAC文書群の未保存別添を補完。新たな政策変更として通知しない。",
+  "content_sha256": "d38ff5e1f2b5ec4c7a58299fa73f1a2f3eb8ebece07ed5f118dc9f9179f75e92",
+  "pdf": {
+    "sha256": "0d7e2b68c2ba1e1c051fee4fc552afdee8c8fa353e7ee9185deb0bae1a52a114",
+    "page_count": 1,
+    "ocr_used": false,
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "TBAC RECOMMENDED US TREASURY FINANCING SCHEDULE FOR NOVEMBER 2026-JANUARY 2027 QUARTER\n\n                                                            * BILLIONS OF DOLLARS\n\n                         Auction       2-Year    3-Year     5-Year    7-Year    10-Year    20-Year    30-Year    5-Year    10-Year   30-Year     2-Year\n                         Month         Notes     Notes      Notes     Notes      Notes      Bonds      Bonds      TIPS      TIPS      TIPS        FRN\n                         May-26          69        58         70         44        42         16        25                   19                      28\n                         Jun-26          69        58         70         44        39         13        22         24                                28\n     Historical          Jul-26          69        58         70         44        39         13        22                   21                      30\n     Reference           Aug-26          69        58         70         44        42         16        25                               8           28\n                         Sep-26          69        58         70         44        39         13        22                   19                      28\n                         Oct-26          69        58         70         44        39         13        22         26                                30\n                         Nov-26          69        58         70         44        42         16        25                   19                      28\n Recommendations\n                         Dec-26          69        58         70         44        39         13        22         24                                28\n for this Refunding\n                         Jan-27          69        58         70         44        39         13        22                   21                      30\n     Provisional         Feb-27          69        58         70         44        42         16        25                               9           28\n   Indications for       Mar-27          69        58         70         44        39         13        22                   19                      28\n   Next Refunding        Apr-27          69        58         70         44        39         13        22         26                                30\n\n\n* This financing table is meant to be illustrative based on meeting discussions and does not indicate how Treasury will actually issue debt in the\nfuture.\n** Shaded area indicates actual prior auction sizes provided for reference.",
+        "extraction_status": "extracted",
+        "translation_ja": "TBAC推奨・米国財務省資金調達日程：2026年11月～2027年1月期\n単位：十億米ドル（1＝10億米ドル）。空欄は原表の空欄を保持し、ゼロへ置換しない。TIPSは物価連動国債、FRNは変動利付国債。\n\n|区分|入札月|2年ノート|3年ノート|5年ノート|7年ノート|10年ノート|20年ボンド|30年ボンド|5年TIPS|10年TIPS|30年TIPS|2年FRN|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|過去実績・参考|2026-05|69|58|70|44|42|16|25||19||28|\n|過去実績・参考|2026-06|69|58|70|44|39|13|22|24|||28|\n|過去実績・参考|2026-07|69|58|70|44|39|13|22||21||30|\n|過去実績・参考|2026-08|69|58|70|44|42|16|25|||8|28|\n|過去実績・参考|2026-09|69|58|70|44|39|13|22||19||28|\n|過去実績・参考|2026-10|69|58|70|44|39|13|22|26|||30|\n|今回の借換えに対する推奨|2026-11|69|58|70|44|42|16|25||19||28|\n|今回の借換えに対する推奨|2026-12|69|58|70|44|39|13|22|24|||28|\n|今回の借換えに対する推奨|2027-01|69|58|70|44|39|13|22||21||30|\n|次回の借換えに対する暫定的示唆|2027-02|69|58|70|44|42|16|25|||9|28|\n|次回の借換えに対する暫定的示唆|2027-03|69|58|70|44|39|13|22||19||28|\n|次回の借換えに対する暫定的示唆|2027-04|69|58|70|44|39|13|22|26|||30|\n\n* この資金調達表は会合での討議に基づく例示を意図しており、財務省が将来実際にどのように債務を発行するかを示すものではない。\n** 灰色の部分は参考として示した過去の実際の入札規模。日本語表では「過去実績・参考」と表記した2026年5月～10月が該当する。\n",
+        "translation_status": "complete"
+      }
+    ],
+    "requires_visual_review": true,
+    "visual_review_complete": true,
+    "privacy_review_complete": true,
+    "visual_review_note": "1ページ全体を描画し、12か月・11年限列・空欄・網掛けの区分・脚注2件を確認。",
+    "privacy_review_note": "抽出本文・全PDFオブジェクト文字列・XMPメタデータ・注釈・埋込リンク/ファイルを確認。禁止情報なし。"
+  },
+  "raw_pdf_saved": true,
+  "redistribution_basis": "米財務省公式の政策添付表。個人情報・第三者著作物表示を含まない表を確認。",
+  "table_structure": {
+    "rows": 12,
+    "maturity_columns": 11,
+    "blank_cells_preserved": true,
+    "historical_reference_months": [
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "recommendation_months": [
+      "2026-11",
+      "2026-12",
+      "2027-01"
+    ],
+    "provisional_months": [
+      "2027-02",
+      "2027-03",
+      "2027-04"
+    ]
+  }
+}
