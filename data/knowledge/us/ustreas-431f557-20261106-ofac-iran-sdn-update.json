@@ -1,0 +1,60 @@
+{
+  "published_at": null,
+  "published_date": "2026-11-06",
+  "topics": [
+    "sanctions",
+    "other_us"
+  ],
+  "facts_ja": [
+    "実際の財務省メールと公開一次資料を取得した。",
+    "公表日は11月6日。公表時刻は未確認で、配信・受信・取得時刻とは区別する。",
+    "OFAC本文にカナダ所在の法人8社の追加指定が掲載され、組織種別はいずれもその他の金融仲介とされている。",
+    "各法人に大統領令13902第2条の二次制裁リスクへの参照がある。個別の金・原油取引、関税率、国債売買の記載はない。"
+  ],
+  "inference_ja": [],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "notification_decision": "法人の金融仲介業務に関するイラン制裁指定。取得本文には、金・原油取引や供給、関税、米国債との具体的な関連は記載されていないため、この通知経路の対象資産に関する新規通知には分類しない。",
+  "pdf_original": {
+    "saved": false,
+    "reason": "メール添付なし。個別OFAC告知本文にPDF資料へのリンクなし。"
+  },
+  "content_exclusions": [
+    "配信・登録・解除案内、メールアドレス、個人化URL、配送ヘッダー、ページ共通ナビゲーションは実質本文から除外。"
+  ],
+  "id": "ustreas-431f557-20261106-ofac-iran-sdn-update",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/431f557",
+  "title_en": "OFAC SDN List Update: Iran-related Designations",
+  "title_ja": "OFACのSDNリスト更新通知：イラン関連の指定",
+  "received_at": "2026-11-06T20:05:03Z",
+  "received_at_kind": "email_received",
+  "original_text": "Update to OFAC's list of Specially Designated Nationals (SDN) and Blocked Persons\n\nThe SDN list has recently been updated. Please visit this page to access the latest version of the SDN list [ https://ofac.treasury.gov/sanctions-list-service ]. Check this page periodically as it may also be updated if a new list-related format or product is offered.\n\nPlease visit this link for more information on today's update [ https://ofac.treasury.gov/recent-actions/20261106 ].",
+  "translation_ja": "OFACの特別指定国民および資産凍結対象者（SDN）リストの更新\n\nSDNリストが最近更新された。最新版のSDNリストは https://ofac.treasury.gov/sanctions-list-service で確認できる。新しいリスト関連の形式や提供物が追加された場合にも更新されることがあるため、このページを定期的に確認してほしい。\n\n本日の更新の詳細は https://ofac.treasury.gov/recent-actions/20261106 を参照してほしい。",
+  "bulletin_dispatched_at": "2026-11-06T15:01:00-05:00",
+  "bulletin_dispatched_at_precision": "minute",
+  "related_document_ids": [
+    "ofac-20261106-iran-designations"
+  ],
+  "content_sha256": "743eeaac02c2249fc5a2f315cbb538571f674b9e9c6e93f3ab0fb97c5f0c1092",
+  "dedup_checked_records": 58,
+  "retrieval_checks": [
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions/20261106",
+      "status": 200,
+      "bytes": 43223,
+      "sha256": "cf37ea2f9ab9396c20163171e72b2b8bed23679f79d343769588424ef3dfdfbd",
+      "retrieved_at": "2026-11-06T20:06:45.447811+00:00"
+    },
+    {
+      "id": "bulletin",
+      "url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/431f557",
+      "status": 200,
+      "bytes": 13212,
+      "sha256": "768a078272e2655ea5bc5d10f704bd6ef9d351f06c10a73b7aa0bc12cac78a52",
+      "retrieved_at": "2026-11-06T20:06:45.287776+00:00"
+    }
+  ]
+}
