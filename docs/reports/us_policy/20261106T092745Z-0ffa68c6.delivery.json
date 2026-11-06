@@ -1,0 +1,54 @@
+{
+  "analysis_id": "20261106T092745Z-0ffa68c6",
+  "checked_at": "2026-11-06T09:31:34Z",
+  "content_commit": "643f5c0097ecb37cf79d312d1820f92a2c6c4ff1",
+  "github": {
+    "status": "verified",
+    "artifact_count": 7,
+    "matching_blob_hashes": 7,
+    "existing_blobs_unchanged": 342,
+    "knowledge_record_count": 55,
+    "report_url": "https://github.com/samkaz15/invest/blob/643f5c0097ecb37cf79d312d1820f92a2c6c4ff1/docs/reports/us_policy/20261106T092745Z-0ffa68c6.ja.md"
+  },
+  "validation": {
+    "japanese_artifacts": {
+      "run_id": 42195363318,
+      "conclusion": "success"
+    },
+    "ci": {
+      "run_id": 42195363295,
+      "conclusion": "success"
+    }
+  },
+  "postgres": {
+    "workflow": "US knowledge database sync",
+    "run_id": 42195363194,
+    "job_id": 127817173214,
+    "head_sha": "643f5c0097ecb37cf79d312d1820f92a2c6c4ff1",
+    "status": "failure",
+    "error": "password authentication failed for user postgres",
+    "database_rows_verified": false,
+    "imported_count": null,
+    "retry_scope": "保存済みdata/knowledge/us/*.jsonから再試行可能。GitHub保存をDB反映成功と扱わない。"
+  },
+  "notification": {
+    "new_important_release_count": 0,
+    "decision": "新着重要発表は取得できた範囲に確認できず、既報資料の翻訳・別添補完のため重複通知を抑止。",
+    "supplemented_document_ids": [
+      "eia-wpsr-20261104-overview-full-7ebdc53d",
+      "ustreas-tbac-financing-20261104-0d7e2b68"
+    ],
+    "pc_status": "実機配信未確認、今回の2文書はnotification_eligible=false",
+    "external_gmail_sent": false
+  },
+  "retry_queue": [
+    {
+      "source": "postgres",
+      "paths": [
+        "data/knowledge/us/"
+      ],
+      "reason": "認証エラー。今回の保存・翻訳は完了、PostgreSQL反映は未確認。既存の同期経路で再試行対象を維持。"
+    }
+  ],
+  "persistent_task_changes": "なし。Gmail webhookと調査タスクを停止・変更・削除していない。"
+}
