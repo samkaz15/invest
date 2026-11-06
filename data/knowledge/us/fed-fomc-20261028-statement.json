@@ -1,0 +1,31 @@
+{
+  "id": "fed-fomc-20261028-statement",
+  "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+  "title_en": "Federal Reserve issues FOMC statement",
+  "title_ja": "背景資料：10月28日FOMC声明",
+  "published_at": "2026-10-28T14:00:00-04:00",
+  "publication_date": "2026-10-28",
+  "received_at": "2026-11-06T07:53:43Z",
+  "received_at_kind": "web_retrieved",
+  "received_at_note": "取得本文の取り込み・検証完了時刻。メール受信時刻ではない。",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "original_text": "October 28, 2026\n### Federal Reserve issues FOMC statement\n\nFor release at 2:00 p.m. EDT\n\nThe Federal Open Market Committee approved the following statement for release by a 10 – 2 vote:\n\nThe Committee decided to maintain the target range for the federal funds rate at 3-3/4 to 4 percent, in support of the Federal Reserve's dual mandate. The Committee is continuing its policy of maintaining ample reserves in the banking system.\nEconomic activity is expanding at a strong pace. While uncertainty remains elevated owing, in part, to geopolitical developments, domestic spending has been resilient. Productivity growth is strong, and capital investment is robust. Job gains have kept pace with the workforce, and the unemployment rate has changed little.\nInflation remains elevated. The accumulation of more information will help the Committee determine the policy stance appropriate to ensure a timely return of inflation to the Committee's 2 percent goal. The Committee will deliver price stability.\n\n\n\nVoting against the monetary policy action were Lisa D. Cook and Beth M. Hammack, who preferred to raise the target range for the federal funds rate by 1/4 percentage point at this meeting.",
+  "translation_ja": "FRBのFOMC声明：2026年10月28日、米東部夏時間14時公表。\n\n連邦公開市場委員会は10対2で次の声明を承認した。\n\nFRBの二つの使命を支えるため、フェデラルファンド金利の目標レンジを3.75～4.00%に維持することを決定した。銀行システムで潤沢な準備預金を維持する方針を継続する。\n\n経済活動は力強いペースで拡大している。地政学的動向などにより不確実性は高いものの、国内支出は底堅い。生産性の伸びは強く、設備投資は堅調である。雇用増は労働力の増加に見合い、失業率はほとんど変化していない。\n\nインフレは依然高い。追加情報の蓄積は、2%の目標への適時の復帰を確実にする適切な政策姿勢の判断に役立つ。委員会は物価安定を実現する。\n\nLisa D. CookとBeth M. Hammackは反対し、今回の会合で目標レンジの0.25ポイント引上げを望んだ。",
+  "facts_ja": [
+    "政策金利目標レンジ3.75～4.00%、採決10対2。反対2名は0.25ポイント利上げを希望。"
+  ],
+  "inference_ja": [],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "content_sha256": "e69f0f202b8cdc1b0487984d734ce60b16d64bd89f99d56bfea7055a7d5b3cec",
+  "source_tier": 1,
+  "collection_reason": "期間外の政策基準点を確認。新着ニュースとして通知しない。",
+  "redactions": [
+    "本文後の報道問い合わせ先・連絡先を保存対象から除外。政策本文は全訳。"
+  ]
+}

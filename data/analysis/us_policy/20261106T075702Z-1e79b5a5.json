@@ -1,0 +1,451 @@
+{
+  "id": "20261106T075702Z-1e79b5a5",
+  "as_of": "2026-11-06T07:57:02Z",
+  "document_ids": [
+    "ustreas-sb0679-20261104-tbac-report",
+    "ustreas-sb0680-20261104-tbac-minutes",
+    "ustreas-buybacks-20261104-7fd8bf40",
+    "fed-fomc-20261028-statement",
+    "fed-fomc-20261028-implementation",
+    "nyfed-20261030-treasury-small-value-sale",
+    "nyfed-treasury-20261106-current-plan-excerpt",
+    "nyfed-20261105-purchase-e278e0dc",
+    "nyfed-20261103-sale-3f679836"
+  ],
+  "prior_analysis_id": "20261106T060838Z-e5cb5c48",
+  "initial_run": false,
+  "summary_ja_40": "米連銀の国債購入実績と小額売却演習を確認。財務省諮問委員会の増発提言も新規保存。",
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "status": "partial",
+      "requested_from": "2026-11-04T00:00:00-05:00",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "11/4 TBAC報告・議事録本文を全訳。両資料の8:30米東部時間公表を四半期資料一覧で確認。最新一覧11/5の制裁・投資資料は既存メール記録にあり再通知なし。TBAC推奨表・討議チャートは未取得。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "status": "incomplete",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "結果一覧は取得できたが個別入札の実績行は未取得。応募倍率・利回り・海外購入主体の推測はしない。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "status": "partial",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "11/4暫定日程のPDF全1頁・20行・全脚注を抽出と描画で照合し全訳。原本の権利・個人情報を確認。対象CUSIP確定一覧・個別買い戻し実績は未取得。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "status": "checked_primary_background",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "一覧の最新会合は10/27～28。今回対象期間の新規決定は表示範囲で未確認。政策基準点として期間外の10/28声明と実施要領を直接取得・全訳し、3.75～4.00%のレンジと再投資・準備預金管理購入指令を確認。背景として保存し新着通知しない。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "status": "partial",
+      "requested_from": "2026-11-03T00:00:00-05:00",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "公式OpenAPI仕様を取得し、11/3～11/6日付指定の全売買結果APIを直接取得。11/5短期国債購入と11/3小額売却の2件。26行・58行の全明細を保存し合計を検算。全行価格NA。売却の目的を10/30個別公式声明で確認、現行月次予定行も取得。11/6は米国の営業日途中で将来のオペ有無を保証しない。API応答には最終更新時刻のTZなし。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "status": "partial",
+      "requested_from": "2026-11-04T00:00:00-05:00",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "大統領令一覧の最新は11/5国立記念物。前回11/5オレシュキ声明の説明部分は保存済みで再通知しない。後半演説の原文・訳は未完了。11/3宇宙宣言は個別ページを取得したが本文の保存・訳・投資政策分類の精査は未完了。戦況の独立検証なし。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "status": "checked_duplicate_partial",
+      "requested_from": "2026-11-04T00:00:00-05:00",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "最新一覧11/5。11/4イラン・ベネズエラ個別ページを再取得し既存メール文書と公開リンクを照合。制裁・一般許可の重複を再通知しない。SDN個人の住所・旅券番号等の表は保存しない。既存保存範囲外のAlert等の全添付網羅は未完了。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "status": "partial",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "週次入口の最新アーカイブは11/4。Summary本文は前回保存済みで再通知なし。対象週10/30。別添全統計表・全PDFの取得は未完了。新着なしと欠損を区別する。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "status": "incomplete",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "FECの認証責任は州当局との説明と州一覧を取得。Arizona入口を再取得した際403。Pennsylvania統計入口まで取得、2026集計・認証文書自体は未取得。他州未確認。州認証・通信社当確・政党支配の確定は判断しない。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "status": "checked_index",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "公式入口とPress Releases一覧を再取得。表示最新は8/7で対象期間の新規掲載は未確認。全ての投資政策発表不存在を意味しない。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "status": "partial",
+      "requested_from": "2026-11-04T00:00:00-05:00",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "11/4 TBAC報告・議事録本文を全訳。両資料の8:30米東部時間公表を四半期資料一覧で確認。最新一覧11/5の制裁・投資資料は既存メール記録にあり再通知なし。TBAC推奨表・討議チャートは未取得。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "status": "incomplete",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "結果一覧は取得できたが個別入札の実績行は未取得。応募倍率・利回り・海外購入主体の推測はしない。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "status": "partial",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "11/4暫定日程のPDF全1頁・20行・全脚注を抽出と描画で照合し全訳。原本の権利・個人情報を確認。対象CUSIP確定一覧・個別買い戻し実績は未取得。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "status": "partial",
+      "requested_from": "2026-11-03T00:00:00-05:00",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "公式OpenAPI仕様を取得し、11/3～11/6日付指定の全売買結果APIを直接取得。11/5短期国債購入と11/3小額売却の2件。26行・58行の全明細を保存し合計を検算。全行価格NA。売却の目的を10/30個別公式声明で確認、現行月次予定行も取得。11/6は米国の営業日途中で将来のオペ有無を保証しない。API応答には最終更新時刻のTZなし。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "status": "partial",
+      "requested_from": "2026-11-04T00:00:00-05:00",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "大統領令一覧の最新は11/5国立記念物。前回11/5オレシュキ声明の説明部分は保存済みで再通知しない。後半演説の原文・訳は未完了。11/3宇宙宣言は個別ページを取得したが本文の保存・訳・投資政策分類の精査は未完了。戦況の独立検証なし。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "status": "checked_duplicate_partial",
+      "requested_from": "2026-11-04T00:00:00-05:00",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "最新一覧11/5。11/4イラン・ベネズエラ個別ページを再取得し既存メール文書と公開リンクを照合。制裁・一般許可の重複を再通知しない。SDN個人の住所・旅券番号等の表は保存しない。既存保存範囲外のAlert等の全添付網羅は未完了。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "status": "partial",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "週次入口の最新アーカイブは11/4。Summary本文は前回保存済みで再通知なし。対象週10/30。別添全統計表・全PDFの取得は未完了。新着なしと欠損を区別する。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "status": "incomplete",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "requested_through": "2026-11-06T07:57:02Z",
+      "checked_at": "2026-11-06T07:57:02Z",
+      "note": "FECの認証責任は州当局との説明と州一覧を取得。Arizona入口を再取得した際403。Pennsylvania統計入口まで取得、2026集計・認証文書自体は未取得。他州未確認。州認証・通信社当確・政党支配の確定は判断しない。",
+      "coverage": "実際に表示・取得できた範囲。完全網羅の証明ではない。",
+      "watermark_method": "既存文書の公表日時を優先。日付しかない場合は当日の開始へ切り下げて24時間重ね、未完了分は初回期間から再試行。"
+    }
+  ],
+  "facts": [
+    {
+      "label": "FACT",
+      "document_id": "nyfed-20261105-purchase-e278e0dc",
+      "text": "NY連銀の11/5短期国債購入は額面3,652,000,000ドル落札、応募37,349,000,000ドル。決済日項目は11/6。購入価格はNAで未確認。"
+    },
+    {
+      "label": "FACT",
+      "document_id": "nyfed-20261103-sale-3f679836",
+      "text": "11/3の名目利付国債売却は額面50,000,000ドル、応募475,000,000ドル。別の10/30公式声明により運営準備の小額演習と確認。金融引締め転換とみなさない。"
+    },
+    {
+      "label": "FACT",
+      "document_id": "ustreas-sb0680-20261104-tbac-minutes",
+      "text": "委員会は現行入札規模維持を勧告しつつ、2027会計年度後半の増発可能性と2～10年区分への集中を議論。提言であり財務省の決定ではない。"
+    },
+    {
+      "label": "FACT",
+      "document_id": "ustreas-buybacks-20261104-7fd8bf40",
+      "text": "買い戻し暫定日程は全20行。11/12のTIPSは最大7.5億ドル。最初2行は8月借換え四半期に属し、表全体の合計を次四半期上限と同一視しない。"
+    }
+  ],
+  "reported": [
+    {
+      "label": "REPORTED",
+      "document_id": "ustreas-sb0679-20261104-tbac-report",
+      "attribution": "TBACの委員会評価・市場叙述",
+      "text": "金利上昇は主に成長・政策予想・エネルギー価格に由来し、技術関連起債による国債需要の持続的な締出しの証拠はないという評価。独立した因果識別ではない。"
+    },
+    {
+      "label": "REPORTED",
+      "document_id": "ustreas-sb0680-20261104-tbac-minutes",
+      "attribution": "ディーラー中央値予測",
+      "text": "現行規模等を前提に2028～29会計年度の資金不足2兆1,400億ドルを示唆。実現赤字や決定済み発行額ではない。"
+    }
+  ],
+  "causal_channels": [
+    {
+      "label": "INFERENCE",
+      "channel": "国債・資金需給",
+      "text": "利付債供給増や企業設備投資の資金需要→資金吸収競争→吸収需要が不足する場合に期間利回り上昇圧力。ただし委員会は最近の国債需要を底堅いと評価し、実際の入札実績が欠けるため方向未確定。"
+    },
+    {
+      "label": "INFERENCE",
+      "channel": "原油供給→物価→政策金利",
+      "text": "供給障害が持続→原油・燃料・輸送費→物価圧力→利下げ余地制約/引締め期待。需要減や代替供給で反転し得る。TBACの物価叙述はBLSの原表と未照合で、ここからCPI数値を予測しない。"
+    },
+    {
+      "label": "INFERENCE",
+      "channel": "中央銀行オペと金",
+      "text": "今回購入実績は短期国債。現行月次計画は再投資購入・RMPなしであり、期間別オペ目的と整合するが、単発購入から量的緩和や金融緩和転換を断定しない。実質金利上昇は金の機会費用を増やし得る一方、安全資産需要と競合する。"
+    },
+    {
+      "label": "INFERENCE",
+      "channel": "小額演習",
+      "text": "売却50百万ドルは運営準備確認。2020年の景気・市場機能支援策や政策転換と同一視せず、ドル高や金安の材料と機械的に扱わない。"
+    }
+  ],
+  "historical_comparisons": [
+    {
+      "case_id": "oil-shock-1973-1974",
+      "source_url": "https://www.federalreservehistory.org/essays/oil-shock-of-1973-74",
+      "source_kind": "official_retrospective_history",
+      "similarity": "供給障害→エネルギー価格→物価・金融政策制約という経路。",
+      "difference": "1973年禁輸・減産と今回TBACの供給障害叙述は範囲・制度が異なる。",
+      "initial_conditions": {
+        "historical_inflation": "初期要約に当時公表値なし。数値比較未実施。",
+        "historical_rates_real_rates": "当時のvintage金利・実質金利未取得。",
+        "historical_liquidity": "当時の資金市場系列未取得。",
+        "historical_energy_structure": "禁輸・輸入依存を論点とするが米国の当時/現在の純輸入・産業構造系列を未取得。",
+        "current": "FOMCレンジ3.75～4.00%を一次確認。現在の期待インフレ・実質金利・供給障害量・織り込み系列は未取得。"
+      },
+      "status": "定性比較のみ。後年の解説を1973年当時の利用可能情報に混ぜない。"
+    },
+    {
+      "case_id": "great-recession-2007-2009",
+      "source_url": "https://www.federalreservehistory.org/essays/great-recession-of-200709",
+      "source_kind": "official_retrospective_history",
+      "similarity": "信用市場の悪化が国債安全需要と投資資金需要を変える点を比較する。",
+      "difference": "当時は住宅・信用危機と需要収縮。今回TBACは設備投資の強さとエネルギー制約を述べており、同等の銀行危機の証拠は取得していない。",
+      "initial_conditions": {
+        "inflation_rates": "危機開始時の物価・政策金利・実質金利の当時公表系列未取得。",
+        "liquidity": "当時の信用収縮と今回の再投資・演習は別現象。現在の銀行/信用ストレス系列も未取得。",
+        "energy_structure": "両時点の純輸出入・原油供給構造の定量比較未実施。"
+      },
+      "status": "回顧史料による対照。バックテスト未実施。"
+    },
+    {
+      "case_id": "fed-response-2020-03-15",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200315a1.htm",
+      "source_kind": "contemporaneous_official_release",
+      "similarity": "中央銀行の証券購入を目的・年限・金利環境から分解する。",
+      "difference": "2020年はFF0～0.25%、国債少なくとも5,000億ドルとMBS少なくとも2,000億ドル増加の指令。今回はFF3.75～4.00%、短期国債への再投資、別途小額売却演習であり、緊急緩和と同一でない。",
+      "initial_conditions": {
+        "inflation": "両時点の実測/期待インフレvintage未取得。現在のインフレ高との判断はFOMC本文に帰属。",
+        "rates": "政策レンジは両時点の公式資料による。実質金利は未比較。",
+        "liquidity": "2020年は市場機能支援。今回月次計画は準備管理購入なし・再投資中心。準備預金残高系列未取得。",
+        "energy_structure": "両時点の原油需要ショック・供給構造の一次系列未取得。"
+      },
+      "status": "当時の発表に限定。価格反応や予測精度は未検証。"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "基本",
+      "horizon": "days",
+      "conditions": "新たな金融政策決定がなく、次の入札・オペ結果を確認する。",
+      "interpretation": "小額演習を政策転換と扱わず、国債発行・財務省買戻し・FRB再投資を分離。金と通貨の方向は未確定。"
+    },
+    {
+      "name": "資金需要/インフレ上振れ",
+      "horizon": "weeks",
+      "conditions": "設備投資資金需要とエネルギー供給障害が持続し、入札需要の弱まり・実質金利上昇を原データで確認する。",
+      "interpretation": "米国金利とドル需要を押し上げ得る。金は実質金利の逆風と安全需要が競合。相手国も引締めならペア方向は逆になり得る。"
+    },
+    {
+      "name": "需要・成長下振れ",
+      "horizon": "months",
+      "conditions": "技術投資の減速・信用スプレッド拡大・エネルギー供給回復を一次資料で確認する。",
+      "interpretation": "物価圧力/資金需要の低下や国債安全需要から利回り低下経路がある。ドルは金利差縮小とドル資金需要で相反し、方向未確定。"
+    }
+  ],
+  "currency_pairs": [
+    {
+      "pair": "USDJPY",
+      "status": "判断保留",
+      "reason": "相手国側の直近一次資料と同時点の金利差・相場を今回取得していない。以下は検証すべき条件で、現時点の買い売り判断ではない。",
+      "conditional_path": "米金利見通し上昇が日本側を上回り、日本の成長・政策と同時点相場でも確認できる場合はUSD側が買われやすい仮説。",
+      "invalidation": "日銀の相対的引締め強化、円への退避需要、米金利見通し低下。"
+    },
+    {
+      "pair": "EURUSD",
+      "status": "判断保留",
+      "reason": "相手国側の直近一次資料と同時点の金利差・相場を今回取得していない。以下は検証すべき条件で、現時点の買い売り判断ではない。",
+      "conditional_path": "米金利・成長の相対優位をECB資料と欧州景気でも確認できる場合はUSD側優位の仮説。",
+      "invalidation": "ECBのより強い引締め、欧州成長の相対改善、米国信用不安。"
+    },
+    {
+      "pair": "USDCHF",
+      "status": "判断保留",
+      "reason": "相手国側の直近一次資料と同時点の金利差・相場を今回取得していない。以下は検証すべき条件で、現時点の買い売り判断ではない。",
+      "conditional_path": "米金利差の拡大をSNB側資料で確認し、安全需要がCHFへ集中しない場合はUSD側優位の仮説。",
+      "invalidation": "CHFへの安全需要集中、SNBの政策差変化。"
+    },
+    {
+      "pair": "USDCAD",
+      "status": "判断保留",
+      "reason": "相手国側の直近一次資料と同時点の金利差・相場を今回取得していない。以下は検証すべき条件で、現時点の買い売り判断ではない。",
+      "conditional_path": "原油高が米インフレとカナダ交易条件の双方へ作用するため、BoC・生産輸出資料で相対効果を確認してから判断。",
+      "invalidation": "原油供給回復、カナダ成長/政策の逆方向変化。"
+    },
+    {
+      "pair": "AUDUSD",
+      "status": "判断保留",
+      "reason": "相手国側の直近一次資料と同時点の金利差・相場を今回取得していない。以下は検証すべき条件で、現時点の買い売り判断ではない。",
+      "conditional_path": "米金利差と豪州の景気・資源需要・RBA資料を照合し、米優位が確認された場合にUSD側優位の仮説。",
+      "invalidation": "豪州の相対的引締め、資源需要改善、米金利低下。"
+    }
+  ],
+  "invalidations": [
+    "次回入札が十分な需要を示し増発吸収懸念が後退。",
+    "実質金利・インフレ期待が供給ショック仮説と反対へ動く。",
+    "技術投資の強さが雇用・生産原表で確認されない。",
+    "新たなFOMC指令が公表され、今回の再投資中心の前提が変わる。"
+  ],
+  "review_after": "2026-11-13T07:57:02Z",
+  "reviews": [
+    {
+      "analysis_id": "20261106T060838Z-e5cb5c48",
+      "review_after": "2026-11-13T06:08:38Z",
+      "status": "not_due",
+      "note": "元分析は保持。期限到来後の市場・反証データによる検証はまだ行わない。"
+    }
+  ],
+  "history_validation": "公開史料付き初期3件のみ。全経済史の学習・数値予測・価格時系列バックテストは未実施。",
+  "retry_queue": [
+    {
+      "source": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "reason": "個別の入札実績・表が未取得。"
+    },
+    {
+      "source": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "reason": "個別の買い戻し実績とCUSIP確定一覧が未取得。"
+    },
+    {
+      "source": "treasury_news",
+      "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
+      "reason": "別添の推奨資金調達表・討議資料が未取得。"
+    },
+    {
+      "source": "white_house",
+      "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-unites-russia-and-ukraine-at-the-white-house-following-historic-ceasefire/",
+      "supersedes": "whitehouse-20261105-oleshky-meeting-excerpt",
+      "reason": "11/5声明の後半演説の原文保存・翻訳未完了。"
+    },
+    {
+      "source": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "reason": "Summary以外の全統計表・PDF未取得。"
+    },
+    {
+      "source": "fec_results",
+      "url": "https://azsos.gov/elections",
+      "reason": "403。認証資料未取得。"
+    },
+    {
+      "source": "fec_results",
+      "url": "https://www.pa.gov/agencies/dos/resources/voting-and-elections-resources/voting-and-election-statistics",
+      "reason": "2026年の結果・州認証本文未取得。他州も未確認。"
+    },
+    {
+      "source": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "reason": "銘柄別価格NAの後日公表を再確認。APIの最終更新TZ未付記。"
+    },
+    {
+      "source": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/11/the-american-declaration-of-freedom-in-space/",
+      "reason": "期間内未処理の宇宙宣言本文の保存・翻訳・市場関連性精査を再試行。"
+    }
+  ],
+  "dedup": {
+    "existing_record_count": 31,
+    "method": "既存全JSONを取得し本文内の公開一次URL、source_url、公表時刻/日付、content_sha256を照合。新規URLの原文ハッシュを計算。メール由来の既存制裁・投資文書を再保存/再通知しない。",
+    "corrections": "旧JSONは変更しない。新規文書は別ID。今回旧レコードの差替えなし。"
+  },
+  "github_status": "保存予定。コミット参照更新・読み戻しで別途確認。",
+  "postgres_status": "本コミットの同期は保存後に確認。前回コミットの認証失敗と区別。",
+  "pc_status": "所有者のMacでの配信・読み上げは確認できない。"
+}

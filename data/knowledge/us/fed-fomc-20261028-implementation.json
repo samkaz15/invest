@@ -1,0 +1,30 @@
+{
+  "id": "fed-fomc-20261028-implementation",
+  "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm",
+  "title_en": "Implementation Note issued October 28, 2026",
+  "title_ja": "背景資料：10月28日FOMC実施要領",
+  "published_at": null,
+  "publication_date": "2026-10-28",
+  "received_at": "2026-11-06T07:53:43Z",
+  "received_at_kind": "web_retrieved",
+  "received_at_note": "取得本文の取り込み・検証完了時刻。メール受信時刻ではない。",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "original_text": "October 28, 2026\n### Implementation Note issued October 28, 2026\n\nDecisions Regarding Monetary Policy Implementation\n\nThe Federal Reserve has made the following decisions to implement the monetary policy stance announced by the Federal Open Market Committee in its statement on October 28, 2026:\n\n  * The Board of Governors of the Federal Reserve System voted unanimously to maintain the interest rate paid on reserve balances at 3.90 percent, effective October 29, 2026.\n  * As part of its policy decision, the Federal Open Market Committee voted to direct the Open Market Desk at the Federal Reserve Bank of New York, until instructed otherwise, to execute transactions in the System Open Market Account in accordance with the following domestic policy directive:\n> \"Effective October 29, 2026, the Federal Open Market Committee directs the Desk to:\n>\n>     * Undertake open market operations as necessary to maintain the federal funds rate in a target range of 3-3/4 to 4 percent.\n>     * Conduct standing overnight repurchase agreement operations at a rate of 4.0 percent.\n>     * Conduct standing overnight reverse repurchase agreement operations at an offering rate of 3.75 percent and with a per-counterparty limit of $160 billion per day.\n>     * When appropriate, increase the System Open Market Account holdings of securities through purchases of Treasury bills and, if needed, other Treasury securities with remaining maturities of 3 years or less to maintain an ample level of reserves.\n>     * Roll over at auction all principal payments from the Federal Reserve's holdings of Treasury securities. Reinvest all principal payments from the Federal Reserve's holdings of agency securities into Treasury bills.\"\n  * In a related action, the Board of Governors of the Federal Reserve System voted unanimously to approve the establishment of the primary credit rate at the existing level of 4.0 percent.\n\nThis information will be updated as appropriate to reflect decisions of the Federal Open Market Committee or the Board of Governors regarding details of the Federal Reserve's operational tools and approach used to implement monetary policy.\nMore information regarding open market operations and reinvestments may be found on the Federal Reserve Bank of New York's website.",
+  "translation_ja": "2026年10月28日公表：金融政策実施に関する決定\n\nFRBは、10月28日のFOMC声明で発表した政策姿勢を実施するため、次の決定を行った。\n\n・理事会は全会一致で、準備預金への付利金利を3.90%に維持し、2026年10月29日から適用することを決定した。\n・FOMCは別途指示するまで、NY連銀の公開市場デスクに対し、以下の国内政策指令に従ってSOMA取引を行うよう議決した。\n\n「2026年10月29日から、デスクに次を指示する。\n・フェデラルファンド金利を3.75～4.00%の目標レンジに維持するため、必要な公開市場操作を実施する。\n・常設翌日物レポ・オペを4.0%で実施する。\n・常設翌日物リバースレポ・オペを提示金利3.75%、取引先ごとの1日上限1,600億ドルで実施する。\n・潤沢な準備預金水準を維持するため、適切な場合には短期国債、必要なら残存3年以下の他の国債を購入し、SOMAの証券保有を増やす。\n・FRB保有国債の元本返済を全て入札で借り換える。FRB保有の政府機関証券の元本返済を全て短期国債へ再投資する。」\n\n・関連措置として、理事会は全会一致でプライマリー・クレジット金利を現行の4.0%に維持することを承認した。\n\nこの情報は、FOMCまたは理事会による運営手段・政策実施方法の詳細決定を反映し、必要に応じ更新される。公開市場操作・再投資の詳しい情報はNY連銀のウェブサイトに掲載される。",
+  "facts_ja": [
+    "政府機関証券の元本返済を短期国債へ全額再投資する指令と、適切な場合の準備預金管理購入を区別した。"
+  ],
+  "inference_ja": [],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "content_sha256": "36db5baccef138483799ebdc57c43db5de1c23aae4650ea0b05bfd849519af0b",
+  "source_tier": 1,
+  "published_at_status": "資料の日付またはオペ日は判明。公表時刻とタイムゾーンを同時に確定できず、取得時刻で代用しない。",
+  "effective_date": "2026-10-29",
+  "collection_reason": "期間外の現行オペ指令を確認。新着ニュースとして通知しない。"
+}
