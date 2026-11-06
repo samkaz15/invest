@@ -1,0 +1,34 @@
+{
+  "id": "fincen-20261106-mexc-notice-metadata",
+  "source_url": "https://www.fincen.gov/resources/statutes-regulations/federal-register-notices/imposition-special-measure-prohibiting-4",
+  "title_en": "Imposition of Special Measure Prohibiting the Transmittals of Funds Involving MEXC Global",
+  "title_ja": "MEXC関連送金禁止措置のFinCEN告知メタデータ",
+  "published_at": null,
+  "received_at": "2026-11-06T22:02:31.351294+00:00",
+  "retrieved_at": "2026-11-06T22:02:31.351294+00:00",
+  "received_at_kind": "public_source_retrieval_not_email_receipt",
+  "publication_date": "2026-11-06",
+  "publication_timezone": null,
+  "publication_time_status": "not_stated",
+  "topics": [
+    "investment_policy",
+    "other_us"
+  ],
+  "original_text": "Imposition of Special Measure Prohibiting the Transmittals of Funds Involving MEXC Global\nMEXC-Section-9714 (398.45 KB)\nRelease Date: November 06, 2026\nAction Type: Final Rule",
+  "translation_ja": "MEXC Globalを伴う送金を禁止する特別措置の賦課。添付：MEXC-Section-9714（398.45 KB）。公表日：2026年11月6日。措置種別：最終規則。",
+  "facts_ja": [
+    "FinCEN告知ページの掲載日とAction Typeを記録。添付PDF原本ハッシュは既存24ページ文書と一致。",
+    "このページの分類だけでは官報掲載日・確定発効日を確認できない。既報措置の重複通知はしない。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "1d7f69493430ea30b53c7e4faf8154d1b668780e6fd88ce51529f34bf057fced",
+  "translation_status": "complete",
+  "content_scope": "full_substantive_notice_metadata_linked_pdf_deduplicated",
+  "notification_eligible": false,
+  "missing_parts": [],
+  "source_kind": "official_public_source",
+  "supersedes": null,
+  "related_document_ids": [
+    "fincen-mexc-section-9714-b2fabc71"
+  ]
+}

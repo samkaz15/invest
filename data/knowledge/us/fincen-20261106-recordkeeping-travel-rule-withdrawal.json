@@ -1,0 +1,41 @@
+{
+  "id": "fincen-20261106-recordkeeping-travel-rule-withdrawal",
+  "source_url": "https://www.fincen.gov/news/news-releases/fincen-announces-withdrawal-proposed-rule-related-recordkeeping-and-travel-rule",
+  "title_en": "FinCEN Announces Withdrawal of Proposed Rule Related to Recordkeeping and Travel Rule Obligations",
+  "title_ja": "FinCEN・FRBが記録保存・トラベルルール改正案の撤回を発表",
+  "published_at": null,
+  "received_at": "2026-11-06T22:02:31.531216+00:00",
+  "retrieved_at": "2026-11-06T22:02:31.531216+00:00",
+  "received_at_kind": "public_source_retrieval_not_email_receipt",
+  "publication_date": "2026-11-06",
+  "publication_timezone": null,
+  "publication_time_status": "not_stated",
+  "topics": [
+    "investment_policy",
+    "other_us"
+  ],
+  "original_text": "The Financial Crimes Enforcement Network (FinCEN) is withdrawing a notice of proposed rulemaking that would have amended the Recordkeeping and Travel Rule regarding convertible virtual currencies. It also would have lowered the threshold for funds transfers and transmittals of funds that begin or end outside the United States. This proposal is being jointly withdrawn with the Federal Reserve Board of Governors.",
+  "translation_ja": "金融犯罪取締ネットワーク（FinCEN）は、交換可能な仮想通貨に関する記録保存ルールおよびトラベルルールを改正する規則制定案の告示を撤回します。この案は、米国外を起点または終点とする資金移転・送金に適用する基準額も引き下げるものでした。この案は、連邦準備制度理事会と共同で撤回されます。",
+  "facts_ja": [
+    "FinCENはFRBと共同で2020年の改正案を撤回すると発表した。",
+    "公表日は2026年11月6日。時刻・タイムゾーンは不明。"
+  ],
+  "inference_ja": [
+    "未施行の提案の撤回であり現行の3,000ドルの義務の廃止ではない。金・原油・国債価格や政策金利への直接効果は確認できない。"
+  ],
+  "content_sha256": "ac0166b01460dead5d0121e7c7b60dd2ec8c76bbca5a7b7414b3586c98ccc5cc",
+  "translation_status": "complete",
+  "content_scope": "full_substantive_document_excluding_site_navigation",
+  "notification_eligible": true,
+  "missing_parts": [],
+  "source_kind": "official_public_source",
+  "supersedes": null,
+  "summary_ja_40": "米当局が暗号資産や国外送金に関する記録保存・情報伝達ルールの改正案の撤回を発表。",
+  "primary_source_urls": [
+    "https://www.fincen.gov/news/news-releases/fincen-announces-withdrawal-proposed-rule-related-recordkeeping-and-travel-rule",
+    "https://public-inspection.federalregister.gov/2026-22809.pdf"
+  ],
+  "related_document_ids": [
+    "fincen-2026-22809-travel-rule-withdrawal-pdf"
+  ]
+}
