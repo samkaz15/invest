@@ -1,0 +1,38 @@
+{
+  "analysis_id": "20261106T075702Z-1e79b5a5",
+  "observed_at": "2026-11-06T07:59:23.420Z",
+  "github": {
+    "status": "success",
+    "content_commit": "866ba19b1827ee1247262296ed65522f6f856881",
+    "verified_artifact_count": 21,
+    "verification": "All 21 Git blob hashes matched prepared artifacts; report also read back in full.",
+    "japanese_artifacts_workflow": {
+      "run_id": 42184336604,
+      "conclusion": "success"
+    }
+  },
+  "postgres": {
+    "status": "failed",
+    "workflow": "US knowledge database sync",
+    "run_id": 42184336544,
+    "job_id": 127780997978,
+    "head_sha": "866ba19b1827ee1247262296ed65522f6f856881",
+    "failure": "password authentication failed for user postgres",
+    "database_rows_imported_confirmed": false,
+    "retry_required": true,
+    "retry_action": "接続設定修正後または次回実行で保存済みJSONを再同期。秘密情報を本文やGitへ保存しない。"
+  },
+  "pc": {
+    "status": "unverified",
+    "note": "実機Macの常駐・OS通知・読み上げはクラウドから確認できない。"
+  },
+  "retry_queue": [
+    {
+      "component": "postgres",
+      "run_id": 42184336544,
+      "reason": "authentication failure",
+      "status": "pending"
+    }
+  ],
+  "note": "元の分析・報告は変更せず、この付記で保存後の結果を記録。"
+}
