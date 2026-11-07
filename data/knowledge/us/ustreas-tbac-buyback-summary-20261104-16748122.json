@@ -1,0 +1,1019 @@
+{
+  "id": "ustreas-tbac-buyback-summary-20261104-16748122",
+  "source_url": "https://home.treasury.gov/system/files/221/CombinedChargesforArchivesQ42026.pdf",
+  "source": "U.S. Department of the Treasury, Treasury Borrowing Advisory Committee archives",
+  "title_en": "Summary of Treasury Buyback Results (Q4 2026 archive, printed page 46)",
+  "title_ja": "米財務省の国債買い戻し集計（四半期借換え資料、印刷46ページ）",
+  "published_at": null,
+  "publication_date_local": "2026-11-04",
+  "publication_time_note": "財務省の公開案内は当該資料群を11月4日08:30米東部時間と記載。PDF個別の掲載時刻は未確認。",
+  "publication_schedule_url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents/",
+  "received_at": "2026-11-07T13:26:25.127688+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "Summary of Treasury Buyback Results\n                                          Treasury Buyback Results from 8/18/26 to 10/27/26 (Current Refunding Quarter)1\n                       Maturity                         Total Number of   Total Par Amount   Total Purchase   Total Par Amount\n Operation Type                       Operation Size                                                                            Offer to Maximum     Buyback Ratio\n                       Sector                             Operations       Offered ($BN)     Maximum ($BN)    Purchased ($BN) 2\n            Formula                        A                  B                  C              D=A*B                 E             F=C/D               G=E/D\nCash Management 1Mo to 2Y               $12.5 BN               2               $56.3             $25.0              $25.0            2.25                1.00\n                     1Mo to 2Y                                 -                 -                 -                  -                -                   -\n                      2Y to 3Y                                 1               $14.8              $4.0              $1.3              3.7                0.3\n                      3Y to 5Y            $4 BN                1               $10.2              $4.0              $1.9              2.5                0.5\n                      5Y to 7Y                                 1               $8.4               $4.0              $1.2              2.1                0.3\n Liquidity Support 7Y to 10Y                                   1               $9.7               $4.0              $2.4              2.4                0.6\n                    10Y to 20Y                                 3               $97.7             $18.0              $17.2             5.4                1.0\n                                         $ 6 BN\n                    20Y to 30Y3                                4               $56.0             $20.0              $18.1             2.8                0.9\n                    Short TIPS          $750 MM                2               $8.7               $1.5              $1.4              5.8                0.9\n                     Long TIPS          $500 MM                1               $2.1               $0.5              $0.5              4.2                1.0\n              Total                                           16              $263.9             $81.0              $68.9             3.5                0.7\n\n                                                   Treasury Buyback Results from 5/29/24 to 10/27/26 (All Buybacks)\n                          Maturity        Total Number of      Total Par Amount     Total Purchase       Total Par Amount   Offer to Maximum        Buyback Ratio\n   Operation Type\n                           Sector           Operations          Offered ($BN)       Maximum ($BN)        Purchased ($BN)    (Min | Avg |Max)       (Min | Avg |Max)\n                          Formula                                      A                   B                     C               D=A/B                 E=C/B\n Cash Management         1Mo to 2Y                 27               $729.4              $272.0                $261.9          1.4 | 2.8 | 5.2       0.3 | 1.0 | 1.0\n                         1Mo to 2Y                 9                $320.2               $34.0                 $34.0         6.9 | 9.4 | 17.3       1.0 | 1.0 | 1.0\n                          2Y to 3Y                 10                $91.8               $38.0                 $20.8          1.2 | 2.5 | 4.4       0.1 | 0.6 | 1.0\n                          3Y to 5Y                 10               $111.4               $38.0                 $29.4          2.3 | 2.9 | 3.7       0.4 | 0.8 | 1.0\n                          5Y to 7Y                 10                $64.4               $38.0                 $16.1          0.9 | 1.8 | 3.2       0.1 | 0.4 | 0.9\n  Liquidity Support      7Y to 10Y                 10                $53.7               $38.0                  $6.1          0.8 | 1.4 | 2.6       0.0 | 0.2 | 0.6\n                         10Y to 20Y                28               $579.3               $68.0                 $67.2         1.7 | 9.2 | 18.0       0.9 | 1.0 | 1.0\n                         20Y to 30Y                29               $565.3               $70.0                 $65.1         1.7 | 9.3 | 18.2       0.1 | 0.9 | 1.0\n                         Short TIPS                19                $65.3               $12.0                 $10.7          1.7 | 5.4 | 8.7       0.3 | 0.9 | 1.0\n                         Long TIPS                 14                $18.5               $7.0                   $4.1          1.5 | 2.6 | 4.2       0.1 | 0.6 | 1.0\n               Total                              166              $2,599.2             $615.0                $515.3\n\n • Treasury has bought back about $43.9 BN of securities for liquidity support purposes and $25.0 BN of securities for cash\n   management purposes in the current refunding quarter thus far, with two more liquidity support operations scheduled in early\n   November.\n • Through October 2026 Treasury has bought back $515.3BN in total par amount, including $253.4BN for liquidity support\n   purposes and $261.9BN for cash management purposes.\n\n  (1) Data as of 10/27/26. Liquidity support buybacks for 10Y to 20Y and 1Mo to 2Y Nominal Coupons are scheduled for 11/4/26 and 11/5/26, respectively.               46\n  (2) Original par amount.\n  (3) The 20Y to 30Y Nominal Coupons buyback operation on 8/18/26 had a purchase maximum of $2 billion.",
+  "translation_ja": "### 財務省の買い戻し結果の概要\n\n#### 2026年8月18日～10月27日の財務省買い戻し結果（当該借換え四半期）［1］\n\n金額は10億米ドル。TIPSは物価連動国債。ダッシュは原表の表示を維持。サイズ欄は原表の結合セルに従う。\n\n| 目的 | 年限 | 1回の規模 A | 回数 B | 応札額面総額 C | 購入上限総額 D=A×B | 購入額面総額 E［2］ | 応札額÷上限 F=C÷D | 買い戻し比率 G=E÷D |\n|---|---|---:|---:|---:|---:|---:|---:|---:|\n| 資金管理 | 1カ月～2年 | 12.5 | 2 | 56.3 | 25.0 | 25.0 | 2.25 | 1.00 |\n| 流動性支援 | 1カ月～2年 | — | — | — | — | — | — | — |\n| 流動性支援 | 2～3年 | 4 | 1 | 14.8 | 4.0 | 1.3 | 3.7 | 0.3 |\n| 流動性支援 | 3～5年 | 4 | 1 | 10.2 | 4.0 | 1.9 | 2.5 | 0.5 |\n| 流動性支援 | 5～7年 | 4 | 1 | 8.4 | 4.0 | 1.2 | 2.1 | 0.3 |\n| 流動性支援 | 7～10年 | 4 | 1 | 9.7 | 4.0 | 2.4 | 2.4 | 0.6 |\n| 流動性支援 | 10～20年 | 6 | 3 | 97.7 | 18.0 | 17.2 | 5.4 | 1.0 |\n| 流動性支援 | 20～30年［3］ | 6 | 4 | 56.0 | 20.0 | 18.1 | 2.8 | 0.9 |\n| 流動性支援 | 短期TIPS | 0.750 | 2 | 8.7 | 1.5 | 1.4 | 5.8 | 0.9 |\n| 流動性支援 | 長期TIPS | 0.500 | 1 | 2.1 | 0.5 | 0.5 | 4.2 | 1.0 |\n| 合計 |  |  | 16 | 263.9 | 81.0 | 68.9 | 3.5 | 0.7 |\n\n訳注。合計行の比率は原表の表示を転記した。金額合計の単純比と一致しないため、算出方法を確認できるまで合計金額の比率として使わない。\n\n#### 2024年5月29日～2026年10月27日の財務省買い戻し結果（全買い戻し）\n\n金額は10億米ドル。比率欄は最小／平均／最大。\n\n| 目的 | 年限 | 回数 | 応札額面総額 A | 購入上限総額 B | 購入額面総額 C | 応札額÷上限 D=A÷B | 買い戻し比率 E=C÷B |\n|---|---|---:|---:|---:|---:|---|---|\n| 資金管理 | 1カ月～2年 | 27 | 729.4 | 272.0 | 261.9 | 1.4／2.8／5.2 | 0.3／1.0／1.0 |\n| 流動性支援 | 1カ月～2年 | 9 | 320.2 | 34.0 | 34.0 | 6.9／9.4／17.3 | 1.0／1.0／1.0 |\n| 流動性支援 | 2～3年 | 10 | 91.8 | 38.0 | 20.8 | 1.2／2.5／4.4 | 0.1／0.6／1.0 |\n| 流動性支援 | 3～5年 | 10 | 111.4 | 38.0 | 29.4 | 2.3／2.9／3.7 | 0.4／0.8／1.0 |\n| 流動性支援 | 5～7年 | 10 | 64.4 | 38.0 | 16.1 | 0.9／1.8／3.2 | 0.1／0.4／0.9 |\n| 流動性支援 | 7～10年 | 10 | 53.7 | 38.0 | 6.1 | 0.8／1.4／2.6 | 0.0／0.2／0.6 |\n| 流動性支援 | 10～20年 | 28 | 579.3 | 68.0 | 67.2 | 1.7／9.2／18.0 | 0.9／1.0／1.0 |\n| 流動性支援 | 20～30年 | 29 | 565.3 | 70.0 | 65.1 | 1.7／9.3／18.2 | 0.1／0.9／1.0 |\n| 流動性支援 | 短期TIPS | 19 | 65.3 | 12.0 | 10.7 | 1.7／5.4／8.7 | 0.3／0.9／1.0 |\n| 流動性支援 | 長期TIPS | 14 | 18.5 | 7.0 | 4.1 | 1.5／2.6／4.2 | 0.1／0.6／1.0 |\n| 合計 |  | 166 | 2,599.2 | 615.0 | 515.3 |  |  |\n\n- 当該借換え四半期のここまでに、財務省は流動性支援を目的に約439億ドル、資金管理を目的に250億ドルの証券を買い戻した。11月上旬に流動性支援の買い戻しをさらに2回予定している。\n- 2026年10月までの買い戻しは額面合計5,153億ドル。内訳は流動性支援2,534億ドル、資金管理2,619億ドル。\n\n［1］データは2026年10月27日時点。名目利付債の残存10～20年と1カ月～2年の流動性支援買い戻しは、それぞれ11月4日と5日に予定されている。\n\n［2］当初額面。\n\n［3］2026年8月18日の名目利付債20～30年の買い戻しは、購入上限20億ドルだった。\n\n印刷ページ46。",
+  "facts_ja": [
+    "2026年8月18日～10月27日の借換え四半期途中の買い戻しは16回、購入額面689億ドル。目的別は流動性支援約439億ドル、資金管理250億ドル。",
+    "2024年5月29日～2026年10月27日の掲載累計は166回、購入額面5,153億ドル。流動性支援2,534億ドル、資金管理2,619億ドル。",
+    "11月4日・5日の個別結果はこの集計の対象期間外。両日の財務省結果は、それぞれ60億ドル、40億ドルの流動性支援買い戻し。",
+    "原表の当該四半期合計比率は3.5、0.7で、金額合計の単純比とは一致しない。比率の集計方法は当ページから確定できない。"
+  ],
+  "inference_ja": [
+    "財務省買い戻しの額面をFRBの資産購入や民間への純資金供給の額と同一視できない。同期間の発行・償還、FRB残高、レポや流動性の指標を照合する。"
+  ],
+  "content_sha256": "167481221a133342b82996efdb05c386f77590ea98cd3187823f5fe52898f3ed",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "全121ページのうちPDF47ページ（印刷46ページ）の表・脚注・本文を照合し翻訳。PDF1～46・48～121ページは今回の確認・翻訳対象外。全ページの安全性未確認のためPDF原本バイナリは未保存。"
+  ],
+  "pdf": {
+    "sha256": "15dd9d851f490b3f1606b5f94df171ad25dcc8e17e787e390020f1afe36cdbf3",
+    "original_url": "https://home.treasury.gov/system/files/221/CombinedChargesforArchivesQ42026.pdf",
+    "page_count": 121,
+    "ocr_used": false,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "binary_saved": false,
+    "binary_not_saved_reason": "取得済みの全ページの目視・埋込情報確認は未実施。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 2,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 4,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 5,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 7,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 8,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 9,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 10,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 11,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 12,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 13,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 14,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 15,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 16,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 17,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 18,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 19,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 20,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 21,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 22,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 23,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 24,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 25,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 26,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 27,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 28,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 29,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 30,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 31,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 32,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 33,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 34,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 35,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 36,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 37,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 38,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 39,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 40,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 41,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 42,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 43,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 44,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 45,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 46,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 47,
+        "original_text": "Summary of Treasury Buyback Results\n                                          Treasury Buyback Results from 8/18/26 to 10/27/26 (Current Refunding Quarter)1\n                       Maturity                         Total Number of   Total Par Amount   Total Purchase   Total Par Amount\n Operation Type                       Operation Size                                                                            Offer to Maximum     Buyback Ratio\n                       Sector                             Operations       Offered ($BN)     Maximum ($BN)    Purchased ($BN) 2\n            Formula                        A                  B                  C              D=A*B                 E             F=C/D               G=E/D\nCash Management 1Mo to 2Y               $12.5 BN               2               $56.3             $25.0              $25.0            2.25                1.00\n                     1Mo to 2Y                                 -                 -                 -                  -                -                   -\n                      2Y to 3Y                                 1               $14.8              $4.0              $1.3              3.7                0.3\n                      3Y to 5Y            $4 BN                1               $10.2              $4.0              $1.9              2.5                0.5\n                      5Y to 7Y                                 1               $8.4               $4.0              $1.2              2.1                0.3\n Liquidity Support 7Y to 10Y                                   1               $9.7               $4.0              $2.4              2.4                0.6\n                    10Y to 20Y                                 3               $97.7             $18.0              $17.2             5.4                1.0\n                                         $ 6 BN\n                    20Y to 30Y3                                4               $56.0             $20.0              $18.1             2.8                0.9\n                    Short TIPS          $750 MM                2               $8.7               $1.5              $1.4              5.8                0.9\n                     Long TIPS          $500 MM                1               $2.1               $0.5              $0.5              4.2                1.0\n              Total                                           16              $263.9             $81.0              $68.9             3.5                0.7\n\n                                                   Treasury Buyback Results from 5/29/24 to 10/27/26 (All Buybacks)\n                          Maturity        Total Number of      Total Par Amount     Total Purchase       Total Par Amount   Offer to Maximum        Buyback Ratio\n   Operation Type\n                           Sector           Operations          Offered ($BN)       Maximum ($BN)        Purchased ($BN)    (Min | Avg |Max)       (Min | Avg |Max)\n                          Formula                                      A                   B                     C               D=A/B                 E=C/B\n Cash Management         1Mo to 2Y                 27               $729.4              $272.0                $261.9          1.4 | 2.8 | 5.2       0.3 | 1.0 | 1.0\n                         1Mo to 2Y                 9                $320.2               $34.0                 $34.0         6.9 | 9.4 | 17.3       1.0 | 1.0 | 1.0\n                          2Y to 3Y                 10                $91.8               $38.0                 $20.8          1.2 | 2.5 | 4.4       0.1 | 0.6 | 1.0\n                          3Y to 5Y                 10               $111.4               $38.0                 $29.4          2.3 | 2.9 | 3.7       0.4 | 0.8 | 1.0\n                          5Y to 7Y                 10                $64.4               $38.0                 $16.1          0.9 | 1.8 | 3.2       0.1 | 0.4 | 0.9\n  Liquidity Support      7Y to 10Y                 10                $53.7               $38.0                  $6.1          0.8 | 1.4 | 2.6       0.0 | 0.2 | 0.6\n                         10Y to 20Y                28               $579.3               $68.0                 $67.2         1.7 | 9.2 | 18.0       0.9 | 1.0 | 1.0\n                         20Y to 30Y                29               $565.3               $70.0                 $65.1         1.7 | 9.3 | 18.2       0.1 | 0.9 | 1.0\n                         Short TIPS                19                $65.3               $12.0                 $10.7          1.7 | 5.4 | 8.7       0.3 | 0.9 | 1.0\n                         Long TIPS                 14                $18.5               $7.0                   $4.1          1.5 | 2.6 | 4.2       0.1 | 0.6 | 1.0\n               Total                              166              $2,599.2             $615.0                $515.3\n\n • Treasury has bought back about $43.9 BN of securities for liquidity support purposes and $25.0 BN of securities for cash\n   management purposes in the current refunding quarter thus far, with two more liquidity support operations scheduled in early\n   November.\n • Through October 2026 Treasury has bought back $515.3BN in total par amount, including $253.4BN for liquidity support\n   purposes and $261.9BN for cash management purposes.\n\n  (1) Data as of 10/27/26. Liquidity support buybacks for 10Y to 20Y and 1Mo to 2Y Nominal Coupons are scheduled for 11/4/26 and 11/5/26, respectively.               46\n  (2) Original par amount.\n  (3) The 20Y to 30Y Nominal Coupons buyback operation on 8/18/26 had a purchase maximum of $2 billion.",
+        "translation_ja": "### 財務省の買い戻し結果の概要\n\n#### 2026年8月18日～10月27日の財務省買い戻し結果（当該借換え四半期）［1］\n\n金額は10億米ドル。TIPSは物価連動国債。ダッシュは原表の表示を維持。サイズ欄は原表の結合セルに従う。\n\n| 目的 | 年限 | 1回の規模 A | 回数 B | 応札額面総額 C | 購入上限総額 D=A×B | 購入額面総額 E［2］ | 応札額÷上限 F=C÷D | 買い戻し比率 G=E÷D |\n|---|---|---:|---:|---:|---:|---:|---:|---:|\n| 資金管理 | 1カ月～2年 | 12.5 | 2 | 56.3 | 25.0 | 25.0 | 2.25 | 1.00 |\n| 流動性支援 | 1カ月～2年 | — | — | — | — | — | — | — |\n| 流動性支援 | 2～3年 | 4 | 1 | 14.8 | 4.0 | 1.3 | 3.7 | 0.3 |\n| 流動性支援 | 3～5年 | 4 | 1 | 10.2 | 4.0 | 1.9 | 2.5 | 0.5 |\n| 流動性支援 | 5～7年 | 4 | 1 | 8.4 | 4.0 | 1.2 | 2.1 | 0.3 |\n| 流動性支援 | 7～10年 | 4 | 1 | 9.7 | 4.0 | 2.4 | 2.4 | 0.6 |\n| 流動性支援 | 10～20年 | 6 | 3 | 97.7 | 18.0 | 17.2 | 5.4 | 1.0 |\n| 流動性支援 | 20～30年［3］ | 6 | 4 | 56.0 | 20.0 | 18.1 | 2.8 | 0.9 |\n| 流動性支援 | 短期TIPS | 0.750 | 2 | 8.7 | 1.5 | 1.4 | 5.8 | 0.9 |\n| 流動性支援 | 長期TIPS | 0.500 | 1 | 2.1 | 0.5 | 0.5 | 4.2 | 1.0 |\n| 合計 |  |  | 16 | 263.9 | 81.0 | 68.9 | 3.5 | 0.7 |\n\n訳注。合計行の比率は原表の表示を転記した。金額合計の単純比と一致しないため、算出方法を確認できるまで合計金額の比率として使わない。\n\n#### 2024年5月29日～2026年10月27日の財務省買い戻し結果（全買い戻し）\n\n金額は10億米ドル。比率欄は最小／平均／最大。\n\n| 目的 | 年限 | 回数 | 応札額面総額 A | 購入上限総額 B | 購入額面総額 C | 応札額÷上限 D=A÷B | 買い戻し比率 E=C÷B |\n|---|---|---:|---:|---:|---:|---|---|\n| 資金管理 | 1カ月～2年 | 27 | 729.4 | 272.0 | 261.9 | 1.4／2.8／5.2 | 0.3／1.0／1.0 |\n| 流動性支援 | 1カ月～2年 | 9 | 320.2 | 34.0 | 34.0 | 6.9／9.4／17.3 | 1.0／1.0／1.0 |\n| 流動性支援 | 2～3年 | 10 | 91.8 | 38.0 | 20.8 | 1.2／2.5／4.4 | 0.1／0.6／1.0 |\n| 流動性支援 | 3～5年 | 10 | 111.4 | 38.0 | 29.4 | 2.3／2.9／3.7 | 0.4／0.8／1.0 |\n| 流動性支援 | 5～7年 | 10 | 64.4 | 38.0 | 16.1 | 0.9／1.8／3.2 | 0.1／0.4／0.9 |\n| 流動性支援 | 7～10年 | 10 | 53.7 | 38.0 | 6.1 | 0.8／1.4／2.6 | 0.0／0.2／0.6 |\n| 流動性支援 | 10～20年 | 28 | 579.3 | 68.0 | 67.2 | 1.7／9.2／18.0 | 0.9／1.0／1.0 |\n| 流動性支援 | 20～30年 | 29 | 565.3 | 70.0 | 65.1 | 1.7／9.3／18.2 | 0.1／0.9／1.0 |\n| 流動性支援 | 短期TIPS | 19 | 65.3 | 12.0 | 10.7 | 1.7／5.4／8.7 | 0.3／0.9／1.0 |\n| 流動性支援 | 長期TIPS | 14 | 18.5 | 7.0 | 4.1 | 1.5／2.6／4.2 | 0.1／0.6／1.0 |\n| 合計 |  | 166 | 2,599.2 | 615.0 | 515.3 |  |  |\n\n- 当該借換え四半期のここまでに、財務省は流動性支援を目的に約439億ドル、資金管理を目的に250億ドルの証券を買い戻した。11月上旬に流動性支援の買い戻しをさらに2回予定している。\n- 2026年10月までの買い戻しは額面合計5,153億ドル。内訳は流動性支援2,534億ドル、資金管理2,619億ドル。\n\n［1］データは2026年10月27日時点。名目利付債の残存10～20年と1カ月～2年の流動性支援買い戻しは、それぞれ11月4日と5日に予定されている。\n\n［2］当初額面。\n\n［3］2026年8月18日の名目利付債20～30年の買い戻しは、購入上限20億ドルだった。\n\n印刷ページ46。",
+        "extraction_status": "extracted",
+        "translation_status": "complete",
+        "visual_review_complete": true
+      },
+      {
+        "page": 48,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 49,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 50,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 51,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 52,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 53,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 54,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 55,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 56,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 57,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 58,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 59,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 60,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 61,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 62,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 63,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 64,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 65,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 66,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 67,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 68,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 69,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 70,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 71,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 72,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 73,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 74,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 75,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 76,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 77,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 78,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 79,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 80,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 81,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 82,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 83,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 84,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 85,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 86,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 87,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 88,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 89,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 90,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 91,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 92,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 93,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 94,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 95,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 96,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 97,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 98,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 99,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 100,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 101,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 102,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 103,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 104,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 105,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 106,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 107,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 108,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 109,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 110,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 111,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 112,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 113,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 114,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 115,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 116,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 117,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 118,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 119,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 120,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 121,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      }
+    ]
+  },
+  "related_document_ids": [
+    "ustreas-buyback-20261104-19fe3825",
+    "ustreas-buyback-20261105-16d12f20"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "11月4日の既報資料群の集計表補完。新規発表ではない。"
+}
