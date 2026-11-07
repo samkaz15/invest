@@ -1,0 +1,39 @@
+{
+  "id": "qatar-20261107-us-iran-mediation-031f9bc9",
+  "source": "Qatar Ministry of Foreign Affairs spokesperson, official public statement",
+  "source_url": "https://x.com/majedalansari/status/2118845689497358338",
+  "title_en": "Qatar’s foreign ministry spokesperson on continuing U.S.–Iran negotiations",
+  "title_ja": "カタール外務省報道官が米・イラン協議の継続を説明",
+  "published_at": "2026-11-06T23:19:13.000Z",
+  "publication_time_note": "外務省報道官の投稿時刻。国際メディア局の同趣旨の声明は現地11月7日付で時刻未確認。",
+  "received_at": "2026-11-07T19:26:37.220775+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "sanctions"
+  ],
+  "original_text": "both sides continue to work towards reaching an agreement",
+  "translation_ja": "### 原文抜粋の日本語訳\n\n「両当事者は合意に向けた取り組みを続けている」\n\n### 投稿全体の要約\n\nカタール外務省報道官は、米国とイランが合意に至らなかったと首相兼外相が述べたとする情報を否定し、発言の歪曲だと主張した。報道官によれば、首相兼外相は、両当事者が合意を目指し、カタールの仲介担当者が交渉を支えるため両側と緊密に連絡を取っていると説明した。報道官は、世論を誤導し外交を妨げるような情報発信を批判した。",
+  "content_sha256": "031f9bc98dbb5efa7700616b5aa3957f6dc70f56ba9bf4386d4ac866987bc102",
+  "content_hash_scope": "normalized_full_public_body_not_reproduced",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公式投稿の本文を取得し、原文は短い引用、日本語は抜粋訳と本文の要約。再利用権を確認できないため全文は再掲しない。添付動画の音声と全文書き起こしは未取得。国際メディア局公式ページは直接取得503。国営通信は米・イラン関連部分を照合。"
+  ],
+  "facts_ja": [
+    "カタール外務省報道官は、首相兼外相が米国とイランの協議失敗を表明したとする情報を否定し、両当事者が合意を目指し、仲介が続くと説明した。",
+    "国営カタール通信も11月7日、首相兼外相が仲介継続と湾岸航行の自由・安全確保の重要性を述べたと伝えた。合意文書、発効日、航行ルールの変更は未確認。"
+  ],
+  "inference_ja": [
+    "実施条件を伴う合意、航行、保険、積出しの変化が確認されて初めて供給と価格への波及を評価できる。"
+  ],
+  "related_source_urls": [
+    "https://imo.gov.qa/media-centre/releases/statement-false-claims-prime-minister-remarks",
+    "https://qna.org.qa/en/news/news-details?date=7%2F11%2F2026&id=prime-minister-and-minister-of-foreign-affairs-thriving-states-are-well-positioned-to-advance-peacebuilding-and-broaden-prospects-for-shared-prosperity",
+    "https://imo.gov.qa/copyright-policy"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "カタール政府は米国とイランが合意に向けた協議を継続しているとの声明文を発表した。"
+}
