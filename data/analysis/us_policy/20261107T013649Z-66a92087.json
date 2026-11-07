@@ -1,0 +1,1045 @@
+{
+  "id": "20261107T013649Z-66a92087",
+  "as_of": "2026-11-07T01:36:49+00:00",
+  "prior_analysis_id": "20261106T234804Z-eb462db2",
+  "document_ids": [
+    "eia-wpsr-20261104-overview-full-7ebdc53d",
+    "ustreas-tbac-financing-20261104-0d7e2b68",
+    "ustreas-buyback-20261105-16d12f20",
+    "ustreas-buyback-20261104-19fe3825",
+    "ustreas-auction-r_20261103_1",
+    "ustreas-auction-r_20261104_1",
+    "ustreas-auction-r_20261105_1",
+    "ustreas-auction-r_20261105_2",
+    "whitehouse-20261105-oleshky-full-b51530a6",
+    "whitehouse-20261103-space-freedom",
+    "ncsbe-20261104-finalizing-election-excerpt",
+    "ncsbe-20261105-provisional-methods-6a336632",
+    "eia-wpsr-20261104-table1-csv-090ff506",
+    "eia-wpsr-20261104-overview-7ebdc53d",
+    "california-20261106-election-canvass-update-0908cb79",
+    "ustreas-sb0678-20261104-quarterly-refunding",
+    "ustreas-sb0679-20261104-tbac-report",
+    "ustreas-sb0680-20261104-tbac-minutes",
+    "fed-fomc-20261028-statement",
+    "fed-fomc-20261028-implementation",
+    "nyfed-20261105-purchase-e278e0dc",
+    "ustreas-dealer-agenda-202611-6240a8ae",
+    "ustreas-431e914-20261106-bessent-he-lifeng-call",
+    "ofac-20261106-iran-designations",
+    "ustreas-431f557-20261106-ofac-iran-sdn-update",
+    "treasury-sb0685-20261106-mexc-global",
+    "treasury-sb0686-20261106-canadian-msbs",
+    "fincen-mexc-section-9714-b2fabc71",
+    "ustreas-431f8a9-20261106-long-term",
+    "treasury-rates-20261106-long-term",
+    "ustreas-431f814-20261106-real-long-term",
+    "treasury-rates-20261106-real-long-term",
+    "ustreas-431f8ad-20261106-bill-rates",
+    "treasury-rates-20261106-bill-rates",
+    "ustreas-431f813-20261106-yield-curve",
+    "treasury-rates-20261106-yield-curve",
+    "ustreas-431f8ae-20261106-real-yield-curve",
+    "treasury-rates-20261106-real-yield-curve",
+    "fincen-20261106-recordkeeping-travel-rule-withdrawal",
+    "fincen-2026-22809-travel-rule-withdrawal-pdf",
+    "fincen-20261106-mexc-notice-metadata",
+    "treasury-sb0687-20261106-fatf",
+    "fatf-20261030-plenary-us-iran-context",
+    "fatf-20261030-iran-call-context"
+  ],
+  "new_document_ids": [],
+  "new_important_release_count": 0,
+  "notification_eligible": false,
+  "notification_decision": "通知済みFATF・送金規則案撤回・金利・制裁を再照合。今回取得範囲で追加の重要発表を確認できず、同一文書を再保存・再通知しない。取得障害は欠損として維持。",
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": "2026-11-04T00:00:00-05:00",
+      "requested_through": "2026-11-07T01:36:49+00:00",
+      "new_difference_from": "2026-11-06T23:48:04+00:00",
+      "previous_checked_at": "2026-11-06T23:48:04+00:00",
+      "checked_at": "2026-11-07T01:36:49+00:00",
+      "checked_at_kind": "review_completed_after_retrieval",
+      "status": "checked_duplicate_partial",
+      "note": "最新掲載は11/6 sb0687。通知済みFATF発表本文は前回と一致。既報sb0685/6・金利5表・FinCEN撤回発表本文・6ページPDFも一致。追加の重要発表を取得範囲で確認できず。討議チャート等の既存欠損は継続。",
+      "coverage": "最新保存公表日/時刻から24時間の重複照合。日付のみは日初を基準。初回以来の欠損は別途残す。表示一覧・応答の取得範囲であり全件保証ではない。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": "2026-11-04T00:00:00-05:00",
+      "requested_through": "2026-11-07T01:36:49+00:00",
+      "new_difference_from": "2026-11-06T23:48:04+00:00",
+      "previous_checked_at": "2026-11-06T23:48:04+00:00",
+      "checked_at": "2026-11-07T01:36:49+00:00",
+      "checked_at_kind": "review_completed_after_retrieval",
+      "status": "checked_duplicate",
+      "note": "11/5公式API2件は同一ハッシュ、11/6応答は今回も空配列。米当日以後の全発表不存在を意味しない。",
+      "coverage": "最新保存公表日/時刻から24時間の重複照合。日付のみは日初を基準。初回以来の欠損は別途残す。表示一覧・応答の取得範囲であり全件保証ではない。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": "2026-11-04T00:00:00-05:00",
+      "requested_through": "2026-11-07T01:36:49+00:00",
+      "new_difference_from": "2026-11-06T23:48:04+00:00",
+      "previous_checked_at": "2026-11-06T23:48:04+00:00",
+      "checked_at": "2026-11-07T01:36:49+00:00",
+      "checked_at_kind": "review_completed_after_retrieval",
+      "status": "checked_duplicate",
+      "note": "API2件と11/4・5結果PDF原本ハッシュが一致。新規結果・政策変更として扱わない。",
+      "coverage": "最新保存公表日/時刻から24時間の重複照合。日付のみは日初を基準。初回以来の欠損は別途残す。表示一覧・応答の取得範囲であり全件保証ではない。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "requested_through": "2026-11-07T01:36:49+00:00",
+      "new_difference_from": "2026-11-06T23:48:04+00:00",
+      "previous_checked_at": "2026-11-06T23:48:04+00:00",
+      "checked_at": "2026-11-07T01:36:49+00:00",
+      "checked_at_kind": "review_completed_after_retrieval",
+      "status": "checked_duplicate",
+      "note": "カレンダー、10/28声明・実施要領の本文を再確認。FF3.75～4.00%、IORB3.90%、全元本借換え・政府機関債元本の短期国債再投資を維持。新決定未確認。",
+      "coverage": "最新保存公表日/時刻から24時間の重複照合。日付のみは日初を基準。初回以来の欠損は別途残す。表示一覧・応答の取得範囲であり全件保証ではない。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": "2026-11-04T00:00:00-05:00",
+      "requested_through": "2026-11-07T01:36:49+00:00",
+      "new_difference_from": "2026-11-06T23:48:04+00:00",
+      "previous_checked_at": "2026-11-06T23:48:04+00:00",
+      "checked_at": "2026-11-07T01:36:49+00:00",
+      "checked_at_kind": "review_completed_after_retrieval",
+      "status": "checked_duplicate_partial",
+      "note": "入口と公式結果APIの取得が復旧。11/4～6指定の結果は11/5の購入1件で、前回成功時の原本ハッシュe278e0dcと一致。新規購入・売却として再通知しない。銘柄別価格NAとAPI更新時刻のTZ未付記は欠損として維持。",
+      "coverage": "最新保存公表日/時刻から24時間の重複照合。日付のみは日初を基準。初回以来の欠損は別途残す。表示一覧・応答の取得範囲であり全件保証ではない。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": "2026-11-04T00:00:00-05:00",
+      "requested_through": "2026-11-07T01:36:49+00:00",
+      "new_difference_from": "2026-11-06T23:48:04+00:00",
+      "previous_checked_at": "2026-11-06T23:48:04+00:00",
+      "checked_at": "2026-11-07T01:36:49+00:00",
+      "checked_at_kind": "review_completed_after_retrieval",
+      "status": "partial",
+      "note": "大統領行為・Briefings一覧を再取得。最新は11/5で前回と同じ。個別停戦本文は前回取得済み文書を参照し、今回は新たな本文取得とは扱わない。政府の主張と独立検証を区別し、未確認カテゴリーを欠損とする。",
+      "coverage": "最新保存公表日/時刻から24時間の重複照合。日付のみは日初を基準。初回以来の欠損は別途残す。表示一覧・応答の取得範囲であり全件保証ではない。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": "2026-11-04T00:00:00-05:00",
+      "requested_through": "2026-11-07T01:36:49+00:00",
+      "new_difference_from": "2026-11-06T23:48:04+00:00",
+      "previous_checked_at": "2026-11-06T23:48:04+00:00",
+      "checked_at": "2026-11-07T01:36:49+00:00",
+      "checked_at_kind": "review_completed_after_retrieval",
+      "status": "partial",
+      "note": "最新掲載は11/6。個別指定本文の正規化ハッシュは既存8社の告知と一致。11/4別添の欠損は継続。",
+      "coverage": "最新保存公表日/時刻から24時間の重複照合。日付のみは日初を基準。初回以来の欠損は別途残す。表示一覧・応答の取得範囲であり全件保証ではない。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "requested_through": "2026-11-07T01:36:49+00:00",
+      "new_difference_from": "2026-11-06T23:48:04+00:00",
+      "previous_checked_at": "2026-11-06T23:48:04+00:00",
+      "checked_at": "2026-11-07T01:36:49+00:00",
+      "checked_at_kind": "review_completed_after_retrieval",
+      "status": "partial",
+      "note": "最新11/4週報。概要PDF・表1CSV原本ハッシュは一致。表2PDFは403。その他別表・付録等は未取得。",
+      "coverage": "最新保存公表日/時刻から24時間の重複照合。日付のみは日初を基準。初回以来の欠損は別途残す。表示一覧・応答の取得範囲であり全件保証ではない。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "requested_through": "2026-11-07T01:36:49+00:00",
+      "new_difference_from": "2026-11-06T23:48:04+00:00",
+      "previous_checked_at": "2026-11-06T23:48:04+00:00",
+      "checked_at": "2026-11-07T01:36:49+00:00",
+      "checked_at_kind": "review_completed_after_retrieval",
+      "status": "partial",
+      "note": "FEC入口とNC・CA案内を再取得。NC一覧は同一ハッシュ。CA実集計は保護された空の入口で表を取得できず、Arizona403。他州・全国議席・州認証は未確認。",
+      "coverage": "最新保存公表日/時刻から24時間の重複照合。日付のみは日初を基準。初回以来の欠損は別途残す。表示一覧・応答の取得範囲であり全件保証ではない。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": "2026-11-03T06:05:53Z",
+      "requested_through": "2026-11-07T01:36:49+00:00",
+      "new_difference_from": "2026-11-06T23:48:04+00:00",
+      "previous_checked_at": "2026-11-06T23:48:04+00:00",
+      "checked_at": "2026-11-07T01:36:49+00:00",
+      "checked_at_kind": "review_completed_after_retrieval",
+      "status": "partial",
+      "note": "入口と個別発表一覧を確認、最新掲載は8/7で期間外。新規公開発表を確認できず。非公開の個別審査・全投資政策の不存在とはしない。",
+      "coverage": "最新保存公表日/時刻から24時間の重複照合。日付のみは日初を基準。初回以来の欠損は別途残す。表示一覧・応答の取得範囲であり全件保証ではない。"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "treasury_news",
+      "reason": "最新掲載は11/6 sb0687。通知済みFATF発表本文は前回と一致。既報sb0685/6・金利5表・FinCEN撤回発表本文・6ページPDFも一致。追加の重要発表を取得範囲で確認できず。討議チャート等の既存欠損は継続。"
+    },
+    {
+      "id": "nyfed_operations",
+      "reason": "入口と公式結果APIの取得が復旧。11/4～6指定の結果は11/5の購入1件で、前回成功時の原本ハッシュe278e0dcと一致。新規購入・売却として再通知しない。銘柄別価格NAとAPI更新時刻のTZ未付記は欠損として維持。"
+    },
+    {
+      "id": "white_house",
+      "reason": "大統領行為・Briefings一覧を再取得。最新は11/5で前回と同じ。個別停戦本文は前回取得済み文書を参照し、今回は新たな本文取得とは扱わない。政府の主張と独立検証を区別し、未確認カテゴリーを欠損とする。"
+    },
+    {
+      "id": "ofac",
+      "reason": "最新掲載は11/6。個別指定本文の正規化ハッシュは既存8社の告知と一致。11/4別添の欠損は継続。"
+    },
+    {
+      "id": "eia_petroleum",
+      "reason": "最新11/4週報。概要PDF・表1CSV原本ハッシュは一致。表2PDFは403。その他別表・付録等は未取得。"
+    },
+    {
+      "id": "fec_results",
+      "reason": "FEC入口とNC・CA案内を再取得。NC一覧は同一ハッシュ。CA実集計は保護された空の入口で表を取得できず、Arizona403。他州・全国議席・州認証は未確認。"
+    },
+    {
+      "id": "cfius",
+      "reason": "入口と個別発表一覧を確認、最新掲載は8/7で期間外。新規公開発表を確認できず。非公開の個別審査・全投資政策の不存在とはしない。"
+    },
+    {
+      "id": "fatf_evaluations",
+      "reason": "米国・メキシコの評価全文は12月公表予定として前回資料に記録。今回全文の新規取得なし。FATF引用元の補完資料を今回再取得したとは扱わない。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "id": "nyfed_results",
+      "url": "https://markets.newyorkfed.org/api/tsy/all/results/details/search.json?startDate=2026-11-04&endDate=2026-11-06",
+      "started_at": "2026-11-07T01:35:27.510110Z",
+      "status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "bytes": 6469,
+      "sha256": "e278e0dcd1b6deff4831b4f4956aad6d85a3c00cf637f79e2d49a1f466693c0a",
+      "operations": [
+        {
+          "id": "OR 110526 25",
+          "date": "2026-11-05",
+          "type": "Outright Bill Purchase"
+        }
+      ],
+      "retrieved_at": "2026-11-07T01:35:37.545101Z"
+    },
+    {
+      "id": "auctions_1105",
+      "url": "https://www.treasurydirect.gov/TA_WS/securities/search?competitiveAuctionCloseDate=2026-11-05&format=json",
+      "started_at": "2026-11-07T01:35:27.510673Z",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 14027,
+      "sha256": "7c6cd98fe4a063fcbd9a12ac8a24b6b70b746249f8b5bd98f3727f4d242e91f7",
+      "records": 2,
+      "retrieved_at": "2026-11-07T01:35:36.327862Z"
+    },
+    {
+      "id": "auctions_1106",
+      "url": "https://www.treasurydirect.gov/TA_WS/securities/search?competitiveAuctionCloseDate=2026-11-06&format=json",
+      "started_at": "2026-11-07T01:35:27.511127Z",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "records": 0,
+      "retrieved_at": "2026-11-07T01:35:36.420063Z"
+    },
+    {
+      "id": "eia_overview",
+      "url": "https://ir.eia.gov/wpsr/overview.pdf",
+      "started_at": "2026-11-07T01:35:27.511511Z",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 46732,
+      "sha256": "7ebdc53df4a1fe4aa416562d1a68586378913c534794d4392c8360e52be31cee",
+      "retrieved_at": "2026-11-07T01:35:40.491335Z"
+    },
+    {
+      "id": "eia_table1",
+      "url": "https://ir.eia.gov/wpsr/table1.csv",
+      "started_at": "2026-11-07T01:35:27.512288Z",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 6594,
+      "sha256": "6e7111336bb6bdd0e8143c17a2cad49f7c0296444ef611ad1440cf320266efb8",
+      "retrieved_at": "2026-11-07T01:35:40.481014Z"
+    },
+    {
+      "id": "eia_table2",
+      "url": "https://ir.eia.gov/wpsr/table2.pdf",
+      "started_at": "2026-11-07T01:35:27.513070Z",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "retrieved_at": "2026-11-07T01:35:35.007186Z"
+    },
+    {
+      "id": "nc_elections",
+      "url": "https://www.ncsbe.gov/news/press-releases",
+      "started_at": "2026-11-07T01:35:27.514950Z",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 76593,
+      "sha256": "b9f1c740a18c85457cd99a50c8fd0baefbd4292a1a42ee28eb82359becc167be",
+      "retrieved_at": "2026-11-07T01:35:36.307180Z"
+    },
+    {
+      "id": "ca_elections",
+      "url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026",
+      "started_at": "2026-11-07T01:35:27.516802Z",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 68784,
+      "sha256": "05c170d7d578cc66c92b7140928d22c083841f2a4c442c1a98b6d7630b94b5dc",
+      "retrieved_at": "2026-11-07T01:35:40.083282Z"
+    },
+    {
+      "id": "az_elections",
+      "url": "https://azsos.gov/elections",
+      "started_at": "2026-11-07T01:35:27.518116Z",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "retrieved_at": "2026-11-07T01:35:34.502267Z"
+    },
+    {
+      "id": "tbac_documents",
+      "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
+      "started_at": "2026-11-07T01:35:27.518863Z",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 73565,
+      "sha256": "74dc984d35b9aa54f9bcd892d968259c6168035ce2e0083bd9758a60a78973fc",
+      "retrieved_at": "2026-11-07T01:35:37.631214Z"
+    },
+    {
+      "id": "buyback_1104",
+      "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/BBR_20261104184000.pdf",
+      "started_at": "2026-11-07T01:35:27.519505Z",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 2396971,
+      "sha256": "19fe3825b423a01912bd49d7c092380aec85d72c9adc0c56524c42adb9885da0",
+      "retrieved_at": "2026-11-07T01:35:37.093835Z"
+    },
+    {
+      "id": "buyback_1105",
+      "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/BBR_20261105184000.pdf",
+      "started_at": "2026-11-07T01:35:27.521137Z",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 2399836,
+      "sha256": "16d12f203c4534485a3a3ec5e1b5c54e378c70cf49f2e356a4b8b8e282d9eb3f",
+      "retrieved_at": "2026-11-07T01:35:36.954366Z"
+    },
+    {
+      "id": "buybacks",
+      "url": "https://api.fiscal.treasury.gov/ap/exp/v1/marketable-securities/buybacks?operationStartDTMBegin=2026-11-03T00%3A00%3A00Z&operationStartDTMEnd=2026-11-06T23%3A59%3A00Z",
+      "status": 200,
+      "retrieved_at": "2026-11-07T01:35:49.187366Z",
+      "sha256": "887e85a0b5f31273fba4eecc77573a658635d56a8505a9439f954e1f0d4136a8",
+      "records": 2
+    }
+  ],
+  "individual_pdf_rechecks": [
+    {
+      "id": "eia_overview",
+      "url": "https://ir.eia.gov/wpsr/overview.pdf",
+      "started_at": "2026-11-07T01:35:27.511511Z",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 46732,
+      "sha256": "7ebdc53df4a1fe4aa416562d1a68586378913c534794d4392c8360e52be31cee",
+      "retrieved_at": "2026-11-07T01:35:40.491335Z"
+    },
+    {
+      "id": "buyback_1104",
+      "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/BBR_20261104184000.pdf",
+      "started_at": "2026-11-07T01:35:27.519505Z",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 2396971,
+      "sha256": "19fe3825b423a01912bd49d7c092380aec85d72c9adc0c56524c42adb9885da0",
+      "retrieved_at": "2026-11-07T01:35:37.093835Z"
+    },
+    {
+      "id": "buyback_1105",
+      "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/BBR_20261105184000.pdf",
+      "started_at": "2026-11-07T01:35:27.521137Z",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 2399836,
+      "sha256": "16d12f203c4534485a3a3ec5e1b5c54e378c70cf49f2e356a4b8b8e282d9eb3f",
+      "retrieved_at": "2026-11-07T01:35:36.954366Z"
+    },
+    {
+      "id": "withdrawal-pdf",
+      "url": "https://public-inspection.federalregister.gov/2026-22809.pdf",
+      "started_at": "2026-11-07T01:35:31.156260+00:00",
+      "status": 200,
+      "final_url": "https://public-inspection.federalregister.gov/2026-22809.pdf",
+      "content_type": "application/pdf",
+      "sha256": "c7b494d92c28d53c57a72951887d9589df406ea43e11c6269cfdf73687c6241b",
+      "retrieved_at": "2026-11-07T01:35:38.043391+00:00"
+    }
+  ],
+  "facts": [
+    {
+      "label": "FACT",
+      "evidence_id": "treasury-sb0687-20261106-fatf",
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0687/",
+      "text": "再取得本文のハッシュは前回と一致。既報のため新規通知対象外。"
+    },
+    {
+      "label": "FACT",
+      "evidence_id": "fincen-20261106-recordkeeping-travel-rule-withdrawal",
+      "source_url": "https://www.fincen.gov/news/news-releases/fincen-announces-withdrawal-proposed-rule-related-recordkeeping-and-travel-rule",
+      "text": "再取得した発表本文は一致。掲載前PDFのSHA256も前回と一致し、官報11/9予定を正式公刊済みと扱わない。"
+    }
+  ],
+  "reported": [
+    {
+      "label": "REPORTED",
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0687/",
+      "text": "米国制度の有効性、イランの核合意不遵守、詐欺被害傾向についての記述は米財務省・FATFに帰属。独立した戦況や被害数量の実測とは扱わない。"
+    }
+  ],
+  "causal_channels": [
+    {
+      "label": "INFERENCE",
+      "path": "対抗措置の各国実装→決済経路・遵守費用・信用供給→貿易/投資・原油供給需要→物価・成長→金利・資金需給",
+      "text": "国際基準の呼びかけと国内の法的発効・実際の資金停止は別。合法的代替経路、人道例外、銀行対応と取引数量の確認が必要。原油供給減・ドル不足・金の方向を直接推定しない。"
+    }
+  ],
+  "historical_comparisons": [
+    {
+      "case_id": "oil-shock-1973-1974",
+      "source_url": "https://www.federalreservehistory.org/essays/oil-shock-of-1973-74",
+      "source_kind": "official_retrospective_history",
+      "similarity": "金融仲介・取引費用から需要、供給、物価、金利へ波及する条件を比較。",
+      "difference": "今回のFATF対抗措置呼びかけ・仮想資産審査は、1973年の実物禁輸、2007～09年の銀行信用危機、2020年の緊急証券購入とは制度・数量・金利環境が異なる。",
+      "initial_conditions": {
+        "historical_inflation": "初期要約に当時公表値なし。数値比較未実施。",
+        "historical_rates_real_rates": "当時のvintage金利・実質金利未取得。",
+        "historical_liquidity": "当時の資金市場系列未取得。",
+        "historical_energy_structure": "禁輸・輸入依存を論点とするが米国の当時/現在の純輸入・産業構造系列を未取得。",
+        "current": "FOMCレンジ3.75～4.00%を一次確認。現在の期待インフレ・実質金利・供給障害量・織り込み系列は未取得。",
+        "current_note": "現在の10年実質利回りは通知済み11/6値2.63%を背景として把握するが、歴史時点の対応するvintage系列がなく定量比較は未実施。"
+      },
+      "status": "初期3史料の定性対照。vintageの物価・実質金利・流動性・エネルギー構造不足、予測精度未検証。"
+    },
+    {
+      "case_id": "great-recession-2007-2009",
+      "source_url": "https://www.federalreservehistory.org/essays/great-recession-of-200709",
+      "source_kind": "official_retrospective_history",
+      "similarity": "金融仲介・取引費用から需要、供給、物価、金利へ波及する条件を比較。",
+      "difference": "今回のFATF対抗措置呼びかけ・仮想資産審査は、1973年の実物禁輸、2007～09年の銀行信用危機、2020年の緊急証券購入とは制度・数量・金利環境が異なる。",
+      "initial_conditions": {
+        "inflation_rates": "危機開始時の物価・政策金利・実質金利の当時公表系列未取得。",
+        "liquidity": "当時の信用収縮と今回の再投資・演習は別現象。現在の銀行/信用ストレス系列も未取得。",
+        "energy_structure": "両時点の純輸出入・原油供給構造の定量比較未実施。",
+        "current_note": "現在の10年実質利回りは通知済み11/6値2.63%を背景として把握するが、歴史時点の対応するvintage系列がなく定量比較は未実施。"
+      },
+      "status": "初期3史料の定性対照。vintageの物価・実質金利・流動性・エネルギー構造不足、予測精度未検証。"
+    },
+    {
+      "case_id": "fed-response-2020-03-15",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200315a1.htm",
+      "source_kind": "contemporaneous_official_release",
+      "similarity": "金融仲介・取引費用から需要、供給、物価、金利へ波及する条件を比較。",
+      "difference": "今回のFATF対抗措置呼びかけ・仮想資産審査は、1973年の実物禁輸、2007～09年の銀行信用危機、2020年の緊急証券購入とは制度・数量・金利環境が異なる。",
+      "initial_conditions": {
+        "inflation": "両時点の実測/期待インフレvintage未取得。現在のインフレ高との判断はFOMC本文に帰属。",
+        "rates": "政策レンジは両時点の公式資料による。実質金利は未比較。",
+        "liquidity": "2020年は市場機能支援。今回月次計画は準備管理購入なし・再投資中心。準備預金残高系列未取得。",
+        "energy_structure": "両時点の原油需要ショック・供給構造の一次系列未取得。",
+        "current_note": "現在の10年実質利回りは通知済み11/6値2.63%を背景として把握するが、歴史時点の対応するvintage系列がなく定量比較は未実施。"
+      },
+      "status": "初期3史料の定性対照。vintageの物価・実質金利・流動性・エネルギー構造不足、予測精度未検証。"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "基本・実装確認",
+      "horizon": "days",
+      "condition": "各国の具体的法令・金融機関対応・適用日を確認。",
+      "interpretation": "FATFの既存呼びかけ再確認を新たな全面禁止や政策金利変更としない。"
+    },
+    {
+      "name": "資金調達圧力",
+      "horizon": "weeks",
+      "condition": "実施後に代替経路で相殺されない送金費用上昇や信用スプレッド悪化を確認。",
+      "interpretation": "対象の資金調達・貿易投資を下押しし得るが市場全体への規模は未確認。"
+    },
+    {
+      "name": "実体波及・限定",
+      "horizon": "months",
+      "condition": "原油輸出数量・貿易・物価と資金指標で波及を確認。",
+      "interpretation": "数量の変化なし、例外・代替経路で吸収なら広範な物価上昇・金融逼迫仮説は弱まる。"
+    }
+  ],
+  "currency_pairs": [
+    {
+      "pair": "USDJPY",
+      "status": "判断保留",
+      "reason": "相手国側の直近一次資料と同時点の金利差・相場を今回取得していない。以下は検証すべき条件で、現時点の買い売り判断ではない。",
+      "conditional_path": "米金利見通し上昇が日本側を上回り、日本の成長・政策と同時点相場でも確認できる場合はUSD側が買われやすい仮説。",
+      "invalidation": "日銀の相対的引締め強化、円への退避需要、米金利見通し低下。",
+      "new_sanctions_note": "今回の米国側資料だけでは両通貨の金利・景気差を判定できず保留。制裁対象法人の所在国と通貨方向を直結させない。",
+      "new_release_note": "FATF発表だけでは両通貨の相対金利・景気差を判断できず保留。相手国資料不足。"
+    },
+    {
+      "pair": "EURUSD",
+      "status": "判断保留",
+      "reason": "相手国側の直近一次資料と同時点の金利差・相場を今回取得していない。以下は検証すべき条件で、現時点の買い売り判断ではない。",
+      "conditional_path": "米金利・成長の相対優位をECB資料と欧州景気でも確認できる場合はUSD側優位の仮説。",
+      "invalidation": "ECBのより強い引締め、欧州成長の相対改善、米国信用不安。",
+      "new_sanctions_note": "今回の米国側資料だけでは両通貨の金利・景気差を判定できず保留。制裁対象法人の所在国と通貨方向を直結させない。",
+      "new_release_note": "FATF発表だけでは両通貨の相対金利・景気差を判断できず保留。相手国資料不足。"
+    },
+    {
+      "pair": "USDCHF",
+      "status": "判断保留",
+      "reason": "相手国側の直近一次資料と同時点の金利差・相場を今回取得していない。以下は検証すべき条件で、現時点の買い売り判断ではない。",
+      "conditional_path": "米金利差の拡大をSNB側資料で確認し、安全需要がCHFへ集中しない場合はUSD側優位の仮説。",
+      "invalidation": "CHFへの安全需要集中、SNBの政策差変化。",
+      "new_sanctions_note": "今回の米国側資料だけでは両通貨の金利・景気差を判定できず保留。制裁対象法人の所在国と通貨方向を直結させない。",
+      "new_release_note": "FATF発表だけでは両通貨の相対金利・景気差を判断できず保留。相手国資料不足。"
+    },
+    {
+      "pair": "USDCAD",
+      "status": "判断保留",
+      "reason": "相手国側の直近一次資料と同時点の金利差・相場を今回取得していない。以下は検証すべき条件で、現時点の買い売り判断ではない。",
+      "conditional_path": "原油高が米インフレとカナダ交易条件の双方へ作用するため、BoC・生産輸出資料で相対効果を確認してから判断。",
+      "invalidation": "原油供給回復、カナダ成長/政策の逆方向変化。",
+      "new_sanctions_note": "今回の米国側資料だけでは両通貨の金利・景気差を判定できず保留。制裁対象法人の所在国と通貨方向を直結させない。",
+      "new_release_note": "FATF発表だけでは両通貨の相対金利・景気差を判断できず保留。相手国資料不足。"
+    },
+    {
+      "pair": "AUDUSD",
+      "status": "判断保留",
+      "reason": "相手国側の直近一次資料と同時点の金利差・相場を今回取得していない。以下は検証すべき条件で、現時点の買い売り判断ではない。",
+      "conditional_path": "米金利差と豪州の景気・資源需要・RBA資料を照合し、米優位が確認された場合にUSD側優位の仮説。",
+      "invalidation": "豪州の相対的引締め、資源需要改善、米金利低下。",
+      "new_sanctions_note": "今回の米国側資料だけでは両通貨の金利・景気差を判定できず保留。制裁対象法人の所在国と通貨方向を直結させない。",
+      "new_release_note": "FATF発表だけでは両通貨の相対金利・景気差を判断できず保留。相手国資料不足。"
+    }
+  ],
+  "invalidations": [
+    "具体的な各国措置・適用日や銀行対応が確認できなければ実装済みとは判断しない。",
+    "代替経路や人道例外で資金移動が吸収され、取引数量・調達指標が悪化しなければ広範な逼迫仮説は弱まる。",
+    "原油供給数量と需給・価格の同時データがなければ、対イラン金融措置を原油高・金高へ直結させない。"
+  ],
+  "analysis_change_note": "新規知見JSONなし。指定10情報源の差分確認と再試行結果を新しい分析・報告に保存。",
+  "review_after": "2026-11-14T01:36:49+00:00",
+  "reviews": [
+    {
+      "analysis_id": "20261106T234804Z-eb462db2",
+      "review_after": "2026-11-13T23:48:04+00:00",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T234215Z-7ca35e99",
+      "review_after": "2026-11-13T23:42:15+00:00",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T221010Z-b01438c3",
+      "review_after": "2026-11-13T22:10:10+00:00",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T212843Z-aca66e15",
+      "review_after": "2026-11-13T21:28:43Z",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T203333Z-e845597f",
+      "review_after": "2026-11-13T20:33:33Z",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T191418Z-99310194",
+      "review_after": "2026-11-13T19:14:18Z",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T175453Z-b41ab9d9",
+      "review_after": "2026-11-13T17:54:53Z",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T165113Z-b4a566a5",
+      "review_after": "2026-11-13T16:51:13Z",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T160828Z-53234a60",
+      "review_after": "2026-11-13T16:08:28Z",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T145242Z-be2456f8",
+      "review_after": "2026-11-13T14:52:42Z",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T141308Z-26a764a3",
+      "review_after": "2026-11-13T14:13:08Z",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T131026Z-f45df09b",
+      "review_after": "2026-11-13T13:10:26Z",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T122831Z-018e956a",
+      "review_after": "2026-11-13T12:28:31Z",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T111830Z-8a915b76",
+      "review_after": "2026-11-13T11:18:30Z",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T102404Z-4f29db9b",
+      "review_after": "2026-11-13T10:24:04Z",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T092745Z-0ffa68c6",
+      "review_after": "2026-11-13T09:27:45Z",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T082158Z-e024e0c8",
+      "review_after": "2026-11-13T08:21:58Z",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T075702Z-1e79b5a5",
+      "review_after": "2026-11-13T07:57:02Z",
+      "status": "not_due"
+    },
+    {
+      "analysis_id": "20261106T060838Z-e5cb5c48",
+      "review_after": "2026-11-13T06:08:38Z",
+      "status": "not_due"
+    }
+  ],
+  "history_validation": "初期3ケースのみ。物価・実質金利・流動性・エネルギー構造の当時公表系列は不足。後年の解説を当時利用可能な情報に混ぜず、過去の騰落率を移植しない。",
+  "history_files_read": [
+    "data/history/us_policy/oil-shock-1973-1974.json",
+    "data/history/us_policy/great-recession-2007-2009.json",
+    "data/history/us_policy/fed-response-2020-03-15.json"
+  ],
+  "retry_queue": [
+    {
+      "source": "treasury_news",
+      "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
+      "reason": "推奨資金調達表・ディーラー質問票は保存済み。Treasury Presentation、TBAC Charge 1/2・Combined Charges等の討議チャートが未取得・未翻訳。"
+    },
+    {
+      "source": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "reason": "今回入口・結果APIの取得復旧。保存済み11/5結果と一致。個別価格NAと更新時刻TZを引き続き確認。"
+    },
+    {
+      "source": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "reason": "11/6の今後の結果、同年限前回値・直前市場利回りを追加確認。"
+    },
+    {
+      "source": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "reason": "その他の別表、表2脚注3、付録B/C、原報告29頁の取得。"
+    },
+    {
+      "source": "fec_results",
+      "url": "https://azsos.gov/elections",
+      "reason": "403。州認証資料・他州は未取得。NC/CAの認証結果は予定到来後に確認。"
+    },
+    {
+      "source": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "reason": "未確認カテゴリーの発表本文を確認。"
+    },
+    {
+      "source": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "reason": "既存レコードの範囲外の全Alert等の補完。"
+    },
+    {
+      "source": "postgres",
+      "url": "https://github.com/samkaz15/invest/actions/workflows/us-knowledge.yml",
+      "reason": "最新可視同期42313713617はpostgres認証失敗。知見JSONは保存済みで再試行可能。"
+    },
+    {
+      "source": "counterparty_currencies",
+      "reason": "JPY/EUR/CHF/CAD/AUD側の同時点一次資料と金利差・相場系列未取得。ペア別方向は判断保留。"
+    },
+    {
+      "source": "eia_petroleum",
+      "url": "https://ir.eia.gov/wpsr/table2.pdf",
+      "reason": "今回も403。表1脚注17が参照する表2脚注3を未確認として保持。"
+    },
+    {
+      "source": "fec_results",
+      "url": "https://electionresults.sos.ca.gov/",
+      "reason": "追加のセキュリティ確認で票数・議席の本文・表を未取得。通常の公開取得を次回再試行。"
+    },
+    {
+      "source": "fincen_order",
+      "url": "https://www.fincen.gov/system/files/2026-11/MEXC-Section-9714.pdf",
+      "reason": "官報正式版・掲載日・確定発効日・適用除外や訂正を次回確認。官報提出版と正式版が異なる場合は新IDとsupersedes。個人識別子の再掲載はしない。"
+    },
+    {
+      "source": "treasury_news",
+      "url": "https://www.fincen.gov/system/files/2026-09/Iran-FinCEN-WB-Bulletin-RE-Iran.pdf",
+      "reason": "本発表が引用する過去の内部告発公報は未取得。現在の命令とは別資料として再試行。"
+    },
+    {
+      "source": "ofac",
+      "url": "https://ofac.treasury.gov/faqs/1250",
+      "reason": "新規本文が参照する過去FAQ本文は未取得。1257とあわせて補完する。"
+    },
+    {
+      "source": "fincen_withdrawal",
+      "url": "https://www.federalregister.gov/d/2026-22809",
+      "not_before_date": "2026-11-09",
+      "reason": "官報正式版・撤回日を確認。内容補完や訂正は新ID+supersedes、再通知は新規内容だけ。"
+    },
+    {
+      "source": "nyfed_operations",
+      "url": "https://markets.newyorkfed.org/api/tsy/all/results/details/search.json?startDate=2026-11-04&endDate=2026-11-06",
+      "reason": "今回入口・結果APIの取得復旧。保存済み11/5結果と一致。個別価格NAと更新時刻TZを引き続き確認。"
+    },
+    {
+      "source": "fatf_evaluations",
+      "url": "https://www.fatf-gafi.org/en/publications/Fatfgeneral/outcomes-fatf-plenary-october-2026.html",
+      "reason": "12月予定の米国評価全文と仮想資産の別リンク資料を確認。原文の再利用範囲も確認。"
+    }
+  ],
+  "dedup": {
+    "existing_records_checked": 79,
+    "existing_ids_and_hashes_digest": "66bd30e98386a7cfd4e25556ad00a2ce13f6874cf22b3cec41a20a0cbaa9cbfd",
+    "new_documents": 0,
+    "method": "公開URL・primary_source_urls・公表時刻/日・内容/原本ハッシュを照合。HTML全体の変化と掲載本文の変化を区別。既報のメールと公的サイトの同一資料を再通知しない。",
+    "baseline_head": "51495ad8515a7887e5e2b230d7bceffd1bfde8a5",
+    "baseline_records_reused_reason": "mainの既存79JSONを実取得し公開URL・公表時刻/日・本文/原本ハッシュを照合。追加文書なし。"
+  },
+  "github_status": "分析と日本語報告の2ファイルを新規パスへ保存しGit blob SHA検証。既存79知見JSONと訳文は不変。",
+  "postgres_status": {
+    "run_id": 42313713617,
+    "job_id": 128221095620,
+    "head_sha": "7728d5c1658da952ab55ca46ea337eb580c03bab",
+    "status": "failure",
+    "error_previously_verified": "password authentication failed for user postgres",
+    "current_commit_status": "最新可視同期42313713617は認証失敗。今回は知見JSON変更なし。分析・報告のGitHub保存とPostgreSQL反映を区別し、保存後に可視結果を確認。"
+  },
+  "pc_status": "所有者Mac実機配信は未確認。今回新規通知対象なし。",
+  "automation_changes": "なし。既存Gmail webhookと調査タスクの停止・変更・削除は行わない。",
+  "html_change_review": [],
+  "extra_retrieval_checks": [
+    {
+      "id": "sb0685",
+      "url": "https://home.treasury.gov/news/press-releases/sb0685/",
+      "started_at": "2026-11-07T01:35:29.054882+00:00",
+      "status": 200,
+      "retrieved_at": "2026-11-07T01:35:38.406575+00:00",
+      "sha256": "7de5df19e23c4248445ab356e52032d80a8829c77290ebf72d44a87268ba3941",
+      "normalized_text_sha256": "b798823a994631d3e0c8f74f444ebd154a8d9916eb1c2d0f6426153e38f6b7b9",
+      "previous_normalized_text_sha256": "b798823a994631d3e0c8f74f444ebd154a8d9916eb1c2d0f6426153e38f6b7b9",
+      "unchanged": true
+    },
+    {
+      "id": "sb0686",
+      "url": "https://home.treasury.gov/news/press-releases/sb0686/",
+      "started_at": "2026-11-07T01:35:29.055569+00:00",
+      "status": 200,
+      "retrieved_at": "2026-11-07T01:35:39.129999+00:00",
+      "sha256": "91a639cd28e5de15dc847f330314a559cf4637ba2f99b9972cb20315bf8aef58",
+      "normalized_text_sha256": "dda519aea09df7d2fdf8b5d9288802058fcb9b86d3dcf96a0388dc2309a0d4b0",
+      "previous_normalized_text_sha256": "dda519aea09df7d2fdf8b5d9288802058fcb9b86d3dcf96a0388dc2309a0d4b0",
+      "unchanged": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions/20261106",
+      "started_at": "2026-11-07T01:35:29.056064+00:00",
+      "status": 200,
+      "retrieved_at": "2026-11-07T01:35:38.910875+00:00",
+      "sha256": "deed9e3dfd60ce176fde1a9608851c0f9fd1c1b4d11b11df8570b0baee3cde04",
+      "normalized_text_sha256": "d76f4c31d483e9e21d6b2d4b3a70d16259424dff96aec69dedc4ef8fabb4c54e",
+      "previous_normalized_text_sha256": "85b103aa5c6b7035ada198236eaf1a0e027bdc4993afa2164d7c0c6edbf1e284",
+      "unchanged": false,
+      "substantive_body_unchanged": true
+    },
+    {
+      "id": "order",
+      "url": "https://www.fincen.gov/system/files/2026-11/MEXC-Section-9714.pdf",
+      "started_at": "2026-11-07T01:35:29.056481+00:00",
+      "status": 200,
+      "retrieved_at": "2026-11-07T01:35:38.558974+00:00",
+      "sha256": "b2fabc71fbc805309dbe1592fe5421217c0531b4019ce49e74d8c53bba84062c",
+      "unchanged": true
+    },
+    {
+      "id": "daily_treasury_long_term_rate",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+      "started_at": "2026-11-07T01:35:29.057096+00:00",
+      "status": 200,
+      "retrieved_at": "2026-11-07T01:35:38.735670+00:00",
+      "sha256": "2bb29e8c418ccc742c277e42821f8f1ed958b50ea8e58eb8593640a98216f6c0",
+      "normalized_text_sha256": "d5d331e5e4e555de97299f9baffb5cef5ec410a90d2d56d1870704224445e390",
+      "previous_normalized_text_sha256": "d5d331e5e4e555de97299f9baffb5cef5ec410a90d2d56d1870704224445e390",
+      "unchanged": true
+    },
+    {
+      "id": "daily_treasury_real_long_term",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+      "started_at": "2026-11-07T01:35:29.058057+00:00",
+      "status": 200,
+      "retrieved_at": "2026-11-07T01:35:39.015498+00:00",
+      "sha256": "41c198cc1ccda3df7a77ff7ec7a2e3630b483ce6649cae6bb44f6929de053700",
+      "normalized_text_sha256": "c79bee1a1d06d55d25affcace1d25dc2c539eba7c32fc5ee2beec0f9b29c65e3",
+      "previous_normalized_text_sha256": "c79bee1a1d06d55d25affcace1d25dc2c539eba7c32fc5ee2beec0f9b29c65e3",
+      "unchanged": true
+    },
+    {
+      "id": "daily_treasury_bill_rates",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026",
+      "started_at": "2026-11-07T01:35:29.058495+00:00",
+      "status": 200,
+      "retrieved_at": "2026-11-07T01:35:39.074717+00:00",
+      "sha256": "0f35a65b0154095cdabe3c6cb45aef0a65f4154008b12fb15a513a26145a1685",
+      "normalized_text_sha256": "bdeb0027000a72ab7f09395a4c1a89862b808d4f02571740476b216940fc227c",
+      "previous_normalized_text_sha256": "bdeb0027000a72ab7f09395a4c1a89862b808d4f02571740476b216940fc227c",
+      "unchanged": true
+    },
+    {
+      "id": "daily_treasury_yield_curve",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+      "started_at": "2026-11-07T01:35:29.061519+00:00",
+      "status": 200,
+      "retrieved_at": "2026-11-07T01:35:39.146558+00:00",
+      "sha256": "d85eb893b980a896d10a03560ad54a841eec639a79346f5d5c1c8ec33713059d",
+      "normalized_text_sha256": "9cee2ac29ad03ff6877c9fa81a154c959680cb9dfbcae2dd3c96390e20a2c89e",
+      "previous_normalized_text_sha256": "9cee2ac29ad03ff6877c9fa81a154c959680cb9dfbcae2dd3c96390e20a2c89e",
+      "unchanged": true
+    },
+    {
+      "id": "daily_treasury_real_yield_curve",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026",
+      "started_at": "2026-11-07T01:35:29.062485+00:00",
+      "status": 200,
+      "retrieved_at": "2026-11-07T01:35:38.823639+00:00",
+      "sha256": "e7792c67a14dd7e22e25e772a1e5d7f3a80f2bb61a10e7b645add98081dfd9d8",
+      "normalized_text_sha256": "016071fa0e3ac3146a13211a4c357d76dfbc8c053b340d58fe0b3b149e05932a",
+      "previous_normalized_text_sha256": "016071fa0e3ac3146a13211a4c357d76dfbc8c053b340d58fe0b3b149e05932a",
+      "unchanged": true
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261106",
+      "body_sha256": "cc129b2044d7bdc5b32dff28d754bec09c487162e5502bdf8b65242057ea2de1",
+      "baseline_body_sha256": "cc129b2044d7bdc5b32dff28d754bec09c487162e5502bdf8b65242057ea2de1",
+      "body_unchanged": true,
+      "checked_at": "2026-11-07T01:35:50.276332+00:00"
+    },
+    {
+      "id": "fatf-treasury",
+      "url": "https://home.treasury.gov/news/press-releases/sb0687/",
+      "started_at": "2026-11-07T01:35:31.154535+00:00",
+      "status": 200,
+      "final_url": "https://home.treasury.gov/news/press-releases/sb0687/",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "91f2502446345056c0a4c4a34d23a012df52addfe5e8a4a771b52a072ffe9762",
+      "body_sha256": "1d546d0b2c90c85b4f5209c83724832a431a08d5f442d95370fc48fb40fb0fdb",
+      "retrieved_at": "2026-11-07T01:35:38.054299+00:00",
+      "substantive_body_unchanged": true
+    },
+    {
+      "id": "ca-results",
+      "url": "https://electionresults.sos.ca.gov/",
+      "started_at": "2026-11-07T01:35:31.155271+00:00",
+      "status": 200,
+      "final_url": "https://electionresults.sos.ca.gov/",
+      "content_type": "text/html",
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+      "retrieved_at": "2026-11-07T01:35:36.981245+00:00",
+      "result_tables_retrieved": false,
+      "scope": "HTTP200は集計表取得成功を意味しない。本文は空でセキュリティ保護により実集計を確認できない。"
+    },
+    {
+      "id": "withdrawal",
+      "url": "https://www.fincen.gov/news/news-releases/fincen-announces-withdrawal-proposed-rule-related-recordkeeping-and-travel-rule",
+      "started_at": "2026-11-07T01:35:31.155739+00:00",
+      "status": 200,
+      "final_url": "https://www.fincen.gov/news/news-releases/fincen-announces-withdrawal-proposed-rule-related-recordkeeping-and-travel-rule",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "c46c7f32a03ace4b8ccbf4acdd643589a58e25b63020a5e813c528a36b33eb04",
+      "retrieved_at": "2026-11-07T01:35:39.385943+00:00",
+      "substantive_body_unchanged": true
+    },
+    {
+      "id": "withdrawal-pdf",
+      "url": "https://public-inspection.federalregister.gov/2026-22809.pdf",
+      "started_at": "2026-11-07T01:35:31.156260+00:00",
+      "status": 200,
+      "final_url": "https://public-inspection.federalregister.gov/2026-22809.pdf",
+      "content_type": "application/pdf",
+      "sha256": "c7b494d92c28d53c57a72951887d9589df406ea43e11c6269cfdf73687c6241b",
+      "retrieved_at": "2026-11-07T01:35:38.043391+00:00"
+    },
+    {
+      "id": "nyfed-retry",
+      "url": "https://markets.newyorkfed.org/api/tsy/all/results/details/search.json?startDate=2026-11-04&endDate=2026-11-06",
+      "started_at": "2026-11-07T01:35:31.156887+00:00",
+      "status": 200,
+      "final_url": "https://markets.newyorkfed.org/api/tsy/all/results/details/search.json?startDate=2026-11-04&endDate=2026-11-06",
+      "content_type": "application/json;charset=utf-8",
+      "sha256": "e278e0dcd1b6deff4831b4f4956aad6d85a3c00cf637f79e2d49a1f466693c0a",
+      "json_valid": true,
+      "retrieved_at": "2026-11-07T01:35:37.704007+00:00"
+    }
+  ],
+  "mail_documents_observed_since_prior_analysis": [],
+  "canonical_aliases": [
+    {
+      "document_id": "ustreas-431e914-20261106-bessent-he-lifeng-call",
+      "canonical_url": "https://home.treasury.gov/news/press-releases/sb0684/",
+      "existing_source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/431e914",
+      "publication_date": "2026-11-06",
+      "published_at": null,
+      "content_sha256": "7e627c00a40fd752defdefb536b73df206670bda14b44d08d3f9de798fa17c05",
+      "verification": "全3段落を個別公式本文と照合し一致。新規内容なし。公開配信時刻と発表時刻は区別。"
+    }
+  ],
+  "background_facts": [
+    {
+      "label": "FACT",
+      "evidence_id": "ustreas-431e914-20261106-bessent-he-lifeng-call",
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0684/",
+      "text": "財務省個別発表はメールで保存・通知済みの米中協議本文と一致。関税率・発効日の新決定は記載されていない。"
+    },
+    {
+      "label": "FACT",
+      "evidence_id": "california-20261106-election-canvass-update-0908cb79",
+      "source_url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026",
+      "text": "州の案内に結果サイトへのリンクが追加された。実際の集計表はセキュリティ確認により未取得で、認証完了も確認していない。"
+    },
+    {
+      "label": "FACT",
+      "evidence_id": "treasury-sb0685-20261106-mexc-global",
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0685/",
+      "text": "財務省がFinCENのMEXC関連送金禁止命令を公表。発効条件は官報掲載30日後。官報掲載日・確定発効日は今回未確認。"
+    },
+    {
+      "label": "FACT",
+      "evidence_id": "treasury-sb0686-20261106-canadian-msbs",
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0686/",
+      "text": "財務省が保存済みOFAC指定8社について、暗号資産経由の金融仲介の詳細と資産凍結・50％所有ルール等を説明した。指定8社という措置自体は既存記録と同じ。"
+    },
+    {
+      "label": "FACT",
+      "evidence_id": "fincen-mexc-section-9714-b2fabc71",
+      "source_url": "https://www.fincen.gov/system/files/2026-11/MEXC-Section-9714.pdf",
+      "text": "官報提出版PDFは全24頁を抽出し本文・脚注をページ別に翻訳、視覚確認。個人識別子は除外し原本無加工の完全訳とは扱わない。原本PDFはGitHub保存しない。"
+    },
+    {
+      "label": "FACT",
+      "evidence_id": "treasury-rates-20261106-long-term",
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+      "scope": "既存メール通知の再照合・新規通知対象外",
+      "data_as_of": "2026-11-06",
+      "values": {
+        "長期複合利回り（10年超）": "5.24",
+        "20年CMT": "5.29"
+      },
+      "text": "公式ページの表・説明を再取得し、直前メール経路で保存・通知した本文と一致。公表時刻不明。利回りと政策金利・約定・主体別売買を区別。"
+    },
+    {
+      "label": "FACT",
+      "evidence_id": "treasury-rates-20261106-real-long-term",
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+      "scope": "既存メール通知の再照合・新規通知対象外",
+      "data_as_of": "2026-11-06",
+      "values": {
+        "長期実質平均（10年超）": "3.05"
+      },
+      "text": "公式ページの表・説明を再取得し、直前メール経路で保存・通知した本文と一致。公表時刻不明。利回りと政策金利・約定・主体別売買を区別。"
+    },
+    {
+      "label": "FACT",
+      "evidence_id": "treasury-rates-20261106-bill-rates",
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026",
+      "scope": "既存メール通知の再照合・新規通知対象外",
+      "data_as_of": "2026-11-06",
+      "values": {
+        "4週間・銀行割引率": "3.88",
+        "クーポン相当利回り": "4.32",
+        "6週間・銀行割引率": "3.90",
+        "8週間・銀行割引率": "3.98",
+        "13週間・銀行割引率": "4.01",
+        "17週間・銀行割引率": "4.08",
+        "26週間・銀行割引率": "4.12",
+        "52週間・銀行割引率": "4.13"
+      },
+      "text": "公式ページの表・説明を再取得し、直前メール経路で保存・通知した本文と一致。公表時刻不明。利回りと政策金利・約定・主体別売買を区別。"
+    },
+    {
+      "label": "FACT",
+      "evidence_id": "treasury-rates-20261106-yield-curve",
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+      "scope": "既存メール通知の再照合・新規通知対象外",
+      "data_as_of": "2026-11-06",
+      "values": {
+        "1か月": "4.02",
+        "1.5か月": "4.07",
+        "2か月": "4.15",
+        "3か月": "4.19",
+        "4か月": "4.19",
+        "6か月": "4.23",
+        "1年": "4.33",
+        "2年": "4.51",
+        "3年": "4.59",
+        "5年": "4.64",
+        "7年": "4.74",
+        "10年": "4.86",
+        "20年": "5.29",
+        "30年": "5.26"
+      },
+      "text": "公式ページの表・説明を再取得し、直前メール経路で保存・通知した本文と一致。公表時刻不明。利回りと政策金利・約定・主体別売買を区別。"
+    },
+    {
+      "label": "FACT",
+      "evidence_id": "treasury-rates-20261106-real-yield-curve",
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026",
+      "scope": "既存メール通知の再照合・新規通知対象外",
+      "data_as_of": "2026-11-06",
+      "values": {
+        "5年": "2.35",
+        "7年": "2.48",
+        "10年": "2.63",
+        "20年": "2.91",
+        "30年": "3.07"
+      },
+      "text": "公式ページの表・説明を再取得し、直前メール経路で保存・通知した本文と一致。公表時刻不明。利回りと政策金利・約定・主体別売買を区別。"
+    }
+  ],
+  "retrieval_check_scope_note": "個別URLの本文・脚注と原本ハッシュを確認。表示時点・取得開始完了時刻を区別。新着がないとの結論は取得できた範囲のみ。引用された過去資料をすべて再取得した意味ではない。"
+}
