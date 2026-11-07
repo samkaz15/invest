@@ -1,0 +1,57 @@
+{
+  "id": "centcom-20261107-huda-blockade-c0d99fdd",
+  "source": "U.S. Central Command via DVIDS",
+  "source_url": "https://www.dvidshub.net/news/578872/us-forces-disable-cargo-vessel-attempting-violate-naval-blockade",
+  "title_en": "U.S. Forces Disable Cargo Vessel Attempting to Violate Naval Blockade",
+  "title_ja": "米中央軍がオマーン湾で貨物船Hudaを航行不能にしたと発表",
+  "published_at": "2026-11-07T20:37:04.000Z",
+  "publication_time_note": "確認できたタイムゾーン付き時刻は米中央軍の同件公式SNS投稿。DVIDSの投稿日は11月7日15:31と表示され、時刻帯はページ上で確認できない。",
+  "dvids_display_posted_at": "11.07.2026 15:31",
+  "received_at": "2026-11-07T23:21:46.364321+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "sanctions",
+    "shipping"
+  ],
+  "original_text": "TAMPA, Fla. — U.S. Central Command (CENTCOM) forces disabled a commercial vessel in the Gulf of Oman, Nov. 7, after the ship’s civilian crew ignored repeated warnings and attempted to violate the naval blockade against Iran multiple times.\n\nA U.S. military aircraft fired precision munitions at the stern of St. Kitts-flagged M/V Huda, disabling the ship after CENTCOM forces directed the crew to abandon targeted spaces. The cargo vessel tried to depart regional waters after visiting an Iranian port.\n\nCENTCOM continues to strictly enforce America’s naval blockade against Iran. Enforcement actions since July have resulted in U.S. forces redirecting 147 commercial vessels that complied and disabled five merchant ships that refused to comply.\n\nAdditionally, CENTCOM has previously destroyed another 10 Iranian commercial oil tankers that were part of the Islamic Revolutionary Guards Corps’ multibillion-dollar shadow network.\n\nAll mariners transiting near Iranian coastal areas or surrounding waters are advised to heed blockade warnings from U.S. forces.",
+  "translation_ja": "**米中央軍発表の日本語全訳**\n\nフロリダ州タンパ。米中央軍（CENTCOM）部隊は11月7日、オマーン湾で商船1隻を航行不能にした。CENTCOMによると、同船の民間人乗組員は繰り返しの警告に従わず、米国の対イラン海上封鎖に複数回違反しようとした。\n\n米軍機はセントクリストファー・ネービス船籍の貨物船M/V Hudaの船尾に精密誘導弾を発射し、同船を航行不能にした。CENTCOM部隊はその前に、乗組員に攻撃対象区画から退避するよう指示した。同船はイランの港に寄港した後、同地域の海域から離れようとしていた。\n\nCENTCOMは米国の対イラン海上封鎖を厳格に執行し続けている。7月以降の執行で、米軍は指示に従った商船147隻の針路を変更させ、指示に従わなかった商船5隻を航行不能にした。\n\nこのほかCENTCOMは以前、イラン革命防衛隊の数十億ドル規模の非公然ネットワークの一部だったイランの商業石油タンカー10隻を破壊した。\n\nイランの沿岸域や周辺海域を航行するすべての船員に、米軍の封鎖警告に従うよう勧告する。\n\n出典は米中央軍。死傷者、積載貨物、環境影響は本文に記載がない。添付映像は米中央軍が公表した17.8秒の映像で、標本フレームでは船尾付近から煙が上がる様子を確認した。映像だけで船名や位置、封鎖違反、被害の全体を独立に確定できない。",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "content_sha256": "c0d99fdd2b5d655f508ccb57c5daf6f5ca6d4d0aa1dc20c3006d2a6368444bc1",
+  "content_hash_scope": "normalized five release paragraphs",
+  "facts_ja": [
+    "米中央軍は11月7日、オマーン湾でセントクリストファー・ネービス船籍の貨物船M/V Hudaの船尾を米軍機が攻撃し航行不能にしたと発表。",
+    "同軍はイラン寄港後の出域と複数回の警告無視を主張し、7月以降の針路変更147隻、航行不能5隻、別に以前破壊したイラン石油タンカー10隻を報告。"
+  ],
+  "inference_ja": [
+    "事件単体で原油積載や供給減を確定できない。保険、運賃、通航実績、積出量を別途照合する。"
+  ],
+  "missing_parts": [
+    "米中央軍ウェブサイトの同件記事は403。DVIDSで5段落の公式本文を取得。再配信PDFはページ画像1枚を参照できたがPDF原本を保存していない。映像は標本フレームのみ目視。乗員、積荷、環境被害は未確認。"
+  ],
+  "related_source_urls": [
+    "https://x.com/CENTCOM/status/2119167271989870888",
+    "https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4644273/us-forces-disable-cargo-vessel-attempting-to-violate-naval-blockade/",
+    "https://www.ukmto.org/-/media/ukmto/products/20261107-ukmto_advisory-198-26.pdf"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米中央軍はオマーン湾で対イラン封鎖に違反しようとした貨物船を攻撃し航行不能と発表",
+  "x_post": {
+    "url": "https://x.com/CENTCOM/status/2119167271989870888",
+    "published_at": "2026-11-07T20:37:04.000Z",
+    "retrieved_at": "2026-11-07T23:20:30.796416+00:00"
+  },
+  "video": {
+    "url": "https://video.twimg.com/amplify_video/2119167125013037056/vid/avc1/640x360/1PHGsDy1Q4bbg24V.mp4",
+    "sha256": "36e1b5fd940277508a9646576c11f2999f3c375432bbd2c8ada037fa6917697a",
+    "retrieved_at": "2026-11-07T23:21:25.356293+00:00"
+  },
+  "press_pdf": {
+    "page_count_seen": 1,
+    "page_image_checked": true,
+    "page_image_url": "https://cdn.newsapps.net/pdfs/CgpDL3huqaj3K8j9qwsyr/1.png",
+    "original_bytes_saved": false
+  }
+}

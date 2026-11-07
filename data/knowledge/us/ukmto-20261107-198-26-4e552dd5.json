@@ -1,0 +1,57 @@
+{
+  "id": "ukmto-20261107-198-26-4e552dd5",
+  "source": "UK Maritime Trade Operations",
+  "source_url": "https://www.ukmto.org/-/media/ukmto/products/20261107-ukmto_advisory-198-26.pdf",
+  "title_en": "UKMTO Advisory 198-26 – Gulf of Oman",
+  "title_ja": "英海事当局の注意情報198-26、UAE沖でばら積み船と軍が関係する事案",
+  "published_at": null,
+  "publication_date": "2026-11-07",
+  "publication_time_note": "報告日のみ。公表・発生の正確な時刻は不明。",
+  "received_at": "2026-11-07T23:20:27.744200+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "shipping"
+  ],
+  "original_text": "approximately 18NM east of Khor Fakkan, UAE",
+  "translation_ja": "英海事当局（UKMTO）は、アラブ首長国連邦ホールファッカーンの東方約18海里のオマーン湾で、ばら積み貨物船と軍部隊が関係する事案の報告を受けた。報告時点で乗員の状況、損傷の評価、環境への影響は不明だった。当局は事案を把握しており、調査が続いている。船舶には、最新の海上安全情報を確認し、変化する航行環境を把握するよう勧告する。\n\n報告日11月7日、発生時刻は確認中。情報源欄は「軍当局」。地図はUAEのホールファッカーンと沖合の対象海域を表示。出典 UK Maritime Trade Operations。",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "content_sha256": "4e552dd5bd3f286c1c441a91c25696b61f64dcaff9067948eeff7e016e9bed8f",
+  "content_hash_scope": "source_pdf_bytes",
+  "facts_ja": [
+    "英海事当局はオマーン湾のUAE沖で軍当局からばら積み船に関する事案を受報した。船名・攻撃主体は資料に記載がない。"
+  ],
+  "inference_ja": [
+    "Hudaと同じ海域・日付の可能性はあるが、情報源は軍当局で、同一船や戦況の独立確認には足りない。"
+  ],
+  "missing_parts": [
+    "1ページの本文・日時表・地図を確認。連絡先は原文・訳から除いた。地図画像の再配布条件は未確認。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "米中央軍の公表と同じ主題の補足一次資料として同報内に統合。",
+  "related_source_urls": [
+    "https://www.dvidshub.net/news/578872/us-forces-disable-cargo-vessel-attempting-violate-naval-blockade",
+    "https://www.ukmto.org/terms-and-conditions"
+  ],
+  "pdf": {
+    "sha256": "4e552dd5bd3f286c1c441a91c25696b61f64dcaff9067948eeff7e016e9bed8f",
+    "source_url": "https://www.ukmto.org/-/media/ukmto/products/20261107-ukmto_advisory-198-26.pdf",
+    "page_count": 1,
+    "ocr_used": false,
+    "visual_review_complete": true,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "source_pdf_save_reason": "連絡先・埋込メタデータと地図の再配布条件によりPDF原本をコミットしない。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "approximately 18NM east of Khor Fakkan, UAE",
+        "translation_ja": "英海事当局（UKMTO）は、アラブ首長国連邦ホールファッカーンの東方約18海里のオマーン湾で、ばら積み貨物船と軍部隊が関係する事案の報告を受けた。報告時点で乗員の状況、損傷の評価、環境への影響は不明だった。当局は事案を把握しており、調査が続いている。船舶には、最新の海上安全情報を確認し、変化する航行環境を把握するよう勧告する。\n\n報告日11月7日、発生時刻は確認中。情報源欄は「軍当局」。地図はUAEのホールファッカーンと沖合の対象海域を表示。出典 UK Maritime Trade Operations。",
+        "extraction_status": "text_extracted_visual_checked",
+        "translation_status": "partial"
+      }
+    ]
+  }
+}
