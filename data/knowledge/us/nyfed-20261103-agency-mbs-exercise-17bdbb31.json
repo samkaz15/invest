@@ -1,0 +1,38 @@
+{
+  "id": "nyfed-20261103-agency-mbs-exercise-17bdbb31",
+  "source": "Federal Reserve Bank of New York",
+  "source_url": "https://www.newyorkfed.org/markets/opolicy/operating_policy_261103",
+  "title_en": "Statement Regarding Agency Mortgage-Backed Securities Small Value Exercises",
+  "title_ja": "NY連銀、11月10日・12日の政府機関MBS小口取引の運用テストを公表",
+  "published_at": null,
+  "publication_date": "2026-11-03",
+  "publication_time_note": "公式日付は11月3日。正確な公表時刻・時刻帯は記載なし。取引予定日は米現地日付。",
+  "received_at": "2026-11-07T23:50:43.284659+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "monetary_policy",
+    "fixed_income",
+    "mbs",
+    "us_economy"
+  ],
+  "original_text": "The Open Market Trading Desk (the Desk) at the Federal Reserve Bank of New York undertakes small value transactions for the purpose of testing operational readiness to implement existing and potential policy directives from the Federal Open Market Committee (FOMC). The FOMC authorizes and directs the Desk to conduct these exercises to test its operational readiness in the Authorizations and Continuing Directives for Open Market Operations.\n\nIn connection with these directives, the Desk intends to conduct four small value agency MBS dollar roll operations on November 10, 2026 and four small value agency MBS coupon swap operations on November 12, 2026.\n\nOn November 10, the Desk will sell the roll: the Desk intends to sell unsettled November To-Be-Announced (TBA) positions and to buy December TBA positions. The Desk will roll the following security: 15-year UMBS 5.5 percent coupon. Each dollar roll operation will have a face value of $5 million, for a total current face value of $20 million across the four operations.\n\nOn November 12, the Desk intends to swap out of unsettled November TBA positions of 30-year Ginnie Mae 6.0 percent coupons for other readily available MBS. Each coupon swap operation will have a face value of $5 million, for a total current face value of $20 million across the four operations.\n\n© 2026 Federal Reserve Bank of New York. Content from the New York Fed subject to the Terms of Use at newyorkfed.org.",
+  "translation_ja": "日本語訳（当調査による翻訳）\n\nニューヨーク連邦準備銀行の公開市場取引デスクは、連邦公開市場委員会（FOMC）の現行および将来あり得る政策指示を実行するための態勢を確認する目的で、小口取引を実施する。FOMCは、公開市場操作の権限および継続指示において、この運用態勢の検証を行うようデスクに権限を与え、指示している。\n\nこれらの指示に基づき、デスクは2026年11月10日に政府機関MBSの小口ドルロール取引を4件、11月12日に政府機関MBSの小口クーポンスワップ取引を4件実施する予定。\n\n11月10日にはドルロールを売る。未決済の11月TBAポジションを売却し、12月TBAポジションを購入する予定。対象は15年物UMBSのクーポン5.5%。各ドルロール取引の額面は500万ドルで、4件の現時点の額面合計は2,000万ドル。\n\n11月12日には、30年物ジニーメイのクーポン6.0%の未決済11月TBAポジションを、調達しやすい他のMBSに交換する予定。各クーポンスワップ取引の額面は500万ドルで、4件の現時点の額面合計は2,000万ドル。\n\n原題 Statement Regarding Agency Mortgage-Backed Securities Small Value Exercises  \n© 2026 Federal Reserve Bank of New York. Content from the New York Fed subject to the Terms of Use at newyorkfed.org.  \n[利用条件](https://www.newyorkfed.org/privacy/termsofuse) · [運用態勢の参照先](https://www.newyorkfed.org/markets/operational-readiness) · [公開市場操作の権限および継続指示](https://www.federalreserve.gov/monetarypolicy/files/FOMC_AuthorizationsContinuingDirectivesOMOs.pdf)",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "content_sha256": "17bdbb3169dc261343bb49ea9223d6f0cdedb48833c528e9d4d9016e2b445abe",
+  "content_hash_scope": "normalized four body paragraphs",
+  "rights_source_url": "https://www.newyorkfed.org/privacy/termsofuse",
+  "related_source_urls": [
+    "https://www.newyorkfed.org/markets/operational-readiness",
+    "https://www.federalreserve.gov/monetarypolicy/files/FOMC_AuthorizationsContinuingDirectivesOMOs.pdf"
+  ],
+  "facts_ja": [
+    "NY連銀の11月3日付公表。11月10日のドルロール、12日のクーポンスワップは各4件、各日額面合計2,000万ドル。目的は運用態勢の検証。"
+  ],
+  "inference_ja": [
+    "MBSの売買・交換の額面を国債純購入額またはFRBバランスシート純増として集計しない。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "11月3日付の既公表資料を補完。対象は運用テストの予定で、新規の政策変更に該当しない。"
+}
