@@ -1,0 +1,39 @@
+{
+  "id": "centcom-20261107-iron-gate-62ff1226",
+  "source": "United States Central Command",
+  "source_url": "https://x.com/CENTCOM/status/2119059918120526182",
+  "title_en": "CENTCOM Launches Task Force to Disrupt Iranian Ground Transit Routes Supporting Illegal Shipments",
+  "title_ja": "米中央軍が対イラン輸送対策部隊アイアンゲートの設置を発表",
+  "published_at": "2026-11-07T13:30:29.000Z",
+  "publication_time_note": "公式投稿の公開時刻。リンク先記事の別個の公開時刻は未確認。",
+  "received_at": "2026-11-07T18:24:40.468204+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "sanctions",
+    "oil"
+  ],
+  "original_text": "TAMPA, Fla. — On Nov. 7, the commander of U.S. Central Command (CENTCOM) directed the establishment of a task force that will support ongoing U.S. government efforts to prevent Iran from using ground routes to transport advanced weapons and other materials.\n\nThe CENTCOM commander has directed the formation of Task Force Iron Gate, an internal staff of approximately 20 civilian and military personnel based in Tampa, Florida. The new CENTCOM team will coordinate with other U.S. government agencies on preventing the movement of advanced weapons systems, dual-use technologies, sanctioned materials, and illegal revenue streams across Iran's land borders and the Caspian Sea.\n\n\"The establishment of Task Force Iron Gate reinforces the success of our ironclad blockade against Iran at sea,\" said the commander. \"Strengthening CENTCOM's collaboration with U.S. interagency partners will further constrain Iran's ability to finance terrorism, rebuild weapons factories, and replenish their military.\"\n\nIn recent months, America's naval blockade has prevented Iran from exporting more than $25 billion in crude oil. Strict enforcement at sea continues against all ships entering or departing Iranian ports.\n\n[Official graphic]\nTASK FORCE IRON GATE\nAnnounced: November 2026\nArea: Iran’s borders and the Caspian Sea.\nPurpose: Monitor, detect, and disrupt any illicit movement of advanced weapons systems, dual-use technologies, sanctioned materials, and illegal revenue streams.\n\nNAVAL BLOCKADE\nAnnounced: July 2026\nArea: All Iranian ports on the Arabian Gulf and Gulf of Oman.\nPurpose: Prevent imports and exports to and from Iran with the exception of humanitarian aid.",
+  "translation_ja": "【米フロリダ州タンパ】11月7日、米中央軍（CENTCOM）の司令官は、イランが先進兵器やその他の物資の輸送に陸路を使うのを阻止するため、米政府が進めている取り組みを支援する部隊の設置を指示した。\n\n司令官は、フロリダ州タンパを拠点とする、文民と軍人約20人からなる内部組織「タスクフォース・アイアンゲート」の編成を指示した。新部隊は他の米政府機関と連携し、イランの陸上国境とカスピ海を通じた先進兵器システム、軍民両用技術、制裁対象物資の移動や、違法な資金の流れを阻止する。\n\n司令官は「タスクフォース・アイアンゲートの設置は、イランに対する我々の強固な海上封鎖の成果をさらに確かなものにする。米政府の関係機関との連携を強化することで、イランがテロに資金を提供し、兵器工場を再建し、軍備を補充する能力を一層制約する」と述べた。\n\n米中央軍によると、米国の海上封鎖によって、ここ数カ月でイランは250億ドル超に相当する原油を輸出できなかった。イランの港湾に出入りするすべての船舶を対象に、海上での厳格な措置が続いている。\n\n### 添付図の日本語訳\n\n- **タスクフォース・アイアンゲート**　2026年11月発表。対象はイランの国境とカスピ海。先進兵器システム、軍民両用技術、制裁対象物資の違法な移動と、違法な資金の流れを監視・検知・阻止する。\n- **海上封鎖**　2026年7月発表。対象はペルシャ湾（原文はアラビア湾）とオマーン湾に面するすべてのイランの港湾。人道支援を例外として、イランへの輸入とイランからの輸出を阻止する。",
+  "content_sha256": "62ff12260422092cb75a0986e81540ab557fdb327a64bcc437ba47305f07f6d8",
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公式投稿の本文4段落と添付図の凡例を取得し翻訳。個人情報排除のため司令官氏名は原文欄・訳で役職に置換。カバー画像と本文添付画像の原本、返信は保存対象外。独立記事URLはログイン案内に転送されたが公式投稿で本文を確認。"
+  ],
+  "facts_ja": [
+    "米中央軍は11月7日、新たなタスクフォースの設置指示を公表した。設置目的はイランの陸路を用いた武器・物資の輸送を阻止する政府の取り組みを支援すること。",
+    "当局は、タンパ拠点の文民・軍人約20人が、陸上国境とカスピ海を通る先進兵器、軍民両用技術、制裁対象物資、違法な資金の流れをめぐって他機関と連携すると説明。",
+    "添付図は、従来の海上封鎖の対象をペルシャ湾・オマーン湾に面するイランの港湾とし、人道支援を例外と説明。",
+    "過去数カ月の海上封鎖で250億ドル超の原油輸出を阻止したとの数字は米中央軍の主張。算定方法、輸出量、個々の船舶への措置、独立した検証は得られていない。"
+  ],
+  "inference_ja": [
+    "部隊設置の発表だけでは原油の輸送量、制裁適用範囲、海峡通航の変化を確認できない。実際の運用や輸送・保険への影響を確認してから供給への波及を見直す。"
+  ],
+  "related_source_urls": [
+    "https://x.com/i/article/2112880388787916800",
+    "https://pbs.twimg.com/media/HWfw2ajW8AAPtok.jpg"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米中央軍はイランの陸路とカスピ海を経由する武器輸送を阻止する新部隊の設置を発表。"
+}
