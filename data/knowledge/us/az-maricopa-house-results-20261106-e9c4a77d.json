@@ -1,0 +1,491 @@
+{
+  "id": "az-maricopa-house-results-20261106-e9c4a77d",
+  "source_url": "https://elections.maricopa.gov/asset/jcr:5f56a732-7bf4-4ea3-a7f9-3a2a6a0510c4/WCAG%20Summary%20Report_1106_0847PM.pdf",
+  "source": "Maricopa County Elections Department",
+  "title_en": "2026 General Election — Maricopa County Summary Report",
+  "title_ja": "マリコパ郡の下院選得票速報（郡集計PDF抜粋）",
+  "published_at": null,
+  "publication_date_local": "2026-11-06",
+  "publication_timezone": "America/Phoenix",
+  "publication_time_note": "郡の資料は米アリゾナ州現地時刻。ウェブ公開の正確な時刻は不明。",
+  "received_at": "2026-11-07T13:59:24.671810+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "elections"
+  ],
+  "original_text": "US Rep Dist CD-1\nUS Rep Dist CD-2\nUS Rep Dist CD-3\nUS Rep Dist CD-4\nUS Rep Dist CD-5\nUS Rep Dist CD-7\nUS Rep Dist CD-8\nUS Rep Dist CD-9\n2026-11-06 20:22 MST | 1546594 | 352044 | 425 | 148178 | 253141 | 262889 | 27205 | 285223 | 179101",
+  "translation_ja": "郡内の連邦下院選の表から、候補者別集計のうち主要政党と有効票合計を抜粋。登録・投票率の表を掲載したPDF1ページと、下院選集計が続く2ページを確認した。百分率は郡の表示を転記した。区によって郡外の票がある。\n\n| 区 | 民主党票 | 共和党票 | 有効票計 |\n|---|---:|---:|---:|\n| 1 | 184,253 | 159,954 | 352,044 |\n| 2 | 347 | 43 | 425 |\n| 3 | 128,953 | — | 148,178 |\n| 4 | 157,670 | 89,132 | 253,141 |\n| 5 | 130,640 | 132,249 | 262,889 |\n| 7 | 20,352 | 6,853 | 27,205 |\n| 8 | 139,083 | 146,140 | 285,223 |\n| 9 | 91,075 | 87,836 | 179,101 |\n\n—は当該党候補の掲載がない区。合計には他党・記名票等を含む。州・全国の得票、当選、郡別未集計票の選挙区配分はこの表から判断できない。",
+  "facts_ja": [
+    "PDF2ページ。各連邦下院選挙区の郡内速報を掲載。第5区の共和・民主差は1,609票、第8区は7,057票、第9区は民主が共和を3,239票上回る。",
+    "郡のデータ更新は現地11月6日20時22分（日本時間11月7日12時22分）、帳票印刷は同20時46分（日本時間12時46分）。"
+  ],
+  "inference_ja": [
+    "郡速報と州全体の集計・正式認証を区別する。"
+  ],
+  "content_sha256": "e9c4a77deea11a22350e89e0d3ce1d87085f572f0b86150205462aede5c0d2d2",
+  "content_hash_scope": "quoted_excerpt",
+  "translation_status": "partial",
+  "content_scope": "excerpt",
+  "missing_parts": [
+    "PDF55ページ。本文テキストで1・2ページの主要項目を確認。候補者全行の訳、3～55ページ、全ページ目視・OCR、原本バイナリ取得・SHA256・安全性確認は未実施。原本への直接取得はHTTP 403。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "既存確認期間内の郡速報を補完。州の認証・当選確定・議会構成の変化は確認できない。",
+  "data_refreshed_at": "2026-11-06T20:22:00-07:00",
+  "report_printed_at": "2026-11-06T20:46:00-07:00",
+  "related_document_ids": [
+    "az-maricopa-evening-unofficial-20261106-25ef6baf"
+  ],
+  "pdf": {
+    "original_url": "https://elections.maricopa.gov/asset/jcr:5f56a732-7bf4-4ea3-a7f9-3a2a6a0510c4/WCAG%20Summary%20Report_1106_0847PM.pdf",
+    "sha256": null,
+    "page_count": 55,
+    "ocr_used": false,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "binary_saved": false,
+    "binary_not_saved_reason": "直接取得が403。一次資料のテキスト表示から一部のみ確認。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "US Rep Dist CD-1\nUS Rep Dist CD-2\nUS Rep Dist CD-3",
+        "translation_ja": "PDF1ページ。登録258万9,827人、集計154万6,594票。区分は期日前（州法16-579）48,105、その他の期日前1,290,486、投票日207,798、暫定205。各連邦下院選挙区の郡内速報を掲載。",
+        "extraction_status": "text_excerpt_verified",
+        "translation_status": "partial",
+        "visual_review_complete": false
+      },
+      {
+        "page": 2,
+        "original_text": "US Rep Dist CD-4\nUS Rep Dist CD-5\nUS Rep Dist CD-7\nUS Rep Dist CD-8\nUS Rep Dist CD-9",
+        "translation_ja": "PDF2ページ。各連邦下院選挙区の郡内速報を掲載。第5区の共和・民主差は1,609票、第8区は7,057票、第9区は民主が共和を3,239票上回る。",
+        "extraction_status": "text_excerpt_verified",
+        "translation_status": "partial",
+        "visual_review_complete": false
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 4,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 5,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 7,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 8,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 9,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 10,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 11,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 12,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 13,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 14,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 15,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 16,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 17,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 18,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 19,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 20,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 21,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 22,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 23,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 24,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 25,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 26,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 27,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 28,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 29,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 30,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 31,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 32,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 33,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 34,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 35,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 36,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 37,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 38,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 39,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 40,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 41,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 42,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 43,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 44,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 45,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 46,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 47,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 48,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 49,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 50,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 51,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 52,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 53,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 54,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 55,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      }
+    ]
+  }
+}

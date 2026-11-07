@@ -1,0 +1,42 @@
+{
+  "id": "az-maricopa-evening-unofficial-20261106-25ef6baf",
+  "source_url": "https://elections.maricopa.gov/news-and-information/elections-news/additional-unofficial-results-11-6-2026-2.html",
+  "source": "Maricopa County Elections Department",
+  "title_en": "Maricopa County Posts Evening Updated Unofficial Results",
+  "title_ja": "マリコパ郡の一般選挙速報（11月6日夕方）",
+  "published_at": null,
+  "publication_date_local": "2026-11-06",
+  "publication_timezone": "America/Phoenix",
+  "publication_time_note": "郡の資料は米アリゾナ州現地時刻。ウェブ公開の正確な時刻は不明。",
+  "received_at": "2026-11-07T13:59:24.671810+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "elections"
+  ],
+  "original_text": "Estimated number of uncounted ballots: 21,500\nEstimated number of provisional ballots: 2,500\nEstimated number of ballots ready for tabulation: 8,250",
+  "translation_ja": "郡選挙当局は11月6日夕方、11月3日一般選挙の未認証速報を更新した。集計済みは154万6,594票で、投票資格のある登録有権者258万9,827人の59.72％。更新分は4万609票。郡は票の99％を報告したとしている。残る票は集計前に有権者または選挙職員の対応が必要。署名不備の補正、または条件付き暫定票の本人確認の期限は現地11月8日17時（日本時間11月9日9時）。\n\n未集計票の内訳はその時点の推計で、処理に伴い各区分の数が増減する。\n\n| 区分 | 郡の推計 | 内容 |\n|---|---:|---|\n| 合計 | 21,500 | 下記3区分の合計 |\n| 署名補正・集計前処理中の期日前票 | 10,750 | 投票日19時までに受領し、有権者の対応が必要なもの、または署名確認後に集計前処理中のもの |\n| 暫定票 | 2,500 | 通常と条件付きの2種類。多くは有権者の追加対応を必要とせず、職員が資格を確認できれば集計する |\n| 集計待ち | 8,250 | 破損票の複製、記名候補票など追加作業が必要なものを含む。集計待ちの票はライブ配信カメラのある保管庫に置く |\n\n郡当局の所管には、候補者の届出、対面投票と投票会場の運営、選挙職員の採用と開票が含まれる。郡内の市町、学校区、特別区の選挙も対象。",
+  "facts_ja": [
+    "11月6日夕方、郡の未認証速報で集計済み154万6,594票、登録有権者258万9,827人の59.72%。この更新の追加分は4万609票。",
+    "未集計は郡推計2万1,500票。期日前票1万750、暫定票2,500、集計待ち8,250。午後発表では6万5,800票だった。",
+    "署名不備の補正・条件付き暫定票の本人確認の期限は現地11月8日17時（日本時間11月9日9時）。"
+  ],
+  "inference_ja": [
+    "郡速報と州全体の集計・正式認証を区別する。"
+  ],
+  "content_sha256": "25ef6baf8043ecf3f7606b45bc81077c7cc4f0cdfe038f2d638a4020cfd05ebe",
+  "content_hash_scope": "quoted_excerpt",
+  "translation_status": "partial",
+  "content_scope": "excerpt",
+  "missing_parts": [
+    "原文欄は短い出典抜粋。日本語欄は読めた発表内容の訳と整理。共通のサイト案内を除外。ウェブ公開時刻は未確認。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "既存確認期間内の郡速報を補完。州の認証・当選確定・議会構成の変化は確認できない。",
+  "related_source_urls": [
+    "https://elections.maricopa.gov/news-and-information/elections-news/additional-unofficial-results-11-6-2026.html",
+    "https://elections.maricopa.gov/asset/jcr:5f56a732-7bf4-4ea3-a7f9-3a2a6a0510c4/WCAG%20Summary%20Report_1106_0847PM.pdf"
+  ],
+  "related_document_ids": [
+    "az-maricopa-house-results-20261106-e9c4a77d"
+  ]
+}
