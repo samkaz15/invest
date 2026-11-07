@@ -1,0 +1,36 @@
+{
+  "id": "casos-20261105-unprocessed-ballots-5457f93f",
+  "source_url": "https://www.sos.ca.gov/administration/news-releases-and-advisories/2026-news-releases-and-advisories/office-california-secretary-state-issues-unprocessed-ballot-report",
+  "source": "California Secretary of State",
+  "title_en": "The Office of the California Secretary of State Issues Unprocessed Ballot Report",
+  "title_ja": "カリフォルニア州務長官室の未処理票推計（11月5日発表）",
+  "published_at": null,
+  "publication_date": "2026-11-05",
+  "publication_date_timezone": "America/Los_Angeles",
+  "publication_time_note": "州の発表に公表日の記載あり。時刻は明示されず、JSTでの日付と時刻は確定できない。",
+  "received_at": "2026-11-07T05:58:16.947215+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-07T05:58:16.947215+00:00",
+  "topics": [
+    "elections",
+    "other_us"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "発表の主要本文4段落を収録。連絡先・ページ共通案内は除外。リンク先の最新未処理票ダッシュボードはセキュリティ確認画面で表を取得できず。"
+  ],
+  "original_text": "The Office of the California Secretary of State Issues Unprocessed Ballot Report\n\nSacramento, Calif. – The Office of the California Secretary of State reminds voters that county elections officials are hard at work continuing to count ballots from the November 3, 2026, General Election. County elections officials have up to 30 days after Election Day to complete their extensive tallying, auditing, and certification work (known as the “official canvass”). The frequency of updated results varies by county.\n\nCalifornia’s county elections officials have already processed and counted 8,906,017 ballots from the November 3, 2026, General Election. County elections officials estimate 4,816,722 outstanding ballots remain to be processed and counted. The unprocessed ballots report—a compilation of estimates from county elections officials — is available here.\n\nVote-by-mail ballots postmarked on or before Election Day and received by county elections officials no later than 7 days after Election Day must be processed.\n\nCounty elections officials must report their final results to the Secretary of State for state and federal contests by December 4. The Secretary of State will certify the results on December 11. Additional information about the ballot counting process, can be found here.",
+  "translation_ja": "カリフォルニア州務長官室は、郡の選挙当局が2026年11月3日の総選挙の開票を続けていると有権者に案内した。郡の選挙当局には、票の集計、監査、認証を含む公式集計手続きを完了するため、選挙日から最長30日が与えられている。結果の更新頻度は郡ごとに異なる。\n\n郡の選挙当局はすでに8,906,017票の投票用紙を処理・集計した。処理・集計が残っている投票用紙は4,816,722票と郡当局が推計している。未処理票報告は各郡の推計をまとめたもので、州の結果サイトに掲載される。\n\n選挙日以前または当日の消印があり、選挙日から7日以内に郡の選挙当局へ届いた郵便投票は、処理しなければならない。\n\n郡の選挙当局は、州および連邦の選挙の最終結果を12月4日までに州務長官に報告しなければならない。州務長官は12月11日に結果を認証する。票の集計手続きについては州の案内を参照。\n\n[未処理票ダッシュボード](https://electionresults.sos.ca.gov/unprocessed-ballots-status) · [州の集計手続き案内](https://www.sos.ca.gov/elections/official-canvass)",
+  "facts_ja": [
+    "2026年11月5日（州現地日付）の州発表では、処理・集計済み8,906,017票、未処理4,816,722票は郡の推計を集約した当時の値。",
+    "州・連邦の選挙結果について、郡から州への報告期限は12月4日、州務長官の認証予定は12月11日。発表では郵便票の消印・到着の条件を説明。"
+  ],
+  "inference_ja": [
+    "11月5日の推計から11月7日時点の未処理票は算出できない。集計の追加や到着票があり得るため、州全体の過去推計から各下院区の順位変化は推定できない。"
+  ],
+  "content_sha256": "5457f93f833fa1f68124d4c3b239dc00b76f7e18b20e977ba9e3c0b2d9825423",
+  "source_raw_sha256": "1f6c450f731ea21a92e0f129eaffcdd66d7c68f4e581f49d7dc85d14201af43b",
+  "notification_eligible": false,
+  "notification_reason": "前回分析より前に公表された補完資料。最新の未処理票更新や認証結果は未確認。"
+}
