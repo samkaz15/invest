@@ -1,0 +1,40 @@
+{
+  "id": "state-rfj-iran-nuclear-program-20261106-b7e53c48",
+  "source": "U.S. Department of State, Rewards for Justice",
+  "source_url": "https://rewardsforjustice.net/rewards/iran-nuclear-program/",
+  "title_en": "Iran Nuclear Program",
+  "title_ja": "米国務省がイラン核計画の情報に最大2,000万米ドルの報奨金を提示",
+  "published_at": null,
+  "publication_time_note": "国務省ページの公表日時は未掲載。米中央軍の周知投稿時刻を別に記録した。",
+  "received_at": "2026-11-07T19:13:35.163491+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "other_us"
+  ],
+  "original_text": "Iran Nuclear Program\nUp to $20 Million\n\nRewards for Justice is offering a reward of up to $20 million and possible relocation for information about Iran’s nuclear program, including its facilities, equipment, and associated personnel, such as those in the scientific community, or the movement of any of the above.\n\nIn 2025, the International Atomic Energy Agency (IAEA) reported that Iran is enriching uranium to 60 percent purity, a level that is a short technical step from the 90 percent required for a nuclear weapon. Iran is the only non-nuclear-weapon state to produce uranium at such a high enrichment level. Experts estimate this quantity, if enriched further, could be enough for several nuclear weapons.\n\nThe regime’s lack of compliance with the IAEA on safeguards obligations has led to the agency’s loss of “continuity of knowledge” regarding Iran’s production and inventory of key components like centrifuges.\n\n[English poster]\nRFJ is seeking information on: nuclear scientists and staff; nuclear program-related technologies and capabilities; associated organizations and personnel. You may be eligible for a reward and relocation. [Contact details omitted.]",
+  "translation_ja": "## イランの核計画　報奨金は最大2,000万米ドル\n\n米国務省の「正義への報奨」プログラムは、イランの核計画に関する情報に対し、最大2,000万米ドルの報奨金を提供し、移転の支援を行う可能性がある。対象は核計画の施設、機器、科学界などの関係者、またはこれらの移動に関する情報。\n\n同プログラムによると、国際原子力機関（IAEA）は2025年、イランがウランを純度60％まで濃縮していると報告した。これは核兵器に必要とされる90％まで技術的にわずかな段階だと同プログラムは説明する。核兵器を保有しない国のうち、これほど高い水準にウランを濃縮しているのはイランのみで、専門家は、この量をさらに濃縮すれば複数の核兵器に足りる可能性があると推計している。\n\nまた同プログラムによると、イラン政府がIAEAの保障措置上の義務を履行していないため、IAEAは遠心分離機など主要部品の生産・在庫について、継続的に把握することができなくなった。\n\n**英語ポスター**　募集対象は、核科学者・職員、核計画に関連する技術・能力、関連組織・関係者。該当する情報の提供者は、報奨金や移転支援の対象となる場合がある。連絡先は省略。",
+  "content_sha256": "b7e53c487260388c7a274c6167e0f667c6d7818c8abe81d8e8e5c034ad0a45fe",
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "missing_parts": [
+    "告知本文3段落と見出しを全訳。英語ポスターは募集対象と報奨に関する部分を確認し、連絡先・案内は省略。共通の情報提供手順・連絡先、他言語版、ポスター画像の原本は保存対象外。IAEA資料は別出典の該当箇所のみ確認し、全頁翻訳は未実施。"
+  ],
+  "facts_ja": [
+    "米国務省のRewards for Justiceは、イラン核計画に関する施設・機器・関係者やその移動の情報に最大2,000万米ドルの報奨金と、移転支援の可能性を告知した。",
+    "国務省ページ自体の公開時刻は不明。米中央軍の公式投稿は2026年11月7日00:01:35 UTCで、同一の主要文言を掲載。",
+    "IAEAのGOV/2025/24で、2025年5月17日時点の最大60％濃縮の在庫推計と、遠心分離機などの生産・在庫の継続的把握を失ったとの記述を確認。現在の在庫・濃縮能力・兵器保有は未確認。"
+  ],
+  "inference_ja": [
+    "情報収集の施策だけでは、軍事行動・制裁の変更、原油供給、通貨・金の方向は判定できない。"
+  ],
+  "related_source_urls": [
+    "https://x.com/CENTCOM/status/2118856351858430019",
+    "https://www.iaea.org/sites/default/files/25/06/gov2025-24.pdf",
+    "https://rewardsforjustice.net/wp-content/uploads/2026/11/Graphic_Nuclear-461_ENG-1.jpg"
+  ],
+  "related_announced_at": "2026-11-07T00:01:35.000Z",
+  "related_retrieved_at": "2026-11-07T19:14:08.713838+00:00",
+  "notification_eligible": true,
+  "summary_ja_40": "米国務省はイランの核計画に関する情報に最大二千万米ドルの報奨金を提供すると発表。"
+}
