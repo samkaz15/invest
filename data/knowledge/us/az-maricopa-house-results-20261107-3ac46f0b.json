@@ -1,0 +1,168 @@
+{
+  "id": "az-maricopa-house-results-20261107-3ac46f0b",
+  "source_url": "https://elections.maricopa.gov/asset/jcr:5f56a732-7bf4-4ea3-a7f9-3a2a6a0510c4/WCAG%20Summary%20Report_1107_1141AM.pdf",
+  "source": "Maricopa County Elections Department",
+  "title_en": "Maricopa County Summary Report — 2026 General Election, November 7 snapshot",
+  "title_ja": "マリコパ郡11月7日未認証速報の投票総数・連邦下院表",
+  "published_at": null,
+  "publication_date_local": "2026-11-07",
+  "publication_timezone": "America/Phoenix",
+  "publication_time_note": "公表時刻は未確認。帳票記載の更新時刻・印刷時刻を別欄に保存。",
+  "received_at": "2026-11-07T22:25:39+00:00",
+  "received_at_kind": "web_retrieved",
+  "data_refreshed_at": "2026-11-07T11:17:00-07:00",
+  "report_printed_at": "2026-11-07T11:40:00-07:00",
+  "topics": [
+    "elections",
+    "us_politics"
+  ],
+  "original_text": "Maricopa County Summary Report\nData Refreshed: Saturday, November 7, 2026 11:17 AM\nTotal Registration and Turnout Total 2,589,827 1,549,152",
+  "translation_ja": "2026年11月3日総選挙、マリコパ郡集計。登録有権者2,589,827人、投票総数1,549,152票。内訳は州法16-579に基づく期日前票48,409、期日前票1,291,797、選挙当日票208,468、暫定票478。郡帳票のデータ更新は米山岳部標準時11月7日11:17（JST 11月8日03:17）、印刷は11:40（JST 03:40）。前回帳票の1,546,594票から2,558票増。投票率は表の登録数と投票数から計算して59.82%。\n\n連邦下院選のマリコパ郡内集計。候補者の氏名を除き、主要2党の票と全有効票を掲載。該当候補の表示がない場合は空欄。第2区・第7区を含め、掲載値は郡内のみ。\n\n| 選挙区 | 民主党 | 共和党 | 全有効票 |\n|---|---:|---:|---:|\n| 第1区 | 184534 | 160244 | 352631 |\n| 第2区 | 348 | 43 | 427 |\n| 第3区 | 129304 |  | 148582 |\n| 第4区 | 157987 | 89331 | 253675 |\n| 第5区 | 130772 | 132378 | 263150 |\n| 第7区 | 20397 | 6864 | 27261 |\n| 第8区 | 139242 | 146302 | 285544 |\n| 第9区 | 91240 | 87970 | 179403 |\n\n第5区の共和党リードは1,609票から1,606票。第8区は7,057票から7,060票。第9区の民主党リードは3,239票から3,270票。3区とも郡内の上位党は同じ。",
+  "translation_status": "partial",
+  "content_scope": "excerpt",
+  "content_sha256": "3ac46f0b10b6a53ff7975305d9672aafa3122310d79b740b8cd5e1cf1a2a00ac",
+  "content_hash_scope": "normalized county turnout, congressional numeric rows and data timestamp; not PDF bytes",
+  "missing_parts": [
+    "郡公式PDFの検索基盤に展開された本文の第1・2ページを確認した。郡サーバーの原本取得、ページ画像取得はHTTP 403。残る53ページ、候補者名、その他候補の内訳の日本語本文は未訳。原本バイト・メタデータは未確認。"
+  ],
+  "facts_ja": [
+    "マリコパ郡の未認証帳票は1,549,152票を集計。前版から2,558票増。比較した第5・8・9区の郡内上位党に変化なし。"
+  ],
+  "inference_ja": [
+    "郡内速報からアリゾナ州全体の認証、選挙区全体の当選、全国議会構成は推定しない。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "郡内速報の増分。比較した重点3区の上位党に変化がなく、州認証・全国議席の確定も確認されていない。",
+  "previous_snapshot_id": "az-maricopa-house-results-20261106-e9c4a77d",
+  "related_document_ids": [
+    "az-maricopa-house-results-20261106-e9c4a77d",
+    "az-maricopa-evening-unofficial-20261106-25ef6baf"
+  ],
+  "normalized_data": {
+    "refreshed_at": "2026-11-07T11:17:00-07:00",
+    "turnout": {
+      "registered": 2589827,
+      "ballots": 1549152,
+      "early_ars_16_579": 48409,
+      "early_vote": 1291797,
+      "election_day": 208468,
+      "provisional": 478
+    },
+    "districts": {
+      "1": {
+        "page": 1,
+        "party_votes": {
+          "DEM": 184534,
+          "REP": 160244,
+          "LBT": 7649
+        },
+        "valid_votes": 352631,
+        "undervotes": 3746,
+        "overvotes": 115
+      },
+      "2": {
+        "page": 1,
+        "party_votes": {
+          "DEM": 348,
+          "REP": 43,
+          "LBT": 36
+        },
+        "valid_votes": 427,
+        "undervotes": 11,
+        "overvotes": 1
+      },
+      "3": {
+        "page": 1,
+        "party_votes": {
+          "DEM": 129304,
+          "GRN": 7713,
+          "NOL": 8998
+        },
+        "valid_votes": 148582,
+        "undervotes": 10213,
+        "overvotes": 155
+      },
+      "4": {
+        "page": 2,
+        "party_votes": {
+          "DEM": 157987,
+          "REP": 89331,
+          "NOL": 5944
+        },
+        "valid_votes": 253675,
+        "undervotes": 4880,
+        "overvotes": 89
+      },
+      "5": {
+        "page": 2,
+        "party_votes": {
+          "DEM": 130772,
+          "REP": 132378
+        },
+        "valid_votes": 263150,
+        "undervotes": 4408,
+        "overvotes": 62
+      },
+      "7": {
+        "page": 2,
+        "party_votes": {
+          "DEM": 20397,
+          "REP": 6864
+        },
+        "valid_votes": 27261,
+        "undervotes": 532,
+        "overvotes": 9
+      },
+      "8": {
+        "page": 2,
+        "party_votes": {
+          "DEM": 139242,
+          "REP": 146302
+        },
+        "valid_votes": 285544,
+        "undervotes": 8558,
+        "overvotes": 131
+      },
+      "9": {
+        "page": 2,
+        "party_votes": {
+          "DEM": 91240,
+          "REP": 87970
+        },
+        "valid_votes": 179403,
+        "undervotes": 3438,
+        "overvotes": 59
+      }
+    }
+  },
+  "pdf": {
+    "sha256": null,
+    "source_url": "https://elections.maricopa.gov/asset/jcr:5f56a732-7bf4-4ea3-a7f9-3a2a6a0510c4/WCAG%20Summary%20Report_1107_1141AM.pdf",
+    "page_count": 55,
+    "ocr_used": false,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "source_pdf_save_reason": "直接取得・画像取得が403。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "Maricopa County Summary Report\nData Refreshed: Saturday, November 7, 2026 11:17 AM\nTotal Registration and Turnout Total 2,589,827 1,549,152",
+        "translation_ja": "2026年11月3日総選挙、マリコパ郡集計。登録有権者2,589,827人、投票総数1,549,152票。内訳は州法16-579に基づく期日前票48,409、期日前票1,291,797、選挙当日票208,468、暫定票478。郡帳票のデータ更新は米山岳部標準時11月7日11:17（JST 11月8日03:17）、印刷は11:40（JST 03:40）。前回帳票の1,546,594票から2,558票増。投票率は表の登録数と投票数から計算して59.82%。",
+        "extraction_status": "indexed_text_partial",
+        "translation_status": "partial"
+      },
+      {
+        "page": 2,
+        "original_text": "US Rep Dist CD-5\nUS Rep Dist CD-8\nUS Rep Dist CD-9",
+        "translation_ja": "連邦下院選のマリコパ郡内集計。候補者の氏名を除き、主要2党の票と全有効票を掲載。該当候補の表示がない場合は空欄。第2区・第7区を含め、掲載値は郡内のみ。\n\n| 選挙区 | 民主党 | 共和党 | 全有効票 |\n|---|---:|---:|---:|\n| 第1区 | 184534 | 160244 | 352631 |\n| 第2区 | 348 | 43 | 427 |\n| 第3区 | 129304 |  | 148582 |\n| 第4区 | 157987 | 89331 | 253675 |\n| 第5区 | 130772 | 132378 | 263150 |\n| 第7区 | 20397 | 6864 | 27261 |\n| 第8区 | 139242 | 146302 | 285544 |\n| 第9区 | 91240 | 87970 | 179403 |\n\n第5区の共和党リードは1,609票から1,606票。第8区は7,057票から7,060票。第9区の民主党リードは3,239票から3,270票。3区とも郡内の上位党は同じ。",
+        "extraction_status": "indexed_text_partial",
+        "translation_status": "partial"
+      }
+    ],
+    "untranslated_page_range": [
+      3,
+      55
+    ]
+  }
+}
