@@ -1,0 +1,62 @@
+{
+  "id": "ofac-937216-russia-diesel-gl135-20261009-acf9d4f4",
+  "source_url": "https://ofac.treasury.gov/media/937216/download?inline=",
+  "source": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+  "title_en": "Russia-related General License No. 135",
+  "title_ja": "OFACロシア関連一般許可135号　ロシア産軽油",
+  "published_at": null,
+  "publication_date_local": "2026-10-09",
+  "publication_time_note": "日付はOFAC一覧と署名済み文書による。公開時刻は不明。電子署名時刻は代用しない。",
+  "received_at": "2026-11-07T17:14:19.591303+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil",
+    "sanctions",
+    "war"
+  ],
+  "original_text": "DEPARTMENT OF THE TREASURY\n                                         WASHINGTON, D.C.\n\n\n\n\n                         OFFICE OF FOREIGN ASSETS CONTROL\n\n                  Russian Harmful Foreign Activities Sanctions Regulations\n                                     31 CFR part 587\n                       Ukraine-/Russia-Related Sanctions Regulations\n                                     31 CFR part 589\n\n                                GENERAL LICENSE NO. 135\n\n  Authorizing Transactions Related to the Sale, Delivery, Offloading, and Importation of\n                        Diesel Fuel of Russian Federation Origin\n\n       (a) Except as provided in paragraph (b) of this general license, all transactions prohibited\nby the Russian Harmful Foreign Activities Sanctions Regulations, 31 CFR part 587, or the\nUkraine-/Russia-Related Sanctions Regulations, 31 CFR part 589, that are related to the sale,\ndelivery, offloading, or importation, including importation into the United States, of diesel fuel\nof Russian Federation origin are authorized through 12:01 a.m. eastern daylight time, April 7,\n2027.\n\n       (b) This general license does not authorize any debit to an account on the books of a U.S.\nfinancial institution of the Central Bank of the Russian Federation, the National Wealth Fund of\nthe Russian Federation, or the Ministry of Finance.\n\n\n\n\n[signature and name omitted]\n                                                     Director\n                                                     Office of Foreign Assets Control\n\n\nDated: October 9, 2026",
+  "translation_ja": "## 米財務省　外国資産管理局\n\nロシアの有害な対外活動に関する制裁規則（米連邦規則集31 CFR第587部）  \nウクライナ・ロシア関連制裁規則（31 CFR第589部）\n\n### 一般許可第135号　ロシア連邦原産の軽油の販売、引渡し、荷揚げ、輸入に関する取引の許可\n\n**(a)** 本一般許可の(b)項で定める場合を除き、ロシア連邦原産の軽油の販売、引渡し、荷揚げ、または米国への輸入を含む輸入に関係する取引で、ロシアの有害な対外活動に関する制裁規則（31 CFR第587部）またはウクライナ・ロシア関連制裁規則（31 CFR第589部）が禁止しているものは、2027年4月7日午前0時1分（米東部夏時間）まで許可する。\n\n**(b)** 本一般許可は、ロシア連邦中央銀行、ロシア連邦国民福祉基金、または財務省が米国の金融機関に保有する口座からの引落しを一切許可しない。\n\n外国資産管理局長（署名欄・氏名を省略）  \n日付　2026年10月9日",
+  "content_sha256": "acf9d4f4541e742801c8337b4a6c93a609938662acdf5ab6c2d263a28d4ea99c",
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "missing_parts": [
+    "署名欄・署名者の氏名と電子署名情報を除外。原本PDFは電子署名情報を含むためGitHub未保存。"
+  ],
+  "facts_ja": [
+    "2026年10月9日付。一般許可が記載する許可対象は31 CFR第587部または第589部で禁止されるロシア産軽油の販売・引渡し・荷揚げ・輸入に関連する取引。",
+    "許可文書上の期限は2027年4月7日午前0時1分米東部夏時間（同日13時1分日本時間）。ロシア中銀、国民福祉基金、財務省の米金融機関口座からの引落しは対象外。",
+    "許可文書に実際の通関量・荷揚げ量・価格の数値はない。"
+  ],
+  "inference_ja": [
+    "別の法律であるPublic Law 117–109の手続、当局の実施措置と実際の通関を別に確認する。許可文書だけで輸入解禁や供給増を確定できない。"
+  ],
+  "related_source_urls": [
+    "https://ofac.treasury.gov/recent-actions/20261009_33",
+    "https://www.govinfo.gov/content/pkg/PLAW-117publ109/html/PLAW-117publ109.htm",
+    "https://www.govinfo.gov/content/pkg/FR-2026-10-21/html/2026-21599.htm"
+  ],
+  "authorization_through": "2027-04-07T00:01:00-04:00",
+  "pdf": {
+    "sha256": "b42bed871cff3162540bc645eba298e4c0cf73d0a5b1712879a3f4fec060d65b",
+    "page_count": 1,
+    "ocr_used": false,
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "DEPARTMENT OF THE TREASURY\n                                         WASHINGTON, D.C.\n\n\n\n\n                         OFFICE OF FOREIGN ASSETS CONTROL\n\n                  Russian Harmful Foreign Activities Sanctions Regulations\n                                     31 CFR part 587\n                       Ukraine-/Russia-Related Sanctions Regulations\n                                     31 CFR part 589\n\n                                GENERAL LICENSE NO. 135\n\n  Authorizing Transactions Related to the Sale, Delivery, Offloading, and Importation of\n                        Diesel Fuel of Russian Federation Origin\n\n       (a) Except as provided in paragraph (b) of this general license, all transactions prohibited\nby the Russian Harmful Foreign Activities Sanctions Regulations, 31 CFR part 587, or the\nUkraine-/Russia-Related Sanctions Regulations, 31 CFR part 589, that are related to the sale,\ndelivery, offloading, or importation, including importation into the United States, of diesel fuel\nof Russian Federation origin are authorized through 12:01 a.m. eastern daylight time, April 7,\n2027.\n\n       (b) This general license does not authorize any debit to an account on the books of a U.S.\nfinancial institution of the Central Bank of the Russian Federation, the National Wealth Fund of\nthe Russian Federation, or the Ministry of Finance.\n\n\n\n\n[signature and name omitted]\n                                                     Director\n                                                     Office of Foreign Assets Control\n\n\nDated: October 9, 2026",
+        "extraction_status": "extracted",
+        "translation_ja": "## 米財務省　外国資産管理局\n\nロシアの有害な対外活動に関する制裁規則（米連邦規則集31 CFR第587部）  \nウクライナ・ロシア関連制裁規則（31 CFR第589部）\n\n### 一般許可第135号　ロシア連邦原産の軽油の販売、引渡し、荷揚げ、輸入に関する取引の許可\n\n**(a)** 本一般許可の(b)項で定める場合を除き、ロシア連邦原産の軽油の販売、引渡し、荷揚げ、または米国への輸入を含む輸入に関係する取引で、ロシアの有害な対外活動に関する制裁規則（31 CFR第587部）またはウクライナ・ロシア関連制裁規則（31 CFR第589部）が禁止しているものは、2027年4月7日午前0時1分（米東部夏時間）まで許可する。\n\n**(b)** 本一般許可は、ロシア連邦中央銀行、ロシア連邦国民福祉基金、または財務省が米国の金融機関に保有する口座からの引落しを一切許可しない。\n\n外国資産管理局長（署名欄・氏名を省略）  \n日付　2026年10月9日",
+        "translation_status": "partial",
+        "visual_review_complete": true
+      }
+    ],
+    "requires_visual_review": true,
+    "original_url": "https://ofac.treasury.gov/media/937216/download?inline=",
+    "visual_review_complete": true,
+    "privacy_review_complete": false,
+    "binary_saved": false,
+    "binary_not_saved_reason": "署名欄・署名者の氏名と電子署名情報を除外。原本PDFは電子署名情報を含むためGitHub未保存。"
+  },
+  "notification_eligible": false,
+  "notification_reason": "10月の旧資料を、11月の報道の背景確認に補完。新規の重要な公的発表ではない。"
+}
