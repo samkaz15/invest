@@ -1,0 +1,150 @@
+{
+  "id": "eia-wpsr-appendixd-20230601-e0d2adac",
+  "source_url": "https://www.eia.gov/petroleum/supply/weekly/pdf/appendixd.pdf",
+  "source": "U.S. Energy Information Administration",
+  "title_en": "Statistical Methodology of Estimating Petroleum Exports Using Data from U.S. Customs and Border Protection",
+  "title_ja": "EIA付録D　米国税関・国境警備局データによる石油輸出推計（抜粋）",
+  "published_at": null,
+  "document_updated_date": "2023-06-01",
+  "publication_time_note": "表紙記載の改定日。公表時刻とHTTP更新は別。",
+  "source_http_last_modified": "Wed, 27 Aug 2025 10:51:12 GMT",
+  "received_at": "2026-11-07T08:33:07.383307+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "PDF全12ページのうち4・8・9ページを原文・訳付きで保存。PDFの1～3、5～7、10～12ページは抽出後の目視・翻訳が未完了。回帰モデルの定式化、編集規則、別添の詳細は未訳。"
+  ],
+  "original_text": "June 2023\n\n\nIntroduction\nOn August 31, 2016, we started incorporating export data collected by U.S. Customs and Border\nProtection (CBP) through the Automated Commercial Environment (ACE) system to help estimate U.S.\npetroleum exports reported in the Weekly Petroleum Status Report (WPSR). The updated WPSR\nmethodology provides a more accurate estimate of U.S. petroleum exports to better inform our weekly\nestimates of domestic quantity demanded for petroleum products and biofuels and the quantity of the\ncrude oil supply adjustment (that is, the balance quantity for crude oil).\n\nExports are an important component for calculating our weekly estimates of quantity demanded for\npetroleum products. We calculate domestic quantity demanded (measured as product supplied) for\npetroleum products as:\n\n                 Domestic quantity demanded = Production + Imports - Stock change - Exports\n\nWe conduct weekly surveys to collect the data that we use to estimate production, imports, and stocks\nbut not exports. The U.S. Census Bureau (USCB) publishes export data once a month. To estimate\nweekly exports, we previously used forecasts based on an autoregressive integrated moving average\n(ARIMA) procedure to model weekly export statistics using the latest USCB monthly data. We obtained\nofficial USCB export data for crude oil, petroleum products, and biofuels each month, approximately six\nweeks after the close of the reporting month, and we published them in our Petroleum Supply Monthly\n(PSM). These data provided the inputs to the weekly export ARIMA model. However, as the volume and\nvariability of U.S. exports increased, we sometimes found significant discrepancies between modeled\nweekly estimates and final monthly exports data provided by the USCB. Because of the growing impact\nof exports on our weekly estimates of U.S. petroleum quantity demanded, we needed to improve the\nweekly export estimates we were using in the WPSR.\n\nBeginning in 2013, we investigated data sources and methodologies to improve our weekly estimates of\npetroleum and biofuels exports. We found that we could use the administrative data collected by CBP\nthrough the ACE system, which cover U.S. exports (except for most exports to Canada), to improve our\nweekly export estimates. To obtain these data, we established a Memorandum of Understanding with\nCBP in September 2014 through the International Trade Data System (ITDS) process. In August 2016, the\nOffice of Management and Budget (OMB) granted us an exception to the provisions of OMB’s Statistical\nPolicy Directive No. 3 on the Compilation, Release, and Evaluation of Principal Federal Economic\nIndicators. This exception permits us to publish weekly estimates of export volumes of crude oil and six\nrefined petroleum products and biofuel categories before USCB releases the official U.S. trade data.\n\nSince August 31, 2016, we have continuously monitored and analyzed the estimates derived from the\nrecently acquired near real-time CBP export data. The remainder of this document describes the\nmethod we used for the WPSR release on June 1, 2023, and onward. You can find a description of\nchanges to our estimation methodology over time in Attachment B.\n\n\n\n\nU.S. Energy Information Administration | Appendix D: Statistical Methodology                              1\n\nJune 2023\n\n\nAfter we edit the CBP export data (which excludes Canada), we apply the estimated regression\ncoefficients to the edited data each week to produce the published weekly exports data. This method\nassumes a similar linear relationship between the PSM and CBP data (excluding Canada) on a weekly\nbasis for the weeks in each month. We will continue to assess the results of this approach and identify\nalternative methods to develop weekly export volume estimates, if needed.\n\nThe second component is a three-month moving average of U.S. exports to Canada in thousand barrels\nper day as reported in the latest series of the PSM.\n\nThe WPSR Review Team may adjust the estimates calculated using the above procedures, if necessary,\nas part of the macro-editing process they conduct before we release the published estimates. As part of\nthis process, the team may adjust the exports data to resolve inconsistencies in the product supplied\ncalculation and the balance quantity for crude oil. Adjustments may include replacing export quantities\nestimated from CBP data with averages based on historical aggregates published in WPSR, possibly with\nthe historical aggregates published in the PSM. For more information on the macro-editing process, see\nthe Macro Editing section of WPSR’s Appendix B: Explanatory Notes and Detailed Methods Report.\n\n\n\n\nU.S. Energy Information Administration | Appendix D: Statistical Methodology                              5\n\nJune 2023\n\n\nSummary\nThe accuracy of our WPSR estimates of U.S. weekly exports has improved because we are now using\nnear real-time petroleum export data from CBP, published monthly trade data from the USCB, and\nrevised estimation methodologies. We will continue to monitor the performance of these methods and\nwill modify them as needed to further improve their accuracy.\n\n\n\n\nU.S. Energy Information Administration | Appendix D: Statistical Methodology                         6",
+  "translation_ja": "出典は米国エネルギー情報局（EIA）、2023年6月1日改定。以下はChatGPTによる対象ページの翻訳。\n\n2023年6月\n\n## はじめに（冊子1ページ）\n\nEIAは2016年8月31日から、週次石油状況報告（WPSR）に掲載する米国の石油輸出量を推計するため、米国税関・国境警備局（CBP）が自動商取引環境（ACE）を通じて収集した輸出データを取り入れ始めた。更新後の方法では、米国の石油輸出をより正確に推計し、石油製品とバイオ燃料の国内需要量および原油供給調整量（原油需給の差額）の週次推計を改善できる。\n\n輸出は、石油製品の週次需要量を推計する上で重要な項目である。EIAは石油製品の国内需要量を製品供給量で測り、次の式で計算する。\n\n**国内需要量 ＝ 生産 ＋ 輸入 − 在庫変動 − 輸出**\n\nEIAは生産、輸入、在庫を推計するためのデータを週次調査で収集する。輸出データはこの調査の対象外で、米国国勢調査局（USCB）が月次で公表する。以前はUSCBの最新月次データを用い、自己回帰和分移動平均（ARIMA）による予測で週次輸出を推計していた。原油、石油製品、バイオ燃料の公式なUSCB輸出データは、対象月の終了から約6週間後に毎月取得し、『石油供給月報』（PSM）に掲載した。このデータを週次輸出のARIMAモデルの入力にしていた。米国の輸出量と変動性が拡大するにつれ、モデルの週次推計とUSCBの月次確定値との間に大きな乖離が生じる場合があった。輸出が米国の石油需要量の週次推計に及ぼす影響が大きくなったため、WPSRに用いる週次輸出の推計方法を改善する必要があった。\n\nEIAは2013年から、石油とバイオ燃料の週次輸出推計を改善するためのデータ源と方法を調査した。CBPがACEで収集する行政データは、カナダ向けの大半を除く米国の輸出を収録しており、推計の改善に使えることが分かった。データ入手のため、国際貿易データシステム（ITDS）の手続きを通じ、2014年9月にCBPと了解覚書を締結した。2016年8月には、主要連邦経済指標の編纂・公表・評価を定めた行政管理予算局（OMB）の統計政策指令第3号について、例外適用を認められた。これにより、USCBの公式貿易データ公表前に、原油および精製石油製品・バイオ燃料の6区分の輸出量の週次推計を公表できる。\n\n2016年8月31日以降、入手したほぼリアルタイムのCBP輸出データから得た推計を継続して監視・分析している。本資料の以降の部分では、2023年6月1日公表のWPSRから採用した方法を説明する。推計方法の変遷は別添Bを参照。\n\n米国エネルギー情報局｜付録D 統計手法　1\n\n2023年6月\n\n## 推計方法の続き（冊子5ページ）\n\nカナダを除くCBP輸出データを編集した後、推定した回帰係数を各週の編集済みデータに適用して、公表用の週次輸出データを作成する。この方法では、月内の各週について、PSMとCBPデータ（カナダを除く）の間に同様の線形関係が成り立つと仮定する。EIAはこの手法の結果を引き続き評価し、必要に応じて週次輸出量の別の推計方法を検討する。\n\n第2の構成要素は、PSMの最新系列に掲載された米国からカナダへの輸出量の3カ月移動平均である。単位は千バレル／日。\n\nWPSRの審査チームは、公表前の集計段階の点検・調整で、必要に応じて上記の方法で算出した推計値を修正できる。製品供給量の計算や原油需給の差額の不整合を解消するため、輸出データを調整することがある。調整には、CBPデータから推計した輸出量を、WPSRの過去の集計値、場合によりPSMの過去の集計値に基づく平均に置き換えることも含まれる。詳しくはWPSR付録B『注釈と詳細な手法』の集計段階の点検・調整に関する節を参照。\n\n米国エネルギー情報局｜付録D 統計手法　5\n\n2023年6月\n\n## 要約（冊子6ページ）\n\nCBPのほぼリアルタイムの石油輸出データ、USCBの月次貿易公表値、改定した推計方法を利用することで、WPSRの米国週次輸出推計の精度は向上した。EIAは引き続き手法の性能を監視し、精度をさらに高めるため必要に応じて変更する。\n\n米国エネルギー情報局｜付録D 統計手法　6",
+  "facts_ja": [
+    "EIAの定義する製品供給量は生産＋輸入−在庫変動−輸出。",
+    "米国の週次石油輸出の推計はカナダを除くCBPデータの回帰補正と、カナダ向けの月次3カ月移動平均を組み合わせ、必要時に追加調整する。"
+  ],
+  "inference_ja": [
+    "輸出推計の修正は、他の入力が同じなら製品供給量の変化に反対符号で反映される。単週の変化は最終消費の変化と分離し、月次確報と他の需給項目を照合する。"
+  ],
+  "content_sha256": "372c83a08a8fdc41d76aa26a399c74f9f13907f915a35a6325f91300aec8c4bf",
+  "pdf": {
+    "sha256": "e0d2adacb2c78db2ff5f87d9559b0eb7f5a6d4defcf8846d85cfa5cd8154d0e3",
+    "page_count": 12,
+    "ocr_used": false,
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "",
+        "extraction_status": "extracted_not_reviewed_or_saved",
+        "translation_ja": "",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 2,
+        "original_text": "",
+        "extraction_status": "extracted_not_reviewed_or_saved",
+        "translation_ja": "",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "extraction_status": "extracted_not_reviewed_or_saved",
+        "translation_ja": "",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 4,
+        "original_text": "June 2023\n\n\nIntroduction\nOn August 31, 2016, we started incorporating export data collected by U.S. Customs and Border\nProtection (CBP) through the Automated Commercial Environment (ACE) system to help estimate U.S.\npetroleum exports reported in the Weekly Petroleum Status Report (WPSR). The updated WPSR\nmethodology provides a more accurate estimate of U.S. petroleum exports to better inform our weekly\nestimates of domestic quantity demanded for petroleum products and biofuels and the quantity of the\ncrude oil supply adjustment (that is, the balance quantity for crude oil).\n\nExports are an important component for calculating our weekly estimates of quantity demanded for\npetroleum products. We calculate domestic quantity demanded (measured as product supplied) for\npetroleum products as:\n\n                 Domestic quantity demanded = Production + Imports - Stock change - Exports\n\nWe conduct weekly surveys to collect the data that we use to estimate production, imports, and stocks\nbut not exports. The U.S. Census Bureau (USCB) publishes export data once a month. To estimate\nweekly exports, we previously used forecasts based on an autoregressive integrated moving average\n(ARIMA) procedure to model weekly export statistics using the latest USCB monthly data. We obtained\nofficial USCB export data for crude oil, petroleum products, and biofuels each month, approximately six\nweeks after the close of the reporting month, and we published them in our Petroleum Supply Monthly\n(PSM). These data provided the inputs to the weekly export ARIMA model. However, as the volume and\nvariability of U.S. exports increased, we sometimes found significant discrepancies between modeled\nweekly estimates and final monthly exports data provided by the USCB. Because of the growing impact\nof exports on our weekly estimates of U.S. petroleum quantity demanded, we needed to improve the\nweekly export estimates we were using in the WPSR.\n\nBeginning in 2013, we investigated data sources and methodologies to improve our weekly estimates of\npetroleum and biofuels exports. We found that we could use the administrative data collected by CBP\nthrough the ACE system, which cover U.S. exports (except for most exports to Canada), to improve our\nweekly export estimates. To obtain these data, we established a Memorandum of Understanding with\nCBP in September 2014 through the International Trade Data System (ITDS) process. In August 2016, the\nOffice of Management and Budget (OMB) granted us an exception to the provisions of OMB’s Statistical\nPolicy Directive No. 3 on the Compilation, Release, and Evaluation of Principal Federal Economic\nIndicators. This exception permits us to publish weekly estimates of export volumes of crude oil and six\nrefined petroleum products and biofuel categories before USCB releases the official U.S. trade data.\n\nSince August 31, 2016, we have continuously monitored and analyzed the estimates derived from the\nrecently acquired near real-time CBP export data. The remainder of this document describes the\nmethod we used for the WPSR release on June 1, 2023, and onward. You can find a description of\nchanges to our estimation methodology over time in Attachment B.\n\n\n\n\nU.S. Energy Information Administration | Appendix D: Statistical Methodology                              1",
+        "extraction_status": "extracted",
+        "translation_ja": "2023年6月\n\n## はじめに（冊子1ページ）\n\nEIAは2016年8月31日から、週次石油状況報告（WPSR）に掲載する米国の石油輸出量を推計するため、米国税関・国境警備局（CBP）が自動商取引環境（ACE）を通じて収集した輸出データを取り入れ始めた。更新後の方法では、米国の石油輸出をより正確に推計し、石油製品とバイオ燃料の国内需要量および原油供給調整量（原油需給の差額）の週次推計を改善できる。\n\n輸出は、石油製品の週次需要量を推計する上で重要な項目である。EIAは石油製品の国内需要量を製品供給量で測り、次の式で計算する。\n\n**国内需要量 ＝ 生産 ＋ 輸入 − 在庫変動 − 輸出**\n\nEIAは生産、輸入、在庫を推計するためのデータを週次調査で収集する。輸出データはこの調査の対象外で、米国国勢調査局（USCB）が月次で公表する。以前はUSCBの最新月次データを用い、自己回帰和分移動平均（ARIMA）による予測で週次輸出を推計していた。原油、石油製品、バイオ燃料の公式なUSCB輸出データは、対象月の終了から約6週間後に毎月取得し、『石油供給月報』（PSM）に掲載した。このデータを週次輸出のARIMAモデルの入力にしていた。米国の輸出量と変動性が拡大するにつれ、モデルの週次推計とUSCBの月次確定値との間に大きな乖離が生じる場合があった。輸出が米国の石油需要量の週次推計に及ぼす影響が大きくなったため、WPSRに用いる週次輸出の推計方法を改善する必要があった。\n\nEIAは2013年から、石油とバイオ燃料の週次輸出推計を改善するためのデータ源と方法を調査した。CBPがACEで収集する行政データは、カナダ向けの大半を除く米国の輸出を収録しており、推計の改善に使えることが分かった。データ入手のため、国際貿易データシステム（ITDS）の手続きを通じ、2014年9月にCBPと了解覚書を締結した。2016年8月には、主要連邦経済指標の編纂・公表・評価を定めた行政管理予算局（OMB）の統計政策指令第3号について、例外適用を認められた。これにより、USCBの公式貿易データ公表前に、原油および精製石油製品・バイオ燃料の6区分の輸出量の週次推計を公表できる。\n\n2016年8月31日以降、入手したほぼリアルタイムのCBP輸出データから得た推計を継続して監視・分析している。本資料の以降の部分では、2023年6月1日公表のWPSRから採用した方法を説明する。推計方法の変遷は別添Bを参照。\n\n米国エネルギー情報局｜付録D 統計手法　1",
+        "translation_status": "complete",
+        "printed_page": 1,
+        "visual_review_complete": true
+      },
+      {
+        "page": 5,
+        "original_text": "",
+        "extraction_status": "extracted_not_reviewed_or_saved",
+        "translation_ja": "",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "extraction_status": "extracted_not_reviewed_or_saved",
+        "translation_ja": "",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 7,
+        "original_text": "",
+        "extraction_status": "extracted_not_reviewed_or_saved",
+        "translation_ja": "",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 8,
+        "original_text": "June 2023\n\n\nAfter we edit the CBP export data (which excludes Canada), we apply the estimated regression\ncoefficients to the edited data each week to produce the published weekly exports data. This method\nassumes a similar linear relationship between the PSM and CBP data (excluding Canada) on a weekly\nbasis for the weeks in each month. We will continue to assess the results of this approach and identify\nalternative methods to develop weekly export volume estimates, if needed.\n\nThe second component is a three-month moving average of U.S. exports to Canada in thousand barrels\nper day as reported in the latest series of the PSM.\n\nThe WPSR Review Team may adjust the estimates calculated using the above procedures, if necessary,\nas part of the macro-editing process they conduct before we release the published estimates. As part of\nthis process, the team may adjust the exports data to resolve inconsistencies in the product supplied\ncalculation and the balance quantity for crude oil. Adjustments may include replacing export quantities\nestimated from CBP data with averages based on historical aggregates published in WPSR, possibly with\nthe historical aggregates published in the PSM. For more information on the macro-editing process, see\nthe Macro Editing section of WPSR’s Appendix B: Explanatory Notes and Detailed Methods Report.\n\n\n\n\nU.S. Energy Information Administration | Appendix D: Statistical Methodology                              5",
+        "extraction_status": "extracted",
+        "translation_ja": "2023年6月\n\n## 推計方法の続き（冊子5ページ）\n\nカナダを除くCBP輸出データを編集した後、推定した回帰係数を各週の編集済みデータに適用して、公表用の週次輸出データを作成する。この方法では、月内の各週について、PSMとCBPデータ（カナダを除く）の間に同様の線形関係が成り立つと仮定する。EIAはこの手法の結果を引き続き評価し、必要に応じて週次輸出量の別の推計方法を検討する。\n\n第2の構成要素は、PSMの最新系列に掲載された米国からカナダへの輸出量の3カ月移動平均である。単位は千バレル／日。\n\nWPSRの審査チームは、公表前の集計段階の点検・調整で、必要に応じて上記の方法で算出した推計値を修正できる。製品供給量の計算や原油需給の差額の不整合を解消するため、輸出データを調整することがある。調整には、CBPデータから推計した輸出量を、WPSRの過去の集計値、場合によりPSMの過去の集計値に基づく平均に置き換えることも含まれる。詳しくはWPSR付録B『注釈と詳細な手法』の集計段階の点検・調整に関する節を参照。\n\n米国エネルギー情報局｜付録D 統計手法　5",
+        "translation_status": "complete",
+        "printed_page": 5,
+        "visual_review_complete": true
+      },
+      {
+        "page": 9,
+        "original_text": "June 2023\n\n\nSummary\nThe accuracy of our WPSR estimates of U.S. weekly exports has improved because we are now using\nnear real-time petroleum export data from CBP, published monthly trade data from the USCB, and\nrevised estimation methodologies. We will continue to monitor the performance of these methods and\nwill modify them as needed to further improve their accuracy.\n\n\n\n\nU.S. Energy Information Administration | Appendix D: Statistical Methodology                         6",
+        "extraction_status": "extracted",
+        "translation_ja": "2023年6月\n\n## 要約（冊子6ページ）\n\nCBPのほぼリアルタイムの石油輸出データ、USCBの月次貿易公表値、改定した推計方法を利用することで、WPSRの米国週次輸出推計の精度は向上した。EIAは引き続き手法の性能を監視し、精度をさらに高めるため必要に応じて変更する。\n\n米国エネルギー情報局｜付録D 統計手法　6",
+        "translation_status": "complete",
+        "printed_page": 6,
+        "visual_review_complete": true
+      },
+      {
+        "page": 10,
+        "original_text": "",
+        "extraction_status": "extracted_not_reviewed_or_saved",
+        "translation_ja": "",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 11,
+        "original_text": "",
+        "extraction_status": "extracted_not_reviewed_or_saved",
+        "translation_ja": "",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      },
+      {
+        "page": 12,
+        "original_text": "",
+        "extraction_status": "extracted_not_reviewed_or_saved",
+        "translation_ja": "",
+        "translation_status": "not_translated",
+        "visual_review_complete": false
+      }
+    ],
+    "requires_visual_review": true,
+    "original_url": "https://www.eia.gov/petroleum/supply/weekly/pdf/appendixd.pdf",
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "pages_verified": [
+      4,
+      8,
+      9
+    ],
+    "binary_saved": false,
+    "binary_not_saved_reason": "全ページの視覚・埋込情報のプライバシー照合は未完了。"
+  },
+  "notification_eligible": false,
+  "notification_reason": "2023年改定の既報週報参照資料。新規発表ではない。"
+}
