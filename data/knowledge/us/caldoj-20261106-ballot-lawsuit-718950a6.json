@@ -1,0 +1,41 @@
+{
+  "published_at": null,
+  "publication_date_local": "2026-11-06",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "elections",
+    "other_us"
+  ],
+  "inference_ja": [
+    "当該訴訟の手続上の変化。得票順位、州認証、全国議席配分、政策発効への波及は別の一次資料で確認する。"
+  ],
+  "id": "caldoj-20261106-ballot-lawsuit-718950a6",
+  "source_url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-trump-administration-throws-towel-drops-baseless-lawsuit",
+  "source_alias_urls": [
+    "https://oag.ca.gov/node/632585"
+  ],
+  "source": "California Department of Justice",
+  "title_en": "Attorney General Bonta: Trump Administration Throws in the Towel, Drops Baseless Lawsuit Seeking to Disrupt California Elections",
+  "title_ja": "カリフォルニア州司法長官、郵便投票をめぐる連邦訴訟の取下げを発表",
+  "publication_time_note": "公式発表の現地日付。正確な掲載時刻は不明。",
+  "received_at": "2026-11-07T12:23:55.987473+00:00",
+  "original_text": "OAKLAND — California Attorney General Rob Bonta today announced that the Trump Administration has dropped its lawsuit seeking to force California election officials to set aside and not count mail-in ballots that may be cast by a list of approximately 20,000 individuals it “believes” are “likely” noncitizens. After four consecutive court losses, the U.S. Department of Justice chose to voluntarily dismiss its case rather than face a court-ordered evidentiary hearing before Judge David Carter next Friday, November 13, to scrutinize the reliability of its list. Courts in other cases have raised concerns about the reliability of similar lists, and a U.S. Department of Justice attorney in another case recently acknowledged that its lists have a “high error rate.”\n\n“Next week, the Trump Administration would have faced tough questions in court about its list of suspected noncitizens. Rather than face that scrutiny, it chose to drop its case,” said Attorney General Bonta. “After four court defeats in just one week, including at the U.S. Supreme Court, the federal government has now thrown in the towel. California stood firm and prevailed, and the nationwide election results made clear that Americans overwhelmingly reject the Trump Administration’s anti-democratic agenda. California will always stand up for our democracy and the rule of law.”\n\nThe U.S. Constitution gives States and Congress — not the President or the Executive Branch — the authority to regulate the time, place, and manner of elections. The Trump Administration’s repeated attempts to undermine that constitutional authority were decisively rejected by four courts in one week:\n\nMonday, October 26: The U.S. Court of Appeals for the Ninth Circuit dismissed the federal government’s first emergency appeal after it attempted to bypass the district court.\n\nWednesday, October 28: The U.S. District Court for the Central District of California denied the Administration’s request for a temporary restraining order.\n\nFriday, October 30: The Ninth Circuit denied the Administration’s emergency motion for an injunction pending appeal.\n\nMonday, November 2: The U.S. Supreme Court rejected the Administration’s emergency application seeking to force California election officials to segregate and not count any of the mail-in ballots at issue.",
+  "translation_ja": "オークランド発。カリフォルニア州のロブ・ボンタ司法長官は本日、トランプ政権が提起した訴訟を取り下げたと発表した。同政権は、米国市民でない可能性が高いと判断した約2万人のリストに載る人が投じた可能性のある郵便投票を、州の選挙当局に分離させ、集計させないことを求めていた。州司法長官の発表によれば、連邦司法省は裁判で4回続けて退けられ、11月13日金曜にデービッド・カーター判事の下で予定されていた、リストの信頼性を検討する証拠審理に臨む前に、自主的取下げを選んだ。ほかの事件でも同様のリストの信頼性に裁判所が疑問を示し、別の事件では連邦司法省の弁護士がリストの誤り率は高いと認めたと州は述べた。\n\nボンタ司法長官は、翌週に政権は非市民と疑われる人のリストについて厳しい質問を受けるはずだったが、審理を受ける前に取り下げたと述べた。連邦最高裁を含め1週間で4回退けられ、連邦政府が断念したとも述べた。州は立場を貫いて勝利し、全国の選挙結果は米国民が政権の反民主主義的な方針を圧倒的に拒絶したことを示すと主張し、民主主義と法の支配を守る姿勢を表明した。\n\n州司法長官は、選挙の時期、場所、方法を規制する権限を米国憲法が州と連邦議会に与えていると説明し、次の経過を挙げた。\n\n- 10月26日（月）。連邦政府が地裁を経ずに申し立てた最初の緊急上訴を、第9巡回区連邦控訴裁判所が退けた。\n- 10月28日（水）。カリフォルニア州中央地区連邦地裁が、政権の一時的差止命令の申立てを却下した。\n- 10月30日（金）。第9巡回区は、上訴中の緊急差止めの申立てを却下した。\n- 11月2日（月）。連邦最高裁は、争われた郵便投票を州当局に分離させ、集計させないよう求めた政権の緊急申立てを却下した。",
+  "content_sha256": "718950a61b3c59647fe28b78605044ff81bb8830ad40946a9a1a1b52423c858e",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "source_response_sha256": "115b0adbb26c8bd981f49ab5542d09edcd025585f7dcdfb0dc57fa709ff72609",
+  "linked_pdf_url": "https://oag.ca.gov/system/files/attachments/press-docs/11-6-2026-voluntary-dismissal.pdf",
+  "related_document_ids": [
+    "usdoj-20261106-ca-ballots-dismissal-4d1c3847"
+  ],
+  "facts_ja": [
+    "連邦司法省は2026年11月6日付の通知をカリフォルニア州中央地区連邦地裁に提出。事件2:26-cv-12025の書面180は連邦民事訴訟規則41(a)(1)(A)(i)を引用。",
+    "連邦最高裁の公式事件記録26A624は、上訴中の差止め申立てを11月2日に却下したと記録。",
+    "約2万人は州司法省が説明する争点のリスト規模。実際に投じられた票数や資格違反の確定数は示さない。"
+  ],
+  "redistribution_rights_url": "https://oag.ca.gov/conditions",
+  "notification_eligible": false,
+  "notification_reason": "同一事象の連邦司法省書面に通知を集約。"
+}
