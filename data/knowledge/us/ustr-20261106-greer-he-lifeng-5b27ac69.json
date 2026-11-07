@@ -1,0 +1,36 @@
+{
+  "id": "ustr-20261106-greer-he-lifeng-5b27ac69",
+  "source_url": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/november/readout-ambassador-greers-call-chinas-vice-premier-he-lifeng",
+  "source": "Office of the United States Trade Representative",
+  "title_en": "Readout of Ambassador Greer’s Call with China’s Vice Premier He Lifeng",
+  "title_ja": "グリア米通商代表と中国の何立峰副首相の協議概要",
+  "published_at": null,
+  "publication_date_local": "2026-11-06",
+  "publication_time_note": "公表日は公式本文に記載。公表時刻は不明。「今朝」は協議の時刻表現。",
+  "received_at": "2026-11-07T11:22:48.275817+00:00",
+  "received_at_kind": "web_retrieved",
+  "source_response_sha256": "8cb82b41095c6059c8e8b76411c8c4d43c1a759cac39a0f64194f871823aab85",
+  "content_sha256": "5b27ac69c763a03e4ff449581f8ed273a178ccffd601ea7a885364cc132f34a7",
+  "topics": [
+    "trade_policy",
+    "investment_policy",
+    "other_us"
+  ],
+  "original_text": "WASHINGTON – This morning, United States Trade Representative Jamieson Greer and Treasury Secretary Scott Bessent held a videoconference with Vice Premier He Lifeng of the People’s Republic of China regarding the U.S.-China trade and economic relationship.\n\nDuring the call, Ambassador Greer emphasized the critical importance of China taking concrete actions to fully implement its past commitments, particularly as they relate to agricultural purchases, rare earths, and other critical minerals. The Trump Administration will continue to pursue balanced trade with China by monitoring compliance of past commitments while unlocking lasting benefits for American farmers, ranchers, manufacturers, and workers.",
+  "translation_ja": "ワシントン発。今朝、ジェイミソン・グリア米通商代表とスコット・ベッセント財務長官は、中華人民共和国の何立峰副首相と、米中の通商・経済関係についてビデオ会議を行った。\n\n協議でグリア代表は、中国が過去の約束を完全に履行するために具体的な行動を取ることが極めて重要だと強調した。特に農産品の購入、レアアース、その他の重要鉱物に関する約束を挙げた。トランプ政権は今後も過去の約束の履行状況を監視しながら、米国の農業者、畜産業者、製造業者、労働者に長期的な利益をもたらすよう、中国との均衡ある貿易を追求する。",
+  "facts_ja": [
+    "米通商代表部の説明は、農産品購入、レアアース、その他の重要鉱物について既存の約束の履行を求めたと記す。",
+    "本文には新たな関税率、購入数量、輸出許可の発効日は記載されていない。"
+  ],
+  "inference_ja": [
+    "中国側の規制文書、実際の輸出許可や通関数量、農産品購入量が確認されるまで、供給増や需要増を仮定しない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "related_document_ids": [
+    "ustreas-431e914-20261106-bessent-he-lifeng-call"
+  ],
+  "notification_reason": "既存メールで扱った同じ協議。USTR独自の公表本文は照合用に保存。新しい政策決定の告知は確認できない。"
+}
