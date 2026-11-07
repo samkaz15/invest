@@ -1,0 +1,61 @@
+{
+  "id": "ukmto-20261106-197-26-44cf1641",
+  "source": "United Kingdom Maritime Trade Operations",
+  "source_url": "https://www.ukmto.org/-/media/ukmto/products/20261106-ukmto_warning-197-26.pdf",
+  "title_en": "UKMTO Warning 197-26 – Attack",
+  "title_ja": "英海事当局警報197-26、ホルムズ海峡を出るタンカーの左舷で爆発との報告",
+  "published_at": null,
+  "publication_time_note": "公表日は公式ファイル名から11月6日。HTTP更新とファイル作成時刻を公表時刻として採用しない。",
+  "received_at": "2026-11-07T19:46:57.004092+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "other_us"
+  ],
+  "original_text": "UKMTO WARNING\n197-26 - ATTACK\nIncident Date:                   Incident Time:                   Source:\n05 Nov 2026                      2200UTC                        Master\nUKMTO has received a time-late report of an incident 16NM east of Khasab, Oman.\nThe Master of a Tanker transiting the Strait of Hormuz outbound, has reported an\nexplosion at the waterline, port side. The crew are safe and are accounted for. The\ntanker is still under its own power and is continuing on its voyage.\nVessels are advised to transit with caution and report any suspicious activity to UKMTO,\nwhilst authorities investigate.\nKhasab, Oman",
+  "translation_ja": "オマーンのハサブ東方16海里で起きた事案について、UKMTOは時間がたってから通報を受けた。ホルムズ海峡を外へ向かって通過中のタンカー船長は、左舷の喫水線で爆発があったと報告した。警報では、乗員は全員無事で所在が確認され、タンカーは自力で航行を続けている。発生は2026年11月5日22:00 UTC（日本時間11月6日07:00）。情報源は船長。\n\n当局の調査中、船舶は注意して航行し、不審な活動があればUKMTOに報告するよう勧告されている。\n\n地図はオマーンのハサブとその沖合の対象海域を示す。出典 UK Maritime Trade Operations、Open Government Licence。",
+  "content_sha256": "44cf16413b33dfd54e42973513d62ec8485018484c1f09e5c053faa66583547a",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "facts_ja": [
+    "UKMTO警報197-26。オマーンのハサブ東方16海里で起きた事案について、UKMTOは時間がたってから通報を受けた。ホルムズ海峡を外へ向かって通過中のタンカー船長は、左舷の喫水線で爆発があったと報告した。警報では、乗員は全員無事で所在が確認され、タンカーは自力で航行を続けている。発生は2026年11月5日22:00 UTC（日本時間11月6日07:00）。情報源は船長。",
+    "地図と本文はオマーンのハサブ東方を示す。船名、原因、貨物量、輸送への影響は原文にない。別警報196-26の事案と同一視しない。"
+  ],
+  "inference_ja": [
+    "現時点の発表から、海峡全体の輸送量や世界の原油供給の変化を算定できない。"
+  ],
+  "related_source_urls": [
+    "https://www.imo.org/en/mediacentre/pressbriefings/pages/imo-council-c138-urges-stronger-protection-of-seafarers-amid-threats-to-global-shipping-.aspx",
+    "https://www.imo.org/en/mediacentre/hottopics/pages/middle-east-highlighted-incidents.aspx",
+    "https://www.ukmto.org/terms-and-conditions",
+    "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  ],
+  "notification_eligible": false,
+  "publication_date": "2026-11-06",
+  "incident_at": "2026-11-05T22:00:00+00:00",
+  "content_hash_scope": "text_without_contact_footer",
+  "missing_parts": [
+    "全1ページの本文・地図を確認し、本文・日時・情報源欄と地図ラベルを訳した。連絡先フッターは保存対象から除外。地図画像の再配布権は確認できない。"
+  ],
+  "pdf": {
+    "sha256": "fc65f49e4218f6cfc9cc693fac0f60db91877dcc88fca8c2538635ec6672fcf3",
+    "source_url": "https://www.ukmto.org/-/media/ukmto/products/20261106-ukmto_warning-197-26.pdf",
+    "page_count": 1,
+    "ocr_used": false,
+    "visual_review_complete": true,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "source_pdf_save_reason": "原本の連絡先表示と埋込メタデータを確認。連絡先を除外する契約および地図・ロゴの個別権利が未確認のため原本の複製は保存しない。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "UKMTO WARNING\n197-26 - ATTACK\nIncident Date:                   Incident Time:                   Source:\n05 Nov 2026                      2200UTC                        Master\nUKMTO has received a time-late report of an incident 16NM east of Khasab, Oman.\nThe Master of a Tanker transiting the Strait of Hormuz outbound, has reported an\nexplosion at the waterline, port side. The crew are safe and are accounted for. The\ntanker is still under its own power and is continuing on its voyage.\nVessels are advised to transit with caution and report any suspicious activity to UKMTO,\nwhilst authorities investigate.\nKhasab, Oman",
+        "extraction_status": "text_extracted_contact_footer_excluded",
+        "translation_ja": "オマーンのハサブ東方16海里で起きた事案について、UKMTOは時間がたってから通報を受けた。ホルムズ海峡を外へ向かって通過中のタンカー船長は、左舷の喫水線で爆発があったと報告した。警報では、乗員は全員無事で所在が確認され、タンカーは自力で航行を続けている。発生は2026年11月5日22:00 UTC（日本時間11月6日07:00）。情報源は船長。\n\n当局の調査中、船舶は注意して航行し、不審な活動があればUKMTOに報告するよう勧告されている。\n\n地図はオマーンのハサブとその沖合の対象海域を示す。出典 UK Maritime Trade Operations、Open Government Licence。",
+        "translation_status": "partial",
+        "visual_review": "地図と本文はオマーンのハサブ東方を示す。船名、原因、貨物量、輸送への影響は原文にない。別警報196-26の事案と同一視しない。"
+      }
+    ]
+  }
+}

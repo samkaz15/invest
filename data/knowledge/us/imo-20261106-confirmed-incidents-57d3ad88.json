@@ -1,0 +1,40 @@
+{
+  "id": "imo-20261106-confirmed-incidents-57d3ad88",
+  "source": "International Maritime Organization",
+  "source_url": "https://www.imo.org/en/mediacentre/hottopics/pages/middle-east-highlighted-incidents.aspx",
+  "title_en": "Middle East - Highlighted (Confirmed) incidents",
+  "title_ja": "IMO中東海事事案表の11月6日スナップショット",
+  "published_at": null,
+  "publication_time_note": "表の集計基準日は2026年11月6日。ページの公表・更新時刻は不明。",
+  "received_at": "2026-11-07T19:47:43.873624+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "other_us"
+  ],
+  "original_text": "Number of confirmed incidents as at 6 November 2026: 129\nNumber of confirmed seafarer fatalities: 25",
+  "translation_ja": "### 集計と対象行の訳\n\n2026年11月6日時点の確認事案は129件。確認された船員の死亡は25人。\n\n11月4日、VELOS SAPPHIRE（IMO番号9321201）。カタールのマディナト・アッシュ・シャマール北方50海里。船体損傷あり。汚染なし。船員1人が死亡。\n\n出典・著作権者は国際海事機関（IMO）。この翻訳はIMOが作成したものではなく、IMOはその内容または正確性に責任を負わない。",
+  "content_sha256": "57d3ad88036ae560eda46bcd592db16c5df3016bf5dce67e6c74194d2c3b3163",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "facts_ja": [
+    "11月6日時点で確認事案129件、船員死亡25人。",
+    "先頭行では11月4日のVELOS SAPPHIREをカタールのマディナト・アッシュ・シャマール北方50海里で損傷、汚染なし、船員1人死亡と記載。UKMTO 196-26の発生日・位置と整合する。別の警報197-26は11月5日22時UTC、オマーン沖で、同一事案とは確認できない。"
+  ],
+  "inference_ja": [
+    "現時点の発表から、海峡全体の輸送量や世界の原油供給の変化を算定できない。"
+  ],
+  "related_source_urls": [
+    "https://www.imo.org/en/mediacentre/pressbriefings/pages/imo-council-c138-urges-stronger-protection-of-seafarers-amid-threats-to-global-shipping-.aspx",
+    "https://www.ukmto.org/-/media/ukmto/products/20261105-ukmto_warning-196-26.pdf",
+    "https://www.imo.org/en/about/pages/imo-website-terms-and-conditions-of-use.aspx"
+  ],
+  "notification_eligible": false,
+  "observation_date": "2026-11-06",
+  "content_hash_scope": "normalized_129_table_rows_and_totals",
+  "table_data_rows_seen": 129,
+  "missing_parts": [
+    "公式表129行を取得。今回関連の集計とVELOS SAPPHIRE行のみ訳し、他の128行は未訳。公開GitHubには全文を再掲しない。"
+  ]
+}

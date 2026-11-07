@@ -1,0 +1,61 @@
+{
+  "id": "ukmto-20261105-196-26-fcc9a41b",
+  "source": "United Kingdom Maritime Trade Operations",
+  "source_url": "https://www.ukmto.org/-/media/ukmto/products/20261105-ukmto_warning-196-26.pdf",
+  "title_en": "UKMTO Warning 196-26 – Attack",
+  "title_ja": "英海事当局警報196-26、カタール沖でタンカーに正体不明の飛来物2発",
+  "published_at": null,
+  "publication_time_note": "公表日は公式ファイル名と公式SNS告知の日付から11月5日。正確な公表時刻は未確定。",
+  "received_at": "2026-11-07T19:47:42.971754+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "other_us"
+  ],
+  "original_text": "UKMTO WARNING\n196-26 - ATTACK\nIncident Date:                Incident Time:                     Source\n04 NOV 2026                     2320UTC                         Verified\nUKMTO has received a report of an incident 50NM North of Madinat ash Shamal,\nQatar. A tanker has been struck by two unidentified projectiles. The status of the crew,\ndamage assessment and environmental impact are unconfirmed at present. Vessels\nare advised to transit with caution and report any suspicious activity to UKMTO while\nauthorities continue to investigate.\nMadinat ash Shamal, Qatar",
+  "translation_ja": "UKMTOは、カタールのマディナト・アッシュ・シャマール北方50海里で起きた事案の報告を受けた。タンカーに正体不明の飛来物2発が命中した。警報時点では、乗員の状況、被害の評価、環境への影響は未確認。発生は2026年11月4日23:20 UTC（日本時間11月5日08:20）。情報源欄は「確認済み」。\n\n当局の調査中、船舶は注意して航行し、不審な活動があればUKMTOに報告するよう勧告されている。\n\n地図はカタールのマディナト・アッシュ・シャマールとその沖合の対象海域を示す。出典 UK Maritime Trade Operations、Open Government Licence。",
+  "content_sha256": "fcc9a41bd8555f9235a78873d38b1a2061a30f7ff3a0294c05d8903b89aa73a6",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "facts_ja": [
+    "UKMTO警報196-26。UKMTOは、カタールのマディナト・アッシュ・シャマール北方50海里で起きた事案の報告を受けた。タンカーに正体不明の飛来物2発が命中した。警報時点では、乗員の状況、被害の評価、環境への影響は未確認。発生は2026年11月4日23:20 UTC（日本時間11月5日08:20）。情報源欄は「確認済み」。",
+    "地図と本文はカタール北方を示す。本文に船名はない。IMO事案表では同日・同位置にVELOS SAPPHIREを記録。"
+  ],
+  "inference_ja": [
+    "現時点の発表から、海峡全体の輸送量や世界の原油供給の変化を算定できない。"
+  ],
+  "related_source_urls": [
+    "https://www.imo.org/en/mediacentre/pressbriefings/pages/imo-council-c138-urges-stronger-protection-of-seafarers-amid-threats-to-global-shipping-.aspx",
+    "https://www.imo.org/en/mediacentre/hottopics/pages/middle-east-highlighted-incidents.aspx",
+    "https://www.ukmto.org/terms-and-conditions",
+    "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  ],
+  "notification_eligible": false,
+  "publication_date": "2026-11-05",
+  "incident_at": "2026-11-04T23:20:00+00:00",
+  "content_hash_scope": "text_without_contact_footer",
+  "missing_parts": [
+    "全1ページの本文・地図を確認し、本文・日時・情報源欄と地図ラベルを訳した。連絡先フッターは保存対象から除外。地図画像の再配布権は確認できない。"
+  ],
+  "pdf": {
+    "sha256": "c1a4272ef8f5a9c274b92e7067604241db0d9ce2d8db5a6d2bffaaee1d94eab8",
+    "source_url": "https://www.ukmto.org/-/media/ukmto/products/20261105-ukmto_warning-196-26.pdf",
+    "page_count": 1,
+    "ocr_used": false,
+    "visual_review_complete": true,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "source_pdf_save_reason": "原本の連絡先表示と埋込メタデータを確認。連絡先を除外する契約および地図・ロゴの個別権利が未確認のため原本の複製は保存しない。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "UKMTO WARNING\n196-26 - ATTACK\nIncident Date:                Incident Time:                     Source\n04 NOV 2026                     2320UTC                         Verified\nUKMTO has received a report of an incident 50NM North of Madinat ash Shamal,\nQatar. A tanker has been struck by two unidentified projectiles. The status of the crew,\ndamage assessment and environmental impact are unconfirmed at present. Vessels\nare advised to transit with caution and report any suspicious activity to UKMTO while\nauthorities continue to investigate.\nMadinat ash Shamal, Qatar",
+        "extraction_status": "text_extracted_contact_footer_excluded",
+        "translation_ja": "UKMTOは、カタールのマディナト・アッシュ・シャマール北方50海里で起きた事案の報告を受けた。タンカーに正体不明の飛来物2発が命中した。警報時点では、乗員の状況、被害の評価、環境への影響は未確認。発生は2026年11月4日23:20 UTC（日本時間11月5日08:20）。情報源欄は「確認済み」。\n\n当局の調査中、船舶は注意して航行し、不審な活動があればUKMTOに報告するよう勧告されている。\n\n地図はカタールのマディナト・アッシュ・シャマールとその沖合の対象海域を示す。出典 UK Maritime Trade Operations、Open Government Licence。",
+        "translation_status": "partial",
+        "visual_review": "地図と本文はカタール北方を示す。本文に船名はない。IMO事案表では同日・同位置にVELOS SAPPHIREを記録。"
+      }
+    ]
+  }
+}

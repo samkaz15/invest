@@ -1,0 +1,40 @@
+{
+  "id": "imo-20261106-c138-seafarers-f495445e",
+  "source": "International Maritime Organization",
+  "source_url": "https://www.imo.org/en/mediacentre/pressbriefings/pages/imo-council-c138-urges-stronger-protection-of-seafarers-amid-threats-to-global-shipping-.aspx",
+  "title_en": "IMO Council urges stronger protection of seafarers amid threats to global shipping",
+  "title_ja": "IMO理事会が船員保護を要請し、中東の商船被害を報告",
+  "published_at": null,
+  "publication_time_note": "公式ページは2026年11月6日付（ロンドン）。時刻・タイムゾーンはページで明示されていない。事象日は別。",
+  "received_at": "2026-11-07T19:46:58.880234+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "other_us"
+  ],
+  "original_text": "at least 130 attacks against commercial vessels in the region have been verified by IMO",
+  "translation_ja": "原文抜粋の訳。IMOは同地域で商船に対する攻撃を少なくとも130件確認した。\n\n中東関連の詳細要約。IMO理事会は11月2～6日のロンドン会合で、重要航路の開放と安全を維持し、船員の国籍・所在や地政学的紛争への関与の有無を問わず保護する方針を再確認した。事務局長は紛争で船員の死亡、重傷、置き去り、帰国の妨げ、水・食料・医療の不足が続くと説明した。発表は11月5日のVELOS SAPPHIREへの攻撃による船員1人の死亡を挙げ、死者25人、商船への確認済み攻撃130件以上とした。ペルシャ湾から出られない船舶を含め、数千人の船員が危険にさらされていると述べた。理事会は船員や国際海運の安全を脅かす違法な措置を避けるよう加盟国に求め、事務局長は追加の具体策を検討するとした。\n\nその他の航路。理事会は紅海・バブエルマンデブ海峡でのフーシ派の商船攻撃と、黒海でのロシアによる商船・港湾・捜索救助等への攻撃を非難した。西インド洋とアデン湾で年初来17件の海賊行為・武装強盗の実行または未遂を指摘し、ジブチ行動規範とジッダ改正の取組に言及した。事務局長に状況監視と加盟国への継続報告を求めた。\n\n出典・著作権者は国際海事機関（IMO）。この翻訳はIMOが作成したものではなく、IMOはその内容または正確性に責任を負わない。",
+  "content_sha256": "f495445ec9caa44e322b59bff13b5cf36cb66463f256eb6d41fd73f86627389f",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "facts_ja": [
+    "IMO理事会発表の見出しは、ホルムズ海峡をめぐる紛争の開始以来、25人目の船員死亡と記載。本文はIMOが域内の商船への攻撃を少なくとも130件確認したと記載。",
+    "発表本文は、11月5日にホルムズ海峡でVELOS SAPPHIREが攻撃を受け、船員1人が死亡したと説明。IMOの別表は同船を11月4日、カタールのマディナト・アッシュ・シャマール北方50海里と記載。時差・集計差の理由は未確認。",
+    "別表の11月6日時点の確認事案は129件、確認された船員死亡は25人。確認事案と攻撃を同一集計とみなさない。"
+  ],
+  "inference_ja": [
+    "現時点の発表から、海峡全体の輸送量や世界の原油供給の変化を算定できない。"
+  ],
+  "related_source_urls": [
+    "https://www.imo.org/en/mediacentre/hottopics/pages/middle-east-highlighted-incidents.aspx",
+    "https://www.imo.org/en/about/pages/imo-website-terms-and-conditions-of-use.aspx"
+  ],
+  "notification_eligible": true,
+  "publication_date": "2026-11-06",
+  "content_hash_scope": "normalized_related_maritime_safety_paragraphs",
+  "missing_parts": [
+    "関連本文は取得済み。公開GitHubへの全文再配布は個人・非商用条件の確認範囲外のため、短い原文抜粋と詳細要約を保存。写真、議事手続・人事・表彰・予算等の対象外部分は再掲しない。リンク先の会議正式文書は未取得。"
+  ],
+  "summary_ja_40": "国際海事機関は中東で船員二十五人の死亡と、商船への百三十件以上の攻撃を確認した。"
+}
