@@ -1,0 +1,255 @@
+{
+  "id": "jmic-20261105-update111-4049a84e",
+  "source_url": "https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_111_05-nov.pdf?rev=de54e3b88ef24dd3a3c3cb0a215b1acf",
+  "title_en": "Update 111 to JMIC Advisory Note: Regional Tension – Impact on Maritime Security",
+  "title_ja": "JMIC第111号のホルムズ海峡通航数・タンカー表・集計訂正",
+  "source": "Joint Maritime Information Center (distributed by UK Maritime Trade Operations)",
+  "published_at": null,
+  "publication_date": "2026-11-05",
+  "publication_time_note": "公表日のみ。集計締め時刻や取得時刻は公表時刻と区別する。",
+  "received_at": "2026-11-07T21:25:24.136454+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "other_us"
+  ],
+  "original_text": "U.S. – facilitated SoH transits 01-04 Nov (past 96 hours): 126",
+  "translation_ja": "### 5ページの日本語訳・要約\n\n3月1日以降の確認事案は172件。前号から6件増えた。前号の合計167件は重複計上があり、正しくは166件。直近96時間について、港湾、ターミナル、洋上設備、石油・ガス積出施設、海底設備への攻撃は報告されていない。施設へのリスク評価は「中程度」で、イラン・イエメン・サウジアラビア沿岸の軍事活動の可能性を反映している。\n\nホルムズ海峡の2025年基準は約138隻／日。11月1〜4日の96時間に米国が支援した通航は126回だった。この126回の出典は米海軍のNCAGS。S&P Maritime／SeaVisionの別系列は支援を受けない載貨重量1,000トン超の貨物輸送船を対象とし、海峡に隣接するイラン港への寄港船を除く。\n\nバブエルマンデブ海峡は2023年基準で約61隻／日。11月1〜4日は136回。S&P Maritimeの載貨重量1,000トン超の貨物輸送船の集計。\n\n11月5日にはフジャイラ・ホールファッカーン付近で約179隻、ドバイ・ジュベルアリからラスアルハイマの沖合で約141隻、ムサンダム・ソハール付近で約50隻、バンダルアッバース・ケシュム沖で約17隻が停泊と推計。イラン側の推計はAISの捕捉が少なく信頼度が低い。ホルムズ海峡東側の主要停泊地でJMICが数えた動きのない商船は約229隻。攻撃海域周辺で一斉離脱は確認されておらず、JMICは通航制限が主因の滞留が続くとみる。推計はAISを発信していない船を除く。フジャイラ、ホールファッカーン、ソハールの船の集中は衛星レーダー画像とも整合する。\n\n### 10ページの通航表\n\n順序は10月29日・30日・31日、11月1日・2日・3日・4日。SoHはホルムズ海峡、BAMはバブエルマンデブ海峡。表のS&P Maritime／SeaVision系列は米国支援の対象外の船舶で、載貨重量1,000トン超を対象とし、ホルムズ海峡に隣接するイラン港に寄港する船を除く。\n\n| 船種・方向 | 10/29 | 10/30 | 10/31 | 11/1 | 11/2 | 11/3 | 11/4 |\n|---|---:|---:|---:|---:|---:|---:|---:|\n| 貨物船 SoH 東向き | 3 | 3 | 3 | 0 | 0 | 0 | 2 |\n| 貨物船 SoH 西向き | 0 | 1 | 1 | 0 | 0 | 1 | 2 |\n| 貨物船 SoH 計 | 3 | 4 | 4 | 0 | 0 | 1 | 4 |\n| 貨物船 BAM 北西向き | 4 | 8 | 23 | 11 | 12 | 10 | 10 |\n| 貨物船 BAM 南東向き | 12 | 16 | 10 | 8 | 13 | 12 | 7 |\n| 貨物船 BAM 計 | 16 | 24 | 33 | 19 | 25 | 22 | 17 |\n| タンカー全種 SoH 東向き | 1 | 0 | 2 | 0 | 1 | 1 | 1 |\n| タンカー全種 SoH 西向き | 1 | 0 | 2 | 1 | 1 | 1 | 0 |\n| タンカー全種 SoH 計 | 2 | 0 | 4 | 1 | 2 | 2 | 1 |\n| タンカー全種 BAM 北西向き | 5 | 5 | 7 | 15 | 5 | 4 | 6 |\n| タンカー全種 BAM 南東向き | 5 | 3 | 8 | 4 | 7 | 9 | 3 |\n| タンカー全種 BAM 計 | 10 | 8 | 15 | 19 | 12 | 13 | 9 |\n\n下段の90日図はAISで捕捉した入域・出域を棒、米国支援下の通航を線で表示。グラフの全日次値は未抽出。",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "facts_ja": [
+    "2026年11月1〜4日の米国支援下のホルムズ海峡通航は126回。別の民間追跡系列では、同期間に条件を満たすタンカー通航は計6回。",
+    "JMICは3月1日以降の事案を172件とし、前号167件を重複計上により166件に訂正した。IMOの事案・攻撃集計は別系列。"
+  ],
+  "missing_parts": [
+    "原本12ページを取得し文字抽出。5・10ページを目視確認し、該当範囲を訳した。その他10ページは今回未訳。10ページの折れ線の日次値は未抽出。原文保存は短い抜粋と測定表の数値。"
+  ],
+  "notification_eligible": false,
+  "content_sha256": "4049a84e8c825e0d5fa5ad0f340e1233ffa5c3cf8e6ec4cac7e89a90a2b2ae9e",
+  "content_hash_scope": "source_pdf_bytes",
+  "information_cutoff_at": "2026-11-05T13:00:00+00:00",
+  "table_units": "vessel transits",
+  "normalized_transit_table": {
+    "cargo": {
+      "SoH E": [
+        3,
+        3,
+        3,
+        0,
+        0,
+        0,
+        2
+      ],
+      "SoH W": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2
+      ],
+      "SoH Total": [
+        3,
+        4,
+        4,
+        0,
+        0,
+        1,
+        4
+      ],
+      "BAM NW": [
+        4,
+        8,
+        23,
+        11,
+        12,
+        10,
+        10
+      ],
+      "BAM SE": [
+        12,
+        16,
+        10,
+        8,
+        13,
+        12,
+        7
+      ],
+      "BAM Total": [
+        16,
+        24,
+        33,
+        19,
+        25,
+        22,
+        17
+      ]
+    },
+    "tankers": {
+      "SoH E": [
+        1,
+        0,
+        2,
+        0,
+        1,
+        1,
+        1
+      ],
+      "SoH W": [
+        1,
+        0,
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "SoH Total": [
+        2,
+        0,
+        4,
+        1,
+        2,
+        2,
+        1
+      ],
+      "BAM NW": [
+        5,
+        5,
+        7,
+        15,
+        5,
+        4,
+        6
+      ],
+      "BAM SE": [
+        5,
+        3,
+        8,
+        4,
+        7,
+        9,
+        3
+      ],
+      "BAM Total": [
+        10,
+        8,
+        15,
+        19,
+        12,
+        13,
+        9
+      ]
+    }
+  },
+  "table_dates": [
+    "2026-10-29",
+    "2026-10-30",
+    "2026-10-31",
+    "2026-11-01",
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-04"
+  ],
+  "inference_ja": [
+    "支援の有無、対象船、寄港地、基準年が異なる。126回を138隻／日と直接割り算して全交通の減少率を出さない。タンカー通航数から原油のバレル数は推計できない。"
+  ],
+  "pdf": {
+    "sha256": "4049a84e8c825e0d5fa5ad0f340e1233ffa5c3cf8e6ec4cac7e89a90a2b2ae9e",
+    "source_url": "https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_111_05-nov.pdf?rev=de54e3b88ef24dd3a3c3cb0a215b1acf",
+    "page_count": 12,
+    "ocr_used": false,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "source_pdf_save_reason": "図・ロゴと第三者データが含まれ、全ページの視覚・再配布条件と個人情報を確認できていない。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "",
+        "translation_ja": "",
+        "translation_status": "partial",
+        "extraction_status": "extracted_not_archived_not_visually_verified"
+      },
+      {
+        "page": 2,
+        "original_text": "",
+        "translation_ja": "",
+        "translation_status": "partial",
+        "extraction_status": "extracted_not_archived_not_visually_verified"
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "translation_ja": "",
+        "translation_status": "partial",
+        "extraction_status": "extracted_not_archived_not_visually_verified"
+      },
+      {
+        "page": 4,
+        "original_text": "",
+        "translation_ja": "",
+        "translation_status": "partial",
+        "extraction_status": "extracted_not_archived_not_visually_verified"
+      },
+      {
+        "page": 5,
+        "original_text": "U.S. – facilitated SoH transits 01-04 Nov (past 96 hours): 126",
+        "translation_ja": "### 5ページの日本語訳・要約\n\n3月1日以降の確認事案は172件。前号から6件増えた。前号の合計167件は重複計上があり、正しくは166件。直近96時間について、港湾、ターミナル、洋上設備、石油・ガス積出施設、海底設備への攻撃は報告されていない。施設へのリスク評価は「中程度」で、イラン・イエメン・サウジアラビア沿岸の軍事活動の可能性を反映している。\n\nホルムズ海峡の2025年基準は約138隻／日。11月1〜4日の96時間に米国が支援した通航は126回だった。この126回の出典は米海軍のNCAGS。S&P Maritime／SeaVisionの別系列は支援を受けない載貨重量1,000トン超の貨物輸送船を対象とし、海峡に隣接するイラン港への寄港船を除く。\n\nバブエルマンデブ海峡は2023年基準で約61隻／日。11月1〜4日は136回。S&P Maritimeの載貨重量1,000トン超の貨物輸送船の集計。\n\n11月5日にはフジャイラ・ホールファッカーン付近で約179隻、ドバイ・ジュベルアリからラスアルハイマの沖合で約141隻、ムサンダム・ソハール付近で約50隻、バンダルアッバース・ケシュム沖で約17隻が停泊と推計。イラン側の推計はAISの捕捉が少なく信頼度が低い。ホルムズ海峡東側の主要停泊地でJMICが数えた動きのない商船は約229隻。攻撃海域周辺で一斉離脱は確認されておらず、JMICは通航制限が主因の滞留が続くとみる。推計はAISを発信していない船を除く。フジャイラ、ホールファッカーン、ソハールの船の集中は衛星レーダー画像とも整合する。",
+        "translation_status": "partial",
+        "extraction_status": "text_extracted_visual_checked"
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "translation_ja": "",
+        "translation_status": "partial",
+        "extraction_status": "extracted_not_archived_not_visually_verified"
+      },
+      {
+        "page": 7,
+        "original_text": "",
+        "translation_ja": "",
+        "translation_status": "partial",
+        "extraction_status": "extracted_not_archived_not_visually_verified"
+      },
+      {
+        "page": 8,
+        "original_text": "",
+        "translation_ja": "",
+        "translation_status": "partial",
+        "extraction_status": "extracted_not_archived_not_visually_verified"
+      },
+      {
+        "page": 9,
+        "original_text": "",
+        "translation_ja": "",
+        "translation_status": "partial",
+        "extraction_status": "extracted_not_archived_not_visually_verified"
+      },
+      {
+        "page": 10,
+        "original_text": "TANKERS (ALL TYPES) TRANSITS COMPARISON",
+        "translation_ja": "### 10ページの通航表\n\n順序は10月29日・30日・31日、11月1日・2日・3日・4日。SoHはホルムズ海峡、BAMはバブエルマンデブ海峡。表のS&P Maritime／SeaVision系列は米国支援の対象外の船舶で、載貨重量1,000トン超を対象とし、ホルムズ海峡に隣接するイラン港に寄港する船を除く。\n\n| 船種・方向 | 10/29 | 10/30 | 10/31 | 11/1 | 11/2 | 11/3 | 11/4 |\n|---|---:|---:|---:|---:|---:|---:|---:|\n| 貨物船 SoH 東向き | 3 | 3 | 3 | 0 | 0 | 0 | 2 |\n| 貨物船 SoH 西向き | 0 | 1 | 1 | 0 | 0 | 1 | 2 |\n| 貨物船 SoH 計 | 3 | 4 | 4 | 0 | 0 | 1 | 4 |\n| 貨物船 BAM 北西向き | 4 | 8 | 23 | 11 | 12 | 10 | 10 |\n| 貨物船 BAM 南東向き | 12 | 16 | 10 | 8 | 13 | 12 | 7 |\n| 貨物船 BAM 計 | 16 | 24 | 33 | 19 | 25 | 22 | 17 |\n| タンカー全種 SoH 東向き | 1 | 0 | 2 | 0 | 1 | 1 | 1 |\n| タンカー全種 SoH 西向き | 1 | 0 | 2 | 1 | 1 | 1 | 0 |\n| タンカー全種 SoH 計 | 2 | 0 | 4 | 1 | 2 | 2 | 1 |\n| タンカー全種 BAM 北西向き | 5 | 5 | 7 | 15 | 5 | 4 | 6 |\n| タンカー全種 BAM 南東向き | 5 | 3 | 8 | 4 | 7 | 9 | 3 |\n| タンカー全種 BAM 計 | 10 | 8 | 15 | 19 | 12 | 13 | 9 |\n\n下段の90日図はAISで捕捉した入域・出域を棒、米国支援下の通航を線で表示。グラフの全日次値は未抽出。",
+        "translation_status": "partial",
+        "extraction_status": "text_extracted_visual_checked"
+      },
+      {
+        "page": 11,
+        "original_text": "",
+        "translation_ja": "",
+        "translation_status": "partial",
+        "extraction_status": "extracted_not_archived_not_visually_verified"
+      },
+      {
+        "page": 12,
+        "original_text": "",
+        "translation_ja": "",
+        "translation_status": "partial",
+        "extraction_status": "extracted_not_archived_not_visually_verified"
+      }
+    ]
+  }
+}
