@@ -1,0 +1,35 @@
+{
+  "id": "nyfed-20261105-usd-liquidity-swaps-47e264c4",
+  "source": "Federal Reserve Bank of New York",
+  "source_url": "https://markets.newyorkfed.org/read?productCode=60&startDt=2026-11-04&endDt=2026-11-08&eventCodes=600",
+  "title_en": "Central Bank Liquidity Swap Operations – U.S. Dollar, November 4, 2026 trade date",
+  "title_ja": "NY連銀の中央銀行向け米ドル流動性スワップ実績（2026年11月4日取引）",
+  "published_at": null,
+  "published_date": "2026-11-05",
+  "published_time_basis": "公式APIのpostDtは11月5日。insertTsはタイムゾーンを示さないため、公表時刻は未確認。",
+  "received_at": "2026-11-08T11:48:55.510618+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "monetary_policy"
+  ],
+  "original_text": "[\n  {\n    \"active\": true,\n    \"amount\": 10000000,\n    \"currency\": \"USD\",\n    \"entityName\": \"Bank of England\",\n    \"maturityDt\": \"2026-11-12\",\n    \"rate\": 4.13,\n    \"settlementDt\": \"2026-11-05\",\n    \"smallValue\": false,\n    \"term\": 7,\n    \"tradeDt\": \"2026-11-04\"\n  },\n  {\n    \"active\": true,\n    \"amount\": 2000000.0,\n    \"currency\": \"USD\",\n    \"entityName\": \"Bank of Japan\",\n    \"maturityDt\": \"2026-11-12\",\n    \"rate\": 4.13,\n    \"settlementDt\": \"2026-11-06\",\n    \"smallValue\": false,\n    \"term\": 6,\n    \"tradeDt\": \"2026-11-04\"\n  },\n  {\n    \"active\": true,\n    \"amount\": 159000000,\n    \"currency\": \"USD\",\n    \"entityName\": \"European Central Bank\",\n    \"maturityDt\": \"2026-11-12\",\n    \"rate\": 4.13,\n    \"settlementDt\": \"2026-11-05\",\n    \"smallValue\": false,\n    \"term\": 7,\n    \"tradeDt\": \"2026-11-04\"\n  }\n]",
+  "translation_ja": "### 米ドル流動性スワップ実績\n\n取引日はいずれも2026年11月4日、満期日は11月12日。合計1億7,100万米ドル。\n\n| 相手先 | 決済日 | 期間（日） | 金利（％） | 金額（米ドル） |\n|---|---|---:|---:|---:|\n| イングランド銀行 | 11月5日 | 7 | 4.13 | 10,000,000 |\n| 日本銀行 | 11月6日 | 6 | 4.13 | 2,000,000 |\n| 欧州中央銀行 | 11月5日 | 7 | 4.13 | 159,000,000 |\n\n原表は3行ともアクティブで、少額試験欄は該当なし。NY連銀は運用準備のための小規模取引を随時行い、実施した場合は結果を週次公表する。試験の場合は「Y」、それ以外は空欄とする。照会した11月4〜8日の非米ドル流動性スワップには結果行がない。",
+  "facts_ja": [
+    "11月4日取引は3件、計1億7,100万ドル、金利4.13％。3行とも少額試験の表示なし。"
+  ],
+  "inference_ja": [
+    "取引額は制度上限や市場全体のドル不足の計測値と区別する。連続した比較系列・ドル調達指標と併せて評価する。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "content_sha256": "47e264c48a18cc5050b6d27c5b0fbe8817a3187b0c70232e5c3ab4a08be57da0",
+  "content_hash_scope": "米ドル建て取引の3行の原文フィールド。取得エンベロープの識別子を除く。",
+  "source_raw_sha256": "eba12ed77c62eef7c1b5acbd47471c89967249819e93a5aaacefb8ae4bc5124d",
+  "related_source_urls": [
+    "https://www.newyorkfed.org/markets/desk-operations/central-bank-liquidity-swap-operations",
+    "https://markets.newyorkfed.org/read?productCode=60&startDt=2026-11-04&endDt=2026-11-08&eventCodes=605"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "既刊の11月5日付補助データを初取得。通知対象差分期間より前。"
+}
