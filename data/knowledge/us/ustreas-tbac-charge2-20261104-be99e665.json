@@ -1,0 +1,73 @@
+{
+  "id": "ustreas-tbac-charge2-20261104-be99e665",
+  "source": "Treasury Borrowing Advisory Committee（米財務省掲載）",
+  "source_url": "https://home.treasury.gov/system/files/221/TBACCharge2Q42026.pdf",
+  "title_en": "TBAC Charge 2 — Treasury Derivatives",
+  "title_ja": "財務省借入諮問委員会：国債デリバティブ、現物とレポ資金",
+  "published_at": null,
+  "associated_release_date": "2026-11-04",
+  "publication_time_note": "11月4日付の借換え関連公表に対応。個別PDFの公開日・時刻は未確認。",
+  "received_at": "2026-11-08T02:07:40.381245+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries",
+    "us_economy",
+    "investment_policy"
+  ],
+  "content_sha256": "be99e6651fd48a69237b91cf66960a62e13c8790dc33fa8be7c20d9fa5c47ff2",
+  "content_hash_scope": "raw PDF bytes",
+  "original_text": "PDF page 2\nUse of derivatives increases the size of repo market.",
+  "translation_ja": "PDF 2ページ\n\n委員会の発表資料によると、2022年の金利上昇以降、運用会社は国債先物で国債に相当するエクスポージャーを確保し、年金・保険会社は金利スワップで負債の金利感応度に対応してきた。政府債務・社債の発行増加は現物国債の需給に影響したとする。\n\n国債先物は自らレポ取引の体制を整える必要がなく、取引のしやすさや余剰現金を運用できる点が特徴。資料では週次取引高は建玉の1.5〜2倍程度で現物国債の取引高に匹敵するとする。金利スワップは取引・清算が標準化された後も負債キャッシュフローに合わせた設計が可能で、長期の金利リスクを調整できる。ディーラーのバランスシート制約によって、仲介の一部はヘッジファンドに移った。\n\n委員会の分析では、デリバティブの利用によって国債需要を担う主体が変わる。レポを使ったレバレッジ取引を介して現物需要が生じ、資金調達条件や証拠金が厳しくなると需要が弱まり得る。提案は、レポへのアクセスや期間付きレポの供給、新規参加者の参入、バランスシート利用の条件を改善する選択肢。採択・施行を示す資料ではない。",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "下記PDF未訳ページには未照合の表・図・脚注がある。",
+    "委員会スライドの転載条件が未確認のため、対象ページは短い原文抜粋と日本語の詳細要約。"
+  ],
+  "facts_ja": [
+    "委員会資料は、デリバティブ需要がレポ調達を伴う現物需要につながり、資金調達や証拠金条件が厳しくなるとその需要が弱まり得ると説明した。"
+  ],
+  "inference_ja": [
+    "レポの逼迫が入札吸収や実質金利へ伝わる仮説は、レポ指標、落札結果、ディーラー取得の推移で検証する。"
+  ],
+  "pdf": {
+    "page_count": 19,
+    "sha256": "be99e6651fd48a69237b91cf66960a62e13c8790dc33fa8be7c20d9fa5c47ff2",
+    "source_url": "https://home.treasury.gov/system/files/221/TBACCharge2Q42026.pdf",
+    "pages": [
+      {
+        "page": 2,
+        "original_text": "Use of derivatives increases the size of repo market.",
+        "translation_ja": "委員会の発表資料によると、2022年の金利上昇以降、運用会社は国債先物で国債に相当するエクスポージャーを確保し、年金・保険会社は金利スワップで負債の金利感応度に対応してきた。政府債務・社債の発行増加は現物国債の需給に影響したとする。\n\n国債先物は自らレポ取引の体制を整える必要がなく、取引のしやすさや余剰現金を運用できる点が特徴。資料では週次取引高は建玉の1.5〜2倍程度で現物国債の取引高に匹敵するとする。金利スワップは取引・清算が標準化された後も負債キャッシュフローに合わせた設計が可能で、長期の金利リスクを調整できる。ディーラーのバランスシート制約によって、仲介の一部はヘッジファンドに移った。\n\n委員会の分析では、デリバティブの利用によって国債需要を担う主体が変わる。レポを使ったレバレッジ取引を介して現物需要が生じ、資金調達条件や証拠金が厳しくなると需要が弱まり得る。提案は、レポへのアクセスや期間付きレポの供給、新規参加者の参入、バランスシート利用の条件を改善する選択肢。採択・施行を示す資料ではない。",
+        "extraction_status": "excerpt",
+        "translation_status": "partial",
+        "visual_review": true
+      }
+    ],
+    "missing_pages": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "visual_review_complete": false,
+    "raw_pdf_saved": false,
+    "raw_pdf_save_reason": "全ページの視覚確認、再配布条件と個人情報・メタデータ審査は未完了。原本URLとSHA256を保持。"
+  },
+  "notification_eligible": false,
+  "notification_reason": "11月4日付の借換え関連資料の補完。既報発表・借入見通しと区別して保存。"
+}
