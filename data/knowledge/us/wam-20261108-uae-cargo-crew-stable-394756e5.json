@@ -1,0 +1,35 @@
+{
+  "id": "wam-20261108-uae-cargo-crew-stable-394756e5",
+  "source": "Emirates News Agency (WAM), reporting a UAE National Guard Coast Guard statement",
+  "source_url": "https://www.wam.ae/en/article/17ijsjm-national-guard-says-rescued-from-cargo-ship-fire",
+  "title_en": "National Guard says 22 rescued from cargo ship fire are in stable condition",
+  "title_ja": "UAE国営通信、オマーン湾の貨物船から救助の22人は容体安定と報道",
+  "published_at": "2026-11-08T11:34:23+04:00",
+  "received_at": "2026-11-08T08:45:08+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "other_us"
+  ],
+  "original_text": "The rescued crew members received first aid before being handed over to the relevant authorities.",
+  "translation_ja": "UAE国家警備隊の沿岸警備部門は、オマーン湾で火災が発生した貨物船から救助したアラブ諸国籍の乗組員22人全員について、容体は安定していると発表した。沿岸警備部門は乗組員から船上火災の通報を受け、専門チームが直ちに出動して船の位置を突き止め、22人全員を救助した。救助した乗組員に応急処置を施し、関係当局に引き渡した。同隊は、海上の緊急事態への対応態勢を示す活動だったと説明した。",
+  "facts_ja": [
+    "WAMの公表ページで、沿岸警備部門が22人全員の容体を安定と発表し、応急処置後に関係当局へ引き渡したと伝えたことを確認。"
+  ],
+  "inference_ja": [
+    "当該ページは船名、IMO番号、積荷、原因に言及していない。CENTCOM発表のHudaやUKMTO警報、イラン側のタンカー主張と同定できない。"
+  ],
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公表本文は全段落を確認済み。再利用条件の確認ができないため、原文は短い抜粋、日本語は本文全体の内容に基づく要約。",
+    "掲載画像、沿岸警備部門の続報の発信元原本は未取得。"
+  ],
+  "content_sha256": "394756e52234095544219b55053ad09410a1587fd9c2aedd71d608598a52b130",
+  "content_hash_scope": "WAMの公式掲載ページ本文4段落（レンダリング表示、見出しと時刻は除く）",
+  "notification_eligible": false,
+  "notification_reason": "救助の既報に対する容体の補足。新規の供給・通航・政策変更は確認できず、通知は行わない。",
+  "related_document_ids": [
+    "uae-ng-20261108-oman-cargo-rescue-9890dae8"
+  ]
+}
