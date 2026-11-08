@@ -1,0 +1,40 @@
+{
+  "id": "ustreas-cashpaydown-20261112-16-99230fc7",
+  "source": "U.S. Department of the Treasury, Bureau of the Fiscal Service",
+  "source_url": "https://www.treasurydirect.gov/TA_WS/cashpaydown?format=json",
+  "title_en": "Calculated New Cash/Pay Down Amounts — November 12 and 16, 2026",
+  "title_ja": "米財務省の新規資金調達・償還超過の計算額（11月12日・16日）",
+  "published_at": null,
+  "published_time_basis": "APIには行別更新日のみ。公表時刻は未確認。dateUpdatedの00:00は日付フィールドの表現。",
+  "table_update_dates": [
+    "2026-11-04",
+    "2026-11-05"
+  ],
+  "received_at": "2026-11-08T18:08:22.519180+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "[\n  {\n    \"date\": \"2026-11-16T00:00:00\",\n    \"securityType\": \"Coupons\",\n    \"totalOffering\": \"125000000000\",\n    \"totalPubliclyHeldMaturing\": \"97029323100\",\n    \"netNewCashOrPayDown\": \"27970676900\",\n    \"dateUpdated\": \"2026-11-04T00:00:00\"\n  },\n  {\n    \"date\": \"2026-11-12T00:00:00\",\n    \"securityType\": \"Bills\",\n    \"totalOffering\": \"277000000000\",\n    \"totalPubliclyHeldMaturing\": \"253987938000\",\n    \"netNewCashOrPayDown\": \"23012062000\",\n    \"dateUpdated\": \"2026-11-05T00:00:00\"\n  }\n]",
+  "translation_ja": "米財務省「新規資金調達・償還超過の計算額」。対象行は2026年11月12日と16日。単位はドル。表示ページは百万ドルに丸めるが、下表には公開APIの値を記す。\n\n| 日付 | 証券種別 | 募集額合計 | 民間等が保有する償還予定額合計 | 差引調達見込み額 | 表の更新日 |\n|---|---|---:|---:|---:|---|\n| 2026-11-12 | 短期国債 | 277,000,000,000 | 253,987,938,000 | 23,012,062,000 | 2026-11-05 |\n| 2026-11-16 | 利付債等 | 125,000,000,000 | 97,029,323,100 | 27,970,676,900 | 2026-11-04 |\n\n表の説明では、利付債等（Coupons）に中期債・長期債・変動金利債・物価連動国債が含まれる。",
+  "facts_ja": [
+    "11月12日短期国債の募集額は277,000,000,000ドル、民間等の償還予定額は253,987,938,000ドル、差引調達見込み額は23,012,062,000ドル。",
+    "11月16日利付債等の募集額は125,000,000,000ドル、民間等の償還予定額は97,029,323,100ドル、差引調達見込み額は27,970,676,900ドル。"
+  ],
+  "inference_ja": [
+    "財務省が募集額と民間等の償還予定額から計算した集計。個別落札・決済実績・財務省買い戻し・FRBの市場オペとは区別。11月16日の集計には3年債以外も含まれる。"
+  ],
+  "content_sha256": "99230fc7b13b147fe84ef1d2d5b6725b2355777d22128a5740b9eae7d90554fe",
+  "source_raw_sha256": "43d9010b4f62862dae8ef395c1e89a5ad5ea8fcc583f2f6b915a8d275357a70e",
+  "content_hash_scope": "API応答の11月12日・16日の全フィールド。UTF-8 JSON。",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "取得した2,089行のうち今回関連する2行の全フィールドと表の注記を保存。その他の行は翻訳対象外。日付のタイムゾーン・正確な公表時刻は未確認。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "更新日は11月4日・5日。既報の募集額の確認と差引調達見込みの補完。",
+  "related_source_urls": [
+    "https://www.treasurydirect.gov/auctions/auction-announcements/cash-pay-down/"
+  ]
+}
