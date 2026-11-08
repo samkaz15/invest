@@ -1,0 +1,37 @@
+{
+  "id": "az-maricopa-unofficial-bulletin-20261107-3f40c653",
+  "source": "Maricopa County Elections",
+  "source_url": "https://elections.maricopa.gov/news-and-information/elections-news/additional-unofficial-results-11-7-2026.html",
+  "title_en": "Maricopa County Posts Updated Unofficial Results for 2026 General Election: Saturday",
+  "title_ja": "マリコパ郡の未認証開票速報と推計未集計票",
+  "published_at": null,
+  "publication_date_local": "2026-11-07",
+  "publication_time_note": "郡発表の時刻不明。受取は公式サイト本文の検索サービス経由での取得時刻。",
+  "received_at": "2026-11-08T01:36:21+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "elections"
+  ],
+  "content_sha256": "3f40c653891cf6d20e0254f6c7155061c854a821499ceda73e1065eb9790dd7f",
+  "content_hash_scope": "local bulletin date and normalized official numeric facts",
+  "original_text": "Estimated number of uncounted ballots: 17,450\nEstimated number of provisional ballots: 2,500\nEstimated number of ballots ready for tabulation: 4,200",
+  "translation_ja": "マリコパ郡は、2026年総選挙の未認証速報を更新した。今回の追加分は2,558票。郡が報告した票数は1,549,152票で、投票資格のある登録有権者2,589,827人の59.82%に当たる。\n\n未集計票は推計17,450票。集計までに票が工程を移るため、分類別の件数はその時点の値であり変動する。内訳は次のとおり。\n\n| 分類 | 推計 | 郡の説明 |\n|---|---:|---|\n| 署名不備の解消または集計前処理中の期日前票 | 10,750 | 投票日の19時までに到着し、有権者に確認が必要な票、または署名照合を済ませて集計前の処理中の票。 |\n| 暫定票 | 2,500 | 通常と条件付きの2種類。多くは投票者の追加対応を必要とせず、郡が資格を確認できた票を集計する。 |\n| 集計準備済み | 4,200 | 損傷票の複製や記名候補の確認など、集計前に追加の処理が必要な票も含む。保管はライブカメラのある保管庫で行う。 |\n\n署名不備を解消するか、条件付き暫定票の本人確認書類を提出できる期限は、郡現地の11月8日17時（MST、日本時間11月9日9時）。",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "元ページは直接アクセス不可。公式HTML本文の検索サービスによる取得を使用。",
+    "再配布条件未確認のため、原文は短い抜粋、訳は発表本文の詳細要約。"
+  ],
+  "facts_ja": [
+    "11月7日付の郡発表では未集計票を推計17,450票とした。前日夜の推計21,500票から4,050票減少。開票済み1,549,152票は既存郡PDFの数と一致。"
+  ],
+  "related_record_ids": [
+    "az-maricopa-house-results-20261107-3ac46f0b",
+    "az-maricopa-evening-unofficial-20261106-25ef6baf"
+  ],
+  "inference_ja": [
+    "推計差には票が工程を移る際の見直しも含まれ得る。差を同期間に集計した票数として扱わない。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "同じ選挙の郡内集計の進捗。郡PDFの速報と重複する数字は通知しない。"
+}
