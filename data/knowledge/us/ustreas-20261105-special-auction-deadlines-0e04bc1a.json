@@ -1,0 +1,52 @@
+{
+  "id": "ustreas-20261105-special-auction-deadlines-0e04bc1a",
+  "source": "U.S. Department of the Treasury, Bureau of the Fiscal Service",
+  "source_url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/SPL_20261105_1.pdf",
+  "title_en": "Treasury Special Announcement: Auction Closing Times for Monday, November 9, 2026",
+  "title_ja": "米財務省の特別公告　2026年11月9日の入札締切",
+  "published_at": null,
+  "published_date": "2026-11-05",
+  "published_time_basis": "公告記載日。実公表時刻は未確認。解禁表示のある公告は別フィールドに記録。",
+  "received_at": "2026-11-08T16:54:32.568843+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "Treasury Special Announcement                                                             Contact: Treasury Auctions\n\n               Department of the Treasury | Bureau of the Fiscal Service                                                      For Immediate Release: 11/05/2026\n\n\n\n\nAUCTION CLOSING TIMES FOR MONDAY, NOVEMBER 9, 2026\n\nThe noncompetitive and competitive closing times for the 13-week and 26-week bill auctions on Monday, November 9, 2026, are 11:00 a.m. and\n11:30 a.m. ET, respectively.\n\nThe noncompetitive and competitive closing times for the 6-week bill and 3-year note auctions on Monday, November 9, 2026, are 12:00 p.m. and\n1:00 p.m. ET, respectively.",
+  "translation_ja": "米財務省・財政局。2026年11月5日即時公表。連絡窓口は国債入札担当。\n\n2026年11月9日（月）の13週物・26週物短期国債入札の締切は、米東部時間で非競争入札が午前11時、競争入札が午前11時30分。\n\n同日の6週物短期国債・3年債入札の締切は、米東部時間で非競争入札が正午、競争入札が午後1時。",
+  "facts_ja": [
+    "11月9日競争入札締切は、13週・26週物が11:30、6週物・3年債が13:00。いずれも米東部時間。"
+  ],
+  "inference_ja": [
+    "締切の公告。入札需要や調達費用は結果で確認する。"
+  ],
+  "content_sha256": "c97da2781280cc628e13f1a9099b51597125fbd2c85f6d9e5d6f9e57c220e38d",
+  "content_hash_scope": "連絡先メールアドレスを除いた個別公告の1頁。",
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "missing_parts": [
+    "全1頁の実質本文・表・脚注を目視照合し翻訳。連絡先メールアドレスは原文・訳・PDF原本保存から除外。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "既報の11月9日米国債入札日程に対応する11月5日公表公告。",
+  "pdf": {
+    "sha256": "0e04bc1ae9b215e4bd4dd579155dfb39d40af68acf09dec2aef81f76b99e1212",
+    "page_count": 1,
+    "ocr_used": false,
+    "original_url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/SPL_20261105_1.pdf",
+    "visual_review_complete": true,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "source_pdf_save_reason": "原本にメールアドレスがあるためバイナリを公開保存しない。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "Treasury Special Announcement                                                             Contact: Treasury Auctions\n\n               Department of the Treasury | Bureau of the Fiscal Service                                                      For Immediate Release: 11/05/2026\n\n\n\n\nAUCTION CLOSING TIMES FOR MONDAY, NOVEMBER 9, 2026\n\nThe noncompetitive and competitive closing times for the 13-week and 26-week bill auctions on Monday, November 9, 2026, are 11:00 a.m. and\n11:30 a.m. ET, respectively.\n\nThe noncompetitive and competitive closing times for the 6-week bill and 3-year note auctions on Monday, November 9, 2026, are 12:00 p.m. and\n1:00 p.m. ET, respectively.",
+        "translation_ja": "米財務省・財政局。2026年11月5日即時公表。連絡窓口は国債入札担当。\n\n2026年11月9日（月）の13週物・26週物短期国債入札の締切は、米東部時間で非競争入札が午前11時、競争入札が午前11時30分。\n\n同日の6週物短期国債・3年債入札の締切は、米東部時間で非競争入札が正午、競争入札が午後1時。",
+        "extraction_status": "text_extracted_visual_checked",
+        "translation_status": "partial",
+        "visual_review_complete": true
+      }
+    ]
+  }
+}
