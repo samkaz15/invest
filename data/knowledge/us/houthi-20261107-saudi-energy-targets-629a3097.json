@@ -1,0 +1,55 @@
+{
+  "id": "houthi-20261107-saudi-energy-targets-629a3097",
+  "source": "Houthi military spokesperson official Telegram channel",
+  "source_url": "https://t.me/s/army21ye/4031",
+  "title_en": "Houthi military spokesperson’s statement claiming six operations, including Saudi oil infrastructure targets",
+  "title_ja": "フーシ派、リヤド・クライスのアラムコ施設とドワドミの送油施設を標的にしたと発表",
+  "published_at": "2026-11-07T15:30:50+00:00",
+  "published_time_basis": "アラビア語投稿4031のtime datetime属性。動画投稿・転載時刻と区別。",
+  "received_at": "2026-11-08T13:34:03.269079+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil",
+    "war"
+  ],
+  "source_language": "ar",
+  "original_text": "أما العمليةُ الثالثةُ فقد استهدفت محطةَ الضخِّ رقم 8 في منطقةِ الدوادمي وحققتِ العمليةُ هدفَها بنجاحٍ بفضلِ اللهِ.",
+  "translation_ja": "### 原油・物流に関する該当段落の訳\n\nフーシ派側の「イエメン軍」は、多数の弾道ミサイル、巡航ミサイル、無人機を用いて、六つの特別軍事作戦を実施したと発表した。\n\n1. 第一の作戦は、サウジの首都リヤドにあるキング・ハーリド国際空港と、アラムコの石油貯蔵タンクおよび蒸留塔を標的とした。神の加護により、作戦は目的を達成したとした。\n2. 第二の作戦は、クライスにあるアラムコを標的とし、神の加護により目的を達成したとした。\n3. 第三の作戦は、ドワドミ地区の第8ポンプ場を標的とし、神の加護により目的を達成したとした。\n\n### その他の段落の要約\n\n声明は、タイズ県の市場とサヌア県バニ・フシャイシュ地区の住宅へのサウジ側の攻撃に対する報復だと位置づけた。残る三作戦は、ナジュランの国家警備隊施設、ジャウフ県東部、マアリブ県のラグワン・マドガル両地区東部の部隊集結地点を標的とし、死傷者が出たと主張した。また、サウジ領内への作戦を続けると述べた。サヌア、2026年11月7日付。",
+  "facts_ja": [
+    "フーシ派軍事報道官の公式チャンネルは、リヤドの空港・貯蔵タンク・蒸留塔、クライスのアラムコ施設、ドワドミ地区の第8ポンプ場を標的としたと公表した。",
+    "対象の公表は当事者の主張。命中、操業停止、減産・積出減、および翌日のリヤド事務棟被害との同一性は未確認。"
+  ],
+  "inference_ja": [
+    "原油生産または送油能力が実際に低下し、代替経路や在庫で補えない場合に、国際供給への波及を見直す。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "本文は全段落を取得。再利用条件未確認のためアラビア語原文は短い抜粋、原油・物流に関する対象範囲を訳出し、他は要約。",
+    "別投稿の4分02秒動画の映像と音声は未取得。本文投稿に表・脚注・PDFなし。",
+    "命中、操業停止、減産・積出減、および翌日のリヤド事務棟被害との同一性は未確認。"
+  ],
+  "attachment_checks": [
+    {
+      "url": "https://t.me/s/army21ye/4029",
+      "type": "video",
+      "status": "missing",
+      "missing_parts": [
+        "映像・音声"
+      ]
+    }
+  ],
+  "content_sha256": "629a309790ec768b51c408ba76e2ad07a8fa4232fb03c584f9387d19a20fb9a5",
+  "content_hash_scope": "アラビア語投稿4031本文全段落、外部プロフィールリンク除外",
+  "notification_eligible": true,
+  "summary_ja_40": "フーシ派はサウジの石油施設などを標的にしたと発表。原油供給への影響は依然未確認。",
+  "related_document_ids": [
+    "spa-aramco-riyadh-20261108-473befeb",
+    "saudi-coalition-20261108-riyadh-ballistic-58cecf77",
+    "saudi-coalition-20261108-cruise-392cd862"
+  ],
+  "related_source_urls": [
+    "https://telegram.me/s/army21ye/4031",
+    "https://www.aramco.com/en/news-media/news/2026/aramco-announces-third-quarter-2026-results"
+  ]
+}
