@@ -1,0 +1,44 @@
+{
+  "id": "saudi-coalition-20261108-cruise-392cd862",
+  "source": "Coalition to Restore Legitimacy in Yemen",
+  "source_url": "https://x.com/CJFCSpox/status/2119309858390552760",
+  "title_en": "Coalition says two cruise missiles were intercepted in the Riyadh and southern regions",
+  "title_ja": "サウジ主導連合、リヤドと南部で巡航ミサイル2発を迎撃と発表",
+  "published_at": "2026-11-08T06:03:39.000Z",
+  "received_at": "2026-11-08T08:21:05.475643+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "other_us"
+  ],
+  "source_language": "ar",
+  "original_text": "اعتراض وتدمير صاروخين طواف (كروز) بمنطقتي الرياض والجنوبية.",
+  "translation_ja": "連合報道官は、リヤド地域と南部地域で巡航ミサイル2発を迎撃し、破壊したと発表した。",
+  "facts_ja": [
+    "連合の公式投稿で巡航ミサイル2発についての発表を確認。施設への被害は未確認。"
+  ],
+  "inference_ja": [
+    "迎撃声明だけから原油の生産や輸出が減少したとは判断できない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "attachment_checks": [
+    {
+      "url": "https://pbs.twimg.com/media/HWlNFLgXIAA21vo.jpg?name=orig",
+      "type": "image/jpeg",
+      "sha256": "0947b8fed0d074145a26ea6860b0b1f7608754315ae0e145da8e87fbbd525ca5",
+      "visual_review_complete": true,
+      "stored": false,
+      "reason": "共通の部隊ロゴ。新しい発表本文なし。",
+      "retrieved_at": "2026-11-08T08:21:43.991100+00:00"
+    }
+  ],
+  "content_sha256": "392cd8627785a4d22348527393c8769723e256d002f8e341709dc79e82f18042",
+  "content_hash_scope": "共有用メディアURLを除いた公式投稿テキスト",
+  "source_raw_sha256": "618b6ebdb6ae9cef0cef3021c32c4c903649e46859a27847b290ede368037b5c",
+  "published_time_basis": "公式投稿配信データ created_at",
+  "notification_eligible": false,
+  "notification_reason": "地域リスクの補足。独立した施設被害や供給変化は未確認で、個別のMac通知対象外。"
+}

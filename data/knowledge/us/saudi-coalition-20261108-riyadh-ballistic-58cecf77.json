@@ -1,0 +1,44 @@
+{
+  "id": "saudi-coalition-20261108-riyadh-ballistic-58cecf77",
+  "source": "Coalition to Restore Legitimacy in Yemen",
+  "source_url": "https://x.com/CJFCSpox/status/2119302109698912449",
+  "title_en": "Coalition says two ballistic missiles heading towards Riyadh were intercepted",
+  "title_ja": "サウジ主導連合、リヤドに向かった弾道ミサイル2発を迎撃と発表",
+  "published_at": "2026-11-08T05:32:52.000Z",
+  "received_at": "2026-11-08T08:21:05.505133+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "other_us"
+  ],
+  "source_language": "ar",
+  "original_text": "الدفاع الجوي اعترض ودمر صاروخين باليستيين أطلقتهما الميليشيا الحوثية الإرهابية باتجاه الرياض.",
+  "translation_ja": "連合報道官は、防空部隊がフーシ派によってリヤド方面へ発射された弾道ミサイル2発を迎撃し、破壊したと発表した。",
+  "facts_ja": [
+    "連合の公式投稿で弾道ミサイル2発についての発表を確認。発射・被害を独立検証した資料は未取得。"
+  ],
+  "inference_ja": [
+    "迎撃声明だけから原油の生産や輸出が減少したとは判断できない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "attachment_checks": [
+    {
+      "url": "https://pbs.twimg.com/media/HWlGCKmW0AAfzUT.jpg?name=orig",
+      "type": "image/jpeg",
+      "sha256": "0947b8fed0d074145a26ea6860b0b1f7608754315ae0e145da8e87fbbd525ca5",
+      "visual_review_complete": true,
+      "stored": false,
+      "reason": "共通の部隊ロゴ。新しい発表本文なし。",
+      "retrieved_at": "2026-11-08T08:21:43.975758+00:00"
+    }
+  ],
+  "content_sha256": "58cecf77a282cb91c4f16198b5cf6e3e97351534932a23f48452af7d9b4e03db",
+  "content_hash_scope": "共有用メディアURLを除いた公式投稿テキスト",
+  "source_raw_sha256": "f228a379ecce26c86372b973f9a3448306313da12ca884670e26d9cd2b8b8adb",
+  "published_time_basis": "公式投稿配信データ created_at",
+  "notification_eligible": false,
+  "notification_reason": "地域リスクの補足。独立した施設被害や供給変化は未確認で、個別のMac通知対象外。"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "uae-ng-20261108-oman-cargo-rescue-9890dae8",
+  "source": "UAE National Guard Command",
+  "source_url": "https://x.com/Uaengc/status/2119247094905258065",
+  "title_en": "UAE National Guard rescues 22 after cargo-ship fire in the Gulf of Oman",
+  "title_ja": "UAE沿岸警備隊、オマーン湾の貨物船火災で22人を救助と発表",
+  "published_at": "2026-11-08T01:54:15.000Z",
+  "received_at": "2026-11-08T08:21:05.472338+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "other_us"
+  ],
+  "source_language": "ar",
+  "original_text": "تمكنت مجموعة حرس السواحل بالحرس الوطني من إنقاذ 22 شخصاً من الجنسيات العربية، إثر اندلاع حريق في سفينة شحن كانوا على متنها داخل بحر عمان.",
+  "translation_ja": "UAE国家警備隊は、人命の保護と海上の安全・保安を強化する取り組みの一環として、同隊の沿岸警備部門が、オマーン湾で火災が起きた貨物船に乗っていたアラブ諸国籍の22人を救助したと発表した。",
+  "facts_ja": [
+    "UAE国家警備隊の公式投稿と添付画像で、オマーン湾の貨物船火災と22人の救助を同隊が発表したことを確認。"
+  ],
+  "inference_ja": [
+    "UAE発表に船名、IMO番号、積荷、火災原因、正確な位置はない。米中央軍が攻撃したと発表したHuda、UKMTO注意報198-26、イラン革命防衛隊が発表したタンカー2隻との関係は確認できない。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公式投稿の長文欄は配信データ上で途中まで。添付告知画像は全文を目視し実質本文を訳出した。",
+    "画像の再配布条件未確認のため画像自体は保存せず、短い原文抜粋と訳文を保存。船名、積荷、火災原因は発表に記載なし。"
+  ],
+  "attachment_checks": [
+    {
+      "url": "https://pbs.twimg.com/media/HWkT_sHbgAAmzH-.jpg?name=orig",
+      "type": "image/jpeg",
+      "sha256": "efe48bc94d50f059e90687ed41099ea44b72b9848929e48750ed3f6cb15a7042",
+      "visual_review_complete": true,
+      "stored": false,
+      "reason": "画像の再配布条件未確認。",
+      "retrieved_at": "2026-11-08T08:21:43.980047+00:00"
+    }
+  ],
+  "content_sha256": "9890dae8c2eacb4b1a81b0ef949b61100d87955a11628f2c8037764a59db25fd",
+  "content_hash_scope": "目視した公式画像の救助に関するアラビア語抜粋",
+  "source_raw_sha256": "c87572a1bf976c1d9fd61f55caa24b5e112385dcaea935cd294d93c94aca7bd8",
+  "published_time_basis": "公式投稿配信データ created_at",
+  "notification_eligible": true,
+  "notification_reason": "米軍発表との照合に重要な近隣国沿岸警備の一次資料。",
+  "summary_ja_40": "ＵＡＥがオマーン湾の貨物船火災で二十二人を救助と発表、米軍の攻撃対象かは未確認。",
+  "related_source_urls": [
+    "https://www.wam.ae/en/article/17ijsig-uae-national-guard-rescues-people-from-cargo-ship",
+    "https://www.dvidshub.net/news/578872/us-forces-disable-cargo-vessel-attempting-violate-naval-blockade",
+    "https://www.ukmto.org/-/media/ukmto/products/20261107-ukmto_advisory-198-26.pdf"
+  ]
+}
