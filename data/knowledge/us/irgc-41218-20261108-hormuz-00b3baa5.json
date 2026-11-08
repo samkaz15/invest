@@ -1,0 +1,43 @@
+{
+  "id": "irgc-41218-20261108-hormuz-00b3baa5",
+  "source": "Sepah News / IRGC Navy Public Relations",
+  "source_url": "https://sepahnews.ir/fa/news/41218/",
+  "title_en": "Explosion and fire of two oil tankers in the Strait of Hormuz (translated title)",
+  "title_ja": "イラン革命防衛隊海軍、ホルムズ海峡のタンカー2隻の機雷接触・火災を発表",
+  "published_at": "2026-11-08T00:47:47+03:30",
+  "received_at": "2026-11-08T06:49:47.511348+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "sanctions",
+    "other_us"
+  ],
+  "source_language": "fa",
+  "original_text": "انفجار و آتش سوزی دو نفتکش در تنگه هرمز\n\nپس از برخورد با مین در آتش بسیار شدیدی در حال سوختن می باشند.",
+  "translation_ja": "革命防衛隊海軍広報は、ホルムズ海峡東方と海峡内で、タンカー各1隻が機雷に接触して爆発し、激しく炎上していると発表した。同隊は、2隻が航法・測位装置を停止し、イランが許可していないとする経路を通ろうとしたと主張した。さらに、米軍に協力し、イランが定める航行規則に反して同隊のいう禁止海域へ入れば機雷に接触すると警告し、米中央軍司令官の発言に従わないよう求めた。",
+  "facts_ja": [
+    "革命防衛隊海軍広報の発表原本を直接取得。発表の存在・公表時刻と、同隊の主張を確認した。船名・IMO番号・積荷・被害の独立確認は得られず、類似した過去の声明と別件かは未確定。"
+  ],
+  "inference_ja": [
+    "独立確認された物理的供給減を数えられるまでは、原油供給の追加減少や市場方向は保留。"
+  ],
+  "source_raw_sha256": "11845f85e5230692d75f3761e88a265d59182f11750d7cbf597118ab7d5d0769",
+  "content_sha256": "00b3baa54443b106392ebdcc90be404cb52f2714253a28eda22491cf67991217",
+  "content_hash_scope": "公開ページのペルシャ語本文（本文冒頭の発信元の前置き、見出し、表示用抜粋、共有・画像を除く）",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "ペルシャ語本文は取得済み。全文転載・全文翻訳の再利用条件が確認できないため、短い原文抜粋と発表の主張を網羅した詳細日本語要約を保存。",
+    "掲載画像の原本と独立検証は未取得。本文には表・脚注・PDFへのリンクなし。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "イラン革命防衛隊がホルムズ海峡のタンカー二隻の機雷接触と火災を発表、独立未確認。",
+  "notification_reason": "既報に対し、発表者の原本・公表時刻、航法／測位装置の停止に関する主張および航路警告を今回初めて一次確認。物理的な事案を新規2件とは数えない。",
+  "prior_reported_claim_id": "hormuz-irgc-tanker-claim-20261108-secondary",
+  "related_source_urls": [
+    "https://sepahnews.ir/fa/news/41038/",
+    "https://www.imo.org/en/mediacentre/hottopics/pages/middle-east-strait-of-hormuz.aspx",
+    "https://www.ukmto.org/-/media/ukmto/products/20261107-ukmto_advisory-198-26.pdf"
+  ]
+}
