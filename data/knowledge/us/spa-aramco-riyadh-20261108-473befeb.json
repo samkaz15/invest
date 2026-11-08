@@ -1,0 +1,56 @@
+{
+  "id": "spa-aramco-riyadh-20261108-473befeb",
+  "source": "Saudi Press Agency / Saudi Ministry of Energy",
+  "source_url": "https://www.spa.gov.sa/ar/w2720650",
+  "title_en": "Saudi energy ministry official reports limited damage to an Aramco administrative building in Riyadh",
+  "title_ja": "サウジ・エネルギー省、リヤドのアラムコ事務棟に限定的な被害と発表",
+  "published_at": "2026-11-08T11:41:46+03:00",
+  "received_at": "2026-11-08T09:49:20.908109+00:00",
+  "received_at_kind": "web_retrieved",
+  "published_time_basis": "国営通信の公開掲載データ published_at。本文末の現地11:41と整合。",
+  "topics": [
+    "oil",
+    "war",
+    "other_us"
+  ],
+  "source_language": "ar",
+  "original_text": "نتج عنها سقوط شظايا على المبنى، ووقوع أضرار محدودة فيه، دون وقوع أي إصابات أو وفيات.",
+  "translation_ja": "サウジアラビア・エネルギー省の担当者は、2026年11月8日（日）、リヤド市にあるサウジアラムコの事務棟の一つを狙った攻撃の試みがあり、建物に破片が落下して限定的な被害が出たと発表した。死傷者はいなかったとしている。担当者は、関係当局が事案への対応に着手し、必要な措置を取ったと説明した。",
+  "facts_ja": [
+    "サウジ国営通信の公開データで、サウジ・エネルギー省の担当者がリヤド市のアラムコ事務棟に破片による限定的な損傷があり、死傷者なしと発表したことを確認。"
+  ],
+  "inference_ja": [
+    "エネルギー省の発表対象は事務棟。原油生産・精製・輸出・出荷能力の減少を示す数値や独立資料は確認できていない。先行する迎撃発表と破片を同定できる資料も未取得。"
+  ],
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "国営通信の2段落を取得し実質的な発表内容を日本語化。再利用許諾未確認のため原文は短い抜粋。ロゴ画像の公開転載は保留。",
+    "一次発表には表・脚注・PDFはない。生産量・積み出しと攻撃主体の独立確認は未取得。"
+  ],
+  "content_sha256": "473befeb15967612e8ddb8bda6586aaf21307faa1eb6f237caa195899490a84f",
+  "content_hash_scope": "国営通信本文データ全体（行頭末空白を正規化）",
+  "source_raw_sha256": "c29fe35e2e57439413f7b8d76df92803c45852b6c773c466d1ebc891e5269b82",
+  "notification_eligible": true,
+  "summary_ja_40": "サウジ当局はリヤド市のアラムコ事務棟に破片による限定的な被害、死傷者なしと発表。",
+  "attachment_checks": [
+    {
+      "url": "https://portalcdn.spa.gov.sa/backend/original/202611/F11179277.jpg",
+      "type": "image/jpeg",
+      "sha256": "b0701bf72bf6f6de98b9f834eec30fa7b9fc0504b18983fc700a7a3dbbfbb890",
+      "visual_review_complete": true,
+      "scope": "省のロゴ。現場画像ではない。",
+      "stored": false
+    }
+  ],
+  "related_document_ids": [
+    "saudi-coalition-20261108-riyadh-ballistic-58cecf77",
+    "saudi-coalition-20261108-cruise-392cd862"
+  ],
+  "independent_reports": [
+    {
+      "source_url": "https://www.reuters.com/world/middle-east/loud-booms-heard-saudi-capital-riyadh-after-early-warning-alert-issued-2026-11-08/",
+      "scope": "窓の破損の目撃を報道。供給や原因の独立確認はなし。"
+    }
+  ]
+}

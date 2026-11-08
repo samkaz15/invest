@@ -1,0 +1,37 @@
+{
+  "id": "qatar-saudi-call-20261107-953b280e",
+  "source": "Qatar Ministry of Foreign Affairs",
+  "source_url": "https://mofa.gov.qa/en/qatar/latest-articles/latest-news/details/2026/11/07/prime-minister-and-minister-of-foreign-affairs--saudi-foreign-minister-hold-phone-call",
+  "title_en": "Prime Minister and Minister of Foreign Affairs, Saudi Foreign Minister Hold Phone Call",
+  "title_ja": "カタールとサウジの外相が電話協議し、カタールが航行の自由に向けた外交努力を支持",
+  "published_at": null,
+  "publication_date_local": "2026-11-07",
+  "publication_timezone": "Asia/Qatar",
+  "published_at_note": "公表ページはドーハの暦日のみ。時刻は未確認。",
+  "received_at": "2026-11-08T09:48:31.463708+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "diplomacy",
+    "oil",
+    "other_us"
+  ],
+  "original_text": "a solution that ensures the freedom of maritime navigation",
+  "translation_ja": "カタール首相兼外相とサウジ外相は電話で、二国間協力の深化・拡大と地域情勢について話し合った。両者は緊張緩和および地域の安全・安定に向けた外交努力と連携を協議した。カタール首相は、海上航行の自由を確保し、持続的な平和につながる包括合意を目指す外交努力を支持すると述べた。",
+  "facts_ja": [
+    "カタール外務省の公式本文で電話協議と航行の自由を支える外交努力への支持を確認。"
+  ],
+  "inference_ja": [
+    "この発表から航行再開日や拘束力ある合意は判断できない。"
+  ],
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公式本文3段落を取得。再利用条件未確認のため短い原文抜粋と日本語要約を収録。",
+    "公表時刻、航行再開の具体条件は未確認。"
+  ],
+  "content_sha256": "953b280e9d7cb5fbbbdd80ca986268fff1aeec779558265690f7a6c78a195977",
+  "source_raw_sha256": "2f972ccc101f1faa5544a4cc0063dc48f8b09c1b8ba9d29480892146fe1d36fc",
+  "content_hash_scope": "外務省の本文3段落",
+  "notification_eligible": false,
+  "notification_reason": "既刊の外交方針の補足。航行・供給の実績に新しい変更は確認できない。"
+}
