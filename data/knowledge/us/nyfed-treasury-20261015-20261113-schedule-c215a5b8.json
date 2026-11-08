@@ -1,0 +1,99 @@
+{
+  "id": "nyfed-treasury-20261015-20261113-schedule-c215a5b8",
+  "source": "Federal Reserve Bank of New York",
+  "source_url": "https://www.newyorkfed.org/medialibrary/media/markets/treasury-securities-schedule/current-schedule.csv",
+  "title_en": "Tentative Schedule of Treasury Securities Operations — October 15 to November 13, 2026",
+  "title_ja": "NY連銀の短期国債買入予定表（10月15日〜11月13日）",
+  "published_at": null,
+  "publication_time_note": "個別CSVの公表日時とHTTP更新日時は不明。表記時刻はオペ実施時刻。",
+  "received_at": "2026-11-08T03:45:55.000716+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries",
+    "monetary_policy",
+    "us_economy"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "original_text": "Operation Date,Operation Time (ET),Settlement Date,Operation Type,Security Type and Maturity,Maturity Range,Maximum Operation Size,Period,Planned Operation Amount,Tentative Schedule,Results,Next Schedule Release\r\n10/19/2026,09:00 -<br>09:20 AM ,10/20/2026,Bill Purchases ,Bill<br>4 to 12 months,2/18/2027 - 10/21/2027,$ 1.827 billion,10/15/2026-<br>11/13/2026,The Desk plans to conduct approximately $14.6 billion in reinvestment purchases and no reserve management purchases over the noted monthly period.,\"<a class=\"\"open-tab\"\" href=\"\"#current-schedule\"\">Schedule</a>\",To be released,\r\n10/22/2026,09:00 -<br>09:20 AM ,10/23/2026,Bill Purchases ,Bill<br>1 to 4 months,11/21/2026 - 2/20/2027,$ 3.653 billion,10/15/2026-<br>11/13/2026,The Desk plans to conduct approximately $14.6 billion in reinvestment purchases and no reserve management purchases over the noted monthly period.,\"<a class=\"\"open-tab\"\" href=\"\"#current-schedule\"\">Schedule</a>\",To be released,\r\n10/29/2026,09:00 -<br>09:20 AM ,10/30/2026,Bill Purchases ,Bill<br>4 to 12 months,2/28/2027 - 10/31/2027,$ 1.827 billion,10/15/2026-<br>11/13/2026,The Desk plans to conduct approximately $14.6 billion in reinvestment purchases and no reserve management purchases over the noted monthly period.,\"<a class=\"\"open-tab\"\" href=\"\"#current-schedule\"\">Schedule</a>\",To be released,\r\n11/5/2026,09:00 -<br>09:20 AM ,11/6/2026,Bill Purchases ,Bill<br>1 to 4 months,12/5/2026 - 3/6/2027,$ 3.652 billion,10/15/2026-<br>11/13/2026,The Desk plans to conduct approximately $14.6 billion in reinvestment purchases and no reserve management purchases over the noted monthly period.,\"<a class=\"\"open-tab\"\" href=\"\"#current-schedule\"\">Schedule</a>\",To be released,\r\n11/9/2026,09:00 -<br>09:20 AM ,11/10/2026,Bill Purchases ,Bill<br>1 to 4 months,12/9/2026 - 3/10/2027,$ 3.653 billion,10/15/2026-<br>11/13/2026,The Desk plans to conduct approximately $14.6 billion in reinvestment purchases and no reserve management purchases over the noted monthly period.,\"<a class=\"\"open-tab\"\" href=\"\"#current-schedule\"\">Schedule</a>\",To be released,\n\n© 2026 Federal Reserve Bank of New York. Content from the New York Fed subject to the Terms of Use at newyorkfed.org.",
+  "translation_ja": "日本語訳（当調査による翻訳）\n\n### 暫定・国債買入予定表（2026年10月15日〜11月13日）\n\nNY連銀の公開市場取引デスクは、この期間に約146億ドルの再投資買入を予定している。準備預金の管理を目的とした買入は計画していない。全5行は短期財務省証券の買入予定で、米東部時間の受付は各日09:00〜09:20。\n\n| 実施日（米東部） | 受付（日本時間） | 決済日（米東部） | 残存期間区分 | 満期日の対象範囲 | 上限（十億ドル） |\n|---|---|---|---|---|---:|\n| 2026-10-19 | 10/19 22:00–22:20 | 2026-10-20 | 4〜12か月 | 2027-02-18〜2027-10-21 | 1.827 |\n| 2026-10-22 | 10/22 22:00–22:20 | 2026-10-23 | 1〜4か月 | 2026-11-21〜2027-02-20 | 3.653 |\n| 2026-10-29 | 10/29 22:00–22:20 | 2026-10-30 | 4〜12か月 | 2027-02-28〜2027-10-31 | 1.827 |\n| 2026-11-05 | 11/05 23:00–23:20 | 2026-11-06 | 1〜4か月 | 2026-12-05〜2027-03-06 | 3.652 |\n| 2026-11-09 | 11/09 23:00–23:20 | 2026-11-10 | 1〜4か月 | 2026-12-09〜2027-03-10 | 3.653 |\n\n各行の「暫定日程」は同じ表を参照。「結果」欄は公表予定、「次回日程公表」欄は空白。実施済み分の結果は別の結果APIで確認できる。上限額の合計は146.12億ドル。11月9日分は受付が日本時間23:00〜23:20、買入上限36.53億ドル、決済は米現地11月10日。時刻は夏時間・標準時を日付別に換算。\n\n© 2026 Federal Reserve Bank of New York. Content from the New York Fed subject to the Terms of Use at newyorkfed.org.\n[利用条件](https://www.newyorkfed.org/privacy/termsofuse)",
+  "rights_source_url": "https://www.newyorkfed.org/privacy/termsofuse",
+  "content_sha256": "c215a5b8bda26585c0dd07cf327ede177c59371d99d645c259e5f9890d1c0f38",
+  "content_hash_scope": "raw CSV bytes",
+  "source_authority_url": "https://www.newyorkfed.org/markets/domestic-market-operations/monetary-policy-implementation/treasury-securities/treasury-securities-operational-details",
+  "related_record_ids": [
+    "nyfed-treasury-20261106-current-plan-excerpt",
+    "nyfed-20261105-purchase-e278e0dc"
+  ],
+  "operations": [
+    {
+      "operation_date": "2026-10-19",
+      "start_et": "2026-10-19T09:00:00-04:00",
+      "end_et": "2026-10-19T09:20:00-04:00",
+      "start_jst": "2026-10-19T22:00:00+09:00",
+      "end_jst": "2026-10-19T22:20:00+09:00",
+      "settlement_date": "2026-10-20",
+      "maturity_range_start": "2027-02-18",
+      "maturity_range_end": "2027-10-21",
+      "term_bucket": "4 to 12 months",
+      "maximum_usd": 1827000000
+    },
+    {
+      "operation_date": "2026-10-22",
+      "start_et": "2026-10-22T09:00:00-04:00",
+      "end_et": "2026-10-22T09:20:00-04:00",
+      "start_jst": "2026-10-22T22:00:00+09:00",
+      "end_jst": "2026-10-22T22:20:00+09:00",
+      "settlement_date": "2026-10-23",
+      "maturity_range_start": "2026-11-21",
+      "maturity_range_end": "2027-02-20",
+      "term_bucket": "1 to 4 months",
+      "maximum_usd": 3653000000
+    },
+    {
+      "operation_date": "2026-10-29",
+      "start_et": "2026-10-29T09:00:00-04:00",
+      "end_et": "2026-10-29T09:20:00-04:00",
+      "start_jst": "2026-10-29T22:00:00+09:00",
+      "end_jst": "2026-10-29T22:20:00+09:00",
+      "settlement_date": "2026-10-30",
+      "maturity_range_start": "2027-02-28",
+      "maturity_range_end": "2027-10-31",
+      "term_bucket": "4 to 12 months",
+      "maximum_usd": 1827000000
+    },
+    {
+      "operation_date": "2026-11-05",
+      "start_et": "2026-11-05T09:00:00-05:00",
+      "end_et": "2026-11-05T09:20:00-05:00",
+      "start_jst": "2026-11-05T23:00:00+09:00",
+      "end_jst": "2026-11-05T23:20:00+09:00",
+      "settlement_date": "2026-11-06",
+      "maturity_range_start": "2026-12-05",
+      "maturity_range_end": "2027-03-06",
+      "term_bucket": "1 to 4 months",
+      "maximum_usd": 3652000000
+    },
+    {
+      "operation_date": "2026-11-09",
+      "start_et": "2026-11-09T09:00:00-05:00",
+      "end_et": "2026-11-09T09:20:00-05:00",
+      "start_jst": "2026-11-09T23:00:00+09:00",
+      "end_jst": "2026-11-09T23:20:00+09:00",
+      "settlement_date": "2026-11-10",
+      "maturity_range_start": "2026-12-09",
+      "maturity_range_end": "2027-03-10",
+      "term_bucket": "1 to 4 months",
+      "maximum_usd": 3653000000
+    }
+  ],
+  "facts_ja": [
+    "NY連銀の暫定日程は短期証券買入5回。11月9日の上限は36.53億ドルで、受付は日本時間23:00〜23:20。月間計画は約146億ドルの再投資、準備預金管理目的の買入なし。"
+  ],
+  "inference_ja": [
+    "暫定上限は実績やFRB保有総額の純増を示さない。SOMAの再投資と米財務省の債務管理買い戻しを分け、成立額・決済を確認する。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "既公表の月間計画に対応する個別予定を補完。新たな政策決定や実施結果は含まない。"
+}
