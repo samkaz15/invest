@@ -1,0 +1,42 @@
+{
+  "id": "cnn-20261108-trump-iran-interview-db536af3",
+  "source": "CNN Newsource / Jim Sciutto (public ABC 17 syndication)",
+  "source_url": "https://abc17news.com/politics/national-politics/cnn-us-politics/2026/11/08/trump-says-renewed-attacks-on-iran-highly-unlikely-if-talks-show-progress/",
+  "title_en": "Trump says renewed attacks on Iran highly unlikely if talks show progress",
+  "title_ja": "トランプ米大統領、対イラン交渉の進展を条件に再攻撃の可能性に言及",
+  "published_at": "2026-11-08T17:28:27+00:00",
+  "published_time_basis": "聞き手本人が執筆したCNN配信記事の公開配信先メタデータ。インタビュー自体の時刻は未確認。",
+  "received_at": "2026-11-08T20:52:54.711332+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "sanctions"
+  ],
+  "original_text": "It depends on whether or not they sign a very strong agreement. The answer is highly unlikely it’s going to be necessary.",
+  "translation_ja": "「非常に強い合意に署名するかどうか次第だ。〔再攻撃が〕必要になる可能性は極めて低い、というのが答えだ。」\n\n聞き手本人の記事によると、トランプ氏は核問題とホルムズ海峡再開を巡る交渉の進展を条件とし、必要なら軍事行動を取り得るとも述べた。再開時に橋や発電所を標的にできると述べる一方、インフラの破壊は望まないとした。イランの防空・ミサイル・無人機の能力についても同氏の評価を示した。会談での発言を伝える記事で、合意や命令の成立、戦力の独立確認を示すものではない。\n\n更新部分の要約。記事は、イラン核計画に関する情報への最大2,000万ドルの報奨と、イランの陸上輸送経路を制限するための任務部隊を背景説明に追加した。インタビュー発言に変更は見当たらない。報奨は米国務省の既存資料、部隊設置は米中央軍の既存資料で別々に確認済み。",
+  "facts_ja": [
+    "聞き手本人の公開配信記事が、再攻撃に関する大統領の条件付き発言を直接引用した。",
+    "今回の取得では記事に既報の報奨・任務部隊の説明1段落が追加されていた。公開日時の表示は同じで、改訂時刻は不明。"
+  ],
+  "inference_ja": [
+    "交渉進展を条件にする発言は短期リスク認識に影響し得るが、合意署名・封鎖変更・通航回復は別途検証。"
+  ],
+  "content_sha256": "db536af348a3fe19d6d9166117f217acba11c4b532d8c32cd21648d2edf169d1",
+  "source_raw_sha256": "5632da3a29b1676b29cac2002047fed9855ed036ea3dc317ace1b23241d7048a",
+  "content_hash_scope": "今回取得した配信記事の全段落を空白正規化してSHA256を計算。保存原文は既存の限定引用のみ。",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "CNN配信の聞き手本人による記事を読了。限定原文抜粋とその訳、経済に関連する部分の要約を保存。記事全文の再利用は行わず、音声・全文逐語録・ホワイトハウスによる文書は未取得。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "既存の公表を背景説明として追記した改訂。大統領発言の差分なし。",
+  "evidence_kind": "firsthand_interview_via_newsroom_not_government_release",
+  "supersedes": "cnn-20261108-trump-iran-interview-46ffb221",
+  "revision_published_at": null,
+  "related_document_ids": [
+    "state-rfj-iran-nuclear-program-20261106-b7e53c48",
+    "centcom-20261107-iron-gate-62ff1226"
+  ]
+}
