@@ -1,0 +1,62 @@
+{
+  "id": "ukmto-20261108-200-26-9e84cdcb",
+  "source": "UK Maritime Trade Operations",
+  "source_url": "https://www.ukmto.org/-/media/ukmto/products/20261108-ukmto_warning-200-26.pdf",
+  "title_en": "UKMTO Warning 200-26 — ATTACK",
+  "title_ja": "英海事当局の警報200-26　攻撃",
+  "published_at": null,
+  "published_date": "2026-11-08",
+  "published_time_basis": "公式一覧とファイル名の日付。正確な公開時刻と掲載日のタイムゾーンは未確認。PDF作成時刻とHTTP更新時刻は公表時刻に用いない。",
+  "incident_at": "2026-11-07T20:20:00+00:00",
+  "received_at": "2026-11-08T16:38:57.311514+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "shipping"
+  ],
+  "original_text": "UKMTO WARNING\n                               200-26 - ATTACK\n     Incident Date:                   Incident Time:                  Source:\n       07 Nov 2026                      2020UTC               Company Security Officer\nUKMTO has received a time-late report of an incident in the Strait of Hormuz.\nThe Company Security Officer of a tanker has reported that the vessel was struck by an\nunknown projectile while transiting outbound through the Strait of Hormuz.\nAll crew are safe and accounted for and there is no reported environmental impact at\nthis time.\nVessels are advised to transit with caution and report any suspicious activity to UKMTO,\nwhilst authorities investigate.\n\n                                         Strait of Hormuz",
+  "translation_ja": "英国海運貿易オペレーション（UKMTO）警報 200-26、攻撃。\n\n発生日時欄 2026年11月7日 20:20 UTC（日本時間11月8日 05:20）。通報元欄 船会社の保安責任者。\n\n英国海運貿易オペレーション（UKMTO）は、ホルムズ海峡で起きた事案について、発生後に報告を受けた。タンカーの船会社の保安責任者によると、同船はホルムズ海峡を外向きに通航中、正体不明の飛翔体の命中を受けた。乗員は全員無事で所在を確認できており、現時点で環境への影響の報告はない。 当局が調査する間、船舶は注意して通航し、不審な活動をUKMTOに報告するよう勧告する。\n\n地図はホルムズ海峡の対象海域を表示。",
+  "facts_ja": [
+    "船会社の保安責任者からタンカーへの飛翔体命中の通報。乗員全員の無事を記載。船名・攻撃主体は未確認。"
+  ],
+  "inference_ja": [
+    "船舶、積荷、航行・積出への影響の確証には他の資料との照合が必要。IRGCの機雷発表や米中央軍のHuda発表との同一性は確認できない。"
+  ],
+  "content_sha256": "f6eeb30eacd960dca79dbf638851ef8638f9034bd4368c568d16b498fd3708f3",
+  "content_hash_scope": "PDF1頁の公表本文、表、地図ラベル。連絡先欄を除く。",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "notification_eligible": true,
+  "summary_ja_40": "英海事当局がホルムズ海峡でタンカーへの飛翔体命中の通報を公表し、乗員は全員無事。",
+  "notification_reason": "原油輸送の安全に関わる別個の新規公的警報。同一ChatGPT通知内に集約。",
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Source: UK Maritime Trade Operations.",
+  "missing_parts": [
+    "全1頁の実質本文、日時表、地図を紙面と照合。連絡先欄は原文・訳から除外。地図は位置を記述し、画像は転載しない。"
+  ],
+  "pdf": {
+    "sha256": "9e84cdcb56d7d1e576006b7f92592397229cbc6bfa569680fcb302604d03347f",
+    "page_count": 1,
+    "ocr_used": false,
+    "original_url": "https://www.ukmto.org/-/media/ukmto/products/20261108-ukmto_warning-200-26.pdf",
+    "visual_review_complete": true,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "source_pdf_save_reason": "連絡先欄と埋込メタデータがあり、原本を公開保存する条件を満たさない。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "UKMTO WARNING\n                               200-26 - ATTACK\n     Incident Date:                   Incident Time:                  Source:\n       07 Nov 2026                      2020UTC               Company Security Officer\nUKMTO has received a time-late report of an incident in the Strait of Hormuz.\nThe Company Security Officer of a tanker has reported that the vessel was struck by an\nunknown projectile while transiting outbound through the Strait of Hormuz.\nAll crew are safe and accounted for and there is no reported environmental impact at\nthis time.\nVessels are advised to transit with caution and report any suspicious activity to UKMTO,\nwhilst authorities investigate.\n\n                                         Strait of Hormuz",
+        "translation_ja": "英国海運貿易オペレーション（UKMTO）警報 200-26、攻撃。\n\n発生日時欄 2026年11月7日 20:20 UTC（日本時間11月8日 05:20）。通報元欄 船会社の保安責任者。\n\n英国海運貿易オペレーション（UKMTO）は、ホルムズ海峡で起きた事案について、発生後に報告を受けた。タンカーの船会社の保安責任者によると、同船はホルムズ海峡を外向きに通航中、正体不明の飛翔体の命中を受けた。乗員は全員無事で所在を確認できており、現時点で環境への影響の報告はない。 当局が調査する間、船舶は注意して通航し、不審な活動をUKMTOに報告するよう勧告する。\n\n地図はホルムズ海峡の対象海域を表示。",
+        "extraction_status": "text_extracted_visual_checked",
+        "translation_status": "partial",
+        "visual_review_complete": true
+      }
+    ]
+  },
+  "related_source_urls": [
+    "https://www.ukmto.org/-/media/ukmto/products/20261108-ukmto_warning-200-26.pdf?rev=9def0b87df4a447e997d9af51adb57c7",
+    "https://www.ukmto.org/terms-and-conditions",
+    "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  ]
+}
