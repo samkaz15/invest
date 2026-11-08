@@ -1,0 +1,39 @@
+{
+  "id": "rtl-barrot-20261108-abu-dhabi-09edf156",
+  "source": "RTL / Le Grand Jury, first-party interview excerpts",
+  "source_url": "https://www.rtl.fr/actu/international/la-france-participera-a-ces-discussions-jean-noel-barrot-annonce-que-paris-et-l-europe-seront-representees-lors-des-negociations-sur-l-ukraine-7900693803",
+  "title_en": "French foreign minister says France will take part in Abu Dhabi Ukraine talks",
+  "title_ja": "フランス外相、米国仲介のアブダビ・ウクライナ協議への参加を表明",
+  "published_at": "2026-11-08T12:47:21.249000+01:00",
+  "published_time_basis": "放送局記事の構造化公表時刻。生放送は現地12〜13時で、発言の正確な秒は未確認。",
+  "received_at": "2026-11-08T14:33:11.673787+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "diplomacy"
+  ],
+  "source_language": "fr",
+  "original_text": "Les Européens seront bien représentés et la France sera à Abou Dhabi pour participer à ces discussions.",
+  "translation_ja": "「欧州側はしっかりと代表され、フランスはこの協議に参加するためアブダビに赴きます。この場で誰がフランスを代表するかはまだお伝えできませんが、フランスは確実に参加します。」\n\n外相は続けて、欧州諸国はこの数週間、欧州の将来を扱う協議では欧州の期待や要求を考慮するよう米国の仲介役に伝えてきたと述べた。フランスは、直接の当事者である欧州の立場を伝えるとした。",
+  "facts_ja": [
+    "フランス外相はRTLのインタビューで、アブダビのウクライナ協議にフランスが参加し、欧州側も代表を送るとの認識を示した。",
+    "フランス代表者、欧州側の構成、出席形式、協議結果は未確認。"
+  ],
+  "inference_ja": [
+    "参加表明だけから停戦、制裁緩和、エネルギー供給の変化は推定しない。合意文書・実施状況で再評価する。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "放送局掲載の本文と直接発言抜粋を確認。原文は短い引用のみ。音声・映像の全編は照合せず、掲載文の発言該当範囲を訳出・要約。",
+    "公開資料に表・脚注・PDFはない。参加者・参加形態の合意と停戦・制裁条件は未確認。"
+  ],
+  "content_sha256": "09edf1562b6fac66fc7fd70994d7bed44dd7ed916ab1690672bdd63eda7a2642",
+  "content_hash_scope": "RTL掲載の関連発言と文脈行の正規化テキスト",
+  "notification_eligible": true,
+  "summary_ja_40": "フランス外相は米国が仲介するアブダビのウクライナ協議にフランスが参加すると表明。",
+  "related_source_urls": [
+    "https://www.publicsenat.fr/emission/le-grand-jury-rtl-public-senat-ouest-france-m6/jean-noel-barrot-invite-du-grand-jury-e10",
+    "https://www.rtl.fr/grille/08-11-2026"
+  ]
+}
