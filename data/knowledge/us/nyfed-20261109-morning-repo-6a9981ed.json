@@ -1,0 +1,32 @@
+{
+  "id": "nyfed-20261109-morning-repo-6a9981ed",
+  "source_url": "https://markets.newyorkfed.org/api/rp/repo/all/results/last/1.json",
+  "source": "Federal Reserve Bank of New York",
+  "title_en": "Repo Operation Results, November 9, 2026",
+  "title_ja": "NY連銀の11月9日朝の翌日物レポ実績",
+  "original_text": "{ \"repo\": { \"operations\": [ { \"operationId\": \"RP 110926 25\", \"auctionStatus\": \"Results\", \"operationDate\": \"2026-11-09\", \"settlementDate\": \"2026-11-09\", \"maturityDate\": \"2026-11-10\", \"operationType\": \"Repo\", \"operationMethod\": \"Full Allotment\", \"settlementType\": \"Same Day\", \"termCalenderDays\": 1, \"term\": \"Overnight\", \"releaseTime\": \"08:15\", \"closeTime\": \"08:30\", \"note\": \"\", \"lastUpdated\": \"2026-11-09 08:30:29\" ,\"totalAmtSubmitted\": 0 ,\"totalAmtAccepted\": 0 , \"details\": [ { \"securityType\": \"Treasury\", \"amtSubmitted\": 0, \"amtAccepted\": 0 ,\"percentOfferingRate\": 4.00 }, { \"securityType\": \"Agency\", \"amtSubmitted\": 0, \"amtAccepted\": 0 ,\"percentOfferingRate\": 4.00 }, { \"securityType\": \"Mortgage-Backed\", \"amtSubmitted\": 0, \"amtAccepted\": 0 ,\"percentOfferingRate\": 4.00 } ] } ] } }",
+  "translation_ja": "NY連銀の11月9日レポ結果。ID RP 110926 25、結果公表済み。全額割当方式、即日決済、期間1日（翌日物）。実施・決済は米国11月9日、満期は11月10日。開始08:15、締切08:30、最終更新表示は11月9日08:30:29。API表示のタイムゾーンは未記載。備考は空欄。応募・落札はいずれも0ドル。\n\n| 担保 | 応募額（ドル） | 落札額（ドル） | 提示金利 |\n|---|---:|---:|---:|\n| 米国債 | 0 | 0 | 4.00% |\n| 政府機関債 | 0 | 0 | 4.00% |\n| 住宅ローン担保証券 | 0 | 0 | 4.00% |",
+  "received_at": "2026-11-09T14:53:55.582162+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries",
+    "monetary_policy",
+    "liquidity"
+  ],
+  "facts_ja": [
+    "3担保区分とも応札・落札ゼロ、提示金利4.00％。"
+  ],
+  "inference_ja": [
+    "単一の窓口の利用状況。市場全体の担保付き資金調達の余裕はSOFRや取引額などと照合する。"
+  ],
+  "content_sha256": "6a9981edf6e75f6ff666d92a349be836e4ae1372cfaa85179608b12d01d9c60e",
+  "raw_sha256": "6a9981edf6e75f6ff666d92a349be836e4ae1372cfaa85179608b12d01d9c60e",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "api_last_updated_raw": "2026-11-09 08:30:29",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "notification_reason": "定例の翌日物レポの応札ゼロ。単独で重要な政策変更とは判定しない。"
+}
