@@ -1,0 +1,33 @@
+{
+  "id": "ukraine-20261109-india-black-sea-call-107209-f48291d1",
+  "source_url": "https://www.president.gov.ua/en/news/prezident-ukrayini-obgovoriv-iz-premyer-ministrom-indiyi-dip-107209",
+  "received_at": "2026-11-09T16:19:42.042150+00:00",
+  "received_at_kind": "web_retrieved",
+  "original_text": "India is ready to mediate in establishing food corridors, and Ukraine is counting on these efforts to continue.",
+  "translation_ja": "ウクライナ大統領府によると、両首脳は電話でアブダビ会合の準備や黒海の穀物輸送を協議した。同府はインドが食料回廊の設置に向けた仲介に応じる用意があると述べた。両政府の担当チームは連絡を続ける。引用文の訳「インドには食料回廊の設置を仲介する用意があり、ウクライナはこうした取り組みの継続に期待している。」",
+  "content_sha256": "f48291d195833e445dcaa4d004cf04f9b4cf5fb2404d05b1b80d7b8707ab7ec5",
+  "source_raw_sha256": "dfd1dd5180e3e19b8d73decc6486b2620b56ebe2a06a03d6585e9d3fee6b98d7",
+  "source": "Office of the President of Ukraine",
+  "title_en": "President of Ukraine Discussed Diplomatic Process with the Prime Minister of India",
+  "title_ja": "ウクライナ大統領府のインド首相との電話協議発表",
+  "published_at": "2026-11-09T16:40:00+02:00",
+  "published_time_basis": "大統領府の公表表示をキーウ現地時刻と解釈。",
+  "topics": [
+    "war",
+    "trade_policy",
+    "food_supply"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "権利条件を考慮し、引用1文・その訳と独自要約を保存。残りの本文の全訳は未収録。"
+  ],
+  "facts_ja": [
+    "大統領府はインドの食料回廊仲介への用意を述べた。協議当事者の発表であり、回廊合意、実施日、通航の回復は未確認。"
+  ],
+  "inference_ja": [
+    "合意後に通航と積出が回復すれば穀物供給と運賃に波及し得る。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "協議と仲介への用意の発表。回廊の合意、実施、輸送再開は未確認。"
+}

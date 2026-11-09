@@ -1,0 +1,31 @@
+{
+  "id": "india-20261109-ukraine-call-2334434-777b38a7",
+  "source_url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2334434&lang=1&reg=3",
+  "received_at": "2026-11-09T16:32:16.773868+00:00",
+  "received_at_kind": "web_retrieved",
+  "original_text": "He conveyed India’s readiness to contribute to all efforts aimed at peaceful resolution of the conflict.",
+  "translation_ja": "インド首相府は、首相がウクライナ大統領と電話し、最近の紛争情勢と二国間協力を協議したと公表した。首相は対話と外交による解決を支持。引用文の訳「首相は、紛争の平和的解決を目指すすべての取り組みにインドが貢献する用意があると伝えた。」",
+  "content_sha256": "777b38a7ffcaeea5fe5ee42150145eba582cbde30737454af45668f014b6a32d",
+  "source_raw_sha256": "693e51c99dff86782aee1c1a6f5fa51161f272b9e68e569c04c0e765abb1e953",
+  "source": "Press Information Bureau, Prime Minister’s Office, India",
+  "title_en": "Prime Minister speaks with President Volodymyr Zelenskyy",
+  "title_ja": "インド首相府のウクライナ大統領との電話協議発表",
+  "published_at": "2026-11-09T18:59:00+05:30",
+  "topics": [
+    "war",
+    "diplomacy"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "引用1文・その訳と独自要約を保存。残りの本文の全訳は未収録。"
+  ],
+  "facts_ja": [
+    "インド首相府は平和的解決への貢献意思を記載。公表本文では黒海食料回廊に個別に言及していない。"
+  ],
+  "inference_ja": [
+    "両発表は協議の事実を補強する。具体的な航路や実施条件は後続文書で確認。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "外交協議であり、具体的措置の公表は確認されない。"
+}
