@@ -1,0 +1,41 @@
+{
+  "id": "boj-20261109-usd-operation-428d9e44",
+  "source": "日本銀行金融市場局",
+  "source_url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261109.xlsx",
+  "title_en": "Market Operations by the Bank of Japan for November 9 (Mon)",
+  "title_ja": "日銀の11月9日オペ結果と米ドル資金供給",
+  "published_at": null,
+  "received_at": "2026-11-09T07:52:13.319013+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries",
+    "monetary_policy",
+    "usd_funding"
+  ],
+  "original_text": "Bank of Japan / 日本銀行金融市場局\nMarket Operations by the Bank of Japan for November 9 (Mon) / オペレーション（11月9日＜月＞）\n（100 million yen, percent per annum / 億円、％）\n種類\tオファー額(注1)\tスタート日(注2)\tエンド日(注2)\t貸付利率(注3)\t利回り(注4)\t応札総額(注5)\t落札総額(注5)\t按分レート\t全取レート・利回較差(注6)・価格較差(注7)\t平均落札レート・利回較差(注6)・価格較差(注7)\t按分比率・利回較差(注6)・価格較差(注7)\n米ドル資金供給\t\t2026-11-12\t2026-11-19\t4.13\t\t0\t0\t\t\t\t\nUS Dollar Funds-Supplying Operations against Pooled Collateral\n国債補完供給（国債売現先）・即日（午前オファー分）\t\t2026-11-09\t2026-11-10\t\t0.8\t192\t192\t\t0.8\t0.8\t\nSecurities lending facility (Sales of JGSs under repurchase agreements) /offered in the morning/same-day-start operation\n国債補完供給（国債売現先）・即日（午後オファー分）\t\t2026-11-09\t2026-11-10\t\t0.8\t4\t4\t\t0.8\t0.8\t\nSecurities lending facility (Sales of JGSs under repurchase agreements) /offered in the afternoon/same-day-start operation\n(注1)　オペの種類が、米ドル資金供給の場合は、適格担保の範囲内で制限を設けない。\n(注2)　オペの種類が、米ドル資金供給の場合は、米国東部時間。\n(注3)　オペの種類が、共通担保資金供給＜変動金利方式＞の場合は、当初貸付利率。\n(注4)　オペの種類が、国債補完供給（国債売現先）、米ドル資金供給用担保国債供給（国債売現先）の場合は、上限期間利回り。国債買現先の場合は、下限期間利回り。国債買入の場合は、下限利回較差。国債買入（固定利回り方式）の場合は、固定利回較差。\n(注5)　オペの種類が、米ドル資金供給の場合、単位は100万米ドル。\n(注6)　オペの種類が、国庫短期証券買入、国庫短期証券売却、国債買入（残存期間1年以下、1年超5年以下、1年超3年以下、3年超5年以下、5年超10年以下、10年超、10年超25年以下、25年超）の場合は利回較差を示す。\n(注7)　オペの種類が、国債買入（変動利付債、物価連動債）の場合は価格較差を示す（単位は円）。\nNotes:\n1. For the case of US Dollar Funds-Supplying Operations against Pooled Collateral, funds are provided for unlimited amount against pooled collateral.\n2. For the case of US Dollar Funds-Supplying Operations against Pooled Collateral, the dates are in US Eastern Standard Time.\n3. For the case of Funds-Supplying Operations against Pooled Collateral (Floating rate), the loan rates are initial loan rates.\n4. For the case of Securities lending facility (Sales of JGSs under repurchase agreements) and Securities lending to provide JGSs as collateral for US Dollar Funds-Supplying Operations against Pooled Collateral (Sales of JGSs under repurchase agreements), the yields are the upper limits on selling yields. For the case of Purchases of JGSs under repurchase agreements, the yields are the lower limits on purchasing yields. For the case of the Outright purchases of JGBs, the yields are the lower limits on the yield spreads. For the case of the Outright purchases of JGBs (fixed-rate method), the yields are the fixed yield spreads.\n5. For the case of US Dollar Funds-Supplying Operations against Pooled Collateral, the figures are represented in million U.S. dollars.\n6. These figures represent the yield spreads in Outright purchases of T-Bills, Outright sales of T-Bills, Outright purchases of JGBs (residual maturity of up to 1 year, more than 1 year and up to 5 years, more than 1 year and up to 3 years, more than 3 years and up to 5 years, more than 5 years and up to 10 years, more than 10 years, more than 10 years and up to 25 years, and more than 25 years).\n7. These figures represent the price spreads in Outright purchases of JGBs (floating-rate bonds and inflation-indexed bonds) (unit of price spread is yen).",
+  "translation_ja": "日本銀行金融市場局　オペレーション（2026年11月9日、月曜日）\n\n単位は億円、年％。米ドル資金供給の応札・落札額は百万米ドル。空欄は原表どおり。\n\n| 種類 | オファー額(注1) | スタート日(注2) | エンド日(注2) | 貸付利率(注3) | 利回り(注4) | 応札総額(注5) | 落札総額(注5) | 按分レート | 全取レート・利回較差(注6)・価格較差(注7) | 平均落札レート・利回較差(注6)・価格較差(注7) | 按分比率・利回較差(注6)・価格較差(注7) |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 米ドル資金供給 |  | 2026-11-12 | 2026-11-19 | 4.13 |  | 0 | 0 |  |  |  |  |\n| 国債補完供給（国債売現先）・即日（午前オファー分） |  | 2026-11-09 | 2026-11-10 |  | 0.8 | 192 | 192 |  | 0.8 | 0.8 |  |\n| 国債補完供給（国債売現先）・即日（午後オファー分） |  | 2026-11-09 | 2026-11-10 |  | 0.8 | 4 | 4 |  | 0.8 | 0.8 |  |\n\n(注1)　オペの種類が、米ドル資金供給の場合は、適格担保の範囲内で制限を設けない。\n\n(注2)　オペの種類が、米ドル資金供給の場合は、米国東部時間。\n\n(注3)　オペの種類が、共通担保資金供給＜変動金利方式＞の場合は、当初貸付利率。\n\n(注4)　オペの種類が、国債補完供給（国債売現先）、米ドル資金供給用担保国債供給（国債売現先）の場合は、上限期間利回り。国債買現先の場合は、下限期間利回り。国債買入の場合は、下限利回較差。国債買入（固定利回り方式）の場合は、固定利回較差。\n\n(注5)　オペの種類が、米ドル資金供給の場合、単位は100万米ドル。\n\n(注6)　オペの種類が、国庫短期証券買入、国庫短期証券売却、国債買入（残存期間1年以下、1年超5年以下、1年超3年以下、3年超5年以下、5年超10年以下、10年超、10年超25年以下、25年超）の場合は利回較差を示す。\n\n(注7)　オペの種類が、国債買入（変動利付債、物価連動債）の場合は価格較差を示す（単位は円）。",
+  "content_sha256": "428d9e44174859948418920abcaaf27d624786abc545880f57e91365ebbc2cab",
+  "facts_ja": [
+    "11月9日公表表では米ドル資金供給の貸付利率は4.13％、応札・落札とも0百万米ドル。スタートは11月12日、エンドは11月19日（米東部時間の日付）。",
+    "表の国債補完供給は日本国債の売現先で、午前192億円、午後4億円を落札。"
+  ],
+  "inference_ja": [
+    "当該オペの利用はゼロ。市場全体のドル需要やストレスは他行・市場の資金調達条件と照合する。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "Asia/Tokyo",
+  "published_time_basis": "公式日次表・見出しの日付。更新時刻は不明。",
+  "source_workbook": {
+    "sha256": "eaba423486af164ec2c1fc31aca62196edf8d20e7788c6862022c25873023372",
+    "sheet": "オペ",
+    "scope": "データ3行と注1〜7。公式の日本語表記を利用。"
+  },
+  "related_source_urls": [
+    "https://www.boj.or.jp/statistics/boj/fm/ope/"
+  ],
+  "notification_reason": "定例の日次オペ結果。ドル資金供給の応札・落札ゼロは日本側の補助観測。"
+}
