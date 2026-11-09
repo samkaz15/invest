@@ -1,0 +1,31 @@
+{
+  "id": "casos-20261109-unofficial-state-total-e35d5e98",
+  "source_url": "https://media.sos.ca.gov/media/V26GG.txt",
+  "received_at": "2026-11-09T17:19:34.869031+00:00",
+  "received_at_kind": "web_retrieved",
+  "original_text": "[B|CAS|1|20261109|0913576]\n[A|CAS|60|59|F|0|0|23860|23860|100.0|10661157|23273590|45.8|202611032001|202611090743]",
+  "translation_ja": "CA州未認証集計は10,661,157票、前回比+38,231票。下院52選挙区の首位候補の交代は0区。 ファイル生成時刻と初回公表時刻を区別。州認証は未確認。",
+  "content_sha256": "e35d5e98c752243980dad31644b7070379f23ac30bc7dd26378adfec631d4dc9",
+  "source_raw_sha256": "0d48c65b7a1454d7fef280e988ad2287518c5c1345a2c419429b3e4c6682d94b",
+  "source": "California Secretary of State",
+  "title_en": "California General Election — statewide unofficial turnout update",
+  "title_ja": "カリフォルニア州の開票速報更新",
+  "generated_at": "2026-11-09T09:13:57-08:00",
+  "facts_ja": [
+    "CA州未認証集計は10,661,157票、前回比+38,231票。下院52選挙区の首位候補の交代は0区。"
+  ],
+  "inference_ja": [
+    "速報の増分は集計進捗。認証と税制等の発効は別途確認する。"
+  ],
+  "missing_parts": [
+    "州総計行のみを原文・訳に収録。個人識別子、他の集計行と全州の認証は対象外。"
+  ],
+  "published_at": null,
+  "topics": [
+    "elections"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "notification_eligible": false,
+  "notification_reason": "開票進捗の速報。認証は未確認。"
+}

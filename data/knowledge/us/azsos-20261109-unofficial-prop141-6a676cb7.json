@@ -1,0 +1,31 @@
+{
+  "id": "azsos-20261109-unofficial-prop141-6a676cb7",
+  "source_url": "https://app.enhancedvoting.com/cdn/results/Arizona/export-110326GeneralElection.json",
+  "received_at": "2026-11-09T17:19:43.778595+00:00",
+  "received_at_kind": "web_retrieved",
+  "original_text": "{\n  \"createdAt\": \"2026-11-09T16:59:25.9558879Z\",\n  \"contest\": \"PROPOSITION 141\",\n  \"YES\": 1231114,\n  \"NO\": 1183125\n}",
+  "translation_ja": "AZ州の未認証速報で州提案141は賛成1,231,114、反対1,183,125票。下院9選挙区の首位候補の交代は0区。 州認証は未確認。",
+  "content_sha256": "6a676cb743127276bdaab835427470c4c28bb0a1953a90a96873526881a65854",
+  "source_raw_sha256": "8338810d683e3b1651170674612794f4fed01949d03c37dd4fa1946eeb40e165",
+  "source": "Arizona Secretary of State",
+  "title_en": "Arizona unofficial statewide results — Proposition 141 excerpt",
+  "title_ja": "アリゾナ州の開票速報更新",
+  "generated_at": "2026-11-09T16:59:25.9558879Z",
+  "facts_ja": [
+    "AZ州の未認証速報で州提案141は賛成1,231,114、反対1,183,125票。下院9選挙区の首位候補の交代は0区。"
+  ],
+  "inference_ja": [
+    "速報の進捗は州認証・確定手続と区別する。"
+  ],
+  "missing_parts": [
+    "州提案141の州集計のみ原文・訳に収録。候補者の識別情報と郡別行は対象外。"
+  ],
+  "published_at": null,
+  "topics": [
+    "elections"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "notification_eligible": false,
+  "notification_reason": "開票進捗の速報。認証は未確認。"
+}
