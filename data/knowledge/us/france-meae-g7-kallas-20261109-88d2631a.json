@@ -1,0 +1,30 @@
+{
+  "id": "france-meae-g7-kallas-20261109-88d2631a",
+  "source": "Ministère de l’Europe et des Affaires étrangères",
+  "source_url": "https://www.diplomatie.gouv.fr/fr/presse-et-ressources/decouvrir-et-informer/actualites/ministerielle-g7-affaires-etrangeres-entretien-du-ministre-avec-mme-kaja-kallas-haute-representante",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "Europe/Paris",
+  "received_at": "2026-11-09T21:22:57.612787+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-09T21:22:57.612787+00:00",
+  "title_en": "G7 Foreign Ministers’ Meeting – Minister’s discussion with EU High Representative Kaja Kallas",
+  "title_ja": "G7外相会合でのバロ仏外相とカラスEU上級代表の会談",
+  "topics": [
+    "war",
+    "sanctions"
+  ],
+  "original_text": "Le Ministre de l’Europe et des Affaires étrangères, M. Jean-Noël Barrot, s’est entretenu avec la Haute-représentante de l'Union européenne pour les affaires étrangères et la politique de sécurité et vice-présidente de la Commission européenne, Mme Kaja Kallas, en marge de la réunion des ministres des Affaires étrangères du G7 à Paris, le 9 novembre 2026.\nCet entretien a permis de réaliser un point d’étape avant le Conseil Affaires étrangères du 16 novembre, sur l’action internationale de l’Union européenne et la mobilisation de ses États-membres, notamment sur le Proche-Orient et l’Ukraine, et sur notre action en matière de sanctions, en particulier face aux attaques cyber qui ont récemment visé la France et d’autres pays européens.",
+  "translation_ja": "フランスのジャンノエル・バロ欧州・外務相は2026年11月9日、パリで開かれたG7外相会合の際に、EU外務・安全保障政策上級代表兼欧州委員会副委員長のカヤ・カラス氏と会談した。\n\n両者は11月16日のEU外務理事会を前に、EUの対外活動と加盟国の取り組みについて中間点検を行った。主な議題は中東とウクライナ、そして近ごろフランスなど欧州諸国を標的としたサイバー攻撃への対応を含む制裁に関する取り組みだった。",
+  "facts_ja": [
+    "仏外務省による会談発表。11月16日のEU外務理事会前に制裁を協議。個別の制裁採択・発効の発表は確認できない。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "88d2631a35a8f56e9275b16caa7a0dc44ed5daeef4d6b6092b18e3f7ba93b58f",
+  "source_raw_sha256": "78f4eef2a9f32d8d401a56dd9759d6ed26d6e0bea6c7e13ff8b51e4e7f89ccce",
+  "content_scope": "full_text",
+  "notification_eligible": false,
+  "translation_status": "complete",
+  "missing_parts": [],
+  "attachment_status": "none_in_scope"
+}

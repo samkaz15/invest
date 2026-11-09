@@ -1,0 +1,35 @@
+{
+  "id": "state-rubio-wadephul-20261109-e7983ac8",
+  "source": "U.S. Department of State Office of the Spokesman, public republication via Defcon Level",
+  "source_url": "https://www.defconlevel.com/alert/2026-11-09-secretary-rubio-s-meeting-with-german-foreign-minister-wadephul",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/New_York",
+  "received_at": "2026-11-09T21:24:01.580040+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-09T21:24:01.580040+00:00",
+  "title_en": "Secretary Rubio’s Meeting with Foreign Minister Wadephul",
+  "title_ja": "ルビオ米国務長官とヴァーデフール独外相の会談概要（公開転載）",
+  "topics": [
+    "war",
+    "other_us"
+  ],
+  "original_text": "Office of the Spokesman\nReadout\nNovember 9, 2026\nSecretary of State Marco Rubio met with German Foreign Minister Johann Wadephul during the G7 Foreign Ministers Meeting in Paris, France. The two leaders discussed bilateral efforts to secure freedom of navigation, strengthen defense industrial cooperation, and deepen our trade relationship. Secretary Rubio also commended recent contributions from the German government to the Gang Suppression Force in Haiti.",
+  "translation_ja": "広報官室。会談概要。2026年11月9日。\n\nマルコ・ルビオ米国務長官はフランス・パリで開かれたG7外相会合でヨハン・ヴァーデフール独外相と会談した。両者は航行の自由の確保、防衛産業協力の強化、通商関係の深化に向けた二国間の取り組みについて協議した。ルビオ長官はまた、ハイチの武装ギャング鎮圧部隊に対する独政府の最近の貢献を評価した。",
+  "facts_ja": [
+    "転載された米国務省の発表では、両外相は航行、防衛産業協力、通商関係を協議した。",
+    "国務省原本は直接取得できていない。転載本文だけを確認。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "e7983ac82926992d828c88533118ba712122be59ec4cfd37a651cd4eb262ccaf",
+  "source_raw_sha256": "0224afef293a7eb2e56394b8ad56962bf35c3a80274cbf4fe96dfcb0ffab4ea2",
+  "content_scope": "excerpt",
+  "notification_eligible": false,
+  "translation_status": "partial",
+  "missing_parts": [
+    "国務省の公式ページは403。原本の正確な公開時刻、転載に含まれない要素を検証できない。"
+  ],
+  "attachment_status": "none_in_scope",
+  "candidate_primary_url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/11/secretary-rubios-meeting-with-german-foreign-minister-wadephul/",
+  "content_scope_note": "公開転載に引用された政府発表部分の全訳。媒体独自記事は転載していない。"
+}

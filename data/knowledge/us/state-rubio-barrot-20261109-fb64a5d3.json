@@ -1,0 +1,35 @@
+{
+  "id": "state-rubio-barrot-20261109-fb64a5d3",
+  "source": "U.S. Department of State Office of the Spokesman, public republication via Defcon Level",
+  "source_url": "https://www.defconlevel.com/alert/2026-11-09-secretary-rubio-s-meeting-with-french-foreign-minister-barrot",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/New_York",
+  "received_at": "2026-11-09T21:24:01.981194+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-09T21:24:01.981194+00:00",
+  "title_en": "Secretary Rubio’s Meeting with Foreign Minister Barrot",
+  "title_ja": "ルビオ米国務長官とバロ仏外相の会談概要（公開転載）",
+  "topics": [
+    "war",
+    "tariffs"
+  ],
+  "original_text": "Office of the Spokesman\nReadout\nNovember 9, 2026\nSecretary of State Marco Rubio met today with French Foreign Minister Jean-Noël Barrot. The Secretary and Foreign Minister discussed U.S. fundamental concerns about the International Criminal Court.\nThe Secretary and Foreign Minister also addressed the situation in the Middle East, reaffirming the importance of freedom of navigation in the Strait of Hormuz. The Secretary also called for the cessation of EU preference measures and overregulation targeting U.S. companies.\nLastly, they discussed efforts to secure a durable, long-term peace settlement to the Russia-Ukraine war.",
+  "translation_ja": "広報官室。会談概要。2026年11月9日。\n\nマルコ・ルビオ米国務長官は本日、フランスのジャンノエル・バロ外相と会談した。両者は国際刑事裁判所に関する米国の根本的な懸念について協議した。\n\n両者は中東情勢にも触れ、ホルムズ海峡の航行の自由の重要性を再確認した。ルビオ長官はまた、EUによる優遇措置と、米企業を対象とする過剰な規制をやめるよう求めた。\n\n最後に、ロシアとウクライナの戦争の長期的かつ持続的な和平に向けた取り組みについて協議した。",
+  "facts_ja": [
+    "転載された米国務省の発表では、両外相はホルムズ海峡の航行の自由を再確認し、米側はEUの優遇措置・規制の停止を求めた。",
+    "国務省原本は直接取得できていない。転載本文だけを確認。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "fb64a5d307411736bd4a1788878ca08ee531777ad5e3dc225147c33f61bf7612",
+  "source_raw_sha256": "b8932d0af406793be1a12ce5b7395a0b351e52491bdc75685173237a1e0e08c0",
+  "content_scope": "excerpt",
+  "notification_eligible": false,
+  "translation_status": "partial",
+  "missing_parts": [
+    "国務省の公式ページは403。原本の正確な公開時刻、転載に含まれない要素を検証できない。"
+  ],
+  "attachment_status": "none_in_scope",
+  "candidate_primary_url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/11/secretary-rubios-meeting-with-french-foreign-minister-barrot-2/",
+  "content_scope_note": "公開転載に引用された政府発表部分の全訳。媒体独自記事は転載していない。"
+}

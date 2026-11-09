@@ -1,0 +1,33 @@
+{
+  "id": "azsos-us-house-unofficial-20261109-7f5c6272",
+  "source": "Arizona Secretary of State (Enhanced Voting)",
+  "source_url": "https://app.enhancedvoting.com/cdn/results/Arizona/export-110326GeneralElection.json",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/Phoenix",
+  "received_at": "2026-11-09T21:22:40.054124+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-09T21:22:40.054124+00:00",
+  "title_en": "Arizona unofficial results, U.S. House districts 1–9",
+  "title_ja": "アリゾナ州の未認証速報・連邦下院9区",
+  "topics": [
+    "elections"
+  ],
+  "original_text": "{\"electionDate\": \"2026-11-03\", \"createdAt\": \"2026-11-09T21:18:32.348206Z\", \"districts\": {\"AZ-1\": [[2, \"Democratic\", 184534], [1, \"Republican\", 160244], [3, \"Libertarian\", 7649], [6, \"\", 182], [7, \"\", 65], [4, \"Independent\", 12], [5, \"Other\", 10]], \"AZ-2\": [[1, \"Republican\", 162756], [2, \"Democratic\", 158921], [3, \"Libertarian\", 5979], [4, \"\", 137], [5, \"\", 61]], \"AZ-3\": [[1, \"Democratic\", 129304], [3, \"No Labels\", 8998], [2, \"Green\", 7713], [6, \"\", 1655], [4, \"Republican\", 1622], [5, \"\", 0]], \"AZ-4\": [[2, \"Democratic\", 157987], [1, \"Republican\", 89331], [3, \"No Labels\", 5944], [6, \"\", 504], [4, \"No Labels\", 53], [5, \"\", 0]], \"AZ-5\": [[1, \"Republican\", 167059], [2, \"Democratic\", 155946], [4, \"\", 564], [3, \"\", 0]], \"AZ-6\": [[2, \"Democratic\", 188194], [1, \"Republican\", 159701], [3, \"Libertarian\", 4464], [4, \"Green\", 3216], [7, \"\", 192], [6, \"\", 168], [5, \"Independent\", 49]], \"AZ-7\": [[2, \"Democratic\", 142600], [1, \"Republican\", 55587], [3, \"\", 278], [4, \"\", 77]], \"AZ-8\": [[1, \"Republican\", 146302], [2, \"Democratic\", 139242], [4, \"\", 597], [3, \"\", 0]], \"AZ-9\": [[1, \"Republican\", 162668], [2, \"Democratic\", 120400], [6, \"\", 318], [4, \"Independent\", 40], [3, \"Independent\", 19], [5, \"\", 0]]}}",
+  "translation_ja": "2026年11月3日投票の州未認証速報。州配信データ生成 2026-11-09T21:18:32.348206Z。米連邦下院9区の州全体の票数。候補者名の代わりに票上の掲載順を使用。\n\n| 選挙区 | 掲載順 | 党派 | 票 |\n| --- | --- | --- | --- |\n| AZ-1 | 2 | 民主党 | 184534 |\n| AZ-1 | 1 | 共和党 | 160244 |\n| AZ-1 | 3 | リバタリアン党 | 7649 |\n| AZ-1 | 6 | 表記なし | 182 |\n| AZ-1 | 7 | 表記なし | 65 |\n| AZ-1 | 4 | 無所属 | 12 |\n| AZ-1 | 5 | その他 | 10 |\n| AZ-2 | 1 | 共和党 | 162756 |\n| AZ-2 | 2 | 民主党 | 158921 |\n| AZ-2 | 3 | リバタリアン党 | 5979 |\n| AZ-2 | 4 | 表記なし | 137 |\n| AZ-2 | 5 | 表記なし | 61 |\n| AZ-3 | 1 | 民主党 | 129304 |\n| AZ-3 | 3 | ノー・ラベルズ | 8998 |\n| AZ-3 | 2 | 緑の党 | 7713 |\n| AZ-3 | 6 | 表記なし | 1655 |\n| AZ-3 | 4 | 共和党 | 1622 |\n| AZ-3 | 5 | 表記なし | 0 |\n| AZ-4 | 2 | 民主党 | 157987 |\n| AZ-4 | 1 | 共和党 | 89331 |\n| AZ-4 | 3 | ノー・ラベルズ | 5944 |\n| AZ-4 | 6 | 表記なし | 504 |\n| AZ-4 | 4 | ノー・ラベルズ | 53 |\n| AZ-4 | 5 | 表記なし | 0 |\n| AZ-5 | 1 | 共和党 | 167059 |\n| AZ-5 | 2 | 民主党 | 155946 |\n| AZ-5 | 4 | 表記なし | 564 |\n| AZ-5 | 3 | 表記なし | 0 |\n| AZ-6 | 2 | 民主党 | 188194 |\n| AZ-6 | 1 | 共和党 | 159701 |\n| AZ-6 | 3 | リバタリアン党 | 4464 |\n| AZ-6 | 4 | 緑の党 | 3216 |\n| AZ-6 | 7 | 表記なし | 192 |\n| AZ-6 | 6 | 表記なし | 168 |\n| AZ-6 | 5 | 無所属 | 49 |\n| AZ-7 | 2 | 民主党 | 142600 |\n| AZ-7 | 1 | 共和党 | 55587 |\n| AZ-7 | 3 | 表記なし | 278 |\n| AZ-7 | 4 | 表記なし | 77 |\n| AZ-8 | 1 | 共和党 | 146302 |\n| AZ-8 | 2 | 民主党 | 139242 |\n| AZ-8 | 4 | 表記なし | 597 |\n| AZ-8 | 3 | 表記なし | 0 |\n| AZ-9 | 1 | 共和党 | 162668 |\n| AZ-9 | 2 | 民主党 | 120400 |\n| AZ-9 | 6 | 表記なし | 318 |\n| AZ-9 | 4 | 無所属 | 40 |\n| AZ-9 | 3 | 無所属 | 19 |\n| AZ-9 | 5 | 表記なし | 0 |",
+  "facts_ja": [
+    "前回保存から得票差分は9区、最多得票者の交代は0区。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "7f5c6272ddf71d046f5dfa04688254ce1945bb336f4a99485020b8704529b9f1",
+  "source_raw_sha256": "6c7a6e577b24cc59052aa29f200273454375802efe5d2517703af032dec54497",
+  "content_scope": "excerpt",
+  "notification_eligible": false,
+  "translation_status": "partial",
+  "missing_parts": [
+    "州全体の他選挙、郡・投票区別内訳は対象外。州の認証結果は未取得。"
+  ],
+  "attachment_status": "none_in_scope",
+  "source_data_generated_at": "2026-11-09T21:18:32.348206Z",
+  "previous_snapshot_id": "azsos-us-house-20261103-unofficial-691e4774"
+}
