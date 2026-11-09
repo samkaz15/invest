@@ -1,0 +1,34 @@
+{
+  "id": "whitehouse-rapidresponse-20261109-iran-fd91ed06",
+  "source": "White House Rapid Response 47, public X syndication",
+  "source_url": "https://x.com/RapidResponse47/status/2119912551571993057",
+  "published_at": "2026-11-09T21:58:33.000Z",
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/New_York",
+  "received_at": "2026-11-09T23:40:55.942887+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-09T23:40:55.942887+00:00",
+  "title_en": "White House Rapid Response clip quotation on a long-term Iran solution",
+  "title_ja": "ホワイトハウス広報のイランに関する会見抜粋",
+  "topics": [
+    "war",
+    "oil"
+  ],
+  "original_text": ".@POTUS: \"We want to make sure it's a long-term solution, not just a short-term. They'll never have a nuclear weapon, but we have to make sure that's a long-term.\"",
+  "translation_ja": "大統領の発言。「短期的な解決にとどまらず、長期的な解決にしたい。イランが核兵器を保有することはないが、それが長期にわたって確実なものとなるようにしなければならない。」",
+  "facts_ja": [
+    "ホワイトハウス広報アカウントの投稿本文は、核兵器をめぐる長期的な解決を求める大統領の発言を引用。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "fd91ed06d4ca354d7e01c74fab3de3e6bfb9ddad4285a2b1b18de60fd09ead04",
+  "source_raw_sha256": "5fd8016fa05536c7cc1dc0e02b440440f990f572eec316b48c3aa1446641525d",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "38.733秒の公開動画は取得済み。投稿で公開された引用部分のみ翻訳。動画の音声全体と会見全編の逐語録は未確認。"
+  ],
+  "notification_eligible": false,
+  "content_scope_note": "Xの公開埋め込みJSONで本文と時刻を確認。",
+  "media_duration_ms": 38733,
+  "source_media_sha256": "8805303056571456754e30e0ecc684ea7f5f6cb0c1208cafb7c4d8e4e5f4c3f4"
+}

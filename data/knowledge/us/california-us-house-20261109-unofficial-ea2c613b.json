@@ -1,0 +1,36 @@
+{
+  "id": "california-us-house-20261109-unofficial-ea2c613b",
+  "source": "California Secretary of State",
+  "source_url": "https://media.sos.ca.gov/media/V26GG.txt",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/Los_Angeles",
+  "received_at": "2026-11-09T23:35:43.948774+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-09T23:35:43.948774+00:00",
+  "title_en": "California General Election unofficial reporting table, U.S. House changes",
+  "title_ja": "カリフォルニア州の未認証速報・連邦下院の差分",
+  "topics": [
+    "elections"
+  ],
+  "original_text": "[V|CAS|15|110000030000|59|531|531|F|3338|122614|100.0|58.0|3960|88752|100.0|42.0]\n[V|CAS|17|110000050000|59|399|399|F|3146|95001|100.0|43.6|3501|122687|100.0|56.4]\n[V|CAS|19|110000070000|59|414|414|F|3678|101896|55.8|55.8|3246|80774|44.2|44.2]",
+  "translation_ja": "カリフォルニア州の未認証速報。州全体の連邦下院選挙区集計52行のうち、前回保存時点に比べ票数が更新された3行。番号は州配信の候補識別コード。\n\n| 区 | コード | 得票（前回） | 得票（今回） |\n| --- | --- | --- | --- |\n| 3 | 3338 | 120,081 | 122,614 |\n| 3 | 3960 | 87,087 | 88,752 |\n| 5 | 3146 | 94,932 | 95,001 |\n| 5 | 3501 | 122,601 | 122,687 |\n| 7 | 3678 | 97,765 | 101,896 |\n| 7 | 3246 | 77,894 | 80,774 |",
+  "facts_ja": [
+    "州の速報ファイルの集計行2,638のうち78行に差分。連邦下院の州集計52区では第3・5・7区に得票差分、首位交代は0区。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "ea2c613bdc32e54c823807279035b3e343c432fddf2483120af1f545aeab4820",
+  "source_raw_sha256": "0d5e548f08690f9b6c96bbc528c21e13b3dbf9f1ab13d103a1a6a478f7c0c4ed",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "得票差分のある州集計3区のみ収録。残る49区、州内の他選挙、郡内訳は範囲外。州認証は未確認。"
+  ],
+  "notification_eligible": false,
+  "previous_analysis_id": "20261109T224003Z-c117f913",
+  "source_http_last_modified": "Mon, 09 Nov 2026 23:35:04 GMT",
+  "related_source_urls": [
+    "https://media.sos.ca.gov/media/R26GG.txt",
+    "https://voterguide.sos.ca.gov/voter-info/election-results.htm"
+  ]
+}

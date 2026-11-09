@@ -1,0 +1,39 @@
+{
+  "id": "us-president-20261109-qatar-iran-42134174",
+  "source": "President of the United States, public Truth Social post",
+  "source_url": "https://truthsocial.com/@realDonaldTrump/117588608183719347",
+  "published_at": "2026-11-09T21:29:28+00:00",
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/New_York",
+  "received_at": "2026-11-09T23:36:50.642802+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-09T23:36:50.642802+00:00",
+  "title_en": "President Trump’s public post after meeting with Qatar’s prime minister",
+  "title_ja": "米大統領のカタール首相会談後の対イラン投稿",
+  "topics": [
+    "war",
+    "oil",
+    "sanctions"
+  ],
+  "original_text": "I had an excellent conversation with Sheikh Mohammed bin Abdulrahman bin Jassim Al Thani, the Prime Minister of Qatar, wherein much was discussed with respect to the Islamic Republic of Iran. Most importantly, Qatar, Saudi Arabia, UAE, Bahrain, Kuwait, and others, would prefer the status quo, in other words, a continuation of the Greatest Naval Blockade in History, and the new Operation Iron Gate — Therefore, Land and Sea. All have agreed that Iran cannot have a Nuclear Weapon — That is non-negotiable! Should there be any change with respect to developments in the Middle East, the United States of America is “locked and loaded” and ready to go. At this point, however, that seems to be quite unlikely. Israel, and the entire Middle East, are protected from Iranian danger and threats. We are seeing positive momentum toward an end to this Conflict, and will ensure that America’s interests are at all times protected. At the conclusion of this Military Engagement, the American People, and the World, will be far safer and more secure. President DONALD J. TRUMP",
+  "translation_ja": "カタールのムハンマド・ビン・アブドルラフマン・ビン・ジャーシム・アール・サーニー首相と大変よい話し合いをし、イラン・イスラム共和国について幅広く協議した。最も重要なのは、カタール、サウジアラビア、アラブ首長国連邦、バーレーン、クウェートなどが現状維持を望んでいることだ。つまり、史上最大の海上封鎖と新たな「アイアン・ゲート」作戦を継続することであり、陸と海の両方が対象となる。\n\n各国は、イランに核兵器の保有を認められないという点で一致している。これは交渉の余地がない。中東情勢に変化があれば、米国は直ちに行動できる態勢にある。もっとも、現時点でそうなる可能性はかなり低いように思われる。イスラエルと中東全体は、イランの危険と脅威から守られている。この紛争の終結に向けて前向きな動きが見られ、米国の利益が常に守られるようにする。\n\nこの軍事行動が終わるとき、米国民と世界ははるかに安全になる。ドナルド・J・トランプ大統領",
+  "facts_ja": [
+    "トランプ大統領はカタール首相との協議を公表し、海上封鎖・アイアンゲートの継続に言及。",
+    "情勢が変われば行動可能だが、現時点ではその可能性は低いとの見方。核兵器、域内の安全、湾岸諸国の意向は大統領の説明として帰属。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "421341749cdb6a775392019b2984548a721d76fd0b14ee3a8b11d64126fabbc6",
+  "source_raw_sha256": "cd307addd3077f43317899850ad09dc23560777358eabffa0f705fd4294b947b",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": true,
+  "summary_ja_40": "米大統領はカタール首相との会談後、対イランの海上封鎖を当面続けるとの考えを示した",
+  "original_access_url": "https://truthsocial.com/@realDonaldTrump/posts/117588608183719347",
+  "publication_time_source": "https://www.trumpstruth.org/statuses/43537",
+  "related_source_urls": [
+    "https://www.trumpstruth.org/statuses/43537",
+    "https://pool.pp.tools/reports/10251"
+  ],
+  "content_scope_note": "公式ドメインの公開投稿メタデータから全文を取得し、公開アーカイブと一致。公式会見全文は別資料で未取得。"
+}
