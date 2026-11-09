@@ -1,0 +1,47 @@
+{
+  "id": "us-commerce-20261109-ftz-27u-22765-e6f51b44",
+  "source": "米商務省外国貿易地域委員会",
+  "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-09/html/2026-22765.htm",
+  "title_en": "Foreign-Trade Zone 27; Approval of Subzone Status; Persimmon Technologies Corporation; Bedford, Massachusetts",
+  "title_ja": "米マサチューセッツ州ベッドフォードの外国貿易地域27Uの承認",
+  "published_at": null,
+  "received_at": "2026-11-09T05:44:56.766456+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "investment_policy",
+    "trade_policy"
+  ],
+  "original_text": "[Federal Register Volume 91, Number 215 (Monday, November 9, 2026)]\n[Notices]\n[Pages 70836-70837]\nFrom the Federal Register Online via the Government Publishing Office [\nwww.gpo.gov\n]\n[FR Doc No: 2026-22765]\n\n\n=======================================================================\n-----------------------------------------------------------------------\n\nDEPARTMENT OF COMMERCE\n\nForeign-Trade Zones Board\n\n[S-425-2026]\n\n\nForeign-Trade Zone 27; Approval of Subzone Status; Persimmon \nTechnologies Corporation; Bedford, Massachusetts\n\n    On August 28, 2026, the Executive Secretary of the Foreign-Trade \nZones (FTZ) Board docketed an application submitted by the \nMassachusetts Port Authority, grantee of FTZ 27, requesting subzone \nstatus subject to the existing activation limit of FTZ 27, on behalf of \nPersimmon Technologies Corporation, in Bedford, Massachusetts.\n    The application was processed in accordance with the FTZ Act and \nRegulations, including notice in the Federal Register inviting public \ncomment (91 FR 56424, September 2, 2026). The FTZ staff examiner \nreviewed the application and determined that it meets the criteria for \napproval. Pursuant\n\n[[Page 70837]]\n\nto the authority delegated to the FTZ Board Executive Secretary (15 CFR \n400.36(f)), the application to establish Subzone 27U was approved on \nNovember 2, 2026, subject to the FTZ Act and the Board's regulations, \nincluding section 400.13, and further subject to FTZ 27's 129-acre \nactivation limit.\n\n    Dated: November 3, 2026.\nColin Agostisi,\nExecutive Secretary.\n[FR Doc. 2026-22765 Filed 11-6-26; 8:45 am]\nBILLING CODE 3510-DS-P",
+  "translation_ja": "米連邦官報第91巻第215号、2026年11月9日月曜日、通知、70836～70837頁\n米政府出版局、連邦官報文書2026-22765\n\n商務省\n外国貿易地域委員会\n案件S-425-2026\n\n外国貿易地域27、マサチューセッツ州ベッドフォードのPersimmon Technologies Corporationのサブゾーン指定承認\n\n2026年8月28日、外国貿易地域（FTZ）委員会の事務局長は、FTZ 27の指定を受けたマサチューセッツ港湾局が同州ベッドフォードのPersimmon Technologies Corporationのために提出した、FTZ 27の既存の稼働面積上限内でのサブゾーン指定申請を受理し登録した。\n\n申請は、官報での意見募集（91 FR 56424、2026年9月2日）を含め、FTZ法と規則に従って処理した。FTZの審査担当者は、申請が承認基準を満たすと判断した。FTZ委員会事務局長に委任された権限（15 CFR 400.36(f)）に従い、FTZ法および委員会規則（第400.13節を含む）、ならびにFTZ 27の稼働面積上限129エーカーを条件に、2026年11月2日、サブゾーン27Uの設置申請を承認した。\n\n2026年11月3日付\n事務局長　コリン・アゴスティジ\n連邦官報文書2026-22765、2026年11月6日午前8時45分提出\n請求コード3510-DS-P",
+  "facts_ja": [
+    "申請は11月2日に承認。FTZ 27の129エーカーの稼働面積上限と関連規則が適用される。"
+  ],
+  "inference_ja": [
+    "個別拠点への承認であり、投資額や利用実績はこの文書では示されない。"
+  ],
+  "content_sha256": "e6f51b4475a70e7f4951834cf220daa21f11d19a02eb0335228b13d303498ed2",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/New_York",
+  "published_time_basis": "官報掲載日。時刻は不明。承認日11月2日と署名日11月3日は別。",
+  "decision_date": "2026-11-02",
+  "federal_register_filed_at": "2026-11-06T08:45:00-05:00",
+  "notification_reason": "個別事業所の承認。",
+  "related_source_urls": [
+    "https://www.govinfo.gov/content/pkg/FR-2026-11-09/pdf/2026-22765.pdf"
+  ],
+  "alternate_pdf": {
+    "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-09/pdf/2026-22765.pdf",
+    "sha256": "e6002f7612a34ee05bd035700147d552c7347a0cf629d61f6674f906fd689e12",
+    "page_count": 2,
+    "retrieved_at": "2026-11-09T05:48:45.210691+00:00",
+    "translation_status": "not_translated",
+    "missing_parts": [
+      "別版物理1〜2頁の紙面照合・ページ別訳は未実施。"
+    ],
+    "source_pdf_saved": false
+  }
+}
