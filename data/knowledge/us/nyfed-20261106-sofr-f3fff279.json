@@ -1,0 +1,33 @@
+{
+  "id": "nyfed-20261106-sofr-f3fff279",
+  "source": "ニューヨーク連邦準備銀行",
+  "source_url": "https://markets.newyorkfed.org/api/rates/secured/sofr/search.json?startDate=11/06/2026&endDate=11/06/2026",
+  "title_en": "Secured Overnight Financing Rate, November 6, 2026",
+  "title_ja": "NY連銀の11月6日観測SOFR",
+  "published_at": null,
+  "received_at": "2026-11-09T13:00:18.844809+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "original_text": "{\n  \"effectiveDate\": \"2026-11-06\",\n  \"percentPercentile1\": 3.85,\n  \"percentPercentile25\": 3.87,\n  \"percentPercentile75\": 3.94,\n  \"percentPercentile99\": 3.97,\n  \"percentRate\": 3.89,\n  \"revisionIndicator\": \"\",\n  \"type\": \"SOFR\",\n  \"volumeInBillions\": 3174\n}",
+  "translation_ja": "| 項目 | 公表値 |\n|---|---|\n| 観測日 | 2026-11-06 |\n| 種類 | SOFR |\n| 金利（％） | 3.89 |\n| 1パーセンタイル（％） | 3.85 |\n| 25パーセンタイル（％） | 3.87 |\n| 75パーセンタイル（％） | 3.94 |\n| 99パーセンタイル（％） | 3.97 |\n| 取引額（十億ドル） | 3174 |\n| 改訂表示 | 空欄 |",
+  "content_sha256": "f3fff2792de43d22c01706c57ed4bfe749e6b5b31e318b5c0322d0531da3464a",
+  "facts_ja": [
+    "NY連銀の11月6日観測SOFRは3.89％、前営業日3.92％から-3bp。取引額は3,174十億ドル。"
+  ],
+  "inference_ja": [
+    "FF目標金利の決定とは区別。1日だけの観測から継続的な資金逼迫は判定しない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/New_York",
+  "published_time_basis": "NY連銀の標準公表は米東部8時頃。データ行には厳密な公表時刻なし。",
+  "publication_schedule_at": "2026-11-09T08:00:00-05:00",
+  "observation_date": "2026-11-06",
+  "notification_reason": "通常の日次更新。"
+}
