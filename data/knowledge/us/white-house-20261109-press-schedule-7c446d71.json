@@ -1,0 +1,40 @@
+{
+  "id": "white-house-20261109-press-schedule-7c446d71",
+  "source": "米ホワイトハウス広報室（報道プール転載）",
+  "source_url": "https://pool.pp.tools/reports/10239",
+  "title_en": "Daily Guidance and Press Schedule for Monday, November 9, 2026",
+  "title_ja": "米大統領の11月9日報道日程とカタール首相との非公開会談予定",
+  "published_at": null,
+  "received_at": "2026-11-09T05:27:56.523848+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "diplomacy",
+    "war",
+    "oil"
+  ],
+  "original_text": "FOR IMMEDIATE RELEASE\n11/08/26\nDAILY GUIDANCE AND PRESS SCHEDULE FOR\nMONDAY, NOVEMBER 9, 2026\nIn-Town Pool\nTV Corr & Crew: CBS\nSecondary TV Corr: Bloomberg TV\nPhotos: AP, AFP, NYT, Reuters, Getty\nPrint: Newsday\nSecondary Print: The Telegraph\nRadio: BBC\nNew Media: Timcast\nEST:\n9:00 AM\nIn-Town Pool Call Time\n8:00 AM\nTHE PRESIDENT participates in Executive Time\nThe White House\nClosed Press\n11:00 AM\nTHE PRESIDENT participates in a Policy Meeting\nThe White House\nClosed Press\n12:00 PM\nTHE PRESIDENT meets with the Prime Minister of the State of Qatar\nOval Office\nClosed Press\n12:30 PM\nTHE PRESIDENT participates in a Policy Meeting\nThe White House\nClosed Press\n2:00 PM\nTHE PRESIDENT participates in a Policy Meeting\nOval Office\nClosed Press\n3:30 PM\nTHE PRESIDENT participates in a Policy Meeting\nOval Office\nClosed Press\n###",
+  "translation_ja": "即時公表　2026年11月8日付\n2026年11月9日月曜日の報道向け案内と日程\n\nワシントン市内の代表取材団\nテレビ記者・撮影班 CBS。第2テレビ班 ブルームバーグTV。写真 AP、AFP、ニューヨーク・タイムズ、ロイター、ゲッティ。新聞 ニューズデイ。第2新聞班 デイリー・テレグラフ。ラジオ BBC。新興メディア ティムキャスト。\n\n米東部標準時\n- 9時00分　市内代表取材団の集合。\n- 8時00分　大統領の執務時間。ホワイトハウス。取材非公開。\n- 11時00分　大統領が政策会議に出席。ホワイトハウス。取材非公開。\n- 12時00分　大統領がカタール国首相と会談。大統領執務室。取材非公開。\n- 12時30分　大統領が政策会議に出席。ホワイトハウス。取材非公開。\n- 14時00分　大統領が政策会議に出席。大統領執務室。取材非公開。\n- 15時30分　大統領が政策会議に出席。大統領執務室。取材非公開。",
+  "facts_ja": [
+    "米東部標準時11月9日12時、日本時間11月10日02時の米大統領とカタール首相の会談予定を記載。場所は大統領執務室で、報道非公開。",
+    "報道案内には議題と会談結果の記載がない。"
+  ],
+  "inference_ja": [
+    "会談予定自体によって航行制約や制裁の適用が変わるとは判断できない。双方の声明と実際の航行データを待つ。"
+  ],
+  "content_sha256": "7c446d710fad0e3c8ac850501e768e97b27729756ddf12e30cc06455ae09e00e",
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "missing_parts": [
+    "米政府ドメイン上の同文書は未取得。報道プールの2つの転載で本文を確認。"
+  ],
+  "notification_eligible": true,
+  "publication_date": "2026-11-08",
+  "publication_timezone": "America/New_York",
+  "published_time_basis": "ホワイトハウス報道案内は米東部11月8日付。転載Aは日本時間11月9日09:00、転載Bは09:38と異なるため公式発表時刻は未確定。両転載の本文は空白を除き一致。",
+  "source_kind": "official_text_independent_press_pool_reproduction",
+  "related_source_urls": [
+    "https://bnonews.com/whpool/g9h6mgu7",
+    "https://bnonews.com/whpool/schedule?date=2026-11-09&month=2026-11"
+  ],
+  "summary_ja_40": "米大統領とカタール首相の非公開会談が米東部時間九日正午のホワイトハウス日程に掲載"
+}

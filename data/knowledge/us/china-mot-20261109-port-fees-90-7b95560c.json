@@ -1,0 +1,39 @@
+{
+  "id": "china-mot-20261109-port-fees-90-7b95560c",
+  "source": "中国交通運輸部",
+  "source_url": "https://xxgk.mot.gov.cn/jigou/syj/202611/t20261109_4227425.html",
+  "title_en": "Notice on Continuing the Suspension of Special Port Fees on U.S.-Related Vessels and the Shipping and Shipbuilding Investigation",
+  "title_ja": "中国の米国関連船舶への特別港務費と海運・造船関連調査の停止延長",
+  "published_at": "2026-11-09T10:40:00+08:00",
+  "received_at": "2026-11-09T05:29:07.440474+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "trade_policy",
+    "shipping",
+    "tariffs"
+  ],
+  "original_text": "交通运输部关于继续暂停对美船舶收取船舶特别港务费、暂停开展航运业造船业及相关产业链供应链安全和发展利益受影响情况调查的公告\n文号：交通运输部公告2026年第90号\n\n为落实中美第八轮经贸磋商成果，经国务院批准，继续暂停实施《交通运输部关于对美船舶收取船舶特别港务费的公告》（交通运输部公告2025年第54号）、《交通运输部办公厅关于印发〈对美船舶收取船舶特别港务费实施办法〉的通知》（交办水〔2025〕59号）、《交通运输部关于启动航运业、造船业及相关产业链供应链安全和发展利益受影响情况调查的公告》（交通运输部公告2025年第55号）至2027年1月10日。\n特此公告。\n交通运输部\n2026年11月9日\n分送：外交部、工业和信息化部、国家安全部、财政部、商务部，各省、自治区、直辖市交通运输厅（委），各直属海事局。",
+  "translation_ja": "米国関連船舶への特別港務費の徴収と、海運・造船および関連産業・供給網の安全と発展上の利益への影響に関する調査の停止継続についての交通運輸部公告\n交通運輸部公告2026年第90号\n\n第8回米中経済・貿易協議の成果を実施するため、国務院の承認を得て、次の3文書の実施停止を2027年1月10日まで継続する。\n\n- 「米国関連船舶への特別港務費の徴収に関する交通運輸部公告」（交通運輸部公告2025年第54号）\n- 「『米国関連船舶への特別港務費徴収実施弁法』の公布に関する交通運輸部弁公庁通知」（交弁水〔2025〕59号）\n- 「海運・造船および関連産業・供給網の安全と発展上の利益への影響に関する調査の開始についての交通運輸部公告」（交通運輸部公告2025年第55号）\n\n以上、公告する。\n交通運輸部\n2026年11月9日\n\n配布先　外交部、工業・情報化部、国家安全部、財政部、商務部、各省・自治区・直轄市の交通運輸庁・委員会、各直属海事局。",
+  "facts_ja": [
+    "交通運輸部公告2025年第54号、交弁水〔2025〕59号、交通運輸部公告2025年第55号の停止を2027年1月10日まで継続する。"
+  ],
+  "inference_ja": [
+    "特別港務費の再発動を前提とした航路変更や費用上乗せの誘因が弱まり得る。運賃・通航量の実際の変化は別途確認する。"
+  ],
+  "content_sha256": "7b95560cd9aaeb4258b622f4a1449a15f98e84f8e36fa6e5b0afe402061eb40d",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": true,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "Asia/Shanghai",
+  "published_time_basis": "中国官庁のHTML PubDateメタデータ。オフセット記載がないため中国標準時（UTC+08:00）として解釈。",
+  "related_source_urls": [
+    "https://www.govinfo.gov/content/pkg/FR-2026-10-26/html/2026-21755.htm",
+    "https://ustr.gov/sites/default/files/files/Issue_Areas/Enforcement/Section%20301/USTR%20Sec%20301%20Ships%20FRN%20Further%20Suspension.pdf"
+  ],
+  "summary_ja_40": "中国は米国関連船舶の特別港務費と造船の調査の停止を来年一月十日まで延長すると公告",
+  "related_document_ids": [
+    "ustr-20261106-maritime-301-suspension-28d62b63"
+  ]
+}

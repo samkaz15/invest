@@ -1,0 +1,39 @@
+{
+  "id": "china-state-council-20261109-tariff-6-68409b85",
+  "source": "中国国務院関税税則委員会",
+  "source_url": "https://gss.mof.gov.cn/gzdt/zhengcefabu/202611/t20261109_4004260.htm",
+  "title_en": "Notice on Adjusting Additional Tariffs on Imports Originating in the United States",
+  "title_ja": "中国の対米追加関税率24％の停止延長と10％の維持",
+  "published_at": "2026-11-09T07:58:00+08:00",
+  "received_at": "2026-11-09T05:29:07.365665+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "tariffs",
+    "trade_policy"
+  ],
+  "original_text": "国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告\n税委会公告2026年第6号\n为落实中美两国元首华盛顿会晤达成的成果共识，根据《中华人民共和国关税法》、《中华人民共和国海关法》、《中华人民共和国对外贸易法》等法律法规和国际法基本原则，经国务院批准，自2026年11月10日13时01分起，调整《国务院关税税则委员会关于对原产于美国的进口商品加征关税的公告》（税委会公告2025年第4号）规定的加征关税措施，在2个月内继续暂停实施24%的对美加征关税税率，保留10%的对美加征关税税率。\n国务院关税税则委员会\n2026年11月9日",
+  "translation_ja": "国務院関税税則委員会による、米国原産の輸入品への追加関税措置の調整に関する公告\n税則委員会公告2026年第6号\n\n米中両国首脳のワシントン会談で得られた合意を実施するため、中華人民共和国関税法、中華人民共和国税関法、中華人民共和国対外貿易法などの法令および国際法の基本原則に基づき、国務院の承認を得て、2026年11月10日13時01分から、国務院関税税則委員会の「米国原産の輸入品への追加関税措置に関する公告」（税則委員会公告2025年第4号）所定の追加関税措置を調整する。対米追加関税率24％の適用停止を2カ月間継続し、対米追加関税率10％を維持する。\n\n国務院関税税則委員会\n2026年11月9日",
+  "facts_ja": [
+    "対米追加関税率24％の適用停止を2カ月間延長し、追加関税率10％を維持する。",
+    "発効は中国時間2026年11月10日13時01分、日本時間14時01分。"
+  ],
+  "inference_ja": [
+    "停止が切れて24％が再発動する場合に比べ、対象となる米国産品の中国での輸入費用の上昇を抑え得る。実際の受注は品目別の需要・他の税率・為替にも依存する。"
+  ],
+  "content_sha256": "68409b85f8a4a076bb3f9ea1acd45abb9829c862493ca77b721a6a105bdd15fc",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": true,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "Asia/Shanghai",
+  "published_time_basis": "中国官庁のHTML PubDateメタデータ。オフセット記載がないため中国標準時（UTC+08:00）として解釈。",
+  "effective_at": "2026-11-10T13:01:00+08:00",
+  "related_source_urls": [
+    "https://gss.mof.gov.cn/gzdt/zhengcejiedu/202611/t20261109_4004261.htm"
+  ],
+  "summary_ja_40": "中国は対米追加関税２４％の停止を二カ月延長し、追加関税１０％を維持すると公告した",
+  "related_document_ids": [
+    "china-state-council-20261109-tariff-explanation-83f2ccb0"
+  ]
+}
