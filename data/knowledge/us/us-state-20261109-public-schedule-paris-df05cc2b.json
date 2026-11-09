@@ -1,0 +1,39 @@
+{
+  "id": "us-state-20261109-public-schedule-paris-df05cc2b",
+  "source": "米国務省報道官室（転載で取得）",
+  "source_url": "https://www.pubt.io/view/245074EFD9D962C1056EDBE1257A50046A09F773",
+  "title_en": "Public Schedule – November 9, 2026",
+  "title_ja": "米国務長官の11月9日パリ公開日程",
+  "published_at": null,
+  "received_at": "2026-11-09T08:34:20.885177+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "diplomacy"
+  ],
+  "original_text": "Public Schedule - November 9, 2026\nOffice of the Spokesman\nNovember 8, 2026\n***THE DAILY PUBLIC SCHEDULE IS SUBJECT TO CHANGE***\nSECRETARY MARCO RUBIO\nSecretary Rubio is\non travel to France\nfrom November 8-10, 2026.\n11:30 a.m. LOCAL\nSecretary Rubio participates in a G7 Foreign Ministers Meeting family photo and a G7 family photo with the World Food Program in Paris, France.\n(POOLED PRESS COVERAGE)\n12:00 p.m. LOCAL\nSecretary Rubio participates in a G7 Foreign Ministers Meeting working lunch on Crises and International Challenges in Paris, France.\n(POOLED CAMERA SPRAY AT TOP)\n1:40 p.m. LOCAL\nSecretary Rubio meets with German Foreign Minister Johann Wadephul in Paris, France.\n(POOLED CAMERA SPRAY AT TOP)\n2:15 p.m. LOCAL\nSecretary Rubio meets with French Foreign Minister Jean-Noel Barrot in Paris, France.\n(POOLED CAMERA SPRAY AT TOP)\n3:15 p.m. LOCAL\nSecretary Rubio participates in a G7 family photo with invited partners in Paris, France.\n(POOLED PRESS COVERAGE)\n3:30 p.m. LOCAL\nSecretary Rubio participates in a G7 Foreign Ministers Meeting session on Super Intelligence in Paris, France.\n(POOLED CAMERA SPRAY AT TOP)\n6:45 p.m. LOCAL\nSecretary Rubio meets with French President Emmanuel Macron in Paris, France.\n(CLOSED PRESS COVERAGE)\nDEPUTY SECRETARY CHRISTOPHER LANDAU\nDeputy Secretary Landau attends meetings and briefings at the Department of State.\nUNDER SECRETARY FOR POLITICAL AFFAIRS ALLISON M. HOOKER\nUnder Secretary Hooker joins Secretary Rubio on travel to France from November 8-10, 2026.\nASSISTANT SECRETARY FOR GLOBAL PUBLIC AFFAIRS DYLAN JOHNSON\nAssistant Secretary Johnson joins Secretary Rubio on travel to France from November 8-10, 2026.\nBRIEFING SCHEDULE\nNo Department Press Briefing.",
+  "translation_ja": "### 2026年11月9日の公開日程\n\n国務省報道官室、2026年11月8日付。公開日程は変更される場合がある。\n\n**マルコ・ルビオ国務長官**　11月8日から10日までフランスを訪問する。以下の時刻はパリ現地時刻。\n\n- 11:30　G7外相会合の集合写真および世界食糧計画との集合写真に参加。代表取材。\n- 12:00　危機と国際的課題に関するG7外相会合の昼食会に参加。冒頭のみ代表撮影。\n- 13:40　ドイツのヨハン・ヴァーデフール外相と会談。冒頭のみ代表撮影。\n- 14:15　フランスのジャンノエル・バロ外相と会談。冒頭のみ代表撮影。\n- 15:15　招待パートナーとのG7集合写真に参加。代表取材。\n- 15:30　超知能を議題とするG7外相会合の会合に参加。冒頭のみ代表撮影。\n- 18:45　フランスのエマニュエル・マクロン大統領と会談。取材非公開。\n\n**クリストファー・ランドー国務副長官**　国務省内の会合と説明会に出席する。\n\n**アリソン・M・フッカー政治担当国務次官**　11月8日から10日までのフランス訪問にルビオ長官と同行する。\n\n**ディラン・ジョンソン国際広報担当国務次官補**　同じフランス訪問にルビオ長官と同行する。\n\n国務省の報道向け定例説明は予定していない。",
+  "content_sha256": "df05cc2b76039944cc9a99f06cc4fbac4a46ce74c6b7ba13b7f3043d3627916e",
+  "facts_ja": [
+    "11月9日にG7外相会合と独仏外相会談、パリ現地18時45分に仏大統領との非公開会談を予定。",
+    "配布元の記録上は2026年11月9日02時13分UTC（11時13分JST）に転載。国務省での初回公表時刻は未確認。"
+  ],
+  "inference_ja": [
+    "会談結果、共同声明、措置の実施は公表後に評価する。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "missing_parts": [
+    "米政府ドメイン上の本文は403。米国務省配布文の転載を翻訳。"
+  ],
+  "notification_eligible": false,
+  "publication_date": "2026-11-08",
+  "publication_timezone": "America/New_York",
+  "published_time_basis": "転載中の国務省資料は11月8日付。初回公表時刻は不明。",
+  "distribution_at": "2026-11-09T02:13:00+00:00",
+  "source_kind": "official_text_third_party_reproduction",
+  "related_source_urls": [
+    "https://www.state.gov/releases/office-of-the-spokesperson/2026/11/public-schedule-november-9-2026/",
+    "https://www.state.gov/public-schedule/"
+  ],
+  "notification_reason": "訪仏とG7会合の日程。既報の会合予定の範囲で、合意・実施は未確認。"
+}
