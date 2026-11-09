@@ -1,0 +1,39 @@
+{
+  "source": "U.S. Department of the Treasury",
+  "topics": [
+    "treasuries"
+  ],
+  "observation_date": "2026-11-09",
+  "received_at": "2026-11-09T20:56:13.000Z",
+  "received_at_kind": "gmail_received",
+  "publication_timezone": "America/New_York",
+  "id": "treasury-rates-20261109-long-term",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "title_en": "Daily Treasury Long-Term Rates",
+  "title_ja": "日次長期国債金利（11月9日観測分）",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_time_note": "公式表に初回掲載時刻の記載なし。メール公開配信時刻とは区別。",
+  "retrieved_at": "2026-11-09T20:57:56.878689+00:00",
+  "source_raw_sha256": "ecde3bdfa99695097e7c965c4330a036205e365ee871a100d1984ebf53a203a8",
+  "original_text": "| Date | 20 YR | 30 YR | LT COMPOSITE (>10 Yrs) | TREASURY 20-Yr CMT | Extrapolation Factor | 6 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 8 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 17 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 52 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 1 Mo | 1.5 Mo | 2 Mo | 3 Mo | 4 Mo | 20 Yr | 30 Yr |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 11/06/2026 | N/A | N/A | 5.24 | 5.29 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n| 11/09/2026 | N/A | N/A | 5.25 | 5.29 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n\nTreasury Long-Term Average Rate and Extrapolation Factors. Beginning February 18, 2002, Treasury ceased publication of the 30-year constant maturity series. Instead, from February 19, 2002 through May 28, 2004, Treasury published a Long-Term Average Rate, \"LT>25,\" (not to be confused with the Long-Term Composite Rate, definitions below). In addition, Treasury published daily linear extrapolation factors that could be added to the Long-Term Average Rate to allow interested parties to compute an estimated 30-year rate. On June 1, 2004, Treasury discontinued the \"LT>25\" average due to a dearth of eligible bonds. In place of the \"LT>25\" average, Treasury published the Treasury 20-year Constant Maturity rate on this page along with an extrapolation factor that was added to the 20-year Constant Maturity to obtain an estimate for a theoretical 30-year rate. On February 9, 2006, Treasury reintroduced the 30-year constant maturity and is no longer publishing the extrapolation factor.\n\nThe Long-Term Average Rate, \"LT>25,\" was the arithmetic average of the bid yields on all outstanding fixed-coupon securities (i.e., excluding Inflation-Indexed securities) with 25 years or more remaining to maturity. This series first appeared on February 19, 2002, following discontinuation of the 30-year Treasury constant maturity series. Subsequently, the \"LT>25\" average was discontinued on June 1, 2004.\n\nLinear Extrapolation Factors were determined by considering the slope of the yield curve at it's long end and extrapolating out to a theoretical 30-year point. To use the Extrapolation Factor to determine a 30-year proxy rate, add the factor to the 20-year Constant Maturity Rate. For example, if on a particular day the 20-year Constant Maturity was 5.40% and the Extrapolation Factor was 0.02%, then a 30-year theoretical rate would have been 5.40% + 0.02% = 5.42%. Publishing of the Linear Extrapolation Factors was discontinued on February 9, 2006 with the reintroduction of the 30-year Constant Maturity Rate.\n\nThe Long-Term Composite Rate is the unweighted average of bid yields on all outstanding fixed-coupon bonds neither due nor callable in less than 10 years.",
+  "translation_ja": "日次長期国債金利。2026年11月9日の更新行と比較用の前営業日11月6日。利回り単位は％。N/Aは原表の値なし。\n\n| 日付 | 20年 | 30年 | 長期複合利回り（10年超） | 20年CMT | 外挿係数 | 6週間・銀行割引率 | クーポン相当利回り | 8週間・銀行割引率 | クーポン相当利回り | 17週間・銀行割引率 | クーポン相当利回り | 52週間・銀行割引率 | クーポン相当利回り | 1か月 | 1.5か月 | 2か月 | 3か月 | 4か月 | 20年 | 30年 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 11/06/2026 | N/A | N/A | 5.24 | 5.29 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n| 11/09/2026 | N/A | N/A | 5.25 | 5.29 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n\n## この表の説明・脚注の日本語訳\n\n長期平均金利と外挿係数：2002年2月18日から30年コンスタント・マチュリティー系列を停止した。代わりに2002年2月19日～2004年5月28日に長期平均金利「LT>25」を公表した。これは下記定義の長期複合利回りとは異なる。また長期平均に加算して推定30年金利を求める日次の線形外挿係数も公表した。対象債の不足により2004年6月1日に「LT>25」を停止し、このページに20年CMTと、これに加えて理論上の30年金利を推定する外挿係数を掲載した。2006年2月9日に30年CMTを再開し、外挿係数の公表を停止した。\n長期平均金利「LT>25」は、残存25年以上のすべての現存固定クーポン証券（物価連動債を除く）の買い気配利回りの算術平均だった。30年系列の停止を受け2002年2月19日に開始し、2004年6月1日に停止した。\n線形外挿係数は、曲線の長期部分の傾きを用い、理論上の30年点へ外挿して求めた。30年の代理金利を得るには20年CMTに係数を加える。例えば20年CMTが5.40％、係数が0.02％なら理論値は5.40％＋0.02％＝5.42％。30年CMTの再開により2006年2月9日に係数の公表を停止した。\n長期複合利回りは、10年未満では償還期限も繰上償還可能日も到来しない、現存するすべての固定クーポン債の買い気配利回りの単純平均である。",
+  "content_sha256": "62b0375cdc05c7396b985b41061b23d6b7e0c617fff4ba43cfbfc2560b849c9f",
+  "facts_ja": [
+    "11月9日分の10年超の長期複合利回りは5.25％、20年CMTは5.29％。前営業日は5.24％、5.29％。"
+  ],
+  "inference_ja": [],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "content_scope_note": "11月9日の更新対象行・11月6日の比較行・当該系列の説明と脚注。年次表のその他の日付および連絡先は収録範囲外。",
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省が十一月九日の長期国債金利を公表、十年超の複合利回りは五・二五％だった。",
+  "related_document_ids": [
+    "ustreas-43239e2-20261109-long-term"
+  ],
+  "related_source_urls": [
+    "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value_month=202611"
+  ],
+  "attachment_status": "メール添付と該当系列のPDFリンクなし。"
+}

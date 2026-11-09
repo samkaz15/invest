@@ -1,0 +1,35 @@
+{
+  "source": "U.S. Department of the Treasury",
+  "topics": [
+    "treasuries"
+  ],
+  "observation_date": "2026-11-09",
+  "received_at": "2026-11-09T20:56:21.000Z",
+  "received_at_kind": "gmail_received",
+  "publication_timezone": "America/New_York",
+  "id": "ustreas-4323a33-20261109-yield-curve",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/4323a33",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Yield Curve Rates Update",
+  "title_ja": "米財務省メール・日次名目イールドカーブの更新",
+  "published_at": "2026-11-09T15:55:00-05:00",
+  "publication_time_note": "公開配信版の表示。分精度。",
+  "original_text": "You are subscribed to Daily Treasury Yield Curve Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "translation_ja": "米財務省の「日次名目イールドカーブ」の配信に登録されています。この情報が更新され、現在利用できます。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "content_sha256": "2afd128123399e878d03463033a8fff07fbf8ba870f11a1e6fad024bfe469cee",
+  "facts_ja": [
+    "財務省のメールは日次名目イールドカーブが更新された旨と公開URLを案内。"
+  ],
+  "inference_ja": [],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "content_scope_note": "実質的本文を全訳。購読管理と配送フッターを除外。",
+  "notification_eligible": false,
+  "notification_reason": "公式表の新規レコードで通知を一度にまとめる。",
+  "related_document_ids": [
+    "treasury-rates-20261109-yield-curve"
+  ],
+  "related_source_urls": [
+    "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+  ]
+}

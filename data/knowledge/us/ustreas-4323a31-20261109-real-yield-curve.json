@@ -1,0 +1,36 @@
+{
+  "source": "U.S. Department of the Treasury",
+  "topics": [
+    "treasuries",
+    "gold"
+  ],
+  "observation_date": "2026-11-09",
+  "received_at": "2026-11-09T20:55:45.000Z",
+  "received_at_kind": "gmail_received",
+  "publication_timezone": "America/New_York",
+  "id": "ustreas-4323a31-20261109-real-yield-curve",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/4323a31",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Real Yield Curve Rates Update",
+  "title_ja": "米財務省メール・日次実質イールドカーブの更新",
+  "published_at": "2026-11-09T15:55:00-05:00",
+  "publication_time_note": "公開配信版の表示。分精度。",
+  "original_text": "You are subscribed to Daily Treasury Real Yield Curve Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026",
+  "translation_ja": "米財務省の「日次実質イールドカーブ」の配信に登録されています。この情報が更新され、現在利用できます。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026",
+  "content_sha256": "650cd5d2f8eb11b6e75c91a893808605db85165e64b0f03a8541e7fe525cc16d",
+  "facts_ja": [
+    "財務省のメールは日次実質イールドカーブが更新された旨と公開URLを案内。"
+  ],
+  "inference_ja": [],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "content_scope_note": "実質的本文を全訳。購読管理と配送フッターを除外。",
+  "notification_eligible": false,
+  "notification_reason": "公式表の新規レコードで通知を一度にまとめる。",
+  "related_document_ids": [
+    "treasury-rates-20261109-real-yield-curve"
+  ],
+  "related_source_urls": [
+    "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026"
+  ]
+}
