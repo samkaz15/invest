@@ -1,0 +1,43 @@
+{
+  "id": "aljazeera-iraq-fm-20261108-hormuz-e082e301",
+  "source": "Al Jazeera Arabic, The Interview",
+  "source_url": "https://www.aljazeera.net/video/the-interview/2026/11/8/%D9%88%D8%B2%D9%8A%D8%B1-%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%84%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9-%D8%AA%D9%81%D8%A7%D9%87%D9%85%D8%A7%D8%AA-%D9%85%D8%B9",
+  "title_en": "Iraqi foreign minister discusses oil export resumption through the Strait of Hormuz",
+  "title_ja": "イラク外相、オマーン沿岸航路で原油輸出を再開したと説明",
+  "published_at": "2026-11-08T18:05:52+00:00",
+  "published_time_basis": "放送局が動画ページのVideoObject.uploadDateに示したUTC。本人の発言時刻ではない。",
+  "first_reported_at": "2026-11-07T14:02:16+00:00",
+  "first_reported_source_url": "https://www.aljazeera.net/news/2026/11/7/%D8%B9%D8%A7%D8%AC%D9%84-%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%84%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9",
+  "received_at": "2026-11-09T00:50:24.931431+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil",
+    "war",
+    "diplomacy",
+    "sanctions"
+  ],
+  "original_text": "ثم استئناف الضخ عبر الممر المائي المحاذي لسلطنة عمان بتفاهمات مع واشنطن وطهران.",
+  "translation_ja": "短い原文抜粋の訳　「その後、米国とイランとの了解を受け、オマーンに沿う水路を通じた輸送を再開した。」\n\n報道本文の要約\n\nアルジャジーラのインタビュー記事でフアード・フセイン・イラク外相は、米国とイランとの了解を受け、オマーン沿岸の航路を通る原油輸出を再開したと説明した。了解の文書、対象船や積出港、適用開始日、米国側の確認は取得できていない。\n\n外相の説明では、戦闘開始後の最初の4か月にホルムズ海峡の通航が妨げられ、船会社や保険会社がバスラ港への寄港を懸念し、イラクの損失は約600億ドルに達した。輸出は平時の日量330万〜340万バレルから一時ゼロに落ち込み、タンク車やトルコ向けパイプラインによる部分的な輸送を経て、オマーン沿いの海上航路で再開したという。トルコ向けは段階的に日量26万バレルに達したとし、ヨルダン・シリア経由のパイプラインについては交渉を始めた段階と説明した。\n\n別途、ロイターはイラクのエネルギー当局者を根拠に9月の日量265万バレルから10月に約350万バレルへ回復したと報じた。この月次数字はイラク外相の発言の訳ではなく、今回の航路で実際に積み出した数量の裏付けにも使わない。",
+  "content_sha256": "e082e3017f38065c1c60cd12f248369d7498e04996c0ae09d95dd7a8f2a48ae7",
+  "content_hash_scope": "取得した公開インタビューページの本文抽出テキスト。保存原文は短い抜粋。",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "notification_eligible": false,
+  "notification_reason": "動画ページは11月8日公開だが輸出再開の発言要旨は放送局の11月7日付先行記事の現行版にもある。要旨追加の正確な時刻は不明。了解の公的文書と適用実績は未取得。",
+  "missing_parts": [
+    "放送局の記事本文は読了。49分35秒の動画の該当発言の音声と逐語録を未確認。公開プレーヤーのメタデータに字幕トラックは見当たらなかった。",
+    "米側確認、合意原文、対象船と適用開始日、経路別積出の公的資料を未取得。"
+  ],
+  "facts_ja": [
+    "インタビューを放送した局が、イラク外相の輸出再開と米国・イランとの了解に関する説明を記事に掲載した。発言内容の独立確認は未了。"
+  ],
+  "inference_ja": [
+    "当該航路で積出量が持続的に増え、他経路からの振替を超えるなら供給制約が緩和され得る。"
+  ],
+  "related_source_urls": [
+    "https://www.aljazeera.net/news/2026/11/7/%D8%B9%D8%A7%D8%AC%D9%84-%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%84%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9",
+    "https://www.reuters.com/business/energy/iraq-has-reached-understandings-with-us-allow-oil-exports-through-hormuz-2026-11-08/",
+    "https://www.investing.com/news/economic-indicators/iraq-has-reached-understandings-with-us-to-allow-oil-exports-through-hormuz-minister-says-5010300",
+    "https://mofa.gov.iq/"
+  ]
+}
