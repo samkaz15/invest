@@ -1,0 +1,61 @@
+{
+  "id": "fed-feds-notes-20261109-oil-core-inflation-08a0cc9a",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/the-effect-of-oil-prices-on-core-inflation-recent-evidence-from-the-advanced-economies-20261109.html",
+  "source": "Federal Reserve Board, FEDS Notes",
+  "title_en": "The Effect of Oil Prices on Core Inflation: Recent Evidence from the Advanced Economies",
+  "title_ja": "原油価格のコアインフレへの影響、先進経済の最近の証拠",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/New_York",
+  "publication_time_note": "米国11月9日付。初回公開時刻の明示なし。",
+  "received_at": "2026-11-09T18:40:39+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieval_method": "FRBの個別一次ページをウェブ取得。直接HTTPは失敗。",
+  "topics": [
+    "oil",
+    "monetary_policy"
+  ],
+  "doi": "10.17016/2380-7172.4190",
+  "original_text": "the results shown here do not represent any official forecasts of inflation in the U.S. or foreign economies.",
+  "content_sha256": "08a0cc9a7846b3a4ff54114ca202ec0b8340677e9ececd7d730c112c6afe4268",
+  "translation_ja": "「ここで示す結果は、米国や海外経済のインフレについての公式予測を表すものではない。」\n\n対象はカナダ、ユーロ圏、日本、英国、米国。米国のコアPCEと他地域のコアCPIを使用し、現地通貨ベースの相対ブレント価格、需給ギャップ、供給網圧力を組み込んだ。2021年1〜3月期から係数が変わり得る仕様で推計した。\n\n表1の標本内RMSE（全期間／パンデミック後）は、係数固定0.31／0.37、持続性上昇のみ0.24／0.31、持続性と原油波及の上昇を許す仕様0.14／0.17。予測力の標本外検証ではない。表2の95％区間は、持続性の前期0.225〜0.470、増分0.202〜0.395、波及係数の前期−0.002〜0.004、増分0.004〜0.021。\n\n図2は原油価格が恒久的に10％上がる実験。図表データの12四半期後のコア価格水準は、波及と持続性の両方を引き上げる仕様で約0.36％高い。これは価格水準の変化で、表2を用いたインフレ率の反応とは指標が異なる。図3のシナリオには2026年8月初めの先物曲線を使用。図4はコスト上昇と需要抑制の両経路を示す構造モデル実験。推定はパンデミック後の短い標本に依存し、構造変化と供給ショックの頻度・持続期間の変化を区別できない。国別の波及上昇はカナダ、日本、米国で有意、ユーロ圏・英国で有意でなかったと脚注に記載。",
+  "facts_ja": [
+    "5経済のパネル推計で、相対原油インフレ率の10ポイント上昇に対するコアインフレ率の推計反応はパンデミック前約0.01ポイント（統計的に有意でない）、後は約0.14ポイント。",
+    "表2の持続性はパンデミック前0.347、以後の増分0.298。原油波及係数は前0.001、増分0.013。標本は2000年1〜3月期から2026年4〜6月期。"
+  ],
+  "inference_ja": [
+    "原油高の持続、非エネルギー価格の広がり、景気減速を分けて観察。係数や仮想経路を足元の各国物価予測に直接使わない。"
+  ],
+  "observed_table_excerpt": [
+    [
+      "specification",
+      "full sample RMSE",
+      "post-pandemic RMSE"
+    ],
+    [
+      "1",
+      0.31,
+      0.37
+    ],
+    [
+      "2",
+      0.24,
+      0.31
+    ],
+    [
+      "3",
+      0.14,
+      0.17
+    ]
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "本文の選択箇所の訳と図表・方法の日本語要約。全文逐語訳、全図表の全行、脚注・参考文献の全文は未収録。リンク先にHTMLの図表データ。"
+  ],
+  "related_source_urls": [
+    "https://www.federalreserve.gov/econres/notes/feds-notes/the-effect-of-oil-prices-on-core-inflation-recent-evidence-from-the-advanced-economies-accessible-20261109.htm"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "ＦＲＢスタッフが先進五経済の原油高とコア物価の波及を推計した新研究ノートを公表。"
+}

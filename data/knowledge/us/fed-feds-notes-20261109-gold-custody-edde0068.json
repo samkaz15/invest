@@ -1,0 +1,38 @@
+{
+  "id": "fed-feds-notes-20261109-gold-custody-edde0068",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/gold-reserve-relocations-are-they-always-bad-news-for-u-s-dollar-reserves-20261109.html",
+  "source": "Federal Reserve Board, FEDS Notes",
+  "title_en": "Gold Reserve Relocations: Are They Always Bad News for U.S. Dollar Reserves?",
+  "title_ja": "金準備の保管先移転とドル準備の関係",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/New_York",
+  "publication_time_note": "米国11月9日付。初回公開時刻の明示なし。",
+  "received_at": "2026-11-09T18:40:39+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieval_method": "FRBの個別一次ページをウェブ取得。直接HTTPは失敗。",
+  "topics": [
+    "gold",
+    "investment_policy"
+  ],
+  "doi": "10.17016/2380-7172.4200",
+  "original_text": "they continue to hold most of their FX reserves in U.S. dollar assets",
+  "content_sha256": "edde006882d92471527d22579613c2a9524d8330796f9ab2cc09fa8de2676cad",
+  "translation_ja": "「これらの中央銀行は引き続き、外貨準備の過半を米ドル建て資産で保有している。」\n\nフランスの米ドル比率は、2025年と2026年初めの金移転を挟み60％で推移したと著者は報告。オランダでは2026年の移転に伴い10ポイント低下したが、ドルは外貨準備の中心にとどまったとする。図1の注記と事例本文を確認。各国原資料との独立再照合および図表全行の再収録は未実施。",
+  "facts_ja": [
+    "著者はフランス、ドイツ、オランダの事例を検討し、保管先変更とドル建て準備比率の持続的な低下が揃わない事例を示した。"
+  ],
+  "inference_ja": [
+    "保管先、金保有総量、外貨準備の通貨構成を別々に追う。"
+  ],
+  "observed_table_excerpt": [],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "本文の選択箇所の訳と図表・方法の日本語要約。全文逐語訳、全図表の全行、脚注・参考文献の全文は未収録。リンク先にHTMLの図表データ。"
+  ],
+  "related_source_urls": [
+    "https://www.federalreserve.gov/econres/notes/feds-notes/gold-reserve-relocations-are-they-always-bad-news-for-u-s-dollar-reserves-accessible-20261109.htm"
+  ],
+  "notification_eligible": false
+}

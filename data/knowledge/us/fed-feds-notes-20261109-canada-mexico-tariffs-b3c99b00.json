@@ -1,0 +1,54 @@
+{
+  "id": "fed-feds-notes-20261109-canada-mexico-tariffs-b3c99b00",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/a-common-pattern-behind-diverging-fortunes-u-s-tariffs-and-exports-from-canada-and-mexico-20261109.html",
+  "source": "Federal Reserve Board, FEDS Notes",
+  "title_en": "A Common Pattern behind Diverging Fortunes: U.S. Tariffs and Exports from Canada and Mexico",
+  "title_ja": "米国関税とカナダ・メキシコの対米輸出、総額の違いの背後にある共通点",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/New_York",
+  "publication_time_note": "米国11月9日付。初回公開時刻の明示なし。",
+  "received_at": "2026-11-09T18:40:39+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieval_method": "FRBの個別一次ページをウェブ取得。直接HTTPは失敗。",
+  "topics": [
+    "tariffs",
+    "trade_policy",
+    "investment_policy"
+  ],
+  "doi": "10.17016/2380-7172.4196",
+  "original_text": "the difference between the two is not statistically significant",
+  "content_sha256": "b3c99b004c45012f00ccc622f5fecd677aac7b61b94626c63c9d146ae36d9ab8",
+  "translation_ja": "「両国の推計値の差は統計的に有意ではない。」\n\n米国の2025年3月の関税を起点に、米国・メキシコ・カナダ協定（USMCA）の適用や金属・自動車への品目別税率で生じた関税のばらつきを利用。2024年の固定輸入構成を基に実効関税率を計算した。図1の実効税率はカナダ5.39％、メキシコ7.99％。国・業種と国・月の固定効果を使い、輸出総額に対する関税の効果とは区別する。\n\n| 表1の仕様 | カナダ | メキシコ | プール |\n|---|---:|---:|---:|\n| 月次ベースライン | −4.9 | −11.8 | −7.4 |\n| 米業種別鉱工業生産を調整 | −5.9 | −10.6 | −7.5 |\n| 関連商品価格を調整 | −5.7 | −11.6 | — |\n| 2023年から | −5.4 | −12.3 | — |\n| 2024年から | −4.7 | −11.5 | — |\n| 2024年11月〜2025年2月を除外 | −5.2 | −12.1 | −7.6 |\n| 金属を除外 | 2.5 | −11.6 | −7.9 |\n| 第三国からの米輸入を調整 | −5.5 | −5.1 | −6.0 |\n| 米向け対その他仕向地 | −6.8 | −11.2 | −8.4 |\n\n推計値は2025年3月以降、露出が10ポイント高い業種の相対的な対米輸出の変化率（％）。カナダは金属を除くと有意な関係が見えず、メキシコは広い業種に及んだ。メキシコの対米輸出の増加は機械に集中。機械を除くと約2％減。部品を輸入し組み立てたサーバーなどは、輸出総額の伸びをそのまま国内付加価値にはできない。仕向地比較でカナダの推計は不精確。推計は関税と同時に起きた業種別需要や第三国への切替と完全には分離できない。",
+  "facts_ja": [
+    "2026年4月までの12か月を2024年暦年と比べると、対米財輸出額はカナダ約10％減、メキシコ約16％増。メキシコは機械が17.3ポイント寄与。",
+    "表1のベースラインでは実効関税への露出が10ポイント高い業種ほど対米輸出が弱く、推計の差はカナダ−4.9％、メキシコ−11.8％、プール−7.4％。両国の推計差は有意でない。"
+  ],
+  "inference_ja": [
+    "金属・車両などの実際の米輸入単価と数量、代替供給、カナダの輸出・投資を照合する。"
+  ],
+  "observed_table_excerpt": [
+    [
+      "baseline",
+      "Canada",
+      "Mexico",
+      "pooled"
+    ],
+    [
+      "10 pp",
+      -4.9,
+      -11.8,
+      -7.4
+    ]
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "本文の選択箇所の訳と図表・方法の日本語要約。全文逐語訳、全図表の全行、脚注・参考文献の全文は未収録。リンク先にHTMLの図表データ。"
+  ],
+  "related_source_urls": [
+    "https://www.federalreserve.gov/econres/notes/feds-notes/a-common-pattern-behind-diverging-fortunes-u-s-tariffs-and-exports-from-canada-and-mexico-accessible-20261109.htm"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "ＦＲＢスタッフが北米二か国の対米輸出と関税負担を業種別に比較した研究結果を公表。"
+}
