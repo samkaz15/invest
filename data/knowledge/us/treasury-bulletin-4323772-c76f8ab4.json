@@ -1,0 +1,35 @@
+{
+  "received_at": "2026-11-09T20:01:43.000Z",
+  "received_at_kind": "gmail_received",
+  "topics": [
+    "sanctions",
+    "oil",
+    "shipping"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "id": "treasury-bulletin-4323772-c76f8ab4",
+  "source": "U.S. Department of the Treasury public bulletin",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/4323772",
+  "title_en": "OFAC SDN List Update: Iran Designation Update",
+  "title_ja": "OFACのSDNリスト更新通知、イラン関連の指定情報",
+  "published_at": "2026-11-09T15:00:00-05:00",
+  "publication_time_note": "財務省の公開配信ページに表示された配信時刻。分精度。OFAC個別ページの初回公表時刻とは別。",
+  "original_text": "Update to OFAC's list of Specially Designated Nationals (SDN) and Blocked Persons\n\nThe SDN list has recently been updated. Please visit this page to access the latest version of the SDN list [ https://ofac.treasury.gov/sanctions-list-service ]. Check this page periodically as it may also be updated if a new list-related format or product is offered.\n\nPlease visit this link for more information on today's update [ https://ofac.treasury.gov/recent-actions/20261109 ].",
+  "content_sha256": "c76f8ab4bafee705b0a49e43eab57f09690ce5930090bf494936f5e1a506e203",
+  "translation_ja": "**OFACの特別指定国民（SDN）・資産凍結対象者リストの更新**\n\nSDNリストが更新されました。[制裁リストサービス](https://ofac.treasury.gov/sanctions-list-service)で最新版を確認できます。リストに関する新しい形式や製品が提供される際にもこのページが更新されることがあるため、定期的に確認してください。\n\n今回の更新の詳細は[OFACの個別発表](https://ofac.treasury.gov/recent-actions/20261109)をご覧ください。",
+  "facts_ja": [
+    "財務省の配信はSDNリストの更新と個別のOFAC発表へのリンクを案内。"
+  ],
+  "inference_ja": [],
+  "related_document_ids": [
+    "ofac-20261109-iran-designation-update-ec9a6942"
+  ],
+  "related_source_urls": [
+    "https://ofac.treasury.gov/recent-actions/20261109"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "メール本文の訳はリンク先の個別発表と同じ通知にまとめる。",
+  "content_scope_note": "メール本文の実質的部分を全訳。購読案内、ナビゲーション、連絡先、配送フッターを除外。"
+}

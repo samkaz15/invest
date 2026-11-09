@@ -1,0 +1,49 @@
+{
+  "received_at": "2026-11-09T20:01:43.000Z",
+  "received_at_kind": "gmail_received",
+  "topics": [
+    "sanctions",
+    "oil",
+    "shipping"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "id": "ofac-20261109-iran-designation-update-ec9a6942",
+  "source": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+  "source_url": "https://ofac.treasury.gov/recent-actions/20261109",
+  "title_en": "Iran Designation Update",
+  "title_ja": "イラン関連の指定情報更新、海運会社ボルタの別名",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/New_York",
+  "publication_time_note": "OFACの個別発表は米国11月9日付で時刻表示なし。",
+  "retrieved_at": "2026-11-09T20:03:44.287446+00:00",
+  "original_text": "Specially Designated Nationals List Updates\nThe following changes have been made to OFAC's SDN List:\nVOLTA SHIPPING SERVICES LLC (Arabic: فولتا لخدمات الشحن ذ م م) (a.k.a. VOLTA SHIPPING SERVICES FZCO), Office No 1-024, Al Garhoud, Deira, Dubai, United Arab Emirates; Business Cluster Building 3 108, Fl 1, Dubai, United Arab Emirates; Secondary sanctions risk: See Section 2 of E.O. 13902; Organization Established Date 07 Jun 2017; alt. Organization Established Date 01 Oct 2023; License 784220 (United Arab Emirates); alt. License 50335 (United Arab Emirates); Chamber of Commerce Number 290374 (United Arab Emirates); Registration Number 1290166 (United Arab Emirates); Economic Register Number (CBLS) 10957213 [IRAN-EO13902] (Linked To: SHAMKHANI, Mohammad Hossein). -to- VOLTA SHIPPING SERVICES LLC (Arabic: فولتا لخدمات الشحن ذ م م) (a.k.a. VOLTA CONTAINER LINE FZCO), Office No 1-024, Al Garhoud, Deira, Dubai, United Arab Emirates; Business Cluster Building 3 108, Fl 1, Dubai, United Arab Emirates; Secondary sanctions risk: See Section 2 of E.O. 13902; Organization Established Date 07 Jun 2017; alt. Organization Established Date 01 Oct 2023; License 784220 (United Arab Emirates); alt. License 50335 (United Arab Emirates); Chamber of Commerce Number 290374 (United Arab Emirates); Registration Number 1290166 (United Arab Emirates); Economic Register Number (CBLS) 10957213 [IRAN-EO13902] (Linked To: SHAMKHANI, Mohammad Hossein).\nUnrelated Administrative List Changes:\nNone",
+  "content_sha256": "ec9a694200fae91835145669c2f113c4cdb977d31817638b1ff6aeb2b4b28cc9",
+  "source_raw_sha256": "91c671ccb4f1921a42e13cb5fd257681308e8c841718bc253468f29e3c85992c",
+  "translation_ja": "**イラン関連の指定情報の更新**。米国2026年11月9日付。\n\n**特別指定国民（SDN）リストの更新**\n\nOFACのSDNリストに次の変更が加えられました。\n\n**変更前**\n**VOLTA SHIPPING SERVICES LLC**（アラビア語表記 فولتا لخدمات الشحن ذ م م、別名 VOLTA SHIPPING SERVICES FZCO）。所在地はアラブ首長国連邦ドバイ、デイラ、アル・ガルフード、オフィス1-024、および同国ドバイ、ビジネス・クラスター、建物3、108、1階。二次制裁リスクについては大統領令第13902号第2条を参照。法人設立日は2017年6月7日、別の設立日表記は2023年10月1日。免許番号784220（アラブ首長国連邦）、別の免許番号50335（同国）。商工会議所番号290374（同国）、登録番号1290166（同国）、経済登録番号（CBLS）10957213。制裁プログラム［IRAN-EO13902］。関連先はモハンマド・ホセイン・シャムハニ。\n\n**変更後**\n**VOLTA SHIPPING SERVICES LLC**（アラビア語表記 فولتا لخدمات الشحن ذ م م、別名 VOLTA CONTAINER LINE FZCO）。所在地はアラブ首長国連邦ドバイ、デイラ、アル・ガルフード、オフィス1-024、および同国ドバイ、ビジネス・クラスター、建物3、108、1階。二次制裁リスクについては大統領令第13902号第2条を参照。法人設立日は2017年6月7日、別の設立日表記は2023年10月1日。免許番号784220（アラブ首長国連邦）、別の免許番号50335（同国）。商工会議所番号290374（同国）、登録番号1290166（同国）、経済登録番号（CBLS）10957213。制裁プログラム［IRAN-EO13902］。関連先はモハンマド・ホセイン・シャムハニ。\n\n**これと無関係の管理上のリスト変更**\nなし。",
+  "facts_ja": [
+    "OFACは米国2026年11月9日付で、SDNリストの既存掲載法人VOLTA SHIPPING SERVICES LLCの別名をVOLTA SHIPPING SERVICES FZCOからVOLTA CONTAINER LINE FZCOに変更した。",
+    "掲載上の正式名称、所在地、設立日、番号、大統領令13902号第2条の二次制裁リスク、関連先は変更前後で一致する。無関係の管理上の変更はなし。"
+  ],
+  "inference_ja": [
+    "別名の照合は取引相手の識別に関係し得る。今回の発表で原油の供給量や輸送量に変化が生じたかは確認できない。"
+  ],
+  "context_ja": [
+    {
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0562",
+      "text": "米財務省は2026年7月14日の発表で、同社をモハンマド・ホセイン・シャムハニへの支援・役務提供に関連して指定したと説明した。同省は、同氏のネットワークがイランの石油輸出に関与すると述べた。"
+    }
+  ],
+  "related_document_ids": [
+    "treasury-bulletin-4323772-c76f8ab4"
+  ],
+  "related_source_urls": [
+    "https://content.govdelivery.com/accounts/USTREAS/bulletins/4323772",
+    "https://home.treasury.gov/news/press-releases/sb0562"
+  ],
+  "attachment_status": "メールに添付なし。個別発表の本文にPDF、表、脚注のリンクなし。",
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省がイラン関連の制裁リストに載る海運会社ボルタの別名表記を更新したと公表。"
+}
