@@ -1,0 +1,53 @@
+{
+  "id": "federal-register-ofac-2026-22802-public-inspection-f2c5aa46",
+  "source": "米連邦官報の公衆閲覧版",
+  "source_url": "https://public-inspection.federalregister.gov/2026-22802.pdf",
+  "title_en": "Federal Register document 2026-22802 public inspection withdrawal sheet",
+  "title_ja": "米連邦官報文書2026-22802の公衆閲覧版取り下げ表示",
+  "published_at": null,
+  "published_time_basis": "表示の公表日時不明。PDFサーバー更新日時は公表時刻に採用しない。",
+  "received_at": "2026-11-09T00:22:04.706904+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "sanctions",
+    "oil"
+  ],
+  "original_text": "More information can be found at\n        https://www.federalregister.gov/d/2026-22802, and on\n        https://govinfo.gov\n\n\n\n\nTHIS DOCUMENT WAS WITHDRAWN",
+  "translation_ja": "詳細は、https://www.federalregister.gov/d/2026-22802 および https://govinfo.gov で確認できる。\n\nこの文書は取り下げられた。",
+  "content_sha256": "f2c5aa465e336a4a1b91134e44960b653b280bc552db2158129bdb4a10c89559",
+  "content_hash_scope": "公衆閲覧PDFの全1頁の表示本文。",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "notification_reason": "取り下げ表示は公衆閲覧版に限られ、11月4日の措置の変更は確認できない。",
+  "facts_ja": [
+    "公衆閲覧用PDFは取り下げ表示のみ。GPOの官報掲載版は別のURLから取得した。"
+  ],
+  "inference_ja": [
+    "この表示単独では、11月4日の制裁リスト更新そのものの撤回を判定できない。"
+  ],
+  "related_source_urls": [
+    "https://www.govinfo.gov/content/pkg/FR-2026-11-09/html/2026-22802.htm"
+  ],
+  "pdf": {
+    "sha256": "04d70018dc3f34267fb8daf33877c43415905e455690b19c4a591a554d40970e",
+    "original_url": "https://public-inspection.federalregister.gov/2026-22802.pdf",
+    "page_count": 1,
+    "ocr_used": false,
+    "visual_review_complete": true,
+    "privacy_review_complete": true,
+    "source_pdf_saved": false,
+    "source_pdf_save_reason": "PDF著者メタデータに個人識別につながり得る識別子があるため、原本バイナリのコミット対象から除外。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "More information can be found at\n        https://www.federalregister.gov/d/2026-22802, and on\n        https://govinfo.gov\n\n\n\n\nTHIS DOCUMENT WAS WITHDRAWN",
+        "translation_ja": "詳細は、https://www.federalregister.gov/d/2026-22802 および https://govinfo.gov で確認できる。\n\nこの文書は取り下げられた。",
+        "extraction_status": "text_extracted_visual_checked",
+        "translation_status": "complete",
+        "visual_review_complete": true
+      }
+    ]
+  }
+}

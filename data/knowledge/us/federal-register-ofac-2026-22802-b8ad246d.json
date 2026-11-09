@@ -1,0 +1,69 @@
+{
+  "id": "federal-register-ofac-2026-22802-b8ad246d",
+  "source": "米政府出版局連邦官報／米財務省OFAC",
+  "source_url": "https://www.federalregister.gov/documents/2026/11/09/2026-22802/notice-of-ofac-sanctions-actions",
+  "title_en": "Notice of OFAC Sanctions Actions",
+  "title_ja": "OFAC制裁措置の告示　既存リストの識別情報更新",
+  "published_at": null,
+  "published_date": "2026-11-09",
+  "published_time_basis": "官報号の日付は2026年11月9日。掲載時刻不明。提出時刻と取得時刻は区別。",
+  "received_at": "2026-11-09T00:22:03.325880+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "sanctions",
+    "oil"
+  ],
+  "original_text": "[Federal Register Volume 91, Number 215 (Monday, November 9, 2026)]\n[Notices]\n[Page 70987]\nFrom the Federal Register Online via the Government Publishing Office [\nwww.gpo.gov\n]\n[FR Doc No: 2026-22802]\n\n\n=======================================================================\n-----------------------------------------------------------------------\n\nDEPARTMENT OF THE TREASURY\n\nOffice of Foreign Assets Control\n\n\nNotice of OFAC Sanctions Actions\n\nAGENCY: Office of Foreign Assets Control, Treasury.\n\nACTION: Notice.\n\n-----------------------------------------------------------------------\n\nSUMMARY: The U.S. Department of the Treasury's Office of Foreign Assets \nControl (OFAC) is publishing updates to the identifying information of \none or more entries currently included on one or more of OFAC's \nsanctions lists.\n\nDATES: See Supplementary Information for relevant dates.\n\nFOR FURTHER INFORMATION CONTACT: OFAC: Associate Director for the \nOffice of Sanctions Support and Operations, 202-622-6943; Associate \nDirector for Global Targeting, 202-622-2420; or\nhttps://ofac.treasury.gov/contact-ofac\n.\n\nSUPPLEMENTARY INFORMATION:\n\nElectronic Availability\n\n    OFAC's sanctions lists and additional information concerning OFAC \nsanctions programs are available on OFAC's website:\nhttps://ofac.treasury.gov\n.\n\nNotice of OFAC Action\n\n    On November 4, 2026, OFAC updated the following names to apply \nsecondary sanctions information to names associated with the IRAN-\nEO13902 program. The updated names and relevant sanctions authorities \nare available at the below URL:\nhttps://ofac.treasury.gov/recent-actions/20261104_33\n.\n\n(Authority: 31 CFR chapter V.)\n\nBradley T. Smith,\nDirector, Office of Foreign Assets Control.\n[FR Doc. 2026-22802 Filed 11-6-26; 8:45 am]\nBILLING CODE 4810-AL-P",
+  "translation_ja": "米連邦官報第91巻第215号（2026年11月9日月曜日）、告示、70987頁。米政府出版局の連邦官報オンライン版（www.gpo.gov）。官報文書番号2026-22802。\n\n### 財務省外国資産管理局　制裁措置の告示\n\n所管機関　財務省外国資産管理局（OFAC）。文書種別　告示。\n\n概要　財務省OFACは、OFACの制裁リストのいずれかにすでに掲載されている一つ以上の登録項目について、識別情報の更新を公表する。\n\n日付　該当する日付は補足情報を参照。\n\n問い合わせ　OFAC制裁支援・運用室の次長（202-622-6943）、グローバル・ターゲティング担当次長（202-622-2420）、または https://ofac.treasury.gov/contact-ofac 。\n\n補足情報・電子版　OFACの制裁リストおよび制裁プログラムの追加情報は、OFACウェブサイト（https://ofac.treasury.gov）で閲覧できる。\n\nOFAC措置の告示　2026年11月4日、OFACはIRAN-EO13902プログラムに関連して掲載されている対象に二次制裁情報を適用するため、該当する登録項目を更新した。更新対象と関連する制裁の根拠は、次のURLで確認できる。https://ofac.treasury.gov/recent-actions/20261104_33\n\n根拠　連邦規則集第31編第V章。外国資産管理局長ブラッドリー・T・スミス。官報文書2026-22802、2026年11月6日午前8時45分提出。請求コード4810-AL-P。",
+  "content_sha256": "b8ad246dee2a2b5eca454515431c93bd96eb0e48e8eb7b2834b7b57f56ecc0d5",
+  "content_hash_scope": "GPOの官報HTML版、文書2026-22802の全文。",
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "missing_parts": [
+    "官報本文が指す対象専用のOFACリンクはHTTP 404。11月4日の一般アクション一覧は取得済みだが、告示と完全に同じ対象集合かは未確認。",
+    "紙面PDFは対象告示を目視照合し全文翻訳。共載の無関係な告示・表は訳文対象外。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "11月4日に実施した既存掲載項目の情報更新を官報で確認。新たな適用措置または範囲変更は確認できず。",
+  "facts_ja": [
+    "91 FR 70987に掲載された告示2026-22802は、11月4日に既存掲載項目へ二次制裁情報を適用するため更新したと記載する。措置日と掲載号の日付は別。",
+    "官報の参照先は404。公衆閲覧用PDFは取り下げと表示する一方、GPOの官報HTML・PDFに対象告示が存在する。"
+  ],
+  "inference_ja": [
+    "銀行や保険会社の審査が厳しくなれば輸送・決済コストに波及し得る。参照先の欠損があるため、対象の追加や実輸送への影響は判断保留。"
+  ],
+  "related_document_ids": [
+    "federal-register-ofac-2026-22802-public-inspection-f2c5aa46",
+    "ustreas-4319cfa-20261104-ofac-iran-venezuela-update"
+  ],
+  "related_source_urls": [
+    "https://www.govinfo.gov/content/pkg/FR-2026-11-09/html/2026-22802.htm",
+    "https://www.govinfo.gov/content/pkg/FR-2026-11-09/pdf/2026-22802.pdf",
+    "https://ofac.treasury.gov/recent-actions/20261104_33",
+    "https://ofac.treasury.gov/recent-actions/20261104",
+    "https://public-inspection.federalregister.gov/2026-22802.pdf"
+  ],
+  "pdf": {
+    "sha256": "e194638fbeec8f5ce17a252e06df29c1253d772678fa56e8528aaa123dfbceca",
+    "original_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-09/pdf/2026-22802.pdf",
+    "page_count": 1,
+    "ocr_used": false,
+    "visual_review_complete": true,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "source_pdf_save_reason": "同じ官報ページに別告示を共載し、署名フィールドを含む。対象外部分まで含めた配布前確認が未完了。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "[Federal Register Volume 91, Number 215 (Monday, November 9, 2026)]\n[Notices]\n[Page 70987]\nFrom the Federal Register Online via the Government Publishing Office [\nwww.gpo.gov\n]\n[FR Doc No: 2026-22802]\n\n\n=======================================================================\n-----------------------------------------------------------------------\n\nDEPARTMENT OF THE TREASURY\n\nOffice of Foreign Assets Control\n\n\nNotice of OFAC Sanctions Actions\n\nAGENCY: Office of Foreign Assets Control, Treasury.\n\nACTION: Notice.\n\n-----------------------------------------------------------------------\n\nSUMMARY: The U.S. Department of the Treasury's Office of Foreign Assets \nControl (OFAC) is publishing updates to the identifying information of \none or more entries currently included on one or more of OFAC's \nsanctions lists.\n\nDATES: See Supplementary Information for relevant dates.\n\nFOR FURTHER INFORMATION CONTACT: OFAC: Associate Director for the \nOffice of Sanctions Support and Operations, 202-622-6943; Associate \nDirector for Global Targeting, 202-622-2420; or\nhttps://ofac.treasury.gov/contact-ofac\n.\n\nSUPPLEMENTARY INFORMATION:\n\nElectronic Availability\n\n    OFAC's sanctions lists and additional information concerning OFAC \nsanctions programs are available on OFAC's website:\nhttps://ofac.treasury.gov\n.\n\nNotice of OFAC Action\n\n    On November 4, 2026, OFAC updated the following names to apply \nsecondary sanctions information to names associated with the IRAN-\nEO13902 program. The updated names and relevant sanctions authorities \nare available at the below URL:\nhttps://ofac.treasury.gov/recent-actions/20261104_33\n.\n\n(Authority: 31 CFR chapter V.)\n\nBradley T. Smith,\nDirector, Office of Foreign Assets Control.\n[FR Doc. 2026-22802 Filed 11-6-26; 8:45 am]\nBILLING CODE 4810-AL-P",
+        "translation_ja": "米連邦官報第91巻第215号（2026年11月9日月曜日）、告示、70987頁。米政府出版局の連邦官報オンライン版（www.gpo.gov）。官報文書番号2026-22802。\n\n### 財務省外国資産管理局　制裁措置の告示\n\n所管機関　財務省外国資産管理局（OFAC）。文書種別　告示。\n\n概要　財務省OFACは、OFACの制裁リストのいずれかにすでに掲載されている一つ以上の登録項目について、識別情報の更新を公表する。\n\n日付　該当する日付は補足情報を参照。\n\n問い合わせ　OFAC制裁支援・運用室の次長（202-622-6943）、グローバル・ターゲティング担当次長（202-622-2420）、または https://ofac.treasury.gov/contact-ofac 。\n\n補足情報・電子版　OFACの制裁リストおよび制裁プログラムの追加情報は、OFACウェブサイト（https://ofac.treasury.gov）で閲覧できる。\n\nOFAC措置の告示　2026年11月4日、OFACはIRAN-EO13902プログラムに関連して掲載されている対象に二次制裁情報を適用するため、該当する登録項目を更新した。更新対象と関連する制裁の根拠は、次のURLで確認できる。https://ofac.treasury.gov/recent-actions/20261104_33\n\n根拠　連邦規則集第31編第V章。外国資産管理局長ブラッドリー・T・スミス。官報文書2026-22802、2026年11月6日午前8時45分提出。請求コード4810-AL-P。",
+        "extraction_status": "target_notice_text_visual_checked_adjacent_notices_out_of_scope",
+        "translation_status": "partial",
+        "visual_review_complete": true,
+        "missing_parts": [
+          "対象告示以外の共載文書と表は訳文対象外。"
+        ]
+      }
+    ]
+  }
+}
