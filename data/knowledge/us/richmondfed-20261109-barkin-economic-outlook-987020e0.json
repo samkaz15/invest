@@ -1,0 +1,38 @@
+{
+  "id": "richmondfed-20261109-barkin-economic-outlook-987020e0",
+  "source_url": "https://www.richmondfed.org/press_room/speeches/thomas_i_barkin/2026/barkin_speech_20261109",
+  "received_at": "2026-11-09T17:53:39.469052+00:00",
+  "received_at_kind": "web_retrieved",
+  "original_text": "Should the economy remain on its current path, the risk lies on the inflation side of our dual mandate.",
+  "translation_ja": "講演本文を確認した。以下は政策判断の箇所からの訳と講演の要約。\n\n引用の訳。「経済が現在の経路をたどり続けるなら、私たちの二つの責務のうち、リスクはインフレ側にある。」\n\n講演者は企業利益、雇用と資産価値が投資・消費を支えたと説明した。企業からは保険、燃料、輸送、メモリー半導体、金利、関税などの費用上昇が広がり、企業がこれまで吸収した費用も価格に転嫁しようとしているとの声を聞いたという。所得の低い家計は廉価品への切替や修理によって支出を維持する一方、資産を持つ家計の消費は価格への反応が相対的に小さいとした。\n\nAI投資が期待を下回れば投資・資産価格・消費が弱まり、逆に期待を上回って雇用を代替すれば消費が弱まると指摘。こうした場合には最大雇用の責務が重くなり得るため、政策は慎重に進めるべきだとした。総裁個人の見解として述べた。",
+  "content_sha256": "987020e0328bf6fc0473a39c3d9997a518521a1a39f3e17cdf47a4e6f93b6a2e",
+  "source_raw_sha256": "e0a0813539624c610282303a6d11a85b7dea8ff4e5ac44700070c7bc032c7e68",
+  "source": "Federal Reserve Bank of Richmond",
+  "title_en": "The Rooms Driving the Economy",
+  "title_ja": "リッチモンド連銀総裁の企業・家計需要と物価に関する講演",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/New_York",
+  "scheduled_publication_at": "2026-11-09T12:15:00-05:00",
+  "scheduled_publication_source_url": "https://www.richmondfed.org/press_room/media_advisories/2026/20261102_barkin_greer",
+  "source_terms_url": "https://www.richmondfed.org/terms_and_conditions",
+  "topics": [
+    "monetary_policy",
+    "inflation",
+    "labor",
+    "investment_policy"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "講演本文は取得。引用1文の原文・訳と全体の独自要約を保存。残りの全文訳、質疑は未収録。"
+  ],
+  "facts_ja": [
+    "総裁は底堅い需要と広範な費用上昇を指摘し、現在の経路が続く場合はインフレ側のリスクを重視。AI投資・雇用代替に伴う需要リスクにも言及した。"
+  ],
+  "inference_ja": [
+    "講演は個人見解。価格転嫁、需要や雇用の実測、次回FOMCの声明と照合。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "新規講演を補助文書として記録。政策決定は含まない。"
+}
