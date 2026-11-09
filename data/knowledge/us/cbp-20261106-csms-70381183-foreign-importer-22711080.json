@@ -1,0 +1,39 @@
+{
+  "id": "cbp-20261106-csms-70381183-foreign-importer-22711080",
+  "source": "米税関・国境警備局（CBP）",
+  "source_url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/431ee7f",
+  "title_en": "CSMS # 70381183 - Updates to CBP Form 3461 and CBP Form 7501, and their Electronic Equivalents, Pursuant to the Interim Final Rule on Heightened Requirements for Foreign Importers of Record",
+  "title_ja": "CBP、外国の輸入申告責任者向けの申告様式を更新",
+  "published_at": "2026-11-06T12:08:00-05:00",
+  "received_at": "2026-11-09T09:19:30.197296+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "trade_policy",
+    "tariffs"
+  ],
+  "original_text": "CSMS # 70381183 - Updates to CBP Form 3461 and CBP Form 7501, and their Electronic Equivalents, Pursuant to the Interim Final Rule on Heightened Requirements for Foreign Importers of Record\n\nCargo Systems Messaging Service\n\nPursuant to Executive Order 14411, “Strengthening Customs Enforcement”, Section 2, and governing statutes, U.S. Customs and Border Protection (CBP) is establishing new requirements for foreign importers of record (IORs) when making entry, and corresponding responsibilities for licensed customs brokers. See Interim Final Rule (IFR), “Heightened Requirements for Foreign Importers of Record”, 91 FR 69977, dated November 6th, 2026.\n\nThis message is to inform the trade of new data fields for the CBP Form 3461 and CBP Form 7501, and their electronic equivalents.\n\nAs of January 5th, 2027, the IFR requires that, in order to enter or withdraw goods for consumption, a foreign IOR must be Customs Trade Partnership Against Terrorism (CTPAT) validated or designate a CTPAT validated broker to make entry.\n\nThree new data fields have been added to CBP Form 3461 and CBP Form 7501 and their electronic equivalents:\n\n1. “U.S. Importer of Record” Select “Y” when:\n\nthe IOR meets the U.S. IOR criteria; or\n\na broker acts as IOR and the principal on the power of attorney (principal) meets the U.S. IOR criteria.\n\nSelect “N” when the IOR or applicable principal does not meet those criteria.\n\n2. “Acting on behalf of” - If the broker lists themselves as the filer and IOR: Select “Y” when the customs broker lists itself as both the filer and IOR for purposes of filing entry on behalf of the principal; otherwise select “N”.\n\n3. “Principal on Power of Attorney” Required when a non-CTPAT validated broker acts as the IOR on behalf of a principal. The broker must report the principal’s IOR number, such as SSN, EIN, or CBP-Assigned number, linked to the principal’s CBP Form 5106.\n\nCBP has built additional validation checks and may reject entries and entry summaries as of January 5th, 2027, if:\n\nA foreign IOR attempts to file entry without being CTPAT validated or without a CTPAT validated customs broker; or\n\nThe non-CTPAT validated customs broker, when acting as the IOR, does not provide the principal when required.\n\nAs needed, brokers may submit a delayed compliance request no later than January 5th, 2027, see http://www.cbp.gov/trade/strengthening-customs-enforcement/delayed-compliance.\n\nWith publication of the IFR, a pre-recorded webinar providing an overview of the new requirements pursuant to this IFR will be posted on https://www.cbp.gov/trade/strengthening-customs-enforcement.\n\nQuestions regarding this message may be sent to the Office of Trade, Trade Modernization Division. [Contact address withheld.]",
+  "translation_ja": "# 貨物システム・メッセージサービス（CSMS）第70381183号\n## 外国の輸入申告責任者に対する要件を強化する暫定最終規則に基づく、CBP様式3461・7501と対応する電子様式の更新\n\n米税関・国境警備局（CBP）は、大統領令第14411号「税関執行の強化」第2節および関連法令に基づき、輸入申告時の外国の輸入申告責任者（IOR）に新たな要件を設け、認可通関業者に対応する責任を課す。2026年11月6日付の暫定最終規則（IFR）「外国の輸入申告責任者に対する要件の強化」（連邦官報91巻69977頁）を参照されたい。\n\nこの案内は、CBP様式3461・7501および対応する電子様式に設けられた新しいデータ項目を貿易関係者に知らせるものである。\n\n2027年1月5日以降、IFRにより、米国内での消費向けに貨物を輸入申告し、または保税から引き取るためには、外国のIOR自身がテロ対策のための税関・貿易パートナーシップ（CTPAT）の認証を受けているか、CTPAT認証済みの通関業者を指定して申告させなければならない。\n\nCBP様式3461・7501および対応する電子様式には、次の3項目が追加された。\n\n1. 「米国の輸入申告責任者」。「Y」を選ぶのは、IORが米国IORの基準を満たす場合、または通関業者がIORを務め、委任状の委任者が米国IORの基準を満たす場合。IORまたは該当する委任者が基準を満たさないときは「N」を選ぶ。\n2. 「代理して申告」。通関業者が自らを申告提出者かつIORとする場合の欄。委任者に代わる輸入申告のため通関業者が自身を提出者かつIORとして記載する場合は「Y」、それ以外は「N」を選ぶ。\n3. 「委任状の委任者」。CTPAT認証を受けていない通関業者が委任者の代理でIORを務める場合に必須。通関業者は、委任者のCBP様式5106にひも付いた委任者のIOR番号（社会保障番号、雇用主識別番号、CBP割当番号など）を報告する。\n\nCBPは追加の検証機能を設けた。2027年1月5日以降、次の場合は輸入申告や申告明細を受け付けないことがある。\n\n- 外国のIORがCTPAT認証を受けず、かつCTPAT認証済みの通関業者を利用せずに申告を試みる場合。\n- CTPAT認証のない通関業者がIORを務め、必要とされる委任者情報を提出しない場合。\n\n必要に応じ、通関業者は2027年1月5日までに遵守期限の延期を申請できる。[CBPの延期案内](https://www.cbp.gov/trade/strengthening-customs-enforcement/delayed-compliance)\n\nIFRの公表に合わせ、新要件の概要を説明する収録済みのウェビナーを掲載する。[CBPの税関執行強化ページ](https://www.cbp.gov/trade/strengthening-customs-enforcement)\n\nこの案内についての問い合わせは、貿易局の貿易近代化部門へ送付できる。［連絡先アドレスは収録対象外］",
+  "content_sha256": "22711080eddead74dd0aa7d7bec8d403eb8c62df3c04e8d294669bf97d321ebb",
+  "facts_ja": [
+    "11月6日12時08分EST公表。CBP様式3461・7501と電子版に、米国IOR、代理申告、委任者の3項目を追加。",
+    "2027年1月5日発効予定。外国のIORはCTPAT認証を受けるか、認証済み通関業者を指定する。CBPは要件を満たさない申告を拒否できる。",
+    "官報版は通関業者の限定的な遵守延期申請に触れ、2027年5月6日までの全通関業者の完全遵守を見込む。"
+  ],
+  "inference_ja": [
+    "対象貨物で申告の差戻し・通関遅延が続けば輸入コストを押し上げ得る。運用時の件数・所要時間がなければ波及は未判定。"
+  ],
+  "content_scope": "full_substantive_bulletin_excluding_contact_and_subscription_footer",
+  "translation_status": "partial",
+  "missing_parts": [
+    "案内の連絡先アドレスおよび定型の購読フッターを除外。",
+    "参照する連邦官報の31頁と関連ウェビナーは全文訳の対象外で、別途再試行。"
+  ],
+  "notification_eligible": false,
+  "published_time_basis": "公開配布ページの公表時刻。",
+  "source_kind": "official_public_bulletin",
+  "notification_reason": "前回確認済みの11月6日付案内の翻訳保存。",
+  "related_source_urls": [
+    "https://www.govinfo.gov/content/pkg/FR-2026-11-06/html/2026-22735.htm",
+    "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22735.pdf"
+  ]
+}
