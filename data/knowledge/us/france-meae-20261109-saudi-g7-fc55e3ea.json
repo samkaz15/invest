@@ -1,0 +1,29 @@
+{
+  "id": "france-meae-20261109-saudi-g7-fc55e3ea",
+  "source": "Ministère de l’Europe et des Affaires étrangères",
+  "source_url": "https://www.diplomatie.gouv.fr/fr/presse-et-ressources/decouvrir-et-informer/actualites/ministerielle-g7-affaires-etrangeres-entretien-du-ministre-avec-son-altesse-faycal-ben-farhan-al",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "Europe/Paris",
+  "received_at": "2026-11-09T22:33:50.506380+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-09T22:33:50.506380+00:00",
+  "title_en": "G7 Foreign Ministers’ Meeting – discussion with the Saudi Foreign Minister",
+  "title_ja": "G7会合でのフランス・サウジアラビア外相会談",
+  "topics": [
+    "war",
+    "oil"
+  ],
+  "original_text": "Le ministre de l’Europe et des Affaires étrangères, Jean-Noël Barrot, s’est entretenu avec son homologue saoudien, le prince Fayçal Ben Farhan Al Saoud, en marge de la réunion ministérielle du G7+ à Paris, le 9 novembre 2026.\nLes deux ministres ont évoqué la situation au Proche et au Moyen-Orient. Le Ministre a rappelé la condamnation la plus ferme par la France des attaques houthies contre l’Arabie saoudite, et la pleine solidarité de cette dernière dans la défense de son territoire. Le Ministre a réaffirmé l’engagement de la France en faveur d’un règlement diplomatique de la crise iranienne, qui permette de traiter l’ensemble des menaces posées par l’Iran. Il a rappelé l’impératif de restaurer la liberté de navigation dans le détroit d’Ormuz et la disposition de la France à y contribuer avec ses partenaires, dans le cadre d’une mission militaire multinationale indépendante et strictement défensive, lorsque les conditions le permettront.\nLes deux ministres ont également évoqué la situation au Liban et la nécessité d’œuvrer au renforcement de la souveraineté et de la stabilité de l’État libanais. Ils ont réaffirmé leur engagement en faveur de la solution à deux États. Ils ont souligné l’importance de mettre fin au conflit au Soudan.\nLes deux ministres sont convenus de poursuivre leur coordination étroite afin de contribuer à la stabilité régionale et aux efforts diplomatiques en cours.\nEnfin, ils ont réitéré leur volonté d’approfondir le partenariat stratégique franco-saoudien dans tous les domaines, dans la continuité de la visite du Prince héritier et Premier ministre d’Arabie saoudite, Mohammed ben Salman, en France les 23-24 août 2026, et de la visite du Président de la République en Arabie saoudite le 21 octobre 2026.",
+  "translation_ja": "フランスのジャンノエル・バロ欧州・外務相は2026年11月9日、パリで開かれたG7プラス外相会合の際に、サウジアラビアのファイサル・ビン・ファルハーン外相と会談した。\n\n両外相は中東情勢を協議した。バロ外相は、フランスがフーシ派によるサウジアラビアへの攻撃を強く非難し、領土を防衛するサウジアラビアに全面的な連帯を示すと述べた。イランがもたらす脅威全般に対処できる外交的な危機解決をフランスが支持すると再確認した。ホルムズ海峡の航行の自由を回復する必要を指摘し、条件が整えば、独立した厳格に防御目的の多国籍軍事任務の枠組みで、パートナーとともに貢献する用意があると述べた。\n\n両外相はレバノン情勢と、レバノンの主権および安定を強化する必要性も協議した。二国家解決への関与を再確認し、スーダンの紛争終結の重要性を強調した。\n\n両外相は、地域の安定と進行中の外交努力に貢献するため、緊密な連携を続けることで一致した。\n\nまた、2026年8月23〜24日のサウジアラビアのムハンマド皇太子兼首相の訪仏と、10月21日のフランス大統領のサウジアラビア訪問を踏まえ、あらゆる分野で両国の戦略的パートナーシップを深める意向を改めて示した。",
+  "facts_ja": [
+    "仏外務省による会談発表。航行の自由回復と条件付きの防御任務への協力姿勢を示した。配備開始や実通過量の確認とは区別。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "fc55e3ea8242fe309396f595f4db6b7f65216dda0da73156c200c9534e1e2883",
+  "source_raw_sha256": "74fc246bd58b16df9a09394d0a8c7cbcb8330de2a8bd920ebb72e9c0a7ac10b0",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false
+}

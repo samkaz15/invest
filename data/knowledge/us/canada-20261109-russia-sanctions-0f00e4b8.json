@@ -1,0 +1,39 @@
+{
+  "id": "canada-20261109-russia-sanctions-0f00e4b8",
+  "source": "Global Affairs Canada",
+  "source_url": "https://www.canada.ca/en/global-affairs/news/2026/11/minister-anand-announces-additional-sanctions-to-reduce-russias-missile-capabilities-and-raise-economic-costs.html",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "Europe/Paris",
+  "received_at": "2026-11-09T22:34:52.984441+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-09T22:34:52.984441+00:00",
+  "title_en": "Minister Anand announces additional sanctions to reduce Russia’s missile capabilities and raise economic costs",
+  "title_ja": "カナダ政府の対ロシア追加制裁発表",
+  "topics": [
+    "sanctions",
+    "war",
+    "other_us"
+  ],
+  "original_text": "November 9, 2026 - Paris, France - Global Affairs Canada\nThe Honourable Anita Anand, Minister of Foreign Affairs, today announced on the margins of the G7 Foreign Ministers’ Meeting in Paris, France, that Canada is imposing additional sanctions on Russia under the\nSpecial Economic Measures (Russia) Regulations\n.\nCanada is listing an additional 38 entities and 24 individuals to further reduce Russia’s military capabilities by targeting elements of its defence industrial base, including actors involved in ballistic missile technology development and Russia’s cyber activities. The measures are also intended to further raise the economic costs of Russia’s war against Ukraine by targeting financial enablers, including crypto exchanges, that help sustain Russia’s war economy.\nRussia continues to pursue its war of aggression against Ukraine and to rely on sanctions-evasion networks to sustain its military operations. These new sanctions will help constrain Russia’s capacity to strike civilian targets in Ukraine.\nCanada, together with its allies and partners, remains committed to increasing pressure on those who enable and support Russia’s war machine. Canada will continue to stand with Ukraine and work with international partners to advance a just and lasting peace consistent with the principles of the United Nations Charter.\nQuotes\n“Canada is taking action to undermine Putin’s capacity to strike Ukrainian cities with its missiles. We remain steadfast in our support for Ukraine and will continue to impose costs on Russia until it ends its aggression and respects Ukraine’s sovereignty and territorial integrity.”\n- Anita Anand, Minister of Foreign Affairs\nQuick facts\nSince 2014, Canada has imposed sanctions on more than 3,500 individuals and entities and over 700 vessels that are complicit in the violation of Ukraine’s sovereignty and territorial integrity and in gross and systematic human rights violations.\nAssociated links\nSanctions: Russian invasion of Ukraine\nCanadian sanctions related to Russia\nCanada’s response to the Russian invasion of Ukraine",
+  "translation_ja": "2026年11月9日、フランス・パリ。カナダ外務省。\n\nアニタ・アナンド外相は本日、パリで開催されたG7外相会合に合わせ、カナダが対ロシア特別経済措置規則に基づき追加制裁を科すと発表した。\n\nカナダは38団体と24人を新たに指定する。弾道ミサイル技術の開発やロシアのサイバー活動に関わる主体など、防衛産業基盤の一部を対象にし、ロシアの軍事能力をさらに削ぐ。ロシアの戦時経済を支える暗号資産取引所などの資金面の協力者も対象とし、ロシアがウクライナで戦争を続ける経済的負担をさらに引き上げる狙いがある。\n\nロシアはウクライナに対する侵略戦争を続け、軍事作戦の維持に制裁回避網を利用し続けている。今回の制裁は、ウクライナの民間施設などを攻撃するロシアの能力を抑えることに資する。\n\nカナダは同盟国・パートナーとともに、ロシアの戦争遂行を可能にし、支援する主体への圧力を強める方針を維持する。今後もウクライナを支持し、国連憲章の原則に沿った公正で持続的な平和に向けて国際的なパートナーと取り組む。\n\nアニタ・アナンド外相の発言。「カナダは、プーチン大統領がミサイルでウクライナの都市を攻撃する能力を削ぐため行動しています。私たちは引き続きウクライナを支持し、ロシアが侵略をやめ、ウクライナの主権と領土の一体性を尊重するまで、ロシアに代償を課し続けます。」\n\n参考。カナダは2014年以降、ウクライナの主権・領土の一体性の侵害や重大かつ組織的な人権侵害に加担した3,500超の個人・団体と700隻超の船舶に制裁を科してきた。\n\n関連リンク。ウクライナ侵攻をめぐる制裁、カナダの対ロシア制裁、ウクライナ侵攻へのカナダの対応。",
+  "facts_ja": [
+    "カナダ外務省がG7外相会合に合わせ38団体・24人の追加指定を発表。",
+    "弾道ミサイル技術、サイバー活動、暗号資産取引所等の資金支援が対象。効果についてはカナダ政府の見通し。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "0f00e4b8b8b055d64d72cb739b92827d2917317f3d4f195b28e29117b63e43dd",
+  "source_raw_sha256": "09d336e446ca704666e69269de9c683493699821378d268035324c89513e8d18",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": true,
+  "publication_time_note": "パリ現地日付のみ。時刻およびJSTの公表日時は特定不能。",
+  "related_source_urls": [
+    "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia_regulations-reglement_russie5.aspx?lang=eng",
+    "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+  ],
+  "content_scope_note": "政府発表本文、閣僚発言、参考情報。広報連絡先は除外。非公式の日本語訳。",
+  "reuse_terms_url": "https://www.canada.ca/en/transparency/terms.html?lang=en",
+  "summary_ja_40": "カナダ政府は対ロシア制裁の対象に軍需や資金支援に関わる三十八団体と二十四人を追加"
+}

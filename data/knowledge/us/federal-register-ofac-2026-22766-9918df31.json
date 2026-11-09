@@ -1,0 +1,69 @@
+{
+  "id": "federal-register-ofac-2026-22766-9918df31",
+  "source": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+  "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-09/html/2026-22766.htm",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/New_York",
+  "received_at": "2026-11-09T22:33:49.763012+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-09T22:33:49.763012+00:00",
+  "title_en": "Notice of OFAC Sanctions Action (91 FR 70987–70989)",
+  "title_ja": "米官報のOFAC制裁告示 2026-22766（個人識別情報を除く抜粋）",
+  "topics": [
+    "sanctions",
+    "oil"
+  ],
+  "original_text": "DEPARTMENT OF THE TREASURY\n\nOffice of Foreign Assets Control\n\n\nNotice of OFAC Sanctions Action\n\nAGENCY: Office of Foreign Assets Control, Treasury.\n\nACTION: Notice.\n\n-----------------------------------------------------------------------\n\nSUMMARY: The U.S. Department of the Treasury's Office of Foreign Assets \nControl (OFAC) is publishing the names of one or more persons that have \nbeen placed on OFAC's Specially Designated Nationals and Blocked \nPersons List\n\n(SDN List) based on OFAC's determination that one or more applicable \nlegal criteria were satisfied. All property and interests in property \nsubject to U.S. jurisdiction of these persons are blocked, and U.S. \npersons are generally prohibited from engaging in transactions with \nthem.\n\nDATES: This action was issued on November 4, 2026. See Supplementary \nInformation for relevant dates.\n\nElectronic Availability\n\n    The SDN List and additional information concerning OFAC sanctions \nprograms are available on OFAC's website:\nhttps://ofac.treasury.gov\n.\n\nNotice of OFAC Actions\n\n    On November 4, 2026, OFAC determined that the property and \ninterests in property subject to U.S. jurisdiction of the following \npersons are blocked under the relevant sanctions authorities listed \nbelow.\n\n(Authority: E.O. 13902.)\n\nBradley T. Smith,\nDirector, Office of Foreign Assets Control.\n[FR Doc. 2026-22766 Filed 11-6-26; 8:45 am]\nBILLING CODE 4810-AL-P",
+  "translation_ja": "財務省外国資産管理局（OFAC）。制裁措置の告示。OFACが特別指定国民および資産凍結対象者リストに追加した対象を公表する。\n\nOFACは該当する法的要件を一つ以上満たしたと判断した。米国の管轄下にある対象者のすべての財産および財産上の利益は凍結され、米国人による取引は原則禁止される。措置日は2026年11月4日。SDNリストや制裁プログラムの追加情報はOFACのサイトで入手できる。OFACは11月4日、列挙した対象の米国管轄下の財産・財産上の利益を関連権限により凍結すると判断した。\n\n権限は大統領令13902。財務省外国資産管理局長名。官報文書2026-22766は11月6日午前8時45分に提出。請求コード4810-AL-P。",
+  "facts_ja": [
+    "正式掲載日は11月9日、措置日は11月4日。",
+    "11月4日にOFACが公表済みの対象と照合した。11月9日の新たな指定とは数えない。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "9918df316dc002c5bf4a21136952d4e05e9f4945d88bf6c8f1ec62546831ff1b",
+  "source_raw_sha256": "3da7c380ccd71ceca65c6f50ec4c002db41238dc9dbcc9d658717ca5e24b1228",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "物理1頁は別告示と並載されるため該当告示だけ抜粋。物理2〜3頁に含まれる生年月日、旅券番号等の個人識別情報と対象一覧は保存・翻訳対象外。"
+  ],
+  "notification_eligible": false,
+  "action_date": "2026-11-04",
+  "source_pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-09/pdf/2026-22766.pdf",
+  "related_source_urls": [
+    "https://ofac.treasury.gov/recent-actions/20261104"
+  ],
+  "pdf": {
+    "sha256": "379b2a8d2e83022bd3c878e062dff199f7e20b6c65b437a877a0f821330adc5d",
+    "page_count": 3,
+    "ocr_used": false,
+    "visual_review_complete": true,
+    "privacy_review_complete": true,
+    "original_file_saved": false,
+    "original_file_missing_reason": "原本は旅券番号や生年月日等を含むため公開リポジトリへ保存対象外。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "DEPARTMENT OF THE TREASURY\n\nOffice of Foreign Assets Control\n\n\nNotice of OFAC Sanctions Action\n\nAGENCY: Office of Foreign Assets Control, Treasury.\n\nACTION: Notice.\n\n-----------------------------------------------------------------------\n\nSUMMARY: The U.S. Department of the Treasury's Office of Foreign Assets \nControl (OFAC) is publishing the names of one or more persons that have \nbeen placed on OFAC's Specially Designated Nationals and Blocked \nPersons List",
+        "extraction_status": "partial",
+        "translation_ja": "財務省外国資産管理局（OFAC）。制裁措置の告示。OFACが特別指定国民および資産凍結対象者リストに追加した対象を公表する。",
+        "translation_status": "partial"
+      },
+      {
+        "page": 2,
+        "original_text": "(SDN List) based on OFAC's determination that one or more applicable \nlegal criteria were satisfied. All property and interests in property \nsubject to U.S. jurisdiction of these persons are blocked, and U.S. \npersons are generally prohibited from engaging in transactions with \nthem.\n\nDATES: This action was issued on November 4, 2026. See Supplementary \nInformation for relevant dates.\n\nElectronic Availability\n\n    The SDN List and additional information concerning OFAC sanctions \nprograms are available on OFAC's website:\nhttps://ofac.treasury.gov\n.\n\nNotice of OFAC Actions\n\n    On November 4, 2026, OFAC determined that the property and \ninterests in property subject to U.S. jurisdiction of the following \npersons are blocked under the relevant sanctions authorities listed \nbelow.",
+        "extraction_status": "partial",
+        "translation_ja": "OFACは該当する法的要件を一つ以上満たしたと判断した。米国の管轄下にある対象者のすべての財産および財産上の利益は凍結され、米国人による取引は原則禁止される。措置日は2026年11月4日。SDNリストや制裁プログラムの追加情報はOFACのサイトで入手できる。OFACは11月4日、列挙した対象の米国管轄下の財産・財産上の利益を関連権限により凍結すると判断した。",
+        "translation_status": "partial"
+      },
+      {
+        "page": 3,
+        "original_text": "(Authority: E.O. 13902.)\n\nBradley T. Smith,\nDirector, Office of Foreign Assets Control.\n[FR Doc. 2026-22766 Filed 11-6-26; 8:45 am]\nBILLING CODE 4810-AL-P",
+        "extraction_status": "partial",
+        "translation_ja": "権限は大統領令13902。財務省外国資産管理局長名。官報文書2026-22766は11月6日午前8時45分に提出。請求コード4810-AL-P。",
+        "translation_status": "partial"
+      }
+    ]
+  }
+}
