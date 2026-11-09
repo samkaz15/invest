@@ -1,0 +1,32 @@
+{
+  "id": "nyfed-20261109-afternoon-standing-repo-92426ad1",
+  "source_url": "https://markets.newyorkfed.org/api/rp/repo/all/results/last/4.json",
+  "original_text": "{\n  \"operationId\": \"RP 110926 27\",\n  \"auctionStatus\": \"Results\",\n  \"operationDate\": \"2026-11-09\",\n  \"settlementDate\": \"2026-11-09\",\n  \"maturityDate\": \"2026-11-10\",\n  \"operationType\": \"Repo\",\n  \"operationMethod\": \"Full Allotment\",\n  \"settlementType\": \"Same Day\",\n  \"termCalenderDays\": 1,\n  \"term\": \"Overnight\",\n  \"releaseTime\": \"13:30\",\n  \"closeTime\": \"13:45\",\n  \"note\": \"\",\n  \"lastUpdated\": \"2026-11-09 13:45:32\",\n  \"totalAmtSubmitted\": 5000000,\n  \"totalAmtAccepted\": 5000000,\n  \"details\": [\n    {\n      \"securityType\": \"Treasury\",\n      \"amtSubmitted\": 3000000,\n      \"amtAccepted\": 3000000,\n      \"percentOfferingRate\": 4.0\n    },\n    {\n      \"securityType\": \"Agency\",\n      \"amtSubmitted\": 1000000,\n      \"amtAccepted\": 1000000,\n      \"percentOfferingRate\": 4.0\n    },\n    {\n      \"securityType\": \"Mortgage-Backed\",\n      \"amtSubmitted\": 1000000,\n      \"amtAccepted\": 1000000,\n      \"percentOfferingRate\": 4.0\n    }\n  ]\n}",
+  "translation_ja": "オペ識別子RP 110926 27。米国2026年11月9日の翌日物レポ確定結果。固定の提示金利で全額配分、当日決済、11月10日満期、期間1暦日。開始13:30、締切13:45、更新13:45:32（米東部時間として解釈）。応募・落札は各500万ドル。担保別の応募・落札額は米国債300万ドル、政府機関債100万ドル、MBS100万ドルで、いずれも提示金利4.00％。注記欄は空欄。",
+  "content_sha256": "92426ad1b7253010b2610556acc61dbd89dc58c01d31d0d71de1ba8741f3cb9b",
+  "source_raw_sha256": "abd4b07993d8bf469a79ebac29e00b28acdbad688cf6990504145b0f2f22e677",
+  "received_at": "2026-11-09T20:11:34.855190+00:00",
+  "received_at_kind": "web_retrieved",
+  "source": "Federal Reserve Bank of New York",
+  "title_en": "November 9 afternoon overnight repo operation",
+  "title_ja": "NY連銀11月9日午後の翌日物レポ",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/New_York",
+  "source_updated_at": "2026-11-09T13:45:32-05:00",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "facts_ja": [
+    "NY連銀の午後のレポは応募・落札各500万ドル、提示金利4.00％。"
+  ],
+  "inference_ja": [
+    "単一オペの利用額から資金市場全体の逼迫を判断するには、SOFRとレポ取引量の確認が必要。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "content_scope_note": "APIの4件のうち対象オペ1件の全項目。",
+  "notification_eligible": false
+}
