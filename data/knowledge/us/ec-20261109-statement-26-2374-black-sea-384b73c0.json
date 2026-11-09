@@ -1,0 +1,63 @@
+{
+  "id": "ec-20261109-statement-26-2374-black-sea-384b73c0",
+  "source": "欧州委員会",
+  "source_url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/statement_26_2374/STATEMENT_26_2374_EN.pdf",
+  "title_en": "Statement by President von der Leyen following her call with President Zelenskyy and ahead of her visit to the Black Sea Region, in Romania and Bulgaria",
+  "title_ja": "欧州委員長、黒海の航行の自由と食料・エネルギー施設を対象とする停戦を支持",
+  "published_at": null,
+  "received_at": "2026-11-09T11:21:01.661549+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "diplomacy",
+    "energy"
+  ],
+  "original_text": "European Commission - Statement\n\n\n\n\nStatement by President von der Leyen following her call with President\nZelenskyy and ahead of her visit to the Black Sea Region, in Romania and\nBulgaria\nBrussels, 9 November 2026\nToday, I begin a visit to the Black Sea region, where security threats are escalating, attacks are\nincreasing, and innocent lives have been lost.\n\nIn Romania and Bulgaria, I will meet with leaders to discuss the situation on the ground and how\nEurope can strengthen its response.\n\nAhead of the visit, I had a good call with President of Ukraine, Volodymyr Zelenskyy.\n\nFreedom of navigation in the Black Sea must be restored and preserved.\n\nI reiterated my support for his call for a ceasefire covering food and energy infrastructure.\n\nWe also discussed ongoing peace efforts and the talks in Abu Dhabi this week, where the EU will be\npresent alongside our partners.\n\nI look forward to meeting President Zelenskyy in Dublin later this week and discussing the next steps\ntowards peace with fellow leaders.\n                                                                                        STATEMENT/26/2374",
+  "translation_ja": "欧州委員会声明。ゼレンスキー大統領との電話協議後、ルーマニア・ブルガリアの黒海地域訪問を前にしたフォンデアライエン委員長の声明。ブリュッセル、2026年11月9日。STATEMENT/26/2374。\n\n本日、私は黒海地域への訪問を始めます。同地域では安全保障上の脅威が強まり、攻撃が増え、罪のない人々の命が失われています。\n\nルーマニアとブルガリアでは各国首脳と会い、現地の状況と欧州が対応をどう強化できるかを協議します。\n\n訪問に先立ち、ウクライナのウォロディミル・ゼレンスキー大統領と有意義な電話協議を行いました。\n\n黒海の航行の自由を回復し、維持しなければなりません。\n\n食料・エネルギーのインフラを対象とする停戦を求める同大統領の呼びかけを、改めて支持しました。\n\n進行中の和平努力と、今週アブダビで行われる協議についても話し合いました。EUはパートナーとともに同協議に参加します。\n\n今週後半にダブリンでゼレンスキー大統領と会い、他の首脳と和平に向けた次の段階を話し合うことを楽しみにしています。",
+  "content_sha256": "384b73c008999b5030f67b16e62b8b66b55969e0b6e633d04b2548e2db5dc2c3",
+  "facts_ja": [
+    "欧州委員長はEUが今週のアブダビ協議にパートナーとともに参加すると述べた。交渉の参加形態や合意成立は未確認。",
+    "黒海の航行の自由の回復と維持、食料・エネルギーインフラを対象にした停戦への支持を表明。欧州委員会のこの声明には、ウクライナ側が発表した緊急資金の仕組みへの記載がない。"
+  ],
+  "inference_ja": [
+    "停戦の成立と履行が確認できるまで、海上輸送・保険料や穀物供給の改善は仮説。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "missing_parts": [
+    "本文は全文訳。PDFの個別広報連絡欄・QRコード・自動テンプレートのタグは転載対象外。"
+  ],
+  "notification_eligible": false,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "Europe/Brussels",
+  "published_time_basis": "PDFのブリュッセル公表日。時刻の記載なし。",
+  "notification_reason": "同じ電話協議の2つの発表をウクライナ大統領府記録にまとめて通知。",
+  "related_source_urls": [
+    "https://ec.europa.eu/commission/presscorner/detail/en/statement_26_2374",
+    "https://www.president.gov.ua/en/news/yevrosoyuz-zastosuye-specialnij-mehanizm-iz-dopomogi-u-nadzv-107205",
+    "https://commission.europa.eu/legal-notice_en"
+  ],
+  "pdf": {
+    "sha256": "3d3d432ecafa3f4514de761169642643dac14569e03e19e8f3303bd2378b6f89",
+    "original_url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/statement_26_2374/STATEMENT_26_2374_EN.pdf",
+    "page_count": 1,
+    "visual_review_complete": true,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "ocr_used": false,
+    "source_pdf_save_reason": "個別連絡先とリンクを含むためPDF原本の再掲載は保留。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "European Commission - Statement\n\n\n\n\nStatement by President von der Leyen following her call with President\nZelenskyy and ahead of her visit to the Black Sea Region, in Romania and\nBulgaria\nBrussels, 9 November 2026\nToday, I begin a visit to the Black Sea region, where security threats are escalating, attacks are\nincreasing, and innocent lives have been lost.\n\nIn Romania and Bulgaria, I will meet with leaders to discuss the situation on the ground and how\nEurope can strengthen its response.\n\nAhead of the visit, I had a good call with President of Ukraine, Volodymyr Zelenskyy.\n\nFreedom of navigation in the Black Sea must be restored and preserved.\n\nI reiterated my support for his call for a ceasefire covering food and energy infrastructure.\n\nWe also discussed ongoing peace efforts and the talks in Abu Dhabi this week, where the EU will be\npresent alongside our partners.\n\nI look forward to meeting President Zelenskyy in Dublin later this week and discussing the next steps\ntowards peace with fellow leaders.\n                                                                                        STATEMENT/26/2374",
+        "translation_ja": "欧州委員会声明。ゼレンスキー大統領との電話協議後、ルーマニア・ブルガリアの黒海地域訪問を前にしたフォンデアライエン委員長の声明。ブリュッセル、2026年11月9日。STATEMENT/26/2374。\n\n本日、私は黒海地域への訪問を始めます。同地域では安全保障上の脅威が強まり、攻撃が増え、罪のない人々の命が失われています。\n\nルーマニアとブルガリアでは各国首脳と会い、現地の状況と欧州が対応をどう強化できるかを協議します。\n\n訪問に先立ち、ウクライナのウォロディミル・ゼレンスキー大統領と有意義な電話協議を行いました。\n\n黒海の航行の自由を回復し、維持しなければなりません。\n\n食料・エネルギーのインフラを対象とする停戦を求める同大統領の呼びかけを、改めて支持しました。\n\n進行中の和平努力と、今週アブダビで行われる協議についても話し合いました。EUはパートナーとともに同協議に参加します。\n\n今週後半にダブリンでゼレンスキー大統領と会い、他の首脳と和平に向けた次の段階を話し合うことを楽しみにしています。",
+        "extraction_status": "text_extracted_visual_checked",
+        "visual_review_complete": true,
+        "translation_status": "partial",
+        "missing_parts": [
+          "個別連絡欄等は対象外。"
+        ]
+      }
+    ]
+  }
+}

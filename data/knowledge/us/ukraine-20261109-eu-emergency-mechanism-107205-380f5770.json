@@ -1,0 +1,41 @@
+{
+  "id": "ukraine-20261109-eu-emergency-mechanism-107205-380f5770",
+  "source": "ウクライナ大統領府",
+  "source_url": "https://www.president.gov.ua/en/news/yevrosoyuz-zastosuye-specialnij-mehanizm-iz-dopomogi-u-nadzv-107205",
+  "title_en": "The EU to Activate a Special Emergency Mechanism for Ukraine – Volodymyr Zelenskyy Following His Conversation With Ursula von der Leyen",
+  "title_ja": "ウクライナ大統領府、EU緊急支援の方針で合意と発表",
+  "published_at": "2026-11-09T10:18:00+02:00",
+  "received_at": "2026-11-09T11:20:39.310548+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "diplomacy",
+    "energy"
+  ],
+  "original_text": "The leaders agreed that the European Union would activate a special emergency mechanism.",
+  "translation_ja": "ウクライナ大統領府発表の日本語要旨\n\n- ゼレンスキー大統領はフォンデアライエン欧州委員長と電話で協議した。大統領府によると、両者はEUの特別緊急支援の仕組みを使い、ウクライナの差し迫った需要に資金を早く届けられるようにすることで合意し、実務担当者は既に作業に着手している。制度の正式名称、金額、実行日、入金実績の記載はない。\n- 大統領はロシアによる攻撃の影響として、キーウ、ドニプロ、スムイ、ドネツク各州やヘルソンなどで電力・水・暖房の供給が深刻な状況だと説明した。この地域別説明はウクライナ側の発表に帰属する。\n- 両者は冬に備えた追加のエネルギー・人道支援、EU加盟交渉、和平努力を議論した。大統領府はブリュッセルの協議で復興計画と欧州による安全保障に進展があったと説明し、アブダビ会合に向けた立場を調整したとした。三者協議の合意結果は発表されていない。",
+  "content_sha256": "380f5770cca831674a944b731e3c03cf3feeff61ed1c42e10621d0612c2a7be3",
+  "facts_ja": [
+    "大統領府によると、両首脳は緊急支援の仕組みを使うことで合意。金額、制度名、実行日、入金実績は未確認。",
+    "大統領府は電力・水・暖房の供給障害を説明し、アブダビ会合に向け立場を調整したと発表。地域別の被害規模と原因は独立に確認していない。"
+  ],
+  "inference_ja": [
+    "資金が実際に供給され、機器や燃料の納入と復旧が進む場合に、冬季の供給制約を緩和し得る。"
+  ],
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公式サイトのCC BY-NC-ND条件を踏まえ、原文は短い引用と出典、翻訳欄は日本語要旨。全文翻訳は再配布していない。"
+  ],
+  "notification_eligible": true,
+  "published_time_basis": "大統領府サイトの表示時刻をキーウ現地時刻として記録。",
+  "summary_ja_40": "ウクライナがＥＵの緊急支援方針を発表、欧州委員長はＥＵのアブダビ協議参加を表明。",
+  "related_source_urls": [
+    "https://www.president.gov.ua/news/yevrosoyuz-zastosuye-specialnij-mehanizm-iz-dopomogi-u-nadzv-107205",
+    "https://www.iaea.org/newscenter/pressreleases/update-374-iaea-director-general-statement-on-situation-in-ukraine",
+    "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/statement_26_2374/STATEMENT_26_2374_EN.pdf"
+  ],
+  "notification_bundle_document_ids": [
+    "ec-20261109-statement-26-2374-black-sea-384b73c0"
+  ]
+}
