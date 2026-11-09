@@ -1,0 +1,58 @@
+{
+  "id": "aljazeera-sentinel2-20261109-hormuz-9ed2ab2a",
+  "source": "Al Jazeera Arabic Digital Investigations",
+  "source_url": "https://www.aljazeera.net/news/2026/11/9/%d8%b3%d9%81%d9%8a%d9%86%d8%a9-%d9%88%d8%b3%d8%b7-%d8%b3%d8%ad%d8%a7%d8%a8%d8%a9-%d9%85%d9%86-%d8%a7%d9%84%d8%af%d8%ae%d8%a7%d9%86-%d8%b5%d9%88%d8%b1%d8%a9-%d9%81%d8%b6%d8%a7%d8%a6%d9%8a%d8%a9",
+  "title_en": "Satellite image of a smoke plume near the Strait of Hormuz",
+  "title_ja": "ホルムズ海峡付近の煙状の帯を報じる衛星画像",
+  "published_at": "2026-11-08T21:06:45+00:00",
+  "received_at": "2026-11-09T02:26:40.130045+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "shipping"
+  ],
+  "original_text": "ولم يتسنَّ للجزيرة التحقق بشكل مستقل مما إذا كانت السفينة التي تتصاعد منها النيران هي ذاتها المشار إليها في بيان هيئة عمليات التجارة البحرية البريطانية",
+  "translation_ja": "短い原文抜粋の訳。火が上がっている船が英国海事貿易作戦機関の声明にある船と同じか、アルジャジーラは独立確認できなかった。\n\n記事の要約。アルジャジーラの調査部門が、11月8日撮影とするSentinel-2画像を公開した。掲載画像には、ムサンダム半島西岸沖とされる海上の暗い煙状の帯が見える。同局は、画像上の位置がUKMTOの報告に近いと説明する一方、同じ船かは独立確認できず、船名や所有者も不明としている。画像だけで発生原因、実損、被害隻数は判定できない。UKMTO第199号はハサブ北西8海里の火災と退船の通報、第200号は海峡を出るタンカーへの飛翔体の通報であり、同一事案かは確認できない。",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "同日・同海域のSentinel-2B元ラスターを切り出した。媒体掲載図との確実な一致は未確認。",
+    "船名、所有者、警報との対応、火災原因と損害は未確認。"
+  ],
+  "content_sha256": "9ed2ab2a17e639ca9217ea4ba023da7db4f86b17573671177d4525c8cbde1b15",
+  "content_hash_scope": "記事ページの抽出本文。保存原文は短い抜粋のみ。",
+  "notification_eligible": false,
+  "notification_reason": "既報の海事事案を比較する補足画像。新たな公的警報や船の特定は確認できない。",
+  "facts_ja": [
+    "報道機関が掲載した画像を目視し、海上に煙状の帯が写っていることを確認した。媒体による位置の説明とUKMTO警報との同一性は独立確認できていない。"
+  ],
+  "inference_ja": [
+    "画像から火災原因や複数隻の被害は判定できない。"
+  ],
+  "related_source_urls": [
+    "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_40RDQ_20261108_0_L2A",
+    "https://www.ukmto.org/-/media/ukmto/products/20261108-ukmto_warning-200-26.pdf?rev=9def0b87df4a447e997d9af51adb57c7",
+    "https://www.ukmto.org/-/media/ukmto/products/20261108-ukmto_warning_199-26.pdf?rev=ece84fc3ac864575a7a42870071a01db"
+  ],
+  "candidate_scene": {
+    "scene": "S2B_40RDQ_20261108_0_L2A",
+    "acquired_at": "2026-11-08T07:02:09.375000Z",
+    "catalog_retrieved_at": "2026-11-09T02:30:45.086575+00:00",
+    "direct_raster_review": {
+      "scene": "S2B_40RDQ_20261108_0_L2A",
+      "acquired": "2026-11-08T07:02:09.375000Z",
+      "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/40/R/DQ/2026/11/S2B_40RDQ_20261108_0_L2A/TCI.tif",
+      "retrieved_at": "2026-11-09T02:32:47.267796+00:00",
+      "bbox": [
+        56.015,
+        26.155,
+        56.31,
+        26.405
+      ],
+      "confirmed": false,
+      "source_sha256": "b6ef439339af0a84cb757e683abc05b876e0dc95ebe868e441aed84485a1d118",
+      "method": "L2A True Colour Image、WGS84の対象矩形をUTM 40Nへ変換し、1230×1150ピクセルの切り出しを目視。媒体掲載図と対応する煙の起点は特定できなかった。"
+    }
+  }
+}
