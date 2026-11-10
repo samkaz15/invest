@@ -1,0 +1,33 @@
+{
+  "id": "azsos-us-house-unofficial-20261109-242c4e09",
+  "source": "Arizona Secretary of State (Enhanced Voting)",
+  "source_url": "https://app.enhancedvoting.com/cdn/results/Arizona/export-110326GeneralElection.json",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/Phoenix",
+  "received_at": "2026-11-10T01:35:02.703242+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T01:35:02.703242+00:00",
+  "title_en": "Arizona statewide U.S. House unofficial results",
+  "title_ja": "アリゾナ州の未認証速報・連邦下院9区",
+  "topics": [
+    "elections"
+  ],
+  "original_text": "{\"electionDate\": \"2026-11-03\", \"createdAt\": \"2026-11-10T01:34:27.4989585Z\", \"districts\": {\"AZ-1\": [[2, \"Democratic\", 184534], [1, \"Republican\", 160244], [3, \"Libertarian\", 7649], [6, \"\", 182], [7, \"\", 65], [4, \"Independent\", 12], [5, \"Other\", 10]], \"AZ-2\": [[1, \"Republican\", 163286], [2, \"Democratic\", 159762], [3, \"Libertarian\", 6021], [4, \"\", 138], [5, \"\", 62]], \"AZ-3\": [[1, \"Democratic\", 129304], [3, \"No Labels\", 8998], [2, \"Green\", 7713], [6, \"\", 1655], [4, \"Republican\", 1622], [5, \"\", 0]], \"AZ-4\": [[2, \"Democratic\", 157987], [1, \"Republican\", 89331], [3, \"No Labels\", 5944], [6, \"\", 504], [4, \"No Labels\", 53], [5, \"\", 0]], \"AZ-5\": [[1, \"Republican\", 167059], [2, \"Democratic\", 155946], [4, \"\", 564], [3, \"\", 0]], \"AZ-6\": [[2, \"Democratic\", 189188], [1, \"Republican\", 160276], [3, \"Libertarian\", 4490], [4, \"Green\", 3241], [7, \"\", 324], [5, \"Independent\", 84], [6, \"\", 4]], \"AZ-7\": [[2, \"Democratic\", 144628], [1, \"Republican\", 56339], [3, \"\", 285], [4, \"\", 77]], \"AZ-8\": [[1, \"Republican\", 146302], [2, \"Democratic\", 139242], [4, \"\", 597], [3, \"\", 0]], \"AZ-9\": [[1, \"Republican\", 163865], [2, \"Democratic\", 121091], [6, \"\", 320], [4, \"Independent\", 40], [3, \"Independent\", 20], [5, \"\", 0]]}}",
+  "translation_ja": "連邦下院9区のうち4区で得票が更新され、最多得票候補の変更は0区。州認証は未確認。\n\n| 区 | 掲載順 | 党派 | 得票 |\n| --- | --- | --- | ---: |\n| AZ-1 | 2 | 民主党 | 184,534 |\n| AZ-1 | 1 | 共和党 | 160,244 |\n| AZ-1 | 3 | リバタリアン党 | 7,649 |\n| AZ-1 | 6 | 表記なし | 182 |\n| AZ-1 | 7 | 表記なし | 65 |\n| AZ-1 | 4 | 無所属 | 12 |\n| AZ-1 | 5 | その他 | 10 |\n| AZ-2 | 1 | 共和党 | 163,286 |\n| AZ-2 | 2 | 民主党 | 159,762 |\n| AZ-2 | 3 | リバタリアン党 | 6,021 |\n| AZ-2 | 4 | 表記なし | 138 |\n| AZ-2 | 5 | 表記なし | 62 |\n| AZ-3 | 1 | 民主党 | 129,304 |\n| AZ-3 | 3 | ノー・レーベルズ | 8,998 |\n| AZ-3 | 2 | 緑の党 | 7,713 |\n| AZ-3 | 6 | 表記なし | 1,655 |\n| AZ-3 | 4 | 共和党 | 1,622 |\n| AZ-3 | 5 | 表記なし | 0 |\n| AZ-4 | 2 | 民主党 | 157,987 |\n| AZ-4 | 1 | 共和党 | 89,331 |\n| AZ-4 | 3 | ノー・レーベルズ | 5,944 |\n| AZ-4 | 6 | 表記なし | 504 |\n| AZ-4 | 4 | ノー・レーベルズ | 53 |\n| AZ-4 | 5 | 表記なし | 0 |\n| AZ-5 | 1 | 共和党 | 167,059 |\n| AZ-5 | 2 | 民主党 | 155,946 |\n| AZ-5 | 4 | 表記なし | 564 |\n| AZ-5 | 3 | 表記なし | 0 |\n| AZ-6 | 2 | 民主党 | 189,188 |\n| AZ-6 | 1 | 共和党 | 160,276 |\n| AZ-6 | 3 | リバタリアン党 | 4,490 |\n| AZ-6 | 4 | 緑の党 | 3,241 |\n| AZ-6 | 7 | 表記なし | 324 |\n| AZ-6 | 5 | 無所属 | 84 |\n| AZ-6 | 6 | 表記なし | 4 |\n| AZ-7 | 2 | 民主党 | 144,628 |\n| AZ-7 | 1 | 共和党 | 56,339 |\n| AZ-7 | 3 | 表記なし | 285 |\n| AZ-7 | 4 | 表記なし | 77 |\n| AZ-8 | 1 | 共和党 | 146,302 |\n| AZ-8 | 2 | 民主党 | 139,242 |\n| AZ-8 | 4 | 表記なし | 597 |\n| AZ-8 | 3 | 表記なし | 0 |\n| AZ-9 | 1 | 共和党 | 163,865 |\n| AZ-9 | 2 | 民主党 | 121,091 |\n| AZ-9 | 6 | 表記なし | 320 |\n| AZ-9 | 4 | 無所属 | 40 |\n| AZ-9 | 3 | 無所属 | 20 |\n| AZ-9 | 5 | 表記なし | 0 |",
+  "facts_ja": [
+    "連邦下院9区のうち4区で得票が更新され、最多得票候補の変更は0区。州認証は未確認。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "242c4e094f1c2177690960f1c30cc9705e28197deb4d1b9e9918fac0e711b273",
+  "source_raw_sha256": "15c6614d3bb0f8b6b03b43ffd3e1b5ab05fade7fcfc0cd4c12bb8da7864b74d6",
+  "source_http_last_modified": "Tue, 10 Nov 2026 01:34:29 GMT",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "州の認証結果は未取得。郡別・投票区別と他の選挙は範囲外。"
+  ],
+  "notification_eligible": false,
+  "previous_snapshot_id": "azsos-us-house-unofficial-20261109-50a7560a",
+  "source_data_generated_at": "2026-11-10T01:34:27.4989585Z"
+}

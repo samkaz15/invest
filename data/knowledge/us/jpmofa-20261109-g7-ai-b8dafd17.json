@@ -1,0 +1,35 @@
+{
+  "id": "jpmofa-20261109-g7-ai-b8dafd17",
+  "source": "Ministry of Foreign Affairs of Japan",
+  "source_url": "https://www.mofa.go.jp/fp/pc/pageite_000001_00020.html",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "Europe/Paris",
+  "received_at": "2026-11-10T01:37:01.326455+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T01:37:01.326455+00:00",
+  "title_en": "G7 Foreign Ministers’ Meeting, Session 2: Artificial Intelligence",
+  "title_ja": "G7外相会合 セッション2「AI」",
+  "topics": [
+    "investment_policy",
+    "other_us"
+  ],
+  "original_text": "On November 9, commencing at 3:30 p.m. local time (11:30 p.m. on November 9, Japan time) for approximately 60 minutes, Mr. MOTEGI Toshimitsu, Minister for Foreign Affairs of Japan, who is visiting Paris, France, to attend the G7 Foreign Ministers’ Meeting, participated in the session on “Artificial Intelligence.” (The session was attended by the Foreign Ministers of the G7, the High Representative of the European Union for Foreign Affairs and Security Policy, and the Foreign Ministers of the invited countries: Brazil, Republic of Korea, Saudi Arabia, and Egypt.)\n\nIn this session, the G7 Foreign Ministers, together with the invited countries, discussed how to address challenges related to artificial intelligence (AI).\n\nMinister MOTEGI stated that, in order to make effective use of AI going forward, including in the area of security, the most important questions were how to ensure meaningful human involvement in the use of AI and how countries should respond to its malicious use, including for cybercrime, both at the national level and through international coordination. He expressed his intention to continue discussions among like-minded countries, including the G7 members, with a view to building a common understanding. He went on to note that the Hiroshima AI Process, launched at the 2023 G7 Hiroshima Summit, was designed precisely to provide a framework for effectively addressing these ever-evolving AI-related challenges, and Japan would encourage other countries to make use of the framework. He also pointed out that, as the use of AI expands, undersea cables, which carry approximately 99 percent of international data traffic, are becoming increasingly important.\n\nThe Ministers, recognizing the opportunities and potential risks of AI, mentioned the need to ensure the safe and trustworthy development of frontier AI, and stressed the need to strengthen the security and resilience of undersea cables through international cooperation and information sharing.",
+  "translation_ja": "現地時間11月9日午後3時30分（日本時間9日午後11時30分）から約60分間、フランス・パリを訪問中の茂木敏充外務大臣は、G7外相会合の「AI」に関するセッションに参加しました（G7各国外相及びEU上級代表並びに招待国であるブラジル、韓国、サウジアラビア及びエジプトの各外相が参加）。\n\n本セッションにおいて、G7各国外相は、招待国と共に、AIをめぐる諸課題への対応について議論を行いました。\n\n茂木大臣からは、今後、安全保障面を含め、AIを有効に活用していくためには、AIへの意味のある人間の関与をいかに確保するか、また、サイバー犯罪も含めAIが悪用される場合、各国、さらに国際的に協調して、いかに対処するかが最も重要な課題であるとして、G7を含む同志国間で共通の認識を構築するための議論を続けたい旨述べました。その上で、まさに2023年のG7広島サミットで打ち出した「広島AIプロセス」はこうした常に進化するAIの課題に的確に対処するための枠組みであり、日本としてその活用を各国に促していきたい旨述べました。また、AIの活用が進む中で、世界のデータ流通の約99％を担う海底ケーブルの重要性が増していることを指摘しました。\n\n各国外相は、AIがもたらす可能性と潜在的なリスクを認識しつつ、フロンティアAIの安全で信頼できる開発を確保する必要性に言及するとともに、国際的な協力や情報共有を通じ、海底ケーブルの安全性・強靭性を強化していく必要性を強調しました。",
+  "facts_ja": [
+    "日本外務省による会合概要。フロンティアAIの安全性と、協力・情報共有を通じた海底ケーブルの強靭性を議論。米国の投資規制、資金枠、実施日は本文に記載なし。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "b8dafd1774eddbe5dd99bf20b58f4d57b2c0fc37e9157601d71461229cf0dcf7",
+  "source_raw_sha256": "c07cf32e72677df1892703a7eb28c438163e7d9c6c347a2f8b49b419e98d4a69",
+  "source_http_last_modified": "Tue, 10 Nov 2026 00:11:26 GMT",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "event_started_at": "2026-11-09T15:30:00+01:00",
+  "related_source_urls": [
+    "https://www.mofa.go.jp/mofaj/fp/pc/pageit_000001_00029.html"
+  ],
+  "translation_source": "official_japanese_parallel_text"
+}

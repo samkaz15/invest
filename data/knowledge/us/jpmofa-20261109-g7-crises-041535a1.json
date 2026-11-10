@@ -1,0 +1,36 @@
+{
+  "id": "jpmofa-20261109-g7-crises-041535a1",
+  "source": "Ministry of Foreign Affairs of Japan",
+  "source_url": "https://www.mofa.go.jp/fp/pc/pageite_000001_01910.html",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "Europe/Paris",
+  "received_at": "2026-11-10T01:35:21.090494+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T01:35:21.090494+00:00",
+  "title_en": "G7 Foreign Ministers’ Meeting, Session 1: Crises and International Challenges",
+  "title_ja": "G7外相会合 セッション1「危機・国際的課題」",
+  "topics": [
+    "war",
+    "sanctions",
+    "investment_policy"
+  ],
+  "original_text": "On November 9, commencing at 12:15 p.m., local time (8:15 p.m. on November 9, Japan time) for approximately 90 minutes, Mr. MOTEGI Toshimitsu, Minister for Foreign Affairs of Japan, who is visiting Paris, France, to attend the G7 Foreign Ministers’ Meeting, participated in the session on “Crises and International Challenges” (in the form of a working lunch). (The session was attended by the Foreign Ministers of the G7 and the High Representative of the European Union for Foreign Affairs and Security Policy. Mr. Luke Lindberg, Executive Director of the World Food Programme (WFP), also participated in a part of the session.)\n\nIn this session, the G7 Foreign Ministers had a candid exchange of views on regional situations, including those in the Indo-Pacific, Africa, and Latin America, as well as on international challenges such as global governance.\n\nRegarding the situation in the Indo-Pacific, Minister MOTEGI emphasized the need to oppose any unilateral attempts to change the status quo by force or coercion and that the security of the Euro-Atlantic and the Indo-Pacific is indivisible. He also called for coordination in their policies toward North Korea, including on the nuclear and missile issues, cryptocurrency thefts, and the abductions issue. He further expressed his appreciation to the other G7 members for their understanding and cooperation toward the immediate resolution of the abductions issue.\n\nThe G7 Foreign Ministers underscored the importance of a free and open Indo-Pacific based on the rule of law, and reiterated their strong opposition to any unilateral attempts to change the status quo by force or coercion, including in the East China Sea, the South China Sea, and across the Taiwan Strait. They also strongly condemned North Korea’s unlawful nuclear and ballistic missile programs, and reaffirmed their commitment to the complete denuclearization of North Korea in accordance with United Nations Security Council resolutions. They further expressed the need to address together North Korea’s malicious cyber activities, including cryptocurrency thefts. In addition, they once again strongly urged North Korea to immediately resolve the abductions issue.\n\nMinister MOTEGI also raised economic security challenges in the context of the situation in the Indo-Pacific. The G7 Foreign Ministers confirmed that they would work together to address challenges such as non-market policies and practices and economic coercion, including through arbitrary export restrictions.",
+  "translation_ja": "現地時間11月9日午後0時15分（日本時間同日午後8時15分）から約90分間、フランス・パリを訪問中の茂木敏充外務大臣は、G7外相会合の「危機・国際的課題」に関するセッション（ワーキング・ランチ形式）に参加しました（G7各国外相及びEU上級代表が参加。ルーク・リンドバーグ世界食糧計画（WFP）事務局長も一部参加）。\n\n本セッションにおいて、G7各国外相は、インド太平洋、アフリカ、中南米を始めとする地域情勢及びグローバル・ガバナンスといった国際的課題について、率直な意見交換を行いました。\n\n茂木大臣から、インド太平洋情勢について、力又は威圧によるあらゆる一方的な現状変更の試みに反対する必要性、欧州・大西洋とインド太平洋の安全保障は不可分である旨を強調しました。また、核・ミサイル問題、暗号資産窃取、拉致問題を含む北朝鮮への対応についての連携を呼びかけました。さらに、拉致問題の即時解決に向けたG7各国の理解と協力への謝意を表明しました。\n\nG7各国外相は、法の支配に基づく自由で開かれたインド太平洋の重要性を強調し、東シナ海、南シナ海及び台湾海峡におけるものを含む、力又は威圧によるあらゆる一方的な現状変更の試みに強く反対することを改めて表明しました。また、北朝鮮の不法な核・弾道ミサイル計画を強く非難し、国連安保理決議に従った北朝鮮の完全な非核化へのコミットメントを確認しました。さらに、北朝鮮による暗号資産窃取を含む悪意あるサイバー活動に共に対処する必要性を表明しました。加えて、G7各国外相は、北朝鮮に、拉致問題を即時に解決するよう改めて強く求めました。\n\nまた、茂木大臣からインド太平洋情勢の文脈で経済安全保障上の課題についても提起し、G7各国外相は、非市場的政策・慣行、恣意的な輸出規制といった経済的威圧等に、共に対応していくことを確認しました。",
+  "facts_ja": [
+    "日本外務省による会合概要。恣意的な輸出規制を含む経済的威圧への共同対応を確認。本文に具体的な規制品目、法的措置、実施日は記載なし。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "041535a117708c587ad7af01c14f263ea9c3911a36adf010d8012ed9a3f7d3f6",
+  "source_raw_sha256": "0649420a4562a04c24470c226485a69aed81fd4fa441a6c4804aab92d5615fdd",
+  "source_http_last_modified": "Mon, 09 Nov 2026 23:53:30 GMT",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "event_started_at": "2026-11-09T12:15:00+01:00",
+  "related_source_urls": [
+    "https://www.mofa.go.jp/mofaj/fp/pc/pageit_000001_00028.html"
+  ],
+  "translation_source": "official_japanese_parallel_text"
+}
