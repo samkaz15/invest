@@ -1,0 +1,31 @@
+{
+  "id": "nyfed-20261110-morning-repo-dba36aa3",
+  "source_url": "https://markets.newyorkfed.org/api/rp/repo/all/results/last/4.json",
+  "title_en": "New York Fed standing repo operation results – November 10, 2026",
+  "title_ja": "NY連銀11月10日朝のレポ結果",
+  "original_text": "{\n  \"operationId\": \"RP 111026 25\",\n  \"auctionStatus\": \"Results\",\n  \"operationDate\": \"2026-11-10\",\n  \"settlementDate\": \"2026-11-10\",\n  \"maturityDate\": \"2026-11-12\",\n  \"operationType\": \"Repo\",\n  \"operationMethod\": \"Full Allotment\",\n  \"settlementType\": \"Same Day\",\n  \"termCalenderDays\": 2,\n  \"term\": \"Overnight\",\n  \"releaseTime\": \"08:15\",\n  \"closeTime\": \"08:30\",\n  \"note\": \"\",\n  \"lastUpdated\": \"2026-11-10 08:30:26\",\n  \"totalAmtSubmitted\": 5000000,\n  \"totalAmtAccepted\": 5000000,\n  \"details\": [\n    {\n      \"securityType\": \"Treasury\",\n      \"amtSubmitted\": 2000000,\n      \"amtAccepted\": 2000000,\n      \"percentOfferingRate\": 4.0\n    },\n    {\n      \"securityType\": \"Agency\",\n      \"amtSubmitted\": 1000000,\n      \"amtAccepted\": 1000000,\n      \"percentOfferingRate\": 4.0\n    },\n    {\n      \"securityType\": \"Mortgage-Backed\",\n      \"amtSubmitted\": 2000000,\n      \"amtAccepted\": 2000000,\n      \"percentOfferingRate\": 4.0\n    }\n  ]\n}",
+  "translation_ja": "11月10日のNY連銀レポ。受付は米東部08:15〜08:30、最終更新は08:30:26。応札・落札とも500万ドル。内訳は米国債200万ドル、政府機関債100万ドル、MBS200万ドル。提示金利は全区分4.00％。取引日・決済日11月10日、満期11月12日、期間欄は翌日物、暦日数2日。全額割当。",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "received_at": "2026-11-10T14:15:30.085152+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T14:15:30.085152+00:00",
+  "topics": [
+    "treasuries",
+    "monetary_policy",
+    "liquidity"
+  ],
+  "facts_ja": [
+    "11月10日朝のNY連銀レポは落札500万ドル。米国債担保200万ドル、政府機関債100万ドル、MBS200万ドル。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "dba36aa34d250c747629204f4a33ff0e9afa23ab7246c09acf734c507345af6d",
+  "source_body_sha256": "dba36aa34d250c747629204f4a33ff0e9afa23ab7246c09acf734c507345af6d",
+  "content_hash_scope": "保存した一次資料の対象本文。原本PDFはpdf.sha256。",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "published_at_basis": "NY連銀APIの結果の最終更新時刻。初回公表の秒は未確認。",
+  "source_result_updated_at": "2026-11-10T08:30:26-05:00"
+}
