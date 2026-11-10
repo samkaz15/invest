@@ -1,0 +1,32 @@
+{
+  "id": "cftc-20261109-unregistered-foreign-brokers-release-9324-901a4689",
+  "source": "U.S. Commodity Futures Trading Commission",
+  "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9324-26",
+  "source_raw_sha256": "71ca6d7119132054d1641af18a394a8bea5c1f12f4bad63eb671cd17d33f6727",
+  "source_http_last_modified": "Mon, 09 Nov 2026 20:30:32 GMT",
+  "published_at": null,
+  "publication_date": "2026-11-09",
+  "publication_timezone": "America/New_York",
+  "received_at": "2026-11-10T03:48:55.594560+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T03:48:55.594560+00:00",
+  "title_en": "CFTC Sanctions Eight Individuals for Acting as Unregistered Associated Persons of Foreign Introducing Brokers",
+  "title_ja": "CFTCの外国紹介業者に関する登録違反の和解命令8件",
+  "topics": [
+    "investment_policy",
+    "other_us"
+  ],
+  "original_text": "WASHINGTON\n— The Commodity Futures Trading Commission today announced eight orders filing and settling charges against [names withheld] for acting as unregistered associated persons of unregistered foreign introducing brokers.\nAccording to the orders, the introducing brokers engaged in the solicitation of orders for off-exchange leveraged or margined retail foreign currency and retail commodities transactions with U.S. customers who were not eligible contract participants. The respondents solicited those customers without registering as associated persons of the introducing brokers, as required.\nUnder the orders, the respondents must cease and desist from engaging in their illegal conduct. They also are barred for two years from registering with the Commission in any capacity or acting as a principal, agent, or employee of any CFTC registrant. Each order also recognizes the penalty the respondent owes in a related Securities and Exchange Commission proceeding.\nThese orders relate to a prior Commission order sanctioning Netrios LP Ltd. and Red Acre Ltd. for facilitating illegal off-exchange commodity transactions with U.S. customers. [See CFTC Press Release No.\n9263-26\n]\nThe SEC has filed and settled charges against the respondents based on the same underlying conduct.\nThe CFTC thanks the SEC for its assistance.",
+  "translation_ja": "米商品先物取引委員会（CFTC）は、未登録の外国紹介業者の未登録の関係者として活動した8人への申立てと和解命令8件を公表した。個人名は省略。\n\n命令によると、紹介業者は適格契約参加者に該当しない米国顧客を対象に、取引所外のレバレッジまたは証拠金を伴う個人向け外国為替取引と商品取引の注文を勧誘した。対象者は、必要な紹介業者の関係者としての登録をせずに顧客を勧誘した。\n\n各命令は違反行為の停止を求め、2年間、CFTCへの登録またはCFTC登録業者の責任者、代理人もしくは従業員となることを禁止する。各命令は関連する米証券取引委員会（SEC）の手続で対象者が負う制裁金も認めている。\n\nこれらの命令は、米国顧客との違法な取引所外商品取引を仲介したとしてNetrios LP Ltd.およびRed Acre Ltd.に制裁を科した従前のCFTC命令に関連する（CFTC発表9263-26参照）。SECも同一の行為に基づく申立てと和解を行った。CFTCはSECの協力に謝意を表明した。",
+  "facts_ja": [
+    "11月9日付発表は未登録勧誘への和解命令8件。対象者への2年間の登録等の制限を含む。個別執行で、政策金利・国債需給・一般的な取引規則への直接の変更は確認できない。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "901a46892b9c8a73ed234cefa9fc45ce6f9111bd7cfaffa7188d440b3b2e1528",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "発表の個人名は非収録。個別行政命令は発表本文にリンクされるが、個人識別情報を含むため保存対象外。"
+  ],
+  "notification_eligible": false
+}

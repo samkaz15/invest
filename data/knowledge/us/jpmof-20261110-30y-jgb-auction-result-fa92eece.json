@@ -1,0 +1,37 @@
+{
+  "id": "jpmof-20261110-30y-jgb-auction-result-fa92eece",
+  "source": "Ministry of Finance, Japan",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261110.htm",
+  "source_raw_sha256": "bb13a68faa2947fab4924bbebdbc984fdda1b7c3b392c104469d77ec52cf6f64",
+  "source_http_last_modified": "Tue, 10 Nov 2026 03:23:42 GMT",
+  "published_at": "2026-11-10T12:35:00+09:00",
+  "publication_date": "2026-11-10",
+  "publication_timezone": "Asia/Tokyo",
+  "received_at": "2026-11-10T03:48:54.156104+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T03:48:54.156104+00:00",
+  "title_en": "Japan 30-Year Government Bond Auction Result, Issue No. 92",
+  "title_ja": "日本の30年国債第92回の入札結果",
+  "topics": [
+    "other_us",
+    "investment_policy"
+  ],
+  "original_text": "本日、30年利付国債（第92回）の価格競争入札及び国債市場特別参加者・第Ⅰ非価格競争入札について、下記のように募入の決定を行いました。\n記\n1．\n名称及び記号\n利付国庫債券（30年）（第92回）\n2．\n発行根拠法律\n及びその条項\n財政法（昭和22年法律第34号）第4条第1項及び特別会計に関する法律（平成19年法律第23号）第47条第1項\n3．\n表面利率\n年4.2パーセント\n4．\n発行日\n令和8年11月11日\n5．\n償還期限\n令和38年9月20日\n6．\n価格競争入札について\n(1)応募額\n1兆5,126億円\n(2)募入決定額\n4,507億円\n(3)募入最低価格\n104円55銭\n（募入最高利回り）\n（3.871％）\n(4)募入最低価格に\nおける案分比率\n15.1785％\n(5)募入平均価格\n104円90銭\n（募入平均利回り）\n（3.847％）\n7．\n国債市場特別参加者・第Ⅰ非価格競争入札について\n(1)募入決定額\n1,488億円\n(2)発行価格\n104円90銭\n（3.847％）\n本日午後2時より、上記価格競争入札の結果に基づき、発行価格を募入平均価格とし、国債市場特別参加者を対象として、第Ⅱ非価格競争入札を実施します。なお、発行根拠法律は特別会計に関する法律（平成19年法律第23号）第47条第1項です。",
+  "translation_ja": "本日、30年利付国債（第92回）の価格競争入札及び国債市場特別参加者・第Ⅰ非価格競争入札について、下記のように募入の決定を行いました。\n記\n1．\n名称及び記号\n利付国庫債券（30年）（第92回）\n2．\n発行根拠法律\n及びその条項\n財政法（昭和22年法律第34号）第4条第1項及び特別会計に関する法律（平成19年法律第23号）第47条第1項\n3．\n表面利率\n年4.2パーセント\n4．\n発行日\n令和8年11月11日\n5．\n償還期限\n令和38年9月20日\n6．\n価格競争入札について\n(1)応募額\n1兆5,126億円\n(2)募入決定額\n4,507億円\n(3)募入最低価格\n104円55銭\n（募入最高利回り）\n（3.871％）\n(4)募入最低価格に\nおける案分比率\n15.1785％\n(5)募入平均価格\n104円90銭\n（募入平均利回り）\n（3.847％）\n7．\n国債市場特別参加者・第Ⅰ非価格競争入札について\n(1)募入決定額\n1,488億円\n(2)発行価格\n104円90銭\n（3.847％）\n本日午後2時より、上記価格競争入札の結果に基づき、発行価格を募入平均価格とし、国債市場特別参加者を対象として、第Ⅱ非価格競争入札を実施します。なお、発行根拠法律は特別会計に関する法律（平成19年法律第23号）第47条第1項です。",
+  "facts_ja": [
+    "30年国債第92回の最高落札利回り3.871％、平均3.847％。競争入札の応募1兆5,126億円、募入4,507億円。10月8日の同じ回号の最高4.121％、平均4.109％から低下。発行は11月11日。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "fa92eecebf05931ba60daf0c1e6afe25d8623dab4ff6c76a4805b9a093160ecd",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "publication_time_basis": "財務省の週間公表予定12:35と結果文書の日付。HTTP更新時刻とは区別。",
+  "translation_source": "original_japanese",
+  "reuse_license": "PDL1.0 https://www.mof.go.jp/about_mof/notice/index.html",
+  "related_source_urls": [
+    "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261008.htm",
+    "https://www.mof.go.jp/public_relations/weekly_schedule/"
+  ]
+}

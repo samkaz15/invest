@@ -1,0 +1,33 @@
+{
+  "id": "cftc-20261105-trust-daily-settlement-release-9322-9bb364a9",
+  "source": "U.S. Commodity Futures Trading Commission",
+  "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9322-26",
+  "source_raw_sha256": "815e63d23965cd3fae799fb6eb17292224066022bbdc79322bf67ef1c17a7afa",
+  "source_http_last_modified": "Mon, 09 Nov 2026 20:30:50 GMT",
+  "published_at": null,
+  "publication_date": "2026-11-05",
+  "publication_timezone": "America/New_York",
+  "received_at": "2026-11-10T03:48:55.586831+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T03:48:55.586831+00:00",
+  "title_en": "CFTC Staff Addresses Use of Trust Companies for Daily Settlements",
+  "title_ja": "CFTCスタッフの日次決済への信託会社利用に関する発表",
+  "topics": [
+    "investment_policy",
+    "other_us"
+  ],
+  "original_text": "WASHINGTON\n— The Commodity Futures Trading Commission’s Division of Clearing and Risk today issued a no-action letter addressing whether derivatives clearing organizations may use trust companies to conduct daily settlements with clearing members.\nAccording to the letter, a derivatives clearing organization may use a trust company for daily settlements if it treats the trust company as it would a settlement bank under applicable CFTC requirements.",
+  "translation_ja": "米商品先物取引委員会（CFTC）の清算・リスク部門は本日、デリバティブ清算機関が清算会員との日次決済に信託会社を利用できるかについて、ノーアクション・レターを発出した。同書簡によれば、適用されるCFTC要件上、デリバティブ清算機関が信託会社を決済銀行と同様に扱う場合、日次決済に信託会社を利用できる。",
+  "facts_ja": [
+    "CFTCスタッフによる不執行見解の発表。適用要件上、信託会社を決済銀行と同様に扱う条件。委員会の規則改正とは区別。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "9bb364a94df64c51237b7f2224999a7cc26dcda176d9b17610a79db7737b3571",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "related_source_urls": [
+    "https://www.cftc.gov/csl/26-30/download"
+  ]
+}
