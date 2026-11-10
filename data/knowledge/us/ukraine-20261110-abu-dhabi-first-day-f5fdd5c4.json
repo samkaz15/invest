@@ -1,0 +1,45 @@
+{
+  "id": "ukraine-20261110-abu-dhabi-first-day-f5fdd5c4",
+  "source_url": "https://x.com/ZelenskyyUa/status/2120172358426042607",
+  "title_en": "Volodymyr Zelenskyy’s readout on the first day of the Abu Dhabi meetings",
+  "title_ja": "アブダビ三者協議初日に関するウクライナ大統領の公式投稿",
+  "published_at": "2026-11-10T15:10:55+00:00",
+  "published_at_basis": "X公式投稿HTMLのarticle:published_time（UTC）。",
+  "received_at": "2026-11-10T20:26:42.822474+00:00",
+  "retrieved_at": "2026-11-10T20:26:42.822474+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "diplomacy",
+    "energy_security"
+  ],
+  "original_text": "They had time to discuss the need and possible parameters for humanitarian steps. The release of prisoners is a priority.",
+  "translation_ja": "## 一次資料の抜粋訳\n\n人道措置の必要性と、取り得る措置の枠組みを協議できた。捕虜の解放が優先事項だ。\n\n## 全文を確認したうえでの事実要約\n\nゼレンスキー大統領は、アブダビ協議初日について交渉団から報告を受けたと公表した。欧米側との会合の後、ウクライナ、米国、ロシアの代表が協議した。大統領は三者の協議を建設的で実質的と評価し、捕虜解放を優先する人道措置、長期に機能する安全の保証、戦争再発を防ぐ措置、緊張緩和を議題に挙げた。翌日の三者協議と米欧代表との対話に向けて交渉団に指示し、米国と開催地のUAEに謝意を示した。",
+  "facts_ja": [
+    "ウクライナ大統領は初日の報告を受け、捕虜解放を優先する人道措置、長期に機能する安全の保証、再発防止、緊張緩和が議題だったと公表。",
+    "ウクライナ側による会合の評価・議題の説明。共同合意文書、停戦の発効、捕虜解放の実施、戦況の変化は確認できていない。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "a87645692c754d62c9389e608efaa1ea6557aba6c11aa9c03977d3061e339799",
+  "source_body_sha256": "f5fdd5c41c8e5c2e90006284e1ba1dbb0a92fc47f3b3bed7b960f14afd1a70de",
+  "content_hash_scope": "content_sha256は保存した英語抜粋、source_body_sha256は英語公式投稿の全本文（空白正規化）。",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "X英語本文とTelegramウクライナ語本文は全3段落を確認。再利用条件を確認できないため公開記録は短い抜粋・訳と事実要約。共同文書、相手国の全文発表、停戦・履行は未取得。"
+  ],
+  "source_aliases": [
+    {
+      "url": "https://telegram.me/V_Zelenskiy_official/21751",
+      "published_at": "2026-11-10T15:11:09+00:00",
+      "retrieved_at": "2026-11-10T20:26:41.686577+00:00",
+      "published_at_basis": "Telegramのtime要素のUTC値。"
+    }
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "ウクライナ大統領が三者協議初日に捕虜解放や長期の安全の保証を議論したと公式に発表",
+  "related_document_ids": [
+    "ukraine-20261110-stubb-trilateral-start-7d23c309",
+    "eu-council-20261110-abu-dhabi-statement-614a3644"
+  ]
+}
