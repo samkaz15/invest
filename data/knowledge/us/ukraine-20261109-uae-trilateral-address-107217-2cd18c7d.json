@@ -1,0 +1,36 @@
+{
+  "id": "ukraine-20261109-uae-trilateral-address-107217-2cd18c7d",
+  "source": "Office of the President of Ukraine",
+  "source_url": "https://www.president.gov.ua/en/news/nasha-peregovorna-grupa-vzhe-v-emiratah-zavtra-persha-zustri-107217",
+  "published_at": "2026-11-09T22:17:00+02:00",
+  "publication_date": "2026-11-09",
+  "publication_timezone": "Europe/Kyiv",
+  "received_at": "2026-11-10T08:27:55.164324+00:00",
+  "retrieved_at": "2026-11-10T08:27:55.164324+00:00",
+  "received_at_kind": "web_retrieved",
+  "source_raw_sha256": "0911327c2e8b0237b6151dfc49129738dd898033993da2df160586ab09ff3cbb",
+  "source_body_sha256": "edbfb33aa609b430a7303df06f552d7a1b9be659542e4c2976a0277e76febf8e",
+  "title_en": "Our Negotiating Team Is Already in the UAE. The First Trilateral Meeting Is Tomorrow – Address by the President",
+  "title_ja": "ウクライナ大統領演説 UAEに交渉団到着、三者会合を予定",
+  "topics": [
+    "war",
+    "diplomacy",
+    "energy"
+  ],
+  "original_text": "Our negotiating team is already in the United Arab Emirates. The first meeting is tomorrow.",
+  "content_sha256": "2cd18c7d541634b4ba70533e8f87b14486fe4788be2ffe5c9ef1afcc4c14e4ff",
+  "translation_ja": "日本語要旨（発表者の説明）\n\n- 交渉団がUAEに到着し、翌日にウクライナ・米国・ロシアの初会合を開く予定。欧州のパートナーとは別枠で協議する。ウクライナ側は緊張緩和策を提案し、公正な終戦に向けた首脳級会合の手順、安全の保証、復興資金を重視する。\n- 大統領は橋・電力網の対策を軍・政府・地方当局と議論したと説明し、EUの追加支援の条件をウクライナ首相と欧州委員会が詰めていると述べた。供給障害の規模、戦況・損害に関する発言、合意や資金実行は独立に確認していない。\n- インドの食料安全保障提案、EU加盟交渉、議会での欧州統合・資金調達・汚職対策およびOECD加盟に関する法案にも触れた。",
+  "facts_ja": [
+    "ウクライナ大統領は11月9日22:17キーウ時間の演説で、交渉団がUAEに到着済みと発表した。11月10日に米国・ウクライナ・ロシアの初回三者会合を予定し、欧州側とは別枠で協議すると説明。",
+    "ウクライナ側は緊張緩和措置を提案し、首脳級三者会合の調整を求める方針。合意、実施、独立に検証された戦況は未確認。"
+  ],
+  "inference_ja": [],
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "本文は取得。CC BY-NC-NDのため原文は短い引用、訳欄は独立した要旨。演説映像の音声は未照合。"
+  ],
+  "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "notification_eligible": false,
+  "notification_reason": "既報の開催予定に対する当事者側の到着確認。停戦・制裁・輸送条件の新決定は未確認。"
+}
