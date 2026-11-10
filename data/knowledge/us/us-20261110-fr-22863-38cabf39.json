@@ -1,0 +1,72 @@
+{
+  "id": "us-20261110-fr-22863-38cabf39",
+  "source_url": "https://www.federalregister.gov/d/2026-22863",
+  "title_en": "Designated Contract Markets Impartial Access Requirements",
+  "title_ja": "指定契約市場の公平なアクセスに関するCFTC最終解釈の正式掲載",
+  "original_text": "DATES:\nEffective November 10, 2026.",
+  "translation_ja": "日付。2026年11月10日発効。",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "received_at": "2026-11-10T12:31:12.966762+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T12:31:12.966762+00:00",
+  "topics": [
+    "investment_policy",
+    "trade"
+  ],
+  "facts_ja": [
+    "既収録のCFTC最終解釈指針が正式官報に掲載され、発効日は2026年11月10日。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "38cabf39cd3a98a69f7046a4eb93a0fc1775f458c49d82bc9197a77c95f79a02",
+  "source_body_sha256": "38cabf39cd3a98a69f7046a4eb93a0fc1775f458c49d82bc9197a77c95f79a02",
+  "content_hash_scope": "保存した一次資料の対象本文。原本PDFはpdf.sha256。",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "正式官報PDFを取得しページ抽出。下記の該当政策文のみ原文・訳を収録。他頁や未収録箇所の全訳・目視照合は未了。"
+  ],
+  "notification_eligible": false,
+  "published_at_precision": "date_only",
+  "supersedes": "cftc-20261109-dcm-impartial-access-22863-cac44b03",
+  "pdf": {
+    "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-10/pdf/2026-22863.pdf",
+    "sha256": "fa81b88f2a146575e06492ede9a917feb89a80de8090f508678fcf8fcc829c12",
+    "page_count": 4,
+    "ocr_used": false,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "source_pdf_save_reason": "PDF全頁・連絡先とメタデータの再配布前確認は未了。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "DATES:\nEffective November 10, 2026.",
+        "translation_ja": "日付。2026年11月10日発効。",
+        "extraction_status": "html_excerpt_linked_to_pdf_page",
+        "translation_status": "partial"
+      },
+      {
+        "page": 2,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_archived",
+        "translation_status": "not_translated"
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_archived",
+        "translation_status": "not_translated"
+      },
+      {
+        "page": 4,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_archived",
+        "translation_status": "not_translated"
+      }
+    ]
+  }
+}

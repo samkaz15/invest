@@ -1,0 +1,100 @@
+{
+  "id": "us-20261110-fr-22962-6a5c88c1",
+  "source_url": "https://www.federalregister.gov/documents/2026/11/10/2026-22962/imposition-of-special-measure-prohibiting-the-transmittal-of-funds-involving-mexc-global",
+  "title_en": "Imposition of Special Measure Prohibiting the Transmittal of Funds Involving MEXC Global",
+  "title_ja": "MEXC Global関連の資金移動を禁止する特別措置の正式掲載",
+  "original_text": "B. Prohibition on Transmittals of Funds Involving MEXC Global\nA covered financial institution is prohibited from engaging in any transmittal of funds from or to MEXC Global.\nC. Order Period\nThe terms of this order are effective December 10, 2026, with no cessation date.",
+  "translation_ja": "B．MEXC Globalに関係する資金移動の禁止。対象金融機関がMEXC Globalから、またはMEXC Globalへの資金移動に関与することを禁止する。C．命令期間。2026年12月10日発効。終了日は定めない。",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "received_at": "2026-11-10T12:31:43.406562+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T12:31:43.406562+00:00",
+  "topics": [
+    "sanctions",
+    "payments"
+  ],
+  "facts_ja": [
+    "先行FinCEN命令の掲載30日後という条件を正式官報で2026年12月10日と確認。終了日なし。対象金融機関への命令。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "6a5c88c101704460c9fc2423f3a73e1103f381e7796936e414cbbf4ccb606b0d",
+  "source_body_sha256": "6a5c88c101704460c9fc2423f3a73e1103f381e7796936e414cbbf4ccb606b0d",
+  "content_hash_scope": "保存した一次資料の対象本文。原本PDFはpdf.sha256。",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "正式官報PDFを取得しページ抽出。下記の該当政策文のみ原文・訳を収録。他頁や未収録箇所の全訳・目視照合は未了。"
+  ],
+  "notification_eligible": false,
+  "published_at_precision": "date_only",
+  "supersedes": "fincen-mexc-section-9714-b2fabc71",
+  "pdf": {
+    "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-10/pdf/2026-22962.pdf",
+    "sha256": "f749cc1e613d908db3a7e36816273dbbeb65b93bf9a79a45840aadf6325ed9d2",
+    "page_count": 8,
+    "ocr_used": false,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "source_pdf_save_reason": "PDF全頁・連絡先とメタデータの再配布前確認は未了。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_archived",
+        "translation_status": "not_translated"
+      },
+      {
+        "page": 2,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_archived",
+        "translation_status": "not_translated"
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_archived",
+        "translation_status": "not_translated"
+      },
+      {
+        "page": 4,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_archived",
+        "translation_status": "not_translated"
+      },
+      {
+        "page": 5,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_archived",
+        "translation_status": "not_translated"
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_archived",
+        "translation_status": "not_translated"
+      },
+      {
+        "page": 7,
+        "original_text": "B. Prohibition on Transmittals of Funds Involving MEXC Global\nA covered financial institution is prohibited from engaging in any transmittal of funds from or to MEXC Global.\nC. Order Period\nThe terms of this order are effective December 10, 2026, with no cessation date.",
+        "translation_ja": "B．MEXC Globalに関係する資金移動の禁止。対象金融機関がMEXC Globalから、またはMEXC Globalへの資金移動に関与することを禁止する。C．命令期間。2026年12月10日発効。終了日は定めない。",
+        "extraction_status": "html_excerpt_linked_to_pdf_page",
+        "translation_status": "partial"
+      },
+      {
+        "page": 8,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_archived",
+        "translation_status": "not_translated"
+      }
+    ]
+  }
+}

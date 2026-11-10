@@ -1,0 +1,58 @@
+{
+  "id": "us-20261110-fr-22925-bbc8064e",
+  "source_url": "https://www.federalregister.gov/documents/2026/11/10/2026-22925/notice-of-product-exclusion-extensions-chinas-acts-policies-and-practices-related-to-technology",
+  "title_en": "Notice of Product Exclusion Extensions: China's Acts, Policies, and Practices Related to Technology Transfer, Intellectual Property, and Innovation",
+  "title_ja": "対中301条の178件の適用除外延長の正式掲載",
+  "original_text": "The modifications announced in the annexes to this notice further extend the exclusions through 11:59 p.m. eastern time on January 9, 2027.",
+  "translation_ja": "本通知の附属書で公表する変更により、適用除外を米東部時間2027年1月9日午後11時59分まで延長する。",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "received_at": "2026-11-10T12:31:47.783741+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T12:31:47.783741+00:00",
+  "topics": [
+    "investment_policy",
+    "trade"
+  ],
+  "facts_ja": [
+    "先行公表済みの178件の適用除外延長を正式官報で再確認。附属書に適用時刻・品目区分。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "bbc8064ebe2a2f9965aea2159c4890dc6d9edbc22dd371483092b9e14ce2a213",
+  "source_body_sha256": "bbc8064ebe2a2f9965aea2159c4890dc6d9edbc22dd371483092b9e14ce2a213",
+  "content_hash_scope": "保存した一次資料の対象本文。原本PDFはpdf.sha256。",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "正式官報PDFを取得しページ抽出。下記の該当政策文のみ原文・訳を収録。他頁や未収録箇所の全訳・目視照合は未了。"
+  ],
+  "notification_eligible": false,
+  "published_at_precision": "date_only",
+  "supersedes": "ustr-20261106-section301-178-exclusions-37c76503",
+  "pdf": {
+    "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-10/pdf/2026-22925.pdf",
+    "sha256": "9796f8cdb93a4ba62a13209d6a84ae4e7d93f5df8b58592d37a0e45b77e65d77",
+    "page_count": 2,
+    "ocr_used": false,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "source_pdf_save_reason": "PDF全頁・連絡先とメタデータの再配布前確認は未了。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "The modifications announced in the annexes to this notice further extend the exclusions through 11:59 p.m. eastern time on January 9, 2027.",
+        "translation_ja": "本通知の附属書で公表する変更により、適用除外を米東部時間2027年1月9日午後11時59分まで延長する。",
+        "extraction_status": "html_excerpt_linked_to_pdf_page",
+        "translation_status": "partial"
+      },
+      {
+        "page": 2,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_archived",
+        "translation_status": "not_translated"
+      }
+    ]
+  }
+}
