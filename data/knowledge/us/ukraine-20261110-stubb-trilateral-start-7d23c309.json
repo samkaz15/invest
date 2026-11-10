@@ -1,0 +1,37 @@
+{
+  "id": "ukraine-20261110-stubb-trilateral-start-7d23c309",
+  "source_url": "https://www.president.gov.ua/en/news/prezident-ukrayini-proviv-telefonnu-rozmovu-z-prezidentom-fi-107229",
+  "title_en": "President of Ukraine Held a Phone Call with the President of Finland",
+  "title_ja": "ウクライナ大統領とフィンランド大統領の電話会談",
+  "original_text": "President of Ukraine Held a Phone Call with the President of Finland",
+  "translation_ja": "ゼレンスキー大統領はフィンランドのストゥブ大統領との電話会談で、米国・ロシアを含むアブダビでの三者協議が始まり、欧州代表との会合も行われたと説明した。ウクライナと関係国は緊張緩和や実効的な安全の保証を協議し、ロシアにも同様の姿勢を求めている。両首脳は調整を続けることで一致した。ゼレンスキー大統領は同日中に交渉団と関係国から対ロ協議の詳しい報告を受ける見込みだと述べ、支援に謝意を示した。",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "received_at": "2026-11-10T13:06:38.061786+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T13:06:38.061786+00:00",
+  "topics": [
+    "war",
+    "diplomacy",
+    "energy_security"
+  ],
+  "facts_ja": [
+    "ウクライナ大統領府は、ゼレンスキー大統領がアブダビでの三者協議の開始と欧州代表との会合についてフィンランド大統領に説明したと発表。前回確認した欧米の事前調整と区別する。",
+    "両大統領は調整の継続で一致。協議の議事録、合意・停戦の条文、履行は未取得。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "7d23c309c8d0001ce7298d29c20175327086337061368841b7fbcd4693209e51",
+  "source_body_sha256": "f82cd064c20c4b9f0878dc31bff4f6ce58eb9fa299168b1679f2546356367b62",
+  "content_hash_scope": "保存した原題。source_body_sha256は取得した公式発表本文。",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "発表本文は全段落を取得。CC BY-NC-ND 4.0の派生物の制約を踏まえ、公開記録は原題と事実の日本語要約。PDFは本文にリンクなし。"
+  ],
+  "notification_eligible": true,
+  "published_time_display": "12:28",
+  "published_at_precision": "displayed_minute_timezone_unstated",
+  "published_at_basis": "公式表示は12:28。キーウ現地時刻と解する場合は19:28 JST。サイト表示の明示的タイムゾーンは未確認。",
+  "source_reuse_terms": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "summary_ja_40": "ウクライナ大統領がアブダビで米国とロシアを含む三者協議がすでに始まったと発表した"
+}

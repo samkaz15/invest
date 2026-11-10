@@ -1,0 +1,31 @@
+{
+  "id": "nyfed-sofr-20261109-5926ee7a",
+  "source_url": "https://markets.newyorkfed.org/api/rates/secured/sofr/search.json?startDate=2026-11-09&endDate=2026-11-09",
+  "title_en": "Secured Overnight Financing Rate – observation for November 9, 2026",
+  "title_ja": "NY連銀の担保付き翌日物調達金利 2026年11月9日観測",
+  "original_text": "{\n  \"effectiveDate\": \"2026-11-09\",\n  \"type\": \"SOFR\",\n  \"percentRate\": 3.88,\n  \"percentPercentile1\": 3.84,\n  \"percentPercentile25\": 3.86,\n  \"percentPercentile75\": 3.94,\n  \"percentPercentile99\": 3.96,\n  \"volumeInBillions\": 3100,\n  \"revisionIndicator\": \"\"\n}",
+  "translation_ja": "11月9日観測。区分は担保付き翌日物調達金利（SOFR）。3.88％。第1百分位3.84％、第25百分位3.86％、第75百分位3.94％、第99百分位3.96％。取引額3兆1,000億ドル。改定欄は空欄。前営業日の3.89％から0.01ポイント低下。",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "received_at": "2026-11-10T13:09:47.880386+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T13:09:47.880386+00:00",
+  "topics": [
+    "monetary_policy",
+    "treasuries",
+    "funding"
+  ],
+  "facts_ja": [
+    "NY連銀の11月9日観測SOFRは3.88％、取引額3兆1,000億ドル。前営業日3.89％。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "5926ee7a1b5514896a3e5bd7a0d68555dfb550fa6ece84dad231bce967883020",
+  "source_body_sha256": "5926ee7a1b5514896a3e5bd7a0d68555dfb550fa6ece84dad231bce967883020",
+  "content_hash_scope": "保存した一次資料の対象本文。原本PDFはpdf.sha256。",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "observation_date": "2026-11-09",
+  "published_at_precision": "publication_date_only_actual_timestamp_unverified"
+}
