@@ -1,0 +1,47 @@
+{
+  "id": "ebrd-20261110-chornobyl-nsc-pledges-9e06a9e3",
+  "source": "European Bank for Reconstruction and Development",
+  "source_type": "multilateral_public_institution",
+  "source_url": "https://www.ebrd.com/home/news-and-events/news/2026/international-community-backs-ebrd-managed-fund-to-restore-chorn.html",
+  "title_en": "International community backs EBRD-managed fund to restore Chornobyl’s New Safe Confinement",
+  "title_ja": "チョルノービリ原発の新安全閉じ込め施設修復に向けた拠出表明",
+  "language": "en",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "published_at_precision": "date_only_site_timezone_unknown",
+  "received_at": "2026-11-10T10:55:28.469586+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T10:55:28.469586+00:00",
+  "topics": [
+    "war",
+    "diplomacy",
+    "investment_policy",
+    "energy_security"
+  ],
+  "original_text": "International community backs EBRD-managed fund to restore Chornobyl’s New Safe Confinement",
+  "translation_ja": "## 発表の詳細要約\n\n仏政府、ウクライナ政府、欧州復興開発銀行（EBRD）がパリで共催した拠出会合で、米国を含む14の国・国際機関がEBRD管理の国際チョルノービリ協力勘定（ICCA）に総額3億300万ユーロを拠出すると表明した。参加は対面・オンラインを合わせ34の国・機関。EBRDはEU、カナダ、ドイツ、フランス、米国、英国、ノルウェー、スイス、リトアニア、オーストリア、エストニアなどの拠出に言及するが、米国分の金額、国・機関別の金額表、入金額は本文に記載されていない。ギリシャ、モルドバ、オランダは今後の表明を見込む。\n\n対象は1986年事故の4号機の残骸を閉じ込め、旧覆いなどの解体を可能にする施設。EBRDは2025年2月14日のドローンによる損傷で両機能が損なわれたと説明。当日のIAEAチームは爆発音、煙・火災、外層の破損を現地で確認した。実行主体はEBRD・ウクライナ側の説明と区別する。\n\n応急修理が進み、2026年3月承認の初期設計・調達は上限3,000万ユーロ。主要工事は2028年初頭着手、2030年末完了が現在の計画。2027年末までに費用見積もりの精度が上がる見通し。ウクライナ側は必要額を約5億ユーロと説明したが、EBRDは総工費はなお未確定としている。EBRDの先行発表にはG7の2億6,000万ユーロの関与がある。今回総額との重複内訳が未公表のため合算しない。",
+  "facts_ja": [
+    "パリの拠出会合で14の国・国際機関がICCAに計3億300万ユーロを拠出表明。EBRDの本文は米国を拠出表明側に含める。",
+    "本文には米国分、参加者別金額表、入金実績の記載がない。報告日付は2026年11月10日。時刻・タイムゾーンは不明。",
+    "初期設計・調達の上限は3,000万ユーロ。主要工事の現行計画は2028年初頭着手、2030年末完了。費用総額は未確定。"
+  ],
+  "inference_ja": [
+    "資金が入金され修復発注に進めば、設備・土木の需要を段階的に支え、原子力安全上のリスクを低下させ得る。この発表から短期の発電量、原油供給、米金利・為替の方向は判定保留。"
+  ],
+  "source_body_sha256": "9e06a9e3a37c34b77f4725370cddb69c2713283eef41bfa7017efa3c3af5ce42",
+  "content_sha256": "5fc7f15de025d00e0e83a76b9403cbcccacc2913b64ab28dbfdeb5c7b70a2b61",
+  "content_hash_scope": "保存を許容する原題。照合用source_body_sha256は発表本文と編集者注を空白正規化。",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "発表本文・編集者注は読了。EBRD利用条件4.1の再配布・派生物の制約により、英語原文・全訳の公開保存は省略。掲載本文にPDFと国・機関別金額表なし。"
+  ],
+  "related_urls": [
+    "https://www.ebrd.com/home/terms-and-conditions.html",
+    "https://www.ebrd.com/home/news-and-events/news/2026/ebrd-welcomes-g7-commitment-to-finance-urgent-repairs-to-chornob.html",
+    "https://presse.economie.gouv.fr/nar-conference-des-donateurs-pour-le-soutien-a-la-remise-en-etat-de-larche-de-confinement-de-tchernobyl-lundi-9-novembre-2026/",
+    "https://www.iaea.org/newscenter/pressreleases/update-275-iaea-director-general-statement-on-situation-in-ukraine"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "チョルノービリの原子炉覆う施設に米国などが総額三億三百万ユーロの修復費拠出を表明"
+}
