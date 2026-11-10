@@ -1,0 +1,38 @@
+{
+  "id": "ukraine-20261110-denmark-support-9abc0a6c",
+  "source_url": "https://www.president.gov.ua/en/news/daniya-vidilila-novij-oboronnij-paket-dlya-ukrayini-na-645-m-107233",
+  "title_en": "Denmark Allocated a New €645 Million Defense Package for Ukraine – Results of the Meeting Between Volodymyr Zelenskyy and Mette Frederiksen",
+  "title_ja": "ウクライナ大統領府のデンマーク防衛・エネルギー支援発表",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "published_time_display": "17:17",
+  "published_at_basis": "公式ページ表示。サイトのタイムゾーン明記なし。",
+  "received_at": "2026-11-10T18:14:28.005554+00:00",
+  "retrieved_at": "2026-11-10T18:14:28.005554+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "diplomacy",
+    "energy_security"
+  ],
+  "original_text": "Denmark Allocated a New €645 Million Defense Package for Ukraine – Results of the Meeting Between Volodymyr Zelenskyy and Mette Frederiksen",
+  "translation_ja": "コペンハーゲンでウクライナ大統領とデンマーク首相が会談した。ウクライナ大統領府によれば、デンマークは攻撃・迎撃用ドローン、F-16用弾薬、PURLなどに6億4,500万ユーロの防衛支援を配分し、ヘルソン州に2,000万ユーロのエネルギー支援を配分した。首脳は追加人道支援、ドローンの共同生産と弾道ミサイル対策計画も協議した。大統領府は年内の別のドローン・武器調達枠についても1億ドルと説明した。会談での攻撃に関する発言は大統領の主張として扱う。",
+  "facts_ja": [
+    "ウクライナ大統領府によると、デンマークはウクライナへの6億4,500万ユーロの防衛支援枠を配分。ドローン、F-16用弾薬、PURLが対象。ヘルソン州向けエネルギー支援は2,000万ユーロと説明。",
+    "デンマーク首相府は会談の議題として軍事支援とエネルギー部門の保護を確認。参照した同府本文に金額はない。米国からの装備調達額、契約、納品、送金実績は未確認。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "9abc0a6c0124474360ad2f6f64ae6584c2613c3ae3ad91a817f67fa08f7dc6e4",
+  "source_body_sha256": "1c3743d6aa31e969a68827394bbe0bb182ae5985447406c3f8a304556a0dd399",
+  "content_hash_scope": "保存した原題のハッシュ。source_body_sha256は取得済み発表本文。",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "本文は全段落確認。サイトのCC BY-NC-ND 4.0に配慮し日本語の事実要約のみ保存。公表時刻のタイムゾーン、デンマークの予算決定書・実績は未確認。"
+  ],
+  "source_reuse_terms": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "notification_eligible": false,
+  "supporting_urls": [
+    "https://stm.dk/presse/pressemeddelelser/2026/praesident-zelenskyy-og-de-nordiske-lande-besoeger-danmark/"
+  ]
+}
