@@ -1,0 +1,29 @@
+{
+  "id": "usita-20261106-ptmeg-ad-preliminary-30a3215f",
+  "source": "U.S. Department of Commerce, International Trade Administration",
+  "source_url": "https://www.trade.gov/commerce-preliminary-antidumping-duty-investigations-polytetramethylene-ether-glycol-peoples",
+  "source_raw_sha256": "d867fb411f6526aa0d58e947ec22c5f975503aec5d03b19e145c7b890322e043",
+  "published_at": null,
+  "publication_date": "2026-11-06",
+  "publication_timezone": "America/New_York",
+  "received_at": "2026-11-10T03:22:05.829802+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T03:22:05.829802+00:00",
+  "title_en": "Commerce Preliminary Antidumping Duty Investigations of PTMEG",
+  "title_ja": "米商務省のPTMEG反ダンピング仮決定4地域",
+  "topics": [
+    "tariffs",
+    "investment_policy"
+  ],
+  "original_text": "Preliminary Affirmative Determinations in the Antidumping Duty Investigations of Polytetramethylene Ether Glycol from the People’s Republic of China, the Republic of Korea, Taiwan, and the Socialist Republic of Vietnam\nOn November 6, 2026, the U.S. Department of Commerce (Commerce) announced its preliminary affirmative determinations in the antidumping duty (AD) investigations of polytetramethylene ether glycol (PTMEG) from the People’s Republic of China (China), the Republic of Korea (Korea), Taiwan, and the Socialist Republic of Vietnam (Vietnam).\nPreliminary Dumping Rates\nChina\nProducer/Exporter\nEstimated Weighted-Average Dumping Margin (Percent)\nChina-Wide Entity\n213.44%\n*Rate based on facts available with adverse inferences.\nKorea\nProducer/Exporter\nEstimated Weighted-Average Dumping Margin (Percent)\nKorea PTG Co., Ltd.\n25.32\nBASF Company Ltd.\n49.79*\nAll Others\n25.32\n*Rate based on facts available with adverse inferences.\nTaiwan\nProducer/Exporter\nEstimated Weighted-Average Dumping Margin (Percent)\nDairen Chemical Corporation\n7.46\nFormosa Asahi Spandex Co., Ltd.\n26.42*\nAll Others\n7.46\n*Rate based on facts available with adverse inferences.\nVietnam\nProducer/Exporter\nEstimated Weighted-Average Dumping Margin (Percent)\nHyosung Dong Nai Company Limited\n36.55\nAll Others\n36.55\nNext Steps\nFor China, based on the signature date of the preliminary determination, the final determination should be announced on January 18, 2027.\nFor Korea, Taiwan, and Vietnam, based on the date these preliminary determinations are published in the Federal Register, the final determinations should be announced on or around March 29, 2027.\nThe U.S. International Trade Commission (ITC) is running concurrent injury determination investigations. For more information related to the ITC’s timeline, please refer to\nthe ITC’s calendar\n.\nOther Case Information\nThe petitioner is BASF Corporation (Florham Park, NJ).\nFor general information and next steps, please refer to a list of preliminary FAQs.\nAdditional case information, including the scope of the investigations and alleged subsidy programs, is on file electronically via Enforcement and Compliance’s Antidumping and Countervailing Duty Centralized Electronic Service System (ACCESS). Once you\nlog in\n, please refer to case numbers:\nTrading Partner\nAD Case Numbers\nChina\nA-570-227\nKorea\nA-580-922\nTaiwan\nA-583-882\nVietnam\nA-552-855\nTo date, Commerce maintains 856 AD and CVD orders that provide relief to American companies and industries impacted by unfair trade.",
+  "translation_ja": "米商務省は2026年11月6日、中国、韓国、台湾、ベトナム産PTMEGの反ダンピング調査で肯定的な仮決定を公表した。\n\n| 原産地 | 製造・輸出者 | 率（％） |\n| --- | --- | --- |\n| 中国 | 中国全体 | 213.44* |\n| 韓国 | Korea PTG Co., Ltd. | 25.32 |\n| 韓国 | BASF Company Ltd. | 49.79* |\n| 韓国 | その他 | 25.32 |\n| 台湾 | Dairen Chemical Corporation | 7.46 |\n| 台湾 | Formosa Asahi Spandex Co., Ltd. | 26.42* |\n| 台湾 | その他 | 7.46 |\n| ベトナム | Hyosung Dong Nai Company Limited（製造・輸出） | 36.55 |\n| ベトナム | ベトナム全体 | 36.55 |\n\n* 利用可能な情報に基づく不利な推認を用いた率。中国全体の率にも同じ注記がある。\n\n中国の最終決定は仮決定署名日を基準に2027年1月18日、韓国・台湾・ベトナムは官報掲載日を基準に2027年3月29日頃を予定。申立人はBASF Corporation（ニュージャージー州フローラムパーク）。米国国際貿易委員会（ITC）は並行して損害調査を実施中。日程はITCのカレンダー参照。一般情報と次の手順は仮決定のFAQを参照。対象範囲や申し立てられた補助金制度などの追加資料は、執行・遵守部門の反ダンピング税・相殺関税の電子システム（ACCESS）で下記の案件番号を参照する。商務省によれば、現時点で米国の企業・産業を不公正貿易から救済する反ダンピング・相殺関税の命令は856件。\n\n案件番号は中国A-570-227、韓国A-580-922、台湾A-583-882、ベトナムA-552-855。",
+  "facts_ja": [
+    "11月6日の発表。中国全体213.44％、韓国その他25.32％、台湾その他7.46％、ベトナム36.55％。推定ダンピング率で、国全体への一般関税ではない。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "30a3215f75895549391159d47904c31810defd237e16565b89556831ecc37816",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false
+}
