@@ -1,0 +1,37 @@
+{
+  "id": "fr-meae-20261110-sybiha-g7-7578e593",
+  "source_url": "https://www.diplomatie.gouv.fr/fr/presse-et-ressources/decouvrir-et-informer/actualites/ministerielle-g7-affaires-etrangeres-entretien-du-ministre-avec-m-andrii-sybiha-ministre-des",
+  "title_en": "G7 foreign ministers – Meeting with Ukrainian Foreign Minister Andrii Sybiha",
+  "title_ja": "仏外務省のシビハ・ウクライナ外相との会談発表",
+  "original_text": "Le 10 novembre, le ministre de l’Europe et des Affaires étrangères a échangé avec son homologue ukrainien, M. Andrii Sybiha, en marge de la réunion des ministres des Affaires étrangères du G7 à Paris. Cet échange a permis de faire un point d’étape sur le soutien apporté à l’Ukraine par le G7 sous présidence française.\nAlors que de nouveaux pourparlers s’ouvrent ce jour à Abu Dhabi, auxquels la France est représentée, ils ont salué les efforts des États-Unis pour relancer les négociations et obtenir des trêves partielles, qui doivent constituer une première étape en vue d’un cessez-le-feu complet et inconditionnel. Jean-Noël Barrot a réaffirmé notre soutien indéfectible à l’Ukraine, jusqu’à l’avènement d’une paix juste et durable.\nLes Ministres sont revenus sur la conférence internationale qui s’est tenue à Paris la veille, dédiée à la reconstruction de l’arche de confinement de la centrale de Tchernobyl, touchée par des frappes de drones russes le 14 février 2025. Le ministre de l’Europe et des Affaires étrangères a salué la mobilisation de 278 millions d’euros pour ce chantier faisant partie des priorités de la présidence française du G7. Le ministre a par ailleurs exprimé le soutien de la France face aux attaques de la Russie contre les infrastructures énergétiques et réitéré l’engagement de la France à accompagner l’Ukraine à l’approche de l’hiver, en lien avec ses partenaires.\nLes Ministres ont également évoqué la situation en mer Noire, où les attaques russes ciblant les navires commerciaux transportant des céréales et les infrastructures portuaires représentent une menace pour la sécurité alimentaire mondiale.",
+  "translation_ja": "11月10日、仏欧州・外務相はパリのG7外相会合の際にウクライナのアンドリー・シビハ外相と意見交換した。仏議長国の下でG7がウクライナに提供してきた支援の進捗を確認した。\n\nフランスも代表を送っているアブダビで同日新たな協議が始まる中、両外相は交渉を再開し部分的休戦を実現する米国の取り組みを歓迎した。部分的休戦は全面的かつ無条件の停戦への第一歩となるべきである。ジャン＝ノエル・バロ外相は、公正で持続的な和平に至るまでウクライナを揺るぎなく支えると再確認した。\n\n両外相は、2025年2月14日にロシアのドローン攻撃を受けたチョルノービリ原発の封じ込め施設の修復をめぐり、前日にパリで開いた国際会議を振り返った。仏外相は、仏G7議長国の優先課題である同工事のため2億7,800万ユーロを動員したことを歓迎した。また、ロシアによるエネルギー施設への攻撃を受けたウクライナへの支持を表明し、冬を迎える同国を関係国と連携して支える方針を改めて示した。\n\n両外相は黒海の状況も協議した。穀物を運ぶ商船と港湾施設を狙ったロシアの攻撃が、世界の食料安全保障を脅かしているとした。\n\n出典：フランス欧州・外務省。日本語訳。",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "received_at": "2026-11-10T15:21:50.510180+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T15:21:50.510180+00:00",
+  "topics": [
+    "war",
+    "diplomacy",
+    "energy_security"
+  ],
+  "facts_ja": [
+    "仏外務省は、米国による交渉再開・部分休戦への取り組みを両外相が歓迎したと発表。休戦の成立を記した文書はない。",
+    "仏外相はチョルノービリ修復への2億7,800万ユーロの動員に言及。EBRDの同会合に関する3億300万ユーロ拠出表明とは集計範囲や時点を照合できず、合算・置換しない。",
+    "黒海の攻撃については仏外務省の説明。個別の被害と攻撃主体は今回独立確認していない。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "7578e5935bd392eae24645dd81164649430c7804c805eb60e61ab0a3efe04d8a",
+  "source_body_sha256": "7578e5935bd392eae24645dd81164649430c7804c805eb60e61ab0a3efe04d8a",
+  "content_hash_scope": "保存した一次資料の対象本文。原本PDFはpdf.sha256。",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "source_license": "https://www.diplomatie.gouv.fr/fr/mentions-legales/",
+  "source_http_last_modified_at": "2026-11-10T15:16:53+00:00",
+  "published_at_precision": "date_only",
+  "related_document_ids": [
+    "ebrd-20261110-chornobyl-nsc-pledges-9e06a9e3"
+  ]
+}

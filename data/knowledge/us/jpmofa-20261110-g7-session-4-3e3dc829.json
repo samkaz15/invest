@@ -1,0 +1,37 @@
+{
+  "id": "jpmofa-20261110-g7-session-4-3e3dc829",
+  "source_url": "https://www.mofa.go.jp/mofaj/fp/pc/pageit_000001_00031.html",
+  "title_en": "G7 Foreign Ministers’ Meeting, session on support for Ukraine",
+  "title_ja": "G7外相会合（セッション4：ウクライナ支援）",
+  "original_text": "現地時間11月10日午後0時25分（日本時間同日午後8時25分）から約60分間、フランス・パリを訪問中の茂木敏充外務大臣は、G7外相会合の「ウクライナ支援」に関するセッション（ワーキング・ランチ形式）に参加しました（G7各国外相及びEU上級代表並びにウクライナ外相が参加）。\n本セッションにおいて、G7各国外相は、シビハ・ウクライナ外相と共に、ウクライナ情勢及びこれをめぐる対応について議論を行いました。\n茂木大臣は、ロシアによる攻撃の悪影響の拡大への懸念を共有しつつ、日本が一貫してウクライナ支援及び対露制裁に取り組んでいることを説明しました。また、露朝軍事協力等の動向は、欧州・大西洋とインド太平洋双方の安全保障が不可分であることを示しており、それぞれの地域の課題にG7一体で協調して取り組むべき旨を強調しました。\nG7各国外相は、エネルギー安全保障や越冬支援を含め、ウクライナ支援に引き続き取り組んでいくことを確認しました。",
+  "translation_ja": "現地時間11月10日午後0時25分（日本時間同日午後8時25分）から約60分間、フランス・パリを訪問中の茂木敏充外務大臣は、G7外相会合の「ウクライナ支援」に関するセッション（ワーキング・ランチ形式）に参加しました（G7各国外相及びEU上級代表並びにウクライナ外相が参加）。\n本セッションにおいて、G7各国外相は、シビハ・ウクライナ外相と共に、ウクライナ情勢及びこれをめぐる対応について議論を行いました。\n茂木大臣は、ロシアによる攻撃の悪影響の拡大への懸念を共有しつつ、日本が一貫してウクライナ支援及び対露制裁に取り組んでいることを説明しました。また、露朝軍事協力等の動向は、欧州・大西洋とインド太平洋双方の安全保障が不可分であることを示しており、それぞれの地域の課題にG7一体で協調して取り組むべき旨を強調しました。\nG7各国外相は、エネルギー安全保障や越冬支援を含め、ウクライナ支援に引き続き取り組んでいくことを確認しました。\n\n出典：外務省ウェブサイト（https://www.mofa.go.jp/mofaj/fp/pc/pageit_000001_00031.html）。本文を抽出して掲載。",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "received_at": "2026-11-10T15:21:09.759976+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-10T15:21:09.759976+00:00",
+  "topics": [
+    "war",
+    "diplomacy",
+    "energy_security"
+  ],
+  "facts_ja": [
+    "G7各国外相、EU上級代表、ウクライナ外相が参加。G7はエネルギー安全保障・越冬支援を含むウクライナ支援継続を確認。",
+    "追加拠出額、実行日、アブダビ合意の記載はない。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "3e3dc829c7ad31cd30603c9abfbc8c63c825f72e178b77c61360182fa9231e59",
+  "source_body_sha256": "3e3dc829c7ad31cd30603c9abfbc8c63c825f72e178b77c61360182fa9231e59",
+  "content_hash_scope": "保存した一次資料の対象本文。原本PDFはpdf.sha256。",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "language": "ja",
+  "event_started_at": "2026-11-10T12:25:00+01:00",
+  "source_license": "https://www.mofa.go.jp/mofaj/annai/legalmatters/index.html",
+  "source_http_last_modified_at": "2026-11-10T14:55:54+00:00",
+  "published_at_precision": "date_only",
+  "published_at_basis": "ページの掲載日は11月10日。時刻明記なし。Last-Modifiedは公開時刻と区別。",
+  "translation_mode": "Japanese source as published"
+}
