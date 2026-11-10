@@ -1,0 +1,39 @@
+{
+  "source": "U.S. Department of the Treasury",
+  "topics": [
+    "treasuries"
+  ],
+  "observation_date": "2026-11-10",
+  "received_at": "2026-11-10T20:56:31.000Z",
+  "received_at_kind": "gmail_received",
+  "publication_timezone": "America/New_York",
+  "published_at": null,
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "attachment_status": "対象メールのMIMEに添付なし。更新対象はHTML表で、該当系列のPDFリンクなし。",
+  "id": "treasury-rates-20261110-bill-rates",
+  "source_type": "official_html",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026",
+  "title_en": "Daily Treasury Bill Rates",
+  "title_ja": "日次短期国債金利（11月10日観測分）",
+  "publication_time_note": "公式表に初回公表時刻の記載なし。観測日およびメール受信日時は別項目。",
+  "retrieved_at": "2026-11-10T20:59:55.646925+00:00",
+  "source_raw_sha256": "a875bb2546a8c10bc90f699f94402956638f71887867f4e7deaf1fdd4f04266a",
+  "content_sha256": "0e46328fc9f5bf86e4fc3d593449061ed033dcf0dff0455b88c3efbb03104baf",
+  "original_text": "| Date | 20 YR | 30 YR | Extrapolation Factor | 4 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 6 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 8 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 13 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 17 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 26 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 52 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 1 Mo | 1.5 Mo | 2 Mo | 3 Mo | 4 Mo | 20 Yr | 30 Yr |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 11/09/2026 | N/A | N/A | N/A | 3.89 | 3.96 | 3.98 | 4.05 | 4.00 | 4.08 | 4.06 | 4.16 | 4.10 | 4.21 | 4.15 | 4.30 | 4.18 | 4.37 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n| 11/10/2026 | N/A | N/A | N/A | 3.88 | 3.94 | 4.01 | 4.08 | 4.02 | 4.10 | 4.12 | 4.22 | 4.17 | 4.29 | 4.26 | 4.41 | 4.34 | 4.54 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n\nDaily Treasury Bill Rates: These rates are the daily secondary market quotations on the most recently auctioned Treasury Bills for each maturity tranche (4-week, 6-week, 8-week, 13-week, 17-week, 26-week, and 52-week) for which Treasury currently issues new bills. Market quotations are obtained at approximately 3:30 PM each business day by the Federal Reserve Bank of New York. The Bank Discount rate is the rate at which a bill is quoted in the secondary market and is based on the par value, amount of the discount and a 360-day year. The Coupon Equivalent, also called the Bond Equivalent, or the Investment Yield, is the bill's yield based on the purchase price, discount, and a 365- or 366-day year. The Coupon Equivalent can be used to compare the yield on a discount bill to the yield on a nominal coupon security that pays semiannual interest with the same maturity date.",
+  "translation_ja": "日次短期国債金利。2026年11月10日の更新行と比較用の前営業日11月9日。利回り単位は％。N/Aは原表の値なし。\n\n| 日付 | 20年 | 30年 | 外挿係数 | 4週間・銀行割引率 | クーポン相当利回り | 6週間・銀行割引率 | クーポン相当利回り | 8週間・銀行割引率 | クーポン相当利回り | 13週間・銀行割引率 | クーポン相当利回り | 17週間・銀行割引率 | クーポン相当利回り | 26週間・銀行割引率 | クーポン相当利回り | 52週間・銀行割引率 | クーポン相当利回り | 1か月 | 1.5か月 | 2か月 | 3か月 | 4か月 | 20年 | 30年 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 11/09/2026 | N/A | N/A | N/A | 3.89 | 3.96 | 3.98 | 4.05 | 4.00 | 4.08 | 4.06 | 4.16 | 4.10 | 4.21 | 4.15 | 4.30 | 4.18 | 4.37 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n| 11/10/2026 | N/A | N/A | N/A | 3.88 | 3.94 | 4.01 | 4.08 | 4.02 | 4.10 | 4.12 | 4.22 | 4.17 | 4.29 | 4.26 | 4.41 | 4.34 | 4.54 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n\n## この表の説明・脚注の日本語訳\n\n日次財務省短期国債金利：現在新規発行される4、6、8、13、17、26、52週間の各満期区分の直近入札済み証券について、日々の流通市場気配を示す。NY連銀が各営業日の午後3時30分頃に取得する。銀行割引率は流通市場で提示される率で、額面、割引額、360日年を基準とする。クーポン相当利回りは債券相当利回り・投資利回りとも呼び、購入価格、割引額、365日または366日年を基準とする。同じ満期の、半年ごとに利払いする名目クーポン証券と割引短期国債の利回りを比較するために利用できる。",
+  "facts_ja": [
+    "13週物の銀行割引率は4.06％から4.12％（＋6bp）、クーポン相当利回りは4.16％から4.22％（＋6bp）。"
+  ],
+  "inference_ja": [],
+  "content_scope_note": "更新対象の11月10日行、比較用の11月9日行、当該系列の説明と脚注を全文収録。年次表の他の日付と他系列の共通説明は対象外。",
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省が十一月十日の短期国債金利を公表し、十三週物の割引率は四・一二％だった。",
+  "related_document_ids": [
+    "ustreas-mail-20261110-bill-rates-0ee1213d"
+  ],
+  "related_source_urls": [
+    "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value_month=202611"
+  ]
+}
