@@ -1,0 +1,32 @@
+{
+  "id": "nyfed-20261110-overnight-rrp-e110a71c",
+  "source_url": "https://markets.newyorkfed.org/api/rp/reverserepo/all/results/last/4.json",
+  "title_en": "NY Fed Reverse Repo Operation Result, 2026-11-10",
+  "title_ja": "NY連銀の翌日物リバースレポ結果",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "received_at": "2026-11-10T19:28:57.914155+00:00",
+  "retrieved_at": "2026-11-10T19:28:57.914155+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "original_text": "{\n  \"operationId\": \"RP 111026 26\",\n  \"auctionStatus\": \"Results\",\n  \"operationDate\": \"2026-11-10\",\n  \"settlementDate\": \"2026-11-10\",\n  \"maturityDate\": \"2026-11-12\",\n  \"operationType\": \"Reverse Repo\",\n  \"operationMethod\": \"Fixed Rate\",\n  \"settlementType\": \"Same Day\",\n  \"termCalenderDays\": 2,\n  \"term\": \"Overnight\",\n  \"releaseTime\": \"12:45\",\n  \"closeTime\": \"13:15\",\n  \"note\": \"\",\n  \"lastUpdated\": \"2026-11-10 13:15:23\",\n  \"participatingCpty\": 3,\n  \"acceptedCpty\": 3,\n  \"totalAmtSubmitted\": 152000000,\n  \"totalAmtAccepted\": 152000000,\n  \"details\": [\n    {\n      \"securityType\": \"Treasury\",\n      \"amtSubmitted\": 152000000,\n      \"amtAccepted\": 152000000,\n      \"percentOfferingRate\": 3.75,\n      \"percentAwardRate\": 3.75\n    }\n  ]\n}",
+  "translation_ja": "ニューヨーク連銀の翌日物リバースレポ。オペID RP 111026 26。ステータスは結果公表。オペ・決済日は11月10日、満期は11月12日（暦日2日）。公表開始表示は12:45、締切は13:15、結果更新表示は2026-11-10 13:15:23。固定金利方式。応札総額は152,000,000ドル、落札総額は152,000,000ドル。参加・落札は各3先。\n\n| 対象証券 | 応札 | 落札 | 提示利率 | 落札利率 |\n| --- | --- | --- | --- | --- |\n| 国債 | 152,000,000ドル | 152,000,000ドル | 3.75％ | 3.75％ |",
+  "facts_ja": [
+    "NY連銀の米東部11月10日翌日物リバースレポ。応札・落札は各152,000,000ドル。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "e110a71c796f4691a6fd2972a71aaab1fdfc171b4ca40de1515a9730bdb00c4c",
+  "source_body_sha256": "e110a71c796f4691a6fd2972a71aaab1fdfc171b4ca40de1515a9730bdb00c4c",
+  "content_hash_scope": "保存した一次資料の対象原文のUTF-8。",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "source_operation_id": "RP 111026 26",
+  "source_updated_display": "2026-11-10 13:15:23",
+  "source_operation_timezone": "America/New_York",
+  "published_at_basis": "結果の最終更新時刻と初回公表を区別。日次APIの同一URLはオペID・更新表示・内容ハッシュで区別。"
+}
