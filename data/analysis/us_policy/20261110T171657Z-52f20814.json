@@ -1,0 +1,615 @@
+{
+  "id": "20261110T171657Z-52f20814",
+  "as_of": "2026-11-10T17:16:57+00:00",
+  "run_started_at": "2026-11-10T17:08:12+00:00",
+  "prior_analysis_id": "20261110T154751Z-233137e3",
+  "overlap_from": "2026-11-09T13:30:00+00:00",
+  "latest_existing_publication": "2026-11-10T08:30:00-05:00",
+  "document_ids": [
+    "azsos-us-house-unofficial-20261109-0d5fde12",
+    "azsos-us-house-unofficial-20261109-242c4e09",
+    "azsos-us-house-unofficial-20261109-50a7560a",
+    "bls-20261110-cpi-october-120b1fef",
+    "bls-20261110-cpi-october-supplement-669cc8e7",
+    "bls-20261110-cpi-october-supplement-a9ad5b76",
+    "boj-20261110-summary-opinions-oct29-30-29964a84",
+    "california-us-house-20261109-unofficial-ea2c613b",
+    "california-us-house-20261109-unofficial-snapshot-5f7b988f",
+    "california-us-house-20261109-unofficial-snapshot-cf200a57",
+    "california-us-house-20261109-unofficial-snapshot-f0e45c94",
+    "canada-20261109-russia-sanctions-0f00e4b8",
+    "canada-sor-2026-233-70e73ba8",
+    "centcom-20261107-iron-gate-62ff1226",
+    "cfius-cy2025-annual-report-9b1c1ebb-p01-44",
+    "cfius-cy2025-annual-report-9b1c1ebb-p01-49",
+    "cfius-cy2025-annual-report-9b1c1ebb-p01-56",
+    "cfius-cy2025-annual-report-9b1c1ebb-p01-70",
+    "cftc-20261105-dcm-impartial-access-release-9323-3b3a0e9a",
+    "cftc-20261105-staff-letter-26-30-047880fe",
+    "cftc-20261105-trust-daily-settlement-release-9322-9bb364a9",
+    "cftc-20261109-dcm-impartial-access-22863-cac44b03",
+    "cftc-20261109-unregistered-foreign-brokers-release-9324-901a4689",
+    "dod-20261110-fr-22840-wuxi-c6797d97",
+    "ebrd-20261110-chornobyl-nsc-pledges-9e06a9e3",
+    "eia-steo-20261110-november-2138753c",
+    "eu-council-20261110-abu-dhabi-statement-614a3644",
+    "fed-waller-20261110-outlook-labor-c3f45b33",
+    "federal-register-ofac-2026-22766-9918df31",
+    "federal-register-ofac-2026-22802-b8ad246d",
+    "fr-meae-20261110-sybiha-g7-7578e593",
+    "france-meae-20261106-g7-paris-agenda-complete-42ecac70",
+    "france-meae-20261109-g7-ports-ec64179f",
+    "france-meae-20261109-saudi-g7-fc55e3ea",
+    "frb-h10-20261109-2594b8a9",
+    "frb-h15-20261109-a4790759",
+    "iea-20261103-global-gas-security-review-p07-09-550172ab",
+    "jpmof-20261110-30y-jgb-auction-result-fa92eece",
+    "jpmof-20261110-30y-jgb-noncompetitive-ii-43c99bb8",
+    "jpmof-20261110-30y-jgb-offer-49089d47",
+    "jpmof-20261110-bop-september-overview-0df5be72",
+    "jpmof-20261110-international-securities-october-e28b3d10",
+    "jpmof-boj-20261110-bop-september-complete-c73063f9",
+    "jpmof-boj-20261110-bop-september-table-ab56a597",
+    "jpmofa-20261109-g7-ai-b8dafd17",
+    "jpmofa-20261109-g7-crises-041535a1",
+    "jpmofa-20261109-motegi-rubio-0ba63a49",
+    "jpmofa-20261110-g7-closing-press-b1ab3f23",
+    "jpmofa-20261110-g7-session-3-3165309a",
+    "jpmofa-20261110-g7-session-4-3e3dc829",
+    "nyfed-20261106-sofr-f3fff279",
+    "nyfed-20261109-afternoon-standing-repo-92426ad1",
+    "nyfed-20261110-morning-repo-dba36aa3",
+    "nyfed-sofr-20261109-5926ee7a",
+    "ofac-20261109-iran-designation-update-ec9a6942",
+    "treasury-rates-20261109-bill-rates",
+    "treasury-rates-20261109-long-term",
+    "treasury-rates-20261109-real-long-term",
+    "treasury-rates-20261109-real-yield-curve",
+    "treasury-rates-20261109-yield-curve",
+    "ukraine-20261109-uae-trilateral-address-107217-2cd18c7d",
+    "ukraine-20261110-stubb-trilateral-start-7d23c309",
+    "us-20261110-fr-22863-38cabf39",
+    "us-20261110-fr-22867-88bd00d7",
+    "us-20261110-fr-22925-bbc8064e",
+    "us-20261110-fr-22962-6a5c88c1",
+    "us-president-20261109-qatar-iran-42134174",
+    "usita-20261106-ptmeg-ad-preliminary-30a3215f",
+    "usita-20261106-tin-mill-ad-preliminary-55ef3c14",
+    "usita-20261109-fr-22937-7fb183d9",
+    "usita-20261109-fr-22938-3148db7a",
+    "usita-20261109-fr-22939-f62bffb7",
+    "usita-20261109-fr-22940-67be29bf",
+    "usita-20261109-fr-22941-c414a430",
+    "usita-20261109-fr-22942-4620a58d",
+    "usita-20261109-fr-22943-2c24aa0a",
+    "ustr-20261110-fr-22867-full-2d0879b0",
+    "ustr-20261110-fr-22925-full-39668c6b",
+    "ustreas-10y-offering-20261104-058c18e6",
+    "ustreas-20261109-auction-912797ux3-198a10c6",
+    "ustreas-20261109-auction-912797wb9-34312fc6",
+    "ustreas-20261109-final-912797tc1-b9a574c6",
+    "ustreas-20261109-final-91282crw3-06c59119",
+    "ustreas-431a6b8-20261104-iran-maritime-fraud-sanctions",
+    "whitehouse-20261109-iran-briefing-excerpts-b91d73ca",
+    "whitehouse-rapidresponse-20261109-iran-fd91ed06"
+  ],
+  "new_document_ids": [
+    "eia-steo-20261110-november-2138753c"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "incremental_window_start": "2026-11-09T13:30:00+00:00",
+      "new_difference_from": "2026-11-10T15:47:51+00:00",
+      "requested_through": "2026-11-10T17:16:57+00:00",
+      "checked_at": "2026-11-10T17:09:20+00:00",
+      "checked_through": "2026-11-10T17:11:22+00:00",
+      "unverified_tail_start": "2026-11-10T17:11:22+00:00",
+      "note": "四半期借換本文・発行額表。11月9日名目利回り表は2年4.56％、10年4.88％。11月6日以後の財務省報道一覧で当日新規を確認できず。",
+      "missing": "11月10日観測の利回り行は抽出に見当たらず。11月9日実質2.66％は前回値。",
+      "individual_urls": [
+        "https://home.treasury.gov/news/press-releases/sb0678",
+        "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+      ]
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "incremental_window_start": "2026-11-09T13:30:00+00:00",
+      "new_difference_from": "2026-11-10T15:47:51+00:00",
+      "requested_through": "2026-11-10T17:16:57+00:00",
+      "checked_at": "2026-11-10T17:09:20+00:00",
+      "checked_through": "2026-11-10T17:11:22+00:00",
+      "unverified_tail_start": "2026-11-10T17:11:22+00:00",
+      "note": "借換声明で10年債420億ドル、11月10日13:00 EST（11月11日03:00 JST）、11月16日決済予定を確認。NY連銀発行前取引資料のCUSIPは91282CRX1。",
+      "missing": "今回取得は予定時刻前。11月10日結果APIと個別PDFは取得失敗。予定を落札扱いしない。",
+      "individual_urls": [
+        "https://www.newyorkfed.org/financial-institution-supervision/reporting-forms-and-instructions/reporting-forms/fr-2004wi-guide-sheet",
+        "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/A_20261104_2.pdf",
+        "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query?filter=auction_date:eq:2026-11-10"
+      ]
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "incremental_window_start": "2026-11-09T13:30:00+00:00",
+      "new_difference_from": "2026-11-10T15:47:51+00:00",
+      "requested_through": "2026-11-10T17:16:57+00:00",
+      "checked_at": "2026-11-10T17:09:20+00:00",
+      "checked_through": "2026-11-10T17:11:22+00:00",
+      "unverified_tail_start": "2026-11-10T17:11:22+00:00",
+      "note": "予定表と借換声明の買い戻し節を再確認。前回の11月5日結果は40億ドル・4銘柄。財務省の債務管理として記録。",
+      "missing": "個別結果PDFの今回再取得に失敗。今回の新規執行・決済は未確認。",
+      "individual_urls": [
+        "https://home.treasury.gov/news/press-releases/sb0678",
+        "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/BBR_20261105184000.pdf"
+      ]
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "incremental_window_start": "2026-11-09T13:30:00+00:00",
+      "new_difference_from": "2026-11-10T15:47:51+00:00",
+      "requested_through": "2026-11-10T17:16:57+00:00",
+      "checked_at": "2026-11-10T17:09:20+00:00",
+      "checked_through": "2026-11-10T17:11:22+00:00",
+      "unverified_tail_start": "2026-11-10T17:11:22+00:00",
+      "note": "10月28日声明・実施要領と2026年公表一覧を照合。FF目標3.75～4.00％。ウォラー講演は個人の見解として既報。",
+      "missing": "11月10日の新たなFOMC決定・当日市場反応は未確認。",
+      "individual_urls": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm"
+      ]
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "incremental_window_start": "2026-11-09T13:30:00+00:00",
+      "new_difference_from": "2026-11-10T15:47:51+00:00",
+      "requested_through": "2026-11-10T17:16:57+00:00",
+      "checked_at": "2026-11-10T17:09:20+00:00",
+      "checked_through": "2026-11-10T17:11:22+00:00",
+      "unverified_tail_start": "2026-11-10T17:11:22+00:00",
+      "note": "国債・レポの対象と公表方式を個別ページ本文で確認。前回の11月9日再投資買入36億5,300万ドル、11月10日朝レポ500万ドルは区別して引継ぎ。",
+      "missing": "11月10日結果APIの再取得に失敗。新規SOMA買い・売りと決済は未確認。",
+      "individual_urls": [
+        "https://www.newyorkfed.org/markets/desk-operations/repo",
+        "https://markets.newyorkfed.org/api/tsy/all/results/search.json?startDate=11/10/2026&endDate=11/10/2026"
+      ]
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "incremental_window_start": "2026-11-09T13:30:00+00:00",
+      "new_difference_from": "2026-11-10T15:47:51+00:00",
+      "requested_through": "2026-11-10T17:16:57+00:00",
+      "checked_at": "2026-11-10T17:09:20+00:00",
+      "checked_through": "2026-11-10T17:13:44+00:00",
+      "unverified_tail_start": "2026-11-10T17:13:44+00:00",
+      "note": "大統領措置一覧、USTRの11月公表一覧、日本外務省G7会合入口を照合。前回記録の対中301条正式公告とG7閉幕会見を参照。",
+      "missing": "国務省の会談本文・CENTCOM未確認。今回USTRの個別URLの一部は本文取得失敗。停戦の合意・履行、戦況の独立確認は未了。",
+      "individual_urls": [
+        "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november",
+        "https://www.mofa.go.jp/mofaj/fp/pc/pageit_000001_03301.html",
+        "https://www.state.gov/releases/office-of-the-spokesperson/2026/11/secretary-rubios-meeting-with-ukrainian-foreign-minister-sybiha/"
+      ]
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "incremental_window_start": "2026-11-09T13:30:00+00:00",
+      "new_difference_from": "2026-11-10T15:47:51+00:00",
+      "requested_through": "2026-11-10T17:16:57+00:00",
+      "checked_at": "2026-11-10T17:09:20+00:00",
+      "checked_through": "2026-11-10T17:11:22+00:00",
+      "unverified_tail_start": "2026-11-10T17:11:22+00:00",
+      "note": "11月9日付イラン指定更新の個別本文とリスト更新日を再確認。新規指定ではなく既存記録の更新。",
+      "missing": "個人識別欄は収録対象外。11月10日分の掲載は確認できず、最新性は再試行。",
+      "individual_urls": [
+        "https://ofac.treasury.gov/recent-actions/20261109"
+      ]
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "incremental_window_start": "2026-11-09T13:30:00+00:00",
+      "new_difference_from": "2026-11-10T15:47:51+00:00",
+      "requested_through": "2026-11-10T17:16:57+00:00",
+      "checked_at": "2026-11-10T17:09:20+00:00",
+      "checked_through": "2026-11-10T17:13:44+00:00",
+      "unverified_tail_start": "2026-11-10T17:13:44+00:00",
+      "note": "11月STEOの物理1～10頁対象本文・表・脚注、10月版軽油価格行、11月版エネルギー価格表の該当行、週次表1の10月30日終了週を照合。",
+      "missing": "原本バイナリ・ハッシュ・全頁目視・物理10頁後半以降の訳は未了。石油製品HTMLはキャッシュの10月版表示が混在するため11月版の根拠はアーカイブPDF。ホルムズ実積載量・保険料は未取得。",
+      "individual_urls": [
+        "https://www.eia.gov/outlooks/steo/archives/oct26.pdf",
+        "https://www.eia.gov/outlooks/steo/",
+        "https://www.eia.gov/outlooks/steo/tables/pdf/2tab.pdf",
+        "https://www.eia.gov/petroleum/supply/weekly/pdf/table1.pdf"
+      ]
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "incremental_window_start": "2026-11-09T13:30:00+00:00",
+      "new_difference_from": "2026-11-10T15:47:51+00:00",
+      "requested_through": "2026-11-10T17:16:57+00:00",
+      "checked_at": "2026-11-10T17:09:20+00:00",
+      "checked_through": "2026-11-10T17:13:44+00:00",
+      "unverified_tail_start": "2026-11-10T17:13:44+00:00",
+      "note": "FEC本文は州認証への入口。CA州の認証予定12月11日、AZ州の公式集計予定11月23日を各当局本文で確認。",
+      "missing": "CA州下院の当日数表は動的ページから取得できず。AZ速報の当日数表、他州の網羅・州認証の完了は未確認。",
+      "individual_urls": [
+        "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/",
+        "https://azsos.gov/elections/election-information/unofficial-enr",
+        "https://www.azcleanelections.gov/state-general-results"
+      ]
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "incremental_window_start": "2026-11-09T13:30:00+00:00",
+      "new_difference_from": "2026-11-10T15:47:51+00:00",
+      "requested_through": "2026-11-10T17:16:57+00:00",
+      "checked_at": "2026-11-10T17:09:20+00:00",
+      "checked_through": "2026-11-10T17:11:22+00:00",
+      "unverified_tail_start": "2026-11-10T17:11:22+00:00",
+      "note": "2025年年次報告の財務省個別リリース本文を確認。前回取得の報告PDF・表を参照。",
+      "missing": "覚書FSA25MOU001293と、今回のPDF原本再取得は未確認。",
+      "individual_urls": [
+        "https://home.treasury.gov/news/press-releases/sb0599"
+      ]
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "treasury_news",
+      "reason": "11月10日観測の利回り行は抽出に見当たらず。11月9日実質2.66％は前回値。"
+    },
+    {
+      "id": "treasury_auctions",
+      "reason": "今回取得は予定時刻前。11月10日結果APIと個別PDFは取得失敗。予定を落札扱いしない。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "reason": "個別結果PDFの今回再取得に失敗。今回の新規執行・決済は未確認。"
+    },
+    {
+      "id": "fed_fomc",
+      "reason": "11月10日の新たなFOMC決定・当日市場反応は未確認。"
+    },
+    {
+      "id": "nyfed_operations",
+      "reason": "11月10日結果APIの再取得に失敗。新規SOMA買い・売りと決済は未確認。"
+    },
+    {
+      "id": "white_house",
+      "reason": "国務省の会談本文・CENTCOM未確認。今回USTRの個別URLの一部は本文取得失敗。停戦の合意・履行、戦況の独立確認は未了。"
+    },
+    {
+      "id": "ofac",
+      "reason": "個人識別欄は収録対象外。11月10日分の掲載は確認できず、最新性は再試行。"
+    },
+    {
+      "id": "eia_petroleum",
+      "reason": "原本バイナリ・ハッシュ・全頁目視・物理10頁後半以降の訳は未了。石油製品HTMLはキャッシュの10月版表示が混在するため11月版の根拠はアーカイブPDF。ホルムズ実積載量・保険料は未取得。"
+    },
+    {
+      "id": "fec_results",
+      "reason": "CA州下院の当日数表は動的ページから取得できず。AZ速報の当日数表、他州の網羅・州認証の完了は未確認。"
+    },
+    {
+      "id": "cfius",
+      "reason": "覚書FSA25MOU001293と、今回のPDF原本再取得は未確認。"
+    }
+  ],
+  "facts": [
+    {
+      "label": "FACT",
+      "evidence_id": "eia-steo-20261110-november-2138753c",
+      "source_url": "https://www.eia.gov/outlooks/steo/archives/nov26.pdf",
+      "text": "EIAは2027年平均の米軽油小売価格見通しを1ガロン4.49ドルから5.03ドルに12.0％引き上げた。2026年の新見通し5.25ドルを下回る。ガソリンの2027年見通しは3.56ドルから3.73ドルへ4.7％上方修正。"
+    },
+    {
+      "label": "FACT",
+      "evidence_id": "eia-steo-20261110-november-2138753c",
+      "source_url": "https://www.eia.gov/outlooks/steo/archives/nov26.pdf",
+      "text": "EIAは世界の石油製品供給制約が2027年末まで続くと仮定した。ブレントの2027年平均は86ドル、同年第4四半期は77ドルと予測。入力確定日は11月5日。"
+    },
+    {
+      "label": "FACT",
+      "evidence_id": "eia-steo-20261110-november-2138753c",
+      "source_url": "https://www.eia.gov/outlooks/steo/archives/nov26.pdf",
+      "text": "EIA週次表では10月30日終了週の米商業原油在庫は4億980万バレル。STEO概要は10月末4億1,000万バレルと丸めて表示。ホルムズ閉鎖関連の10月原油生産停止はEIA推計の日量254万バレル。積載量の実測ではない。"
+    },
+    {
+      "label": "FACT",
+      "evidence_id": "ustreas-10y-offering-20261104-058c18e6",
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0678",
+      "text": "米10年債420億ドルは11月10日13:00 EST入札予定。11月16日決済予定。今回の確認時点は入札前。"
+    }
+  ],
+  "reported": [],
+  "war_verification_note": "EIAのタンカー・製油所攻撃への言及はEIAの説明。攻撃主体・件数・損傷と経済効果を独立確認していない。",
+  "causal_channels": [
+    {
+      "label": "INFERENCE",
+      "evidence_ids": [
+        "eia-steo-20261110-november-2138753c"
+      ],
+      "text": "中東の原油供給回復で原油価格が下がっても、精製能力・製品輸送が制約されれば軽油卸・小売の調整が遅れる。物流費や暖房費の上昇は実質所得を圧迫し、企業の費用転嫁次第では物価を押し上げる。"
+    },
+    {
+      "label": "INFERENCE",
+      "evidence_ids": [
+        "eia-steo-20261110-november-2138753c",
+        "bls-20261110-cpi-october-120b1fef",
+        "treasury-rates-20261109-real-yield-curve"
+      ],
+      "text": "基調物価まで波及し実質金利とドルが上がれば金の機会費用が上がり得る。需要の鈍化が優勢で実質金利が下がる経路は逆。ドル資金ストレスと政策金利を別系列で検証する。"
+    },
+    {
+      "label": "INFERENCE",
+      "evidence_ids": [
+        "eia-steo-20261110-november-2138753c",
+        "ustreas-10y-offering-20261104-058c18e6"
+      ],
+      "text": "10年債は予定供給と結果・決済を分離。入札利回り、発行前取引水準、応札倍率、部門別落札を見て供給負担を判断する。間接入札者から外国投資家の売買を断定しない。"
+    }
+  ],
+  "historical_comparisons": [
+    {
+      "case_id": "oil-shock-1973-1974",
+      "similarity": "現物供給や輸送の制約が燃料物価と実質所得へ波及する。",
+      "difference": "1973年は禁輸・減産が現物を直接減らした。今回は輸送と製油の制約が分かれ、EIAは代替経路による原油生産回復と製品制約の継続を同時に仮定。米国の石油合計の輸出入構造も当時と異なる。",
+      "initial_conditions": "当時の公表CPIは1973年8月前年比7.5％、後に整備された系列の9月実効FF月平均は10.78％。当時の実質金利・流動性は比較可能な当初値が未取得。 現在は9月米CPI前年比3.7％、11月9日の米10年実質2.66％。 後年整備のEIA月次系列で米国の1973年9月の原油・石油製品合計は6,168千バレル／日の純輸入。当時の利用可能情報とは区別。",
+      "source_url": "https://www.federalreservehistory.org/essays/oil-shock-of-1973-74",
+      "source_kind": "official_retrospective_history"
+    },
+    {
+      "case_id": "great-recession-2007-2009",
+      "similarity": "実質所得の低下や信用条件の悪化が消費・投資の弱さに波及し得る。",
+      "difference": "2007年は住宅・銀行信用収縮が需要ショックの起点。今回は製品供給制約が焦点で、同規模の信用収縮・ドル調達難は未確認。",
+      "initial_conditions": "当時公表の2007年10月CPI前年比3.5％、同年12月11日のFF目標4.25％。当時は金融市場環境の悪化をFOMCが指摘。実質金利の比較用当初値は未取得。 後年整備のEIA月次系列で米国の2007年11月の原油・石油製品合計は11,421千バレル／日の純輸入。当時の利用可能情報とは区別。",
+      "source_url": "https://www.federalreservehistory.org/essays/great-recession-of-200709",
+      "source_kind": "official_retrospective_history"
+    },
+    {
+      "case_id": "fed-response-2020-03-15",
+      "similarity": "供給・需要の変化が政策判断に波及する際は、市場機能と流動性を別に観測する。",
+      "difference": "2020年は緊急利下げ・大規模購入。今回はEIAの見通し改定と通常の再投資・レポで、緊急緩和は確認されない。",
+      "initial_conditions": "2020年2月CPI前年比2.3％、3月15日発表のFF目標0～0.25％。現在の米9月CPI前年比3.7％、FF目標3.75～4.00％。足元の市場機能・ドル資金需要は実測の追加確認が必要。 当時の危機時のドルスワップと、今回の日銀の定例オペ1回のゼロ利用は対象期間・測定範囲が異なる。 後年整備のEIA月次系列で米国の2020年2月の原油・石油製品合計は1,108千バレル／日の純輸出。当時の利用可能情報とは区別。",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200315a1.htm",
+      "source_kind": "contemporaneous_official_release"
+    }
+  ],
+  "current_initial_conditions": {
+    "inflation": "BLS 10月CPIは季調済み前月比0.4％、コア0.3％。総合・コアの10月前年比は非公表。9月前年比（総合3.7％、コア2.6％）は別期間。",
+    "policy": "FF目標3.75～4.00％。日銀は無担保コール翌日物1.25％程度。",
+    "market_yields": "財務省11月9日観測は2年4.56％、10年4.88％、10年実質2.66％。FRBの同日公表H.15/H.10は11月6日観測まで。",
+    "liquidity": "NY連銀SOFRは11月9日観測3.88％、取引額3兆1,000億ドル。前営業日は3.89％。 NY連銀朝レポ落札500万ドル。資産購入と分離。 市場全体のドル資金ストレスは未判定。",
+    "energy": "EIAの10月30日公表の月次表で、米国の8月原油・石油製品合計は406万4,000バレル／日の純輸出。9月以降は表に未掲載。これは原油単独の系列とは区別。週次原油需給は10月30日終了週まで確認。 日本の9月速報では輸入原粗油の価格上昇を確認。米国のみの地域別取引はこの表では不明。 追加のホルムズ実積載量は未確認。 11月3日付IEAのLNG報告は原油需給統計とは別に参照。 10月30日終了週は原油単独の純輸入が日量269.9万バレル、原油・製品合計の純輸出が日量308.6万バレル。",
+    "positioning": "発表時点の市場織り込み、同時点の両側の実質金利・景気、ポジショニングは未確認。"
+  },
+  "scenarios": [
+    {
+      "horizon": "days",
+      "base": "原油と軽油卸値の差、米10年債の入札結果と米実質金利を確認。",
+      "up": "タンカー供給の悪化と製品スプレッド拡大なら物流のコスト圧力増。",
+      "down": "積載量増と運賃低下が卸値に波及すればコスト圧力減。",
+      "invalidation": "実積載量・運賃・軽油スプレッドが想定と逆に動く。"
+    },
+    {
+      "horizon": "weeks",
+      "base": "留出油在庫、精製稼働・投入、製品輸入を同じ週で比較。",
+      "up": "在庫回復が止まり、精製停止・製品輸入減が重なれば軽油の下落を抑え得る。",
+      "down": "在庫回復と製品輸入増・スプレッド縮小なら小売軽油の低下が進み得る。",
+      "invalidation": "米留出油在庫と精製稼働率が想定と逆、または卸価格の変化が小売に波及しない。"
+    },
+    {
+      "horizon": "months",
+      "base": "11月5日基準のEIA予測と、燃料費の転嫁、PCE・賃金・実質消費・信用を照合。",
+      "up": "製品費が粘着的で基調物価や期待インフレも上向けば、引き締め圧力と実質購買力への負担が残り得る。",
+      "down": "供給の回復と需要減速が重なりコア・賃金も鈍化すれば引き締め圧力が後退し得る。",
+      "invalidation": "燃料高でも基調物価・期待が鈍化し、実質金利・実質消費が仮説に沿わない。"
+    }
+  ],
+  "currency_pairs": [
+    {
+      "pair": "USD/JPY",
+      "assessment": "判断保留",
+      "condition": "米の実質金利差拡大と日本の着荷燃料費上昇が重なればUSD、米日実質金利差縮小と日本の輸入費改善ならJPYを支え得る。",
+      "invalidation": "同期間の実質金利差・輸入価格・実質消費が逆方向。"
+    },
+    {
+      "pair": "EUR/USD",
+      "assessment": "判断保留",
+      "condition": "欧州の製品着荷費が低下し米欧実質金利差が縮めばEUR、着荷費高止まりと米金利優位の拡大ならUSDを支え得る。",
+      "invalidation": "欧州の調達費と米欧実質金利差が想定と逆。"
+    },
+    {
+      "pair": "USD/CHF",
+      "assessment": "判断保留",
+      "condition": "ドル資金需要増・米実質金利優位ならUSD、フランへの逃避が上回ればCHFを支え得る。",
+      "invalidation": "逃避フロー、資金調達スプレッド、米スイス実質金利差の方向が逆。"
+    },
+    {
+      "pair": "USD/CAD",
+      "assessment": "判断保留",
+      "condition": "加原油輸出の数量・所得と加米実質金利差が加ドル側に改善すればCAD、米実質金利優位の拡大・ドル調達需要増ならUSDを支え得る。",
+      "invalidation": "加輸出量・所得と加米実質金利差が条件に反する。"
+    },
+    {
+      "pair": "AUD/USD",
+      "assessment": "判断保留",
+      "condition": "アジアの資源需要と豪米実質金利差が豪ドル側に改善すればAUD、需要減速とドル調達需要増ならUSDを支え得る。",
+      "invalidation": "豪輸出量・アジア需要・豪米実質金利差が逆方向。"
+    }
+  ],
+  "invalidations": [
+    "実積載量・運賃・軽油スプレッドが想定と逆に動く。",
+    "米留出油在庫と精製稼働率が想定と逆、または卸価格の変化が小売に波及しない。",
+    "燃料高でも基調物価・期待が鈍化し、実質金利・実質消費が仮説に沿わない。"
+  ],
+  "review_after": "2026-11-17T17:16:57.000Z",
+  "review_due_count": 0,
+  "reviews": [],
+  "review_check_scope": "前回全履歴の期限到来0件、最古の分析2件はいずれも11月13日に期限到来。今回確認できた範囲で到来なし。",
+  "notification_eligible": true,
+  "new_important_release_count": 1,
+  "summary_ja_40": "米ＥＩＡは二〇二七年の軽油小売価格見通しを一二％上げ一ガロン五ドル三セントとした",
+  "notification_decision": "新規重要発表1件。EIAの11月短期見通しの軽油価格見通し改定を通知。ウォラー講演、G7、CPIは既報分。",
+  "notification_document_ids": [
+    "eia-steo-20261110-november-2138753c"
+  ],
+  "retry_queue": [
+    {
+      "id": "eia_pdf",
+      "url": "https://www.eia.gov/outlooks/steo/archives/nov26.pdf",
+      "reason": "物理1〜9頁と10頁の精製節の抽出原文と訳を保存。ページ画像の実視認は未確認。物理10頁の天然ガス節以降〜58頁は未収録で全訳・全頁照合は未了。 別掲表2は全体のうち軽油小売価格行・ブレント行・出典注記を照合。図表一式・他章の日本語訳は未了。 PDFバイナリ、原本SHA256、埋込メタデータ・注釈・リンクの確認は未取得。原本バイナリは未保存。"
+    },
+    {
+      "id": "treasury_10y",
+      "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query?filter=auction_date:eq:2026-11-10",
+      "reason": "米東部13:00（11月11日03:00 JST）の予定時刻以後に落札表と決済日を確認。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://markets.newyorkfed.org/api/tsy/all/results/search.json?startDate=11/10/2026&endDate=11/10/2026",
+      "reason": "11月10日SOMA個別結果APIの取得失敗を再試行。"
+    },
+    {
+      "id": "treasury_buyback",
+      "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/BBR_20261105184000.pdf",
+      "reason": "個別結果PDFの再取得。"
+    },
+    {
+      "id": "state_g7",
+      "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/11/secretary-rubios-meeting-with-ukrainian-foreign-minister-sybiha/",
+      "reason": "直接取得失敗。参加当局の合意・発効・履行の公開文書を再確認。"
+    },
+    {
+      "id": "cpi_pdf",
+      "url": "https://www.bls.gov/news.release/archives/cpi_11102026.pdf",
+      "reason": "物理12〜15・21〜38頁と図2の未訳・未転記分。"
+    },
+    {
+      "id": "ca_house",
+      "url": "https://electionresults.sos.ca.gov/returns/us-rep",
+      "reason": "動的ページの数表が未取得。州認証と区別。"
+    },
+    {
+      "id": "eia_wpsr",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "reason": "次週公表とホルムズ通航量・積載量・保険料の実測を確認。"
+    }
+  ],
+  "dedup": {
+    "main_at_start": "2d926ddb6afc2ef0e1aa246354150543eeb10f46",
+    "repository_record_count": 315,
+    "eia_and_topic_candidates": [
+      {
+        "id": "eia-wpsr-20261104-overview-7ebdc53d",
+        "url": "https://ir.eia.gov/wpsr/overview.pdf",
+        "published": null,
+        "hash": "642f028c610740f543f030c047c763b690143f778a728e05c34e712f8c438172",
+        "status": "parsed"
+      },
+      {
+        "id": "eia-wpsr-20261104-overview-full-7ebdc53d",
+        "url": "https://ir.eia.gov/wpsr/overview.pdf",
+        "published": null,
+        "hash": "642f028c610740f543f030c047c763b690143f778a728e05c34e712f8c438172",
+        "status": "parsed"
+      },
+      {
+        "id": "eia-wpsr-20261104-summary",
+        "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_11_04/wpsr_2026_11_04.php",
+        "published": null,
+        "hash": "1ad45fcb9dfd9c40cc3d66ae543faca5cf660d4a9610c316714a26397a46b54d",
+        "status": "parsed"
+      },
+      {
+        "id": "eia-wpsr-20261104-table1-csv-090ff506",
+        "url": "https://ir.eia.gov/wpsr/table1.csv",
+        "published": null,
+        "hash": "090ff50603ee519ac50c41222581a3b2fa278f71751302bef41a96bf71d18ea9",
+        "status": "parsed"
+      },
+      {
+        "id": "eia-wpsr-20261104-table2-b62e5cfc",
+        "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_11_04/download/table2.pdf",
+        "published": null,
+        "hash": "cdd3cd41a8ef411cb55ebb4f25d41b8b024dfe035e63a7a9e66a0facd661ac97",
+        "status": "parsed"
+      },
+      {
+        "id": "eia-wpsr-appendixb-supply-methods-bd250280-p01-14",
+        "url": "https://www.eia.gov/petroleum/supply/weekly/pdf/appendixb.pdf",
+        "published": null,
+        "hash": "ba2f947f23d8bd8dd23dd7e0e2e21d0f9198870380af082109eb8a36346e8595",
+        "status": "parsed"
+      },
+      {
+        "id": "eia-wpsr-appendixb-supply-methods-bd250280-p06-09",
+        "url": "https://www.eia.gov/petroleum/supply/weekly/pdf/appendixb.pdf",
+        "published": null,
+        "hash": "a1c00e10ea1650ea0b757069b0f2cdc9b2b7b8754e5cce0d45205eb214c996a7",
+        "status": "parsed"
+      },
+      {
+        "id": "eia-wpsr-appendixb-supply-methods-bd250280-p06-10-13-14",
+        "url": "https://www.eia.gov/petroleum/supply/weekly/pdf/appendixb.pdf",
+        "published": null,
+        "hash": "c103fda339b96c4f6745ecfb5cb3ebe063ef1aff13b6ffe7c282bff3fec05512",
+        "status": "parsed"
+      },
+      {
+        "id": "eia-wpsr-appendixb-supply-methods-bd250280-p06-10",
+        "url": "https://www.eia.gov/petroleum/supply/weekly/pdf/appendixb.pdf",
+        "published": null,
+        "hash": "48752c80848119cd9e90db2895a11baf08ae99c89bd191f18c4ade68775c66d5",
+        "status": "parsed"
+      },
+      {
+        "id": "eia-wpsr-appendixb-supply-methods-bd250280-p06-14",
+        "url": "https://www.eia.gov/petroleum/supply/weekly/pdf/appendixb.pdf",
+        "published": null,
+        "hash": "e1cded1f7c40dcdb16fc350cdb212286b6a3b52ea331801c5b4a53755d281be9",
+        "status": "parsed"
+      },
+      {
+        "id": "eia-wpsr-appendixb-supply-methods-bd250280",
+        "url": "https://www.eia.gov/petroleum/supply/weekly/pdf/appendixb.pdf",
+        "published": null,
+        "hash": "bd2502800c8a009d7585a41a726c293ecff04e0118553911cc76dbfa4fb8919b",
+        "status": "parsed"
+      },
+      {
+        "id": "eia-wpsr-appendixd-20230601-e0d2adac",
+        "url": "https://www.eia.gov/petroleum/supply/weekly/pdf/appendixd.pdf",
+        "published": null,
+        "hash": "372c83a08a8fdc41d76aa26a399c74f9f13907f915a35a6325f91300aec8c4bf",
+        "status": "parsed"
+      },
+      {
+        "id": "eia-wpsr-appendixd-20230601-full-230dbefd",
+        "url": "https://www.eia.gov/petroleum/supply/weekly/pdf/appendixd.pdf",
+        "published": null,
+        "hash": "230dbefdd9bd331d87e4f8d0f1f82d568f1a819a713e821fb6366f6cdc652408",
+        "status": "parsed"
+      },
+      {
+        "id": "eia-wpsr-sources-6603d752",
+        "url": "https://www.eia.gov/petroleum/supply/weekly/pdf/sources.pdf",
+        "published": null,
+        "hash": "d0ea4ae83bad8c415d5894c3309fd50176be0a7d640bccf8083175b20ffe8ac5",
+        "status": "parsed"
+      }
+    ],
+    "match_count": 0,
+    "search": "公式アーカイブURL・11月版の公表日と取得済み原文SHA256を比較。正確な公表時計時刻は不明。直近コミットと既存メール経路を含む315件のファイル索引を確認。"
+  },
+  "postgres_status": "今回コミット後に別確認。前回はインポート失敗。",
+  "pc_status": "Mac実機の表示・OS通知は未確認。"
+}
