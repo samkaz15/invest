@@ -1,0 +1,35 @@
+{
+  "id": "jpmof-20261110-30y-jgb-noncompetitive-ii-43c99bb8",
+  "source": "Japan Ministry of Finance",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261110a.htm",
+  "published_at": null,
+  "publication_date": "2026-11-10",
+  "publication_timezone": "Asia/Tokyo",
+  "publication_time_note": "結果ページは日付のみ明示。公表の実時刻は未確認。",
+  "received_at": "2026-11-10T07:01:33.036029+00:00",
+  "retrieved_at": "2026-11-10T07:01:33.036029+00:00",
+  "received_at_kind": "web_retrieved",
+  "title_en": "Results of the Non-price Competitive Auction II for 30-year JGBs (Issue No. 92)",
+  "title_ja": "30年利付国債（第92回）の第Ⅱ非価格競争入札結果",
+  "topics": [
+    "sovereign_debt",
+    "usd_jpy"
+  ],
+  "source_scope": "counterparty_currency_context",
+  "source_language": "ja",
+  "original_text": "30年利付国債（第92回）の第Ⅱ非価格競争入札結果\n令和8年11月10日\n財務省\n本日の30年利付国債（第92回）の第Ⅱ非価格競争入札に対する応募はありませんでした。",
+  "translation_ja": "30年利付国債（第92回）の第Ⅱ非価格競争入札結果\n令和8年11月10日\n財務省\n本日の30年利付国債（第92回）の第Ⅱ非価格競争入札に対する応募はありませんでした。",
+  "translation_method": "source_already_japanese",
+  "facts_ja": [
+    "本日の30年利付国債（第92回）の第Ⅱ非価格競争入札に対する応募はありませんでした。"
+  ],
+  "inference_ja": [],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "excluded_boilerplate": "連絡先・ナビゲーションは本文対象外。",
+  "content_sha256": "43c99bb87775af116cc78f8e0aa8a97d53cdbc8b5615c074b62ed29f7ba23d41",
+  "source_raw_sha256": "fa4d9d252205ed2e744b2f8b3ab29d72ab0d4c26a8a6554711af08212f64df39",
+  "notification_eligible": false,
+  "notification_reason": "競争入札及び第Ⅰ結果とは別の定例の補足結果。"
+}
