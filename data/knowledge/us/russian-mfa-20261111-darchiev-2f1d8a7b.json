@@ -1,0 +1,34 @@
+{
+  "id": "russian-mfa-20261111-darchiev-2f1d8a7b",
+  "source": "Ministry of Foreign Affairs of the Russian Federation",
+  "source_url": "https://t.me/MFARussia/33312",
+  "retrieval_url": "https://telegram.me/MFARussia/33312?embed=1",
+  "title_en": "Russian Foreign Ministry statement on the death of Ambassador Alexander Darchiev",
+  "title_ja": "ロシア外務省、駐米大使ダルチエフ氏の死去を発表",
+  "published_at": "2026-11-11T16:20:53+00:00",
+  "received_at": "2026-11-11T20:21:33.218542+00:00",
+  "retrieved_at": "2026-11-11T20:21:33.218542+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "diplomacy",
+    "other_us"
+  ],
+  "original_text": "On the passing of Alexander Darchiev, Ambassador Extraordinary and Plenipotentiary of the Russian Federation to the United States of America.\n\nThe leadership and staff of the Russian Foreign Ministry announce with profound sorrow that Alexander Darchiev, Ambassador Extraordinary and Plenipotentiary of the Russian Federation to the USA, passed away suddenly on November 11, aged 66.\n\nWe have lost an outstanding diplomat, an experienced leader, a kind colleague and a mentor. An exceptional professional and a distinguished expert on the United States, Alexander Darchiev served in one of the most demanding areas of Russian foreign policy.\n\nWe extend our deepest and most heartfelt condolences to Alexander Darchiev’s family and loved ones.\n\nThe cherished memory of our colleague, taken from us far too soon, will remain in our hearts forever.",
+  "translation_ja": "ロシア連邦の駐アメリカ合衆国特命全権大使アレクサンドル・ダルチエフ氏の死去について。\n\nロシア外務省の幹部と職員は深い悲しみとともに、ロシア連邦の駐米特命全権大使アレクサンドル・ダルチエフ氏が11月11日、66歳で急逝したことをお知らせします。\n\n私たちは、優れた外交官、経験豊かな指導者、心優しい同僚、そして指導者を失いました。卓越した実務家で米国事情にも精通していたアレクサンドル・ダルチエフ氏は、ロシア外交の中でもとりわけ難しい分野を担当しました。\n\nダルチエフ氏のご家族と親しい方々に、心から深くお悔やみを申し上げます。あまりに早く旅立った同僚の大切な記憶は、私たちの心に永遠に残ります。",
+  "content_sha256": "2f1d8a7b7f1f6a763cdcc6661b12009548a4695ed962f99a06298bfb42a66aa6",
+  "translation_sha256": "b9f91abf5b39d63adcf65446862edf31e469282e45234e74f6f7e79fffe79b87",
+  "source_raw_sha256": "acfe761cda1a155bd4c3efc08e263cef742e3783c62e716769057a5c0c1d1b94",
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "missing_parts": [
+    "英文投稿の本文は全文訳。添付は肖像写真。ロシア語官庁ページの可否は取得記録参照。"
+  ],
+  "facts_ja": [
+    "ロシア外務省はダルチエフ駐米大使が11月11日に死去したと公表。後任や米露協議に対する変更は、この発表には記載されていない。"
+  ],
+  "inference_ja": [],
+  "notification_eligible": false,
+  "related_source_urls": [
+    "https://mid.ru/ru/foreign_policy/news/2162475/"
+  ]
+}

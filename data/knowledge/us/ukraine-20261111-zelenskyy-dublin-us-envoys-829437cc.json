@@ -1,0 +1,39 @@
+{
+  "id": "ukraine-20261111-zelenskyy-dublin-us-envoys-829437cc",
+  "source": "Office of the President of Ukraine",
+  "source_url": "https://t.me/V_Zelenskiy_official/21782",
+  "retrieval_url": "https://telegram.me/V_Zelenskiy_official/21782?embed=1",
+  "title_en": "Zelenskyy arrives in Dublin and confirms meeting plans with U.S. envoys",
+  "title_ja": "ゼレンスキー大統領、ダブリン到着と米特使との会談予定を公表",
+  "published_at": "2026-11-11T17:27:29+00:00",
+  "received_at": "2026-11-11T20:19:54.294750+00:00",
+  "retrieved_at": "2026-11-11T20:19:54.294750+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "diplomacy",
+    "other_us"
+  ],
+  "original_text": "Разом із командою розпочинаємо візит до Ірландії. Вже прибули до Дубліна для участі в IX саміті Європейської політичної спільноти.\n\nСьогодні та завтра заплановані двосторонні й багатосторонні зустрічі з партнерами. Загалом близько 20 лідерів. Візьму участь в інавгураційній пленарній сесії саміту ЄПС. Також запланована зустріч щодо дипломатії з американською переговорною командою – Стівом Віткоффом і Джаредом Кушнером.\n\nПрацюємо, щоб мир був ближчим. Дякую всім, хто допомагає та підтримує Україну.",
+  "translation_ja": "チームとともにアイルランド訪問を始めます。第9回欧州政治共同体首脳会合に出席するため、すでにダブリンに到着しました。\n\n今日と明日は、パートナーとの二国間・多国間会合を予定しています。合わせて約20人の首脳と会います。欧州政治共同体首脳会合の開会全体会合に出席します。外交について、米国の交渉チームのスティーブ・ウィトコフ氏、ジャレッド・クシュナー氏と会う予定もあります。\n\n平和を近づけるために取り組んでいます。ウクライナを助け、支えてくださる皆さまに感謝します。",
+  "content_sha256": "829437ccadfbee4671bc5d4753d4c73f29eebadb87a9f98e573e10b3e891e1bb",
+  "translation_sha256": "694022354e59b30e582e33f51266dc4392249fad034dce2e322cba8e99281c55",
+  "source_raw_sha256": "79d8c9f0b69bd0440c582b2ee8ec58ed95b9d18fbf2d8076f5c0820ae55040e0",
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "missing_parts": [
+    "投稿本文は全文訳。添付の11秒映像は取得できず未訳。"
+  ],
+  "facts_ja": [
+    "ゼレンスキー大統領はダブリンへの到着と、ウィトコフ、クシュナー両米特使との会談予定を公式投稿で公表。別の投稿で、米特使の訪ロ後に11月12日に会う予定と説明した。米・露側の公式確定日程、各会談の実施、合意・履行は未確認。"
+  ],
+  "inference_ja": [],
+  "notification_eligible": true,
+  "summary_ja_40": "ゼレンスキー氏はダブリンで米特使ウィトコフ氏とクシュナー氏に会う予定を公表した。",
+  "notification_reason": "米特使の訪問予定は報道で既知。ウクライナ大統領によるダブリンでの会談予定と特使2名の確認を今回初取得。",
+  "related_source_urls": [
+    "https://t.me/V_Zelenskiy_official/21776",
+    "https://t.me/V_Zelenskiy_official/21786",
+    "https://www.consilium.europa.eu/en/meetings/international-summit/2026/11/12/"
+  ]
+}

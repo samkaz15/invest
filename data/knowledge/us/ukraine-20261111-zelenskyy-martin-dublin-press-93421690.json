@@ -1,0 +1,35 @@
+{
+  "id": "ukraine-20261111-zelenskyy-martin-dublin-press-93421690",
+  "source": "Office of the President of Ukraine",
+  "source_url": "https://t.me/V_Zelenskiy_official/21786",
+  "retrieval_url": "https://telegram.me/V_Zelenskiy_official/21786?embed=1",
+  "title_en": "Notice of a joint media appearance with Taoiseach Micheál Martin",
+  "title_ja": "ゼレンスキー大統領とマーティン首相の共同会見告知",
+  "published_at": "2026-11-11T18:47:30+00:00",
+  "received_at": "2026-11-11T20:19:54.269434+00:00",
+  "retrieved_at": "2026-11-11T20:19:54.269434+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "diplomacy",
+    "other_us"
+  ],
+  "original_text": "НАЖИВО. Спілкування з медіа разом із Міхалом Мартіном.",
+  "translation_ja": "生中継。ミホル・マーティン氏とともに報道陣の質問に答えます。",
+  "content_sha256": "93421690f41a6bc74197aa26f5b822808eb1c20e81eb62aaaf7024b21e12aec0",
+  "translation_sha256": "9dd76426804500cd72bc305d6c6234a911535e939984db790e03feb9f599aecd",
+  "source_raw_sha256": "f8bd05639ce632ec6ae7b9d7e8daf72c252637c5bd763d7334a61a1288c209d7",
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "missing_parts": [
+    "投稿本文は全文訳。公式配信ページと発行者は確認。会見全編の音声・字幕が取れず、発言全文は未訳。"
+  ],
+  "facts_ja": [
+    "ウクライナ大統領がアイルランド首相との共同会見を公式に配信。告知本文自体は会見での発言を記載していない。"
+  ],
+  "inference_ja": [],
+  "notification_eligible": false,
+  "related_source_urls": [
+    "https://www.youtube.com/watch?v=pYvePFdx3Kk"
+  ]
+}
