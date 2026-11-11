@@ -1,0 +1,40 @@
+{
+  "id": "ukr-president-20261110-nordic-4b47e131",
+  "source": "Office of the President of Ukraine",
+  "source_url": "https://www.president.gov.ua/en/news/prezident-obgovoriv-iz-premyer-ministrami-krayin-pivnichnoyi-107241",
+  "title_en": "The President Discussed Diplomatic Process and Support for Ukraine Amid Russian Escalation with the Prime Ministers of Nordic Countries",
+  "title_ja": "ウクライナ大統領と北欧5か国首相の外交・支援協議",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "published_time_basis": "ページ本文は2026年11月10日23:30と表示。表示のタイムゾーンは未確認。ページの更新メタデータを公表時刻に代用しない。",
+  "received_at": "2026-11-11T08:15:41.719530+00:00",
+  "retrieved_at": "2026-11-11T08:15:41.719530+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "diplomacy",
+    "energy"
+  ],
+  "original_text": "Their shared position is clear: Europe must absolutely be at the negotiating table.",
+  "translation_ja": "ウクライナ大統領府によると、ゼレンスキー大統領はコペンハーゲンでデンマーク、アイスランド、ノルウェー、フィンランド、スウェーデン各首相にアブダビ協議を説明した。大統領府は欧州が交渉に直接参加すべきだとの共通の立場を伝えた。 ゼレンスキー氏はロシアによるエネルギー施設への攻撃で複数地域で停電が続いていると説明し、冬季の追加支援に期待を示した。北欧側の新規予算、交渉参加の正式決定、停戦・捕虜交換の合意や履行は本文に示されていない。",
+  "content_sha256": "4b47e131c09f3f6ef0b9b299134735430bb7e1f12de8e790249b763a5f2473f4",
+  "source_raw_sha256": "c7f47bab3b2de71cecbe045ed325f9f8274a38409fbdb67f7f65d822d1a12148",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "英語・ウクライナ語の公式本文を閲覧。サイトの表示はCC BY-NC-ND 4.0。短い引用と独自の日本語要約を収録し、全文翻訳・写真は収録しない。",
+    "停電や戦況に関する当事者の説明は独立検証未了。"
+  ],
+  "facts_ja": [
+    "ウクライナ大統領府によると、ゼレンスキー大統領はコペンハーゲンでデンマーク、アイスランド、ノルウェー、フィンランド、スウェーデン各首相にアブダビ協議を説明した。大統領府は欧州が交渉に直接参加すべきだとの共通の立場を伝えた。"
+  ],
+  "inference_ja": [
+    "共同見解は交渉形式への希望を示す。参加国の正式合意と実際のエネルギー供給への影響は別途確認が必要。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "既報の協議に関する当事者の説明で、正式な交渉参加決定や新規支援策を確認できない。",
+  "related_source_urls": [
+    "https://www.president.gov.ua/news/prezident-obgovoriv-iz-premyer-ministrami-krayin-pivnichnoyi-107241",
+    "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  ]
+}
