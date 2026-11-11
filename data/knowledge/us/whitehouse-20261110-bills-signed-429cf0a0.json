@@ -1,0 +1,34 @@
+{
+  "id": "whitehouse-20261110-bills-signed-429cf0a0",
+  "source_url": "https://www.whitehouse.gov/briefings-statements/2026/11/congressional-bills-h-r-997-h-r-1703-h-r-1945-and-h-r-7730-signed-into-law/",
+  "title_en": "Congressional Bills H.R. 997, H.R. 1703, H.R. 1945, and H.R. 7730 Signed into Law",
+  "title_ja": "ホワイトハウスが4法案への大統領署名を公表",
+  "published_at": "2026-11-10T21:03:39+00:00",
+  "published_date": "2026-11-10",
+  "received_at": "2026-11-11T14:48:26.089037+00:00",
+  "retrieved_at": "2026-11-11T14:48:26.089037+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "investment_policy",
+    "credit",
+    "fiscal_policy"
+  ],
+  "original_text": "Congressional Bills H.R. 997, H.R. 1703, H.R. 1945, and H.R. 7730 Signed into Law\nThe White House\nNovember 10, 2026\nOn Tuesday, November 10, 2026, the President signed into law:\nH.R. 997, the “National Taxpayer Advocate Enhancement Act of 2025,” which authorizes the National Taxpayer Advocate to appoint legal counsel within the Office of the National Taxpayer Advocate that reports directly to the National Taxpayer Advocate, or delegate thereof, and further expands the authority of National Taxpayer Advocate to take personnel actions with respect to any Taxpayer Advocate Service employees;\nH.R. 1703, the “Choices for Increased Mobility Act of 2026,” which modifies Medicare payment rules for certain wheelchairs;\nH.R. 1945, the “America’s National Churchill Museum National Historic Landmark Act,” which designates the America’s National Churchill Museum, located in Fulton, Missouri, as a National Historic Landmark; and\nH.R. 7730, the “Bankruptcy Threshold Adjustment Act,” which permanently raises bankruptcy threshold limits for small business Chapter 11 proceedings and consumer bankruptcy Chapter 13 proceedings.",
+  "translation_ja": "H.R. 997、H.R. 1703、H.R. 1945、H.R. 7730への大統領署名\nホワイトハウス　2026年11月10日\n\n2026年11月10日（火）、大統領は次の法案に署名し、法律として成立させた。\n\n- H.R. 997「2025年全国納税者擁護官権限強化法」。全国納税者擁護官に、自身またはその委任を受けた者に直接報告する法律顧問を同官の事務所内に任命する権限を与え、納税者擁護サービスの職員に関して人事措置を行う権限も拡大する。\n- H.R. 1703「2026年移動手段の選択肢拡大法」。一定の車いすに関するメディケアの支払規則を変更する。\n- H.R. 1945「米国国立チャーチル博物館の国定歴史建造物指定法」。ミズーリ州フルトンの同博物館を国定歴史建造物に指定する。\n- H.R. 7730「破産債務上限調整法」。小規模事業者の第11章手続きと消費者の第13章破産手続きの債務上限を恒久的に引き上げる。",
+  "content_sha256": "429cf0a09a30ac5ea6455afecf7e72e5b2214536597f1e1b464377bf0611be44",
+  "source_raw_sha256": "5d604def5e2411e5401a6b7a6814baef5e35287bde24e5a24e32458c2b5ce5d9",
+  "translation_sha256": "7edc30bd6f4b98dbb819b09d19bf75addf44fe44a1c64abb84313a71ced90082",
+  "facts_ja": [
+    "ホワイトハウスは現地11月10日に大統領がH.R. 7730を含む4法案に署名したと公表。"
+  ],
+  "inference_ja": [],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": true,
+  "summary_ja_40": "米大統領が中小企業と個人の破産手続きで適用される債務上限を引き上げる法律に署名。",
+  "published_time_basis": "公式ページのarticle:published_time。署名そのものの時刻は未公表。",
+  "related_source_urls": [
+    "https://www.govinfo.gov/content/pkg/BILLS-119hr7730enr/pdf/BILLS-119hr7730enr.pdf"
+  ]
+}
