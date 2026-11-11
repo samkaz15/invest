@@ -1,0 +1,35 @@
+{
+  "id": "ukraine-20261110-denmark-students-016df550",
+  "source_url": "https://www.president.gov.ua/en/news/lideri-ukrayini-ta-daniyi-zustrilisya-zi-studentami-kopengag-107237",
+  "title_en": "The Leaders of Ukraine and Denmark Met with Students at the University of Copenhagen to Discuss Support for Ukrainians and Partners’ Unity in Defending Europe Against Russia",
+  "title_ja": "ウクライナ・デンマーク首脳のコペンハーゲン大学での意見交換",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "received_at": "2026-11-11T03:56:21.839798+00:00",
+  "retrieved_at": "2026-11-11T03:56:21.839798+00:00",
+  "received_at_kind": "web_retrieved",
+  "original_text": "the participants discussed prisoner exchanges, the release of civilians and the return of children abducted by Russia",
+  "translation_ja": "短い抜粋訳。出席者は捕虜の交換、民間人の解放、ロシアによって連れ去られた子どもたちの帰還について協議した。\n\n本文の要約。大統領府は安全の保証も議題で、翌日も協議を続けるとしている。首脳会談は大統領が可能性に言及した段階。学生との会合では冬季のエネルギー・防空支援も議論された。戦況・攻撃・損失への言及は当事者の主張。",
+  "content_sha256": "016df55056734a9248d593035d54275bce60ba87a1cbf82aebe4086543794639",
+  "translation_sha256": "c1234b1d6de8acd127e5b7fc4cb06419b834f448b370953b36664c7f557465b4",
+  "source_raw_sha256": "5bc3610fd358ce2a7e8bee947e44b936b3d734818b9ce5ef061748987af7d34a",
+  "topics": [
+    "war",
+    "diplomacy",
+    "energy"
+  ],
+  "facts_ja": [
+    "ウクライナ大統領府は、アブダビ協議で捕虜交換、民間人解放、子どもの帰還、安全の保証が議論されたと説明。既報の第1回協議の補足で、共同合意・履行・戦況の独立確認は未取得。"
+  ],
+  "inference_ja": [],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公式本文は閲覧。CC BY-NC-ND 4.0表記に従い、本文全文と全訳は再掲載せず短い抜粋・要約を保存。",
+    "ウェブ表示のタイムゾーンは明記なし。共同文書、協議結果・合意の履行と戦況は未確認。"
+  ],
+  "notification_eligible": false,
+  "published_time_display": "10 November 2026 - 21:26",
+  "source_reuse_terms": "CC BY-NC-ND 4.0 表記あり。",
+  "notification_reason": "既報の協議の議題を補足。実施・合意の新規公表なし。"
+}

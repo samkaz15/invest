@@ -1,0 +1,698 @@
+{
+  "id": "fed-ifdp-20261110-1449-2b7d50b9",
+  "source_url": "https://www.federalreserve.gov/econres/ifdp/trade-deflection-the-spillover-effects-of-us-tariffs-on-import-prices-in-bystander-countries.htm",
+  "title_en": "Trade Deflection: The Spillover Effects of U.S. Tariffs on Import Prices in Bystander Countries",
+  "title_ja": "貿易転換と米国関税の第三国輸入価格への波及",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "received_at": "2026-11-11T03:57:04.502970+00:00",
+  "retrieved_at": "2026-11-11T03:57:04.502970+00:00",
+  "received_at_kind": "web_retrieved",
+  "original_text": "Chinese products targeted by U.S. tariffs experience persistent declines in import prices in bystander countries",
+  "translation_ja": "抄録の短い抜粋訳。米国の関税対象となった中国製品は、第三国で輸入価格の持続的な低下を示した。\n\n本文要約。FRB掲載IFDP 1449は、2017〜2021年の貿易データを使った著者の推計で、2018〜19年の米対中関税対象品の第三国での輸入単価は、2021年までに非対象品対比4.4％低下したと報告。 著者は新興国、特にASEANで低下が大きく持続的と推計。品目の対米輸出依存、仕向地の供給元集中、対中の地政学的近さを異質性の要因として分析した。2025〜26年の関税は対象国と規模が異なり、同じ効果を前提にできないと結論で留保。\n\n表2（2017〜2021年、第三国標本）の数値。\n\n| 変数 | 観測数 | 平均 | 標準偏差 | 最小 | 最大 |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| 基本関税区分 | 19,768,403 | 0.05 | 0.22 | 0 | 1 |\n| 基本関税区分（中国のみ） | 1,087,972 | 0.89 | 0.32 | 0 | 1 |\n| 金額（対数） | 19,768,350 | 9.34 | 3.35 | −7 | 25 |\n| 数量（対数） | 18,869,811 | 6.29 | 4.07 | −7 | 31 |\n| 単価（対数） | 18,869,769 | 3.05 | 2.40 | −18 | 23 |\n\n注記の要約。UN Comtradeに基づく著者計算。原産国・仕向国・HS6桁品目・年単位。第三国は69経済、米国と中国を輸入国として除外。貿易戦争中に米関税の対象となった中国原産品が1。金額欠損53、数量欠損898,592、単価算出不能898,634。",
+  "content_sha256": "2b7d50b9414b48e43cae4d5f93ff1a8a01a46a46881d36ecf443d7fd8770fdd8",
+  "translation_sha256": "ac074161a65bddb34da4a038f5b8c66e86b4a48a1421027ab33cfcfb21e3007c",
+  "source_raw_sha256": "ae30ab78ee43475b48d39e9808b4f81d71d0b77129b03a14a37d3425cf5091ed",
+  "topics": [
+    "tariffs",
+    "inflation",
+    "research"
+  ],
+  "facts_ja": [
+    "FRB掲載IFDP 1449は、2017〜2021年の貿易データを使った著者の推計で、2018〜19年の米対中関税対象品の第三国での輸入単価は、2021年までに非対象品対比4.4％低下したと報告。",
+    "著者の暫定研究。FRB理事会の政策決定・見解と区別。"
+  ],
+  "inference_ja": [],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "HTML抄録、PDF物理1・2・4・12・33頁の該当箇所を確認。全59頁を取得し抽出できたが全文再利用の権利は未確認。短い抄録抜粋、表2の数値・注記要約、論文の要約を保存。",
+    "物理12頁のみ目視。図3の全点数値と残り頁の本文・表・脚注の訳は未収録。PDF原本は再配布許諾と埋込メタデータの安全性が未確認のため非保存。"
+  ],
+  "notification_eligible": false,
+  "doi": "10.17016/IFDP.2026.1449",
+  "publication_date_basis": "FRB Recent Postingsの日付。時刻の掲載なし。",
+  "notification_reason": "既発表の歴史データを使った暫定研究。現行措置の発表や発効なし。",
+  "pdf": {
+    "source_url": "https://www.federalreserve.gov/econres/ifdp/files/ifdp1449.pdf",
+    "sha256": "209aed1186e77241c6488a89672f26b222e33f7edb9eeb07f2bfd58d7bd010b2",
+    "page_count": 59,
+    "ocr_used": false,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "original_saved": false,
+    "original_storage_reason": "再配布許諾・埋込メタデータ安全性未確認。",
+    "retrieved_at": "2026-11-11T03:57:04.666990+00:00",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 2,
+        "original_text": "Chinese products targeted by U.S. tariffs experience persistent declines in import prices in bystander countries",
+        "translation_ja": "米国の関税対象となった中国製品は、第三国で輸入価格の持続的な低下を示した。",
+        "extraction_status": "excerpt",
+        "translation_status": "partial",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 4,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 5,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 7,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 8,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 9,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 10,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 11,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 12,
+        "original_text": "Table 2: Basic Summary Statistics for the Third-Country Market Sample: 2017-2021\nBasic tariff status | 19,768,403 | 0.05 | 0.22 | 0 | 1\nBasic tariff status (China only) | 1,087,972 | 0.89 | 0.32 | 0 | 1\nValue (ln) | 19,768,350 | 9.34 | 3.35 | -7 | 25\nQuantity (ln) | 18,869,811 | 6.29 | 4.07 | -7 | 31\nUnit price (ln) | 18,869,769 | 3.05 | 2.40 | -18 | 23",
+        "translation_ja": "表2（2017〜2021年、第三国標本）の数値。\n\n| 変数 | 観測数 | 平均 | 標準偏差 | 最小 | 最大 |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| 基本関税区分 | 19,768,403 | 0.05 | 0.22 | 0 | 1 |\n| 基本関税区分（中国のみ） | 1,087,972 | 0.89 | 0.32 | 0 | 1 |\n| 金額（対数） | 19,768,350 | 9.34 | 3.35 | −7 | 25 |\n| 数量（対数） | 18,869,811 | 6.29 | 4.07 | −7 | 31 |\n| 単価（対数） | 18,869,769 | 3.05 | 2.40 | −18 | 23 |\n\n注記の要約。UN Comtradeに基づく著者計算。原産国・仕向国・HS6桁品目・年単位。第三国は69経済、米国と中国を輸入国として除外。貿易戦争中に米関税の対象となった中国原産品が1。金額欠損53、数量欠損898,592、単価算出不能898,634。",
+        "extraction_status": "excerpt",
+        "translation_status": "partial",
+        "visual_review_complete": true,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 13,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 14,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 15,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 16,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 17,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 18,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 19,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 20,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 21,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 22,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 23,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 24,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 25,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 26,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 27,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 28,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 29,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 30,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 31,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 32,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 33,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 34,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 35,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 36,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 37,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 38,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 39,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 40,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 41,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 42,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 43,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 44,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 45,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 46,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 47,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 48,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 49,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 50,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 51,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 52,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 53,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 54,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 55,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 56,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 57,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 58,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      },
+      {
+        "page": 59,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "extracted_not_reproduced",
+        "translation_status": "not_translated",
+        "visual_review_complete": false,
+        "missing_parts": [
+          "頁全体の転載・全訳なし。"
+        ]
+      }
+    ]
+  }
+}
