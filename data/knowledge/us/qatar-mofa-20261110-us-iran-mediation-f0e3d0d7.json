@@ -1,0 +1,32 @@
+{
+  "id": "qatar-mofa-20261110-us-iran-mediation-f0e3d0d7",
+  "source_url": "https://mofa.gov.qa/en/qatar/latest-articles/latest-news/details/2026/11/10/foreign-ministry--qatari-mediation-efforts-continue-to-bridge-views-between-washington--tehran",
+  "title_en": "Foreign Ministry: Qatari Mediation Efforts Continue to Bridge Views Between Washington, Tehran",
+  "title_ja": "カタール外務省が米・イラン仲介の継続を説明",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "received_at": "2026-11-11T12:57:52.300859+00:00",
+  "retrieved_at": "2026-11-11T12:57:52.300859+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "diplomacy",
+    "war",
+    "oil"
+  ],
+  "original_text": "Director of the Media and Communication Department at the Ministry of Foreign Affairs, Ibrahim bin Sultan Al Hashmi, affirmed that Qatari mediation efforts to bridge the gap between the United States and Iran are ongoing.",
+  "translation_ja": "カタール外務省の報道担当幹部は、米国とイランの隔たりを埋める仲介を続けており、地域内外の関係国との調整がこの数日・数週間で進んだと説明した。首相兼外相は11月9日にワシントンでバンス副大統領と会談し、その後ホワイトハウスでトランプ大統領と非公開で会談した。外務省は大統領との会談を前向きと評価し、米・イランの立場の隔たりを縮めることが焦点だったと説明した。合意の輪郭が固まった段階で詳細を公表するという。ホルムズ海峡については、冬を前に通航制約が各国、とりわけ脆弱な人々の負担を増すとして、航行の自由を早期に回復するよう求めた。サウジアラビアが安全と領土の一体性を守る措置を取ることへの連帯も表明した。会見後半では、仲介をめぐる報道の文脈と情報源の確認を呼びかけた。",
+  "content_sha256": "f0e3d0d75b41f23aeddb71fc61397f6ff2d84e560fa78b89a80aea3092e1d60b",
+  "source_raw_sha256": "a9e61a11b8780c7721737a86c42d48649e91e005538601b44dc984b9c7506c54",
+  "translation_sha256": "e056412805219c2b93ce92545d31a513f32415e118e03594c9d2daee13e7ddb9",
+  "facts_ja": [
+    "カタール外務省は首相兼外相が11月9日ワシントンで米副大統領、大統領と会談したと説明し、仲介の継続を確認した。",
+    "カタールは仲介努力と両側の外交的解決への反応を説明。米・イランの直接交渉開始、合意文書、実施を確認できていない。"
+  ],
+  "inference_ja": [],
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公式本文を閲覧。再配布・翻訳の許諾が未確認のため短い原文抜粋と独自の日本語要約を保存。公表時刻の表示なし。"
+  ],
+  "notification_eligible": false
+}

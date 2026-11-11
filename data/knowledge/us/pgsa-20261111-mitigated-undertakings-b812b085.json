@@ -1,0 +1,36 @@
+{
+  "id": "pgsa-20261111-mitigated-undertakings-b812b085",
+  "source_url": "https://x.com/PGSA_IRAN/status/2120440430630203799",
+  "title_en": "PGSA statement on mitigated undertakings, part 2",
+  "title_ja": "イランの海峡管理当局が誓約事項の緩和条件を説明",
+  "published_at": "2026-11-11T08:56:09+00:00",
+  "published_date": "2026-11-11",
+  "received_at": "2026-11-11T13:01:44.109026+00:00",
+  "retrieved_at": "2026-11-11T13:01:44.109026+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "diplomacy",
+    "war",
+    "oil",
+    "shipping"
+  ],
+  "original_text": "2/\nPGSA hereby announces that vessels which have committed violations to date may benefit from mitigated undertakings, provided that they acknowledge their violation by submitting an email to this Authority.",
+  "translation_ja": "【2/】海峡管理当局（PGSA）は、これまでに違反した船舶について、当局に電子メールを送り違反を認めることを条件に、誓約事項の緩和を受けられる場合があると発表する。",
+  "content_sha256": "b812b085dc89cf7681f26504d0c40de8d66f6e95d7acdf1b01325de50738d92e",
+  "source_raw_sha256": "4d83740f5d55d64e15688b283a48da69974a3c9398d8a49e28c15eccf59bbbe1",
+  "translation_sha256": "d43ff68ba74dc2dc705c2e1088e7ae1c9086218957f52c2c095e178aea6702e3",
+  "facts_ja": [
+    "緩和の可能性は当局への違反申告が条件。個別の許可や適用は未確認。"
+  ],
+  "inference_ja": [],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "連絡先アドレス欄は保存対象から除外。同じスレッドの第1部と合わせて通知する。"
+  ],
+  "notification_eligible": false,
+  "published_time_basis": "公開投稿HTMLの時刻表示と公開投稿識別子のUTC時刻を照合。秒未満は切り捨て。",
+  "related_source_urls": [
+    "https://x.com/PGSA_IRAN/status/2120440425823735890"
+  ]
+}

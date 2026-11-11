@@ -1,0 +1,44 @@
+{
+  "id": "pgsa-20261111-bulk-carriers-enforcement-e841c669",
+  "source_url": "https://x.com/PGSA_IRAN/status/2120440425823735890",
+  "title_en": "PGSA statement on two bulk carriers, part 1",
+  "title_ja": "イランの海峡管理当局がばら積み船2隻への措置を発表",
+  "published_at": "2026-11-11T08:56:08+00:00",
+  "published_date": "2026-11-11",
+  "received_at": "2026-11-11T13:01:09.702218+00:00",
+  "retrieved_at": "2026-11-11T13:01:09.702218+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "diplomacy",
+    "war",
+    "oil",
+    "shipping"
+  ],
+  "original_text": "1/\nRecently, two bulk carriers that had proceeded toward the #Persian_Gulf southern ports using forged documentation, were subject to legal enforcement action; by accepting the stipulated #PGSA undertakings, they avoided inclusion of their names on the #NCL.",
+  "translation_ja": "【1/】最近、偽造書類を使ってペルシャ湾南岸の港へ向かったばら積み船2隻に、法的な措置が取られた。海峡管理当局（PGSA）が定めた誓約事項を受け入れたため、両船は違反船舶リスト（NCL）への掲載を免れた。\n\n添付図題「偽造書類を使って通航した規則違反船2隻の航路」。図はオマーン湾からホルムズ海峡を経てペルシャ湾内に分かれる概略経路を示す。地名はペルシャ湾、ホルムズ海峡、オマーン湾、アラブ首長国連邦、オマーン、サウジアラビア。",
+  "content_sha256": "e841c669946d2d92be541b3bf8fec8fc698ae2345f5a67a5bd39f2d3b9bda434",
+  "source_raw_sha256": "6877b78b4b3494730089458e1cca04e2669bfe68fc51c3ef3904ae6fe64b5d3d",
+  "translation_sha256": "74660740eece6b2933255ebc852fccecd1574552b0af3a134ac7193930418902",
+  "facts_ja": [
+    "PGSAが自身の措置を公表した。対象はばら積み船2隻。",
+    "船名・積荷・措置の種類や執行実績は独立確認なし。UKMTOの既報タンカー事案との同一性を示す情報はない。"
+  ],
+  "inference_ja": [],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "英語本文と地図を目視。ペルシャ語並行投稿の追加翻訳と画像の再配布は行っていない。船舶の特定と執行の独立検証は未了。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "イランの海峡管理当局は、書類偽造を理由にばら積み船二隻に法的措置を取ったと発表。",
+  "published_time_basis": "公開投稿HTMLの時刻表示と公開投稿識別子のUTC時刻を照合。秒未満は切り捨て。",
+  "linked_image": {
+    "url": "https://pbs.twimg.com/media/HW1RQycWoAA_QOs?format=webp&name=large",
+    "sha256": "c47f5671012da1a46be935db6bd43c235430369f3b19e034592477b0ba40e7af",
+    "visual_review_complete": true,
+    "binary_saved": false
+  },
+  "related_source_urls": [
+    "https://x.com/PGSA_IRAN/status/2120440430630203799"
+  ]
+}
