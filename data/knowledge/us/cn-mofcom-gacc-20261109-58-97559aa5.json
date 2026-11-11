@@ -1,0 +1,42 @@
+{
+  "id": "cn-mofcom-gacc-20261109-58-97559aa5",
+  "source": "Ministry of Commerce and General Administration of Customs of China",
+  "source_url": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2026/art_46a13d76cf7243b7af4394ecbdf13b90.html",
+  "title_en": "MOFCOM and GACC Announcement 58 of 2026",
+  "title_ja": "中国商務部・海関総署、輸出管理公告6本の停止を延長",
+  "published_at": null,
+  "published_date": "2026-11-09",
+  "published_local_display": "16:00",
+  "published_time_note": "時刻表示・メタデータにタイムゾーンの明記がないため、公表時刻のJST換算は未確定。",
+  "received_at": "2026-11-11T22:45:15.130894+00:00",
+  "retrieved_at": "2026-11-11T22:45:15.130894+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "tariffs",
+    "investment_policy",
+    "other_us"
+  ],
+  "original_text": "商务部、海关总署公告2026年第58号 公布继续暂停实施商务部、海关总署公告2025年第55号、56号、57号、58号及商务部公告2025年第61号、62号的决定\n\n经批准，自2026年11月11日起至2027年1月10日，商务部、海关总署公告2025年第55号、56号、57号、58号，及商务部公告2025年第61号、62号继续暂停实施。\n\n商务部 海关总署\n2026年11月9日",
+  "translation_ja": "商務部・海関総署2026年第58号公告。商務部・海関総署の2025年第55号、第56号、第57号、第58号および商務部の2025年第61号、第62号の施行停止を継続する決定を公表する。\n\n承認を経て、2026年11月11日から2027年1月10日まで、商務部・海関総署の2025年第55号、第56号、第57号、第58号と、商務部の2025年第61号、第62号の施行停止を継続する。\n\n商務部・海関総署。2026年11月9日。",
+  "content_sha256": "97559aa512e35b500b50d97c2b98fee2e655f55cf1aacecd16d810477b00de3d",
+  "source_raw_sha256": "52214844d10e676fd50623dbb9411d9e8f40c06d5a686d3bee6abae3f69f8d6f",
+  "translation_sha256": "1289b0f5278b8185bdb4585986a1199d882e8608698a9c75200ccb9c1e8ae9be",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "facts_ja": [
+    "11月9日付の中国当局公告。輸出管理の公告6本の施行停止を11月11日から翌年1月10日まで継続。"
+  ],
+  "inference_ja": [],
+  "effective_timing": {
+    "start_date": "2026-11-11",
+    "end_date": "2027-01-10",
+    "time_of_day": null
+  },
+  "notification_eligible": false,
+  "notification_reason": "公表は照合期間外。中国側の一次資料を既報の米通商措置の補足として保存。",
+  "related_source_urls": [
+    "https://www.mofcom.gov.cn/zfxxgk/fdzdgknr/ztfl/dwmygl/art/2026/art_312a647b76cb4eb1b98128c6d0e81ae5.html",
+    "https://www.mofcom.gov.cn/zfxxgk/fdzdgknr/ztfl/dwmygl/art/2025/art_00667414c0524b018985abd28b8847a5.html"
+  ]
+}

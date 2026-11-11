@@ -1,0 +1,39 @@
+{
+  "id": "cn-mofcom-20261109-hanwha-us-ee44db4e",
+  "source": "Ministry of Commerce of the People’s Republic of China",
+  "source_url": "https://www.mofcom.gov.cn/zcfb/blgg/bl/2026/art/2026/art_73a72470e6874f13a88f93c735bd6366.html",
+  "title_en": "MOFCOM Order 4 of 2026 on Hanwha Ocean U.S. subsidiaries",
+  "title_ja": "中国商務部、ハンファ・オーシャン米国関連子会社5社への対抗措置停止を延長",
+  "published_at": null,
+  "published_date": "2026-11-09",
+  "published_local_display": "16:00",
+  "published_time_note": "時刻表示・メタデータにタイムゾーンの明記がないため、公表時刻のJST換算は未確定。",
+  "received_at": "2026-11-11T22:45:57.530220+00:00",
+  "retrieved_at": "2026-11-11T22:45:57.530220+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "tariffs",
+    "investment_policy",
+    "other_us"
+  ],
+  "original_text": "中华人民共和国商务部令\n二〇二六年 第4号\n\n为落实中美经贸磋商共识，现公布《关于继续暂停对韩华海洋株式会社5家美国相关子公司实施反制措施2个月的决定》，自2026年11月10日起施行。\n部长  王文涛\n2026年11月9日\n\n关于继续暂停对韩华海洋株式会社5家美国相关\n子公司实施反制措施2个月的决定\n\n根据《中华人民共和国反外国制裁法》《实施〈中华人民共和国反外国制裁法〉的规定》等法律法规，为落实中美经贸磋商共识，中方决定自北京时间2026年11月10日起，继续暂停商务部令二〇二五年第6号（《关于对韩华海洋株式会社5家美国相关子公司采取反制措施的决定》）相关措施2个月。",
+  "translation_ja": "中華人民共和国商務部令。2026年第4号。\n\n米中経済貿易協議の共通認識を実施するため、ハンファ・オーシャン株式会社の米国関連子会社5社に対する対抗措置の停止を2か月継続する決定を公表する。2026年11月10日から施行する。\n商務部長 王文濤。2026年11月9日。\n\nハンファ・オーシャン株式会社の米国関連子会社5社に対する対抗措置の停止を2か月継続する決定。\n\n中華人民共和国反外国制裁法とその実施規定等の法令に基づき、米中経済貿易協議の共通認識を実施するため、中国側は北京時間2026年11月10日から、商務部令2025年第6号（ハンファ・オーシャン株式会社の米国関連子会社5社に対する対抗措置の決定）の関連措置の停止を2か月継続する。",
+  "content_sha256": "ee44db4e1bebb83c2fb8faaa07aa4084d2c61ffc9afb599b81828b3906947d54",
+  "source_raw_sha256": "37caa57539cc156c1d9c15f26a2de5f8e8a11a1daae213782ccb2def2ef7e490",
+  "translation_sha256": "557150e87ab008a4d5fb369e53485bb03679fd7f97827031304e0f2bea5de9a2",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "facts_ja": [
+    "中国はハンファ・オーシャンの米国関連子会社5社への対抗措置の停止を北京時間11月10日から2か月継続。"
+  ],
+  "inference_ja": [],
+  "effective_timing": {
+    "start_date": "2026-11-10",
+    "timezone": "Asia/Shanghai",
+    "duration_months": 2
+  },
+  "notification_eligible": false,
+  "notification_reason": "公表は照合期間外。中国側の一次資料を既報の米通商措置の補足として保存。",
+  "related_source_urls": []
+}

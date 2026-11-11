@@ -1,0 +1,33 @@
+{
+  "id": "va-20261111-veterans-day-collins-fe0e2593",
+  "source": "U.S. Department of Veterans Affairs",
+  "source_url": "https://news.va.gov/press-room/sec-collins-highlights-va-accomplishments-pledges-additional-improvements-ahead-of-veterans-day/",
+  "title_en": "Sec. Collins highlights VA accomplishments, pledges additional improvements ahead of Veterans Day",
+  "title_ja": "米退役軍人省コリンズ長官、記念日に医療・給付の実績を発表",
+  "published_at": "2026-11-11T14:00:00Z",
+  "received_at": "2026-11-11T22:47:10.750969+00:00",
+  "retrieved_at": "2026-11-11T22:47:10.750969+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "fiscal_policy",
+    "other_us"
+  ],
+  "original_text": "WASHINGTON\n— VA Secretary Doug Collins released the following statement on Veterans Day 2026:\n“America celebrated her 250th anniversary this year, a milestone that would not have been possible without the millions of American Veterans who fought to defend our great nation. Each Veterans Day, we honor the service and sacrifice of these heroes while redoubling our efforts to take care of them once they’ve hung up the uniform.\n“Delivering the care and benefits Veterans have earned through their service is our job at the Department of Veterans affairs, and under President Trump, VA is doing that better, faster and more efficiently than ever before. We’re not done, however, and we look forward to ushering in even more improvements in the near future.”\nKey VA accomplishments of the second Trump Administration:\nVA has opened\n47 new healthcare clinics\n, expanding access for Veterans around the country.\nThe backlog of Veterans waiting for VA benefits is\ndown nearly 70%\nsince Jan. 20, 2025.\nVA has cut the average disability claims processing time by 46% since Jan. 20, 2025.\nVA processed a\nrecord high 3.11 million compensation claims\nin FY2026, a 23.5% increase from FY2024. VA granted more than 60% of the claims filed, with the highest accuracy rate in three years (nearly 94%), and only about 3% of these decisions were appealed to the Board of Veterans’ Appeals.\nVA has enrolled more than 330,000 new Veterans in VA healthcare in 2026.\nVA completed a record-high 82.7 million direct care appointments in FY2026, a 4.9% increase from FY2024.\nVA completed a record-high 68.1 million community care appointments in FY2026, a 26.7% increase from FY2024.\nVA invested\nnearly $5 billion in FY26\nto modernize, repair and improve healthcare facilities, the largest non-recurring maintenance investment in VA’s history.\nSince Jan. 20, 2025, VA has offered Veterans more than 3.5 million appointments outside of normal operating hours. These early-morning, evening, and weekend appointments are giving Veterans more timely and convenient options for care.\nVA put the deployment of VA’s electronic health modernization effort back on track by successfully deploying it to\nfive sites in Ohio and Kentucky\n,\nfour sites in Michigan\n,\nthree sites in Indiana\n, and\none in Alaska\n.\nIn FY2025 and FY2026, VA housed more than 95,000 homeless Veterans.",
+  "translation_ja": "ワシントン。退役軍人省のダグ・コリンズ長官は、2026年の退役軍人の日に以下の声明を発表しました。\n\n「米国は今年、建国250周年を迎えました。偉大な国を守るために戦った何百万人もの退役軍人がいなければ、この節目を迎えることはできませんでした。毎年、退役軍人の日に、私たちはこの英雄たちの奉仕と犠牲に敬意を表し、制服を脱いだ後の彼らを支える取り組みを一層強めます。\n\n退役軍人が奉仕によって得た医療と給付を提供するのが退役軍人省の仕事です。トランプ大統領の下で、これまで以上に質を高め、迅速かつ効率的に提供しています。取り組みは続いており、近い将来さらなる改善を進めます。」\n\n第2次トランプ政権下での主な実績。\n\n- 新たに診療所47か所を開設し、各地で受診機会を拡大。\n- 2025年1月20日から給付待ち案件を約70％削減。障害補償請求の平均処理時間は46％短縮。\n- 2026会計年度に補償請求311万件を処理。2024会計年度比23.5％増。申請の60％超を承認し、正確性は約94％で過去3年で最高。退役軍人不服審査委員会への不服申立ては決定の約3％。\n- 2026年に33万人を超える退役軍人が新たに医療に登録。\n- 2026会計年度の省直営医療の受診は過去最多の8,270万件で、2024会計年度比4.9％増。地域の医療機関での受診も過去最多の6,810万件で、同26.7％増。\n- 2026会計年度に医療施設の近代化・修繕・改善へ約50億ドルを投じた。省の臨時保守投資として過去最大。\n- 2025年1月20日以降、通常の業務時間外に350万件を超える受診枠を提供。早朝、夕方、週末の枠で受診しやすくした。\n- 電子医療記録の近代化を計画軌道に戻し、オハイオ・ケンタッキー両州で計5施設、ミシガン州で4施設、インディアナ州で3施設、アラスカ州で1施設に導入。\n- 2025・2026会計年度に、住まいのなかった退役軍人9万5,000人超の住まいを確保。",
+  "content_sha256": "fe0e25931ef8e25a3dda9250efbbd5689a6233667be71be1f60df2a21d161988",
+  "source_raw_sha256": "5712f861ee04d655d212e8765b15cb3ee60b3b05724815b1152dc608543fc212",
+  "translation_sha256": "84d04e15e48e10a4f3b40106654fc4404704ddd84777d2b0936addaf6671a744",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "facts_ja": [
+    "VAは2026会計年度の施設近代化・修繕等への支出を約50億ドルと公表。既往実績であり、この声明には追加予算の金額や発効日は記載されていない。"
+  ],
+  "inference_ja": [
+    "省の行政報告値。国全体の医療価格、実際の財政支出総額、将来の資金需要の指標としては扱わない。"
+  ],
+  "notification_eligible": false,
+  "related_source_urls": [
+    "https://www.whitehouse.gov/releases/2026/11/we-render-you-the-highest-salute-president-trump-honors-americas-veterans-on-hallowed-ground-at-arlington/"
+  ]
+}
