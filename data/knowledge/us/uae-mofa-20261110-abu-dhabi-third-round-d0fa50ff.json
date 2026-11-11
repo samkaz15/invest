@@ -1,0 +1,33 @@
+{
+  "id": "uae-mofa-20261110-abu-dhabi-third-round-d0fa50ff",
+  "source_url": "https://www.mofa.gov.ae/en/MediaHub/News/2026/11/10/10-11-2026-UAE-Russia-Ukraine-USA",
+  "title_en": "UAE foreign ministry announcement on the third round of trilateral talks in Abu Dhabi",
+  "title_ja": "UAE外務省によるアブダビ三者協議第3ラウンドの開催発表",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "published_at_precision": "date_only",
+  "received_at": "2026-11-11T05:58:58.659594+00:00",
+  "retrieved_at": "2026-11-11T05:58:58.659594+00:00",
+  "received_at_kind": "web_retrieved",
+  "original_text": "the third round of trilateral talks bringing together the United States, the Russian Federation, and the Republic of Ukraine",
+  "translation_ja": "抜粋訳。米国、ロシア連邦、ウクライナの三者協議の第3ラウンド。\n\n本文要約。UAE外務省によると、アブダビで11月10日に協議が始まり、UAEの副首相兼外相が立ち会った。UAEは対話を通じた政治的解決に向けて米国の取り組みを支援していると説明。外相は実務的な進展を期待し、対話と緊張緩和を重視すると述べた。",
+  "content_sha256": "d0fa50fffab429b9c7aa22c07e422f98fb9dbc783bc9a291bb56db2f4f491705",
+  "source_raw_sha256": "3e5a7b870445e5ff9a8bfa18764b47602816426cb7107c15db3176a4e60296fd",
+  "translation_sha256": "9881a33bb791de57ff4c538b94f2ca4b62f6d479cf62e63e540d5effe0a9b6d3",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "topics": [
+    "war",
+    "diplomacy"
+  ],
+  "facts_ja": [
+    "UAE外務省は11月10日、米国・ロシア・ウクライナの第3ラウンドがアブダビで始まり、UAE外相が立ち会ったと発表。開催国の一次資料で既報の協議開始を確認。合意・履行・戦況は独立確認未了。"
+  ],
+  "inference_ja": [],
+  "missing_parts": [
+    "公式本文を閲覧し短い抜粋と要約を保存。全文の再利用許諾は未確認。公開時刻の表示なし。",
+    "共同声明、停戦などの合意・履行と戦況の独立検証は未確認。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "既報の協議開始を開催国の発表で補足。"
+}
