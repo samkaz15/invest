@@ -1,0 +1,32 @@
+{
+  "id": "ukraine-20261111-denmark-royal-audience-7348e063",
+  "source_url": "https://www.president.gov.ua/news/prezident-ukrayini-mav-audiyenciyu-v-korolya-daniyi-frederik-107249",
+  "title_en": "President of Ukraine Had an Audience with King Frederik X of Denmark",
+  "title_ja": "ウクライナ大統領がデンマークのフレデリック10世と面会",
+  "published_at": null,
+  "published_date": "2026-11-11",
+  "published_time_basis": "原文表示12:24、タイムゾーン表記なし。JSTへの厳密な換算は保留。",
+  "received_at": "2026-11-11T12:35:03.718033+00:00",
+  "retrieved_at": "2026-11-11T12:35:03.718033+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "diplomacy",
+    "war"
+  ],
+  "original_text": "Обговорили також співпрацю України й Данії в захисті життів і питаннях безпеки загалом.",
+  "content_sha256": "7348e063f31039fe21fe12f466125d2808c64c0160d2caf42bb8c068595af1fe",
+  "source_raw_sha256": "b981a829c5398a95a7de202ef76d0e5364e3d2825e5a585d2c69e4b2dca3b3d7",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "translation_ja": "ウクライナ大統領府によると、ゼレンスキー大統領はデンマークのフレデリック10世と面会した。クリスチャン皇太子とフレデリクセン首相も同席した。大統領はデンマーク政府による毎年の財政支援に謝意を示した。ロシアによるエネルギーなどの重要インフラへの攻撃が激しくなっていると説明し、両国の安全保障協力と防衛力を強める長期的な連携に意欲を示した。負傷兵と退役軍人への支援・リハビリについても話し合い、デンマークの既存支援の継続に期待を示した。",
+  "missing_parts": [
+    "公式本文を閲覧。サイトの表示はCC BY-NC-ND 4.0。短い原文抜粋と独自の日本語要約を収録。写真は収録外。",
+    "重要インフラの被害拡大は発言者に帰属。戦況・被害の独立検証は未了。"
+  ],
+  "facts_ja": [
+    "大統領府は面会・安全保障協力の協議を公表。本文は新たな支援額・実施日を示していない。"
+  ],
+  "inference_ja": [],
+  "notification_eligible": false,
+  "notification_reason": "既存協力と会談概要。米国の新たな政策・制裁・実施措置を伴う発表は確認されていない。"
+}
