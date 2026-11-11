@@ -1,0 +1,52 @@
+{
+  "id": "opec-20261111-momr-appendix-2905ba95",
+  "source": "OPEC Secretariat",
+  "source_url": "https://www.opec.org/assets/assetdb/momr-appendix-november-2026.xlsx",
+  "title_en": "OPEC Monthly Oil Market Report, November 2026 appendix",
+  "title_ja": "OPEC石油市場月報11月版付表の需給・在庫要約",
+  "published_at": null,
+  "published_date": "2026-11-11",
+  "published_time_note": "公式公表カレンダーの日付。時刻・タイムゾーン付きの公表記録は未取得。",
+  "received_at": "2026-11-11T20:54:10.365384+00:00",
+  "retrieved_at": "2026-11-11T20:54:10.365384+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil"
+  ],
+  "original_text": "World oil demand and production balance\nTotal world demand",
+  "original_text_scope": "brief source table headings only",
+  "original_factual_summary_en": "At two-decimal million-barrel-per-day precision, OPEC’s November 2026 appendix keeps world annual oil demand at 105.72 for 2026 and 108.28 for 2027. Growth from unrounded annual data is about 0.18 and 2.55, respectively. The workbook shows a lower third quarter and a higher fourth quarter in 2026 than the October edition, with unchanged annual averages at published precision.",
+  "translation_ja": "OPECの11月月報付表11-1の年平均では、世界の石油需要は2026年に日量1億572万バレル、2027年に1億828万バレルの見通し。公表精度ではいずれも10月版と同じ。丸め前の年平均値から計算した前年比の増加幅は2026年が約18万バレル／日、2027年が約255万バレル／日。付表11-2では、2026年7〜9月期の需要を日量約30万バレル下方修正し、10〜12月期を同約30万バレル上方修正した。付表11-3では、9月末のOECD陸上商業石油在庫は約28億1,110万バレル。\n\n資料はOPECの著作物。ここでは対象の統計値を独自に要約し、表全体と原本を転載していない。",
+  "content_sha256": "2905ba95443b36a92978756e8d9fd097bd927e16854c6085a2f4f2d4de230f89",
+  "content_sha256_scope": "independent factual summary",
+  "source_raw_sha256": "680a02cdc7e65ba45f7b7fa2c2023222c34410654d0d3b70ed420af9ca8b5402",
+  "translation_sha256": "0f7fafcce7d0eb4350d69304634395f57ec8a04be3283788f31fd83d415fdab2",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公開付表11-1〜11-5は取得。OPECの利用条件に従い原文・表全体・付表ファイルの共有保管や全文翻訳は行っていない。",
+    "11月版PDFの公開リンクが配布画面へ戻り、本文・10月の月次生産表・ページ数は未取得。"
+  ],
+  "facts_ja": [
+    "OPECの公式11月付表で、世界石油需要の2026年1億572万バレル／日、2027年1億828万バレル／日を確認。10月版と年平均は公表精度で一致。2026年7〜9月期は日量約30万バレル下方、10〜12月期は同約30万バレル上方修正。"
+  ],
+  "inference_ja": [
+    "生産増が着荷に転じ、在庫の再積み増しにつながれば燃料費を抑え得る。需給機関の需要定義と輸送・在庫の実績は別々に検証する。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "OPECは世界の石油需要が2026年に日量18万バレル増えるとの予測を維持した。",
+  "related_source_urls": [
+    "https://www.opec.org/monthly-oil-market-report.html",
+    "https://www.opec.org/assets/assetdb/momr-appendix-october-2026.xlsx",
+    "https://www.opec.org/terms-and-conditions.html"
+  ],
+  "pdf": {
+    "original_url": "https://momr.opec.org/pdf-download/",
+    "sha256": null,
+    "page_count": null,
+    "pages": [],
+    "visual_review_complete": false,
+    "binary_saved": false,
+    "binary_save_reason": "未取得。OPECの利用条件により共有保存の許諾も未確認。"
+  }
+}
