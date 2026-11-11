@@ -1,0 +1,38 @@
+{
+  "id": "almayadeen-20261111-rezaei-interview-a9f09b51",
+  "source_url": "https://almayadeentv.com/news/politics/%D8%B1%D8%B6%D8%A7%D8%A6%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D8%AF%D9%8A%D9%86-%D8%A3%D9%8A-%D9%87%D8%AC%D9%88%D9%85-%D8%AC%D8%AF%D9%8A%D8%AF-%D8%B3%D9%8A%D9%82%D8%A7%D8%A8%D9%84-%D8%A8%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%B9%D8%AF-%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D9%8A",
+  "title_en": "Mohsen Rezaei interview on enriched nuclear material and Hormuz",
+  "title_ja": "イラン最高国家安全保障会議書記の取材発言抜粋",
+  "published_at": "2026-11-11T08:53:49+00:00",
+  "publication_time_note": "取材局ウェブ記事の公表時刻。インタビュー収録・発話時刻は未確認。",
+  "received_at": "2026-11-11T17:32:57.665752+00:00",
+  "retrieved_at": "2026-11-11T17:32:57.665752+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "sanctions"
+  ],
+  "original_text": "لن نخرج أي ذرة من المواد النووية المخصّبة من إيران.\nلن يُفتح ما لم تُنفَّذ هذه الشروط",
+  "translation_ja": "「濃縮核物質は一粒たりともイランから持ち出さない。」\n\n（ホルムズ海峡について）「これらの条件が履行されない限り開放されない。」\n\n取材局の掲載本文によると、レザーイ書記は西アジアの全戦線、とりわけレバノンでの戦闘終結を条件に挙げ、米国から再び攻撃されれば遠方の米軍基地も報復対象となると述べた。発言はイラン側の立場であり、交渉相手との合意や海上輸送の実績は別途確認が必要。",
+  "content_sha256": "a9f09b51c2544f56d634d78e0fe76c205a793cd5e66086f08be114783d71024f",
+  "translation_sha256": "7469140ccecda206b07189ba52fb71314f7858c70398036586f56f864c21b48d",
+  "source_raw_sha256": "074f9fd6467c7f433bc61710a3c2cea4cb6c8ae20aafcc82de5f63d574c9b568",
+  "facts_ja": [
+    "取材局がイランのレザーイ書記による濃縮核物質の国外移送拒否、海峡開放の条件に関する発言を掲載。"
+  ],
+  "inference_ja": [
+    "立場の隔たりが続く場合でも、海運への実際の制約は通航・保険・積み出しの観測で確かめる。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "取得した取材記事の短い直接発言のみ原文と訳を保存。全文記事の再利用許諾は未確認。発言の全編映像・逐語録、交渉条件の公式文書は未取得。"
+  ],
+  "notification_eligible": false,
+  "related_source_urls": [
+    "https://almayadeentv.com/latestnews/2026/11/11/%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%B1%D8%B6%D8%A7%D8%A6%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D8%AF%D9%8A%D9%86-%D9%86%D8%AD%D8%AA%D8%A7%D8%AC-%D8%A5%D9%84%D9%89-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%AF-%D8%A7%D9%84%D9%85%D8%AE%D8%B5%D8%A8%D8%A9-%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D8%B3%D9%81%D9%86-%D9%88%D8%BA%D9%88",
+    "https://x.com/AlMayadeenNews/status/2120429963652247738",
+    "https://almayadeentv.com/news/politics/%D8%B1%D8%B6%D8%A7%D8%A6%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D8%AF%D9%8A%D9%86-%D9%84%D9%86-%D9%86%D8%AE%D8%B1%D8%AC-%D8%A3%D9%8A-%D8%B0%D8%B1%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%AF-%D8%A7%D9%84%D9%85%D8%AE%D8%B5%D8%A8%D8%A9-%D9%88%D8%A5%D9%86%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D8%AD%D8%B1%D8%A8"
+  ]
+}

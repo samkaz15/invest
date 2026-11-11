@@ -1,0 +1,48 @@
+{
+  "id": "imo-20261111-confirmed-incidents-9c53452c",
+  "source": "International Maritime Organization",
+  "source_url": "https://www.imo.org/en/mediacentre/hottopics/pages/middle-east-highlighted-incidents.aspx",
+  "title_en": "IMO confirmed Middle East incidents as of 11 November 2026",
+  "title_ja": "IMO中東海事事案表の11月11日集計",
+  "published_at": null,
+  "observation_date": "2026-11-11",
+  "publication_time_note": "基準日は11月11日。ページの更新時刻不明。事案日は11月7日。",
+  "received_at": "2026-11-11T17:33:04.143115+00:00",
+  "retrieved_at": "2026-11-11T17:33:04.143115+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "shipping"
+  ],
+  "original_text": "Number of confirmed incidents as at 11 November 2026: 134\nNumber of confirmed seafarer fatalities: 25\n7 November | TARIF (IMO 9828390) | Strait of Hormuz | Damaged. No pollution.",
+  "translation_ja": "2026年11月11日時点の確認事案は134件。確認された船員の死亡は25人。\n\n11月7日。TARIF（IMO番号9828390）。ホルムズ海峡。損傷あり。汚染なし。\n\n出典・著作権者は国際海事機関（IMO）。This translation was not created by the International Maritime Organization (IMO) and IMO is not responsible for the content or accuracy of this translation.",
+  "content_sha256": "9c53452c1e1c2324b4318f6face5d4719c22b744d3cb3f813eae603e65981a45",
+  "source_raw_sha256": "5fc3de374acdec730723c18b686f22bcecef28fc47df8794f9ac38ac70b4f0e3",
+  "normalized_table_sha256": "9ee1f5196988ec96e004259d09d1d295321e1d3f82bbf4c65a7baf976d7a31a2",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公開表134行を取得。総数と今回の追加1行を訳出し、既掲載133行の原文・訳は公開リポジトリに転載していない。",
+    "事故の発生時刻、攻撃主体、船種・積荷、損傷程度、実輸送量、UKMTO警報との同一性は未確認。"
+  ],
+  "facts_ja": [
+    "IMOの11月11日時点の確認表は134件、船員の確認死亡者数は25人。前回133件から追加されたのは11月7日のTARIF（IMO 9828390）1件で、ホルムズ海峡で損傷、汚染なし。",
+    "IMOの確認方法は旗国・沿岸国・信頼できる第三者との照合。表は船舶損傷を記載し、攻撃主体や船舶識別の根拠は示していない。"
+  ],
+  "inference_ja": [
+    "船舶の損傷が保険料や運航判断を変え、代替船腹で補えず原油・製品の着荷が落ちる場合に限り、燃料費・物価・実質需要への波及が見込まれる。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "IMOはホルムズ海峡で損傷した船舶を表に追加し、確認事案の累計を134件とした。",
+  "notification_reason": "前回と全134行を比較。IMOが船名・識別番号を伴う損傷事案を確認表に初めて追加。事案発生自体は11月7日。",
+  "related_source_urls": [
+    "https://www.imo.org/en/mediacentre/hottopics/pages/middle-east-strait-of-hormuz.aspx",
+    "https://www.ukmto.org/-/media/ukmto/products/20261108-ukmto_warning-200-26.pdf",
+    "https://www.imo.org/en/about/pages/imo-website-terms-and-conditions-of-use.aspx"
+  ],
+  "previous_snapshot": "imo-20261110-confirmed-incidents-264c7fec",
+  "table_data_rows_seen": 134,
+  "supersedes": "imo-20261110-confirmed-incidents-264c7fec",
+  "translation_sha256": "0232c1e3d2d0bb55a9ce1a80d2512c40dcc4398d309a353fa266657837ae5e3c"
+}
