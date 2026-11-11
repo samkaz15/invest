@@ -1,0 +1,34 @@
+{
+  "id": "ukraine-20261111-dublin-joint-statement-adc7f36b",
+  "source": "Office of the President of Ukraine",
+  "source_url": "https://www.president.gov.ua/en/news/zayava-prezidenta-ukrayini-pid-chas-spilnogo-z-premyer-minis-107265",
+  "title_en": "Statement by the President of Ukraine During a Joint Press Conference with the Prime Minister of Ireland",
+  "title_ja": "ウクライナ大統領、アイルランド首相との共同会見冒頭発言",
+  "published_at": null,
+  "published_date": "2026-11-11",
+  "published_local_display": "23:35",
+  "published_time_note": "ページの表示時刻にはタイムゾーン表記がなく、JST換算未確定。",
+  "received_at": "2026-11-11T21:54:32.560788+00:00",
+  "retrieved_at": "2026-11-11T21:54:32.560788+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "diplomacy",
+    "other_us"
+  ],
+  "original_text": "The priority is naval drones and security at sea.",
+  "translation_ja": "優先事項は海上ドローンと海の安全です。\n\n大統領は、アイルランドが避難施設連合に参加することで合意したと説明し、海上ドローンの共同生産に前向きな姿勢を示した。アブダビでの欧州諸国・欧州委員会・NATOの関与、米特使との面会予定、EU加盟交渉、対ロ制裁強化、冬季支援についても言及した。",
+  "content_sha256": "adc7f36bba50b99b911b8d530eabc8fe30f1c5c43c81cfc8030c8e286925111a",
+  "source_raw_sha256": "18bdbfbae14447853e2f0fba879c40ca13dec62896504db496f6017178e408b7",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公開本文は確認済み。改変禁止の利用条件に沿い短い引用の訳と独自要約を収録。",
+    "会見の質疑全編とアイルランド側の独自発表は未取得。"
+  ],
+  "facts_ja": [
+    "ウクライナ大統領府は共同会見の大統領発言を掲載。モスクワ協議後のダブリンでの面会見込みを大統領が述べた。"
+  ],
+  "inference_ja": [],
+  "notification_eligible": false
+}

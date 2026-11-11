@@ -1,0 +1,40 @@
+{
+  "id": "us-envoy-20261111-kushner-moscow-proposals-63befac9",
+  "source": "Jared Kushner, U.S. negotiating representative",
+  "source_url": "https://x.com/jaredkushner/status/2120535519171850378",
+  "title_en": "Jared Kushner statement after Abu Dhabi talks",
+  "title_ja": "米特使クシュナー氏、モスクワで協議する提案の事前調整を公表",
+  "published_at": "2026-11-11T15:14:00+00:00",
+  "published_time_basis": "X配信データのcreated_at_ms。",
+  "received_at": "2026-11-11T21:55:50.742124+00:00",
+  "retrieved_at": "2026-11-11T21:55:50.742124+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "diplomacy",
+    "other_us"
+  ],
+  "original_text": "Today we achieved an important humanitarian breakthrough, with Ukraine and Russia agreeing in principle to what will be the largest prisoner exchange of the war. This will reunite families, build trust, and create momentum toward peace.\n\nBringing Ukraine and Russia back together for the first trilateral talks since February was an important step. The discussions were serious, detailed, and frank. Both countries shared specific ideas to narrow the gaps and find a path to end the war.\n\nIn close coordination with Ukraine and our European partners, we have aligned on proposals we will discuss with President Putin in Moscow tomorrow, followed by consultations with President Zelenskyy.\n\nPresident @realDonaldTrump is determined to end this horrible war. Significant differences remain, but we are committed to building on the progress made and advancing toward broader multilateral negotiations that can deliver lasting peace and a sovereign, secure, and prosperous Ukraine.",
+  "translation_ja": "本日、私たちは人道面で重要な前進を果たしました。ウクライナとロシアは、この戦争で最大規模となる捕虜交換に原則合意しました。これにより家族が再会し、信頼が醸成され、和平に向けた機運が生まれます。\n\nウクライナとロシアが2月以来初めて三者協議の場に再び集まったことは、重要な一歩でした。協議は真剣かつ詳細で、率直なものでした。両国は、隔たりを縮めて戦争を終わらせる道を見つけるため、具体的な考えを示しました。\n\nウクライナと欧州のパートナーと緊密に調整し、明日モスクワでプーチン大統領と協議する提案について認識をそろえました。その後、ゼレンスキー大統領と協議します。\n\nトランプ大統領はこの悲惨な戦争を終わらせる決意です。大きな隔たりは残っていますが、これまでの進展を踏まえ、永続的な平和と、主権を持ち、安全で繁栄するウクライナを実現できる、より幅広い多国間交渉へ進む決意です。",
+  "content_sha256": "63befac95aeee54f468d9d0743e59aeec54330463958920a9ede85fc31b53a1a",
+  "translation_sha256": "655ccedbb0d3570b4277ac654d1a21189c8f0c74e4b9d945f3e7aba69d158b8b",
+  "source_raw_sha256": "fa370f2c192a843adcf5bebc0035c589b5e4b93467a2e4096bb1368fcc251d34",
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公式投稿のテキストは全文訳。添付動画ファイル取得済み。音声の全文・字幕は未確認、未訳。",
+    "提案本文、ロシアの受諾、会談実施、捕虜交換の人数・日程・履行は未確認。"
+  ],
+  "facts_ja": [
+    "米特使クシュナー氏は、ウクライナと欧州側と調整した提案を翌日のモスクワ会談でプーチン大統領と協議し、その後ゼレンスキー大統領と協議すると公表。提案本文、ロシアの受諾、会談実施、交換の履行は未確認。"
+  ],
+  "inference_ja": [
+    "停戦監視、海上輸送や制裁の変更が具体化し、着荷や保険料に変化が出るまで、原油需給への波及は保留。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米特使クシュナー氏は米国がウクライナと欧州側と対ロ協議の提案を調整したと述べた。",
+  "related_source_urls": [
+    "https://t.me/V_Zelenskiy_official/21782",
+    "https://www.president.gov.ua/en/news/zayava-prezidenta-ukrayini-pid-chas-spilnogo-z-premyer-minis-107265"
+  ]
+}

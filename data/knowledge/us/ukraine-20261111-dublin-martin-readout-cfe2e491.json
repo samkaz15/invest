@@ -1,0 +1,34 @@
+{
+  "id": "ukraine-20261111-dublin-martin-readout-cfe2e491",
+  "source": "Office of the President of Ukraine",
+  "source_url": "https://www.president.gov.ua/news/podalsha-pidtrimka-ukrayini-ta-diplomatichni-peremovini-u-du-107269",
+  "title_en": "Ukraine presidential office readout of talks with Ireland’s Taoiseach",
+  "title_ja": "ウクライナ大統領府、アイルランド首相との会談結果を掲載",
+  "published_at": null,
+  "published_date": "2026-11-11",
+  "published_local_display": "23:50",
+  "published_time_note": "ページの表示時刻にはタイムゾーン表記がなく、JST換算未確定。",
+  "received_at": "2026-11-11T21:54:26.781717+00:00",
+  "retrieved_at": "2026-11-11T21:54:26.781717+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "diplomacy",
+    "other_us"
+  ],
+  "original_text": "Лідери домовилися, що ця країна братиме дієву участь у Коаліції укриттів.",
+  "translation_ja": "両首脳は、アイルランドが避難施設連合に実質的に参加することで合意しました。\n\nウクライナ側の記録は、避難施設の支援、海上ドローン協力、米特使の訪ロ後の協議、EU加盟と制裁を取り上げた。マーティン首相は追加の制裁圧力を維持する姿勢を示したと同記録は伝えた。",
+  "content_sha256": "cfe2e4917489996f9affee4a7fbcfa907f33ea1431219fa39ad069b27a75e965",
+  "source_raw_sha256": "fc1ab6b77f222e69a74b9b80fdaf9d384855193bc560c5c947041f6b371c8dd9",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公開本文は確認済み。改変禁止の利用条件に沿い短い引用の訳と独自要約を収録。",
+    "会見の質疑全編とアイルランド側の独自発表は未取得。"
+  ],
+  "facts_ja": [
+    "ウクライナ大統領府は二国間会談の記録を掲載。新規の支援額・契約・制裁発効日は記載されていない。"
+  ],
+  "inference_ja": [],
+  "notification_eligible": false
+}
