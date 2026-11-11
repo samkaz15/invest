@@ -1,0 +1,41 @@
+{
+  "id": "lenoblast-20261111-ust-luga-fire-e7f1f90b",
+  "source": "Governor of Leningrad Oblast, public MAX post",
+  "source_url": "https://max.ru/drozdenko_au_lo/AaHI1_8HcCs",
+  "title_en": "Leningrad Oblast governor’s statement on fire in the Ust-Luga port area",
+  "title_ja": "レニングラード州知事によるウスチルガ港湾地区の火災発表",
+  "published_at": null,
+  "published_date": "2026-11-11",
+  "published_time_basis": "公式投稿の公開画面とメタデータで公表時刻未確認。媒体が報じた時刻は代用しない。",
+  "received_at": "2026-11-11T10:08:17.155574+00:00",
+  "retrieved_at": "2026-11-11T10:08:17.155574+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "shipping"
+  ],
+  "original_text": "В результате попадания нескольких БПЛА произошло возгорание, пострадали трое работников, угрозы жизни нет.",
+  "translation_ja": "関連部分の訳。複数の無人機が命中して火災が発生し、作業員3人が負傷した。生命に危険はない。\n\n投稿全体の要旨。知事は無人機に関する警報の解除を伝え、速報値として夜間に州上空で無人機150機を撃墜したと述べた。攻撃の標的はキンギセップ地区のウスチルガ港湾地区だったと説明した。",
+  "content_sha256": "e7f1f90b2237260e511510c98c8f9e83098bd86e749a67460f24c3f323245a0a",
+  "source_raw_sha256": "cb0e021afd51088d742fdf6b69f2ed99fea3fd8c4e77c09247ca9b6b912b7995",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公開投稿の本文を取得。港湾火災と負傷者に関する短い原文とその訳、残る内容の日本語要約を収録。投稿全体の再利用許諾は未確認。",
+    "施設名・損傷規模、攻撃や撃墜の独立検証、原油・製品の積み出し実績、港湾運用情報は未取得。"
+  ],
+  "facts_ja": [
+    "レニングラード州知事は、ウスチルガ港湾地区で複数の無人機が命中して火災が起き、作業員3人が負傷し生命に危険はないと発表。攻撃・損傷の範囲、ターミナル稼働と積み出し量は独立確認できていない。"
+  ],
+  "inference_ja": [
+    "港湾の実際の稼働が落ち、代替輸出経路や在庫で補えない場合、輸入先の着荷や燃料コストに波及し得る。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "ロシアの州知事がウスチルガ港で無人機攻撃による火災と作業員3人の負傷を発表した。",
+  "notification_reason": "主要な原油・製品輸出港に関する新規の政府当事者発表。",
+  "related_source_urls": [
+    "https://www.interfax.ru/russia/1128193",
+    "https://www.reuters.com/world/drone-attack-causes-fire-russias-baltic-sea-port-ust-luga-governor-says-2026-11-11/"
+  ]
+}
