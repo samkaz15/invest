@@ -1,0 +1,45 @@
+{
+  "id": "ukraine-20261111-folketing-freyja-86f71d07",
+  "source": "Office of the President of Ukraine",
+  "source_url": "https://www.president.gov.ua/news/zvernennya-prezidenta-u-folketingu-daniyi-107257",
+  "title_en": "Address by the President of Ukraine at the Danish Folketing",
+  "title_ja": "ウクライナ大統領のデンマーク議会演説とFREYJA",
+  "published_at": null,
+  "published_date": "2026-11-11",
+  "publication_time_note": "演説本文は11月11日20:12、関連発表は20:24と表示。いずれもタイムゾーンの明記なし。キーウ時刻と仮定したJST換算は翌日03:12・03:24。",
+  "received_at": "2026-11-11T18:30:43.905918+00:00",
+  "retrieved_at": "2026-11-11T18:30:43.905918+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "investment_policy",
+    "oil",
+    "other_us"
+  ],
+  "original_text": "До програми вже приєдналися 11 країн. І кожна країна може долучитися своїми ресурсами, своїм досвідом та своїми інвестиціями.",
+  "translation_ja": "【短い引用の訳】計画にはすでに11か国が参加しています。各国は自国の資源、経験、投資をもって参加できます。\n\n【演説の詳細要約】デンマークの超党派の支援と、2024年に同国が始めたウクライナ国内での武器生産への資金拠出方式に謝意を示した。無人機、電子戦、AIによって戦争の性質が変わったとし、欧州の防衛能力と調達基盤を強化するよう訴えた。ホルムズ海峡の混乱に伴うエネルギー価格の上昇や黒海封鎖の域外影響に触れ、米国による対イラン攻撃再開が物価と防空装備の供給に波及することを懸念した。パトリオット迎撃弾が中東に向かい、ウクライナで不足していると主張した。11月10〜11日のアブダビで米・ウクライナ・ロシアの協議が行われたと説明し、欧州の安全保障に関する交渉に欧州が参加すべきだと述べた。FREYJAでは、欧州で迅速・低費用かつ大量生産できる弾道ミサイル迎撃能力を目指し、ノルウェーとコペンハーゲンの事務所開設準備を整えたと説明した。開設・生産・契約は要確認。",
+  "content_sha256": "86f71d07ad21a1b9cb865a564b93dc6bd9c68dc4baf368c9c186a553ca85a67f",
+  "translation_sha256": "9f8fa5a56d3bb6f6d453928d24e48daa213444519fe8c0dbe7350255cf22e7eb",
+  "source_raw_sha256": "41cd78be6e44d8ef989799a526b02ac0f15c4b8a93113a0fd6e3fa5aacfe862c",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公開ウクライナ語演説本文を取得。出典のCC BY-NC-ND 4.0に配慮し短い引用と事実の要約を保存。全文の翻訳転載は行わない。英語版の指定URLはトップページに転送。",
+    "追加国、国別拠出・契約額、事務所の稼働日、迎撃弾の実配分・戦況の独立確認は未取得。"
+  ],
+  "facts_ja": [
+    "ゼレンスキー大統領はデンマーク議会でFREYJAに11か国が参加し、ノルウェーと進めるコペンハーゲン事務所開設の準備が整ったと述べた。7月の設立時に公表された10か国から参加数は1か国増。今回の文書で追加国・予算・稼働日は確認できない。",
+    "大統領は米・ウクライナ・ロシアのアブダビ協議が11月10〜11日に行われたと説明。停戦・捕虜交換の共同文書や履行は、この演説からは確認できない。パトリオット迎撃弾の配分は大統領の説明。"
+  ],
+  "inference_ja": [
+    "予算・発注・量産が具体化すれば欧州の防衛装備需要と供給能力を変え得る。予算執行額、供給制約、米国装備との代替関係が判明するまで、金利・為替方向は判断保留。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "ウクライナ大統領は欧州の弾道ミサイル防衛計画に１１か国が参加したと議会で述べた。",
+  "related_source_urls": [
+    "https://www.president.gov.ua/news/do-proyektu-antibalistichnoyi-programi-freyja-priyednalos-11-107261",
+    "https://www.president.gov.ua/en/news/u-parizhi-vidbulasya-persha-zustrich-prisvyachena-realizaciy-105405",
+    "https://www.thedanishparliament.dk/en/news/2026/11/president-volodymyr-zelenskyy-to-visit-the-danish-parliament-on-wednesday-11-november",
+    "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  ]
+}

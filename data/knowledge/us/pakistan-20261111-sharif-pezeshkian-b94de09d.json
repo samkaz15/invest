@@ -1,0 +1,36 @@
+{
+  "id": "pakistan-20261111-sharif-pezeshkian-b94de09d",
+  "source_url": "https://x.com/CMShehbaz/status/2120538823247466776",
+  "source": "Prime Minister of Pakistan",
+  "title_en": "Prime Minister Sharif on meeting President Pezeshkian",
+  "title_ja": "パキスタン首相とイラン大統領の会談",
+  "published_at": "2026-11-11T15:27:07.825000+00:00",
+  "received_at": "2026-11-11T18:30:13.671717+00:00",
+  "retrieved_at": "2026-11-11T18:30:13.671717+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "other_us"
+  ],
+  "original_text": "Dialogue, restraint, de-escalation and sustained diplomacy are the only path to lasting peace.",
+  "translation_ja": "【引用の訳】対話、自制、緊張緩和、継続的な外交こそが、持続的な平和への道です。\n\n【本文要約】シャリフ首相はCOP31のアンタルヤ会場でイランのペゼシュキアン大統領と会談し、地域紛争の長期化を懸念すると表明した。両国の長年の関係と協力強化に触れ、イスラマバード覚書で得た共通理解に沿ってパキスタンが引き続き地域の平和と安定のために関与するとした。国営放送は覚書を2026年6月のものと説明し、両国が定期協議と調整の重要性を確認したと報じた。具体的な米・イラン合意、海峡通航措置、施行日は本文から確認できない。",
+  "content_sha256": "b94de09d5365fa426e56a589977c32dde78a81f85ec6e532981aa13ed390fb51",
+  "translation_sha256": "738e287b9d7a23b088f17e72660936c3a215a96e09aedfb408db267a8a69a82f",
+  "source_raw_sha256": "0513351d72a39c93c48bb35495e182e3412e8a4c5bcd84dce40553b2474e9630",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "首相の公開投稿全文を取得。短い引用・訳と要約を保存。PID発表は直接取得に失敗し、国営放送本文で照合。発効・履行文書は未確認。"
+  ],
+  "facts_ja": [
+    "パキスタン首相はCOP31でのイラン大統領との会談とイスラマバード覚書を踏まえた外交継続を公表。"
+  ],
+  "inference_ja": [],
+  "notification_eligible": false,
+  "related_source_urls": [
+    "https://x.com/GovtofPakistan/status/2120538018646040738",
+    "https://www.radio.gov.pk/11-11-2026/pakistan-iran-agree-to-work-closely-for-regional-peace-security",
+    "https://pid.gov.pk/site/press_detail/34752"
+  ]
+}
