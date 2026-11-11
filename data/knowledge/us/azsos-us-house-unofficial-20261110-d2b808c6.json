@@ -1,0 +1,35 @@
+{
+  "id": "azsos-us-house-unofficial-20261110-d2b808c6",
+  "source": "Arizona Secretary of State (Enhanced Voting)",
+  "source_url": "https://app.enhancedvoting.com/cdn/results/Arizona/export-110326GeneralElection.json",
+  "source_raw_sha256": "b1ad587bf20ca90d14c947d9e547c18db3587057d30f743eb59868e337a3b23a",
+  "source_http_last_modified": "Wed, 11 Nov 2026 02:09:48 GMT",
+  "published_at": null,
+  "publication_date": "2026-11-10",
+  "publication_timezone": "America/Phoenix",
+  "received_at": "2026-11-11T03:10:38.009257+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-11T03:10:38.009257+00:00",
+  "title_en": "Arizona statewide U.S. House unofficial results",
+  "title_ja": "アリゾナ州の未認証速報・連邦下院9区",
+  "topics": [
+    "elections"
+  ],
+  "original_text": "{\"electionDate\": \"2026-11-03\", \"createdAt\": \"2026-11-11T02:09:46.8907492Z\", \"districts\": {\"AZ-1\": [[2, \"Democratic\", 185799], [1, \"Republican\", 161092], [3, \"Libertarian\", 7700], [7, \"\", 243], [5, \"Other\", 15], [4, \"Independent\", 14], [6, \"\", 0]], \"AZ-2\": [[1, \"Republican\", 163530], [2, \"Democratic\", 160084], [3, \"Libertarian\", 6042], [4, \"\", 139], [5, \"\", 62]], \"AZ-3\": [[1, \"Democratic\", 130675], [3, \"No Labels\", 9066], [2, \"Green\", 7779], [4, \"Republican\", 2020], [6, \"\", 1285], [5, \"\", 0]], \"AZ-4\": [[2, \"Democratic\", 159203], [1, \"Republican\", 89782], [3, \"No Labels\", 5981], [6, \"\", 493], [4, \"No Labels\", 70], [5, \"\", 0]], \"AZ-5\": [[1, \"Republican\", 167959], [2, \"Democratic\", 157007], [4, \"\", 569], [3, \"\", 0]], \"AZ-6\": [[2, \"Democratic\", 190050], [1, \"Republican\", 160969], [3, \"Libertarian\", 4514], [4, \"Green\", 3264], [7, \"\", 330], [5, \"Independent\", 85], [6, \"\", 1]], \"AZ-7\": [[2, \"Democratic\", 147478], [1, \"Republican\", 57453], [3, \"\", 297], [4, \"\", 77]], \"AZ-8\": [[1, \"Republican\", 146999], [2, \"Democratic\", 140176], [4, \"\", 600], [3, \"\", 0]], \"AZ-9\": [[1, \"Republican\", 165920], [2, \"Democratic\", 122760], [6, \"\", 315], [4, \"Independent\", 47], [3, \"Independent\", 26], [5, \"\", 0]]}}",
+  "translation_ja": "アリゾナ州の連邦下院9選挙区の未認証速報は前回比8区で更新。最多得票候補が変わった選挙区は0。 州による認証は未確認。\n\n州配信データ生成 2026-11-11T02:09:46.8907492Z。候補者名に代えて票上の掲載順を示す。\n\n| 選挙区 | 掲載順 | 党派 | 得票 |\n| --- | --- | --- | --- |\n| AZ-1 | 2 | 民主党 | 185799 |\n| AZ-1 | 1 | 共和党 | 161092 |\n| AZ-1 | 3 | リバタリアン党 | 7700 |\n| AZ-1 | 7 | 表記なし | 243 |\n| AZ-1 | 5 | その他 | 15 |\n| AZ-1 | 4 | 無所属 | 14 |\n| AZ-1 | 6 | 表記なし | 0 |\n| AZ-2 | 1 | 共和党 | 163530 |\n| AZ-2 | 2 | 民主党 | 160084 |\n| AZ-2 | 3 | リバタリアン党 | 6042 |\n| AZ-2 | 4 | 表記なし | 139 |\n| AZ-2 | 5 | 表記なし | 62 |\n| AZ-3 | 1 | 民主党 | 130675 |\n| AZ-3 | 3 | ノー・ラベルズ | 9066 |\n| AZ-3 | 2 | 緑の党 | 7779 |\n| AZ-3 | 4 | 共和党 | 2020 |\n| AZ-3 | 6 | 表記なし | 1285 |\n| AZ-3 | 5 | 表記なし | 0 |\n| AZ-4 | 2 | 民主党 | 159203 |\n| AZ-4 | 1 | 共和党 | 89782 |\n| AZ-4 | 3 | ノー・ラベルズ | 5981 |\n| AZ-4 | 6 | 表記なし | 493 |\n| AZ-4 | 4 | ノー・ラベルズ | 70 |\n| AZ-4 | 5 | 表記なし | 0 |\n| AZ-5 | 1 | 共和党 | 167959 |\n| AZ-5 | 2 | 民主党 | 157007 |\n| AZ-5 | 4 | 表記なし | 569 |\n| AZ-5 | 3 | 表記なし | 0 |\n| AZ-6 | 2 | 民主党 | 190050 |\n| AZ-6 | 1 | 共和党 | 160969 |\n| AZ-6 | 3 | リバタリアン党 | 4514 |\n| AZ-6 | 4 | 緑の党 | 3264 |\n| AZ-6 | 7 | 表記なし | 330 |\n| AZ-6 | 5 | 無所属 | 85 |\n| AZ-6 | 6 | 表記なし | 1 |\n| AZ-7 | 2 | 民主党 | 147478 |\n| AZ-7 | 1 | 共和党 | 57453 |\n| AZ-7 | 3 | 表記なし | 297 |\n| AZ-7 | 4 | 表記なし | 77 |\n| AZ-8 | 1 | 共和党 | 146999 |\n| AZ-8 | 2 | 民主党 | 140176 |\n| AZ-8 | 4 | 表記なし | 600 |\n| AZ-8 | 3 | 表記なし | 0 |\n| AZ-9 | 1 | 共和党 | 165920 |\n| AZ-9 | 2 | 民主党 | 122760 |\n| AZ-9 | 6 | 表記なし | 315 |\n| AZ-9 | 4 | 無所属 | 47 |\n| AZ-9 | 3 | 無所属 | 26 |\n| AZ-9 | 5 | 表記なし | 0 |",
+  "facts_ja": [
+    "アリゾナ州の連邦下院9選挙区の未認証速報は前回比8区で更新。最多得票候補が変わった選挙区は0。",
+    "公表時刻は不明。州配信データの生成時刻と取得時刻を区別。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "d2b808c6c7e697292e8c365649abf688c9db8f005b89eeb04383c8b3629c9f71",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "州認証は未取得。郡別・投票区別や他の選挙は範囲外。"
+  ],
+  "notification_eligible": false,
+  "previous_snapshot_id": "azsos-us-house-unofficial-20261110-aad85e57",
+  "source_data_generated_at": "2026-11-11T02:09:46.8907492Z",
+  "translation_sha256": "38b945d65cdf053c0613df4437b66ee2a03380a63422696f350942ed1ee820b0"
+}
