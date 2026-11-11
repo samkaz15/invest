@@ -1,0 +1,64 @@
+{
+  "id": "ukmto-20261111-202-26-26ad06be",
+  "source": "UK Maritime Trade Operations",
+  "source_url": "https://www.ukmto.org/-/media/ukmto/products/20261111-ukmto_warning_202_26.pdf",
+  "title_en": "UKMTO Warning 202-26 — SUSPICIOUS ACTIVITY",
+  "title_ja": "英国海事当局の警報 202-26「不審な活動」",
+  "published_at": null,
+  "published_date": "2026-11-11",
+  "published_time_basis": "公式一覧の掲載日。PDFの公開時刻は未確認。",
+  "incident_at": null,
+  "received_at": "2026-11-11T06:48:55.906024+00:00",
+  "retrieved_at": "2026-11-11T06:48:55.906024+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "shipping"
+  ],
+  "original_text": "UKMTO WARNING\n                       202-26 - SUSPICIOUS ACTIVITY\n      Incident Date:                 Incident Time:                     Source:\n           TBC                            TBC                     Military authorities\nUKMTO has received a report of an incident involving a tanker in the Strait of Hormuz.\nThe status of crew, damage assessment, and environmental impact are unknown at\nthe time of this report.\nVessels are advised to transit with caution and report any suspicious activity to\nUKMTO, whilst authorities investigate.\n\n\n\n\n                                        Strait of Hormuz",
+  "translation_ja": "英国海事当局（UKMTO）警報 202-26。区分は「不審な活動」。\n\n発生の日付と時刻はともに確認中。通報元は軍当局。地図にはホルムズ海峡のおおよその対象海域が示されている。\n\n英国海事当局は、ホルムズ海峡でタンカーが関係する事案の通報を受けた。本警報時点で、乗員の状況、損傷の評価、環境への影響は不明。当局による調査中、船舶には注意して通航し、不審な活動を英国海事当局に報告するよう勧告する。",
+  "content_sha256": "c2756d87aa7d3b4be80af3e7535fc2a9505714e31ab0249f925eb7132011c359",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "発生情報、警報本文、地図を目視で確認。連絡先は原文・訳の保存範囲外。地図の画像は転載せず位置を記述。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "英海事当局がホルムズ海峡でのタンカー事案を公表し、乗員の状況や被害の程度は不明。",
+  "notification_reason": "石油輸送の安全に関する未記録の公的警報。",
+  "facts_ja": [
+    "UKMTOはホルムズ海峡のタンカー事案を不審な活動として公表。発生日時、乗員、損傷、環境影響は不明。攻撃の認定はなく、他の警報・発表との同一性も不明。"
+  ],
+  "inference_ja": [
+    "警報は当局が通報を受けた証拠。発生、攻撃主体、積荷・輸送量への波及には別資料が必要。"
+  ],
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Source: UK Maritime Trade Operations.",
+  "related_source_urls": [
+    "https://www.ukmto.org/terms-and-conditions",
+    "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  ],
+  "pdf": {
+    "sha256": "26ad06bed5528616d9e5f8d01b64929a39bc179748458d60dd01cc4f3bea8b8f",
+    "page_count": 1,
+    "ocr_used": false,
+    "original_url": "https://www.ukmto.org/-/media/ukmto/products/20261111-ukmto_warning_202_26.pdf",
+    "visual_review_complete": true,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "source_pdf_save_reason": "連絡先、埋込メタデータ、衛星画像の再配布範囲を含めた保存条件が揃っていない。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "UKMTO WARNING\n                       202-26 - SUSPICIOUS ACTIVITY\n      Incident Date:                 Incident Time:                     Source:\n           TBC                            TBC                     Military authorities\nUKMTO has received a report of an incident involving a tanker in the Strait of Hormuz.\nThe status of crew, damage assessment, and environmental impact are unknown at\nthe time of this report.\nVessels are advised to transit with caution and report any suspicious activity to\nUKMTO, whilst authorities investigate.\n\n\n\n\n                                        Strait of Hormuz",
+        "translation_ja": "英国海事当局（UKMTO）警報 202-26。区分は「不審な活動」。\n\n発生の日付と時刻はともに確認中。通報元は軍当局。地図にはホルムズ海峡のおおよその対象海域が示されている。\n\n英国海事当局は、ホルムズ海峡でタンカーが関係する事案の通報を受けた。本警報時点で、乗員の状況、損傷の評価、環境への影響は不明。当局による調査中、船舶には注意して通航し、不審な活動を英国海事当局に報告するよう勧告する。",
+        "extraction_status": "text_extracted_visual_checked",
+        "translation_status": "partial",
+        "visual_review_complete": true,
+        "missing_parts": [
+          "発生情報、警報本文、地図を目視で確認。連絡先は原文・訳の保存範囲外。地図の画像は転載せず位置を記述。"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "adnocls-20261110-vessel-18c99e38",
+  "source": "ADNOC Logistics & Services",
+  "source_url": "https://adnocls.ae/en/news-and-media/press-releases/2026/november-10-statement",
+  "title_en": "ADNOC Logistics & Services - Statement",
+  "title_ja": "ADNOC L&Sの自社船損傷に関する発表",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "published_time_basis": "会社公式ページは日付のみ。WAMによる二次配信は11月10日18:42:05+04:00。",
+  "received_at": "2026-11-11T06:48:34.304029+00:00",
+  "retrieved_at": "2026-11-11T06:48:34.304029+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "shipping"
+  ],
+  "original_text": "one of its vessels sustained damage following an attack in the UAE’s territorial waters, in the Arabian Gulf",
+  "translation_ja": "ADNOC L&Sは、11月10日午後にアラビア湾のUAE領海で自社船1隻が攻撃を受け、損傷したと発表。対応が続いており、新情報が得られ次第更新するとしている。確認できた発表には船名、積荷、乗員や損傷の詳細の記載がない。",
+  "content_sha256": "18c99e38c9e72d8cc1da7cccd1878e123dfa7153d64712d84e919fb6ae0e2ee0",
+  "source_raw_sha256": "09883b540a8e45923588cb8696b19f795168c237636ea8b803a0e86fc3b9aed9",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "企業声明の原文は短い抜粋を保存。本文は日本語要約。連絡先と会社紹介の転載なし。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "UKMTO通知内で関係当事者による補足資料として併記。",
+  "facts_ja": [
+    "ADNOC L&Sは、11月10日午後にアラビア湾のUAE領海で自社船1隻が攻撃を受け、損傷したと発表。対応が続いており、新情報が得られ次第更新するとしている。確認できた発表には船名、積荷、乗員や損傷の詳細の記載がない。"
+  ],
+  "inference_ja": [
+    "UKMTO警報に記された船舶との同一性は不明。"
+  ],
+  "related_source_urls": [
+    "https://www.wam.ae/en/article/c36ot7v-adnoc-logistics-services-vessel-sustained-damage"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "ukmto-20261110-201-26-de69fcfa",
+  "source": "UK Maritime Trade Operations",
+  "source_url": "https://www.ukmto.org/-/media/ukmto/products/20261110-ukmto_warning_201_26.pdf",
+  "title_en": "UKMTO Warning 201-26 — ATTACK",
+  "title_ja": "英国海事当局の警報 201-26「攻撃」",
+  "published_at": null,
+  "published_date": "2026-11-10",
+  "published_time_basis": "公式一覧の掲載日。PDFの公開時刻は未確認。",
+  "incident_at": "2026-11-10T13:38:00+00:00",
+  "received_at": "2026-11-11T06:47:47.026917+00:00",
+  "retrieved_at": "2026-11-11T06:47:47.026917+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "shipping"
+  ],
+  "original_text": "UKMTO WARNING\n                               201-26 - ATTACK\n     Incident Date:                  Incident Time:                   Source:\n      10 Nov 2026                      1338UTC                         Master\nUKMTO has received a report of an incident 19NM northeast of Lima, Oman.\nThe Master of a Tanker reports being struck by an unknown projectile.\nThe crew are safe and there is no environmental impact reported. Master will conduct\ndamage assessment at first light.\nVessels are advised to transit with caution and report any suspicious activity to\nUKMTO, whilst authorities investigate.\n\n\n\n\n                                     Lima Oman",
+  "translation_ja": "英国海事当局（UKMTO）警報 201-26。区分は「攻撃」。\n\n発生日時欄は11月10日13:38 UTC（同日22:38 JST）、通報元は船長。地図はオマーンのリマ北東沖の概略位置を示す。\n\n英国海事当局は、オマーンのリマから北東19海里で発生した事案の通報を受けた。タンカーの船長は、正体不明の飛翔体が命中したと報告した。乗員は無事で、環境への影響は報告されていない。船長は夜明けに損傷を調べる予定。当局による調査中、船舶には注意して通航し、不審な活動を英国海事当局に報告するよう勧告する。",
+  "content_sha256": "a3a91470d0ac91c9df7bd9b304c9be6c7220625eec1f8af56d0bb5f3a826f403",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "発生情報、警報本文、地図を目視で確認。連絡先は原文・訳の保存範囲外。地図の画像は転載せず位置を記述。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "英海事当局がオマーン沖のタンカーへの飛翔体命中の通報を公表し、乗員は無事と報告。",
+  "notification_reason": "石油輸送の安全に関する未記録の公的警報。",
+  "facts_ja": [
+    "UKMTOはオマーンのリマ北東19海里でタンカーに正体不明の飛翔体が命中したとの船長の通報を公表。乗員無事、環境影響の報告なし。船名・積荷・攻撃主体は未確認。"
+  ],
+  "inference_ja": [
+    "警報は当局が通報を受けた証拠。発生、攻撃主体、積荷・輸送量への波及には別資料が必要。"
+  ],
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Source: UK Maritime Trade Operations.",
+  "related_source_urls": [
+    "https://www.ukmto.org/terms-and-conditions",
+    "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  ],
+  "pdf": {
+    "sha256": "de69fcfacadc3d413b348233815b951b93b06cb3d5087e8fe87ce0cc726cac6a",
+    "page_count": 1,
+    "ocr_used": false,
+    "original_url": "https://www.ukmto.org/-/media/ukmto/products/20261110-ukmto_warning_201_26.pdf",
+    "visual_review_complete": true,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "source_pdf_save_reason": "連絡先、埋込メタデータ、衛星画像の再配布範囲を含めた保存条件が揃っていない。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "UKMTO WARNING\n                               201-26 - ATTACK\n     Incident Date:                  Incident Time:                   Source:\n      10 Nov 2026                      1338UTC                         Master\nUKMTO has received a report of an incident 19NM northeast of Lima, Oman.\nThe Master of a Tanker reports being struck by an unknown projectile.\nThe crew are safe and there is no environmental impact reported. Master will conduct\ndamage assessment at first light.\nVessels are advised to transit with caution and report any suspicious activity to\nUKMTO, whilst authorities investigate.\n\n\n\n\n                                     Lima Oman",
+        "translation_ja": "英国海事当局（UKMTO）警報 201-26。区分は「攻撃」。\n\n発生日時欄は11月10日13:38 UTC（同日22:38 JST）、通報元は船長。地図はオマーンのリマ北東沖の概略位置を示す。\n\n英国海事当局は、オマーンのリマから北東19海里で発生した事案の通報を受けた。タンカーの船長は、正体不明の飛翔体が命中したと報告した。乗員は無事で、環境への影響は報告されていない。船長は夜明けに損傷を調べる予定。当局による調査中、船舶には注意して通航し、不審な活動を英国海事当局に報告するよう勧告する。",
+        "extraction_status": "text_extracted_visual_checked",
+        "translation_status": "partial",
+        "visual_review_complete": true,
+        "missing_parts": [
+          "発生情報、警報本文、地図を目視で確認。連絡先は原文・訳の保存範囲外。地図の画像は転載せず位置を記述。"
+        ]
+      }
+    ]
+  }
+}
