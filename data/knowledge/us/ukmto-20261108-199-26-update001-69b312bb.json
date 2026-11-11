@@ -1,0 +1,65 @@
+{
+  "id": "ukmto-20261108-199-26-update001-69b312bb",
+  "source": "UK Maritime Trade Operations",
+  "source_url": "https://www.ukmto.org/-/media/ukmto/products/20261108-ukmto_warning-_199-26_update_001.pdf",
+  "title_en": "UKMTO Warning 199-26 — ATTACK — UPDATE 001",
+  "title_ja": "英国海事当局の警報199-26　攻撃への再分類",
+  "published_at": null,
+  "published_time_basis": "更新001の公式公表日時は未確認。URLの日付やHTTP更新時刻を代用しない。",
+  "incident_at": "2026-11-07T19:20:00+00:00",
+  "received_at": "2026-11-11T09:18:46.604074+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "shipping"
+  ],
+  "original_text": "UKMTO WARNING\n                   199-26 – ATTACK – UPDATE 001\n     Incident Date:                   Incident Time:                    Source:\n       07 Nov 2026                      1920 UTC                 Military authorities\nUKMTO has received a time-late report of an incident 8NM northwest of Khasab, Oman.\nMilitary authorities reported the Tanker is on fire which has resulted in the evacuation\nof the crew.\nVessels are advised to transit with caution and report any suspicious activity to UKMTO,\nwhilst authorities investigate.\n\nUpdate 001: UKMTO has reclassified this incident to ATTACK.\n\n\n\n\n                                   Khasab, Oman",
+  "translation_ja": "英国海事当局（UKMTO）警報199-26「攻撃」更新001。発生は11月7日19:20 UTC（11月8日04:20 JST）、通報元は軍当局。\n\nUKMTOはオマーン・ハサブ北西8海里の事案の通報を発生後に受けた。軍当局によればタンカーで火災が発生し、乗員は退避した。当局が調査する間、船舶には注意して通航し、不審な活動をUKMTOに報告するよう勧告する。\n\n更新001。UKMTOはこの事案を「攻撃」に再分類した。地図はハサブとその北西沖のおおよその対象海域を示す。",
+  "facts_ja": [
+    "UKMTO警報199-26の更新001は既報のタンカー火災を「攻撃」に再分類。軍当局による通報で、船名・攻撃主体は記載なし。201・202とは別番号で、船舶の同一性は未確認。"
+  ],
+  "inference_ja": [
+    "IMO表の11月7日・ハサブ北西8海里の行と位置が一致するが、船舶が同一であるとの明示はない。"
+  ],
+  "content_sha256": "10957f85d673f2b5fb159a66503c853e9de494a79f27fdf00ef198353e42ceee",
+  "content_hash_scope": "PDF1頁の公表本文、表、地図ラベル。連絡先欄を除く。",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "notification_eligible": false,
+  "notification_reason": "既報事案の分類更新。IMOの新規確認通知にまとめる。",
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Source: UK Maritime Trade Operations.",
+  "missing_parts": [
+    "1頁の本文、日時欄、地図を目視。連絡先は原文・訳から除き、地図は位置の説明のみ。"
+  ],
+  "pdf": {
+    "sha256": "69b312bb114f1166ada6474357500b958d757ccf7782b6aa91a6de55bdf7d22b",
+    "page_count": 1,
+    "ocr_used": false,
+    "original_url": "https://www.ukmto.org/-/media/ukmto/products/20261108-ukmto_warning-_199-26_update_001.pdf",
+    "visual_review_complete": true,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "source_pdf_save_reason": "連絡先、埋込メタデータ、衛星画像を含む原本の公開保存条件は未確認。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "UKMTO WARNING\n                   199-26 – ATTACK – UPDATE 001\n     Incident Date:                   Incident Time:                    Source:\n       07 Nov 2026                      1920 UTC                 Military authorities\nUKMTO has received a time-late report of an incident 8NM northwest of Khasab, Oman.\nMilitary authorities reported the Tanker is on fire which has resulted in the evacuation\nof the crew.\nVessels are advised to transit with caution and report any suspicious activity to UKMTO,\nwhilst authorities investigate.\n\nUpdate 001: UKMTO has reclassified this incident to ATTACK.\n\n\n\n\n                                   Khasab, Oman",
+        "translation_ja": "英国海事当局（UKMTO）警報199-26「攻撃」更新001。発生は11月7日19:20 UTC（11月8日04:20 JST）、通報元は軍当局。\n\nUKMTOはオマーン・ハサブ北西8海里の事案の通報を発生後に受けた。軍当局によればタンカーで火災が発生し、乗員は退避した。当局が調査する間、船舶には注意して通航し、不審な活動をUKMTOに報告するよう勧告する。\n\n更新001。UKMTOはこの事案を「攻撃」に再分類した。地図はハサブとその北西沖のおおよその対象海域を示す。",
+        "extraction_status": "text_extracted_visual_checked",
+        "translation_status": "partial",
+        "visual_review_complete": true,
+        "missing_parts": [
+          "1頁の本文、日時欄、地図を目視。連絡先は原文・訳から除き、地図は位置の説明のみ。"
+        ]
+      }
+    ]
+  },
+  "related_source_urls": [
+    "https://www.ukmto.org/-/media/ukmto/products/20261108-ukmto_warning_199-26.pdf?rev=ece84fc3ac864575a7a42870071a01db",
+    "https://www.ukmto.org/terms-and-conditions",
+    "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  ],
+  "supersedes": "ukmto-20261108-199-26-a1812e09",
+  "retrieved_at": "2026-11-11T09:18:46.604074+00:00"
+}

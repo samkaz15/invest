@@ -1,0 +1,44 @@
+{
+  "id": "imo-20261110-confirmed-incidents-264c7fec",
+  "source": "International Maritime Organization",
+  "source_url": "https://www.imo.org/en/mediacentre/hottopics/pages/middle-east-highlighted-incidents.aspx",
+  "title_en": "Middle East - Highlighted (Confirmed) incidents",
+  "title_ja": "IMO中東海事事案表の11月10日集計",
+  "published_at": null,
+  "observation_date": "2026-11-10",
+  "publication_time_note": "11月10日は集計基準日。ページの公表・更新時刻は不明。",
+  "received_at": "2026-11-11T09:18:49.101682+00:00",
+  "retrieved_at": "2026-11-11T09:18:49.101682+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "oil",
+    "shipping"
+  ],
+  "original_text": "Number of confirmed incidents as at 10 November 2026: 133\nNumber of confirmed seafarer fatalities: 25\n7 November | NAVIG8 MACALLISTER (IMO 9482873) | 8NM northwest of Khasab, Oman | Damaged. No pollution.",
+  "translation_ja": "2026年11月10日時点の確認事案は133件。確認された船員の死亡は25人。\n\n11月7日。NAVIG8 MACALLISTER（IMO番号9482873）。オマーン・ハサブ北西8海里。損傷あり。汚染なし。\n\n出典・著作権者は国際海事機関（IMO）。This translation was not created by the International Maritime Organization (IMO) and IMO is not responsible for the content or accuracy of this translation.",
+  "content_sha256": "264c7fec33a38bf2cb4728192edeb35cdc05f7e5072b890284e550b829e38ebf",
+  "source_raw_sha256": "d78efc01af987311456c6dbe48f28e6fdd63533a171c2dc2b8ecc92d7b4b05a3",
+  "normalized_table_sha256": "bd910bfd145672442de665fce00795b0072405e66646a266315a4a87f644ab12",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "公開表133行を取得し、総数と今回の対象行を訳出。他の132行の原文・訳は公開リポジトリに収録しない。",
+    "船の発生時刻、攻撃主体、積荷、実輸送量と英国警報との同一性は未確認。"
+  ],
+  "facts_ja": [
+    "IMOの表で11月10日時点の確認事案133件、船員死亡25人。11月7日のNAVIG8 MACALLISTERはオマーン・ハサブ北西8海里、損傷あり、汚染なし。発生時刻・攻撃主体・積載量は掲載されていない。"
+  ],
+  "inference_ja": [
+    "船名を伏せたUKMTO警報199-26と日付・位置は一致するが、一方の資料が他方の警報番号・船名を示しておらず、同一性は判断保留。累計件数だけでは通航・供給の減少は判断できない。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "国際海事機関が中東の確認事案を133件と公表し、オマーン沖で損傷した船舶を掲載。",
+  "notification_reason": "IMOで新たに確認した累計と船名付き損傷行。",
+  "related_source_urls": [
+    "https://www.imo.org/en/mediacentre/hottopics/pages/middle-east-strait-of-hormuz.aspx",
+    "https://www.imo.org/en/about/pages/imo-website-terms-and-conditions-of-use.aspx"
+  ],
+  "previous_snapshot": "imo-20261106-confirmed-incidents-57d3ad88",
+  "table_data_rows_seen": 133
+}
