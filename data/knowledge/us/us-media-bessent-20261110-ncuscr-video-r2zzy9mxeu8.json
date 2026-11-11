@@ -1,0 +1,42 @@
+{
+  "id": "us-media-bessent-20261110-ncuscr-video-r2zzy9mxeu8",
+  "source": "USA TODAY",
+  "source_type": "media_livestream_metadata",
+  "source_url": "https://www.youtube.com/watch?v=r2ZzY9MXEu8",
+  "title_en": "Live: Treasury Secretary Scott Bessent speech addresses US-China relationship before APEC summit",
+  "title_ja": "ベッセント長官の米中関係講演のライブ配信案内",
+  "published_at": null,
+  "publication_time_note": "配信ページの初回公表時刻は不明。ストリームの開始時刻と講演開始時刻を区別。",
+  "received_at": "2026-11-11T00:48:22.262313+00:00",
+  "retrieved_at": "2026-11-11T00:48:22.262313+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "other_us",
+    "diplomacy",
+    "investment_policy"
+  ],
+  "original_text": "Live: Treasury Secretary Scott Bessent speech addresses US-China relationship before APEC summit",
+  "translation_ja": "ライブ配信。APEC首脳会議を前に、ベッセント財務長官が米中関係について講演。\n\n取得した説明欄によると、長官は中国のAPEC首脳会議へ向かう前に、11月10日にニューヨークで講演する予定。配信元はUSA TODAY。講演音声・字幕・発言全文は未取得。",
+  "facts_ja": [
+    "財務省の案内先はUSA TODAYの公開ライブ配信。",
+    "ページのプレーヤーメタデータは配信中を示す。これは講演開始の確認ではない。",
+    "取得したプレーヤーデータに字幕情報は含まれていない。"
+  ],
+  "inference_ja": [],
+  "content_sha256": "c6326ec14b3b1e03ea27db6c81d397c8d136d739638168132a3f38e3c6ea3141",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "ページのタイトルと説明欄・配信状態を確認。音声、字幕、講演発言全文は未取得。",
+    "報道媒体の説明欄は詳細日本語要約。全文再利用は行わない。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "講演発言の内容が未取得で、対象テーマとの実質的関連は未判定。",
+  "stream_started_at": "2026-11-11T00:30:30+00:00",
+  "stream_live_at_retrieval": true,
+  "related_document_ids": [
+    "ustreas-mail-20261110-ncuscr-gala-43263c4",
+    "ustreas-bulletin-20261110-ncuscr-gala-43263c4"
+  ],
+  "source_raw_sha256": "b5d7d2b07cda230e33cdb463fa225db4a7a2163570a7ccce2f42fa7e8656c91d"
+}

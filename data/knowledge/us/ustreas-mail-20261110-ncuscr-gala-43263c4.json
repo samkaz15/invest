@@ -1,0 +1,44 @@
+{
+  "source": "U.S. Department of the Treasury",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/43263c4",
+  "title_en": "STARTING SOON: U.S. Secretary of the Treasury Scott Bessent to Deliver Remarks at National Committee on U.S.-China Relations Gala",
+  "title_ja": "ベッセント米財務長官の米中関係全国委員会講演の開始予告",
+  "published_at": "2026-11-10T19:45:00-05:00",
+  "publication_date": "2026-11-10",
+  "publication_timezone": "America/New_York",
+  "published_at_basis": "公開配信版に11/10/2026 07:45 PM ESTと表示。分精度。メール受信日時とは別。",
+  "received_at": "2026-11-11T00:46:49+00:00",
+  "received_at_kind": "gmail_received",
+  "topics": [
+    "other_us",
+    "diplomacy",
+    "investment_policy"
+  ],
+  "original_text": "U.S. Department of the Treasury\nOffice of Public Affairs\nPress Release: November 10, 2026\n\nSTARTING SOON: U.S. Secretary of the Treasury Scott Bessent to Deliver Remarks at National Committee on U.S.-China Relations Gala\n\nNEW YORK, NY— U.S. Secretary of the Treasury Scott Bessent will deliver remarks on U.S.-China relations and economic ties at the National Committee on U.S.-China Relations Gala Dinner at 8:15 PM.\n\nWatch the livestream here.\nhttps://www.youtube.com/watch?v=r2ZzY9MXEu8",
+  "translation_ja": "米国財務省・広報室\n発表日 2026年11月10日\n\nまもなく開始。ベッセント米財務長官が米中関係全国委員会の夕食会で講演予定\n\nニューヨーク発。スコット・ベッセント米財務長官は、米中関係全国委員会のガラ・ディナーで、午後8時15分から米中関係と経済関係について講演する予定です。\n\nライブ配信はこちら。\nhttps://www.youtube.com/watch?v=r2ZzY9MXEu8",
+  "facts_ja": [
+    "財務省はベッセント長官が米中関係と経済関係について午後8時15分から講演する予定と案内。実際の講演実施や政策内容は本文にない。",
+    "金・関税・原油・国債に関する具体的な政策・数値・講演本文は今回の取得範囲で確認できていない。"
+  ],
+  "inference_ja": [
+    "開催地ニューヨークの現地時刻と解釈すると、午後8時15分は11月11日10:15 JST。案内本文に時刻のタイムゾーン明記はない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "notification_reason": "講演の開始予告。取得できた本文・リンク先情報には金・関税・原油・国債の具体的情報がなく、未取得の発言内容から通知対象を推定しない。",
+  "attachment_status": "対象メールのMIMEに添付なし。公開配信版に実質的なPDFリンクなし。",
+  "related_source_urls": [
+    "https://www.youtube.com/watch?v=r2ZzY9MXEu8"
+  ],
+  "id": "ustreas-mail-20261110-ncuscr-gala-43263c4",
+  "source_type": "official_subscription_email",
+  "content_sha256": "966a061802af244278cfbb81e15be271dd0fa08693aa252ea0e47b76384078a3",
+  "related_document_ids": [
+    "ustreas-bulletin-20261110-ncuscr-gala-43263c4",
+    "us-media-bessent-20261110-ncuscr-video-r2zzy9mxeu8"
+  ],
+  "content_scope_note": "メールの実質的な本文を全訳。連絡先、購読管理、配送フッター、装飾を除外。",
+  "retrieved_at": "2026-11-11T00:48:20.093838+00:00"
+}
