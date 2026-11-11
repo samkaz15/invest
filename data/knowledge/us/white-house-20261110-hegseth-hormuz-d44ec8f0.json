@@ -1,0 +1,31 @@
+{
+  "id": "white-house-20261110-hegseth-hormuz-d44ec8f0",
+  "source_url": "https://www.whitehouse.gov/releases/2026/11/secretary-hegseth-torches-baseless-impeachment-stunt-this-is-not-patriotism-this-is-sabotage/",
+  "title_en": "White House release on Secretary Hegseth’s response to articles of impeachment",
+  "title_ja": "弾劾条項へのヘグセス長官の反論とホルムズ海峡に関する発言",
+  "published_at": "2026-11-10T13:57:20-05:00",
+  "received_at": "2026-11-11T06:06:35.214758+00:00",
+  "retrieved_at": "2026-11-11T06:06:35.214758+00:00",
+  "received_at_kind": "web_retrieved",
+  "original_text": "Secretary Hegseth made clear that every operation targeted in the eight articles was lawful, ordered by the Commander-in-Chief, properly notified to Congress, and carried out by warriors who delivered decisive results.\n\nAs for the articles themselves — Iran, the cartels, Maduro, Yemen — every one was a lawful operation ordered by the Commander-in-Chief, then ordered by myself, notified to Congress, and executed by American warriors who did their jobs.\n\nIn Operation Epic Fury, by every measure, we achieved a historic military victory… We control the Strait of Hormuz. Crazy Islamists in Tehran will never, ever have a nuclear weapon. A historic effort, only made possible by a courageous Commander-in-Chief.",
+  "translation_ja": "ホワイトハウスによると、ヘグセス長官は、弾劾の8条項が対象とする作戦はいずれも合法で、最高司令官の命令に基づき、議会に適切に通知され、兵士が実行して決定的な成果を上げたと述べた。\n\n長官発言。「各条項について言えば、イラン、カルテル、マドゥロ、イエメンのいずれも、最高司令官が命令し、それを受けて私が命令し、議会に通知し、任務を果たした米国の兵士が実行した合法的な作戦だった。」\n\n長官発言。「エピック・フューリー作戦で、どの尺度から見ても歴史的な軍事的勝利を収めた。……われわれはホルムズ海峡を支配している。テヘランの狂信的なイスラム主義者が核兵器を保有することは決してない。勇気ある最高司令官がいて初めて可能となった歴史的な取り組みだ。」（省略記号はホワイトハウスの掲載文。）",
+  "content_sha256": "d44ec8f0495db00df4b904021a6f209c8ddaadf8ea71d1e02fc1576bb0325d51",
+  "source_raw_sha256": "98eccecd5436878633e7607446e55acd7532e5882d552d94919b548e5344d527",
+  "translation_sha256": "6e16f5f613fe91f7f23771e5522d9617277af1ae3921dbfc29d6af381c07b637",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "topics": [
+    "war",
+    "oil"
+  ],
+  "facts_ja": [
+    "ホワイトハウスが11月10日13:57:20米東部（11日03:57:20 JST）に公開した弾劾条項への反論で、ヘグセス長官は米国がホルムズ海峡を支配していると主張。新たな作戦・制裁発動、船舶通航や積載量の変化、戦況は独立確認できていない。"
+  ],
+  "inference_ja": [],
+  "missing_parts": [
+    "公式ページの本文から戦争・ホルムズに直接関わる3段落を訳出。その他の声明、第三者コメント、リンク動画・音声の原文と訳は保存範囲外。",
+    "議会の原文、作戦発動時刻、通航・積載量・戦況の独立確認は未了。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "既知の作戦と海峡に関する当事者主張の補足。新規施策や物量変化は確認できない。"
+}
