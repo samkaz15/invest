@@ -1,0 +1,41 @@
+{
+  "id": "china-mfa-20261111-wang-rubio-34c2ca3e",
+  "source": "Ministry of Foreign Affairs of the People’s Republic of China",
+  "source_url": "https://www.fmprc.gov.cn/web/wjdt_674879/gjldrhd_674881/202611/t20261111_12057696.shtml",
+  "title_en": "Wang Yi Speaks with U.S. Secretary of State Marco Rubio on the Phone",
+  "title_ja": "中国外交部、王毅・ルビオ電話会談と首脳交流を公表",
+  "published_at": "2026-11-11T23:06:00+08:00",
+  "publication_date": "2026-11-11",
+  "publication_time_note": "公式ページ表示の時刻を北京時間（UTC+08:00）として記録。",
+  "received_at": "2026-11-12T04:13:16.915939+00:00",
+  "retrieved_at": "2026-11-12T04:13:16.915939+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "investment_policy",
+    "other_us"
+  ],
+  "original_text": "双方就中美关系及两国元首互动深入交换意见，通话是积极和建设性的。",
+  "translation_ja": "原文抜粋の訳。双方は米中関係と両国首脳の交流を巡って踏み込んだ意見交換を行い、電話会談は前向きで建設的だった。\n\n本文の詳細要約。11月11日、中国共産党中央政治局委員の王毅外相がルビオ米国務長官と電話で会談した。王氏は習近平氏の9月の訪米が成功し、両首脳が米中関係の新たな位置づけを具体化することで一致したと説明した。関係安定は両国が各自と共通の利益に照らして選んだもので、中国は一貫した対米政策のもと、意思疎通と協力を強化し、意見の隔たりや敏感な問題に対処する考えを示した。APECとG20の開催を互いに支え、建設的な戦略的安定関係を具体化する意向も述べた。",
+  "content_sha256": "34c2ca3e60d2c9b596c1157b5f9a92611f40536a62409f30150a2d8cc2ee5da0",
+  "translation_sha256": "a2b9bf623de24495e3a10ccfc3f0067a986bfc4999fcbb68f5b216ed60bba8a8",
+  "source_raw_sha256": "c9c71e15066fc86e0a4d6cbbaf416573683d23540afc7924d1efab8bf2525d70",
+  "content_scope": "detail_summary",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "facts_ja": [
+    "中国外交部は会談を前向きかつ建設的と説明し、APEC・G20開催の相互支援と戦略的安定を記載。中国外交部の本文にロシアを含む三者会談や非核化への記載はない。"
+  ],
+  "inference_ja": [
+    "両政府が公表した内容の差を理由に、中国側の受諾・拒否を推定しない。"
+  ],
+  "related_source_urls": [
+    "https://pubt.io/view/D0DB709EC964865A1A213192E68525ED3CC836F3"
+  ],
+  "notification_eligible": false,
+  "source_rights": "公式ページは権利留保。原文は短い抜粋、日本語は本文に基づく詳細要約。",
+  "notification_reason": "米国務省発表と同じ電話会談の相手方資料。米国務省発表の通知に併記。",
+  "related_record_ids": [
+    "state-20261111-rubio-wang-call-9765dd61"
+  ]
+}

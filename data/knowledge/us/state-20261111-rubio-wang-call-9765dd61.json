@@ -1,0 +1,48 @@
+{
+  "id": "state-20261111-rubio-wang-call-9765dd61",
+  "source": "U.S. Department of State, Office of the Spokesman via Public Technologies",
+  "source_url": "https://pubt.io/view/D0DB709EC964865A1A213192E68525ED3CC836F3",
+  "title_en": "Secretary Rubio’s Call with China’s Director of the Office of the CCP Central Foreign Affairs Commission and Foreign Minister Wang",
+  "title_ja": "米国務省、ルビオ・王毅電話会談での首脳対話と米中ロ会談の可能性を公表",
+  "published_at": null,
+  "publication_date": "2026-11-11",
+  "publication_time_note": "米国務省公表文の日付は米国11月11日、原発表時刻不明。Public Technologiesの再配信時刻は11月12日00:32 UTC。再配信時刻を公表時刻に代用しない。",
+  "received_at": "2026-11-12T04:12:22.498895+00:00",
+  "retrieved_at": "2026-11-12T04:12:22.498895+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "sanctions",
+    "investment_policy",
+    "tariffs",
+    "other_us"
+  ],
+  "original_text": "At China's request, Secretary of State and National Security Advisor Marco Rubio spoke today with Director of the Office of the CCP Central Foreign Affairs Commission, Politburo Member, and Foreign Minister Wang Yi. The two discussed President Trump's upcoming travel to the APEC Summit in China and General Secretary Xi's upcoming visit to Florida to attend the G20 Summit. The Secretary and the Director recalled the bilateral leader-level commitment to a constructive relationship of strategic stability on the basis of respect, fairness, and reciprocity. They agreed on the importance of meaningful leader-level conversations to advance goals such as peace and denuclearization, including at any potential trilateral leaders meeting with Russia.",
+  "translation_ja": "中国側の要請により、マルコ・ルビオ国務長官兼国家安全保障担当大統領補佐官は本日、中国共産党中央外事工作委員会弁公室主任で党中央政治局委員の王毅外相と電話で会談した。両者は、中国で開かれるAPEC首脳会議に出席するトランプ大統領の訪中予定と、G20首脳会議に出席する習近平総書記のフロリダ訪問予定について協議した。\n\n両者は、尊重、公平、相互主義を基礎とする建設的な戦略的安定関係に向けた、両国首脳の約束を改めて確認した。ロシアを含む三者首脳会談が開かれる場合も含め、平和や非核化といった目標を進めるため、実質的な首脳対話が重要であるとの認識で一致した。",
+  "content_sha256": "9765dd61fd3691ff88939dac5fba44a04c3a5b7a85ff16c678e240d3e94a6965",
+  "translation_sha256": "0ba8fdf30f37122e6994a52a29482e954024f0cbe3c2aa5e11ac6daf7d5d805c",
+  "source_raw_sha256": "553538094e1b9f9bbcdffda3a7f20a541a29db29c91c6ffc3374e02a3ed1a2e8",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "facts_ja": [
+    "米国務省によると、ルビオ氏と王毅氏は、APECとG20に向けた首脳訪問予定、戦略的安定、平和・非核化のための首脳対話を協議。米側はロシアを含む三者首脳会談の可能性に言及。",
+    "同日の中国外交部公表は、首脳間の交流とAPEC・G20の相互支援を記載し、三者会談や非核化に触れていない。"
+  ],
+  "inference_ja": [
+    "開催、参加者、議題、共同声明、規制変更は後続の両政府の公式文書で確認する。"
+  ],
+  "related_source_urls": [
+    "https://www.fmprc.gov.cn/web/wjdt_674879/gjldrhd_674881/202611/t20261111_12057696.shtml",
+    "https://www.forth.news/lists/state/Cgx3vvomnSWqrNKLqnkYt"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米国務省は対ロ三者首脳会談の可能性を含め米中が首脳対話を重視したと明らかにした。",
+  "publication_distribution_at": "2026-11-12T00:32:00+00:00",
+  "source_rights": "米国務省報道官室の公表文。転載ページの付加情報を除いて本文のみ。",
+  "retrieval_note": "米国務省直配信の本文は取得できず、配信者明記のPublic Technologies全文とForth掲載の同一本文を照合。",
+  "official_source_status": "direct_body_unavailable",
+  "related_record_ids": [
+    "china-mfa-20261111-wang-rubio-34c2ca3e"
+  ]
+}
