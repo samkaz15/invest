@@ -1,0 +1,38 @@
+{
+  "id": "ukraine-20261111-dublin-lithuania-energy-readout-c95a51c4",
+  "source": "Office of the President of Ukraine",
+  "source_url": "https://www.president.gov.ua/en/news/volodimir-zelenskij-obgovoriv-iz-gitanasom-nausyedoyu-diplom-107273",
+  "title_en": "Volodymyr Zelenskyy and Gitanas Nausėda Discussed the Diplomatic Process, Assistance for Ukraine’s Energy Sector, and Ukraine’s EU Integration",
+  "title_ja": "ウクライナ大統領府、リトアニアのエネルギー設備供与決定を公表",
+  "published_at": "2026-11-11T23:58:00+02:00",
+  "publication_date": "2026-11-11",
+  "publication_time_note": "大統領府サイトの掲載表示をキーウ時間（UTC+02:00）で記録。会談地の時刻とは区別。",
+  "received_at": "2026-11-12T06:19:01.250286+00:00",
+  "retrieved_at": "2026-11-12T06:19:01.250286+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "other_us"
+  ],
+  "original_text": "Lithuania will provide some of the energy equipment Ukraine needs.",
+  "translation_ja": "原文抜粋の訳。リトアニアはウクライナが必要とするエネルギー設備の一部を提供する。\n\n本文の詳細要約。ゼレンスキー大統領はダブリンでリトアニアのナウセーダ大統領と会談し、アブダビ協議と大規模な捕虜交換への期待を説明した。両首脳はエネルギー部門への支援と物流を協議した。ウクライナ大統領府によると、リトアニア側はエネルギー設備の供与を既に決め、ウクライナは引き渡しを待っている。ゼレンスキー氏は複数都市で状況が厳しいと述べた。2027年前半のリトアニアのEU理事会議長国就任に向け、ウクライナは2026年末までに全ての加盟交渉分野を開き、次に各章の終了に移る方針を示した。",
+  "content_sha256": "c95a51c4acac24b930ce93f91219c57f3664752bf99e256e6b5517cdb568d88f",
+  "translation_sha256": "c054ddbba6b4864b514a7151e2e3a7ac1e97051d356bf072f41314002a839da9",
+  "source_raw_sha256": "fd347ee30bee42258320be9684972b9666351d99934994ad137e8130bea65d64",
+  "content_scope": "detail_summary",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "facts_ja": [
+    "ウクライナ大統領府によると、リトアニアの設備供与は決定済みで引き渡し待ち。設備の種類・数量・到着日は記載されていない。",
+    "捕虜交換の規模・履行は未確認。大統領府の記載ではアブダビ協議の説明を行った。"
+  ],
+  "inference_ja": [
+    "設備引き渡しと復旧実績に基づいて供給への影響を再評価する。"
+  ],
+  "related_source_urls": [
+    "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  ],
+  "notification_eligible": false,
+  "source_rights": "ウクライナ大統領府のCC BY-NC-ND表示。原文は短い引用、本文は事実を独立に要約。",
+  "notification_reason": "エネルギー支援の背景資料。米国との協議の結果、新規契約や実際の引き渡しは未確認。"
+}

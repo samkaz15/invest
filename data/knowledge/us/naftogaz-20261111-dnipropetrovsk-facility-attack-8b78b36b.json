@@ -1,0 +1,38 @@
+{
+  "id": "naftogaz-20261111-dnipropetrovsk-facility-attack-8b78b36b",
+  "source": "Naftogaz Group",
+  "source_url": "https://www.naftogaz.com/en/news/russia-attacked-a-naftogaz-facility-in-dnipropetrovsk-oblast",
+  "title_en": "Russia attacks Naftogaz facility in Dnipropetrovsk Region",
+  "title_ja": "ナフトガス、ドニプロペトロウシク州の施設で火災と設備損傷を発表",
+  "published_at": "2026-11-11T12:13:00+02:00",
+  "publication_date": "2026-11-11",
+  "publication_time_note": "掲載時刻をキーウ時間（Europe/Kyiv、UTC+02:00）で記録。",
+  "received_at": "2026-11-12T06:19:38.656603+00:00",
+  "retrieved_at": "2026-11-12T06:19:38.656603+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "other_us"
+  ],
+  "original_text": "Russian forces struck a Naftogaz Group facility in Dnipropetrovsk Region with jet-powered drones overnight.\nThe attack caused a major fire and damaged equipment at the facility.\nEmployees were sheltering during the attack, and no one was injured. Ukraine’s State Emergency Service crews quickly arrived at the scene. I thank them for their swift and professional work,” said Sergii Fedorenko, Acting Chief Executive Officer of Naftogaz.\nNaftogaz Group specialists are assessing the damage and coordinating the next steps with local authorities.",
+  "translation_ja": "ロシア軍は夜間、ジェット推進型の無人機でドニプロペトロウシク州にあるナフトガス・グループの施設を攻撃した。\n\n攻撃により大規模な火災が起き、施設の設備が損傷した。\n\nナフトガスのセルヒー・フェドレンコ最高経営責任者代行は「従業員は攻撃時に避難しており、負傷者はいなかった。ウクライナ国家非常事態庁の隊員はすぐに現場に到着した。迅速で専門的な対応に感謝する」と述べた。\n\nナフトガス・グループの専門担当者は被害を調査し、今後の対応を地元当局と調整している。\n\n原文はナフトガス・ウクライナ、CC BY 4.0。日本語訳を作成。",
+  "content_sha256": "8b78b36b8a4138b82e507da5ff7893e34e6fed8a4d290d2fa4df660ef29f6f8d",
+  "translation_sha256": "a275b8d160e76949992aa0da6e0d6cdd051e1cb0985459b61251197d013cc192",
+  "source_raw_sha256": "1b40ac4fbc0c5f120ad5e42c024d42477250b1f86c107de5345e0ff472b79ffd",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "facts_ja": [
+    "施設運営者はジェット推進型無人機による攻撃、大規模火災、設備損傷、従業員の負傷なしを公表。攻撃主体・機種は同社発表。",
+    "施設の供給能力、減産・復旧期間、ガスの輸入・着荷への影響は公表文に示されていない。"
+  ],
+  "inference_ja": [
+    "他拠点での代替や貯蔵で補えず、域内のガス輸入需要が増加する場合には欧州ガス・LNG市場への波及を検討する。"
+  ],
+  "related_source_urls": [
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "notification_eligible": false,
+  "source_rights": "ナフトガス公式ページのCC BY 4.0表示を確認。",
+  "notification_reason": "前日付の施設運営者発表を補完。地域全体の供給変化や米国への重要な波及を示す新資料は未確認。"
+}
