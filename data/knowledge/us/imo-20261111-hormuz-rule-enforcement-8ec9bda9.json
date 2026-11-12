@@ -1,0 +1,45 @@
+{
+  "id": "imo-20261111-hormuz-rule-enforcement-8ec9bda9",
+  "source": "International Maritime Organization",
+  "source_url": "https://www.imo.org/en/mediacentre/pressbriefings/pages/imo-secretary-general-calls-for-enforcement-of-maritime-rules.aspx",
+  "title_en": "IMO Secretary-General calls on States to enforce maritime rules in the Strait of Hormuz",
+  "title_ja": "IMO事務局長、ホルムズ海峡で海事安全・保安規則の執行強化を要請",
+  "published_at": null,
+  "publication_date": "2026-11-11",
+  "publication_time_note": "IMO公式ページに11 November 2026と表示。時刻とタイムゾーンの記載がないため、日本時間への日付・時刻換算は未確定。",
+  "received_at": "2026-11-12T00:04:24.074763+00:00",
+  "retrieved_at": "2026-11-12T00:04:24.074763+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil",
+    "war",
+    "sanctions",
+    "other_us"
+  ],
+  "original_text": "ongoing transits of ships that are fraudulently registered or under false flags",
+  "translation_ja": "原文抜粋の訳。不正登録または虚偽の旗を掲げた船舶の通航が続いている。\n\n詳細要約。IMOによれば2026年2月28日以降、海峡で国際航行する商船に対し130件を超える攻撃を確認し、船員少なくとも25人が死亡、ほかに行方不明者と負傷者がいる。アルセニオ・ドミンゲス事務局長は海上人命安全条約（SOLAS）などの基本規定が守られていない通航が多いと指摘し、旗国、寄港国、沿岸国にそれぞれの管轄と国際法の範囲で違反に対応するよう要請した。船主・運航者には船員を許容できない危険にさらす商業活動を控えるよう求めた。各国政府には生活費上昇にもつながる紛争の根本原因への対処を、加盟国には航行の権利と自由を保つ統一的で安全な国際的航行の枠組みを回復するための政治的解決を求めた。\n\n原典および著作権者はIMO。This translation was not created by the International Maritime Organization (IMO) and IMO is not responsible for the content or accuracy of this translation.",
+  "content_sha256": "8ec9bda97d886a1fad1d0d1b40fe18472c1f4425bf34d0a5069186bf4f77b549",
+  "content_hash_scope": "normalized_subtitle_and_full_maritime_press_body",
+  "source_raw_sha256": "a1fe8da539b34390b2014bd6013060bbf46979953a79f9b4f2ed9463336a9d29",
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "記事本文は取得済み。個人・非商用に限定されるIMO利用条件のため、公開GitHubには25語以内の原文抜粋と詳細要約を掲載。発表時刻は不明。直接添付のPDF・表なし。関連の確認事案表・SOLAS概要・理事会公表本文は別ページで確認。"
+  ],
+  "facts_ja": [
+    "IMO事務局長は11月11日付の声明で、基準未達船舶・番号隠し・不正登録・虚偽の旗に関する報告を挙げ、旗国・寄港国・沿岸国に管轄内の違反対処を要請。",
+    "声明の累積集計は130件超の商船攻撃と少なくとも25人の船員死亡。11月6日付理事会発表にも同程度の累積値があり、増分としては扱わない。"
+  ],
+  "inference_ja": [
+    "要請に続く各国の通達、船舶検査、通航・実積載量、保険料の実績を確認すれば、物流費と物価への影響を判断できる。声明に新規の航行制限や制裁発効は示されていない。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "国際海事機関がホルムズ海峡で安全規則の執行を強化するよう加盟各国に具体策を要請。",
+  "related_source_urls": [
+    "https://www.imo.org/en/mediacentre/hottopics/pages/middle-east-highlighted-incidents.aspx",
+    "https://www.imo.org/en/about/conventions/pages/international-convention-for-the-safety-of-life-at-sea-%28solas%29%2c-1974.aspx",
+    "https://www.imo.org/en/mediacentre/pressbriefings/pages/imo-council-c138-urges-stronger-protection-of-seafarers-amid-threats-to-global-shipping-.aspx",
+    "https://www.imo.org/en/about/pages/imo-website-terms-and-conditions-of-use.aspx"
+  ],
+  "source_rights": "IMO著作権。個人・非商用の翻訳許諾と著作権表示条件を利用規約で確認。公開GitHubには短い抜粋と詳細要約。"
+}
