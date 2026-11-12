@@ -1,0 +1,36 @@
+{
+  "id": "fed-20261112-fomc-calendar-2027-ba5be842",
+  "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+  "title_en": "FOMC meeting calendars and information: 2027 panel",
+  "title_ja": "FRBの2027年FOMC日程欄の更新",
+  "published_at": null,
+  "published_date": "2026-11-12",
+  "retrieved_at": "2026-11-12T18:14:03.334698+00:00",
+  "received_at": "2026-11-12T18:14:03.334698+00:00",
+  "received_at_kind": "web_retrieved",
+  "source": "Board of Governors of the Federal Reserve System",
+  "topics": [
+    "monetary_policy"
+  ],
+  "original_text": "2027 FOMC Meetings\nJanuary 26-27\nMarch 16-17\nApril 27-28\nJune 8-9\nJuly 27-28\nSeptember 14-15\nOctober 26-27 Monetary Policy Strategy Meeting\nNovember 16-17\n*\nNote: A two-day meeting is scheduled for January 25-26, 2028. Each meeting date is tentative until confirmed at the meeting immediately preceding it.",
+  "translation_ja": "2027年FOMC会合（米国日付）\n\n| 月 | 日 | 補記 |\n|---|---|---|\n| 1 | 26～27 |  |\n| 3 | 16～17 |  |\n| 4 | 27～28 |  |\n| 6 | 8～9 |  |\n| 7 | 27～28 |  |\n| 9 | 14～15 |  |\n| 10 | 26～27 | 金融政策戦略会合 |\n| 11 | 16～17 |  |\n\n欄外には「*」のみ表示。2028年1月25～26日に2日間の会合を予定。各日程は、その直前の会合で確定するまで暫定。",
+  "content_sha256": "ba5be8420a62aac17ebff3e25e1ccfeb61932593b5e103249ca0e23870f13804",
+  "source_raw_sha256": "5eb9b28843286773d5b25743178f13da825adcf67ca5fc11e5321c346f84194f",
+  "facts_ja": [
+    "11月12日更新のFRB公式カレンダーで、2027年10月26～27日は金融政策戦略会合と表示。11月16～17日が追加表示され、前回の取得版にあった12月7～8日と経済見通しの注記は現行欄に見当たらない。2025年の暫定日程プレスリリースも照合。"
+  ],
+  "inference_ja": [
+    "金融政策の決定、投票、経済見通しの発表日を推定しない。現行欄と旧資料の差異の正式説明を再確認。"
+  ],
+  "missing_parts": [
+    "2027年日程欄のみが今回の翻訳範囲。旧版との差異の正式説明、現行欄のアスタリスクの説明、経済見通しの発表日、初出時刻は未確認。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "notification_eligible": false,
+  "related_source_urls": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250905a.htm"
+  ],
+  "published_time_basis": "FRBページの最終更新日表示。初出時刻は未確認。",
+  "source_last_modified": "2026-11-12T17:45:29+00:00"
+}

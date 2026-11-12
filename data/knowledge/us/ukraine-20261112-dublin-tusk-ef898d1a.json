@@ -1,0 +1,37 @@
+{
+  "id": "ukraine-20261112-dublin-tusk-ef898d1a",
+  "source_url": "https://www.president.gov.ua/en/news/volodimir-zelenskij-obgovoriv-iz-donaldom-tuskom-situaciyu-z-107289",
+  "title_en": "Volodymyr Zelenskyy Discussed Russian Strikes and Winter Preparations with Donald Tusk",
+  "title_ja": "ウクライナとポーランドの冬季燃料輸送協議",
+  "published_at": null,
+  "published_date": "2026-11-12",
+  "retrieved_at": "2026-11-12T18:15:33.924022+00:00",
+  "received_at": "2026-11-12T18:15:33.924022+00:00",
+  "received_at_kind": "web_retrieved",
+  "source": "President of Ukraine",
+  "topics": [
+    "oil",
+    "war",
+    "diplomacy"
+  ],
+  "original_text": "During the meeting, they discussed how Poland could help Ukraine prepare for this winter and expand transport links between the two countries, particularly for fuel supplies.",
+  "translation_ja": "ウクライナ大統領府によると、ゼレンスキー大統領はポーランドのトゥスク首相と会談し、外交、前線、ウクライナの都市・地域への攻撃を議題とした。ポーランドによる冬季支援と、燃料供給を中心とする両国間の輸送網拡大の可能性を協議した。EU加盟の加速策も協議し、ポーランドで始まった有志国の軍事訓練に謝意を表した。記事には燃料の輸送量、開始日、契約や実績の記載はない。",
+  "content_sha256": "ef898d1ae569bb3b7a2104b6d27401789e1c8156cdf4d7884f809a5026510a0c",
+  "source_raw_sha256": "efd1f8b9cdd67f499b88905bdf9707afe18753e90e53d9b006c8f3c03f5d454e",
+  "facts_ja": [
+    "ポーランドとの燃料輸送網拡大を協議したとウクライナ大統領府が発表。支援の合意文書・発注・実際の輸送は未確認。"
+  ],
+  "inference_ja": [
+    "代替陸上輸送の実効性は輸送容量、積出、着荷、費用で確認。協議から供給増を推定しない。"
+  ],
+  "missing_parts": [
+    "本文を取得し詳細を要約。CC BY-NC-ND 4.0のため全文転載・公開全訳は行わず。表示18:27のタイムゾーンは未確認。"
+  ],
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "notification_eligible": false,
+  "publication_display": "12 November 2026 - 18:27",
+  "related_source_urls": [
+    "https://www.gov.pl/web/primeminister/news"
+  ]
+}
