@@ -1,0 +1,33 @@
+{
+  "id": "nyfed-20261112-afternoon-repo-9bf97e80",
+  "source_url": "https://markets.newyorkfed.org/api/rp/repo/all/results/last/4.json",
+  "title_en": "NY Fed Repo results: RP 111226 27",
+  "title_ja": "ニューヨーク連銀の午後の翌日物レポ結果",
+  "published_at": null,
+  "published_date": "2026-11-12",
+  "retrieved_at": "2026-11-12T19:27:36.284591+00:00",
+  "received_at": "2026-11-12T19:27:36.284591+00:00",
+  "received_at_kind": "web_retrieved",
+  "source": "Federal Reserve Bank of New York",
+  "topics": [
+    "liquidity",
+    "monetary_policy"
+  ],
+  "original_text": "{\n  \"operationId\": \"RP 111226 27\",\n  \"auctionStatus\": \"Results\",\n  \"operationDate\": \"2026-11-12\",\n  \"settlementDate\": \"2026-11-12\",\n  \"maturityDate\": \"2026-11-13\",\n  \"operationType\": \"Repo\",\n  \"operationMethod\": \"Full Allotment\",\n  \"settlementType\": \"Same Day\",\n  \"termCalenderDays\": 1,\n  \"term\": \"Overnight\",\n  \"releaseTime\": \"13:30\",\n  \"closeTime\": \"13:45\",\n  \"note\": \"\",\n  \"lastUpdated\": \"2026-11-12 13:45:26\",\n  \"totalAmtSubmitted\": 0,\n  \"totalAmtAccepted\": 0,\n  \"details\": [\n    {\n      \"securityType\": \"Treasury\",\n      \"amtSubmitted\": 0,\n      \"amtAccepted\": 0,\n      \"percentOfferingRate\": 4.0\n    },\n    {\n      \"securityType\": \"Agency\",\n      \"amtSubmitted\": 0,\n      \"amtAccepted\": 0,\n      \"percentOfferingRate\": 4.0\n    },\n    {\n      \"securityType\": \"Mortgage-Backed\",\n      \"amtSubmitted\": 0,\n      \"amtAccepted\": 0,\n      \"percentOfferingRate\": 4.0\n    }\n  ]\n}",
+  "translation_ja": "ニューヨーク連銀の午後の翌日物レポ。オペID RP 111226 27。ステータスは結果。オペ日・決済日は米国日付11月12日（当日決済）、満期は同13日（翌日物、暦日1日）。全額割当方式。\n\n開始表示は米東部時間13:30、締切は13:45、結果更新表示は2026-11-12 13:45:26。注記欄は空欄。提示総額0ドル、受入総額0ドル。\n\n| 証券 | 提示額 | 受入額 | 提示利率 | 受入利率 |\n|---|---|---|---|---|\n| 米国債 | 0ドル | 0ドル | 4.00％ | 記載なし |\n| 政府機関債 | 0ドル | 0ドル | 4.00％ | 記載なし |\n| 住宅ローン担保証券 | 0ドル | 0ドル | 4.00％ | 記載なし |",
+  "content_sha256": "9bf97e8030564905df10e35ce6bc38352610fdc2739620ccab922a9b23dcb5fd",
+  "source_raw_sha256": "38847f7056d1971f31762a10317f11024e3eeaecbbfdbcdd37a95361eff64743",
+  "facts_ja": [
+    "午後の翌日物レポの受入額は0ドル。"
+  ],
+  "inference_ja": [
+    "対象のオペの結果。公開市場での国債の買い切り・売り切りと区別。"
+  ],
+  "missing_parts": [],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "notification_eligible": false,
+  "source_updated_at": "2026-11-12T13:45:26-05:00",
+  "published_time_basis": "公式APIの結果更新表示を別欄に記録。正確な初出時刻は未確認。",
+  "operation_id": "RP 111226 27"
+}

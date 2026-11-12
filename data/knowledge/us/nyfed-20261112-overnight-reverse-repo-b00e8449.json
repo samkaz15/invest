@@ -1,0 +1,33 @@
+{
+  "id": "nyfed-20261112-overnight-reverse-repo-b00e8449",
+  "source_url": "https://markets.newyorkfed.org/api/rp/reverserepo/all/results/last/4.json",
+  "title_en": "NY Fed Reverse Repo results: RP 111226 26",
+  "title_ja": "ニューヨーク連銀の翌日物リバースレポ結果",
+  "published_at": null,
+  "published_date": "2026-11-12",
+  "retrieved_at": "2026-11-12T19:27:36.167136+00:00",
+  "received_at": "2026-11-12T19:27:36.167136+00:00",
+  "received_at_kind": "web_retrieved",
+  "source": "Federal Reserve Bank of New York",
+  "topics": [
+    "liquidity",
+    "monetary_policy"
+  ],
+  "original_text": "{\n  \"operationId\": \"RP 111226 26\",\n  \"auctionStatus\": \"Results\",\n  \"operationDate\": \"2026-11-12\",\n  \"settlementDate\": \"2026-11-12\",\n  \"maturityDate\": \"2026-11-13\",\n  \"operationType\": \"Reverse Repo\",\n  \"operationMethod\": \"Fixed Rate\",\n  \"settlementType\": \"Same Day\",\n  \"termCalenderDays\": 1,\n  \"term\": \"Overnight\",\n  \"releaseTime\": \"12:45\",\n  \"closeTime\": \"13:15\",\n  \"note\": \"\",\n  \"lastUpdated\": \"2026-11-12 13:15:35\",\n  \"participatingCpty\": 1,\n  \"acceptedCpty\": 1,\n  \"totalAmtSubmitted\": 250000000,\n  \"totalAmtAccepted\": 250000000,\n  \"details\": [\n    {\n      \"securityType\": \"Treasury\",\n      \"amtSubmitted\": 250000000,\n      \"amtAccepted\": 250000000,\n      \"percentOfferingRate\": 3.75,\n      \"percentAwardRate\": 3.75\n    }\n  ]\n}",
+  "translation_ja": "ニューヨーク連銀の翌日物リバースレポ。オペID RP 111226 26。ステータスは結果。オペ日・決済日は米国日付11月12日（当日決済）、満期は同13日（翌日物、暦日1日）。固定金利方式。\n\n開始表示は米東部時間12:45、締切は13:15、結果更新表示は2026-11-12 13:15:35。注記欄は空欄。提示総額250,000,000ドル、受入総額250,000,000ドル。参加相手方1社、受入相手方1社。\n\n| 証券 | 提示額 | 受入額 | 提示利率 | 受入利率 |\n|---|---|---|---|---|\n| 米国債 | 250,000,000ドル | 250,000,000ドル | 3.75％ | 3.75％ |",
+  "content_sha256": "b00e8449747394a926f3ea20f181e7b0fc97efddca2d2f5652891959469825ba",
+  "source_raw_sha256": "c0ebc7d7c158d6999b17ef17db7f258d4d81a46da5d599ab5d3122a8b7faf0e9",
+  "facts_ja": [
+    "翌日物リバースレポの受入額は250,000,000ドル。"
+  ],
+  "inference_ja": [
+    "対象のオペの結果。公開市場での国債の買い切り・売り切りと区別。"
+  ],
+  "missing_parts": [],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "notification_eligible": false,
+  "source_updated_at": "2026-11-12T13:15:35-05:00",
+  "published_time_basis": "公式APIの結果更新表示を別欄に記録。正確な初出時刻は未確認。",
+  "operation_id": "RP 111226 26"
+}

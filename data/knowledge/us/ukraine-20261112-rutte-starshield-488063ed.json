@@ -1,0 +1,34 @@
+{
+  "id": "ukraine-20261112-rutte-starshield-488063ed",
+  "source_url": "https://www.president.gov.ua/en/news/situaciya-z-pereboyami-v-roboti-starshield-i-neobhidnist-pos-107301",
+  "title_en": "Starshield Service Disruptions and the Need to Strengthen Ukrainian Air Defense",
+  "title_ja": "ウクライナ大統領とNATO事務総長の防空協議",
+  "published_at": null,
+  "published_date": "2026-11-12",
+  "retrieved_at": "2026-11-12T19:29:06.686713+00:00",
+  "received_at": "2026-11-12T19:29:06.686713+00:00",
+  "received_at_kind": "web_retrieved",
+  "source": "President of Ukraine",
+  "topics": [
+    "war",
+    "diplomacy",
+    "energy"
+  ],
+  "original_text": "disruptions to Starshield service along the front line and in Ukraine’s temporarily occupied territories are creating serious challenges.",
+  "translation_ja": "ウクライナ大統領府によると、ゼレンスキー氏はNATOのルッテ事務総長と会談し、前線・一時占領地域のStarshieldの不調が無人機迎撃を難しくしていると伝えた。同氏はロシアのミサイル・誘導爆弾・無人機攻撃に言及し、三者協議が活発化する中でも迎撃能力の確保が必要と訴えた。ルッテ氏がPAC-2・PAC-3迎撃弾への支援に意欲を示したとして謝意を述べた。提供量・契約・引き渡しや通信制限の独立検証は確認できていない。",
+  "content_sha256": "488063ed07109a7dc6258fcf8b37954b1ffb6923d8aaa0bd6b4a12486bdf9b45",
+  "source_raw_sha256": "faca0b35503eb8809b20cecfcb20dc10855c1c42bf0296530aa6c41ed82769a5",
+  "facts_ja": [
+    "ウクライナ大統領府によると、ゼレンスキー氏はNATOのルッテ事務総長と会談し、前線・一時占領地域のStarshieldの不調が無人機迎撃を難しくしていると伝えた。同氏はロシアのミサイル・誘導爆弾・無人機攻撃に言及し、三者協議が活発化する中でも迎撃能力の確保が必要と訴えた。ルッテ氏がPAC-2・PAC-3迎撃弾への支援に意欲を示したとして謝意を述べた。提供量・契約・引き渡しや通信制限の独立検証は確認できていない。"
+  ],
+  "inference_ja": [
+    "政府の発表内容を帰属。独立した戦況、装備・支援の履行と区別。"
+  ],
+  "missing_parts": [
+    "本文は取得済み。権利表示CC BY-NC-ND 4.0のため、短い引用と独自の日本語詳細要約。表示時刻のタイムゾーン未確認。"
+  ],
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "notification_eligible": false,
+  "publication_display": "12 November 2026 - 20:42"
+}
