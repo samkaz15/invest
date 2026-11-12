@@ -1,0 +1,171 @@
+{
+  "id": "nyfed-tmpg-20201019-fails-charge-faq-52a7ad63",
+  "source_url": "https://www.newyorkfed.org/medialibrary/Microsites/tmpg/files/TMPG-Fails-Charge-FAQ-10-19-2020.pdf",
+  "title_en": "Frequently Asked Questions: TMPG Fails Charges",
+  "title_ja": "財務省買い戻し公告の参照資料・TMPG決済不履行手数料FAQ",
+  "published_at": null,
+  "published_date": "2020-10-19",
+  "retrieved_at": "2026-11-12T19:45:35.383319+00:00",
+  "received_at": "2026-11-12T19:45:35.383319+00:00",
+  "received_at_kind": "web_retrieved",
+  "source": "Treasury Market Practices Group, hosted by Federal Reserve Bank of New York",
+  "topics": [
+    "treasuries",
+    "liquidity"
+  ],
+  "original_text": "What is the recommended rate charged on fails?\nHow is the recommended fails-related payment calculated?",
+  "translation_ja": "## PDF 4ページ（日本語要約）\n\n国債・政府機関債の決済不履行に関し、旧方式は「年率3％からTMPG参照金利を引いた値」と0％の大きい方を日ごとに採用していた。政府機関MBSは旧方式の基準が年率2％。2018年4月12日の改定は、同年7月2日以降の取引と、同日になお未決済だった既存取引に年率1％の下限を導入した。改定後の国債・政府機関債は下限1％・上限3％、政府機関MBSは下限1％・上限2％。\n\n同じ契約決済日で不履行日数も同じ証券・資金同時決済の取引連鎖を循環決済した場合の例では、請求は生じない。連鎖内に異なる契約決済日の取引がある例では、すべての取引で請求を生じるとしている。\n\n## PDF 5ページ（日本語要約）\n\nTMPG参照金利はFOMCが定めるFF金利の目標値。目標が範囲の場合はその下限を使う。下限を導入したのは、金利水準に応じた請求処理・システムの停止と再開に伴う非効率や費用を抑えるため。\n\n1日分の推奨額（ドル）は、買い手が支払う取引代金に max(B－R, F) × 0.01 ÷ 360 を掛ける。Bは国債・政府機関債で3、政府機関MBSで2。Rは参照金利を年率％の数値で表したもの。Fは適用対象取引の下限1。式で使うのは額面ではなく取引代金。",
+  "content_sha256": "52a7ad63d7520c2e59d9e73c91dd44862b22d8c97c64ca9a2ba488c3b9a2e473",
+  "source_raw_sha256": "662aeda198535a7cd40d46e16e04c54630f664aa087078daaf169b188bb66103",
+  "facts_ja": [
+    "2020年10月19日改定の既存FAQ。国債決済不履行手数料の日次算定、適用開始日、参照金利・取引代金を4・5ページで確認。今回の買い戻し結果の追加発表ではない。"
+  ],
+  "inference_ja": [
+    "財務省買い戻しの決済遅延に関する手続資料。今回の取引に不履行や手数料が発生した証拠は未取得。"
+  ],
+  "missing_parts": [
+    "PDF全11ページの原文抽出済み。4・5ページを目視し算定・適用を独自の日本語要約として収録。1～3・6～11ページは目視・翻訳未了。原文全文・PDFバイナリは再配布可否未確認のため未保存。"
+  ],
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "notification_eligible": false,
+  "source_date": "2020-10-19",
+  "published_time_basis": "PDF記載の改定日。初回公開時刻は未確認。",
+  "related_source_urls": [
+    "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/BBA_20261112184000.pdf"
+  ],
+  "pdf": {
+    "sha256": "662aeda198535a7cd40d46e16e04c54630f664aa087078daaf169b188bb66103",
+    "page_count": 11,
+    "ocr_used": false,
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "",
+        "extraction_status": "extracted",
+        "translation_ja": "",
+        "translation_status": "pending",
+        "visual_reviewed": false,
+        "missing_parts": [
+          "原文は端末上で抽出済み。原文全文の再配布可否の確認、目視、日本語化は未了。"
+        ]
+      },
+      {
+        "page": 2,
+        "original_text": "",
+        "extraction_status": "extracted",
+        "translation_ja": "",
+        "translation_status": "pending",
+        "visual_reviewed": false,
+        "missing_parts": [
+          "原文は端末上で抽出済み。原文全文の再配布可否の確認、目視、日本語化は未了。"
+        ]
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "extraction_status": "extracted",
+        "translation_ja": "",
+        "translation_status": "pending",
+        "visual_reviewed": false,
+        "missing_parts": [
+          "原文は端末上で抽出済み。原文全文の再配布可否の確認、目視、日本語化は未了。"
+        ]
+      },
+      {
+        "page": 4,
+        "original_text": "What is the recommended rate charged on fails?",
+        "extraction_status": "extracted",
+        "translation_ja": "国債・政府機関債の決済不履行に関し、旧方式は「年率3％からTMPG参照金利を引いた値」と0％の大きい方を日ごとに採用していた。政府機関MBSは旧方式の基準が年率2％。2018年4月12日の改定は、同年7月2日以降の取引と、同日になお未決済だった既存取引に年率1％の下限を導入した。改定後の国債・政府機関債は下限1％・上限3％、政府機関MBSは下限1％・上限2％。\n\n同じ契約決済日で不履行日数も同じ証券・資金同時決済の取引連鎖を循環決済した場合の例では、請求は生じない。連鎖内に異なる契約決済日の取引がある例では、すべての取引で請求を生じるとしている。",
+        "translation_status": "partial",
+        "visual_reviewed": true,
+        "missing_parts": [
+          "該当見出しを短く引用し、目視した算定・適用箇所を要約。逐語訳は保存していない。"
+        ]
+      },
+      {
+        "page": 5,
+        "original_text": "How is the recommended fails-related payment calculated?",
+        "extraction_status": "extracted",
+        "translation_ja": "TMPG参照金利はFOMCが定めるFF金利の目標値。目標が範囲の場合はその下限を使う。下限を導入したのは、金利水準に応じた請求処理・システムの停止と再開に伴う非効率や費用を抑えるため。\n\n1日分の推奨額（ドル）は、買い手が支払う取引代金に max(B－R, F) × 0.01 ÷ 360 を掛ける。Bは国債・政府機関債で3、政府機関MBSで2。Rは参照金利を年率％の数値で表したもの。Fは適用対象取引の下限1。式で使うのは額面ではなく取引代金。",
+        "translation_status": "partial",
+        "visual_reviewed": true,
+        "missing_parts": [
+          "該当見出しを短く引用し、目視した算定・適用箇所を要約。逐語訳は保存していない。"
+        ]
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "extraction_status": "extracted",
+        "translation_ja": "",
+        "translation_status": "pending",
+        "visual_reviewed": false,
+        "missing_parts": [
+          "原文は端末上で抽出済み。原文全文の再配布可否の確認、目視、日本語化は未了。"
+        ]
+      },
+      {
+        "page": 7,
+        "original_text": "",
+        "extraction_status": "extracted",
+        "translation_ja": "",
+        "translation_status": "pending",
+        "visual_reviewed": false,
+        "missing_parts": [
+          "原文は端末上で抽出済み。原文全文の再配布可否の確認、目視、日本語化は未了。"
+        ]
+      },
+      {
+        "page": 8,
+        "original_text": "",
+        "extraction_status": "extracted",
+        "translation_ja": "",
+        "translation_status": "pending",
+        "visual_reviewed": false,
+        "missing_parts": [
+          "原文は端末上で抽出済み。原文全文の再配布可否の確認、目視、日本語化は未了。"
+        ]
+      },
+      {
+        "page": 9,
+        "original_text": "",
+        "extraction_status": "extracted",
+        "translation_ja": "",
+        "translation_status": "pending",
+        "visual_reviewed": false,
+        "missing_parts": [
+          "原文は端末上で抽出済み。原文全文の再配布可否の確認、目視、日本語化は未了。"
+        ]
+      },
+      {
+        "page": 10,
+        "original_text": "",
+        "extraction_status": "extracted",
+        "translation_ja": "",
+        "translation_status": "pending",
+        "visual_reviewed": false,
+        "missing_parts": [
+          "原文は端末上で抽出済み。原文全文の再配布可否の確認、目視、日本語化は未了。"
+        ]
+      },
+      {
+        "page": 11,
+        "original_text": "",
+        "extraction_status": "extracted",
+        "translation_ja": "",
+        "translation_status": "pending",
+        "visual_reviewed": false,
+        "missing_parts": [
+          "原文は端末上で抽出済み。原文全文の再配布可否の確認、目視、日本語化は未了。"
+        ]
+      }
+    ],
+    "requires_visual_review": true,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "original_url": "https://www.newyorkfed.org/medialibrary/Microsites/tmpg/files/TMPG-Fails-Charge-FAQ-10-19-2020.pdf",
+    "original_saved": false,
+    "original_save_reason": "TMPG作成資料の全文再配布可否の確認が取れていないため。"
+  }
+}
