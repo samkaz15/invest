@@ -1,0 +1,60 @@
+{
+  "as_of": "2026-11-12T23:32:35.372Z",
+  "status": "partial",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_auctions",
+      "status": "入口確認、個別落札PDF取得失敗",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/announcement-results-press-releases/auction-results/"
+    },
+    {
+      "id": "eia_petroleum",
+      "status": "検索結果の表一部確認。正式本文全体と脚注未取得",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/"
+    },
+    {
+      "id": "nyfed_operations",
+      "status": "FX声明本文取得失敗",
+      "url": "https://www.newyorkfed.org/newsevents/news/markets/2026/20261112"
+    },
+    {
+      "id": "white_house",
+      "status": "一覧の検索結果のみ、個別発表未確認",
+      "url": "https://www.whitehouse.gov/presidential-actions/"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_buybacks",
+    "fed_fomc",
+    "ofac",
+    "fec_results",
+    "cfius",
+    "過去分析のreview_after照合",
+    "メール経路との詳細重複照合",
+    "財務省30年債個別原表",
+    "EIA PDF全ページ",
+    "NY連銀の外為声明本文"
+  ],
+  "facts": [],
+  "reported": [
+    "財務省30年債入札の最高落札利回り5.441%、応札倍率2.36との報道。一次資料照合待ち。https://capitalfinancebureau.com/news/30-year-bond-auction-results-november-2026/",
+    "NY連銀は米財務省が7〜9月期に円を購入したと公表との検索結果。本文取得失敗。https://www.newyorkfed.org/newsevents/news/markets/2026/20261112"
+  ],
+  "causal_channels": [
+    "国債需給や外為取引の実績は原表を確認するまで判断保留"
+  ],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "一次資料と受渡・発表時刻を再確認",
+    "weeks": "資金需給とインフレ指標を確認",
+    "months": "政策金利と雇用・物価を確認"
+  },
+  "invalidations": [
+    "公式原表が報道内容と異なる場合は評価を変更"
+  ],
+  "review_after": null,
+  "postgresql_sync": "未確認",
+  "pc_notification": "未確認"
+}
