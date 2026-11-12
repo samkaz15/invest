@@ -1,0 +1,36 @@
+{
+  "id": "us-arm-az-20261107-tripp-technical-groups-d0c960e2",
+  "source": "United States, Armenia, and Azerbaijan, joint statement via Armenian MFA",
+  "source_url": "https://www.mfa.am/en/press-releases/2026/11/07/Trilateral/14257",
+  "title_en": "Joint Statement on the Launch of Trilateral Technical Planning Groups to Advance TRIPP",
+  "title_ja": "米・アルメニア・アゼルバイジャン、TRIPPの三者技術計画グループ設置を公表",
+  "published_at": null,
+  "publication_date": "2026-11-07",
+  "publication_time_note": "アルメニア外務省の日付表示。公表時刻不明。",
+  "received_at": "2026-11-12T02:17:06.165679+00:00",
+  "retrieved_at": "2026-11-12T02:17:06.165679+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "investment_policy",
+    "other_us"
+  ],
+  "original_text": "Today, U.S. Assistant Secretary of State for European and Eurasian Affairs Brendan Hanrahan, Armenian Deputy Minister of Foreign Affairs and International Trade Vahan Kostanyan, and Azerbaijani Deputy Foreign Minister Elnur Mammadov launched Trilateral Technical Planning Groups to advance the Trump Route for International Peace and Prosperity (TRIPP), a multimodal transit route. This forum brings together policymakers and technical experts from our three countries to work collaboratively and contribute to long-term stability, economic vitality, regional connectivity, and commercial prosperity across the region, underscoring the landmark August 8, 2025, Peace Summit Declaration brokered by President Trump.\nDemonstrating a shared commitment to turn vision into tangible progress, the parties agreed to inaugurate the first two Trilateral Planning Groups focused on transportation and electricity transmission. These technical planning groups represent a crucial step toward resolving complex technical issues and moving to the next phases of implementation, including connection with other regional infrastructures.\nThe sides reaffirmed their respective commitments to expeditious operationalization of all modalities of TRIPP.",
+  "translation_ja": "本日、ブレンダン・ハンラハン米国務次官補（欧州・ユーラシア担当）、ヴァハン・コスタニャン・アルメニア外務・国際貿易副大臣、エルヌル・ママドフ・アゼルバイジャン外務副大臣は、複合輸送の通過ルート「国際平和と繁栄のためのトランプ・ルート」（TRIPP）を進めるため、三者技術計画グループを立ち上げた。この枠組みは3か国の政策担当者と技術専門家を結び、協働を通じて地域全体の長期的な安定、経済活力、連結性、商業の繁栄に寄与する。トランプ大統領が仲介した2025年8月8日の歴史的な平和首脳会合の宣言を重視する。\n\n構想を具体的な進展につなげる共同の意思を示し、各国は最初の二つの三者計画グループを輸送と送電に焦点を当てて発足させることに合意した。各グループは複雑な技術課題を解決し、他の地域インフラとの接続を含む実施の次の段階に移るための重要な一歩となる。\n\n各国はTRIPPの全分野を速やかに運用段階に移すというそれぞれの約束を再確認した。",
+  "content_sha256": "d0c960e23493c3af0a7c357ea36c434dd8ed9c1443ff0ac4ff45e38bb38ae570",
+  "translation_sha256": "f9b5a961cc24bcfbe0e28f09f674476780c323a6656ab4b833c5f2fbde256faf",
+  "source_raw_sha256": "d85a857692890639844002d5e89c78cea968f2beb309615cc3f22aeabf127c28",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "facts_ja": [
+    "共同声明は輸送と送電に関する三者技術計画グループの立ち上げを公表。"
+  ],
+  "inference_ja": [
+    "技術計画段階。建設発注、資金実行、操業開始を確認する必要がある。"
+  ],
+  "related_source_urls": [
+    "https://www.mfa.am/en/press-releases/2026/05/26/TRIPP_Framework/13971"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "11月7日の既公表資料を批准の背景として保存。"
+}

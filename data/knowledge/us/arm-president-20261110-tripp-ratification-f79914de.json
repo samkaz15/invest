@@ -1,0 +1,45 @@
+{
+  "id": "arm-president-20261110-tripp-ratification-f79914de",
+  "source": "Office of the President of Armenia",
+  "source_url": "https://www.president.am/en/signed-laws/item/2026/11/10/President-Vahagn-Khachaturyan-signed-laws/",
+  "title_en": "President Vahagn Khachaturyan signed several laws",
+  "title_ja": "アルメニア大統領、米国とのTRIPP協定の批准法に署名",
+  "published_at": null,
+  "publication_date": "2026-11-10",
+  "publication_time_note": "大統領府の掲載日・署名日とも11月10日。掲載時刻不明。",
+  "received_at": "2026-11-12T02:22:57+00:00",
+  "retrieved_at": "2026-11-12T02:22:57+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "investment_policy",
+    "other_us"
+  ],
+  "original_text": "«Թրամփի ուղի՝ հանուն միջազգային խաղաղության և բարգավաճման» նախագծի (ԹՐԻՓՓ) վերաբերյալ ռազմավարական համագործակցության մասին շրջանակային համաձայնագիրը վավերացնելու մասին",
+  "translation_ja": "原文抜粋の訳。「国際平和と繁栄のためのトランプ・ルート」（TRIPP）事業に関する戦略協力の枠組み協定を批准する。\n\n公表内容。アルメニアのヴァハグン・ハチャトゥリャン大統領は11月10日、TRIPP協定を批准する法律、平和評議会憲章を批准する法律、居住国の外で働く労働者の業務上事故の調査手続に関する1994年協定を改正する議定書を批准する法律、UAEとのサービス貿易・投資協定を批准する法律、アルメニアの祝祭日・記念日に関する法律を補足する法律に署名した。",
+  "content_sha256": "f79914dec5800b483515e05fd53deaa6d05592cf0f5e63271545459666f10b70",
+  "translation_sha256": "84012c086b7fde5893209483eee99b1fba69a578d5dfed61941a991e23b2bcec",
+  "source_raw_sha256": null,
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "missing_parts": [
+    "大統領府告知の本文はウェブ閲覧で確認。公開リポジトリにはTRIPP関連の原文抜粋と署名案件の事実要約を収録。批准法本文・公報番号と発効の交換公文は未取得。"
+  ],
+  "facts_ja": [
+    "アルメニア大統領府の11月10日付公表は、同日に大統領が米国とのTRIPP枠組み協定の批准法に署名したと記載。",
+    "同公表では両国の交換公文、二国間協定の発効日、個別事業の着工・資金実行は確認できない。"
+  ],
+  "inference_ja": [
+    "国内批准の進展。運輸・送電の実施は交換公文、合弁・許認可、発注・資金の確認が条件。"
+  ],
+  "related_source_urls": [
+    "https://www.mfa.am/en/press-releases/2026/05/26/TRIPP_Framework/13971",
+    "https://www.mfa.am/en/press-releases/2026/11/07/Trilateral/14257",
+    "https://eu.mfa.am/en/news/2026/06/04/signing-of-the-framework-agreement-between-the-republic-of-armenia-and-the-united-states-of-america/16116"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "資料確認窓より前の発表を補完。",
+  "action_date": "2026-11-10",
+  "related_record_ids": [
+    "arm-us-tripp-20260526-framework-9e34b1c7"
+  ]
+}

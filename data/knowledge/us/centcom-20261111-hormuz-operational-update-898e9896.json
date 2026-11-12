@@ -1,0 +1,52 @@
+{
+  "id": "centcom-20261111-hormuz-operational-update-898e9896",
+  "source": "U.S. Central Command",
+  "source_url": "https://x.com/CENTCOM/status/2120578655655014848",
+  "title_en": "Operational Update: Strait of Hormuz, Naval Blockade, and Task Force Iron Gate",
+  "title_ja": "米中央軍、ホルムズ海峡の通航・原油輸送と対イラン封鎖の集計を公表",
+  "published_at": "2026-11-11T18:05:24.000Z",
+  "publication_date": "2026-11-11",
+  "publication_time_note": "X配信の作成日時を使用。公式投稿と動画の時刻を分離する必要はないが、動画内の集計起算日は不明。",
+  "received_at": "2026-11-12T02:18:37.922066+00:00",
+  "retrieved_at": "2026-11-12T02:18:37.922066+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil",
+    "war",
+    "sanctions"
+  ],
+  "original_text": "U.S. forces continue to work around the clock keeping the Strait of Hormuz open for commercial shipping, strictly enforcing the ironclad naval blockade against Iran, and working with U.S. interagency partners to prevent the IRGC from using land routes and the Caspian Sea to move advanced weapons systems, dual-use tech, sanctioned materials, and illegal revenue streams.\n\n[On-screen text]\nOPERATIONAL UPDATE\n\nSTRAIT OF HORMUZ\nArea: International maritime corridor that is 21 nautical miles wide at its narrowest point.\nMission: Coordinated protection for commercial shipping.\nUpdate:\n- Nearly 4,000 ships have passed through the strait with U.S. support.\n- 1.7 billion barrels of crude oil shipped with U.S. protection since summer.\n- Primary transit routes remain clear of sea mines.\n\nNAVAL BLOCKADE\nArea: All Iranian ports and coastal areas.\nMission: No ships in or out of Iranian ports without U.S. permission.\nFacts:\n- U.S. forces continue to strictly enforce the U.S. naval blockade against Iran.\n- Nearly 150 ships redirected and 5 disabled since July for attempting to violate the blockade.\n- Blockade has prevented the IRGC from exporting an estimated $30+ billion in crude oil.\n\nTASK FORCE IRON GATE\nArea: Iran’s borders and the Caspian Sea.\nMission: Help synchronize efforts to stop illicit movement of advanced weapons systems, dual-use technologies, sanctioned materials, and illegal revenue streams.\nFacts:\n- Established Nov. 7, 2026.\n- Staff consists of 20 CENTCOM civilian and military personnel based in Tampa, Florida.\n- Task force is designed to work with U.S. government interagency partners.",
+  "translation_ja": "米軍は商船がホルムズ海峡を通航できるよう昼夜を問わず取り組み、対イラン海上封鎖を厳格に執行し続けている。イラン革命防衛隊（IRGC）が陸路やカスピ海を使って先進兵器システム、軍民両用技術、制裁対象物資や違法な資金を移動させるのを阻止するため、米政府の関係機関とも連携している。\n\n### 添付動画の画面文言（米中央軍の説明）\n\n**作戦の状況更新**\n\n**ホルムズ海峡**  \n区域。最も狭い地点で幅21海里の国際海上航路。  \n任務。商船の保護を調整する。  \n状況。米国の支援を受けて約4,000隻が海峡を通過した。夏以降、米国の保護を受けて原油17億バレルが輸送された。主要な通航経路には引き続き機雷がない。\n\n**海上封鎖**  \n区域。イランのすべての港湾および沿岸区域。  \n任務。米国の許可なくイランの港湾に出入りする船舶を認めない。  \n状況。米軍は対イラン海上封鎖を引き続き厳格に執行している。7月以降、封鎖違反を試みた船舶約150隻の進路を変更させ、5隻を航行不能にした。封鎖によってIRGCが推計300億ドル超の原油を輸出するのを阻止した。\n\n**アイアン・ゲート任務部隊**  \n区域。イランの国境とカスピ海。  \n任務。先進兵器システム、軍民両用技術、制裁対象物資、違法な資金の移動の阻止に向けた活動の調整を支援する。  \n状況。2026年11月7日設置。フロリダ州タンパを拠点とする米中央軍の文民・軍人20人で構成する。米政府の関係機関と連携するための部隊である。",
+  "content_sha256": "898e9896cabe33825a86ebe2f1db68eb90c27b9374fc42b71f0661dc4b58dff4",
+  "translation_sha256": "0d533c96a26c752b631eddfa5ada0324177f4adfd696874f305b2d9b2034798b",
+  "source_raw_sha256": "571c0c79c648e4d3ff784b674fd59452fb342f42a122015df5a54744d9c4bb52",
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "missing_parts": [
+    "動画は61.7秒。映像の全3区分の画面文字と投稿本文を翻訳。音声トラックの内容は未確認。"
+  ],
+  "facts_ja": [
+    "米中央軍は商船約4,000隻の通過支援、夏以降に保護下で輸送された原油17億バレル、主要航路に機雷がないことを公表。いずれも米軍の説明で、集計方法・起算日・船舶一覧・独立した確認は得られていない。",
+    "対イラン海上封鎖による原油輸出阻止額は米中央軍推計で300億ドル超。11月7日の米軍公表は250億ドル超。両者の算定期間・数量・単価は揃わず、差を追加の阻止額と扱わない。",
+    "海上封鎖違反を試みた約150隻を変針させ、5隻を航行不能にしたと米軍は説明。カスピ海等のアイアン・ゲート部隊の人員と目的は既公表。"
+  ],
+  "inference_ja": [
+    "米軍支援下の累積輸送は海峡全体の日量、従来水準への回復、船舶の安全性を直接示さない。輸送実績・機雷状況・保険料は独立資料で検証する。"
+  ],
+  "related_source_urls": [
+    "https://video.twimg.com/amplify_video/2120577654365507584/vid/avc1/1280x720/88tFRfb4ygNyHK4b.mp4",
+    "https://www.centcom.mil/"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米中央軍は夏以降、米国の保護下でホルムズ海峡を原油17億バレルが通過したと発表。",
+  "video": {
+    "source_url": "https://video.twimg.com/amplify_video/2120577654365507584/vid/avc1/1280x720/88tFRfb4ygNyHK4b.mp4",
+    "sha256": "2f744d1ac5b60a6be34c976b505c8f47e5f7e80cb4914265fb0b6e511187c883",
+    "duration_seconds": 61.717333,
+    "on_screen_text_reviewed": true,
+    "audio_reviewed": false
+  },
+  "related_record_ids": [
+    "centcom-20261107-iron-gate-62ff1226"
+  ]
+}
