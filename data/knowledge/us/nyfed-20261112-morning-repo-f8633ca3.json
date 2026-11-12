@@ -1,0 +1,33 @@
+{
+  "id": "nyfed-20261112-morning-repo-f8633ca3",
+  "source_url": "https://markets.newyorkfed.org/api/rp/repo/all/results/last/4.json",
+  "title_en": "New York Fed morning standing repo operation, November 12, 2026",
+  "title_ja": "NY連銀の11月12日朝のレポ結果",
+  "published_at": null,
+  "received_at": "2026-11-12T14:11:51.512340+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-12T14:11:51.512340+00:00",
+  "original_text": "{\n  \"operationId\": \"RP 111226 25\",\n  \"auctionStatus\": \"Results\",\n  \"operationDate\": \"2026-11-12\",\n  \"settlementDate\": \"2026-11-12\",\n  \"maturityDate\": \"2026-11-13\",\n  \"operationType\": \"Repo\",\n  \"operationMethod\": \"Full Allotment\",\n  \"settlementType\": \"Same Day\",\n  \"termCalenderDays\": 1,\n  \"term\": \"Overnight\",\n  \"releaseTime\": \"08:15\",\n  \"closeTime\": \"08:30\",\n  \"note\": \"\",\n  \"lastUpdated\": \"2026-11-12 08:30:19\",\n  \"totalAmtSubmitted\": 1000000,\n  \"totalAmtAccepted\": 1000000,\n  \"details\": [\n    {\n      \"securityType\": \"Treasury\",\n      \"amtSubmitted\": 1000000,\n      \"amtAccepted\": 1000000,\n      \"percentOfferingRate\": 4.0\n    },\n    {\n      \"securityType\": \"Agency\",\n      \"amtSubmitted\": 0,\n      \"amtAccepted\": 0,\n      \"percentOfferingRate\": 4.0\n    },\n    {\n      \"securityType\": \"Mortgage-Backed\",\n      \"amtSubmitted\": 0,\n      \"amtAccepted\": 0,\n      \"percentOfferingRate\": 4.0\n    }\n  ]\n}",
+  "translation_ja": "11月12日のニューヨーク連銀翌日物レポ結果。取引番号RP 111226 25、状態は結果。取引・決済は11月12日、満期は11月13日、暦日数1日。全額割当、当日決済。米東部時間8時15分に受付開始、8時30分締切、8時30分19秒に結果更新。総応札額・総落札額とも100万ドルで、全額が米国債担保。政府機関債とMBSは応札・落札ともゼロ。提示金利は全担保区分で4.00％。備考欄は空欄。",
+  "content_sha256": "f8633ca310a101d4f836045caa49cda71029ad5b0a8829674d30e82c9400a0b6",
+  "source_raw_sha256": "4db4a8a002b6bcd08edfac43568cd624c60e7c6c358ea9aa16a888782eae15db",
+  "facts_ja": [
+    "NY連銀の11月12日朝の翌日物レポは提示金利4.00％、応札・落札100万ドル、全額米国債担保。政府機関債・MBSはゼロ。"
+  ],
+  "inference_ja": [
+    "前回朝の500万ドルから減少。一回の利用額から資金市場全体の逼迫度を断定しない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "topics": [
+    "treasuries",
+    "monetary_policy",
+    "liquidity"
+  ],
+  "source": "Federal Reserve Bank of New York",
+  "published_date": "2026-11-12",
+  "source_result_updated_at": "2026-11-12T08:30:19-05:00",
+  "publication_time_note": "APIに結果更新時刻。初回公開時刻は未確認。"
+}
