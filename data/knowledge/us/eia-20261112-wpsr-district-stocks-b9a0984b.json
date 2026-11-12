@@ -1,0 +1,54 @@
+{
+  "id": "eia-20261112-wpsr-district-stocks-b9a0984b",
+  "source_url": "https://ir.eia.gov/wpsr/table0.pdf",
+  "title_en": "U.S. and PAD District Commercial Crude Oil Stocks (Excluding SPR)",
+  "title_ja": "米EIA週間石油統計（11月6日終了週）の地域別商業原油在庫",
+  "published_at": "2026-11-12T12:00:00-05:00",
+  "received_at": "2026-11-12T17:02:40.630709+00:00",
+  "retrieved_at": "2026-11-12T17:02:40.630709+00:00",
+  "received_at_kind": "web_retrieved",
+  "source": "U.S. Energy Information Administration",
+  "topics": [
+    "oil",
+    "energy"
+  ],
+  "original_text": "U.S. and PAD District Commercial Crude Oil Stocks (Excluding SPR), Week Ending 11/6/2026\n\nCurrent\nWeek  Week Ago  Year Ago\n\nCommercial Crude Oil Stocks (Excluding SPR)1  Percent  Percent\n(million barrels)  11/6/26  10/30/26  Difference  Change  11/7/25  Difference  Change\n\nUnited States  414.4  409.8  4.7  1.1  427.6  -13.2  -3.1\n\nEast Coast (PADD 1)  8.2  8.1  0.1  1.1  8.3  -0.1  -1.1\n\nMidwest (PADD 2)  108.2  107.8  0.4  0.4  103.9  4.3  4.1\n\nGulf Coast (PADD 3)  230.5  227.2  3.3  1.5  243.3  -12.8  -5.3\n\nRocky Mountain (PADD 4)  24.3  24.0  0.3  1.2  24.5  -0.2  -0.8\n\nWest Coast (PADD 5)  43.2  42.6  0.6  1.4  47.5  -4.3  -9.1\n\n-- = Not Applicable.\n- = Data Not Available.\n1 Includes those domestic and Customs-cleared foreign crude oil stocks held at refineries and tank farms or in transit thereto, and in pipelines.\n\nData source: See https://www.eia.gov/petroleum/supply/weekly/pdf/sources.pdf\n\n\n\n\nWeekly Petroleum Status Report/Energy Information Administration",
+  "translation_ja": "## PDF 1ページ\n\n## 全米・PADD別商業原油在庫（SPRを除く）、2026年11月6日終了週\n\n百万バレル。前週および前年同期との比較。\n| 項目 | 11/6/26 | 10/30/26 | 前週差 | 前週比％ | 11/7/25 | 前年差 | 前年比％ |\n|---|---|---|---|---|---|---|---|\n| 全米 | 414.4 | 409.8 | 4.7 | 1.1 | 427.6 | -13.2 | -3.1 |\n| 東海岸（PADD 1） | 8.2 | 8.1 | 0.1 | 1.1 | 8.3 | -0.1 | -1.1 |\n| 中西部（PADD 2） | 108.2 | 107.8 | 0.4 | 0.4 | 103.9 | 4.3 | 4.1 |\n| メキシコ湾岸（PADD 3） | 230.5 | 227.2 | 3.3 | 1.5 | 243.3 | -12.8 | -5.3 |\n| ロッキー山岳部（PADD 4） | 24.3 | 24.0 | 0.3 | 1.2 | 24.5 | -0.2 | -0.8 |\n| 西海岸（PADD 5） | 43.2 | 42.6 | 0.6 | 1.4 | 47.5 | -4.3 | -9.1 |\n\n「--」は該当なし。「-」はデータなし。\n\n［1］製油所・油槽所に保管中、またはそこへ輸送中の国内産および通関済み外国産の原油とパイプライン内の原油を含む。\n\n[資料出所](https://www.eia.gov/petroleum/supply/weekly/pdf/sources.pdf)。米エネルギー情報局・週間石油統計。",
+  "content_sha256": "b9a0984ba9cef3be7441c192457c2a18d672775fa31cca15e03d7bc25dbd8f09",
+  "source_raw_sha256": "ee631fdbc918f04b7b3831c3a1fb7e15b13ab38d3bb1a918253461ab7a9e874f",
+  "facts_ja": [
+    "商業原油在庫の前週比増加幅は、表の丸め値でメキシコ湾岸330万バレルと5地域で最大。"
+  ],
+  "inference_ja": [
+    "商業原油在庫増とSPR在庫減を別々に追跡。生産・輸出入・精製投入・調整項目が同時に変化しており、備蓄減だけで商業在庫増の原因を特定できない。製品供給量は見かけ需要の指標で、最終販売やホルムズ海峡の現在の通航を直接測定しない。"
+  ],
+  "missing_parts": [],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "notification_eligible": false,
+  "published_time_basis": "EIAの休日公表日程の初回公表時刻（米東部正午）。初出秒は不明。",
+  "period_ending": "2026-11-06",
+  "pdf": {
+    "sha256": "ee631fdbc918f04b7b3831c3a1fb7e15b13ab38d3bb1a918253461ab7a9e874f",
+    "page_count": 1,
+    "ocr_used": false,
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "U.S. and PAD District Commercial Crude Oil Stocks (Excluding SPR), Week Ending 11/6/2026\n\nCurrent\nWeek  Week Ago  Year Ago\n\nCommercial Crude Oil Stocks (Excluding SPR)1  Percent  Percent\n(million barrels)  11/6/26  10/30/26  Difference  Change  11/7/25  Difference  Change\n\nUnited States  414.4  409.8  4.7  1.1  427.6  -13.2  -3.1\n\nEast Coast (PADD 1)  8.2  8.1  0.1  1.1  8.3  -0.1  -1.1\n\nMidwest (PADD 2)  108.2  107.8  0.4  0.4  103.9  4.3  4.1\n\nGulf Coast (PADD 3)  230.5  227.2  3.3  1.5  243.3  -12.8  -5.3\n\nRocky Mountain (PADD 4)  24.3  24.0  0.3  1.2  24.5  -0.2  -0.8\n\nWest Coast (PADD 5)  43.2  42.6  0.6  1.4  47.5  -4.3  -9.1\n\n-- = Not Applicable.\n- = Data Not Available.\n1 Includes those domestic and Customs-cleared foreign crude oil stocks held at refineries and tank farms or in transit thereto, and in pipelines.\n\nData source: See https://www.eia.gov/petroleum/supply/weekly/pdf/sources.pdf\n\n\n\n\nWeekly Petroleum Status Report/Energy Information Administration",
+        "extraction_status": "extracted",
+        "translation_ja": "## 全米・PADD別商業原油在庫（SPRを除く）、2026年11月6日終了週\n\n百万バレル。前週および前年同期との比較。\n| 項目 | 11/6/26 | 10/30/26 | 前週差 | 前週比％ | 11/7/25 | 前年差 | 前年比％ |\n|---|---|---|---|---|---|---|---|\n| 全米 | 414.4 | 409.8 | 4.7 | 1.1 | 427.6 | -13.2 | -3.1 |\n| 東海岸（PADD 1） | 8.2 | 8.1 | 0.1 | 1.1 | 8.3 | -0.1 | -1.1 |\n| 中西部（PADD 2） | 108.2 | 107.8 | 0.4 | 0.4 | 103.9 | 4.3 | 4.1 |\n| メキシコ湾岸（PADD 3） | 230.5 | 227.2 | 3.3 | 1.5 | 243.3 | -12.8 | -5.3 |\n| ロッキー山岳部（PADD 4） | 24.3 | 24.0 | 0.3 | 1.2 | 24.5 | -0.2 | -0.8 |\n| 西海岸（PADD 5） | 43.2 | 42.6 | 0.6 | 1.4 | 47.5 | -4.3 | -9.1 |\n\n「--」は該当なし。「-」はデータなし。\n\n［1］製油所・油槽所に保管中、またはそこへ輸送中の国内産および通関済み外国産の原油とパイプライン内の原油を含む。\n\n[資料出所](https://www.eia.gov/petroleum/supply/weekly/pdf/sources.pdf)。米エネルギー情報局・週間石油統計。",
+        "translation_status": "complete",
+        "visual_reviewed": true,
+        "missing_parts": []
+      }
+    ],
+    "requires_visual_review": true,
+    "visual_review_complete": true,
+    "privacy_review_complete": true,
+    "original_url": "https://ir.eia.gov/wpsr/table0.pdf",
+    "original_saved": true,
+    "rights_source": "https://www.eia.gov/about/copyrights_reuse.php"
+  },
+  "source_last_modified": "2026-11-12T16:05:33+00:00"
+}
