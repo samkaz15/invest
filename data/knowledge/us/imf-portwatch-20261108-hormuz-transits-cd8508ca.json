@@ -1,0 +1,38 @@
+{
+  "id": "imf-portwatch-20261108-hormuz-transits-cd8508ca",
+  "source": "IMF PortWatch",
+  "source_url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portname+LIKE+%27%25Hormuz%25%27+AND+date+%3E%3D+TIMESTAMP+%272026-11-01+00%3A00%3A00%27&outFields=%2A&f=json&returnGeometry=false&resultRecordCount=30&orderByFields=date+DESC",
+  "title_en": "Strait of Hormuz daily chokepoint transit calls, 1–8 November 2026",
+  "title_ja": "IMF PortWatchのホルムズ海峡日次通過件数、11月1〜8日",
+  "published_at": null,
+  "publication_date": null,
+  "publication_time_note": "API返却に公表日時はない。観測日と実取得日時を区別。",
+  "received_at": "2026-11-12T05:15:38.016632+00:00",
+  "retrieved_at": "2026-11-12T05:15:38.016632+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil",
+    "war"
+  ],
+  "original_text": "portname: Strait of Hormuz\ndate,n_total,n_tanker,capacity_tanker\n2026-11-01,1,1,0\n2026-11-02,2,1,0\n2026-11-03,4,2,1728\n2026-11-04,5,0,0\n2026-11-05,5,1,4771\n2026-11-06,6,1,15038\n2026-11-07,2,1,0\n2026-11-08,3,1,0",
+  "translation_ja": "| 観測日 | AIS通過件数 | タンカー件数 | タンカー推計量（トン） |\n| --- | ---: | ---: | ---: |\n| 2026-11-01 | 1 | 1 | 0 |\n| 2026-11-02 | 2 | 1 | 0 |\n| 2026-11-03 | 4 | 2 | 1728 |\n| 2026-11-04 | 5 | 0 | 0 |\n| 2026-11-05 | 5 | 1 | 4771 |\n| 2026-11-06 | 6 | 1 | 15038 |\n| 2026-11-07 | 2 | 1 | 0 |\n| 2026-11-08 | 3 | 1 | 0 |\n\n船舶自動識別装置（AIS）から推計した通過指標。推計量の0は、この系列の表示値であり実際の積荷や輸送がゼロであることを確認したものではない。",
+  "content_sha256": "cd8508ca10c5911c0043500baf027a224c0877c875a1fc6706c56c13424fb9b7",
+  "translation_sha256": "992292f5bf4de095819b512140bdd214268529691c2015b1ab56d6763d9cd1ca",
+  "source_raw_sha256": "3cbea00f0033d80456898e6ca7fb7c2c586fedc4e7b7ad5b1522f888900435ee",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "APIの返却は11月8日観測分まで。9〜12日の通過・積荷、独立した油種別実積載は未確認。"
+  ],
+  "facts_ja": [
+    "PortWatchの取得表は11月1〜8日の8日分で、8日は全船種3件、タンカー1件。11月9〜12日の値は取得表に含まれない。"
+  ],
+  "inference_ja": [
+    "集計対象・期間が異なるため、CENTCOMの累積支援通過数との直接比較を保留。"
+  ],
+  "related_source_urls": [
+    "https://portwatch.imf.org/pages/data-and-methodology"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "今回取得した既往の参考系列。最新観測日は11月8日。"
+}
