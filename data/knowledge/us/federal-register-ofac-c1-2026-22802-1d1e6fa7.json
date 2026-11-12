@@ -1,0 +1,75 @@
+{
+  "id": "federal-register-ofac-c1-2026-22802-1d1e6fa7",
+  "source": "U.S. Federal Register / Office of Foreign Assets Control",
+  "source_url": "https://www.federalregister.gov/documents/2026/11/12/C1-2026-22802/notice-of-ofac-sanctions-actions",
+  "title_en": "Notice of OFAC Sanctions Actions",
+  "title_ja": "米連邦官報、イラン関連の二次制裁情報を扱ったOFAC告示の誤掲載を訂正",
+  "published_at": null,
+  "publication_date": "2026-11-12",
+  "publication_time_note": "官報号の掲載日は米国2026年11月12日。時刻は未確認。公衆閲覧開始は11月10日08:45 EST（22:45 JST）。公衆閲覧時刻・号の日付・措置日は別。",
+  "public_inspection_at": "2026-11-10T08:45:00-05:00",
+  "received_at": "2026-11-12T00:40:01.209628+00:00",
+  "retrieved_at": "2026-11-12T00:40:01.209628+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "sanctions",
+    "other_us"
+  ],
+  "original_text": "DEPARTMENT OF THE TREASURY\n\nOffice of Foreign Assets Control\n\n\nNotice of OFAC Sanctions Actions\n\nCorrection\n\n    Notice document 2026-22802, appearing on pages 70987, in the issue \nof Monday, November 9, 2026,\n\npublished in error and should not have appeared in the Federal \nRegister.\n\n[FR Doc. C1-2026-22802 Filed 11-10-26; 8:45 am]\nBILLING CODE 0099-10-D",
+  "translation_ja": "米財務省 外国資産管理局（OFAC）\nOFAC制裁措置の告示\n訂正\n2026年11月9日月曜日付の号の70987頁に掲載された告示文書2026-22802は、\n\n誤って掲載されたものであり、連邦官報に掲載されるべきではなかった。\n［官報文書C1-2026-22802、2026年11月10日午前8時45分提出］\n請求コード 0099-10-D。",
+  "content_sha256": "1d1e6fa76908c622fa286119cfc88d4b2d86ba7f6cfe9217cf01b744a2722640",
+  "translation_sha256": "874c2b38c14a6d14d42e838316f68064038295dad21b64663c1e9d72faf0420a",
+  "source_raw_sha256": "7cedb79a5699ac746aaa631cdb63387ce96e527025fde7ac86a32f4760903f95",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "facts_ja": [
+    "米連邦官報91 FR 72958–72959の訂正文は、11月9日号70987頁に載った2026-22802が誤掲載だったと明示する。",
+    "旧告示は11月4日のIRAN-EO13902関係の既存掲載項目への二次制裁情報適用に言及。訂正文に指定の解除、撤回対象者、取引許可、効力発生日は記載されていない。"
+  ],
+  "inference_ja": [
+    "公表上の訂正とOFACによる法的措置の変更を区別する。対象リストの公式改訂履歴と告示の続報が判断条件。"
+  ],
+  "notification_eligible": true,
+  "related_source_urls": [
+    "https://www.govinfo.gov/content/pkg/FR-2026-11-09/html/2026-22802.htm",
+    "https://public-inspection.federalregister.gov/C1-2026-22802.pdf",
+    "https://www.federalregister.gov/api/v1/documents/C1-2026-22802.json",
+    "https://ofac.treasury.gov/recent-actions/20261104_33"
+  ],
+  "scope_notes": [
+    "公衆閲覧版1頁と官報掲載版2頁の当該本文を確認。公衆閲覧版は著者個人名のメタデータがありバイナリ保存対象外。"
+  ],
+  "pdf": {
+    "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-12/pdf/C1-2026-22802.pdf",
+    "sha256": "7cedb79a5699ac746aaa631cdb63387ce96e527025fde7ac86a32f4760903f95",
+    "page_count": 2,
+    "ocr_used": false,
+    "visual_review_complete": true,
+    "privacy_review_complete": false,
+    "source_pdf_saved": false,
+    "not_saved_reason": "官報PDFは同じ紙面に別文書を含む。バイナリの全要素にわたり個人情報がないことを確認できなかった。",
+    "pages": [
+      {
+        "page": 1,
+        "printed_page": 72958,
+        "original_text": "DEPARTMENT OF THE TREASURY\n\nOffice of Foreign Assets Control\n\n\nNotice of OFAC Sanctions Actions\n\nCorrection\n\n    Notice document 2026-22802, appearing on pages 70987, in the issue \nof Monday, November 9, 2026,",
+        "translation_ja": "米財務省 外国資産管理局（OFAC）\nOFAC制裁措置の告示\n訂正\n2026年11月9日月曜日付の号の70987頁に掲載された告示文書2026-22802は、",
+        "extraction_status": "text",
+        "translation_status": "complete",
+        "scope": "当該告示の紙面部分を視覚照合。隣接する別告示は対象外。"
+      },
+      {
+        "page": 2,
+        "printed_page": 72959,
+        "original_text": "published in error and should not have appeared in the Federal \nRegister.\n\n[FR Doc. C1-2026-22802 Filed 11-10-26; 8:45 am]\nBILLING CODE 0099-10-D",
+        "translation_ja": "誤って掲載されたものであり、連邦官報に掲載されるべきではなかった。\n［官報文書C1-2026-22802、2026年11月10日午前8時45分提出］\n請求コード 0099-10-D。",
+        "extraction_status": "text",
+        "translation_status": "complete",
+        "scope": "当該告示の紙面部分を視覚照合。隣接する別告示は対象外。"
+      }
+    ]
+  },
+  "supersedes": "federal-register-ofac-2026-22802-b8ad246d",
+  "summary_ja_40": "米連邦官報はイラン関連の二次制裁情報を更新する11月9日付の告示を誤掲載と訂正。"
+}
