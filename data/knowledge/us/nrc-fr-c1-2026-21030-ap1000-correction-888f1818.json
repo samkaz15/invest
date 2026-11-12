@@ -1,0 +1,52 @@
+{
+  "id": "nrc-fr-c1-2026-21030-ap1000-correction-888f1818",
+  "source": "U.S. Nuclear Regulatory Commission / Federal Register",
+  "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-12/pdf/C1-2026-21030.pdf",
+  "title_en": "AP1000 Design Certification Renewal — Correction",
+  "title_ja": "AP1000設計認証の更新に関する官報訂正",
+  "published_at": null,
+  "publication_date": "2026-11-12",
+  "publication_time_note": "官報号の日付（米国東部）。号の公表時刻は不明。",
+  "public_inspection_at": "2026-11-10T08:45:00-05:00",
+  "received_at": "2026-11-12T07:52:47.827780+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-12T07:52:47.827780+00:00",
+  "topics": [
+    "investment_policy",
+    "other_us"
+  ],
+  "original_text": "NUCLEAR REGULATORY COMMISSION\n10 CFR Part 52\n[NRC–2026–2377]\nRIN 3150–AL70\nAP1000 Design Certification Renewal\nCorrection\nIn rule document 2026–21030\nbeginning on page 65091 in the issue of\nWednesday, October 14, 2026, make the\nfollowing correction:\nOn page 65100, in the first column,\nunder V. Applicable Regulations,\nparagraph V. A. should read V.A.1.\n[FR Doc. C1–2026–21030 Filed 11–10–26; 8:45 am]\nBILLING CODE 0099–10–D",
+  "translation_ja": "米原子力規制委員会\n10 CFR第52部\n［NRC–2026–2377］\nRIN 3150–AL70\n\nAP1000設計認証の更新\n\n訂正\n\n2026年10月14日（水）付官報の65091頁から始まる規則文書2026–21030について、次のとおり訂正する。\n\n65100頁の第1欄、V「適用規則」の下にあるV.A.項をV.A.1.項に改める。\n\n［官報文書 C1–2026–21030、2026年11月10日午前8時45分閲覧登録］\n請求コード 0099–10–D",
+  "content_sha256": "888f18185a0939511f3ee57d470906cdc8cbf824c5e846980aa8483b737198a6",
+  "translation_sha256": "68b9418a9b60779f0446e18e2b0f9a6131036d3c253fa1ab041fef990c96c0ba",
+  "source_raw_sha256": "45a2bfa20c43bd27ebbc2e42e2081a644f6d79eb94ac62d73330c8701582a87e",
+  "facts_ja": [
+    "11月12日号の訂正文はV.A.をV.A.1.へ訂正。訂正文に技術要件、発効日、投資額の変更記載なし。"
+  ],
+  "inference_ja": [
+    "公表された訂正は項番号。プロジェクトの許認可・発電稼働時期・投資額の変更を示す資料は取得していない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "pdf": {
+    "sha256": "45a2bfa20c43bd27ebbc2e42e2081a644f6d79eb94ac62d73330c8701582a87e",
+    "page_count": 1,
+    "ocr_used": false,
+    "visual_review_complete": true,
+    "privacy_review_complete": false,
+    "binary_saved": false,
+    "binary_saved_reason": "官報の同じPDFに連絡先情報を含む。原本バイナリの再配布条件を満たす確認が未完了。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "NUCLEAR REGULATORY COMMISSION\n10 CFR Part 52\n[NRC–2026–2377]\nRIN 3150–AL70\nAP1000 Design Certification Renewal\nCorrection\nIn rule document 2026–21030\nbeginning on page 65091 in the issue of\nWednesday, October 14, 2026, make the\nfollowing correction:\nOn page 65100, in the first column,\nunder V. Applicable Regulations,\nparagraph V. A. should read V.A.1.\n[FR Doc. C1–2026–21030 Filed 11–10–26; 8:45 am]\nBILLING CODE 0099–10–D",
+        "translation_ja": "米原子力規制委員会\n10 CFR第52部\n［NRC–2026–2377］\nRIN 3150–AL70\n\nAP1000設計認証の更新\n\n訂正\n\n2026年10月14日（水）付官報の65091頁から始まる規則文書2026–21030について、次のとおり訂正する。\n\n65100頁の第1欄、V「適用規則」の下にあるV.A.項をV.A.1.項に改める。\n\n［官報文書 C1–2026–21030、2026年11月10日午前8時45分閲覧登録］\n請求コード 0099–10–D",
+        "extraction_status": "text",
+        "translation_status": "complete"
+      }
+    ]
+  },
+  "supersedes": "nrc-fr-2026-21030-ap1000-original-84f77d33"
+}

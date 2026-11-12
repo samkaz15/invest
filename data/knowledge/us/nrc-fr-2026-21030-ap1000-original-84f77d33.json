@@ -1,0 +1,116 @@
+{
+  "id": "nrc-fr-2026-21030-ap1000-original-84f77d33",
+  "source": "U.S. Nuclear Regulatory Commission / Federal Register",
+  "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-14/pdf/2026-21030.pdf",
+  "title_en": "AP1000 Design Certification Renewal — Section V.A excerpt",
+  "title_ja": "AP1000設計認証の更新（訂正前の該当箇所）",
+  "published_at": null,
+  "publication_date": "2026-10-14",
+  "publication_time_note": "官報号の日付（米国東部）。号の公表時刻は不明。",
+  "public_inspection_at": "2026-10-13T08:45:00-04:00",
+  "received_at": "2026-11-12T07:53:19.130947+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-12T07:53:19.130947+00:00",
+  "topics": [
+    "investment_policy",
+    "other_us"
+  ],
+  "original_text": "V. Applicable Regulations\nA.\nExcept as indicated in paragraphs A.2, A.3,\nand B of this section, the regulations that\napply to the AP1000 design, in DCD Revision\n15, are in 10 CFR parts 20, 50, 73, and 100,\ncodified as of January 23, 2006, that are\napplicable and technically relevant, as\ndescribed in the FSER (NUREG–1793) and\nSupplement No. 1.",
+  "translation_ja": "V. 適用規則\n\nA. 本節のA.2項、A.3項およびB項に示す場合を除き、設計管理文書（DCD）第15版のAP1000設計に適用される規則は、2006年1月23日時点で成文化された10 CFR第20、50、73および100部のうち、最終安全評価報告書（FSER、NUREG–1793）およびその補足第1号に記載される、適用可能で技術的に関連する規則である。",
+  "content_sha256": "84f77d336bb9a5f29ceb3fad1fa8cacc47dcc04891daa90dc2f396af79ceba81",
+  "translation_sha256": "0ad708f6e383ae1ede24083fd0c6a275e1b5de07906b83aebf93eb922cfdde72",
+  "source_raw_sha256": "29820b94142973eec7fc390408cba89cdceab7694278c29888d987949dbe75a7",
+  "facts_ja": [
+    "10月14日付の直接最終規則。訂正前の官報65100頁第1欄では見出しVの下にA.と記載。"
+  ],
+  "inference_ja": [
+    "公表された訂正は項番号。プロジェクトの許認可・発電稼働時期・投資額の変更を示す資料は取得していない。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "PDF第1〜9頁は対象外のため未目視・未翻訳。第10頁は訂正対象のV.A項のみ翻訳。他の条項・脚注と参照資料は未翻訳。"
+  ],
+  "notification_eligible": false,
+  "pdf": {
+    "sha256": "29820b94142973eec7fc390408cba89cdceab7694278c29888d987949dbe75a7",
+    "page_count": 10,
+    "ocr_used": false,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "binary_saved": false,
+    "binary_saved_reason": "官報の同じPDFに連絡先情報を含む。原本バイナリの再配布条件を満たす確認が未完了。",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "missing"
+      },
+      {
+        "page": 2,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "missing"
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "missing"
+      },
+      {
+        "page": 4,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "missing"
+      },
+      {
+        "page": 5,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "missing"
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "missing"
+      },
+      {
+        "page": 7,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "missing"
+      },
+      {
+        "page": 8,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "missing"
+      },
+      {
+        "page": 9,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "not_reviewed",
+        "translation_status": "missing"
+      },
+      {
+        "page": 10,
+        "original_text": "V. Applicable Regulations\nA.\nExcept as indicated in paragraphs A.2, A.3,\nand B of this section, the regulations that\napply to the AP1000 design, in DCD Revision\n15, are in 10 CFR parts 20, 50, 73, and 100,\ncodified as of January 23, 2006, that are\napplicable and technically relevant, as\ndescribed in the FSER (NUREG–1793) and\nSupplement No. 1.",
+        "translation_ja": "V. 適用規則\n\nA. 本節のA.2項、A.3項およびB項に示す場合を除き、設計管理文書（DCD）第15版のAP1000設計に適用される規則は、2006年1月23日時点で成文化された10 CFR第20、50、73および100部のうち、最終安全評価報告書（FSER、NUREG–1793）およびその補足第1号に記載される、適用可能で技術的に関連する規則である。",
+        "extraction_status": "excerpt",
+        "translation_status": "partial"
+      }
+    ]
+  }
+}
