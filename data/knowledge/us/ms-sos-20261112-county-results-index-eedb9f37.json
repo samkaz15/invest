@@ -1,0 +1,154 @@
+{
+  "id": "ms-sos-20261112-county-results-index-eedb9f37",
+  "source_url": "https://sos.ms.gov/elections/electionresults_aspx/elections_results_2026_county.aspx",
+  "source_raw_sha256": "eedb9f373521b63f34c9f39dc38e4692f4a343e5b70b8f21421ac6dde0f61c34",
+  "content_sha256": "547cea022fa991bc4a861a46d1ea4027f556d7a1a8abee103def5f71ff8f3d50",
+  "source": "Mississippi Secretary of State",
+  "source_type": "official_county_results_index",
+  "title_en": "Official 2026 General Election Results: County Recapitulation Sheets",
+  "title_ja": "ミシシッピ州2026年総選挙の公式郡別集計索引",
+  "published_at": null,
+  "publication_time_note": "公表時刻の表示なし。",
+  "received_at": "2026-11-12T21:52:20.412400+00:00",
+  "retrieved_at": "2026-11-12T21:52:20.412400+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "elections"
+  ],
+  "original_text": "OFFICIAL 2026 GENERAL ELECTION RESULTS\n\nRecapitulation Sheets — 2026 General Election\n\nGeneral Election — County\n\nCovington County — https://sos.ms.gov/elections/electionresults/2026General/Covington%20County.pdf\nGreene County — https://sos.ms.gov/elections/electionresults/2026General/Greene%20County.pdf\nLafayette County — https://sos.ms.gov/elections/electionresults/2026General/Lafayette%20County.pdf\nPearl River County — https://sos.ms.gov/elections/electionresults/2026General/Pearl%20River%20County.pdf\nFranklin County — https://sos.ms.gov/elections/electionresults/2026General/Franklin%20County.pdf\nJasper County — https://sos.ms.gov/elections/electionresults/2026General/Jasper%20County.pdf\nNoxubee County — https://sos.ms.gov/elections/electionresults/2026General/Noxubee%20County.pdf\nScott County — https://sos.ms.gov/elections/electionresults/2026General/Scott%20County.pdf",
+  "translation_ja": "2026年総選挙の公式結果。\n\n2026年総選挙の郡別集計表。\n\nコヴィントン郡 — https://sos.ms.gov/elections/electionresults/2026General/Covington%20County.pdf\nグリーン郡 — https://sos.ms.gov/elections/electionresults/2026General/Greene%20County.pdf\nラファイエット郡 — https://sos.ms.gov/elections/electionresults/2026General/Lafayette%20County.pdf\nパールリバー郡 — https://sos.ms.gov/elections/electionresults/2026General/Pearl%20River%20County.pdf\nフランクリン郡 — https://sos.ms.gov/elections/electionresults/2026General/Franklin%20County.pdf\nジャスパー郡 — https://sos.ms.gov/elections/electionresults/2026General/Jasper%20County.pdf\nノクサビー郡 — https://sos.ms.gov/elections/electionresults/2026General/Noxubee%20County.pdf\nスコット郡 — https://sos.ms.gov/elections/electionresults/2026General/Scott%20County.pdf",
+  "facts_ja": [
+    "州務長官サイトの公式郡別集計索引に8郡のリンクを確認。州全体の認証の文書は索引に掲載されていない。"
+  ],
+  "inference_ja": [],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "linked_pdfs": [
+    {
+      "county": "Covington County",
+      "url": "https://sos.ms.gov/elections/electionresults/2026General/Covington%20County.pdf",
+      "checked_at": "2026-11-12T21:52:47.610759+00:00",
+      "status": 520,
+      "sha256": null,
+      "page_count": null,
+      "extraction_status": "not_retrieved",
+      "translation_status": "untranslated",
+      "original_saved": false,
+      "missing_parts": [
+        "HTTP Error 520: Unknown"
+      ]
+    },
+    {
+      "county": "Greene County",
+      "url": "https://sos.ms.gov/elections/electionresults/2026General/Greene%20County.pdf",
+      "checked_at": "2026-11-12T21:52:48.122962+00:00",
+      "status": 200,
+      "sha256": "d8cf16a5f4159db65ad18e88c45cc65a8892bacbeaca00a4dd80e3fe9a661ad2",
+      "page_count": 5,
+      "ocr_attempted_pages": 5,
+      "ocr_nonempty_pages": 5,
+      "extraction_status": "ocr_unverified",
+      "translation_status": "untranslated",
+      "original_saved": false,
+      "missing_parts": [
+        "画像PDFにOCRを試行。選挙集計表の照合・日本語訳・署名欄を含む原本の再配布適格性確認が未完了。"
+      ]
+    },
+    {
+      "county": "Lafayette County",
+      "url": "https://sos.ms.gov/elections/electionresults/2026General/Lafayette%20County.pdf",
+      "checked_at": "2026-11-12T21:52:48.461936+00:00",
+      "status": 200,
+      "sha256": "72fec4c4f55488c185061cb446e4231945c61530e74603b2e5cd8a3861c5ae2c",
+      "page_count": 5,
+      "ocr_attempted_pages": 5,
+      "ocr_nonempty_pages": 5,
+      "extraction_status": "ocr_unverified",
+      "translation_status": "untranslated",
+      "original_saved": false,
+      "missing_parts": [
+        "画像PDFにOCRを試行。選挙集計表の照合・日本語訳・署名欄を含む原本の再配布適格性確認が未完了。"
+      ]
+    },
+    {
+      "county": "Pearl River County",
+      "url": "https://sos.ms.gov/elections/electionresults/2026General/Pearl%20River%20County.pdf",
+      "checked_at": "2026-11-12T21:52:47.596775+00:00",
+      "status": 520,
+      "sha256": null,
+      "page_count": null,
+      "extraction_status": "not_retrieved",
+      "translation_status": "untranslated",
+      "original_saved": false,
+      "missing_parts": [
+        "HTTP Error 520: Unknown"
+      ]
+    },
+    {
+      "county": "Franklin County",
+      "url": "https://sos.ms.gov/elections/electionresults/2026General/Franklin%20County.pdf",
+      "checked_at": "2026-11-12T21:52:47.590313+00:00",
+      "status": 520,
+      "sha256": null,
+      "page_count": null,
+      "extraction_status": "not_retrieved",
+      "translation_status": "untranslated",
+      "original_saved": false,
+      "missing_parts": [
+        "HTTP Error 520: Unknown"
+      ]
+    },
+    {
+      "county": "Jasper County",
+      "url": "https://sos.ms.gov/elections/electionresults/2026General/Jasper%20County.pdf",
+      "checked_at": "2026-11-12T21:52:47.583422+00:00",
+      "status": 520,
+      "sha256": null,
+      "page_count": null,
+      "extraction_status": "not_retrieved",
+      "translation_status": "untranslated",
+      "original_saved": false,
+      "missing_parts": [
+        "HTTP Error 520: Unknown"
+      ]
+    },
+    {
+      "county": "Noxubee County",
+      "url": "https://sos.ms.gov/elections/electionresults/2026General/Noxubee%20County.pdf",
+      "checked_at": "2026-11-12T21:52:47.679896+00:00",
+      "status": 200,
+      "sha256": "2b84dbce95b3191d2a680cd7e5d6398a3c17f04194da12089494b90cee4f112f",
+      "page_count": 3,
+      "ocr_attempted_pages": 3,
+      "ocr_nonempty_pages": 3,
+      "extraction_status": "ocr_unverified",
+      "translation_status": "untranslated",
+      "original_saved": false,
+      "missing_parts": [
+        "画像PDFにOCRを試行。選挙集計表の照合・日本語訳・署名欄を含む原本の再配布適格性確認が未完了。"
+      ]
+    },
+    {
+      "county": "Scott County",
+      "url": "https://sos.ms.gov/elections/electionresults/2026General/Scott%20County.pdf",
+      "checked_at": "2026-11-12T21:52:47.879492+00:00",
+      "status": 200,
+      "sha256": "b931bec99b541c1c43987e726f8078f389c45d93ca09f38bcc81b81e7ab6a307",
+      "page_count": 7,
+      "ocr_attempted_pages": 7,
+      "ocr_nonempty_pages": 7,
+      "extraction_status": "ocr_unverified",
+      "translation_status": "untranslated",
+      "original_saved": false,
+      "missing_parts": [
+        "画像PDFにOCRを試行。選挙集計表の照合・日本語訳・署名欄を含む原本の再配布適格性確認が未完了。"
+      ]
+    }
+  ],
+  "supplementary_missing_parts": [
+    "翻訳の完了は郡別索引本文の範囲。リンク先PDFの本文・表・署名欄の翻訳は未了。"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "公式郡別集計索引。州全体の認証発表は未確認。"
+}
