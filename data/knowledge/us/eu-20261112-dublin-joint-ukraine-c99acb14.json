@@ -1,0 +1,51 @@
+{
+  "id": "eu-20261112-dublin-joint-ukraine-c99acb14",
+  "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/12/joint-statement-by-president-costa-and-president-von-der-leyen-following-their-meeting-with-president-zelenskyy-in-dublin/",
+  "title_en": "Joint statement by President Costa and President von der Leyen following their meeting with President Zelenskyy in Dublin",
+  "title_ja": "EU首脳のダブリン共同声明、対ロ制裁第22弾とウクライナ資金協議を予告",
+  "published_at": null,
+  "received_at": "2026-11-12T15:23:37.172908+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-12T15:23:37.172908+00:00",
+  "topics": [
+    "war",
+    "diplomacy",
+    "sanctions",
+    "energy",
+    "fiscal_policy"
+  ],
+  "original_text": "The European Political Community Summit in Dublin was another opportunity to reaffirm our unwavering support for President Zelenskyy and Ukraine.\nWe welcome the talks this week in Abu Dhabi and the renewed momentum in the peace process. The European Union was present at these peace talks and will continue to be involved in this format. We will continue to stand by Ukraine, as we have since the first day of Russia’s war of aggression, in these efforts to ensure a just and lasting peace that safeguards Ukraine’s sovereignty, territorial integrity and our own continent’s security.\nThe European Union and its tools are central to these efforts. We will continue to provide considerable financial and military assistance to strengthen Ukraine’s position. And in the context of the peace talks, we are working to ensure a viable post-war reconstruction plan for Ukraine and actively supporting its path towards EU membership.\nAt our next European Council on 26–27 November, we will discuss Ukraine’s urgent financing needs for 2027, based on the Commission’s proposal. The Commission will in parallel present its 22nd package of sanctions against Russia.\nBecause Ukraine must negotiate from a position of strength. And Russia must be convinced to come to the table with genuine intent for peace.\nAnd as another winter of war approaches, the European Commission is deploying immediate support on the ground.\nWe promised to help keep the lights on and support Ukrainians through the winter. And we are delivering.\nWe are mobilising 500 generators from our rescEU reserves, helping establish emergency support centres and providing essential equipment.\nWe are also supporting the delivery of four floating bridges from Norway and 200 buses.\nOur teams are working hand in hand with Ukrainian authorities to ensure this assistance reaches those who need it.",
+  "translation_ja": "ダブリンの欧州政治共同体首脳会合は、ゼレンスキー大統領とウクライナに対する揺るぎない支持を改めて確認する機会となった。\n\n今週のアブダビ協議と、和平プロセスが再び動き出したことを歓迎する。EUはこの和平協議の場におり、今後もこの枠組みに関与する。ロシアの侵略戦争の初日からそうしてきたように、ウクライナの主権、領土保全、欧州大陸の安全を守る公正で持続的な平和に向けて、ウクライナを支え続ける。\n\nEUとその政策手段は、こうした取組の中核をなす。ウクライナの立場を強めるため、相当規模の財政・軍事支援を引き続き提供する。和平協議の一環として、実行可能な戦後復興計画の確保に取り組み、ウクライナのEU加盟に向けた歩みを積極的に支える。\n\n次回11月26～27日の欧州理事会で、欧州委員会の提案に基づき、2027年に向けたウクライナの緊急資金需要を協議する。欧州委員会は並行して、第22弾の対ロシア制裁パッケージを提示する。\n\nウクライナは強い立場から交渉する必要があり、ロシアには真に和平を求める意思を持って交渉の場に着くよう働きかける必要があるためだ。\n\n戦時下でまた冬を迎えるなか、欧州委員会は現地で緊急支援を展開している。私たちは、電力を維持し、冬を通じてウクライナの人々を支えると約束した。その約束を実行している。\n\nrescEUの備蓄から発電機500台を動員し、緊急支援センターの設置を助け、必要不可欠な機材を提供している。ノルウェーからの浮橋4基と、バス200台の引き渡しも支援している。必要とする人々に支援が届くよう、私たちの担当者はウクライナ当局と緊密に連携している。",
+  "content_sha256": "c99acb140214b4eb838d983aaca36a4e87a6d47d4cec06949f302b43e7861ef4",
+  "source_raw_sha256": "d6129d07a5481027628fb3a71c47b18524f2eb4559be93eb27d057c3f0a218dc",
+  "facts_ja": [
+    "EU首脳は第22弾対ロ制裁の欧州委員会による提示と11月26～27日の欧州理事会でのウクライナ2027年資金需要協議を予告。対象・採択・発効日は記載なし。",
+    "rescEU発電機500台を動員し、ノルウェーからの浮橋4基とバス200台の引き渡しを支援と説明。現地到着と稼働は未確認。"
+  ],
+  "inference_ja": [
+    "制裁対象と適用範囲が海運・保険・決済に及ぶ場合、原油輸送費と供給に波及し得る。発電機が稼働すれば非常用電力不足を緩和し得る。"
+  ],
+  "missing_parts": [
+    "PDFリンクは印刷HTML。PDF原本とページ番号は未取得。声明本文はHTMLから訳出。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "notification_eligible": true,
+  "publication_time_note": "公式表示2026年11月12日15:40。表示タイムゾーン未確認。HTTP Last-Modifiedは15:09:40 UTCで公表時刻とは区別。",
+  "published_date": "2026-11-12",
+  "source": "European Council",
+  "rights_note": "© European Union, 2026。出典を明示した日本語訳。",
+  "rights_url": "https://www.consilium.europa.eu/en/about-site/copyright/",
+  "linked_pdf_checks": [
+    {
+      "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/12/joint-statement-by-president-costa-and-president-von-der-leyen-following-their-meeting-with-president-zelenskyy-in-dublin/pdf/",
+      "page_count": null,
+      "status": "print_html_not_pdf",
+      "original_saved": false,
+      "missing_parts": [
+        "PDF原本、ページ範囲・頁別訳未取得。"
+      ]
+    }
+  ],
+  "summary_ja_40": "欧州理事会議長らは対ロ制裁第２２弾の提示とウクライナの資金需要の協議を予告した。"
+}

@@ -1,0 +1,110 @@
+{
+  "id": "ms-jackson-20261103-general-official-fc6bded4",
+  "source_url": "https://www.co.jackson.ms.us/ArchiveCenter/ViewFile/Item/280",
+  "title_en": "Jackson County, Mississippi official general election summary",
+  "title_ja": "ミシシッピ州ジャクソン郡の公式集計表",
+  "published_at": null,
+  "received_at": "2026-11-12T15:24:30.950372+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-12T15:24:30.950372+00:00",
+  "topics": [
+    "elections"
+  ],
+  "original_text": "[Page 1]\nSummary Results                                                                             OFFICIAL RESULTS\n2026 General Election                                      Please refer to the Statewide Election Management\nNovember 3, 2026                                                   Systems to determine if a runoff election is\n                                                                                                   necessary.\n                                                                                               Jackson County\nStatistics                               TOTAL\n\nElection Day Precincts Reporting        31 of 31\nRegistered Voters - Total                        0\nBallots Cast - Total                     37,830\nVoter Turnout - Total                        0.00%\n\n\n\n\nElection Summary - 11/11/2026      2:49 AM                                                            1 of 6\nReport generated with Electionware Copyright © 2007-2020\n\n[Page 2, federal contests]\nSummary Results                                                                               OFFICIAL RESULTS\n2026 General Election                                        Please refer to the Statewide Election Management\nNovember 3, 2026                                                     Systems to determine if a runoff election is\n                                                                                                     necessary.\n                                                                                                 Jackson County\n  Senate United States\n  Vote For 1\n                                            TOTAL VOTE %\nScott Colom                               15,702  41.69%\nCindy Hyde-Smith                          20,869   55.41%\nTy Pinkins                                 1,034    2.75%\nWrite-In Totals                              56     0.15%\nTotal Votes Cast                          37,661   100.00%\n  Overvotes                                   4\n  Undervotes                                165\n  Precincts Reporting                  31 of 31\n\n\n  4th Congressional District US House of Representatives\n  Vote For 1\n                                            TOTAL VOTE %\nMike Ezell                                22,209  59.16%\nJeffrey Hulum III                         14,140   37.67%\nCarl Boyanton                              1,157    3.08%\nWrite-In Totals                              34     0.09%\nTotal Votes Cast                          37,540   100.00%\n  Overvotes                                   6\n  Undervotes                                284\n  Precincts Reporting                  31 of 31",
+  "translation_ja": "## 1ページ\n\n2026年11月3日総選挙、ミシシッピ州ジャクソン郡集計。郡の表示は「公式結果」。投票日報告済み選挙区は31/31、投票総数は37,830。登録有権者数と投票率欄は0／0.00％と出力されているため、投票率推計には用いない。決選投票の要否は州の選挙管理システムを参照するよう記載。PDFの帳票生成表示は11月11日02:49、タイムゾーンと公開時刻は不明。\n\n## 2ページの連邦選挙\n\n| 選挙 | 候補者等 | 得票 | 得票率 |\n|---|---|---:|---:|\n| 連邦上院 | Scott Colom | 15,702 | 41.69％ |\n| 連邦上院 | Cindy Hyde-Smith | 20,869 | 55.41％ |\n| 連邦上院 | Ty Pinkins | 1,034 | 2.75％ |\n| 連邦上院 | 記名投票 | 56 | 0.15％ |\n| 連邦上院 | 有効得票計 | 37,661 | 100.00％ |\n| 連邦下院第4区 | Mike Ezell | 22,209 | 59.16％ |\n| 連邦下院第4区 | Jeffrey Hulum III | 14,140 | 37.67％ |\n| 連邦下院第4区 | Carl Boyanton | 1,157 | 3.08％ |\n| 連邦下院第4区 | 記名投票 | 34 | 0.09％ |\n| 連邦下院第4区 | 有効得票計 | 37,540 | 100.00％ |\n\n連邦上院は過剰投票4、過少投票165。連邦下院は過剰投票6、過少投票284。いずれも31/31選挙区。",
+  "content_sha256": "fc6bded408bd5342dce147f118193d56b8261588be863894030d013365680f03",
+  "source_raw_sha256": "a842d68c47bbc076b6b446f1e026249586c7554228ac4b20ca14b16559cc2d84",
+  "facts_ja": [
+    "郡のPDFは公式結果と表示。上院はHyde-Smith 20,869票、Colom 15,702票、下院第4区はEzell 22,209票。州全体の認証は確認できない。"
+  ],
+  "inference_ja": [
+    "州全体の認証が揃うまでは、郡結果から連邦議席や政策変更を推定しない。"
+  ],
+  "missing_parts": [
+    "2ページの地方選挙部分、3～6ページの原文・訳は未収録。公開時刻・州認証は未確認。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "notification_eligible": false,
+  "publication_time_note": "PDF生成表示は11月11日02:49。公表日時・タイムゾーンを確認できないため published_at は null。",
+  "source": "Jackson County, Mississippi",
+  "pdf": {
+    "sha256": "a842d68c47bbc076b6b446f1e026249586c7554228ac4b20ca14b16559cc2d84",
+    "page_count": 6,
+    "ocr_used": false,
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "Summary Results                                                                             OFFICIAL RESULTS\n2026 General Election                                      Please refer to the Statewide Election Management\nNovember 3, 2026                                                   Systems to determine if a runoff election is\n                                                                                                   necessary.\n                                                                                               Jackson County\nStatistics                               TOTAL\n\nElection Day Precincts Reporting        31 of 31\nRegistered Voters - Total                        0\nBallots Cast - Total                     37,830\nVoter Turnout - Total                        0.00%\n\n\n\n\nElection Summary - 11/11/2026      2:49 AM                                                            1 of 6\nReport generated with Electionware Copyright © 2007-2020",
+        "extraction_status": "extracted",
+        "translation_ja": "2026年11月3日総選挙、ミシシッピ州ジャクソン郡集計。郡の表示は「公式結果」。投票日報告済み選挙区は31/31、投票総数は37,830。登録有権者数と投票率欄は0／0.00％と出力されているため、投票率推計には用いない。決選投票の要否は州の選挙管理システムを参照するよう記載。PDFの帳票生成表示は11月11日02:49、タイムゾーンと公開時刻は不明。",
+        "translation_status": "partial",
+        "visual_reviewed": true,
+        "missing_parts": [
+          "定型欄のみ一部省略。"
+        ]
+      },
+      {
+        "page": 2,
+        "original_text": "Summary Results                                                                               OFFICIAL RESULTS\n2026 General Election                                        Please refer to the Statewide Election Management\nNovember 3, 2026                                                     Systems to determine if a runoff election is\n                                                                                                     necessary.\n                                                                                                 Jackson County\n  Senate United States\n  Vote For 1\n                                            TOTAL VOTE %\nScott Colom                               15,702  41.69%\nCindy Hyde-Smith                          20,869   55.41%\nTy Pinkins                                 1,034    2.75%\nWrite-In Totals                              56     0.15%\nTotal Votes Cast                          37,661   100.00%\n  Overvotes                                   4\n  Undervotes                                165\n  Precincts Reporting                  31 of 31\n\n\n  4th Congressional District US House of Representatives\n  Vote For 1\n                                            TOTAL VOTE %\nMike Ezell                                22,209  59.16%\nJeffrey Hulum III                         14,140   37.67%\nCarl Boyanton                              1,157    3.08%\nWrite-In Totals                              34     0.09%\nTotal Votes Cast                          37,540   100.00%\n  Overvotes                                   6\n  Undervotes                                284\n  Precincts Reporting                  31 of 31",
+        "extraction_status": "extracted",
+        "translation_ja": "| 選挙 | 候補者等 | 得票 | 得票率 |\n|---|---|---:|---:|\n| 連邦上院 | Scott Colom | 15,702 | 41.69％ |\n| 連邦上院 | Cindy Hyde-Smith | 20,869 | 55.41％ |\n| 連邦上院 | Ty Pinkins | 1,034 | 2.75％ |\n| 連邦上院 | 記名投票 | 56 | 0.15％ |\n| 連邦上院 | 有効得票計 | 37,661 | 100.00％ |\n| 連邦下院第4区 | Mike Ezell | 22,209 | 59.16％ |\n| 連邦下院第4区 | Jeffrey Hulum III | 14,140 | 37.67％ |\n| 連邦下院第4区 | Carl Boyanton | 1,157 | 3.08％ |\n| 連邦下院第4区 | 記名投票 | 34 | 0.09％ |\n| 連邦下院第4区 | 有効得票計 | 37,540 | 100.00％ |\n\n連邦上院は過剰投票4、過少投票165。連邦下院は過剰投票6、過少投票284。いずれも31/31選挙区。",
+        "translation_status": "partial",
+        "visual_reviewed": true,
+        "missing_parts": [
+          "地方選挙の部分は収録・翻訳対象外。"
+        ]
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "extraction_status": "extracted_not_retained",
+        "translation_ja": "",
+        "translation_status": "missing",
+        "visual_reviewed": false,
+        "missing_parts": [
+          "連邦選挙対象外の頁。原文・訳文未収録、目視未確認。"
+        ]
+      },
+      {
+        "page": 4,
+        "original_text": "",
+        "extraction_status": "extracted_not_retained",
+        "translation_ja": "",
+        "translation_status": "missing",
+        "visual_reviewed": false,
+        "missing_parts": [
+          "連邦選挙対象外の頁。原文・訳文未収録、目視未確認。"
+        ]
+      },
+      {
+        "page": 5,
+        "original_text": "",
+        "extraction_status": "extracted_not_retained",
+        "translation_ja": "",
+        "translation_status": "missing",
+        "visual_reviewed": false,
+        "missing_parts": [
+          "連邦選挙対象外の頁。原文・訳文未収録、目視未確認。"
+        ]
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "extraction_status": "extracted_not_retained",
+        "translation_ja": "",
+        "translation_status": "missing",
+        "visual_reviewed": false,
+        "missing_parts": [
+          "連邦選挙対象外の頁。原文・訳文未収録、目視未確認。"
+        ]
+      }
+    ],
+    "requires_visual_review": true,
+    "original_url": "https://www.co.jackson.ms.us/ArchiveCenter/ViewFile/Item/280",
+    "original_saved": false,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "original_save_reason": "連邦選挙対象頁のみ確認し、全頁の再配布条件・個人情報の有無を確認していない。"
+  }
+}

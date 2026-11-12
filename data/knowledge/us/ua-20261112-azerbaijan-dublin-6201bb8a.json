@@ -1,0 +1,37 @@
+{
+  "id": "ua-20261112-azerbaijan-dublin-6201bb8a",
+  "source_url": "https://www.president.gov.ua/en/news/prezidenti-ukrayini-j-azerbajdzhanu-obgovorili-dvostoronnyu-107277",
+  "title_en": "Ukraine–Azerbaijan meeting on infrastructure and logistics",
+  "title_ja": "ウクライナ・アゼルバイジャン首脳会談の重要インフラ協議",
+  "published_at": null,
+  "received_at": "2026-11-12T15:23:43.765048+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-12T15:23:43.765048+00:00",
+  "topics": [
+    "war",
+    "diplomacy",
+    "energy"
+  ],
+  "original_text": "In Dublin, on the sidelines of the European Political Community Summit, President of Ukraine Volodymyr Zelenskyy met with President of Azerbaijan Ilham Aliyev.\nVolodymyr Zelenskyy noted that relations between Ukraine and Azerbaijan are developing. The leaders discussed priority areas of cooperation, first and foremost the Drone Deal. Contracts have been signed, and the countries are working to scale up orders.",
+  "translation_ja": "ウクライナ大統領府によると、ダブリンでゼレンスキー氏とアリエフ氏が会談した。無人機分野では契約が締結済みで、両国は発注拡大に向け調整中と説明。冬季に向けた重要インフラと物流の追加支援を要請し、両国の実務担当者に検討を指示した。アゼルバイジャン大統領府も会談を公表し、既往の電気機材支援を挙げた。",
+  "content_sha256": "6201bb8a22c1ef0119f39b8ab06518f02059fd02410cbaae9ea482d572c4b642",
+  "source_raw_sha256": "a37c6a9de06b4f26bb65805bd8f00dd3c488a84a1a9ef918bac63abbf2bc77c8",
+  "facts_ja": [
+    "両国政府が会談を発表。追加支援の数量、出荷時期、原油・ガスの供給契約、ドローン注文の規模は未確認。"
+  ],
+  "inference_ja": [
+    "設備が到着して稼働すれば電力不足の緩和に寄与し得る。輸送やエネルギー供給の変化は実績で判定。"
+  ],
+  "missing_parts": [
+    "権利表示に従い原文は短い抜粋、日本語は事実の要約。本文全体の翻訳は行っていない。"
+  ],
+  "content_scope": "detail_summary",
+  "translation_status": "partial",
+  "notification_eligible": false,
+  "published_date": "2026-11-12",
+  "publication_time_note": "公式表示14:40。表示タイムゾーン未確認。",
+  "related_source_urls": [
+    "https://president.az/en/articles/view/74661"
+  ],
+  "source": "President of Ukraine"
+}
