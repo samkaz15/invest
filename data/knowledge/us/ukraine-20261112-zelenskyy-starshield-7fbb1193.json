@@ -1,0 +1,35 @@
+{
+  "id": "ukraine-20261112-zelenskyy-starshield-7fbb1193",
+  "source": "President of Ukraine, official X",
+  "source_url": "https://x.com/ZelenskyyUa/status/2120804738031616095",
+  "title_en": "Statement on Starshield operating speed restrictions",
+  "title_ja": "ウクライナ大統領、Starshieldの速度制限と米側への照会を発表",
+  "published_at": "2026-11-12T09:03:46+00:00",
+  "received_at": "2026-11-12T11:16:16.120861+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-12T11:16:16.120861+00:00",
+  "topics": [
+    "war",
+    "other_us"
+  ],
+  "original_text": "Received briefings from Minister of Defense of Ukraine Yevhenii Khmara and Commander-in-Chief of the Armed Forces of Ukraine Mykhailo Drapatyi. Unfortunately, our units have been recording significant disruptions to Starshield’s operations over the territory of Ukraine for several days now – along the entire front line and in the temporarily occupied territories of Ukraine. Specifically, systematic speed restrictions are being imposed on Starshield, limiting it to 161 kilometers per hour (100 miles per hour). The Ukrainian military have already investigated the circumstances, and these are not random errors but systematic speed restrictions. For us, this primarily means a significant complication in intercepting Russian jet-powered drones. Unfortunately, there have already been strikes that got through because our interception systems cannot reach sufficient speeds and are unable to intercept in time. Unfortunately, this is helping the Russians kill more Ukrainians and carry out more accurate strikes against Ukraine. We are trying to establish all the circumstances with the American side.",
+  "translation_ja": "ウクライナのイェウヘニー・フマラ国防相とミハイロ・ドラパティー軍総司令官から報告を受けた。\n\n残念ながら、われわれの部隊は数日前から、ウクライナ領内でStarshieldの運用に重大な支障が生じていることを確認している。前線全域と、一時的に占領されている地域で起きている。具体的には、Starshieldの使用に時速161キロメートル（時速100マイル）の速度制限が系統的にかかっている。ウクライナ軍はすでに状況を調査し、偶発的なエラーではなく、系統的な速度制限だと確認した。\n\nわれわれにとって、これは主にロシアのジェット推進無人機の迎撃を著しく難しくする。残念ながら、迎撃手段が十分な速度に達せず、間に合わなかったため、すでに攻撃が着弾している。これにより、ロシア側はより多くのウクライナ人を殺害し、ウクライナへの攻撃の精度を高めることができている。\n\n米国側とすべての事情を確認しようとしている。",
+  "content_sha256": "7fbb1193701379c8923fb4fb414c25127612836028661635db1e7ca7200a9de0",
+  "translation_sha256": "f731aa7800bd8ce78f5a216ca22dc935d20e5366d6bc332a8d0b41c964f1c064",
+  "source_raw_sha256": "012e54734f515822f8dae8e8aa8801b494151ba32375eb4d7876d05df980a443",
+  "facts_ja": [
+    "ゼレンスキー大統領は、前線全域・一時占領地域でStarshieldに移動速度時速161キロメートルの制限がかかり、ロシアのジェット推進無人機の迎撃に支障が生じたと発表。米側に事情を確認中と述べた。",
+    "設定主体、原因、影響を受けた端末の範囲、個別被害と制限の因果関係は独立確認できていない。米側の新たな方針は未確認。"
+  ],
+  "inference_ja": [
+    "防空や電力の実際の復旧・調達への波及は独立資料を確認する。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": true,
+  "related_source_urls": [
+    "https://t.me/V_Zelenskiy_official/21792"
+  ],
+  "summary_ja_40": "ウクライナ大統領は米衛星通信の速度制限により無人機迎撃が困難になったと発表した。"
+}

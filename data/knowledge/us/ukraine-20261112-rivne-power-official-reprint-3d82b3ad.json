@@ -1,0 +1,37 @@
+{
+  "id": "ukraine-20261112-rivne-power-official-reprint-3d82b3ad",
+  "source": "ArmyInform, Ministry of Defence of Ukraine (official statements reprinted)",
+  "source_url": "https://armyinform.com.ua/2026/11/12/%C2%ABvazhka-nich%C2%BB-okupanty-vdaryly-po-rivnenshhyni-chastyna-oblasti-zalyshylasya-bez-svitla/",
+  "title_en": "Rivne regional authorities report power outages",
+  "title_ja": "ウクライナ・リウネ州の停電と発電機への切替（当局発言の再掲）",
+  "published_at": "2026-11-12T07:48:00+02:00",
+  "received_at": "2026-11-12T11:16:16.301865+00:00",
+  "received_at_kind": "web_retrieved",
+  "retrieved_at": "2026-11-12T11:16:16.301865+00:00",
+  "topics": [
+    "war",
+    "other_us"
+  ],
+  "original_text": "«Важка ніч. Маємо знеструмлення у населених пунктах Рівненського та Сарненського районів. Зокрема, без світла Костопіль. Об’єкти критичної інфраструктури переходять на роботу від генераторів»",
+  "translation_ja": "「厳しい夜だった。リウネ地区とサルヌィ地区の集落で停電が発生している。特にコストピリでは電力が使えない。重要インフラ施設は発電機による運転に切り替えている」\n\n出典はウクライナ国防省系ArmyInformが再掲した州軍政当局者の発言。掲載サイトの利用条件はCC BY 4.0（別記がある場合を除く）。",
+  "content_sha256": "3d82b3ad14b71e9797ede1761927cbd2f026e4cab288f2a910ce3cd9fa4cbb8d",
+  "translation_sha256": "e8597e335f673787f80e923e7b4b988990684da30360eaa06fe8f53cd5f3f6cb",
+  "source_raw_sha256": "431939b2ddd9b7a28d580ed98ad8b6bfbbe77ebc972df7cbdfdd0b3247906463",
+  "facts_ja": [
+    "州軍政当局者の再掲発言は、州内の一部停電と重要施設の発電機切替を報告。停電規模・復旧時期や被害全容は独立確認できていない。"
+  ],
+  "inference_ja": [
+    "防空や電力の実際の復旧・調達への波及は独立資料を確認する。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "転載記事の中から公表発言だけを抜粋して翻訳。Telegram個別原文は直接取得できなかった。"
+  ],
+  "notification_eligible": false,
+  "related_source_urls": [
+    "https://t.me/oleksandrkoval_rv/13181",
+    "https://t.me/dsns_telegram/80243",
+    "https://creativecommons.org/licenses/by/4.0/"
+  ]
+}
