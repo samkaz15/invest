@@ -1,0 +1,59 @@
+{
+  "id": "fr-pi-20261112-23195-ofac-cuba-gl1-republication-5105eafa",
+  "source_url": "https://public-inspection.federalregister.gov/2026-23195.pdf",
+  "title_en": "Publication of a Cuba Sanctions Regulations Web General License",
+  "title_ja": "キューバ制裁の一般許可1の官報再掲",
+  "published_at": "2026-11-12T08:45:00-05:00",
+  "received_at": "2026-11-12T21:13:08.463836+00:00",
+  "retrieved_at": "2026-11-12T21:13:08.463836+00:00",
+  "received_at_kind": "web_retrieved",
+  "source_raw_sha256": "5105eafad5f4002700102f3f0143c4c66b31b6a851fd8111c9f7273da0efebd0",
+  "topics": [
+    "sanctions"
+  ],
+  "facts_ja": [
+    "一般許可1は5月7日発行。9月30日の規則組込みと、既存の資産管理規則で許可・免除される取引の扱いを記載。"
+  ],
+  "inference_ja": [],
+  "notification_eligible": false,
+  "source": "U.S. Federal Register Public Inspection",
+  "source_type": "official_public_inspection_pdf",
+  "pdf": {
+    "sha256": "5105eafad5f4002700102f3f0143c4c66b31b6a851fd8111c9f7273da0efebd0",
+    "page_count": 2,
+    "ocr_used": false,
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "This document is scheduled to be published in the\n                        Federal Register on 2026-11-13 and available online at\n                                                                         BILLING CODE 04810-AL\n                        https://www.federalregister.gov/d/2026-23195, and on\n                        https://govinfo.gov\n\n\n\n\nDEPARTMENT OF THE TREASURY\n\nOffice of Foreign Assets Control\n\n31 CFR Part 516\n\nPublication of a Cuba Sanctions Regulations Web General License\n\nAGENCY: Office of Foreign Assets Control, Treasury.\n\nACTION: Publication of a web general license.\n\nSUMMARY: The Department of the Treasury’s Office of Foreign Assets Control\n\n(OFAC) is publishing a general license (GL) issued in the Cuba Sanctions program: GL\n\n1. This GL was previously made available on OFAC’s website.\n\nDATES: GL 1 was issued on May 7, 2026. See SUPPLEMENTARY INFORMATION\n\nfor additional relevant dates.\n\nFOR FURTHER INFORMATION CONTACT: [contact details omitted]\n\n\n\nSUPPLEMENTARY INFORMATION:\n\nElectronic Availability\n\n       This document and additional information concerning OFAC are available on\n\nOFAC’s website: https://ofac.treasury.gov/.\n\nBackground\n\n       On May 7, 2026, OFAC issued GL 1 to authorize certain transactions otherwise\n\nprohibited by Executive Order (E.O.) 14404 of May 1, 2026, “Imposing Sanctions on\n\nThose Responsible for Repression in Cuba and for Threats to United States National\n\nSecurity and Foreign Policy (91 FR 25061, May 1, 2026). On September 30, 2026,\n\nOFAC incorporated the prohibitions of E.O. 14404 into the Cuba Sanctions Regulations,\n\n31 CFR part 516. GL 1 was made available on OFAC’s website",
+        "extraction_status": "extracted",
+        "translation_ja": "OFACは2026年5月7日に発行し既にウェブで公開したキューバ関連一般許可1を官報に掲載する。9月30日、大統領令14404の禁止事項をキューバ制裁規則（31 CFR 516）に組み込んだ。",
+        "translation_status": "partial"
+      },
+      {
+        "page": 2,
+        "original_text": "(https://ofac.treasury.gov) when it was issued. The text of this GL is provided below.\n\n\nOFFICE OF FOREIGN ASSETS CONTROL\n\nExecutive Order 14404 of May 1, 2026\n\nImposing Sanctions on Those Responsible for Repression in Cuba and for Threats\nto United States National Security and Foreign Policy\n\nGENERAL LICENSE NO. 1\n\nTransactions Authorized Pursuant to the Cuban Assets Control Regulations\n      (a) Except as provided in paragraph (b) of this general license, all transactions\n\nprohibited by Executive Order 14404 are authorized to the extent such transactions are\n\nauthorized or exempt under the Cuban Assets Control Regulations, 31 CFR part 515\n\n(CACR), including transactions authorized by a general or specific license pursuant to the\n\nCACR.\n\n        (b) This general license does not authorize any transaction that is otherwise\n\nprohibited by 31 CFR Chapter V.\n\n\n[official name omitted]\nDirector\nOffice of Foreign Assets Control\n\nDated: May 7, 2026\n\n\n\n\n__________________________\n[official name omitted],\nDirector, Office of Foreign Assets Control.\n[FR Doc. 2026-23195 Filed: 11/12/2026 8:45 am; Publication Date: 11/13/2026]",
+        "extraction_status": "extracted",
+        "translation_ja": "同令が禁じる取引も、キューバ資産管理規則31 CFR 515で許可または免除される範囲は、同規則に基づく一般・個別許可を含め認める。ただし31 CFR第V章で別途禁じられる取引は対象外。",
+        "translation_status": "partial"
+      }
+    ],
+    "requires_visual_review": true,
+    "source_url": "https://public-inspection.federalregister.gov/2026-23195.pdf",
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "original_saved": false,
+    "original_save_reason": "公開保管対象から個別連絡先・署名者情報を除外。原本の埋込情報を含む再配布確認未了。"
+  },
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "publication_time_note": "官報事前公開日時。11月13日付官報本掲載の初出時刻とは区別。",
+  "publication_date_local": "2026-11-13",
+  "original_text": "PDF page 1\nThis document is scheduled to be published in the\n                        Federal Register on 2026-11-13 and available online at\n                                                                         BILLING CODE 04810-AL\n                        https://www.federalregister.gov/d/2026-23195, and on\n                        https://govinfo.gov\n\n\n\n\nDEPARTMENT OF THE TREASURY\n\nOffice of Foreign Assets Control\n\n31 CFR Part 516\n\nPublication of a Cuba Sanctions Regulations Web General License\n\nAGENCY: Office of Foreign Assets Control, Treasury.\n\nACTION: Publication of a web general license.\n\nSUMMARY: The Department of the Treasury’s Office of Foreign Assets Control\n\n(OFAC) is publishing a general license (GL) issued in the Cuba Sanctions program: GL\n\n1. This GL was previously made available on OFAC’s website.\n\nDATES: GL 1 was issued on May 7, 2026. See SUPPLEMENTARY INFORMATION\n\nfor additional relevant dates.\n\nFOR FURTHER INFORMATION CONTACT: [contact details omitted]\n\n\n\nSUPPLEMENTARY INFORMATION:\n\nElectronic Availability\n\n       This document and additional information concerning OFAC are available on\n\nOFAC’s website: https://ofac.treasury.gov/.\n\nBackground\n\n       On May 7, 2026, OFAC issued GL 1 to authorize certain transactions otherwise\n\nprohibited by Executive Order (E.O.) 14404 of May 1, 2026, “Imposing Sanctions on\n\nThose Responsible for Repression in Cuba and for Threats to United States National\n\nSecurity and Foreign Policy (91 FR 25061, May 1, 2026). On September 30, 2026,\n\nOFAC incorporated the prohibitions of E.O. 14404 into the Cuba Sanctions Regulations,\n\n31 CFR part 516. GL 1 was made available on OFAC’s website\n\nPDF page 2\n(https://ofac.treasury.gov) when it was issued. The text of this GL is provided below.\n\n\nOFFICE OF FOREIGN ASSETS CONTROL\n\nExecutive Order 14404 of May 1, 2026\n\nImposing Sanctions on Those Responsible for Repression in Cuba and for Threats\nto United States National Security and Foreign Policy\n\nGENERAL LICENSE NO. 1\n\nTransactions Authorized Pursuant to the Cuban Assets Control Regulations\n      (a) Except as provided in paragraph (b) of this general license, all transactions\n\nprohibited by Executive Order 14404 are authorized to the extent such transactions are\n\nauthorized or exempt under the Cuban Assets Control Regulations, 31 CFR part 515\n\n(CACR), including transactions authorized by a general or specific license pursuant to the\n\nCACR.\n\n        (b) This general license does not authorize any transaction that is otherwise\n\nprohibited by 31 CFR Chapter V.\n\n\n[official name omitted]\nDirector\nOffice of Foreign Assets Control\n\nDated: May 7, 2026\n\n\n\n\n__________________________\n[official name omitted],\nDirector, Office of Foreign Assets Control.\n[FR Doc. 2026-23195 Filed: 11/12/2026 8:45 am; Publication Date: 11/13/2026]",
+  "translation_ja": "## PDF 1ページ\n\nOFACは2026年5月7日に発行し既にウェブで公開したキューバ関連一般許可1を官報に掲載する。9月30日、大統領令14404の禁止事項をキューバ制裁規則（31 CFR 516）に組み込んだ。\n\n## PDF 2ページ\n\n同令が禁じる取引も、キューバ資産管理規則31 CFR 515で許可または免除される範囲は、同規則に基づく一般・個別許可を含め認める。ただし31 CFR第V章で別途禁じられる取引は対象外。",
+  "missing_parts": [
+    "全2ページの原文を抽出し許可条項を翻訳。欄外・署名欄と全ページ目視は未了。"
+  ],
+  "notification_reason": "重複照合期間中の事前公開。既存措置、個別手続、または暫定段階の補完。",
+  "content_sha256": "781e50fb2229d312c7a037285d9d1d280113d4e78d631a9c707b4522bd72bdf9"
+}
