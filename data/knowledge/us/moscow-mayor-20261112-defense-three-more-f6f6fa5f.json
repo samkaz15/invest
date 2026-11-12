@@ -1,0 +1,40 @@
+{
+  "id": "moscow-mayor-20261112-defense-three-more-f6f6fa5f",
+  "source": "Moscow Mayor official MAX channel",
+  "source_url": "https://max.ru/mossobyanin/AaHNVCk9M7g",
+  "title_en": "Moscow mayor reports another three drone attacks repelled",
+  "title_ja": "モスクワ市長、同市に向かう無人機さらに3機の攻撃を阻止したと発表",
+  "published_at": null,
+  "publication_date": "2026-11-12",
+  "publication_time_note": "公式公開ページに投稿時刻の表示なし。リンクしたインターファクスの現地11月12日04:31（UTC+03:00）掲載記事で同投稿が公表済みと確認。",
+  "received_at": "2026-11-12T02:45:08.115958+00:00",
+  "retrieved_at": "2026-11-12T02:45:08.115958+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "other_us"
+  ],
+  "original_text": "Отражена атака ещё трёх беспилотников, летевших на Москву. Специалисты экстренных служб работают на месте падения обломков.",
+  "translation_ja": "モスクワに向かっていた無人機、さらに3機の攻撃を阻止した。残骸が落下した現場では、緊急対応機関の職員が活動している。",
+  "content_sha256": "f6f6fa5f9ef6ea0dca60c82fdd5b100ffe9d8d9485b5951e751bdcac4da1be99",
+  "translation_sha256": "86df0bc8cf360993be07ff9c359b89b4c2806d6838efdfcb38dfe6894636c2b8",
+  "source_raw_sha256": "d6ec8313b8b758c04465538ae849248733197c9557885f8e12f13ffd8bb265c7",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "facts_ja": [
+    "モスクワ市長はさらに3機の攻撃を阻止したと発表した。最初の2機とは別の追加発表。迎撃・損害は独立確認していない。"
+  ],
+  "inference_ja": [
+    "対米協議に関連する情勢の記録。停戦・制裁・エネルギー物流の変更の確認資料は得られていない。"
+  ],
+  "related_source_urls": [
+    "https://max.ru/mossobyanin/AaHMyq4AaZY",
+    "https://www.interfax.ru/russia/1128455"
+  ],
+  "notification_eligible": false,
+  "related_record_ids": [
+    "moscow-mayor-20261112-defense-two-034a0ae8"
+  ],
+  "notification_reason": "米特使協議の背景資料。米国側の新規施策や、協議の変更・設備損害を示す独立資料は未確認。"
+}

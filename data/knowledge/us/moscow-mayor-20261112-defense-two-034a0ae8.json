@@ -1,0 +1,37 @@
+{
+  "id": "moscow-mayor-20261112-defense-two-034a0ae8",
+  "source": "Moscow Mayor official MAX channel",
+  "source_url": "https://max.ru/mossobyanin/AaHMyq4AaZY",
+  "title_en": "Moscow mayor reports air-defense interception of two drones",
+  "title_ja": "モスクワ市長、同市に向かう無人機2機を迎撃したと発表",
+  "published_at": null,
+  "publication_date": "2026-11-12",
+  "publication_time_note": "公式公開ページに投稿時刻の表示なし。リンクしたインターファクスの現地11月12日01:52（UTC+03:00）掲載記事で同投稿が公表済みと確認。",
+  "received_at": "2026-11-12T02:44:12.891879+00:00",
+  "retrieved_at": "2026-11-12T02:44:12.891879+00:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "war",
+    "other_us"
+  ],
+  "original_text": "Силами ПВО Минобороны уничтожены два БПЛА, летевших на Москву. На месте падения обломков работают специалисты экстренных служб.",
+  "translation_ja": "国防省の防空部隊が、モスクワに向かっていた無人機2機を撃墜した。残骸が落下した現場では、緊急対応機関の職員が活動している。",
+  "content_sha256": "034a0ae81fa3638777ab2b4ef8b8cfc438502c2cdc64f0d2483a562414ad692c",
+  "translation_sha256": "55adfee543cd7c4a6dc2ee946638b4d2f7765177fe66e76a93141a05ca7a54c9",
+  "source_raw_sha256": "c59d69fea5176a65efef05b94535f6b5b6f16d24a885befb2634c10fb1a4ea1d",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "facts_ja": [
+    "モスクワ市長は国防省の防空部隊が2機を撃墜し、落下現場で緊急対応機関が活動中と発表した。撃墜・損害は独立確認していない。"
+  ],
+  "inference_ja": [
+    "米特使のモスクワ協議に先立つ背景資料。石油物流・電力施設の被害や外交日程変更は確認できない。"
+  ],
+  "related_source_urls": [
+    "https://max.ru/mossobyanin/AaHNVCk9M7g",
+    "https://www.interfax.ru/russia/1128446"
+  ],
+  "notification_eligible": false,
+  "notification_reason": "米特使協議の背景資料。米国側の新規施策や、協議の変更・設備損害を示す独立資料は未確認。"
+}
