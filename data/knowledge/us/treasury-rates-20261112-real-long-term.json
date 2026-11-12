@@ -1,0 +1,40 @@
+{
+  "source": "U.S. Department of the Treasury",
+  "observation_date": "2026-11-12",
+  "received_at": "2026-11-12T20:56:25.000Z",
+  "received_at_kind": "gmail_received",
+  "publication_timezone": "America/New_York",
+  "topics": [
+    "treasuries"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "attachment_status": "対象メールにMIME添付なし。今回の更新対象はHTML表。",
+  "inference_ja": [],
+  "id": "treasury-rates-20261112-real-long-term",
+  "source_type": "official_html",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+  "title_en": "Daily Treasury Real Long-Term Rates",
+  "title_ja": "日次長期実質国債金利（11月12日観測分）",
+  "published_at": null,
+  "publication_time_note": "表の初回掲載時刻は不明。関連する公開配信版の送信表示は別項目。",
+  "related_bulletin_published_at": "2026-11-12T15:55:00-05:00",
+  "retrieved_at": "2026-11-12T20:59:31.977423+00:00",
+  "source_raw_sha256": "ef0071b0ce93b44e5c850e7debf8fdc8a9d19c891f1f52b0943becd06b3511d1",
+  "content_sha256": "bfb362be777abf9c0c6bd300cd7144cb0d63fb69c47bdb2995bec99d0c7c7e92",
+  "original_text": "| Date | 20 YR | 30 YR | Extrapolation Factor | LT Real Average (10> Yrs) | 6 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 8 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 17 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 52 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 1 Mo | 1.5 Mo | 2 Mo | 3 Mo | 4 Mo | 20 Yr | 30 Yr |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 11/10/2026 | N/A | N/A | N/A | 3.17 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n| 11/12/2026 | N/A | N/A | N/A | 3.24 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n\nLong Term Real Rate Average: The Long-Term Real Rate Average is the unweighted average of bid real yields on all outstanding TIPS with remaining maturities of more than 10 years and is intended as a proxy for long-term real rates.",
+  "translation_ja": "2026年11月12日（米国）の更新行と比較用の前営業日11月10日。利回りの単位は％。N/Aは原表の値なし。\n\n| 日付 | 20年 | 30年 | 外挿係数 | 長期実質金利平均（10年超） | 6週・銀行割引率 | クーポン相当利回り | 8週・銀行割引率 | クーポン相当利回り | 17週・銀行割引率 | クーポン相当利回り | 52週・銀行割引率 | クーポン相当利回り | 1か月 | 1.5か月 | 2か月 | 3か月 | 4か月 | 20年 | 30年 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 11/10/2026 | N/A | N/A | N/A | 3.17 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n| 11/12/2026 | N/A | N/A | N/A | 3.24 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n\n## この表の説明・脚注の日本語訳\n\n長期実質金利平均：残存期間10年超の現存するすべてのTIPSの買い気配実質利回りの単純平均で、長期実質金利の代理指標を意図する。",
+  "facts_ja": [
+    "残存10年超のTIPSの長期実質金利平均は3.17％から3.24％へ7bp上昇。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省が十一月十二日の長期実質金利を公表、十年超の平均は三・二四％に上昇した。",
+  "content_scope_note": "更新行、比較用の前営業日行、該当系列の説明・脚注を収録。年次表の既報行、他系列の説明、連絡先案内は対象外。",
+  "related_document_ids": [
+    "ustreas-4329b68-20261112-real-long-term-mail"
+  ],
+  "related_source_urls": [
+    "https://content.govdelivery.com/accounts/USTREAS/bulletins/4329b68"
+  ]
+}
