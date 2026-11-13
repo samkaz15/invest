@@ -1,0 +1,103 @@
+{
+  "as_of": "2026-11-13T13:55:42Z",
+  "status": "partial",
+  "document_ids": [
+    "bls-20261113-oct-ppi-excerpt-3a4e1dbc"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認。前回完全確認時刻不明"
+    },
+    {
+      "id": "treasury_auctions",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認。前回完全確認時刻不明"
+    },
+    {
+      "id": "treasury_buybacks",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認。前回完全確認時刻不明"
+    },
+    {
+      "id": "fed_fomc",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認。前回完全確認時刻不明"
+    },
+    {
+      "id": "nyfed_operations",
+      "requested_from": null,
+      "checked_at": "2026-11-13T13:55:42Z",
+      "scope": "月次オペ表を開いたが個別実績・次期日程は未確認"
+    },
+    {
+      "id": "white_house",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認。前回完全確認時刻不明"
+    },
+    {
+      "id": "ofac",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認。前回完全確認時刻不明"
+    },
+    {
+      "id": "eia_petroleum",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認。前回完全確認時刻不明"
+    },
+    {
+      "id": "fec_results",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認。前回完全確認時刻不明"
+    },
+    {
+      "id": "cfius",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認。前回完全確認時刻不明"
+    },
+    {
+      "id": "bls_ppi",
+      "requested_from": "2026-11-13T08:30:00-05:00",
+      "checked_at": "2026-11-13T13:55:42Z",
+      "scope": "10月分本文と表Aの一部を取得、冒頭段落のみ原文・翻訳を保存。"
+    }
+  ],
+  "facts": [
+    "10月PPI最終需要は前月比0.3%、前年比6.5%。9月前月比は改定後1.4%。",
+    "食品・エネルギー・貿易サービス除く最終需要は前月比0.5%、前年比4.9%。",
+    "PPIは生産者価格でありCPIではない。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "費用上昇が価格転嫁され、需要が持続すれば消費者物価と金利見通しに波及し得るが、転嫁や市場反応は未確認。"
+  ],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "市場予想と実際の金利反応の一次・許諾資料を確認",
+    "weeks": "CPI・PCEと価格転嫁を確認",
+    "months": "米国と相手国の物価・金融政策・成長を比較"
+  },
+  "invalidations": [
+    "価格転嫁が弱い、需要が減退、金利の市場反応が仮説と逆なら再評価"
+  ],
+  "review_after": null,
+  "fx": "相手国の同時点資料が不足し各ペア保留",
+  "missing_sources": [
+    "PPI本文の大部分と全表・脚注の保存と翻訳",
+    "10情報源の差分期間と個別本文・表の全件確認",
+    "メール経路とURL・公表時刻・全内容ハッシュによる重複確認",
+    "レビュー期限到来分と歴史ケースの再点検"
+  ],
+  "db_sync": "最新同期・PostgreSQL反映未確認。以前の同期失敗あり。",
+  "pc_notification": "未確認"
+}
