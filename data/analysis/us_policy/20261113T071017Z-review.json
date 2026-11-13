@@ -1,0 +1,32 @@
+{
+  "id": "20261113T071017Z-review",
+  "review_of": "20261106T060838Z-e5cb5c48",
+  "original_as_of": "2026-11-06T06:08:38Z",
+  "review_after": "2026-11-13T06:08:38Z",
+  "reviewed_at": "2026-11-13T07:10:17.005Z",
+  "status": "partial",
+  "observations": [
+    {
+      "source": "https://www.eia.gov/dnav/pet/PET_STOC_WSTK_A_EPC0_SAX_MBBL_W.htm",
+      "period": "week ending 2026-11-06",
+      "value": "商業原油在庫414.417百万バレル、前週409.760百万バレル、4.657百万バレル増",
+      "interpretation": "当初の在庫減継続条件は、この1週間の増加によって弱まった。単週で中期傾向は確定しない。"
+    },
+    {
+      "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve",
+      "period": "2026-11-12",
+      "value": "10年CMT 5.10%、11月6日4.86%",
+      "interpretation": "期間内の利回り上昇は確認できるが入札供給や当初仮説による因果は特定できない。"
+    }
+  ],
+  "unassessed": [
+    "入札直前の発行前利回りと事前予想",
+    "原油先物価格とインフレ期待の同時点推移",
+    "停戦実施と制裁解除",
+    "通貨・金の比較時間足"
+  ],
+  "caveats": [
+    "予測時点後の観測値として扱い、当初の根拠に混入しない",
+    "価格目標・精度は評価しない"
+  ]
+}
