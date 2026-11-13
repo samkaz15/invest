@@ -1,0 +1,112 @@
+{
+  "as_of": "2026-11-13T21:44:02Z",
+  "status": "partial",
+  "document_ids": [
+    "treasury-real-yield-20261113-table-20261114"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:44:02Z",
+      "scope": "入口と実質金利表の11月12・13日の行を取得。初出時刻、表全体・脚注未確認。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:44:02Z",
+      "scope": "入口を確認。個別文書・表と全期間の差分は未完了。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:44:02Z",
+      "scope": "入口を確認。個別文書・表と全期間の差分は未完了。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:44:02Z",
+      "scope": "入口を確認。個別文書・表と全期間の差分は未完了。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:44:02Z",
+      "scope": "入口を確認。個別文書・表と全期間の差分は未完了。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:44:02Z",
+      "scope": "入口を確認。個別文書・表と全期間の差分は未完了。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:44:02Z",
+      "scope": "入口を確認。個別文書・表と全期間の差分は未完了。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:44:02Z",
+      "scope": "入口を確認。個別文書・表と全期間の差分は未完了。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:44:02Z",
+      "scope": "入口を確認。個別文書・表と全期間の差分は未完了。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:44:02Z",
+      "scope": "入口を確認。個別文書・表と全期間の差分は未完了。"
+    }
+  ],
+  "missing_sources": [
+    "各情報源の前回完全確認時刻と確定差分期間",
+    "PPI本文と表の完全翻訳",
+    "公式表の全方法論・脚注",
+    "レビュー期限到来分の全件確認",
+    "メール経路との全件照合"
+  ],
+  "facts": [
+    "米国11月13日の5年2.68％、7年2.78％、10年2.91％、20年3.15％、30年3.28％。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "実質利回り上昇が持続する場合、無利子の金の保有機会費用が上昇しうる。"
+  ],
+  "historical_comparisons": [
+    {
+      "id": "fed-response-2020-03-15",
+      "comparison": "共通点は実質金利・資金環境が金融条件に関係する点。2020年は市場機能支援の政策発表、今回は市場利回りの観測。",
+      "missing": "2020年当初の実質金利・インフレ・流動性とエネルギー構造の同時点資料不足。"
+    }
+  ],
+  "scenarios": {
+    "days": "米実質金利と日米金利差の持続を確認",
+    "weeks": "物価・資金需給と国債入札を確認",
+    "months": "各国政策と成長率を比較"
+  },
+  "invalidations": [
+    "実質利回りが反落、または他の金需要要因が優勢になれば仮説を修正"
+  ],
+  "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは双方の同時点資料不足で判断保留",
+  "review_after": null,
+  "db_sync": "直近確認では失敗",
+  "pc_notification": "未確認"
+}

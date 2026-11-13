@@ -1,0 +1,28 @@
+{
+  "id": "treasury-real-yield-20261113-table-20261114",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026",
+  "title_en": "Daily Treasury Par Real Yield Curve Rates, November 13, 2026",
+  "title_ja": "米財務省の実質国債利回り表・2026年11月13日",
+  "published_at": null,
+  "received_at": "2026-11-13T21:44:02Z",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "Date  | 5 YR  | 7 YR  | 10 YR  | 20 YR  | 30 YR  | Extrapolation Factor  | 6 WEEKS BANK DISCOUNT  | COUPON EQUIVALENT  | 8 WEEKS BANK DISCOUNT  | COUPON EQUIVALENT  | 17 WEEKS BANK DISCOUNT  | COUPON EQUIVALENT  | 52 WEEKS BANK DISCOUNT  | COUPON EQUIVALENT  | 1 Mo  | 1.5 Mo  | 2 Mo  | 3 Mo  | 4 Mo  | 20 Yr  | 30 Yr\n11/12/2026  | 2.64  | 2.74  | 2.86  | 3.11  | 3.24  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A\n11/13/2026  | 2.68  | 2.78  | 2.91  | 3.15  | 3.28  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A",
+  "translation_ja": "日付 | 5年 | 7年 | 10年 | 20年 | 30年 | 外挿係数 | 6週割引率 | クーポン相当 | 8週割引率 | クーポン相当 | 17週割引率 | クーポン相当 | 52週割引率 | クーポン相当 | 1か月 | 1.5か月 | 2か月 | 3か月 | 4か月 | 20年 | 30年\n11/12/2026  | 2.64  | 2.74  | 2.86  | 3.11  | 3.24  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A\n11/13/2026  | 2.68  | 2.78  | 2.91  | 3.15  | 3.28  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A",
+  "facts_ja": [
+    "米国11月13日の5年2.68％、7年2.78％、10年2.91％、20年3.15％、30年3.28％。"
+  ],
+  "inference_ja": [],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "表全期間、方法論・脚注全文、公表時刻は未確認。N/Aは原表の値なし。"
+  ],
+  "notification_eligible": false,
+  "related_document_ids": [
+    "ustreas-432bf64-20261113-real-yield-curve-mail"
+  ],
+  "content_sha256": "47c56b424755fed722b999d53f32198cd6009b5853d4d32d1281e7b1127c5f22"
+}
