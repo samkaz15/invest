@@ -1,0 +1,85 @@
+{
+  "as_of": "2026-11-13T01:15:39.380Z",
+  "status": "partial",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "nyfed_operations",
+      "scope": "7〜9月の外為報告PDFの5ページのテキスト確認。全15ページの翻訳・図表の視覚確認未了",
+      "url": "https://www.newyorkfed.org/medialibrary/media/newsevents/news/markets/2026/q3-2026-fx-quarterly-report.pdf"
+    },
+    {
+      "id": "eia_petroleum",
+      "scope": "週次原油在庫表と注記確認、週報全体未了",
+      "url": "https://www.eia.gov/dnav/pet/PET_STOC_WSTK_A_EPC0_SAX_MBBL_W.htm"
+    },
+    {
+      "id": "treasury_news",
+      "scope": "今回の個別本文・期間確認未完了"
+    },
+    {
+      "id": "treasury_auctions",
+      "scope": "今回の個別本文・期間確認未完了"
+    },
+    {
+      "id": "treasury_buybacks",
+      "scope": "今回の個別本文・期間確認未完了"
+    },
+    {
+      "id": "fed_fomc",
+      "scope": "今回の個別本文・期間確認未完了"
+    },
+    {
+      "id": "white_house",
+      "scope": "今回の個別本文・期間確認未完了"
+    },
+    {
+      "id": "ofac",
+      "scope": "今回の個別本文・期間確認未完了"
+    },
+    {
+      "id": "fec_results",
+      "scope": "今回の個別本文・期間確認未完了"
+    },
+    {
+      "id": "cfius",
+      "scope": "今回の個別本文・期間確認未完了"
+    }
+  ],
+  "missing_sources": [
+    "既存レコードのURL・公表時刻・ハッシュ照合",
+    "PDF全ページ翻訳・視覚確認",
+    "PDF再配布可否（内部用表示あり）",
+    "米国債入札結果一次表",
+    "10情報源すべての差分",
+    "歴史史料原本・review_after照合"
+  ],
+  "facts": [
+    {
+      "source_url": "https://www.newyorkfed.org/medialibrary/media/newsevents/news/markets/2026/q3-2026-fx-quarterly-report.pdf",
+      "content": "NY連銀報告書5ページによれば7月31日に財務省代理としてユーロ売り・794億円買い。FRBは当該四半期に介入せず。",
+      "published": "2026-11-12（米国、時刻不明）"
+    },
+    {
+      "source_url": "https://www.eia.gov/dnav/pet/PET_STOC_WSTK_A_EPC0_SAX_MBBL_W.htm",
+      "content": "EIA表の11月6日週末の米商業原油在庫は4億1441万7000バレル、前週4億0976万バレル。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "円買いは円需要の一要素だが、政策差や投資フローを含め寄与は未検証。原油在庫増は需給緩和の一要素だが輸出入や製品在庫の同時確認が必要。"
+  ],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "入札原表と外為報告の全表を確認",
+    "weeks": "石油在庫・輸入と米日金利差を確認",
+    "months": "両国の物価と政策を確認"
+  },
+  "invalidations": [
+    "報告書の別ページ・訂正や在庫改定が上記に反する場合、分析を見直す"
+  ],
+  "review_after": null,
+  "fx": "両国の最新資料不足で方向判断保留",
+  "postgresql_sync": "未確認",
+  "pc_notification": "未確認"
+}
