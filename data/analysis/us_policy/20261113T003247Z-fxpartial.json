@@ -1,0 +1,78 @@
+{
+  "as_of": "2026-11-13T00:32:47.517Z",
+  "status": "partial",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "nyfed_operations",
+      "status": "四半期外国為替声明本文確認。通常の国債SOMAオペ未確認",
+      "url": "https://www.newyorkfed.org/newsevents/news/markets/2026/20261112"
+    },
+    {
+      "id": "eia_petroleum",
+      "status": "週報入口のみ。11月12日号へのリンクあり、個別表未取得"
+    },
+    {
+      "id": "treasury_auctions",
+      "status": "入口確認、30年債個別原表未取得"
+    },
+    {
+      "id": "ofac",
+      "status": "一覧取得、個別更新未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "status": "会合一覧取得、個別発表未照合"
+    },
+    {
+      "id": "treasury_news",
+      "status": "未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "status": "未確認"
+    },
+    {
+      "id": "white_house",
+      "status": "未確認"
+    },
+    {
+      "id": "fec_results",
+      "status": "未確認"
+    },
+    {
+      "id": "cfius",
+      "status": "未確認"
+    }
+  ],
+  "missing_sources": [
+    "全10源の差分期間の完全確認",
+    "メール経路とのURL・時刻・ハッシュ重複照合",
+    "30年債入札の一次原表",
+    "NY連銀四半期報告本文PDF",
+    "過去分析レビュー期限の照合",
+    "履歴ケース原本"
+  ],
+  "facts": [
+    "NY連銀の11月12日声明によれば2026年第3四半期に米財務省は円を買い、FRBは為替介入しなかった。公表時刻不明。"
+  ],
+  "reported": [
+    "30年債利回り5.441%、応札倍率2.36との報道は一次原表未確認。"
+  ],
+  "causal_channels": [
+    "財務省の円買いは対象期間の円需要に関係し得るが、金利差や他の資金フローが同時に作用し寄与は特定できない。"
+  ],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "詳細報告の売買時期と金額の確認",
+    "weeks": "米日金利差と需給を確認",
+    "months": "両国の政策・物価を照合"
+  },
+  "invalidations": [
+    "詳細報告が購入の時点や性質について異なる説明を示した場合は見直す"
+  ],
+  "review_after": null,
+  "fx": "両側の同時点資料不足によりUSD/JPY等の方向は保留",
+  "postgresql_sync": "未確認",
+  "pc_notification": "未確認"
+}
