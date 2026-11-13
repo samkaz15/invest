@@ -1,0 +1,100 @@
+{
+  "as_of": "2026-11-13T12:21:26Z",
+  "status": "partial",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "requested_from": null,
+      "checked_at": "2026-11-13T12:21:26Z",
+      "scope": "一覧を取得。対象期間の完全確認未了"
+    },
+    {
+      "id": "treasury_auctions",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認。前回完全確認時刻不明"
+    },
+    {
+      "id": "treasury_buybacks",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認。前回完全確認時刻不明"
+    },
+    {
+      "id": "fed_fomc",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認。前回完全確認時刻不明"
+    },
+    {
+      "id": "nyfed_operations",
+      "requested_from": null,
+      "checked_at": "2026-11-13T12:21:26Z",
+      "scope": "月次オペ表の入口を取得。新日程・実績の全量確認未了"
+    },
+    {
+      "id": "white_house",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認。前回完全確認時刻不明"
+    },
+    {
+      "id": "ofac",
+      "requested_from": null,
+      "checked_at": "2026-11-13T12:21:26Z",
+      "scope": "一覧・2026-11-09個別更新本文を確認。検索取得表示の最新日であって差分全域の網羅を保証せず"
+    },
+    {
+      "id": "eia_petroleum",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認。前回完全確認時刻不明"
+    },
+    {
+      "id": "fec_results",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認。前回完全確認時刻不明"
+    },
+    {
+      "id": "cfius",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認。前回完全確認時刻不明"
+    }
+  ],
+  "facts": [
+    {
+      "source_url": "https://ofac.treasury.gov/recent-actions/20261109",
+      "published_date": "2026-11-09",
+      "published_at": null,
+      "retrieved_at": "2026-11-13T12:21:26Z",
+      "description": "OFACはVOLTA SHIPPING SERVICES LLCに関するSDNリスト項目の別名を変更。新規指定そのものとは区別。公表日は今回の直近72時間外。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "制裁リストの同定情報の修正が制裁対象そのものの新規追加と同じ影響を持つとは限らない。供給量への影響は未検証。"
+  ],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "制裁対象・許可の原文と発効日を確認",
+    "weeks": "原油輸送・輸出統計と制裁の実効性を確認",
+    "months": "在庫、供給、インフレ、金融政策を比較"
+  },
+  "invalidations": [
+    "新規指定や石油供給への影響を確認した場合は解釈を再評価"
+  ],
+  "review_after": null,
+  "missing_sources": [
+    "情報源別の完全確認時刻・差分期間",
+    "10情報源の網羅的な個別本文、表、PDF",
+    "メール全件とのURL・公表時刻・内容ハッシュ照合",
+    "過去分析のレビュー期限の全件再確認",
+    "相手通貨と史料を含む比較資料"
+  ],
+  "fx": "各通貨ペアの両側資料不足のため保留",
+  "db_sync": "最新のPostgreSQL反映未確認。過去に同期失敗あり。",
+  "pc_notification": "未確認"
+}
