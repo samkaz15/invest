@@ -1,0 +1,93 @@
+{
+  "as_of": "2026-11-13T18:29:00Z",
+  "status": "partial",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "requested_from": null,
+      "checked_at": "2026-11-13T18:29:00Z",
+      "scope": "指定日のTreasury API取得不可"
+    },
+    {
+      "id": "treasury_buybacks",
+      "requested_from": null,
+      "checked_at": "2026-11-13T18:29:00Z",
+      "scope": "公式ページ取得不可"
+    },
+    {
+      "id": "fed_fomc",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "requested_from": null,
+      "checked_at": "2026-11-13T18:29:00Z",
+      "scope": "オペ月次表を取得、個別実績と次期予定の全量未確認"
+    },
+    {
+      "id": "white_house",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認"
+    },
+    {
+      "id": "ofac",
+      "requested_from": null,
+      "checked_at": "2026-11-13T18:29:00Z",
+      "scope": "一覧取得、既存11月13日告示との比較のみ、全期間未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認"
+    },
+    {
+      "id": "fec_results",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認"
+    },
+    {
+      "id": "cfius",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認"
+    }
+  ],
+  "facts": [
+    "前回保存のOFAC文書を含むコミットのUS knowledge database syncは失敗し、import_us_knowledge.pyの工程で停止した。",
+    "財務省の11月13日入札検索APIと買戻しページは取得できなかった。"
+  ],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "入札・買戻しの取得とFRBオペ実績を再試行",
+    "weeks": "国債需給と原油在庫、物価を照合",
+    "months": "各国金利・インフレ・景気を比較"
+  },
+  "invalidations": [
+    "新たに取得した一次資料によって評価を変更する"
+  ],
+  "review_after": null,
+  "fx": "相手国の資料不足により判断保留",
+  "missing_sources": [
+    "情報源ごとの完全確認時刻と確定差分期間",
+    "財務省入札APIと買戻し一覧",
+    "他6情報源の今回の確認",
+    "メール経路との全件重複照合",
+    "履歴ケースおよびレビュー期限到来分の全件確認"
+  ],
+  "db_sync": "前回のOFAC文書の同期run 43470758098はインポート工程で失敗。詳細な原因は今回未確認。",
+  "pc_notification": "未確認"
+}
