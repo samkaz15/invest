@@ -1,0 +1,26 @@
+{
+  "id": "nyfed-treasury-20261116-20261211-schedule-20261114",
+  "source_url": "https://www.newyorkfed.org/markets/domestic-market-operations/monetary-policy-implementation/treasury-securities/treasury-securities-operational-details",
+  "title_en": "Treasury Securities Operational Details: November 16–December 11, 2026",
+  "title_ja": "ニューヨーク連銀の国債再投資買入予定",
+  "published_at": null,
+  "received_at": "2026-11-13T23:03:40Z",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "original_text": "11/16/2026 - 12/11/2026 | The Desk plans to conduct approximately $14.0 billion in reinvestment purchases and no reserve management purchases over the noted monthly period.",
+  "translation_ja": "2026年11月16日〜12月11日 | デスクは当該月次期間に約140億ドルの再投資買入れを予定し、準備預金管理目的の買入れは予定していない。",
+  "facts_ja": [
+    "11月16日〜12月11日に約140億ドルの再投資買入れを予定。準備管理買入れは予定なし。"
+  ],
+  "inference_ja": [],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "一覧行の初出時刻、個別予定表、取引実績および他の本文・脚注は未確認。"
+  ],
+  "notification_eligible": false,
+  "content_sha256": "8032594b281f7df16677d70b36a7ba8d7f7c0852396333edd9f0050e78238e3f"
+}
