@@ -1,0 +1,31 @@
+{
+  "id": "fed-20261112-fomc-release-6eb82594",
+  "source": "Board of Governors of the Federal Reserve System",
+  "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+  "title_en": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+  "title_ja": "FRBが2027年FOMC暫定日程の改訂を発表",
+  "published_at": "2026-11-12T12:45:00-05:00",
+  "received_at": "2026-11-13T05:42:24.226Z",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "monetary_policy"
+  ],
+  "original_text": "The Federal Reserve on Thursday announced a revised tentative schedule of Federal Open Market Committee meetings in 2027.\nThe Committee plans to meet on the dates listed below to discuss monetary policy and will announce its policy decision as usual on the second day of each meeting, except the October 26-27 meeting. That meeting will be dedicated to the discussion of broad monetary policy strategy issues:\nJanuary 26-27 (Tuesday-Wednesday)\nMarch 16-17 (Tuesday-Wednesday)\nApril 27-28 (Tuesday-Wednesday)\nJune 8-9 (Tuesday-Wednesday)\nJuly 27-28 (Tuesday-Wednesday)\nSeptember 14-15 (Tuesday-Wednesday)\nOctober 26-27 (Tuesday-Wednesday)\nNovember 16-17 (Tuesday-Wednesday)\nJanuary 25-26, 2028 (Tuesday-Wednesday)\n",
+  "translation_ja": "FRBは木曜日、2027年の連邦公開市場委員会（FOMC）会合について改訂した暫定日程を公表した。\n委員会は以下の日程で金融政策を協議する予定で、10月26〜27日の会合を除き、通常どおり会合2日目に政策決定を発表する。10月の会合は幅広い金融政策戦略の議論に専念する。\n2027年1月26〜27日、3月16〜17日、4月27〜28日、6月8〜9日、7月27〜28日、9月14〜15日、10月26〜27日、11月16〜17日。2028年1月25〜26日。日付は米国現地時間。",
+  "content_sha256": "6eb82594ade6e64cf947bc05d168f0a202886da4513655c1944c14db7b66514d",
+  "content_hash_scope": "normalized body UTF-8 incl trailing newline",
+  "facts_ja": [
+    "2027年10月26〜27日の会合は金融政策戦略の議論に専念し、他の記載会合では通常2日目に政策決定を発表する。"
+  ],
+  "inference_ja": [
+    "会合日程の変更は政策方向を確定しない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "related_record_ids": [
+    "fed-20261112-fomc-calendar-2027-ba5be842"
+  ],
+  "dedup_note": "既存カレンダー抜粋は別URLの別文書。同一発表の重複通知は行わない。メール全件の照合は未了。"
+}
