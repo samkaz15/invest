@@ -1,0 +1,104 @@
+{
+  "as_of": "2026-11-13T10:10:28Z",
+  "status": "partial",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-13T10:10:28Z",
+      "requested_from": null,
+      "scope": "公式入口を取得。前回完全確認時刻は不明、差分期間と個別資料の網羅確認は未完了。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-13T10:10:28Z",
+      "requested_from": null,
+      "scope": "公式入口を取得。前回完全確認時刻は不明、差分期間と個別資料の網羅確認は未完了。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-13T10:10:28Z",
+      "requested_from": null,
+      "scope": "公式入口を取得。前回完全確認時刻は不明、差分期間と個別資料の網羅確認は未完了。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-13T10:10:28Z",
+      "requested_from": null,
+      "scope": "公式入口を取得。前回完全確認時刻は不明、差分期間と個別資料の網羅確認は未完了。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-13T10:10:28Z",
+      "requested_from": null,
+      "scope": "公式入口を取得。前回完全確認時刻は不明、差分期間と個別資料の網羅確認は未完了。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-13T10:10:28Z",
+      "requested_from": null,
+      "scope": "公式入口を取得。前回完全確認時刻は不明、差分期間と個別資料の網羅確認は未完了。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-13T10:10:28Z",
+      "requested_from": null,
+      "scope": "公式入口を取得。前回完全確認時刻は不明、差分期間と個別資料の網羅確認は未完了。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-13T10:10:28Z",
+      "requested_from": null,
+      "scope": "公式入口を取得。前回完全確認時刻は不明、差分期間と個別資料の網羅確認は未完了。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-13T10:10:28Z",
+      "requested_from": null,
+      "scope": "公式入口を取得。前回完全確認時刻は不明、差分期間と個別資料の網羅確認は未完了。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-13T10:10:28Z",
+      "requested_from": null,
+      "scope": "公式入口を取得。前回完全確認時刻は不明、差分期間と個別資料の網羅確認は未完了。"
+    }
+  ],
+  "missing_sources": [
+    "各情報源の完全確認時刻・差分範囲",
+    "候補文書の個別本文、表、PDFの取得と差分照合",
+    "メール経路とのURL・時刻・ハッシュの全件照合",
+    "レビュー期限到来分の再照合",
+    "市場と相手通貨の資料"
+  ],
+  "facts": [
+    "OFAC入口に表示された最新項目の日付は2026-11-09。表示の遅延や漏れは排除できず、以降に公表がないことを意味しない。",
+    "EIA入口の過去号欄に2026-11-12号が表示される。該当週報は既存保存済み。",
+    "FEC入口は選挙結果が州・地方で管理される旨を説明。今回州別認証は未取得。"
+  ],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "入札とNY連銀実績を再確認",
+    "weeks": "在庫・金利・政策発表を照合",
+    "months": "物価・金融政策・各国資料を照合"
+  },
+  "invalidations": [
+    "未取得の追加資料により解釈は変わりうる"
+  ],
+  "review_after": null,
+  "fx": "両側資料不足のため保留",
+  "db_sync": "最新のPostgreSQL反映未確認。以前の同期失敗あり。",
+  "pc_notification": "未確認"
+}
