@@ -1,0 +1,76 @@
+{
+  "as_of": "2026-11-13T04:46:15.078Z",
+  "status": "partial",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "fed_fomc",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+      "published_at": "2026-11-12T12:45:00-05:00",
+      "retrieved_at": "2026-11-13T04:46:15.078Z",
+      "scope": "2027年FOMC会合予定の11月12日声明本文を取得。全期間の差分は未完了。"
+    },
+    {
+      "id": "treasury_news",
+      "scope": "今回の個別資料の網羅照合未完了"
+    },
+    {
+      "id": "treasury_auctions",
+      "scope": "今回の個別資料の網羅照合未完了"
+    },
+    {
+      "id": "treasury_buybacks",
+      "scope": "今回の個別資料の網羅照合未完了"
+    },
+    {
+      "id": "nyfed_operations",
+      "scope": "今回の個別資料の網羅照合未完了"
+    },
+    {
+      "id": "white_house",
+      "scope": "今回の個別資料の網羅照合未完了"
+    },
+    {
+      "id": "ofac",
+      "scope": "今回の個別資料の網羅照合未完了"
+    },
+    {
+      "id": "eia_petroleum",
+      "scope": "今回の個別資料の網羅照合未完了"
+    },
+    {
+      "id": "fec_results",
+      "scope": "今回の個別資料の網羅照合未完了"
+    },
+    {
+      "id": "cfius",
+      "scope": "今回の個別資料の網羅照合未完了"
+    }
+  ],
+  "missing_sources": [
+    "既存メール・全知識レコードのURL/公表時刻/ハッシュ照合",
+    "FOMC以外の今回の個別資料完全差分",
+    "史料付きケースの原本",
+    "レビュー期限照合"
+  ],
+  "facts": [
+    "FRBは2027年のFOMC暫定日程を改訂し、10月26～27日は金融政策戦略の議論に専念すると発表。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "決定回数・日程の変更は会合間の情報蓄積と価格反応の時間分布に影響し得るが、金利決定の方向を示さない。"
+  ],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "会合日程の従前版・市場織り込みを照合",
+    "weeks": "金融政策・インフレの変化を確認",
+    "months": "会合別の政策決定とデータ発表を検証"
+  },
+  "invalidations": [
+    "FRBが予定を再改訂すれば更新し、日程だけで政策方向を断定しない"
+  ],
+  "review_after": null,
+  "fx": "米・相手国の最新資料不足で判断保留",
+  "postgresql_sync": "未確認",
+  "pc_notification": "未確認"
+}
