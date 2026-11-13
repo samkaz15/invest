@@ -1,0 +1,30 @@
+{
+  "id": "ofac-20261113-counter-narcotics-fc7a64de",
+  "source_url": "https://ofac.treasury.gov/recent-actions/20261113",
+  "title_en": "Counter Narcotics and Counter Terrorism Designations",
+  "title_ja": "麻薬対策およびテロ対策の指定",
+  "published_at": null,
+  "published_date": "2026-11-13",
+  "retrieved_at": "2026-11-13T17:14:04Z",
+  "received_at": "2026-11-13T17:14:04Z",
+  "received_at_kind": "web_retrieved",
+  "source": "U.S. Treasury Office of Foreign Assets Control",
+  "topics": [
+    "sanctions",
+    "other_us"
+  ],
+  "original_text": "Counter Narcotics and Counter Terrorism Designations\n11/13/2026\n\nSpecially Designated Nationals List Updates\nThe following entities have been added to OFAC's SDN List:\n\nLOS LORENZANAS (a.k.a. LORENZANA DRUG TRAFFICKING ORGANIZATION; a.k.a. \"THE LORENZANA CLAN\"; a.k.a. \"THE LORENZANA FAMILY\"), Guatemala; Secondary sanctions risk: section 1(b) of Executive Order 13224, as amended by Executive Order 13886; Organization Type: Transnational Terrorist Group; Target Type Criminal Organization [FTO] [SDGT].\nLOS MENDOZA DRUG TRAFFICKING ORGANIZATION, Guatemala; Honduras; Belize; Secondary sanctions risk: section 1(b) of Executive Order 13224, as amended by Executive Order 13886; Target Type Criminal Organization [SDGT] [ILLICIT-DRUGS-EO14059] (Linked To: SINALOA CARTEL).\nThe following changes have been made to OFAC's SDN List:\nLOS HUISTAS DRUG TRAFFICKING ORGANIZATION (a.k.a. \"LOS HUISTAS DTO\"), Santa Ana Huista, Huehuetenango, Guatemala; San Antonio Huista, Huehuetenango, Guatemala; La Democracia, Huehuetenango, Guatemala; Target Type Criminal Organization [ILLICIT-DRUGS-EO14059].\n-to- LOS HUISTAS DRUG TRAFFICKING ORGANIZATION, Santa Ana Huista, Huehuetenango, Guatemala; San Antonio Huista, Huehuetenango, Guatemala; La Democracia, Huehuetenango, Guatemala; Secondary sanctions risk: section 1(b) of Executive Order 13224, as amended by Executive Order 13886; Target Type Criminal Organization [SDGT] [ILLICIT-DRUGS-EO14059] (Linked To: SINALOA CARTEL; Linked To: CARTEL DE JALISCO NUEVA GENERACION).\n\nUnrelated Administrative List Changes:\nNone",
+  "translation_ja": "# 麻薬対策およびテロ対策の指定\n\n2026年11月13日\n\n## 特別指定国民（SDN）リストの更新\n\n次の組織がOFACのSDNリストに追加された。\n\n- ロス・ロレンサナス（別名：ロレンサナ麻薬密売組織、「ロレンサナ一族」、「ロレンサナ家」）。グアテマラ。二次制裁リスク：大統領令13886号により改正された大統領令13224号第1条(b)。組織の種類：国際テロ組織。対象の種類：犯罪組織。[FTO] [SDGT]。\n- ロス・メンドーサ麻薬密売組織。グアテマラ、ホンジュラス、ベリーズ。二次制裁リスク：大統領令13886号により改正された大統領令13224号第1条(b)。対象の種類：犯罪組織。[SDGT] [ILLICIT-DRUGS-EO14059]（関連先：シナロア・カルテル）。\n\n次のSDNリスト上の記載が変更された。\n\n- 変更前：ロス・ウイスタス麻薬密売組織（別名「ロス・ウイスタスDTO」）。所在地：グアテマラ、ウエウエテナンゴ県サンタ・アナ・ウイスタ、同サン・アントニオ・ウイスタ、同ラ・デモクラシア。対象の種類：犯罪組織。[ILLICIT-DRUGS-EO14059]。\n- 変更後：ロス・ウイスタス麻薬密売組織。同3所在地。二次制裁リスク：大統領令13886号により改正された大統領令13224号第1条(b)。対象の種類：犯罪組織。[SDGT] [ILLICIT-DRUGS-EO14059]（関連先：シナロア・カルテル、ハリスコ新世代カルテル）。\n\n## 関連しない管理上のリスト変更\n\nなし。",
+  "content_sha256": "fc7a64deefeb4697bcbf748fa01696011309fb181b97d075e5e954418c1e8b9c",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": false,
+  "facts_ja": [
+    "OFACはロス・ロレンサナスおよびロス・メンドーサをSDNリストに追加した。",
+    "既存のロス・ウイスタスの記載にSDGTおよび関連先、二次制裁リスクを追加した。"
+  ],
+  "inference_ja": [],
+  "publication_time_note": "発表日付のみ。初出時刻は未確認。",
+  "dedup_note": "先行する財務省メール・OFAC通知のリンク先であり、別文書として保存。"
+}
