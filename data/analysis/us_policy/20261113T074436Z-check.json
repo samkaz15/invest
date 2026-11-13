@@ -1,0 +1,98 @@
+{
+  "as_of": "2026-11-13T07:44:36.787Z",
+  "status": "partial",
+  "document_ids": [
+    "nyfed-treasury-20261015-20261113-schedule-c215a5b8",
+    "fed-20261112-fomc-release-6eb82594"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "requested_from": null,
+      "checked_at": "2026-11-13T07:44:36.787Z",
+      "scope": "検索結果あるいは今回未取得。個別本文・差分期間は未完了。"
+    },
+    {
+      "id": "treasury_auctions",
+      "requested_from": null,
+      "checked_at": "2026-11-13T07:44:36.787Z",
+      "scope": "検索結果あるいは今回未取得。個別本文・差分期間は未完了。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "requested_from": null,
+      "checked_at": "2026-11-13T07:44:36.787Z",
+      "scope": "検索結果あるいは今回未取得。個別本文・差分期間は未完了。"
+    },
+    {
+      "id": "fed_fomc",
+      "requested_from": null,
+      "checked_at": "2026-11-13T07:44:36.787Z",
+      "scope": "検索結果あるいは今回未取得。個別本文・差分期間は未完了。"
+    },
+    {
+      "id": "nyfed_operations",
+      "requested_from": null,
+      "checked_at": "2026-11-13T07:44:36.787Z",
+      "scope": "既存の月次再投資予定と検索結果を比較。新日程・実績は未確認。"
+    },
+    {
+      "id": "white_house",
+      "requested_from": null,
+      "checked_at": "2026-11-13T07:44:36.787Z",
+      "scope": "検索結果あるいは今回未取得。個別本文・差分期間は未完了。"
+    },
+    {
+      "id": "ofac",
+      "requested_from": null,
+      "checked_at": "2026-11-13T07:44:36.787Z",
+      "scope": "検索結果あるいは今回未取得。個別本文・差分期間は未完了。"
+    },
+    {
+      "id": "eia_petroleum",
+      "requested_from": null,
+      "checked_at": "2026-11-13T07:44:36.787Z",
+      "scope": "週報の検索結果で一部在庫表を取得。全表、脚注の翻訳、差分期間は未完了。"
+    },
+    {
+      "id": "fec_results",
+      "requested_from": null,
+      "checked_at": "2026-11-13T07:44:36.787Z",
+      "scope": "検索結果あるいは今回未取得。個別本文・差分期間は未完了。"
+    },
+    {
+      "id": "cfius",
+      "requested_from": null,
+      "checked_at": "2026-11-13T07:44:36.787Z",
+      "scope": "検索結果あるいは今回未取得。個別本文・差分期間は未完了。"
+    }
+  ],
+  "missing_sources": [
+    "最新完全確認時刻が不明なため24時間重複期間の設定",
+    "全10情報源の個別本文及び差分",
+    "PDF全訳・原本安全確認",
+    "メール経路の重複照合",
+    "今回新たなレビュー期限の全件照合"
+  ],
+  "facts": [
+    "NY連銀の10月15日〜11月13日計画は既存記録。再投資146億ドル予定、準備預金管理買入なし。実績や新政策ではない。",
+    "過去のGitHub Actions run 43229985145はimport_us_knowledge.py失敗を確認。現在の最新実行結果や今回データの反映は未確認。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "再投資の予定は買入実績・残高純増と区別し、資金需給の判定には実績と償還を確認。"
+  ],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "NY連銀の次期予定と実績、入札を照合",
+    "weeks": "需給と金利、在庫・積出を照合",
+    "months": "物価と政策・国債供給の各国資料を確認"
+  },
+  "invalidations": [
+    "次期予定の公表や実績が想定と異なる場合見直す"
+  ],
+  "review_after": null,
+  "fx": "両側の同時点資料不足により判断保留",
+  "db_sync": "過去run失敗、最新未確認",
+  "pc_notification": "未確認"
+}
