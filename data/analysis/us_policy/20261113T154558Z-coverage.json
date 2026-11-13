@@ -1,0 +1,93 @@
+{
+  "as_of": "2026-11-13T15:45:58Z",
+  "status": "partial",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "requested_from": null,
+      "checked_at": "2026-11-13T15:45:58Z",
+      "scope": "公式入口または月次表を取得。個別資料の期間内網羅確認は未完了。"
+    },
+    {
+      "id": "treasury_auctions",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認。前回完全確認時刻が不明。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認。前回完全確認時刻が不明。"
+    },
+    {
+      "id": "fed_fomc",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認。前回完全確認時刻が不明。"
+    },
+    {
+      "id": "nyfed_operations",
+      "requested_from": null,
+      "checked_at": "2026-11-13T15:45:58Z",
+      "scope": "公式入口または月次表を取得。個別資料の期間内網羅確認は未完了。"
+    },
+    {
+      "id": "white_house",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認。前回完全確認時刻が不明。"
+    },
+    {
+      "id": "ofac",
+      "requested_from": null,
+      "checked_at": "2026-11-13T15:45:58Z",
+      "scope": "公式入口または月次表を取得。個別資料の期間内網羅確認は未完了。"
+    },
+    {
+      "id": "eia_petroleum",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認。前回完全確認時刻が不明。"
+    },
+    {
+      "id": "fec_results",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認。前回完全確認時刻が不明。"
+    },
+    {
+      "id": "cfius",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認。前回完全確認時刻が不明。"
+    }
+  ],
+  "facts": [
+    "取得したOFAC一覧の先頭は11月9日付で、更新遅延・欠落は排除できない。",
+    "NY連銀の新しい月次日程・実績は取得表示から確認できなかった。未公表とは断定しない。"
+  ],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "次期国債オペ・入札結果を確認",
+    "weeks": "国債需給、原油・物価と金融政策を確認",
+    "months": "各国の金利・物価・景気を比較"
+  },
+  "invalidations": [
+    "未取得の発表や実績によって解釈が変わりうる"
+  ],
+  "review_after": null,
+  "fx": "両通貨の資料不足のため判断保留",
+  "missing_sources": [
+    "10情報源の完全確認時刻・差分期間、個別資料本文と表",
+    "最新NY連銀の次期日程・オペ実績",
+    "メール経路との全件照合",
+    "過去分析のreview_after再点検",
+    "PPI本文全訳と表、歴史比較"
+  ],
+  "db_sync": "最新PostgreSQL反映は未確認。過去同期失敗あり。",
+  "pc_notification": "未確認"
+}
