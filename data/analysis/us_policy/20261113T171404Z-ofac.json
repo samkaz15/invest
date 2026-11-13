@@ -1,0 +1,99 @@
+{
+  "as_of": "2026-11-13T17:14:04Z",
+  "status": "partial",
+  "document_ids": [
+    "ofac-20261113-counter-narcotics-fc7a64de",
+    "treasury-20261113-guatemala-sanctions-mail-7387f8cc",
+    "ofac-20261113-sdn-update-mail-2c0f62cb"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認、前回完全確認時刻不明"
+    },
+    {
+      "id": "treasury_auctions",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認、前回完全確認時刻不明"
+    },
+    {
+      "id": "treasury_buybacks",
+      "requested_from": null,
+      "checked_at": "2026-11-13T17:14:04Z",
+      "scope": "取得不可"
+    },
+    {
+      "id": "fed_fomc",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認、前回完全確認時刻不明"
+    },
+    {
+      "id": "nyfed_operations",
+      "requested_from": null,
+      "checked_at": "2026-11-13T17:14:04Z",
+      "scope": "月次表のページ取得、次期予定と実績未確認"
+    },
+    {
+      "id": "white_house",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認、前回完全確認時刻不明"
+    },
+    {
+      "id": "ofac",
+      "requested_from": null,
+      "checked_at": "2026-11-13T17:14:04Z",
+      "scope": "一覧および11月13日個別指定本文・リスト変更を取得。全期間の網羅は未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認、前回完全確認時刻不明"
+    },
+    {
+      "id": "fec_results",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認、前回完全確認時刻不明"
+    },
+    {
+      "id": "cfius",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回未確認、前回完全確認時刻不明"
+    }
+  ],
+  "facts": [
+    "OFACはロス・ロレンサナスおよびロス・メンドーサをSDNリストに追加した。",
+    "既存のロス・ウイスタスの記載にSDGTおよび関連先、二次制裁リスクを追加した。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "指定と取引制限による資金・物流への影響は対象取引と履行の範囲に依存し、原油供給への影響は未確認。"
+  ],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "適用範囲と個別許可を確認",
+    "weeks": "輸送・金融取引と一次資料を追跡",
+    "months": "経済・物価・各国金融政策への波及を検証"
+  },
+  "invalidations": [
+    "原油流量や対外決済への実測が仮説と異なれば修正"
+  ],
+  "review_after": null,
+  "fx": "両通貨の同時点資料不足により判断保留",
+  "missing_sources": [
+    "情報源別の完全確認時刻・差分の全域",
+    "財務省買戻しサイトは取得不可",
+    "他7情報源の今回の確認",
+    "メール経路全件のURL・時刻・全文ハッシュ照合",
+    "履歴ケース照合と到来分レビューの全件確認"
+  ],
+  "db_sync": "直近の同日メール保存の同期はDB接続先テナントまたはユーザー不存在で失敗。今回反映は未確認。",
+  "pc_notification": "未確認"
+}
