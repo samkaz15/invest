@@ -1,0 +1,30 @@
+{
+  "id": "bls-20261113-oct-ppi-addendum-04fbfa15",
+  "supersedes": "bls-20261113-oct-ppi-excerpt-3a4e1dbc",
+  "source_url": "https://www.bls.gov/news.release/ppi.nr0.htm",
+  "title_en": "Producer Price Indexes – October 2026",
+  "title_ja": "2026年10月PPI冒頭部の補完",
+  "published_at": "2026-11-13T08:30:00-05:00",
+  "retrieved_at": "2026-11-13T15:08:04Z",
+  "received_at": "2026-11-13T15:08:04Z",
+  "received_at_kind": "web_retrieved",
+  "source": "U.S. Bureau of Labor Statistics",
+  "topics": [
+    "inflation",
+    "ppi"
+  ],
+  "original_text": "Leading the October advance in final demand prices, the index for final demand goods increased 0.5 percent. Prices for final demand services moved up 0.2 percent. The index for final demand less foods, energy, and trade services rose 0.5 percent in October, the same as in September. For the 12 months ended in October, prices for final demand less foods, energy, and trade services advanced 4.9 percent.",
+  "translation_ja": "10月の最終需要価格の上昇を主導したのは最終需要財指数で、0.5％上昇した。最終需要サービス価格は0.2％上昇した。食品、エネルギー、貿易サービスを除く最終需要指数は10月に0.5％上昇し、9月と同じ伸びとなった。同指数の10月までの12カ月間の上昇率は4.9％だった。",
+  "content_sha256": "04fbfa15dd204321026148280ed617898ea2e819b9535b7e96de902f0039eb46",
+  "translation_status": "partial",
+  "content_scope": "excerpt_translation",
+  "facts_ja": [
+    "最終需要財は前月比0.5％上昇、サービス0.2％上昇。食品・エネルギー・貿易サービス除く指数は前月比0.5％、前年比4.9％上昇。"
+  ],
+  "inference_ja": [],
+  "missing_parts": [
+    "旧記録の冒頭段落はsupersedes先を参照。今回の本文抜粋以外の本文、表・脚注の全訳と全文ハッシュは未保存。",
+    "既存メール記録との全件照合未完了。"
+  ],
+  "notification_eligible": false
+}
