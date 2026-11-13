@@ -1,0 +1,98 @@
+{
+  "as_of": "2026-11-13T11:29:46Z",
+  "status": "partial",
+  "document_ids": [
+    "nyfed-treasury-20261015-20261113-schedule-c215a5b8"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の新規確認未実施。前回入口取得のみ、個別差分未完了。"
+    },
+    {
+      "id": "treasury_auctions",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の新規確認未実施。前回入口取得のみ、個別差分未完了。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の新規確認未実施。前回入口取得のみ、個別差分未完了。"
+    },
+    {
+      "id": "fed_fomc",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の新規確認未実施。前回入口取得のみ、個別差分未完了。"
+    },
+    {
+      "id": "nyfed_operations",
+      "requested_from": null,
+      "checked_at": "2026-11-13T11:29:46Z",
+      "scope": "個別月次オペ表とFAQ本文を確認。検索表示に次期日程・実績なし、キャッシュや更新遅れは否定できない。"
+    },
+    {
+      "id": "white_house",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の新規確認未実施。前回入口取得のみ、個別差分未完了。"
+    },
+    {
+      "id": "ofac",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の新規確認未実施。前回入口取得のみ、個別差分未完了。"
+    },
+    {
+      "id": "eia_petroleum",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の新規確認未実施。前回入口取得のみ、個別差分未完了。"
+    },
+    {
+      "id": "fec_results",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の新規確認未実施。前回入口取得のみ、個別差分未完了。"
+    },
+    {
+      "id": "cfius",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の新規確認未実施。前回入口取得のみ、個別差分未完了。"
+    }
+  ],
+  "missing_sources": [
+    "10情報源の最新完全確認時刻が不明、24時間重複の始点を確定できない",
+    "新規予定・個別オペ実績の取得",
+    "9情報源の今回の差分本文・表",
+    "メール経路との完全照合",
+    "事後レビュー期限の全件再照合",
+    "相手通貨と市場実績"
+  ],
+  "facts": [
+    "NY連銀の月次運営表に10月15日〜11月13日の国債再投資買入予定146億ドル、準備預金管理買入予定なしと記載。既存資料として保存済み。",
+    "同表で当該月次結果と次期日程は取得した表示上は空欄。公表されていないと断定しない。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "再投資予定は実際の買入額、償還額、保有残高増減とは区別。ネット需給の推論には実績と発行・償還を照合。"
+  ],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "次期スケジュールとオペ実績を照合",
+    "weeks": "入札・償還・準備預金と短期金利を合わせて検証",
+    "months": "物価と金融政策の両国資料を追跡"
+  },
+  "invalidations": [
+    "実際の再投資額や償還額が想定と異なる場合、需給の推論を修正"
+  ],
+  "review_after": null,
+  "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは相手国の同時点資料不足のため保留",
+  "db_sync": "直近同期結果未確認。過去に同期失敗あり。",
+  "pc_notification": "未確認"
+}
