@@ -1,0 +1,40 @@
+{
+  "source": "U.S. Department of the Treasury",
+  "source_type": "email",
+  "published_at": null,
+  "published_date": "2026-11-13",
+  "topics": [
+    "sanctions",
+    "other_us"
+  ],
+  "inference_ja": [],
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "missing_parts": [
+    "メールの実質本文は翻訳済み。公開配信版とリンク先の個別指定告示を取得できず、告示本文・指定表・脚注・付属PDFの有無は未確認。"
+  ],
+  "notification_eligible": false,
+  "related_source_urls": [
+    "https://ofac.treasury.gov/recent-actions/20261113"
+  ],
+  "unretrieved_urls": [
+    "https://content.govdelivery.com/accounts/USTREAS/bulletins/432b073",
+    "https://ofac.treasury.gov/recent-actions/20261113"
+  ],
+  "attachment_status": "no_pdf_attachment",
+  "publication_time_note": "財務省メールの日付は米国11月13日付。ウェブ初出時刻と公開配信版の時刻は未確認。",
+  "market_relevance_ja": "制裁の対象は麻薬密売・テロ支援。燃料窃盗の言及は既往の背景説明で、対象措置による原油供給、金取引、関税、米国債への経路は本文から確認できない。",
+  "id": "ofac-20261113-sdn-update-mail-2c0f62cb",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/432b073",
+  "title_en": "OFAC SDN List Update: Counter Narcotics and Counter Terrorism Designations",
+  "title_ja": "OFACのSDNリスト更新通知　麻薬対策・テロ対策の指定",
+  "received_at": "2026-11-14T02:04:49+09:00",
+  "original_text": "Update to OFAC's list of Specially Designated Nationals (SDN) and Blocked Persons\n\nThe SDN list has recently been updated. Please visit this page to access the latest version of the SDN list [ https://ofac.treasury.gov/sanctions-list-service ]. Check this page periodically as it may also be updated if a new list-related format or product is offered.\n\nPlease visit this link for more information on today's update [ https://ofac.treasury.gov/recent-actions/20261113 ].",
+  "translation_ja": "OFACの特別指定国民・凍結対象者（SDN）リストの更新\n\nSDNリストが更新された。最新版は[制裁リストサービス](https://ofac.treasury.gov/sanctions-list-service)を参照されたい。リストに関する新しい形式や製品が提供された場合にも、このページが更新されることがあるため、定期的な確認を案内している。\n\n本日の更新については、[OFACの個別告示](https://ofac.treasury.gov/recent-actions/20261113)を参照されたい。",
+  "content_sha256": "2c0f62cbaee54335b58432ea60aa7f5097de8747470ee73498828f331543f52f",
+  "facts_ja": [
+    "OFACはSDNリスト更新をメールで告知した。本文には対象名を記載せず、個別告示へのリンクを案内した。",
+    "公開配信版とリンク先の指定告示は取得できなかった。"
+  ],
+  "translation_scope_note": "受信メールの実質本文の全文訳。配信用ナビゲーション、連絡先および購読管理情報を除いた。個別告示は別文書として再取得する。"
+}
