@@ -1,0 +1,99 @@
+{
+  "as_of": "2026-11-13T05:42:53.802Z",
+  "status": "partial",
+  "document_ids": [
+    "fed-20261112-fomc-release-6eb82594",
+    "fed-20261112-fomc-calendar-2027-ba5be842"
+  ],
+  "sources_checked": [
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+      "published_at": "2026-11-12T12:45:00-05:00",
+      "retrieved_at": "2026-11-13T05:42:53.802Z",
+      "scope": "個別声明と既存カレンダーレコードの関係確認。期間全体の差分未確認。"
+    },
+    {
+      "id": "treasury_news",
+      "scope": "今回個別本文の差分網羅未完了"
+    },
+    {
+      "id": "treasury_auctions",
+      "scope": "今回個別本文の差分網羅未完了"
+    },
+    {
+      "id": "treasury_buybacks",
+      "scope": "今回個別本文の差分網羅未完了"
+    },
+    {
+      "id": "nyfed_operations",
+      "scope": "今回個別本文の差分網羅未完了"
+    },
+    {
+      "id": "white_house",
+      "scope": "今回個別本文の差分網羅未完了"
+    },
+    {
+      "id": "ofac",
+      "scope": "今回個別本文の差分網羅未完了"
+    },
+    {
+      "id": "eia_petroleum",
+      "scope": "今回個別本文の差分網羅未完了"
+    },
+    {
+      "id": "fec_results",
+      "scope": "今回個別本文の差分網羅未完了"
+    },
+    {
+      "id": "cfius",
+      "scope": "今回個別本文の差分網羅未完了"
+    }
+  ],
+  "missing_sources": [
+    "各情報源の完全な期間別差分",
+    "メール経路全件照合",
+    "史料の当時のインフレ・実質金利・エネルギー・流動性の比較値",
+    "review_after照合",
+    "PostgreSQL同期状態"
+  ],
+  "facts": [
+    "FRBは2027年10月会合を戦略議論専用とする暫定日程を公表。既存カレンダーは別URLで既保存、個別声明は今回別レコードで保存。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "政策発表予定日の変更は情報集積期間を変え得るが、金融政策の方向は示さない。"
+  ],
+  "historical_comparisons": [
+    {
+      "case": "fed-response-2020-03-15",
+      "similarity": "金融政策運営",
+      "difference": "2020年は市場機能支援の金利引下げと資産買入、今回の声明は会合日程変更",
+      "missing": "当時と現在の流動性・物価の比較値"
+    },
+    {
+      "case": "great-recession-2007-2009",
+      "similarity": "政策反応を検討する枠組み",
+      "difference": "2007年は住宅・信用危機、今回の発表は日程",
+      "caveat": "後年の史料であり当時の知識に使わない"
+    },
+    {
+      "case": "oil-shock-1973-1974",
+      "similarity": "供給と物価への政策対応の課題",
+      "difference": "1973年は禁輸と減産、今回は会合の暫定日程",
+      "caveat": "後年史料で当時の予測に使わない"
+    }
+  ],
+  "scenarios": {
+    "days": "日程の旧版とFRB発表を照合",
+    "weeks": "雇用・物価と金利の両国側を確認",
+    "months": "会合日程と市場織り込みを監視"
+  },
+  "invalidations": [
+    "FRBによる日程再改訂や追加説明"
+  ],
+  "review_after": null,
+  "fx": "双方の最新時点資料不足で判断保留",
+  "db_sync": "未確認",
+  "pc_notification": "未確認"
+}
