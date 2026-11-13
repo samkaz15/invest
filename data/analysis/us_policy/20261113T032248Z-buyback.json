@@ -1,0 +1,81 @@
+{
+  "as_of": "2026-11-13T03:22:48.684Z",
+  "status": "partial",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/BBR_20261112184000.pdf",
+      "publication_date": "2026-11-12",
+      "publication_time": null,
+      "retrieved_at": "2026-11-13T03:22:48.684Z",
+      "scope": "11月12日の結果PDF全2ページと脚注を目視。全文訳・記録重複照合は未完了。ほかの同源差分は未照合。"
+    },
+    {
+      "id": "treasury_news",
+      "scope": "今回の差分未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "scope": "今回の差分未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "scope": "今回の差分未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "scope": "今回の差分未確認"
+    },
+    {
+      "id": "white_house",
+      "scope": "今回の差分未確認"
+    },
+    {
+      "id": "ofac",
+      "scope": "今回の差分未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "scope": "今回の差分未確認"
+    },
+    {
+      "id": "fec_results",
+      "scope": "今回の差分未確認"
+    },
+    {
+      "id": "cfius",
+      "scope": "今回の差分未確認"
+    }
+  ],
+  "missing_sources": [
+    "10情報源の期間別完全照合",
+    "URL・時刻・ハッシュによるメール重複照合",
+    "PDF安全確認・全訳",
+    "歴史ケース原本",
+    "過去分析review_after"
+  ],
+  "facts": [
+    {
+      "source_url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/BBR_20261112184000.pdf",
+      "value": "財務省のTIPS買い戻し、額面受入5億5600万ドル、提示32億2400万ドル、上限7億5000万ドル、対象28銘柄中8銘柄。11月13日決済予定。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "財務省の既発債買い戻しは対象銘柄の流動性に寄与し得るが、利回りや準備預金への影響は実測が必要。FRBの自己勘定の購入とは区別。"
+  ],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "決済及び債券の気配・取引量を確認",
+    "weeks": "対象TIPSと資金需給を照合",
+    "months": "国債発行・物価と金融政策を検証"
+  },
+  "invalidations": [
+    "決済の不成立や訂正、流動性改善が確認できない場合は見直し"
+  ],
+  "review_after": null,
+  "fx": "通貨両側の同時点資料不足により方向判断保留",
+  "postgresql_sync": "未確認",
+  "pc_notification": "未確認"
+}
