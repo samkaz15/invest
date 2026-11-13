@@ -1,0 +1,97 @@
+{
+  "as_of": "2026-11-13T19:51:02Z",
+  "status": "partial",
+  "document_ids": [
+    "treasury-20261113-guatemala-sanctions-mail-7387f8cc",
+    "ofac-20261113-counter-narcotics-fc7a64de"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "requested_from": null,
+      "checked_at": "2026-11-13T19:51:02Z",
+      "scope": "11月13日財務省個別発表本文を取得し既存メールと内容照合。全期間は未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の確認は未完了"
+    },
+    {
+      "id": "treasury_buybacks",
+      "requested_from": null,
+      "checked_at": "2026-11-13T19:51:02Z",
+      "scope": "四半期暫定買戻し予定表の検索結果を取得。PDF全ページ未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の確認は未完了"
+    },
+    {
+      "id": "nyfed_operations",
+      "requested_from": null,
+      "checked_at": "2026-11-13T19:51:02Z",
+      "scope": "月次オペ表の検索結果。次期日程・実績未確認"
+    },
+    {
+      "id": "white_house",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の確認は未完了"
+    },
+    {
+      "id": "ofac",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の確認は未完了"
+    },
+    {
+      "id": "eia_petroleum",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の確認は未完了"
+    },
+    {
+      "id": "fec_results",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の確認は未完了"
+    },
+    {
+      "id": "cfius",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回の確認は未完了"
+    }
+  ],
+  "facts": [
+    "米財務省11月13日付個別発表のURLを確認。先行保存した財務省メールと内容が対応する。初出時刻は不明。",
+    "暫定表には11月17日の20〜30年名目利付債の流動性支援買戻し上限60億ドルを記載。正式公告・結果ではない。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "買戻しが実行されれば対象既発債の流動性と財務省資金需給に影響し得るが、実行額・資金調達・対象銘柄の需給次第。"
+  ],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "正式公告・買戻し予定の変更を確認",
+    "weeks": "受入額と決済、国債発行・償還を照合",
+    "months": "流動性と各国金利・物価を追跡"
+  },
+  "invalidations": [
+    "正式公告変更、入札額不足または資金調達動向が仮説と異なる場合は再評価"
+  ],
+  "review_after": null,
+  "fx": "両通貨の資料不足のため判断保留",
+  "missing_sources": [
+    "四半期予定PDF全ページ・脚注および正式公告の確認",
+    "10情報源の完全確認時刻・差分期間・個別資料の網羅",
+    "財務省サイト上の全文とメール原文の完全一致・内容ハッシュ照合",
+    "レビュー期限到来分の点検と史料比較"
+  ],
+  "db_sync": "前回確認の同期run 43476316182は失敗。最新反映未確認。",
+  "pc_notification": "未確認"
+}
