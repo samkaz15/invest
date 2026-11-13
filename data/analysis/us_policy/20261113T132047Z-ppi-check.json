@@ -1,0 +1,99 @@
+{
+  "as_of": "2026-11-13T13:20:47Z",
+  "status": "partial",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認、前回完全確認時刻不明"
+    },
+    {
+      "id": "treasury_auctions",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認、前回完全確認時刻不明"
+    },
+    {
+      "id": "treasury_buybacks",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認、前回完全確認時刻不明"
+    },
+    {
+      "id": "fed_fomc",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認、前回完全確認時刻不明"
+    },
+    {
+      "id": "nyfed_operations",
+      "requested_from": null,
+      "checked_at": "2026-11-13T13:20:47Z",
+      "scope": "月次オペ表を取得。表示は10月15日〜11月13日の既存予定、次期予定の全量は確認できず"
+    },
+    {
+      "id": "white_house",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認、前回完全確認時刻不明"
+    },
+    {
+      "id": "ofac",
+      "requested_from": null,
+      "checked_at": "2026-11-13T13:20:47Z",
+      "scope": "一覧取得。表示最新は11月9日、表示遅延を排除できない"
+    },
+    {
+      "id": "eia_petroleum",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認、前回完全確認時刻不明"
+    },
+    {
+      "id": "fec_results",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認、前回完全確認時刻不明"
+    },
+    {
+      "id": "cfius",
+      "requested_from": null,
+      "checked_at": null,
+      "scope": "今回差分未確認、前回完全確認時刻不明"
+    }
+  ],
+  "facts": [
+    {
+      "url": "https://www.bls.gov/news.release/ppi.nr0.htm",
+      "observation": "取得ページは2026年9月分。10月分の公表予定を11月13日米東部08:30と記載。",
+      "retrieved_at": "2026-11-13T13:20:47Z",
+      "published_at": null
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "PPIの変化は企業の投入・販売価格に関する情報。消費者物価や政策金利への波及は転嫁率、需要、ほかの指標に依存。"
+  ],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "公表時刻以降にBLSの10月本文と表を取得し、既存記録と照合",
+    "weeks": "価格転嫁・物価・金利実績を確認",
+    "months": "米国と相手国の物価・金融政策を比較"
+  },
+  "invalidations": [
+    "市場や最新の統計結果が未確認であるため、事後に前提を修正"
+  ],
+  "review_after": null,
+  "fx": "両側資料不足につき各通貨ペア判断保留",
+  "missing_sources": [
+    "PPI10月分本文・表は取得できていない。配信の遅延やキャッシュの可能性もあり、未発表と断定しない。",
+    "指定10情報源の完全な差分期間と本文・表",
+    "メール経路との全件重複照合",
+    "レビュー期限到来分の全件再確認",
+    "歴史比較・相手通貨資料"
+  ],
+  "db_sync": "直近のPostgreSQL反映未確認。過去に同期失敗あり。",
+  "pc_notification": "未確認"
+}
