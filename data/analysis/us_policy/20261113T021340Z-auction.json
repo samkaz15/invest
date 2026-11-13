@@ -1,0 +1,79 @@
+{
+  "as_of": "2026-11-13T02:13:40.600Z",
+  "status": "partial",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/R_20261112_4.pdf",
+      "scope": "11月12日30年債のPDF1ページ本文・表・脚注を取得し視覚確認。前回未取得だった対象のみ。差分の網羅は未完了。",
+      "publication_date": "2026-11-12",
+      "publication_time": null
+    },
+    {
+      "id": "treasury_news",
+      "scope": "今回の差分照合未完了"
+    },
+    {
+      "id": "treasury_buybacks",
+      "scope": "今回の差分照合未完了"
+    },
+    {
+      "id": "fed_fomc",
+      "scope": "今回の差分照合未完了"
+    },
+    {
+      "id": "nyfed_operations",
+      "scope": "今回の差分照合未完了"
+    },
+    {
+      "id": "white_house",
+      "scope": "今回の差分照合未完了"
+    },
+    {
+      "id": "ofac",
+      "scope": "今回の差分照合未完了"
+    },
+    {
+      "id": "eia_petroleum",
+      "scope": "今回の差分照合未完了"
+    },
+    {
+      "id": "fec_results",
+      "scope": "今回の差分照合未完了"
+    },
+    {
+      "id": "cfius",
+      "scope": "今回の差分照合未完了"
+    }
+  ],
+  "missing_sources": [
+    "既存メール経路・知識文書のハッシュ重複照合",
+    "PDF原本の安全確認と全文翻訳",
+    "他9情報源の差分",
+    "史料ケースとレビュー期限照合"
+  ],
+  "facts": [
+    {
+      "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/R_20261112_4.pdf",
+      "description": "30年債公募額250億ドル、最高落札利回り5.441%、応募倍率2.36。公募内落札250億11800ドル、SOMA公募外50億7116万5700ドル。SOMA額は直接新規資産購入とは判断しない。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "金利と資金需給の因果評価には入札前利回り、償還額や既存予想との比較が必要"
+  ],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "入札前利回りとSOMAの償還再投資の確認",
+    "weeks": "国債供給と資金需給の推移確認",
+    "months": "物価・政策金利と発行計画を確認"
+  },
+  "invalidations": [
+    "原表の訂正または入札前利回りの確認で評価を見直す"
+  ],
+  "review_after": null,
+  "fx": "通貨両側の同時点資料不足で方向判断保留",
+  "postgresql_sync": "未確認",
+  "pc_notification": "未確認"
+}
