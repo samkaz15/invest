@@ -1,0 +1,105 @@
+{
+  "as_of": "2026-11-13T08:57:39Z",
+  "status": "partial",
+  "purpose": "既存記録の再照合と直前の欠損認識の訂正。新発表の網羅調査は未完了。",
+  "supersedes_analysis": "data/analysis/us_policy/20261113T074436Z-check.json",
+  "document_ids": [
+    "ustreas-20261112-auction-result-912810uy2-51cecae3",
+    "ustreas-20261112-tips-buyback-results-191d91bb",
+    "eia-20261112-wpsr-overview-1396301e"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "requested_from": null,
+      "checked_at": "2026-11-13T08:57:39Z",
+      "scope": "直前の部分調査を参照。今回差分の網羅確認は未完了"
+    },
+    {
+      "id": "treasury_auctions",
+      "requested_from": null,
+      "checked_at": "2026-11-13T08:57:39Z",
+      "scope": "既存30年債結果JSONの本文・表・訳文を照合。今回全差分未走査"
+    },
+    {
+      "id": "treasury_buybacks",
+      "requested_from": null,
+      "checked_at": "2026-11-13T08:57:39Z",
+      "scope": "既存TIPS買い戻し結果JSONの本文・表・訳文を照合。今回全差分未走査"
+    },
+    {
+      "id": "fed_fomc",
+      "requested_from": null,
+      "checked_at": "2026-11-13T08:57:39Z",
+      "scope": "直前の部分調査を参照。今回差分の網羅確認は未完了"
+    },
+    {
+      "id": "nyfed_operations",
+      "requested_from": null,
+      "checked_at": "2026-11-13T08:57:39Z",
+      "scope": "直前の部分調査を参照。今回差分の網羅確認は未完了"
+    },
+    {
+      "id": "white_house",
+      "requested_from": null,
+      "checked_at": "2026-11-13T08:57:39Z",
+      "scope": "直前の部分調査を参照。今回差分の網羅確認は未完了"
+    },
+    {
+      "id": "ofac",
+      "requested_from": null,
+      "checked_at": "2026-11-13T08:57:39Z",
+      "scope": "直前の部分調査を参照。今回差分の網羅確認は未完了"
+    },
+    {
+      "id": "eia_petroleum",
+      "requested_from": null,
+      "checked_at": "2026-11-13T08:57:39Z",
+      "scope": "既存週報overviewの8ページ訳・保存状態と事実を照合。今回全差分未走査"
+    },
+    {
+      "id": "fec_results",
+      "requested_from": null,
+      "checked_at": "2026-11-13T08:57:39Z",
+      "scope": "直前の部分調査を参照。今回差分の網羅確認は未完了"
+    },
+    {
+      "id": "cfius",
+      "requested_from": null,
+      "checked_at": "2026-11-13T08:57:39Z",
+      "scope": "直前の部分調査を参照。今回差分の網羅確認は未完了"
+    }
+  ],
+  "missing_sources": [
+    "情報源別の前回完全確認時刻が不明。24時間重複を含む確定差分期間を特定できない。",
+    "10情報源すべてについて新着候補の個別本文・表と対象期間全体の網羅確認は未完了。取得失敗を新着なしと扱わない。",
+    "メール経路との全件URL・時刻・ハッシュ照合は未完了。",
+    "過去のreview_after到来分の今回全件再照合は未完了。",
+    "PDF連絡先省略のため30年債入札と買戻しの訳文はpartial。両原本PDFは保存されていない。"
+  ],
+  "facts": [
+    "30年債入札結果は既存保存済み。公募250億ドル、最高落札利回り5.441%、応札倍率2.36。公募外SOMA配分約50.71億ドル。",
+    "TIPS買い戻し結果は既存保存済み。提示額面32.24億ドル、受入額面5.56億ドル。",
+    "EIA週報overviewは8ページ訳・原本保存済み。商業原油在庫4億1441.7万バレル、前週比465.7万バレル増。対象週は11月6日終了。",
+    "直前の部分報告が買戻しや週報について保存状況未確認とした点を訂正する。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "国債の需給と発行・償還およびSOMA配分を併せて評価。財務省の買戻しとFRB公開市場操作を区別する。",
+    "原油在庫増は供給・需要バランスの一部を示すが、製油所稼働・輸出入・先物需要が変われば価格影響は異なる。"
+  ],
+  "historical_comparisons": [],
+  "scenarios": {
+    "days": "次回の入札・買戻し・FRB実績および価格を確認",
+    "weeks": "在庫・輸出入・金利・応札の継続性を確認",
+    "months": "インフレと各国金融政策の資料が揃えば再評価"
+  },
+  "invalidations": [
+    "在庫増が一時要因と判明し供給制約や需要増が優勢になる場合、原油への需給評価を修正。",
+    "入札条件や償還・保有額の実績が想定と異なれば国債需給評価を修正。"
+  ],
+  "fx": "通貨の両側の同時点資料不足により判断保留",
+  "review_after": null,
+  "db_sync": "過去のGitHub Actions run 43229985145は失敗。最新結果と今回の反映は未確認。",
+  "pc_notification": "未確認"
+}
