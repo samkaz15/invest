@@ -1,0 +1,29 @@
+{
+  "id": "bls-20261113-oct-ppi-excerpt-3a4e1dbc",
+  "source_url": "https://www.bls.gov/news.release/ppi.nr0.htm",
+  "title_en": "Producer Price Indexes - October 2026",
+  "title_ja": "2026年10月の生産者物価指数（冒頭抜粋）",
+  "published_at": "2026-11-13T08:30:00-05:00",
+  "retrieved_at": "2026-11-13T13:55:42Z",
+  "received_at": "2026-11-13T13:55:42Z",
+  "received_at_kind": "web_retrieved",
+  "source": "U.S. Bureau of Labor Statistics",
+  "topics": [
+    "inflation",
+    "ppi"
+  ],
+  "original_text": "The Producer Price Index for final demand rose 0.3 percent in October, seasonally adjusted, the U.S. Bureau of Labor Statistics reported today. Final demand prices advanced 1.4 percent in September and 0.4 percent in August. (See table A.) On an unadjusted basis, the index for final demand increased 6.5 percent for the 12 months ended in October, the largest 12-month rise since moving up 7.4 percent in November 2022.",
+  "translation_ja": "米労働統計局は、10月の最終需要の生産者物価指数が季節調整済みで前月比0.3％上昇したと発表した。最終需要価格は9月に1.4％、8月に0.4％上昇していた（表A参照）。季節調整前の最終需要指数は10月までの12カ月間で6.5％上昇し、2022年11月の7.4％以来、最大の12カ月上昇率となった。",
+  "content_sha256": "3a4e1dbcf2032ad84b074d2e3b02dc1421787f2273207045f3b24440b1a71157",
+  "facts_ja": [
+    "最終需要PPIは季節調整済み前月比0.3％増、季節調整前前年比6.5％増。"
+  ],
+  "inference_ja": [],
+  "translation_status": "partial",
+  "content_scope": "excerpt_translation",
+  "missing_parts": [
+    "冒頭1段落のみ保存・翻訳。本文残部、全表・脚注および別リンク先は未保存・未翻訳。全文ハッシュ未取得。",
+    "公開URL・公表時刻・ハッシュによるメール経路全件照合未完了。"
+  ],
+  "notification_eligible": false
+}
