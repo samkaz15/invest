@@ -1,0 +1,115 @@
+{
+  "as_of": "2026-11-13T21:31:59Z",
+  "status": "partial",
+  "document_ids": [
+    "bls-20261113-oct-ppi-excerpt-3a4e1dbc",
+    "ofac-20261113-counter-narcotics-fc7a64de"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:31:59Z",
+      "scope": "入口取得。個別本文と表の網羅確認および前回完全確認時刻は未確認。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:31:59Z",
+      "scope": "入口取得。個別本文と表の網羅確認および前回完全確認時刻は未確認。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:31:59Z",
+      "scope": "入口取得。個別本文と表の網羅確認および前回完全確認時刻は未確認。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:31:59Z",
+      "scope": "入口取得。個別本文と表の網羅確認および前回完全確認時刻は未確認。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:31:59Z",
+      "scope": "入口取得。個別本文と表の網羅確認および前回完全確認時刻は未確認。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:31:59Z",
+      "scope": "入口取得。個別本文と表の網羅確認および前回完全確認時刻は未確認。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:31:59Z",
+      "scope": "入口取得。個別本文と表の網羅確認および前回完全確認時刻は未確認。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:31:59Z",
+      "scope": "入口取得。個別本文と表の網羅確認および前回完全確認時刻は未確認。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:31:59Z",
+      "scope": "入口取得。個別本文と表の網羅確認および前回完全確認時刻は未確認。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "checked_at": "2026-11-13T21:31:59Z",
+      "scope": "入口取得。個別本文と表の網羅確認および前回完全確認時刻は未確認。"
+    }
+  ],
+  "missing_sources": [
+    "各情報源の確定差分期間・個別本文と表",
+    "メール経路全件照合",
+    "PPI全表・脚注の翻訳",
+    "review_after到来分の点検",
+    "相手通貨の同時点資料"
+  ],
+  "facts": [
+    "既存PPI記録は前月比0.3％、前年比6.5％。2026-11-13 22:30 JST発表。",
+    "OFAC告示は米11月13日付の麻薬対策指定。初出時刻不明。",
+    "NY連銀の月次表示は再投資予定146億ドル、準備管理購入なし。個別実績は未確認。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "価格転嫁と需要が続けば物価・政策金利に波及し得る。"
+  ],
+  "historical_comparisons": [
+    {
+      "id": "oil-shock-1973-1974",
+      "comparison": "当時は石油供給制約。今回PPIから同種の供給制約は確認できない。",
+      "missing": "当初のインフレ、実質金利、流動性、エネルギー構造の当時公表値が不足。後年の解説は当時の情報として使用しない。"
+    }
+  ],
+  "scenarios": {
+    "days": "市場予想と金利反応を照合",
+    "weeks": "CPI・PCEとエネルギー供給を確認",
+    "months": "各国政策と景気を比較"
+  },
+  "invalidations": [
+    "価格転嫁が弱い、需要が減退、金利反応が逆の場合は見直す"
+  ],
+  "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両側資料不足で判断保留",
+  "review_after": null,
+  "db_sync": "前回の同期失敗",
+  "pc_notification": "未確認"
+}
