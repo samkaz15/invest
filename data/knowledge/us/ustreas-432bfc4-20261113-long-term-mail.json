@@ -1,0 +1,43 @@
+{
+  "source": "U.S. Department of the Treasury",
+  "observation_date": "2026-11-13",
+  "received_at": "2026-11-13T20:55:55.000Z",
+  "received_at_jst": "2026-11-14T05:55:55.000+09:00",
+  "received_at_kind": "gmail_received",
+  "publication_timezone": "America/New_York",
+  "topics": [
+    "treasuries"
+  ],
+  "published_at": null,
+  "retrieved_at": "2026-11-13T21:01:51Z",
+  "inference_ja": [],
+  "id": "ustreas-432bfc4-20261113-long-term-mail",
+  "source_type": "official_subscription_email",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/432bfc4",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Long-Term Rates Update",
+  "title_ja": "米財務省メール・日次長期国債金利の更新",
+  "original_text": "You are subscribed to Daily Treasury Long-Term Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "translation_ja": "米財務省の「日次長期国債金利」の配信に登録されています。この情報が更新され、現在利用できます。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "facts_ja": [
+    "米財務省が更新を案内し、公式表のURLを掲載した。メール本文に利回りの数値は記載されていない。",
+    "取得した公式表では当日の数値を確認できなかった。"
+  ],
+  "content_scope": "full_translation",
+  "content_scope_note": "メールの実質本文の全訳。購読管理・配送フッターを除く。公開配信版とリンク先は別資料。",
+  "translation_status": "partial",
+  "missing_parts": {
+    "公開配信版": "本文へのアクセス不可。公表時刻は不明。",
+    "公式表": "米国11月13日観測行と付随注記の確認が未完了。リンクを再取得する。"
+  },
+  "attachment_status": "対象メールにMIME添付なし。公開資料はHTML表。",
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省が日次長期国債金利の更新をメールで案内、当日の公式表の数値は未確認です。",
+  "related_source_urls": [
+    "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026"
+  ],
+  "unretrieved_urls": [
+    "https://content.govdelivery.com/accounts/USTREAS/bulletins/432bfc4",
+    "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026"
+  ],
+  "content_sha256": "c08a1dd8f1d446e734cd136f4a3f8c99be24221ab59362fc24f28e6212d5d2c3"
+}

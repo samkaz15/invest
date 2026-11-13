@@ -1,0 +1,40 @@
+{
+  "source": "U.S. Department of the Treasury",
+  "observation_date": "2026-11-13",
+  "received_at": "2026-11-13T20:56:46.000Z",
+  "received_at_jst": "2026-11-14T05:56:46.000+09:00",
+  "received_at_kind": "gmail_received",
+  "publication_timezone": "America/New_York",
+  "topics": [
+    "treasuries"
+  ],
+  "published_at": null,
+  "retrieved_at": "2026-11-13T21:01:51Z",
+  "inference_ja": [],
+  "id": "treasury-rates-20261113-yield-curve",
+  "source_type": "official_public_data",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "title_en": "Daily Treasury Yield Curve Rates",
+  "title_ja": "日次名目国債イールドカーブ金利（11月13日観測分）",
+  "original_text": "| Date | 20 YR | 30 YR | Extrapolation Factor | 6 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 8 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 17 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 52 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 1 Mo | 1.5 Mo | 2 Mo | 3 Mo | 4 Mo | 6 Mo | 1 Yr | 2 Yr | 3 Yr | 5 Yr | 7 Yr | 10 Yr | 20 Yr | 30 Yr |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 11/13/2026 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | 4.10 | 4.18 | 4.26 | 4.32 | 4.34 | 4.42 | 4.65 | 4.88 | 4.92 | 4.98 | 5.05 | 5.15 | 5.52 | 5.47 |\n| 11/12/2026 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | 4.12 | 4.18 | 4.26 | 4.32 | 4.35 | 4.42 | 4.65 | 4.86 | 4.90 | 4.95 | 5.02 | 5.10 | 5.48 | 5.43 |\n\nIn addition, given that CMTs are used in many statutorily and regulatory determined loan and credit programs as well as for setting interest rates on non-marketable government securities, establishing a floor of zero more accurately reflects borrowing costs related to various programs.",
+  "translation_ja": "2026年11月13日（米国）の更新行と比較用の前営業日11月12日。単位は％。N/Aは原表の値なし。\n\n| 日付 | 20年 | 30年 | 外挿係数 | 6週・銀行割引率 | クーポン相当利回り | 8週・銀行割引率 | クーポン相当利回り | 17週・銀行割引率 | クーポン相当利回り | 52週・銀行割引率 | クーポン相当利回り | 1か月 | 1.5か月 | 2か月 | 3か月 | 4か月 | 6か月 | 1年 | 2年 | 3年 | 5年 | 7年 | 10年 | 20年 | 30年 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2026-11-13 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | 4.10 | 4.18 | 4.26 | 4.32 | 4.34 | 4.42 | 4.65 | 4.88 | 4.92 | 4.98 | 5.05 | 5.15 | 5.52 | 5.47 |\n| 2026-11-12 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | 4.12 | 4.18 | 4.26 | 4.32 | 4.35 | 4.42 | 4.65 | 4.86 | 4.90 | 4.95 | 5.02 | 5.10 | 5.48 | 5.43 |\n\n負の利回りと名目CMT：金融市場の状況と極めて低い金利が組み合わさると、流通市場で取引される一部の財務省証券が負の利回りとなることがある。多くは現金・レポ市場に関係する国債市場の高度に技術的な要因を反映し、資金の時間価値とは無関係な場合がある。この場合も、MC法への入力として負の利回りに相当する価格の利用は制限しない。ただし名目CMT系列の算出後のパー・イールドカーブにはゼロの下限を設ける。これは名目国債入札で負の利回りを認めない方針と整合する。またCMTは法令・規則に基づく多数の融資・信用制度や非市場性国債の金利設定にも用いるため、ゼロ下限は各制度の借入費用をより正確に反映する。",
+  "facts_ja": [
+    "名目2年4.88％、10年5.15％、20年5.52％、30年5.47％。前営業日は順に4.86％、5.10％、5.48％、5.43％。"
+  ],
+  "content_scope": "excerpt",
+  "content_scope_note": "更新日と前営業日の行は全列を収録。定義は前号と確認済みの公式説明。",
+  "translation_status": "partial",
+  "missing_parts": {
+    "公式表": "年次表の他の日付、全方法論・脚注の訳は未収録。更新行の初出時刻は未確認。"
+  },
+  "attachment_status": "公開HTML表。更新通知に添付PDFなし。",
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省が名目国債の利回りを更新、米国十一月十三日の十年物は五・一五％となった。",
+  "related_document_ids": [
+    "ustreas-432bfc5-20261113-yield-curve-mail"
+  ],
+  "related_source_urls": [
+    "https://content.govdelivery.com/accounts/USTREAS/bulletins/432bfc5"
+  ],
+  "content_sha256": "8540cf00e97bfe7b589a22c74dac06dca1823ea6c7ab828eb0bbf30840cd60e6"
+}

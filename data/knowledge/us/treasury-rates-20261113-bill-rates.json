@@ -1,0 +1,40 @@
+{
+  "source": "U.S. Department of the Treasury",
+  "observation_date": "2026-11-13",
+  "received_at": "2026-11-13T20:56:24.000Z",
+  "received_at_jst": "2026-11-14T05:56:24.000+09:00",
+  "received_at_kind": "gmail_received",
+  "publication_timezone": "America/New_York",
+  "topics": [
+    "treasuries"
+  ],
+  "published_at": null,
+  "retrieved_at": "2026-11-13T21:01:51Z",
+  "inference_ja": [],
+  "id": "treasury-rates-20261113-bill-rates",
+  "source_type": "official_public_data",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026",
+  "title_en": "Daily Treasury Bill Rates",
+  "title_ja": "日次短期国債金利（11月13日観測分）",
+  "original_text": "| Date | 20 YR | 30 YR | Extrapolation Factor | 4 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 6 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 8 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 13 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 17 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 26 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 52 WEEKS BANK DISCOUNT | COUPON EQUIVALENT | 1 Mo | 1.5 Mo | 2 Mo | 3 Mo | 4 Mo | 20 Yr | 30 Yr |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 11/13/2026 | N/A | N/A | N/A | 3.95 | 4.02 | 4.01 | 4.08 | 4.08 | 4.16 | 4.13 | 4.23 | 4.22 | 4.34 | 4.31 | 4.47 | 4.42 | 4.63 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n| 11/12/2026 | N/A | N/A | N/A | 3.97 | 4.04 | 4.01 | 4.08 | 4.09 | 4.17 | 4.14 | 4.24 | 4.23 | 4.35 | 4.30 | 4.46 | 4.43 | 4.64 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n\nDaily Treasury Bill Rates: These rates are the daily secondary market quotations on the most recently auctioned Treasury Bills for each maturity tranche (4-week, 6-week, 8-week, 13-week, 17-week, 26-week, and 52-week) for which Treasury currently issues new bills. Market quotations are obtained at approximately 3:30 PM each business day by the Federal Reserve Bank of New York. The Bank Discount rate is the rate at which a bill is quoted in the secondary market and is based on the par value, amount of the discount and a 360-day year. The Coupon Equivalent, also called the Bond Equivalent, or the Investment Yield, is the bill's yield based on the purchase price, discount, and a 365- or 366-day year. The Coupon Equivalent can be used to compare the yield on a discount bill to the yield on a nominal coupon security that pays semiannual interest with the same maturity date.",
+  "translation_ja": "2026年11月13日（米国）の更新行と比較用の前営業日11月12日。単位は％。N/Aは原表の値なし。\n\n| 日付 | 20年 | 30年 | 外挿係数 | 4週・銀行割引率 | クーポン相当利回り | 6週・銀行割引率 | クーポン相当利回り | 8週・銀行割引率 | クーポン相当利回り | 13週・銀行割引率 | クーポン相当利回り | 17週・銀行割引率 | クーポン相当利回り | 26週・銀行割引率 | クーポン相当利回り | 52週・銀行割引率 | クーポン相当利回り | 1か月 | 1.5か月 | 2か月 | 3か月 | 4か月 | 20年 | 30年 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2026-11-13 | N/A | N/A | N/A | 3.95 | 4.02 | 4.01 | 4.08 | 4.08 | 4.16 | 4.13 | 4.23 | 4.22 | 4.34 | 4.31 | 4.47 | 4.42 | 4.63 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n| 2026-11-12 | N/A | N/A | N/A | 3.97 | 4.04 | 4.01 | 4.08 | 4.09 | 4.17 | 4.14 | 4.24 | 4.23 | 4.35 | 4.30 | 4.46 | 4.43 | 4.64 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |\n\n日次財務省短期国債金利：現在新規発行される4、6、8、13、17、26、52週間の各満期区分の直近入札済み証券について、日々の流通市場気配を示す。NY連銀が各営業日の午後3時30分頃に取得する。銀行割引率は流通市場で提示される率で、額面、割引額、360日年を基準とする。クーポン相当利回りは債券相当利回り・投資利回りとも呼び、購入価格、割引額、365日または366日年を基準とする。同じ満期の、半年ごとに利払いする名目クーポン証券と割引短期国債の利回りを比較するために利用できる。",
+  "facts_ja": [
+    "4週物の銀行割引率3.95％、クーポン相当利回り4.02％。52週物はそれぞれ4.42％、4.63％。"
+  ],
+  "content_scope": "excerpt",
+  "content_scope_note": "更新日と前営業日の行は全列を収録。定義は前号と確認済みの公式説明。",
+  "translation_status": "partial",
+  "missing_parts": {
+    "公式表": "年次表の他の日付、全方法論・脚注の訳は未収録。更新行の初出時刻は未確認。"
+  },
+  "attachment_status": "公開HTML表。更新通知に添付PDFなし。",
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省が米国十一月十三日の短期国債金利を公表、四週物の投資利回りは四・〇二％。",
+  "related_document_ids": [
+    "ustreas-432bfc7-20261113-bill-rates-mail"
+  ],
+  "related_source_urls": [
+    "https://content.govdelivery.com/accounts/USTREAS/bulletins/432bfc7"
+  ],
+  "content_sha256": "cad1251fdcb54090470438ab5684293601d3c117a5673f49c081e13704454743"
+}
