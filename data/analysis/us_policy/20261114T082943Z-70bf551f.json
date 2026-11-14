@@ -1,0 +1,129 @@
+{
+  "id": "20261114T082943Z-70bf551f",
+  "created_at": "2026-11-14T08:29:43Z",
+  "status": "partial",
+  "source_coverage": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-14T08:29:43Z",
+      "period_start": null,
+      "period_end": "2026-11-14T08:29:43Z",
+      "status": "一覧ページ確認のみ、期間内の個別資料の網羅性未確認",
+      "missing": "前回以降の完全な差分、各個別本文・表、確認開始時刻は未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-14T08:29:43Z",
+      "period_start": null,
+      "period_end": "2026-11-14T08:29:43Z",
+      "status": "一覧ページ確認のみ、期間内の個別資料の網羅性未確認",
+      "missing": "前回以降の完全な差分、各個別本文・表、確認開始時刻は未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-14T08:29:43Z",
+      "period_start": null,
+      "period_end": "2026-11-14T08:29:43Z",
+      "status": "一覧ページ確認のみ、期間内の個別資料の網羅性未確認",
+      "missing": "前回以降の完全な差分、各個別本文・表、確認開始時刻は未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-14T08:29:43Z",
+      "period_start": null,
+      "period_end": "2026-11-14T08:29:43Z",
+      "status": "一覧ページ確認のみ、期間内の個別資料の網羅性未確認",
+      "missing": "前回以降の完全な差分、各個別本文・表、確認開始時刻は未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-14T08:29:43Z",
+      "period_start": null,
+      "period_end": "2026-11-14T08:29:43Z",
+      "status": "一覧ページ確認のみ、期間内の個別資料の網羅性未確認",
+      "missing": "前回以降の完全な差分、各個別本文・表、確認開始時刻は未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-14T08:29:43Z",
+      "period_start": null,
+      "period_end": "2026-11-14T08:29:43Z",
+      "status": "一覧ページ確認のみ、期間内の個別資料の網羅性未確認",
+      "missing": "前回以降の完全な差分、各個別本文・表、確認開始時刻は未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-14T08:29:43Z",
+      "period_start": null,
+      "period_end": "2026-11-14T08:29:43Z",
+      "status": "一覧ページ確認のみ、期間内の個別資料の網羅性未確認",
+      "missing": "前回以降の完全な差分、各個別本文・表、確認開始時刻は未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-14T08:29:43Z",
+      "period_start": null,
+      "period_end": "2026-11-14T08:29:43Z",
+      "status": "取得失敗：タイムアウト",
+      "missing": "前回以降の完全な差分、各個別本文・表、確認開始時刻は未確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-14T08:29:43Z",
+      "period_start": null,
+      "period_end": "2026-11-14T08:29:43Z",
+      "status": "一覧ページ確認のみ、期間内の個別資料の網羅性未確認",
+      "missing": "前回以降の完全な差分、各個別本文・表、確認開始時刻は未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-14T08:29:43Z",
+      "period_start": null,
+      "period_end": "2026-11-14T08:29:43Z",
+      "status": "一覧ページ確認のみ、期間内の個別資料の網羅性未確認",
+      "missing": "前回以降の完全な差分、各個別本文・表、確認開始時刻は未確認"
+    }
+  ],
+  "knowledge_references": [
+    "nyfed-treasury-20261116-20261211-schedule-20261114",
+    "ofac-20261113-counter-narcotics-fc7a64de"
+  ],
+  "facts": [
+    "NY連銀の国債再投資予定は2026年11月16日から12月11日まで140億ドル。予定であり実際の購入額ではない。",
+    "OFACの2026年11月13日付麻薬対策措置は既存知識レコードに記録済み。"
+  ],
+  "inferences": [
+    "再投資が実行されれば民間の国債保有と資金需給に影響しうるが、発行額や満期償還、需要を併せて見る必要がある。"
+  ],
+  "scenarios": {
+    "days": "実施額や入札需要が予定と異なれば短期の国債需給評価は変わりうる。",
+    "weeks": "発行・償還と購入の合計、および資金市場の状況を確認。",
+    "months": "インフレと金融政策の展開次第で金利への影響は変化する。"
+  },
+  "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは相手通貨側の資料不足につき判断保留。",
+  "falsification": "実際の購入が予定より少ない、または発行・需要など他の要因が支配的となる場合、再投資による需給改善の推論は弱まる。",
+  "history": {
+    "reference": "data/history/us_policy/fed-response-2020-03-15.json",
+    "comparison": "2020年の市場機能維持目的の拡大措置と今回の再投資予定は目的と状況が異なる。当時の物価、金利、流動性、エネルギーの開始時点をこの実行では十分検証できない。",
+    "limitation": "3件は初期要約であり経済史全体や予測精度の検証を意味しない。"
+  },
+  "missing": [
+    "EIA週次石油資料タイムアウト、再取得",
+    "10情報源の完全な差分と本文・表・PDF",
+    "メール経路を含む全件の重複照合",
+    "期限到来レビューの網羅的確認",
+    "相手通貨側の一次資料"
+  ],
+  "sync": "直近で確認したUS knowledge database sync run 43566789878は失敗。PostgreSQL反映未確認。今回新規knowledge書込みなし。",
+  "review_after": null
+}
