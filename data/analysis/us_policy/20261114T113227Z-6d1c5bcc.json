@@ -1,0 +1,125 @@
+{
+  "as_of": "2026-11-14T11:32:27Z",
+  "document_ids": [
+    "eia-20261112-wpsr-summary-f3c7671f",
+    "eia-20261112-wpsr-table1-f08f4997"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-14T11:32:27Z",
+      "period_start": null,
+      "status": "landing_only",
+      "missing": "最新記録以降24時間重複の網羅的差分・個別本文とPDFは未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-14T11:32:27Z",
+      "period_start": null,
+      "status": "landing_only",
+      "missing": "最新記録以降24時間重複の網羅的差分・個別本文とPDFは未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-14T11:32:27Z",
+      "period_start": null,
+      "status": "landing_only",
+      "missing": "最新記録以降24時間重複の網羅的差分・個別本文とPDFは未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-14T11:32:27Z",
+      "period_start": null,
+      "status": "landing_only",
+      "missing": "最新記録以降24時間重複の網羅的差分・個別本文とPDFは未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-14T11:32:27Z",
+      "period_start": null,
+      "status": "landing_only",
+      "missing": "最新記録以降24時間重複の網羅的差分・個別本文とPDFは未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-14T11:32:27Z",
+      "period_start": null,
+      "status": "landing_only",
+      "missing": "最新記録以降24時間重複の網羅的差分・個別本文とPDFは未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-14T11:32:27Z",
+      "period_start": null,
+      "status": "landing_only",
+      "missing": "最新記録以降24時間重複の網羅的差分・個別本文とPDFは未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-14T11:32:27Z",
+      "period_start": null,
+      "status": "landing_and_existing_summary_and_table_read",
+      "missing": "最新記録以降24時間重複の網羅的差分・個別本文とPDFは未確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-14T11:32:27Z",
+      "period_start": null,
+      "status": "landing_only",
+      "missing": "最新記録以降24時間重複の網羅的差分・個別本文とPDFは未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-14T11:32:27Z",
+      "period_start": null,
+      "status": "landing_only",
+      "missing": "最新記録以降24時間重複の網羅的差分・個別本文とPDFは未確認"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "EIA 11月6日終了週の要約および表1は既存保存済みであり原文と訳文を確認。商業原油在庫は4億1441.7万バレル、前週比465.7万増。SPRは2億7953.5万で264.9万減。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "推論：供給と輸入が需要を上回る状態が持続すれば石油価格を抑える要因となりうるが、一週の在庫変化から持続性を断定できない。"
+  ],
+  "historical_comparisons": [
+    "2020年3月15日のFRB市場機能維持の国債購入計画は金融流動性への対応で、今回の石油在庫統計と機序が異なる。初期物価、実質金利、エネルギー構造と現在の比較資料は未確認。"
+  ],
+  "scenarios": [
+    "日：輸入と精製投入の内訳を確認。週：在庫変化が続くか確認。月：生産・需要・価格転嫁および政策金利を確認。通貨ペアは両側の資料不足につき保留。"
+  ],
+  "invalidations": [
+    "一時的輸入変動などが増加を説明し、次週以降の在庫が減少する場合、持続的供給超過の推論は弱まる。"
+  ],
+  "review_after": null,
+  "missing": [
+    "10情報源個別文書の網羅、PDFと表",
+    "Gmailとの全件照合",
+    "事後レビュー期限の網羅確認",
+    "PostgreSQL同期の現在結果",
+    "当時と現在の物価・金利・流動性・エネルギー構造"
+  ]
+}
