@@ -1,0 +1,115 @@
+{
+  "as_of": "2026-11-14T07:12:35Z",
+  "status": "partial",
+  "document_ids": [
+    "nyfed-treasury-20261116-20261211-schedule-20261114",
+    "ofac-20261113-counter-narcotics-fc7a64de"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "checked_at": "2026-11-14T07:12:35Z",
+      "scope": "入口取得。前回完全確認時刻と期間全体の個別文書・表は未確認。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "checked_at": "2026-11-14T07:12:35Z",
+      "scope": "入口取得。前回完全確認時刻と期間全体の個別文書・表は未確認。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "checked_at": "2026-11-14T07:12:35Z",
+      "scope": "入口取得。前回完全確認時刻と期間全体の個別文書・表は未確認。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "checked_at": "2026-11-14T07:12:35Z",
+      "scope": "入口取得。前回完全確認時刻と期間全体の個別文書・表は未確認。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "checked_at": "2026-11-14T07:12:35Z",
+      "scope": "入口と既存月次予定を確認。個別実績・償還未確認。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "checked_at": "2026-11-14T07:12:35Z",
+      "scope": "入口取得。前回完全確認時刻と期間全体の個別文書・表は未確認。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "checked_at": "2026-11-14T07:12:35Z",
+      "scope": "入口と既存告示を確認。全期間未確認。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "checked_at": "2026-11-14T07:12:35Z",
+      "scope": "週報入口タイムアウト。期間全体未確認。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "checked_at": "2026-11-14T07:12:35Z",
+      "scope": "入口取得。前回完全確認時刻と期間全体の個別文書・表は未確認。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "checked_at": "2026-11-14T07:12:35Z",
+      "scope": "入口取得。前回完全確認時刻と期間全体の個別文書・表は未確認。"
+    }
+  ],
+  "missing_sources": [
+    "EIA週報入口タイムアウト",
+    "各源の確定差分期間",
+    "個別資料・PDFの全件確認",
+    "メール経路全件照合",
+    "review_after到来分の全件点検",
+    "各国通貨の同時点資料"
+  ],
+  "facts": [
+    "NY連銀の11月16日〜12月11日再投資予定は約140億ドル。実績・償還は未確認。",
+    "OFACの11月13日付麻薬対策告示は既存記録と照合。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "再投資・発行・償還の差が国債需給と金利に影響し得る。"
+  ],
+  "historical_comparisons": [
+    {
+      "id": "fed-response-2020-03-15",
+      "comparison": "2020年は市場機能支援の保有拡大。今回の再投資予定は目的が異なる。",
+      "missing": "当初の物価・実質金利・流動性・エネルギー構造の同時点資料不足。"
+    }
+  ],
+  "scenarios": {
+    "days": "個別買入実績を確認",
+    "weeks": "発行・償還・再投資を照合",
+    "months": "各国政策と物価を比較"
+  },
+  "invalidations": [
+    "実施額や償還・発行が想定と異なる場合は見直す"
+  ],
+  "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両側資料不足で保留",
+  "review_after": null,
+  "db_sync": "直近US knowledge database sync失敗",
+  "pc_notification": "未確認"
+}
