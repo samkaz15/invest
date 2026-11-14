@@ -1,0 +1,114 @@
+{
+  "as_of": "2026-11-14T04:03:59Z",
+  "status": "partial",
+  "document_ids": [
+    "nyfed-treasury-20261116-20261211-schedule-20261114",
+    "eia-20261112-wpsr-summary-f3c7671f"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "checked_at": "2026-11-14T04:03:59Z",
+      "scope": "入口取得。前回完全確認時刻・対象期間全体の個別資料本文と表は未確認。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "checked_at": "2026-11-14T04:03:59Z",
+      "scope": "入口取得。前回完全確認時刻・対象期間全体の個別資料本文と表は未確認。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "checked_at": "2026-11-14T04:03:59Z",
+      "scope": "入口取得。前回完全確認時刻・対象期間全体の個別資料本文と表は未確認。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "checked_at": "2026-11-14T04:03:59Z",
+      "scope": "入口取得。前回完全確認時刻・対象期間全体の個別資料本文と表は未確認。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "checked_at": "2026-11-14T04:03:59Z",
+      "scope": "入口と月次再投資予定を確認。日別実績・償還は未確認。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "checked_at": "2026-11-14T04:03:59Z",
+      "scope": "入口取得。前回完全確認時刻・対象期間全体の個別資料本文と表は未確認。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "checked_at": "2026-11-14T04:03:59Z",
+      "scope": "入口取得。前回完全確認時刻・対象期間全体の個別資料本文と表は未確認。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "checked_at": "2026-11-14T04:03:59Z",
+      "scope": "週報入口と既存原油在庫表を取得。週報全表と対象期間差分は未完了。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "checked_at": "2026-11-14T04:03:59Z",
+      "scope": "入口取得。前回完全確認時刻・対象期間全体の個別資料本文と表は未確認。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "checked_at": "2026-11-14T04:03:59Z",
+      "scope": "入口取得。前回完全確認時刻・対象期間全体の個別資料本文と表は未確認。"
+    }
+  ],
+  "missing_sources": [
+    "前回完全確認時刻と各源の確定差分期間",
+    "全10源の個別文書・表・PDF",
+    "メール経路との全件照合",
+    "review_after到来分の点検",
+    "各国通貨の同時点資料"
+  ],
+  "facts": [
+    "NY連銀の11月16日〜12月11日再投資予定は約140億ドル。",
+    "EIA原表の11月6日終了週の商業原油在庫は4億1441万7000バレル。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "供給増や需要減で在庫増が続く場合、原油価格と物価上昇圧力が弱まり得る。"
+  ],
+  "historical_comparisons": [
+    {
+      "id": "oil-shock-1973-1974",
+      "comparison": "共通点は供給と物価・景気の関係。1973年は禁輸・減産で供給が制約され、今回の在庫増から同じ事態は確認できない。",
+      "missing": "当時公表の物価・実質金利・流動性・エネルギー構造の同時点値は未取得。後年の解説と区別。"
+    }
+  ],
+  "scenarios": {
+    "days": "原油と個別オペ実績を確認",
+    "weeks": "在庫・国債発行と償還を確認",
+    "months": "各国物価と金融政策を比較"
+  },
+  "invalidations": [
+    "在庫増が一時的で供給制約が優勢なら見直す"
+  ],
+  "fx": "USD/JPY・EUR/USD・USD/CHF・USD/CAD・AUD/USDは両側資料不足で判断保留",
+  "review_after": null,
+  "db_sync": "直近確認のUS knowledge database syncは失敗",
+  "pc_notification": "未確認"
+}
