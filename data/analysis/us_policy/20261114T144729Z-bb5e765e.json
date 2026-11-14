@@ -1,0 +1,114 @@
+{
+  "as_of": "2026-11-14T14:47:29Z",
+  "document_ids": [
+    "ustreas-20261112-tips-buyback-results-191d91bb"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": null,
+      "period_start": null,
+      "status": "本回未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": null,
+      "period_start": null,
+      "status": "本回未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-14T14:47:29Z",
+      "period_start": null,
+      "status": "一覧及びPDFの再取得失敗、11月12日の既存結果を確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": null,
+      "period_start": null,
+      "status": "本回未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": null,
+      "period_start": null,
+      "status": "本回未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": null,
+      "period_start": null,
+      "status": "本回未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": null,
+      "period_start": null,
+      "status": "本回未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": null,
+      "period_start": null,
+      "status": "本回未確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": null,
+      "period_start": null,
+      "status": "本回未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": null,
+      "period_start": null,
+      "status": "本回未確認"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "既存記録によれば11月12日TIPS買戻しの提示額面32.24億ドル、受入5.56億ドル。PDF原本は保存されず、翻訳状態partial。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "推論：特定銘柄の買戻しが流動性に影響しうるが、価格・気配差・出来高を確認する必要がある。"
+  ],
+  "historical_comparisons": [
+    "史料付きケースを本回再確認しておらず判断保留。"
+  ],
+  "scenarios": [
+    "日：決済・気配差、週：買い戻し・入札、月：資金需給を確認。両通貨側の資料不足により為替ペア判断保留。"
+  ],
+  "invalidations": [
+    "気配差や取引量が改善しない、または別要因による場合、流動性改善の仮説は弱まる。"
+  ],
+  "review_after": null,
+  "missing": [
+    "今回の買戻し一覧・PDF取得失敗",
+    "10情報源の完全な差分、個別資料、PDF",
+    "メール全件照合",
+    "期限到来レビュー",
+    "DB同期の最新状態"
+  ]
+}
