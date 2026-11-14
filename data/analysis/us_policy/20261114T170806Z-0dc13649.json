@@ -1,0 +1,112 @@
+{
+  "as_of": "2026-11-14T17:08:06Z",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-14T17:08:06Z",
+      "period_start": null,
+      "status": "入口取得、全件差分・本文・表未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-14T17:08:06Z",
+      "period_start": null,
+      "status": "入口取得、全件差分・本文・表未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-14T17:08:06Z",
+      "period_start": null,
+      "status": "入口取得、全件差分・本文・表未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-14T17:08:06Z",
+      "period_start": null,
+      "status": "入口取得、全件差分・本文・表未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-14T17:08:06Z",
+      "period_start": null,
+      "status": "入口取得、全件差分・本文・表未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-14T17:08:06Z",
+      "period_start": null,
+      "status": "入口取得、全件差分・本文・表未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-14T17:08:06Z",
+      "period_start": null,
+      "status": "入口取得、全件差分・本文・表未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-14T17:08:06Z",
+      "period_start": null,
+      "status": "入口取得、全件差分・本文・表未確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-14T17:08:06Z",
+      "period_start": null,
+      "status": "入口取得、全件差分・本文・表未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-14T17:08:06Z",
+      "period_start": null,
+      "status": "入口取得、全件差分・本文・表未確認"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": [
+    "日・週・月ともに根拠不足の通貨ペア判断は保留"
+  ],
+  "invalidations": [],
+  "review_after": null,
+  "reviews": [
+    {
+      "review_of": "20261106T075702Z-1e79b5a5",
+      "review_after": "2026-11-13T07:57:02Z",
+      "reviewed_at": "2026-11-14T17:08:06Z",
+      "status": "unassessed",
+      "note": "当初条件の技術投資・信用スプレッド・原油供給・入札需要・実質金利について同時点データ未取得。方向や精度は評価しない。"
+    }
+  ],
+  "missing": [
+    "10情報源の完全な差分、個別文書・表・PDF",
+    "財務省メール経路との全件照合",
+    "過去分析206件のレビュー期限確認",
+    "PostgreSQL同期の現在状態"
+  ]
+}
