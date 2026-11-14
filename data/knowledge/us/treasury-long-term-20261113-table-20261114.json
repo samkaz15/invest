@@ -1,0 +1,28 @@
+{
+  "id": "treasury-long-term-20261113-table-20261114",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "title_en": "Daily Treasury Long-Term Rates, November 13, 2026",
+  "title_ja": "米財務省の日次長期国債金利・11月13日",
+  "published_at": null,
+  "received_at": "2026-11-14T00:36:44Z",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "Date  | 20 YR  | 30 YR  | LT COMPOSITE (>10 Yrs)  | TREASURY 20-Yr CMT  | Extrapolation Factor  | 6 WEEKS BANK DISCOUNT  | COUPON EQUIVALENT  | 8 WEEKS BANK DISCOUNT  | COUPON EQUIVALENT  | 17 WEEKS BANK DISCOUNT  | COUPON EQUIVALENT  | 52 WEEKS BANK DISCOUNT  | COUPON EQUIVALENT  | 1 Mo  | 1.5 Mo  | 2 Mo  | 3 Mo  | 4 Mo  | 20 Yr  | 30 Yr\n11/12/2026  | N/A  | N/A  | 5.44  | 5.48  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A\n11/13/2026  | N/A  | N/A  | 5.48  | 5.52  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A",
+  "translation_ja": "日付 | 20年 | 30年 | 長期複合利回り（10年超） | 20年定年限利回り | 外挿係数 | 6週割引率 | クーポン相当 | 8週割引率 | クーポン相当 | 17週割引率 | クーポン相当 | 52週割引率 | クーポン相当 | 1か月 | 1.5か月 | 2か月 | 3か月 | 4か月 | 20年 | 30年\n11/12/2026  | N/A  | N/A  | 5.44  | 5.48  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A\n11/13/2026  | N/A  | N/A  | 5.48  | 5.52  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A  | N/A",
+  "facts_ja": [
+    "米11月13日の長期複合利回り5.48％、20年CMT5.52％。前営業日は5.44％、5.48％。"
+  ],
+  "inference_ja": [],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "全期間の行、方法論・脚注全文と公表時刻は未確認。N/Aは原表に値なし。"
+  ],
+  "notification_eligible": false,
+  "related_document_ids": [
+    "ustreas-432bfc4-20261113-long-term-mail"
+  ],
+  "content_sha256": "3e50d8bbe96572cc9b99acb09325c0e734998bd5a449fd3d0eebf3b5f170eec1"
+}
