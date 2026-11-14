@@ -1,0 +1,132 @@
+{
+  "as_of": "2026-11-14T18:29:01Z",
+  "document_ids": [
+    "eia-20261112-wpsr-table1-f08f4997"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-14T18:29:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-14T18:29:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-14T18:29:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-14T18:29:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-14T18:29:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-14T18:29:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-14T18:29:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-14T18:29:01Z",
+      "period_start": null,
+      "status": "入口取得、既存表を確認。要約原文の再取得失敗"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-14T18:29:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-14T18:29:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "既存EIA表によれば11月6日終了週の商業原油在庫は4億1441.7万バレル、前週比465.7万増。11月12日米東部正午公表。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "単週の在庫増は供給・需要や輸入の組み合わせの観察であり、中期のエネルギー正常化を単独で確認しない。"
+  ],
+  "historical_comparisons": [],
+  "scenarios": [
+    "当初の金利上振れ・下振れシナリオの判定は必要な米国・相手国資料不足で保留。"
+  ],
+  "invalidations": [
+    "在庫のみでなく複数週の供給・需要・価格・実質金利を比較する。"
+  ],
+  "review_after": null,
+  "reviews": [
+    {
+      "review_of": "20261106T082158Z-e024e0c8",
+      "review_after": "2026-11-13T08:21:58Z",
+      "reviewed_at": "2026-11-14T18:29:01Z",
+      "status": "partial",
+      "observations": [
+        {
+          "document_id": "eia-20261112-wpsr-table1-f08f4997",
+          "interpretation": "当初の一方向のインフレ仮説を検討する際、単週の商業原油在庫増を確認。ただし因果・持続性は未評価。"
+        }
+      ],
+      "unassessed": [
+        "入札時点の需要と直前利回り",
+        "実質金利・原油価格・供給の複数週推移",
+        "相手国の金利・景気",
+        "州の認証・政策成立"
+      ]
+    }
+  ],
+  "missing": [
+    "EIA要約原文の今回の再取得失敗",
+    "10情報源の個別資料・表・PDFと差分網羅",
+    "メール経路全件照合",
+    "残りの事後レビュー",
+    "DB同期の現在状態"
+  ]
+}
