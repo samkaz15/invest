@@ -1,0 +1,106 @@
+{
+  "as_of": "2026-11-14T08:40:20Z",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_start": null,
+      "period_end": "2026-11-14T08:40:20Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_start": null,
+      "period_end": "2026-11-14T08:40:20Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_start": null,
+      "period_end": "2026-11-14T08:40:20Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_start": null,
+      "period_end": "2026-11-14T08:40:20Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_start": null,
+      "period_end": "2026-11-14T08:40:20Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_start": null,
+      "period_end": "2026-11-14T08:40:20Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_start": null,
+      "period_end": "2026-11-14T08:40:20Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_start": null,
+      "period_end": "2026-11-14T08:40:20Z",
+      "status": "retry_timeout"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_start": null,
+      "period_end": "2026-11-14T08:40:20Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_start": null,
+      "period_end": "2026-11-14T08:40:20Z",
+      "status": "not_checked_this_run"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": [],
+  "invalidations": [],
+  "review_after": null,
+  "retry": [
+    "EIA weekly",
+    "10 sources complete difference including body, table and PDFs",
+    "email dedup",
+    "past reviews"
+  ],
+  "notes": [
+    "EIA retry timed out; no newness conclusion possible.",
+    "Prior DB sync 43566789878 failed; current PostgreSQL state unverified.",
+    "2026-11-14T08:29:43Z report retained; no source documents stored in this run."
+  ]
+}
