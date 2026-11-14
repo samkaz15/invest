@@ -1,0 +1,114 @@
+{
+  "as_of": "2026-11-14T12:24:35Z",
+  "document_ids": [
+    "nyfed-treasury-20261116-20261211-schedule-20261114"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-14T12:24:35Z",
+      "period_start": null,
+      "status": "入口取得、個別本文・表の網羅性未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-14T12:24:35Z",
+      "period_start": null,
+      "status": "入口取得、個別本文・表の網羅性未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-14T12:24:35Z",
+      "period_start": null,
+      "status": "入口取得、個別本文・表の網羅性未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-14T12:24:35Z",
+      "period_start": null,
+      "status": "入口取得、個別本文・表の網羅性未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-14T12:24:35Z",
+      "period_start": null,
+      "status": "入口取得、個別本文・表の網羅性未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-14T12:24:35Z",
+      "period_start": null,
+      "status": "入口取得、個別本文・表の網羅性未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-14T12:24:35Z",
+      "period_start": null,
+      "status": "入口取得、個別本文・表の網羅性未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-14T12:24:35Z",
+      "period_start": null,
+      "status": "入口取得、個別本文・表の網羅性未確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-14T12:24:35Z",
+      "period_start": null,
+      "status": "入口取得、個別本文・表の網羅性未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-14T12:24:35Z",
+      "period_start": null,
+      "status": "入口取得、個別本文・表の網羅性未確認"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "既存NY連銀記録は11月16日〜12月11日の再投資約140億ドルを予定と記述。発表時刻不明、実績未確認。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "推論：再投資実施は国債需給に影響しうるが、発行や償還、投資家需要も重要。"
+  ],
+  "historical_comparisons": [
+    "史料付きケースの本回再検証は未実施。"
+  ],
+  "scenarios": [
+    "日：実際の入札・オペ結果を確認。週：発行・償還と再投資を比較。月：物価・政策と金利を確認。通貨ペアは相手側の資料不足につき判断保留。"
+  ],
+  "invalidations": [
+    "購入実績が予定を下回る、または発行・需要の変化が支配的なら需給への推論は弱まる。"
+  ],
+  "review_after": null,
+  "missing": [
+    "各情報源の完全な差分、個別本文・表・PDF",
+    "財務省メールとの全件照合",
+    "期限到来レビュー",
+    "歴史ケース比較の再検証",
+    "現時点のPostgreSQL同期結果"
+  ]
+}
