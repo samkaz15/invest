@@ -1,0 +1,121 @@
+{
+  "as_of": "2026-11-14T10:31:08Z",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "as_of": "2026-11-14T10:31:08Z",
+      "period_start": null,
+      "status": "landing_only_individual_documents_incomplete"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "as_of": "2026-11-14T10:31:08Z",
+      "period_start": null,
+      "status": "landing_only_individual_documents_incomplete"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "as_of": "2026-11-14T10:31:08Z",
+      "period_start": null,
+      "status": "landing_only_individual_documents_incomplete"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "as_of": "2026-11-14T10:31:08Z",
+      "period_start": null,
+      "status": "landing_only_individual_documents_incomplete"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "as_of": "2026-11-14T10:31:08Z",
+      "period_start": null,
+      "status": "landing_only_individual_documents_incomplete"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "as_of": "2026-11-14T10:31:08Z",
+      "period_start": null,
+      "status": "landing_only_individual_documents_incomplete"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "as_of": "2026-11-14T10:31:08Z",
+      "period_start": null,
+      "status": "landing_only_individual_documents_incomplete"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "as_of": "2026-11-14T10:31:08Z",
+      "period_start": null,
+      "status": "landing_and_archived_summary_read_table_csv_failed"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "as_of": "2026-11-14T10:31:08Z",
+      "period_start": null,
+      "status": "landing_only_individual_documents_incomplete"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "as_of": "2026-11-14T10:31:08Z",
+      "period_start": null,
+      "status": "landing_only_individual_documents_incomplete"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    {
+      "source_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_11_12/download/summary.txt",
+      "publication_date": "2026-11-12",
+      "publication_time": null,
+      "observation_date": "2026-11-06",
+      "text": "米国商業原油在庫は前週比470万バレル増、4億1440万バレル。",
+      "document_stored": false
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "推論：供給が需要を上回り在庫増が続けば価格を抑え得るが、一週のみでは持続性は判断できない。"
+  ],
+  "historical_comparisons": [
+    "未実施。史料付きケースと当時の初期条件を再確認する。"
+  ],
+  "scenarios": [
+    "日：在庫の内訳と実需を確認。週：連続変化を確認。月：生産、輸出入、需要が同じ方向で続くか確認。"
+  ],
+  "invalidations": [
+    "製油所稼働、輸入、需要の一時要因が在庫増を説明すれば持続的供給超過の推論は弱まる。",
+    "通貨の両側の資料不足につきUSD/JPY等は判断保留。"
+  ],
+  "review_after": null,
+  "missing": [
+    "表1 CSV取得失敗、PDF全ページ未取得",
+    "既存メールおよび知識レコードとの完全な照合",
+    "10情報源の差分期間と個別資料",
+    "歴史ケースの今回の再検証、期限到来分レビュー",
+    "PostgreSQL反映の現在状態"
+  ],
+  "previous_sync": "run 43566789878 failed; current state unknown"
+}
