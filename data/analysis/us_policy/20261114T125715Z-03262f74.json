@@ -1,0 +1,113 @@
+{
+  "as_of": "2026-11-14T12:57:15Z",
+  "document_ids": [
+    "ofac-20261113-counter-narcotics-fc7a64de"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-14T12:57:15Z",
+      "period_start": null,
+      "status": "入口のみ、本文・表・完全差分未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-14T12:57:15Z",
+      "period_start": null,
+      "status": "入口のみ、本文・表・完全差分未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-14T12:57:15Z",
+      "period_start": null,
+      "status": "入口のみ、本文・表・完全差分未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-14T12:57:15Z",
+      "period_start": null,
+      "status": "入口のみ、本文・表・完全差分未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-14T12:57:15Z",
+      "period_start": null,
+      "status": "入口のみ、本文・表・完全差分未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-14T12:57:15Z",
+      "period_start": null,
+      "status": "入口のみ、本文・表・完全差分未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-14T12:57:15Z",
+      "period_start": null,
+      "status": "入口・11月13日個別本文確認、全差分未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-14T12:57:15Z",
+      "period_start": null,
+      "status": "入口のみ、本文・表・完全差分未確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-14T12:57:15Z",
+      "period_start": null,
+      "status": "入口のみ、本文・表・完全差分未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-14T12:57:15Z",
+      "period_start": null,
+      "status": "入口のみ、本文・表・完全差分未確認"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "OFACは2026年11月13日付でグアテマラの麻薬対策・テロ対策指定を公表。公表時刻不明。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "制裁の対象と実際の取引影響が特定できないため原油や金への経済影響の判断は保留。"
+  ],
+  "historical_comparisons": [
+    "史料付きケースの本回再検証は未実施。"
+  ],
+  "scenarios": [
+    "日・週・月いずれも対象取引と金利・景気の両国資料が不足し通貨ペアを判断保留。"
+  ],
+  "invalidations": [
+    "実際の制裁適用範囲や対象取引に関する公式資料で影響の仮定を見直す。"
+  ],
+  "review_after": null,
+  "missing": [
+    "10情報源の完全な差分・個別本文・表・PDF",
+    "財務省メールとの全件照合",
+    "期限到来分析レビュー",
+    "PostgreSQLの現在の状態"
+  ]
+}
