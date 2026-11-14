@@ -1,0 +1,114 @@
+{
+  "as_of": "2026-11-14T15:44:01Z",
+  "document_ids": [
+    "ustreas-20261112-tips-buyback-results-191d91bb"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-14T15:44:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分は未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-14T15:44:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分は未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-14T15:44:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分は未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-14T15:44:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分は未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-14T15:44:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分は未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-14T15:44:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分は未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-14T15:44:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分は未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-14T15:44:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分は未確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-14T15:44:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分は未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-14T15:44:01Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分は未確認"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "前回既存記録として11月12日TIPS買い戻し受入額面5.56億ドルを確認。初出時刻不明、PDF原本未保存。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "対象銘柄の買戻しによる流動性への影響は気配差と出来高で検証が必要。"
+  ],
+  "historical_comparisons": [
+    "本回未検証"
+  ],
+  "scenarios": [
+    "日：決済と気配差、週：発行と買戻し、月：資金需給を確認。両通貨側の資料不足のため為替判断保留。"
+  ],
+  "invalidations": [
+    "気配差・出来高に変化がない場合などには流動性改善の推論を再評価。"
+  ],
+  "review_after": null,
+  "missing": [
+    "10情報源の本文・表・PDF及び差分網羅",
+    "既存メールとの完全な重複照合",
+    "期限到来レビュー",
+    "DB同期の現在状況"
+  ],
+  "db_sync": "前回確認の失敗以降未確認"
+}
