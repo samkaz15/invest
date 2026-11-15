@@ -1,0 +1,125 @@
+{
+  "id": "20261115T191421Z-4178beb4",
+  "as_of": "2026-11-15T19:14:21Z",
+  "document_ids": [],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-15T19:14:21Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T19:14:21Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T19:14:21Z",
+      "status": "partial_schedule_pdf_and_empty_results_view"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-15T19:14:21Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-15T19:14:21Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T19:14:21Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-15T19:14:21Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T19:14:21Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T19:14:21Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T19:14:21Z",
+      "status": "not_checked_this_run"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "buyback",
+      "reason": "正式発表・結果本文、実績額と価格未取得。日程PDFの全訳・原本安全確認とメール重複照合未完了。"
+    },
+    {
+      "id": "coverage",
+      "reason": "他9情報源の今回の個別本文未確認、差分開始時刻不明。"
+    },
+    {
+      "id": "review",
+      "reason": "歴史比較・期限到来レビュー未完了。"
+    },
+    {
+      "id": "db",
+      "reason": "同期run 43742933909 failure、PostgreSQL実反映未確認。"
+    }
+  ],
+  "facts": [
+    {
+      "source_url": "https://home.treasury.gov/system/files/221/Tentative-Buyback-ScheduleQ42026.pdf",
+      "published_at": null,
+      "published_date": "2026-11-04",
+      "retrieved_at": "2026-11-15T19:14:21Z",
+      "text": "11月12日の1〜10年TIPS流動性支援買戻し予定の上限は7億5000万ドル。実績未確認。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    {
+      "type": "inference",
+      "text": "実際の買戻しは流動性支援に寄与する可能性があるが、実績と他の需給は未確認。"
+    }
+  ],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "horizon": "days_weeks_months",
+      "pair": "USD/JPY",
+      "status": "hold",
+      "reason": "両国の金利・景気と実績不足"
+    }
+  ],
+  "invalidations": [
+    "正式結果、実需給、日米双方の情報を取得して再評価"
+  ],
+  "review_after": "2026-11-16T19:14:21Z"
+}
