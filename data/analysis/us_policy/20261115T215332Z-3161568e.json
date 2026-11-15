@@ -1,0 +1,128 @@
+{
+  "id": "20261115T215332Z-3161568e",
+  "as_of": "2026-11-15T21:53:32Z",
+  "document_ids": [
+    "ustreas-20261112-tips-buyback-results-191d91bb"
+  ],
+  "new_document_ids": [],
+  "corrects_report_ids": [
+    "20261115T201937Z-3c064725",
+    "20261115T204815Z-74229729"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-15T21:53:32Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T21:53:32Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T21:53:32Z",
+      "status": "existing_primary_derived_record_read_live_pdf_fetch_failed"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-15T21:53:32Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-15T21:53:32Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T21:53:32Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-15T21:53:32Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T21:53:32Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T21:53:32Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T21:53:32Z",
+      "status": "not_checked_this_run"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "buyback_pdf",
+      "reason": "今回の公式PDF再取得不可。保存済み記録は2026-11-12取得・2頁目視と記載するが、PDF原本は未保存、公表時刻不明、翻訳partial。"
+    },
+    {
+      "id": "coverage",
+      "reason": "その他情報源の差分、メール全件照合は未完了。"
+    },
+    {
+      "id": "history_review",
+      "reason": "史料比較と期限到来レビュー未完了。"
+    },
+    {
+      "id": "db",
+      "reason": "同期run 43742933909 failure、PostgreSQL実反映未確認。"
+    }
+  ],
+  "facts": [
+    {
+      "evidence_id": "ustreas-20261112-tips-buyback-results-191d91bb",
+      "text": "保存済み公式PDF由来の記録によれば11月12日のTIPS買戻し受入額面は5億5600万ドル。今回PDF原本は再取得できず。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    {
+      "type": "inference",
+      "text": "対象銘柄の流動性支援の可能性はあるが、受入額だけで市場全体への影響は判断不可。"
+    }
+  ],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "horizon": "days_weeks_months",
+      "pair": "USD/JPY",
+      "status": "hold",
+      "reason": "日米双方の金利・需給資料不足"
+    }
+  ],
+  "invalidations": [
+    "気配差・出来高と両国の金利・需給資料を取得し再評価"
+  ],
+  "review_after": "2026-11-16T21:53:32Z"
+}
