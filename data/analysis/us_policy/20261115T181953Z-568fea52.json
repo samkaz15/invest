@@ -1,0 +1,119 @@
+{
+  "id": "20261115T181953Z-568fea52",
+  "as_of": "2026-11-15T18:19:53Z",
+  "document_ids": [],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-15T18:19:53Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T18:19:53Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T18:19:53Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-15T18:19:53Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-15T18:19:53Z",
+      "status": "related_mbs_pdf_page1_visual_checked"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T18:19:53Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-15T18:19:53Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T18:19:53Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T18:19:53Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T18:19:53Z",
+      "status": "not_checked_this_run"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "pdf",
+      "reason": "公開日時、原本安全性、既存レコードとの重複未確認。PDF原本・知識JSON未保存。"
+    },
+    {
+      "id": "coverage",
+      "reason": "他9情報源、差分始点と既存メールの照合は未完了。"
+    },
+    {
+      "id": "history",
+      "reason": "歴史比較・到来レビュー未完了。"
+    },
+    {
+      "id": "db",
+      "reason": "同期run 43742933909 failure、PostgreSQL未確認。"
+    }
+  ],
+  "facts": [
+    {
+      "source_url": "https://www.newyorkfed.org/medialibrary/media/markets/ambs/AMBS-Schedule-111626.pdf",
+      "published_at": null,
+      "retrieved_at": "2026-11-15T18:19:53Z",
+      "text": "11月18日11:30〜11:50 ETに上限7800万ドルのMBS指定プール小額売却を予定、決済12月10日。PDF1頁を視覚確認。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "horizon": "days_weeks_months",
+      "pair": "USD/JPY",
+      "status": "hold",
+      "reason": "両通貨側の資料不足"
+    }
+  ],
+  "invalidations": [
+    "実績・需給・日米金利を確認し再評価"
+  ],
+  "review_after": "2026-11-16T18:19:53Z"
+}
