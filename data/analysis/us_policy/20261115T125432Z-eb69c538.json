@@ -1,0 +1,74 @@
+{
+  "id": "20261115T125432Z-eb69c538",
+  "as_of": "2026-11-15T12:54:32Z",
+  "document_ids": [],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions/20261113",
+      "status": "individual_text_partial",
+      "published_date": "2026-11-13",
+      "published_at": null,
+      "checked_at": "2026-11-15T12:54:32Z",
+      "requested_from": null,
+      "requested_through": "2026-11-15T12:54:32Z"
+    },
+    {
+      "id": "nyfed_operations",
+      "status": "fetch_failed",
+      "url": "https://www.newyorkfed.org/newsevents/news/markets/2026/20261112",
+      "checked_at": "2026-11-15T12:54:32Z"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "coverage",
+      "reason": "他9情報源の今回の個別確認・期間未完了。前回欠損は継続。"
+    },
+    {
+      "id": "dedup",
+      "reason": "全既存レコード・メール経路の正規URL、公表日時、ハッシュ照合未完了。"
+    },
+    {
+      "id": "related",
+      "reason": "関連発表本文、全文訳および完全な知識文書未保存。"
+    },
+    {
+      "id": "history_reviews",
+      "reason": "史料比較と期限到来レビュー未完了。"
+    },
+    {
+      "id": "database",
+      "reason": "US knowledge database sync run 43706893176 failure、PostgreSQL実反映未確認。"
+    }
+  ],
+  "facts": [
+    {
+      "label": "FACT",
+      "source_url": "https://ofac.treasury.gov/recent-actions/20261113",
+      "text": "2026年11月13日付OFAC告知は麻薬・テロ対策で2組織の制裁リスト追加と1組織の記載変更を掲載。",
+      "published_at": null,
+      "retrieved_at": "2026-11-15T12:54:32Z"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "horizons": [
+        "days",
+        "weeks",
+        "months"
+      ],
+      "pair": "USD/JPY",
+      "status": "保留",
+      "reason": "両国と対象資金フローの資料不足"
+    }
+  ],
+  "invalidations": [
+    "資金フローや関連一次資料、比較国の事情が確認できれば再評価"
+  ],
+  "review_after": "2026-11-16T12:54:32Z"
+}
