@@ -1,0 +1,127 @@
+{
+  "as_of": "2026-11-15T09:43:12Z",
+  "document_ids": [
+    "fincen-2026-22809-travel-rule-withdrawal-pdf"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-15T09:43:12Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-15T09:43:12Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-15T09:43:12Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-15T09:43:12Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-15T09:43:12Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-15T09:43:12Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-15T09:43:12Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-15T09:43:12Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-15T09:43:12Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-15T09:43:12Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "既存の事前公表文書は11月9日官報掲載予定と記録していた。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "正式公刊と事業者の費用・資金移動を確認できずマクロ波及は判断保留。"
+  ],
+  "historical_comparisons": [],
+  "scenarios": [
+    "必要な市場・相手国資料不足につき通貨ペア方向は保留"
+  ],
+  "invalidations": [
+    "別規則や代替案で義務が導入されれば追加負担回避の仮説を再評価する。"
+  ],
+  "review_after": null,
+  "reviews": [
+    {
+      "review_of": "20261106T221010Z-b01438c3",
+      "review_after": "2026-11-13T22:10:10Z",
+      "reviewed_at": "2026-11-15T09:43:12Z",
+      "status": "unassessed",
+      "attempted_url": "https://www.federalregister.gov/documents/2026/11/09/2026-22809",
+      "result": "アクセス不可。正式公刊・発効及び差異は未確認。",
+      "missing": [
+        "官報正式版と事前公表版の差異",
+        "事業者費用・サービス供給・資金移動",
+        "別規則や代替案"
+      ]
+    }
+  ],
+  "missing": [
+    "10情報源完全差分・個別本文・表・PDF",
+    "官報正式版の取得",
+    "メール全件照合",
+    "残るレビュー",
+    "PostgreSQL同期の現在状況"
+  ]
+}
