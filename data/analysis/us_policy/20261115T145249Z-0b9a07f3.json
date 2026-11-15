@@ -1,0 +1,124 @@
+{
+  "id": "20261115T145249Z-0b9a07f3",
+  "as_of": "2026-11-15T14:52:49Z",
+  "document_ids": [],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-15T14:52:49Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T14:52:49Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T14:52:49Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-15T14:52:49Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-15T14:52:49Z",
+      "status": "partial_results_xlsx_unsupported"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T14:52:49Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-15T14:52:49Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T14:52:49Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T14:52:49Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T14:52:49Z",
+      "status": "not_checked_this_run"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "nyfed_results",
+      "reason": "10/15〜11/13の結果XLSXは取得サービスが形式非対応。予定PDF未取得。"
+    },
+    {
+      "id": "coverage",
+      "reason": "その他の各情報源と差分始点、メール重複未確認。"
+    },
+    {
+      "id": "history",
+      "reason": "当時と現在のインフレ、実質金利、流動性、エネルギー構造、通貨価格を未取得。"
+    },
+    {
+      "id": "reviews",
+      "reason": "期限到来分の網羅的な事後レビュー未完了。"
+    },
+    {
+      "id": "sync",
+      "reason": "run 43706893176 failed; PostgreSQL実反映未確認。"
+    }
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [
+    {
+      "case_id": "fed-response-2020-03-15",
+      "status": "partial",
+      "commonality": "FRBの国債購入",
+      "difference": "2020年は市場機能を支える大規模購入方針、今回の予定は再投資購入",
+      "missing": "当初・現在のインフレ、実質金利、流動性、エネルギーと価格データ"
+    }
+  ],
+  "scenarios": [
+    {
+      "horizon": "days_weeks_months",
+      "pair": "USD/JPY",
+      "status": "hold",
+      "reason": "両国資料と実績不足"
+    }
+  ],
+  "invalidations": [
+    "購入実績や市場需給、日米の金利・景気資料を入手後に再評価"
+  ],
+  "review_after": "2026-11-16T14:52:49Z"
+}
