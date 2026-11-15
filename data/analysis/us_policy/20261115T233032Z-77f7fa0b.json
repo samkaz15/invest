@@ -1,0 +1,120 @@
+{
+  "id": "20261115T233032Z-77f7fa0b",
+  "as_of": "2026-11-15T23:30:32Z",
+  "document_ids": [
+    "ustreas-20261112-tips-buyback-results-191d91bb"
+  ],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:30:32Z",
+      "status": "index_opened_individual_difference_incomplete"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:30:32Z",
+      "status": "index_opened_individual_difference_incomplete"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:30:32Z",
+      "status": "index_opened_individual_difference_incomplete"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:30:32Z",
+      "status": "index_opened_individual_difference_incomplete"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:30:32Z",
+      "status": "index_opened_individual_difference_incomplete"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:30:32Z",
+      "status": "index_opened_individual_difference_incomplete"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:30:32Z",
+      "status": "index_opened_individual_difference_incomplete"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:30:32Z",
+      "status": "index_opened_individual_difference_incomplete"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:30:32Z",
+      "status": "index_opened_individual_difference_incomplete"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:30:32Z",
+      "status": "index_opened_individual_difference_incomplete"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "coverage",
+      "reason": "各情報源の差分始点、個別資料の完全性とメール全件照合は未確認。"
+    },
+    {
+      "id": "history_review",
+      "reason": "史料比較と期限到来レビュー未完了。"
+    },
+    {
+      "id": "db",
+      "reason": "同期run 43771783364 failure、PostgreSQL実反映未確認。"
+    }
+  ],
+  "facts": [
+    {
+      "evidence_id": "ustreas-20261112-tips-buyback-results-191d91bb",
+      "text": "公式PDF由来の既存記録を参照。今回元PDFは未再取得。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    {
+      "type": "inference",
+      "text": "実際の流動性効果は気配差・出来高と他の需給が必要。"
+    }
+  ],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "horizon": "days_weeks_months",
+      "pair": "USD/JPY",
+      "status": "hold",
+      "reason": "日米双方の資料不足"
+    }
+  ],
+  "invalidations": [
+    "気配差・出来高と日米の金利・景気を確認して再評価"
+  ],
+  "review_after": "2026-11-16T23:30:32Z"
+}
