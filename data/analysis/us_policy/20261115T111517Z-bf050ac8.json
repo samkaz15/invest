@@ -1,0 +1,210 @@
+{
+  "id": "20261115T111517Z-bf050ac8",
+  "as_of": "2026-11-15T11:15:17Z",
+  "document_ids": [
+    "fincen-20261106-recordkeeping-travel-rule-withdrawal",
+    "fincen-2026-22809-travel-rule-withdrawal-pdf"
+  ],
+  "new_document_ids": [],
+  "notification_eligible": false,
+  "notification_decision": "既報の事後レビュー。個別通知せず朝の集約に提供。",
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-15T11:15:17Z",
+      "checked_at": "2026-11-15T11:15:17Z",
+      "status": "index_only_partial",
+      "coverage": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T11:15:17Z",
+      "checked_at": "2026-11-15T11:15:17Z",
+      "status": "index_only_partial",
+      "coverage": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T11:15:17Z",
+      "checked_at": "2026-11-15T11:15:17Z",
+      "status": "index_only_partial",
+      "coverage": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-15T11:15:17Z",
+      "checked_at": "2026-11-15T11:15:17Z",
+      "status": "index_only_partial",
+      "coverage": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-15T11:15:17Z",
+      "checked_at": "2026-11-15T11:15:17Z",
+      "status": "index_only_partial",
+      "coverage": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T11:15:17Z",
+      "checked_at": "2026-11-15T11:15:17Z",
+      "status": "index_only_partial",
+      "coverage": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-15T11:15:17Z",
+      "checked_at": "2026-11-15T11:15:17Z",
+      "status": "index_only_partial",
+      "coverage": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T11:15:17Z",
+      "checked_at": "2026-11-15T11:15:17Z",
+      "status": "index_only_partial",
+      "coverage": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T11:15:17Z",
+      "checked_at": "2026-11-15T11:15:17Z",
+      "status": "index_only_partial",
+      "coverage": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T11:15:17Z",
+      "checked_at": "2026-11-15T11:15:17Z",
+      "status": "index_only_partial",
+      "coverage": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "treasury_news",
+      "reason": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "treasury_auctions",
+      "reason": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "reason": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "fed_fomc",
+      "reason": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "nyfed_operations",
+      "reason": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "white_house",
+      "reason": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "ofac",
+      "reason": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "eia_petroleum",
+      "reason": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "fec_results",
+      "reason": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "cfius",
+      "reason": "入口の確認にとどまり、差分期間の個別文書・表の網羅的取得、既存文書との完全照合は未完了。新着なしとは判定しない。"
+    },
+    {
+      "id": "federal_register_pdf",
+      "reason": "正式版PDF・全ページと掲載前版との差分、正確な公表時刻は未取得。HTMLはinformational XML。正式原本を再試行。"
+    },
+    {
+      "id": "dedup",
+      "reason": "Gmail経路を含む全レコードの本文ハッシュ照合は未完了。"
+    },
+    {
+      "id": "reviews",
+      "reason": "その他review_after到来分を完全には照合できていない。"
+    },
+    {
+      "id": "historical_context",
+      "reason": "歴史ケース原史料と最新の両通貨側資料の比較未完了。"
+    },
+    {
+      "id": "database_sync",
+      "reason": "PostgreSQL反映は未確認。過去run 43566789878は失敗。"
+    }
+  ],
+  "facts": [
+    {
+      "text": "FinCENとFRBの2020年の国際送金記録保存・送付規則の改正案撤回は、2026年11月9日付のFederal Register 91 FR 70824として掲載された。改正案の閾値引下げは提案であり、既存の3,000ドル基準自体の撤回を意味しない。掲載時刻は不明。",
+      "source": "https://www.federalregister.gov/d/2026-22809",
+      "published_date": "2026-11-09",
+      "published_time": "unknown",
+      "retrieved_at": "2026-11-15T11:15:17Z",
+      "qualification": "公的サイトのHTML版。正式PDF未確認。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    {
+      "type": "inference",
+      "text": "国際送金の規制上の負担が提案通りには変わらない可能性はあるが、実際のコストやマクロへの影響を示す資料がなく判断保留。"
+    }
+  ],
+  "historical_comparisons": [
+    {
+      "status": "pending",
+      "reason": "ケースの当時のインフレ、金利、流動性、エネルギー構造を十分照合できていない。"
+    }
+  ],
+  "scenarios": [
+    {
+      "horizon": "days_weeks_months",
+      "status": "hold",
+      "reason": "関連する両通貨側資料と効果の実証が不足するため為替方向は判断保留。"
+    }
+  ],
+  "invalidations": [
+    "正式版PDFが記載内容と異なる場合は再評価。",
+    "追加の正式措置や実際の費用データにより影響の推論は変わる。"
+  ],
+  "reviews": [
+    {
+      "review_of": "20261106T221010Z-b01438c3",
+      "reviewed_at": "2026-11-15T11:15:17Z",
+      "status": "partial",
+      "outcome": "FinCENとFRBの2020年の国際送金記録保存・送付規則の改正案撤回は、2026年11月9日付のFederal Register 91 FR 70824として掲載された。改正案の閾値引下げは提案であり、既存の3,000ドル基準自体の撤回を意味しない。掲載時刻は不明。",
+      "source": "https://www.federalregister.gov/d/2026-22809",
+      "missing": "公式PDFと本文の完全照合、後続措置及び経済影響は未確認。"
+    }
+  ],
+  "review_after": "2026-11-16T11:15:17Z"
+}
