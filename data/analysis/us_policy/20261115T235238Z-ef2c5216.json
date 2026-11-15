@@ -1,0 +1,110 @@
+{
+  "id": "20261115T235238Z-ef2c5216",
+  "as_of": "2026-11-15T23:52:38Z",
+  "document_ids": [
+    "ustreas-20261112-tips-buyback-results-191d91bb"
+  ],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:52:38Z",
+      "status": "index_attempted_complete_differences_unverified"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:52:38Z",
+      "status": "index_attempted_complete_differences_unverified"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:52:38Z",
+      "status": "index_attempted_complete_differences_unverified"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:52:38Z",
+      "status": "index_attempted_complete_differences_unverified"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:52:38Z",
+      "status": "index_attempted_complete_differences_unverified"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:52:38Z",
+      "status": "index_attempted_complete_differences_unverified"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:52:38Z",
+      "status": "index_attempted_complete_differences_unverified"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:52:38Z",
+      "status": "index_attempted_complete_differences_unverified"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:52:38Z",
+      "status": "index_attempted_complete_differences_unverified"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T23:52:38Z",
+      "status": "index_attempted_complete_differences_unverified"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "coverage",
+      "reason": "各情報源の差分始点、個別文書・表・PDFとメール全件照合未完了。"
+    },
+    {
+      "id": "history_review",
+      "reason": "歴史比較と期限到来レビュー未完了。"
+    },
+    {
+      "id": "db",
+      "reason": "同期run 43771783364 failure、PostgreSQL実反映未確認。"
+    }
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "horizon": "days_weeks_months",
+      "pair": "USD/JPY",
+      "status": "hold",
+      "reason": "双方の資料不足"
+    }
+  ],
+  "invalidations": [
+    "公式実績と日米双方の金利・需給を確認後に再評価"
+  ],
+  "review_after": "2026-11-16T23:52:38Z"
+}
