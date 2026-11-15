@@ -1,0 +1,60 @@
+{
+  "id": "20261115T114732Z-248730fb",
+  "as_of": "2026-11-15T11:47:32Z",
+  "document_ids": [],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/newsevents/news/markets/2026/20261112",
+      "status": "partial",
+      "requested_from": null,
+      "requested_through": "2026-11-15T11:47:32Z"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "status": "index_only",
+      "requested_from": null,
+      "requested_through": "2026-11-15T11:47:32Z"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://ir.eia.gov/wpsr/overview.pdf",
+      "status": "partial_pdf",
+      "requested_from": null,
+      "requested_through": "2026-11-15T11:47:32Z"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "all",
+      "reason": "10情報源全件と差分始点、メールとの重複照合は未確認。前回報告に記録した欠損を引き続き再試行。"
+    },
+    {
+      "id": "database_sync",
+      "reason": "run 43706893176 failure; PostgreSQL actual state unknown"
+    }
+  ],
+  "facts": [
+    {
+      "source": "https://www.newyorkfed.org/newsevents/news/markets/2026/20261112",
+      "text": "NY連銀は2026年7～9月期にFRBの為替介入がなく、米財務省が円を購入したと11月12日に報告。公表時刻不明。",
+      "label": "FACT",
+      "published_at": null
+    }
+  ],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "status": "pending",
+      "reason": "日米双方の資料不足"
+    }
+  ],
+  "invalidations": [
+    "完全な原資料・追加政策措置と両国の資料を確認後に再評価"
+  ],
+  "review_after": "2026-11-16T11:47:32Z"
+}
