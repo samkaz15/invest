@@ -1,0 +1,128 @@
+{
+  "id": "20261115T135621Z-cffe8cd2",
+  "as_of": "2026-11-15T13:56:21Z",
+  "document_ids": [],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-15T13:56:21Z",
+      "status": "partial_individual_text"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T13:56:21Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T13:56:21Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-15T13:56:21Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-15T13:56:21Z",
+      "status": "partial_individual_table"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T13:56:21Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-15T13:56:21Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T13:56:21Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T13:56:21Z",
+      "status": "not_checked_this_run"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-15T13:56:21Z",
+      "status": "not_checked_this_run"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "coverage",
+      "reason": "他8情報源の今回は未取得。前回欠損と照合期間始点は未解決。"
+    },
+    {
+      "id": "nyfed_pdf",
+      "reason": "日程PDF全頁・日付・結果および既存メール経路との重複照合未完了。"
+    },
+    {
+      "id": "treasury_news",
+      "reason": "本文全文訳・既存レコードとの重複確認未完了。"
+    },
+    {
+      "id": "history_reviews",
+      "reason": "史料比較と期限到来レビュー未完了。"
+    },
+    {
+      "id": "database",
+      "reason": "US knowledge database sync 43706893176 failure、PostgreSQL反映未確認。"
+    }
+  ],
+  "facts": [
+    {
+      "source_url": "https://www.newyorkfed.org/markets/domestic-market-operations/monetary-policy-implementation/treasury-securities/treasury-securities-operational-details",
+      "published_at": null,
+      "retrieved_at": "2026-11-15T13:56:21Z",
+      "text": "2026-11-16～12-11のNY連銀の国債再投資購入予定は約140億ドル、準備管理購入はなし。掲載日時未確認。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    {
+      "type": "inference",
+      "text": "再投資購入は対象債の民間供給を減らす可能性があるが、償還・発行・他の需要と織り込みを含む実際の影響は未確認。"
+    }
+  ],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "horizon": "days_weeks_months",
+      "pair": "USD/JPY",
+      "status": "hold",
+      "reason": "両通貨側の資料不足"
+    }
+  ],
+  "invalidations": [
+    "実際の購入額や他の債券需給を確認し見直す"
+  ],
+  "review_after": "2026-11-16T13:56:21Z"
+}
