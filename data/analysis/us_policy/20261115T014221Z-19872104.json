@@ -1,0 +1,129 @@
+{
+  "as_of": "2026-11-15T01:42:21Z",
+  "document_ids": [
+    "treasury-rates-20261106-real-yield-curve",
+    "treasury-real-yield-20261113-table-20261114"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-15T01:42:21Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-15T01:42:21Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-15T01:42:21Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-15T01:42:21Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-15T01:42:21Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-15T01:42:21Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-15T01:42:21Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-15T01:42:21Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-15T01:42:21Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-15T01:42:21Z",
+      "period_start": null,
+      "status": "入口取得、個別資料・完全差分未確認"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "保存済み財務省表で米10年実質CMTは11月6日2.63％、13日2.91％。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "実質利回り上昇は金保有の機会費用を高め得るが安全需要とドルも影響。"
+  ],
+  "historical_comparisons": [],
+  "scenarios": [
+    "日・週・月とも他国側と入札・需給資料不足で通貨方向保留"
+  ],
+  "invalidations": [
+    "実質金利の反落または安全需要の優勢で経路は弱まる"
+  ],
+  "review_after": null,
+  "reviews": [
+    {
+      "review_of": "20261106T145242Z-be2456f8",
+      "review_after": "2026-11-13T14:52:42Z",
+      "reviewed_at": "2026-11-15T01:42:21Z",
+      "status": "partial",
+      "observations": [
+        "米10年実質CMTは11月6日2.63％から13日2.91％へ0.28ポイント上昇。両値は発表時刻未確認のため事後観測のみ。"
+      ],
+      "missing": [
+        "直前入札利回り・同年限需要比較",
+        "エネルギー価格と需給の複数週推移",
+        "相手通貨側の金利",
+        "州の認証"
+      ]
+    }
+  ],
+  "missing": [
+    "10情報源の完全な差分・個別本文・表・PDF",
+    "メール経路の全件照合",
+    "残る期限到来レビュー",
+    "DB同期の現在状態"
+  ]
+}
