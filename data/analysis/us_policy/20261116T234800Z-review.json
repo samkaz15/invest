@@ -1,0 +1,125 @@
+{
+  "as_of": "2026-11-16T23:48:00Z",
+  "document_ids": [
+    "nyfed-treasury-20261116-20261211-schedule-20261114"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:48:00Z",
+      "status": "今回未確認",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:48:00Z",
+      "status": "入口取得、個別結果API失敗",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:48:00Z",
+      "status": "今回未確認",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:48:00Z",
+      "status": "今回未確認",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:48:00Z",
+      "status": "月次詳細ページ取得、過去記録と比較",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:48:00Z",
+      "status": "今回未確認",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:48:00Z",
+      "status": "入口取得、個別資料・期間照合未完了",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:48:00Z",
+      "status": "今回未確認",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:48:00Z",
+      "status": "今回未確認",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:48:00Z",
+      "status": "今回未確認",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "情報源ごとの開始水位と期間別照合",
+    "財務省入札APIと13週・26週入札結果",
+    "買戻し実績とNY連銀個別オペ",
+    "個別資料・PDF・メール重複",
+    "州の選挙認証と独立戦況",
+    "歴史事例の条件と期限到来レビュー",
+    "DB反映最新状態"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [
+    "国債発行・償還や再投資は需給を変え得る。入札実績、各国金利・市場織込不足により金と通貨の方向は保留。"
+  ],
+  "historical_comparisons": [
+    "史料と当初の物価・金利・流動性・エネルギーの比較未了。"
+  ],
+  "scenarios": {
+    "days": "入札実績と取引を確認",
+    "weeks": "純供給と投資需要を確認",
+    "months": "物価・政策と日米を含む各国の状況を確認"
+  },
+  "invalidations": [
+    "需要の増加や償還が純供給増を相殺する",
+    "織込みや金利差が想定と異なる"
+  ],
+  "review_after": "2026-11-17T23:48:00Z",
+  "review_status": "過去分析の到来分一覧および価格データ未取得のため未評価",
+  "retry": [
+    "入札API",
+    "10情報源の個別一次資料・PDF",
+    "メール経路の未処理記録",
+    "歴史と事後レビュー",
+    "DB同期"
+  ],
+  "postgresql_status": "過去実行43858396900 failure、最新反映未確認",
+  "pc_status": "実機未確認"
+}
