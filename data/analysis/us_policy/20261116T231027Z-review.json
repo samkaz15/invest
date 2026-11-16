@@ -1,0 +1,123 @@
+{
+  "as_of": "2026-11-16T23:10:27Z",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:10:27Z",
+      "status": "入口取得、個別本文・表・時刻別の完全な差分照合未了",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:10:27Z",
+      "status": "入口取得、個別本文・表・時刻別の完全な差分照合未了",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:10:27Z",
+      "status": "入口取得、個別本文・表・時刻別の完全な差分照合未了",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:10:27Z",
+      "status": "入口取得、個別本文・表・時刻別の完全な差分照合未了",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:10:27Z",
+      "status": "入口取得、個別本文・表・時刻別の完全な差分照合未了",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:10:27Z",
+      "status": "入口取得、個別本文・表・時刻別の完全な差分照合未了",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:10:27Z",
+      "status": "入口取得、個別本文・表・時刻別の完全な差分照合未了",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:10:27Z",
+      "status": "入口取得、個別本文・表・時刻別の完全な差分照合未了",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:10:27Z",
+      "status": "入口取得、個別本文・表・時刻別の完全な差分照合未了",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "requested_from": null,
+      "requested_through": "2026-11-16T23:10:27Z",
+      "status": "入口取得、個別本文・表・時刻別の完全な差分照合未了",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "情報源別の最終保存公表時刻と差分開始点",
+    "13週・26週短期国債の11月16日入札実績",
+    "財務省買戻しとNY連銀オペの個別結果",
+    "公的資料の本文・表・PDF全件",
+    "戦況の独立検証および州認証",
+    "メール経路との重複照合",
+    "史料付き歴史ケースと期限到来レビュー",
+    "DB同期の最新状態"
+  ],
+  "facts": [
+    {
+      "label": "FACT",
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0678/",
+      "published_at": null,
+      "published_date": "2026-11-04",
+      "received_at": "2026-11-16T23:10:27Z",
+      "description_ja": "11月4日発表の定例調達声明は11月16日を決済日と記載。新着の入札結果ではない。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "推論：国債の純供給や投資需要は需給と金利に影響し得る。実際の入札結果・織り込み・両国金利が不足し金と通貨の方向は保留。"
+  ],
+  "historical_comparisons": [
+    "史料と当初条件を未取得のため比較保留。"
+  ],
+  "scenarios": {
+    "days": "入札実績と需給を確認",
+    "weeks": "発行と償還・投資需要の差を確認",
+    "months": "物価・政策と各通貨側の経済データを確認"
+  },
+  "invalidations": [
+    "需要増や償還が発行増を相殺",
+    "両国金利差や市場織り込みが仮説と異なる"
+  ],
+  "review_after": "2026-11-17T23:10:27Z",
+  "review_status": "期限到来分の一覧と観測データ不足のため未評価",
+  "retry": [
+    "10情報源の差分と個別本文・表・PDF",
+    "米国債入札結果",
+    "メール経路の未処理5通と重複照合",
+    "歴史比較・期限到来レビュー",
+    "DB同期結果"
+  ],
+  "postgresql_status": "過去の43858396900は失敗。最新反映は未確認",
+  "pc_status": "実機未確認"
+}
