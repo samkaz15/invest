@@ -1,0 +1,142 @@
+{
+  "id": "20261116T050702Z-69e4333b",
+  "as_of": "2026-11-16T05:07:02Z",
+  "document_ids": [],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-16T05:07:02Z",
+      "status": "not_checked_this_run",
+      "reason": "情報源別の差分開始点と全件照合は未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T05:07:02Z",
+      "status": "not_checked_this_run",
+      "reason": "情報源別の差分開始点と全件照合は未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T05:07:02Z",
+      "status": "index_only",
+      "reason": "情報源別の差分開始点と全件照合は未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-16T05:07:02Z",
+      "status": "not_checked_this_run",
+      "reason": "情報源別の差分開始点と全件照合は未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-16T05:07:02Z",
+      "status": "index_only",
+      "reason": "情報源別の差分開始点と全件照合は未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T05:07:02Z",
+      "status": "not_checked_this_run",
+      "reason": "情報源別の差分開始点と全件照合は未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-16T05:07:02Z",
+      "status": "previously_seen_individual_rechecked",
+      "reason": "情報源別の差分開始点と全件照合は未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T05:07:02Z",
+      "status": "summary_20261112_backfill_checked_table_csv_failed",
+      "reason": "情報源別の差分開始点と全件照合は未確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T05:07:02Z",
+      "status": "not_checked_this_run",
+      "reason": "情報源別の差分開始点と全件照合は未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T05:07:02Z",
+      "status": "not_checked_this_run",
+      "reason": "情報源別の差分開始点と全件照合は未確認"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "eia",
+      "reason": "11月12日公表分は72時間外の未照合候補。表4 CSVは取得失敗。PDF全ページ、原文日本語訳の保存と重複照合未完了。"
+    },
+    {
+      "id": "other",
+      "reason": "残る情報源は個別本文・表の網羅取得と既存メール照合未完了。"
+    },
+    {
+      "id": "db",
+      "reason": "直前に確認した同期run 43771783364は失敗、現時点のDB反映未確認。"
+    },
+    {
+      "id": "review",
+      "reason": "期限到来分の全件確認と事後レビュー未完了"
+    }
+  ],
+  "facts": [
+    {
+      "source": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_11_12/download/summary.txt",
+      "release_date_local": "2026-11-12",
+      "published_at": null,
+      "observation_date": "2026-11-06",
+      "retrieved_at": "2026-11-16T05:07:02Z",
+      "summary": "EIA週次要約によれば米商業原油在庫は前週比470万バレル増の4億1440万バレル。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    {
+      "kind": "inference",
+      "text": "在庫増が需給緩和を示す場合、エネルギー価格上昇圧力を弱め得るが、生産・需要・輸入や市場織込みの確認が必要。"
+    }
+  ],
+  "historical_comparisons": [
+    {
+      "case": "oil-shock-1973-1974",
+      "common": "エネルギー供給と物価の関係",
+      "difference": "禁輸による供給制約と今回の単週の在庫増は異なる。当時と現在の輸入依存・実質金利等は未確認。後年解説を当時の情報としない。"
+    }
+  ],
+  "scenarios": [
+    {
+      "horizon": "days_weeks_months",
+      "pair": "USD/JPY EUR/USD USD/CHF USD/CAD AUD/USD",
+      "status": "hold",
+      "reason": "双方の景気・金利・需給資料不足"
+    }
+  ],
+  "invalidations": [
+    "在庫増が輸入増や需要減を反映しても、先行きの供給障害・需要回復で価格圧力が逆転し得る。"
+  ],
+  "review_after": "2026-11-17T05:07:02Z"
+}
