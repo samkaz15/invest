@@ -1,0 +1,128 @@
+{
+  "id": "20261116T085432Z-32b06780",
+  "as_of": "2026-11-16T08:54:32Z",
+  "document_ids": [
+    "ustreas-sb0678-20261104-quarterly-refunding"
+  ],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-16T08:54:32Z",
+      "status": "historical_individual_and_existing_record_checked",
+      "reason": "差分開始点および全件の取得・照合未了"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T08:54:32Z",
+      "status": "not_checked",
+      "reason": "差分開始点および全件の取得・照合未了"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T08:54:32Z",
+      "status": "not_checked",
+      "reason": "差分開始点および全件の取得・照合未了"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-16T08:54:32Z",
+      "status": "not_checked",
+      "reason": "差分開始点および全件の取得・照合未了"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-16T08:54:32Z",
+      "status": "search_only",
+      "reason": "差分開始点および全件の取得・照合未了"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T08:54:32Z",
+      "status": "not_checked",
+      "reason": "差分開始点および全件の取得・照合未了"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-16T08:54:32Z",
+      "status": "index_only",
+      "reason": "差分開始点および全件の取得・照合未了"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T08:54:32Z",
+      "status": "not_checked",
+      "reason": "差分開始点および全件の取得・照合未了"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T08:54:32Z",
+      "status": "not_checked",
+      "reason": "差分開始点および全件の取得・照合未了"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T08:54:32Z",
+      "status": "not_checked",
+      "reason": "差分開始点および全件の取得・照合未了"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "sources",
+      "reason": "10情報源の網羅的差分、表・PDF・メール照合未了。NY連銀ダッシュボードの動的表は検索表示のみ、個別本文で未検証。"
+    },
+    {
+      "id": "db",
+      "reason": "US knowledge database sync run 43794228195 failure; DB反映未確認。"
+    },
+    {
+      "id": "history_review",
+      "reason": "既存歴史との当初条件の完全比較と期限到来レビュー未了。"
+    }
+  ],
+  "facts": [
+    {
+      "source": "https://home.treasury.gov/news/press-releases/sb0678",
+      "published_local_date": "2026-11-04",
+      "published_at": null,
+      "retrieved_at": "2026-11-16T08:54:32Z",
+      "summary": "財務省は11月4日に四半期定例調達を発表。11月16日決済予定は新規発表日を意味しない。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "pair": "USD/JPY, EUR/USD, USD/CHF, USD/CAD, AUD/USD",
+      "horizon": "days_weeks_months",
+      "status": "hold",
+      "reason": "両通貨側の資料不足"
+    }
+  ],
+  "invalidations": [
+    "市場実績・両国金利と需給を取得し再評価"
+  ],
+  "review_after": "2026-11-17T08:54:32Z"
+}
