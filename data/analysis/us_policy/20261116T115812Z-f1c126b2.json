@@ -1,0 +1,122 @@
+{
+  "id": "20261116T115812Z-f1c126b2",
+  "as_of": "2026-11-16T11:58:12Z",
+  "document_ids": [],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-16T11:58:12Z",
+      "status": "index_only_complete_differences_unverified",
+      "reason": "保存済み公表時刻からの完全な差分確認は未了"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T11:58:12Z",
+      "status": "index_only_complete_differences_unverified",
+      "reason": "保存済み公表時刻からの完全な差分確認は未了"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T11:58:12Z",
+      "status": "not_checked_this_run",
+      "reason": "保存済み公表時刻からの完全な差分確認は未了"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-16T11:58:12Z",
+      "status": "not_checked_this_run",
+      "reason": "保存済み公表時刻からの完全な差分確認は未了"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-16T11:58:12Z",
+      "status": "not_checked_this_run",
+      "reason": "保存済み公表時刻からの完全な差分確認は未了"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T11:58:12Z",
+      "status": "not_checked_this_run",
+      "reason": "保存済み公表時刻からの完全な差分確認は未了"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-16T11:58:12Z",
+      "status": "index_only_complete_differences_unverified",
+      "reason": "保存済み公表時刻からの完全な差分確認は未了"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T11:58:12Z",
+      "status": "not_checked_this_run",
+      "reason": "保存済み公表時刻からの完全な差分確認は未了"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T11:58:12Z",
+      "status": "not_checked_this_run",
+      "reason": "保存済み公表時刻からの完全な差分確認は未了"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T11:58:12Z",
+      "status": "not_checked_this_run",
+      "reason": "保存済み公表時刻からの完全な差分確認は未了"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "coverage",
+      "reason": "10情報源の完全な差分・本文・表・PDF・メール照合未了。7件は今回未確認。"
+    },
+    {
+      "id": "auction",
+      "reason": "11月16日入札の結果表は取得・確認していない。再試行。"
+    },
+    {
+      "id": "db",
+      "reason": "同期run 43794228195失敗、現在のPostgreSQL反映未確認。"
+    },
+    {
+      "id": "review",
+      "reason": "歴史比較と期限到来レビュー未了。"
+    }
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "horizon": "days_weeks_months",
+      "pair": "USD/JPY EUR/USD USD/CHF USD/CAD AUD/USD",
+      "status": "hold",
+      "reason": "双方の資料不足"
+    }
+  ],
+  "invalidations": [
+    "対象国双方の金利・景気・資金需給と個別資料を得て再評価"
+  ],
+  "review_after": "2026-11-17T11:58:12Z"
+}
