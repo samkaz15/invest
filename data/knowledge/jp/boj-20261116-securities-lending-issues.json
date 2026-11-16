@@ -1,0 +1,24 @@
+{
+  "id": "boj-20261116-securities-lending-issues",
+  "source_url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx",
+  "title_ja": "日銀国債補完供給の銘柄別結果（11月16日）",
+  "summary_ja": "日銀の国債補完供給、11月16日午前は10年債379回に1622億円。",
+  "published_at": null,
+  "published_date": "2026-11-16",
+  "published_time_note": "掲載日は11月16日、更新時刻は不明",
+  "retrieved_at": "2026-11-17T02:10:05+09:00",
+  "notification_eligible": true,
+  "content_scope": "official_summary",
+  "facts_ja": [
+    "11月16日午前の国債補完供給の銘柄別落札額では、10年利付国債第379回が1622億円。",
+    "午後の落札銘柄は10年利付国債第383回で17億円。表によると売却はオファー当日、買戻しは翌営業日。"
+  ],
+  "inference_ja": [
+    "特定銘柄の一時的な供給に関係する。取引は買戻し条件付きであり恒久的な売切りとは異なる。金やドル円の方向は、市場の織込みと日米双方の金利が不明なため判断保留。"
+  ],
+  "missing_parts": [
+    "掲載・更新時刻未確認。11月16日以外の銘柄別明細は取得したが個別の新規性を未照合。市場予想は未確認。"
+  ],
+  "rights_note": "公式表を要約しリンク、全文複製しない。",
+  "source_sha256": "d285eafe69a745c8ca4f1da1426dda8e5dd31819e0c9b670316527cd3a4744e5"
+}

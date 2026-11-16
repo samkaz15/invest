@@ -1,0 +1,33 @@
+{
+  "id": "20261116T171005Z-review",
+  "as_of": "2026-11-17T02:10:05+09:00",
+  "previous_check": "2026-11-17T01:32:37+09:00",
+  "document_ids": [
+    "boj-20261116-securities-lending-issues"
+  ],
+  "source_status": [
+    {
+      "source": "日銀国債補完供給銘柄別表",
+      "source_url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx",
+      "status": "XLSXを取得し11月16日午前・午後を確認。前回未取得の銘柄別情報を新文書で記録。",
+      "retry": false
+    },
+    {
+      "source": "その他の日銀会見・決定会合・財務省買戻し",
+      "status": "対象期間の個別文書の全件照合は未完了。",
+      "retry": true
+    },
+    {
+      "source": "高田委員講演PDF",
+      "status": "全ページ・図表の視覚確認未完了。",
+      "retry": true
+    }
+  ],
+  "dedup": "公式URLでリポジトリ検索し一致なし。検索網羅性は未確認。",
+  "mac_notification": "GitHub保存と別でMac実機通知は未確認。",
+  "retry": [
+    "日銀講演PDFの未確認部分",
+    "日銀・財務省その他の対象を照合",
+    "同じ月次表の11月16日以前の銘柄別情報の既存記録照合"
+  ]
+}
