@@ -1,0 +1,24 @@
+{
+  "id": "mof-20261116-inflation-jgb31-auction-result",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261116.htm",
+  "title_ja": "10年物価連動国債第31回の入札結果",
+  "summary_ja": "10年物価連動国債の入札、募入決定額2498億円、最高利回り1.072％。",
+  "facts_ja": [
+    "応募額6735億円、募入決定額2498億円、発行価格96円、募入最高利回り1.072％。発行価格は連動係数積算前、最高利回りは発行価格を基に算出した単利利回り。",
+    "発行日11月17日の連動係数は1.01169。表面利率は0.6％。"
+  ],
+  "inference_ja": [
+    "物価連動国債の落札利回りは実質金利に関係するが、市場の予想や同時点の名目利回りを取得していないため、金・ドル円への方向は判断保留。"
+  ],
+  "published_at": null,
+  "published_date": "2026-11-16",
+  "published_time_note": "公表時刻は未確認（日本時間）",
+  "retrieved_at": "2026-11-16T22:13:56+09:00",
+  "notification_eligible": true,
+  "content_scope": "official_summary",
+  "rights_note": "公式資料を要約しリンク。原文全文の再配布は行っていない。",
+  "missing_parts": [
+    "資料の公表時刻は未確認。",
+    "資料以外の市場予想、同時点の名目金利や米国側金利は未取得。"
+  ]
+}

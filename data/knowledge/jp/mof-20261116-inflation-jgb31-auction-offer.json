@@ -1,0 +1,23 @@
+{
+  "id": "mof-20261116-inflation-jgb31-auction-offer",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/offer20261116.htm",
+  "title_ja": "10年物価連動国債第31回の入札実施",
+  "summary_ja": "財務省、10年物価連動国債第31回の入札を実施。予定額は2500億円程度。",
+  "facts_ja": [
+    "表面利率0.6％、発行予定額2500億円程度、申込締切は11月16日11時50分。発行日は11月17日、償還期限は2036年3月10日。"
+  ],
+  "inference_ja": [
+    "発行は市場の国債供給に関係するが、今回の条件だけで価格や金利の方向は判断できない。"
+  ],
+  "published_at": null,
+  "published_date": "2026-11-16",
+  "published_time_note": "公表時刻は未確認（日本時間）",
+  "retrieved_at": "2026-11-16T22:13:56+09:00",
+  "notification_eligible": true,
+  "content_scope": "official_summary",
+  "rights_note": "公式資料を要約しリンク。原文全文の再配布は行っていない。",
+  "missing_parts": [
+    "資料の公表時刻は未確認。",
+    "資料以外の市場予想、同時点の名目金利や米国側金利は未取得。"
+  ]
+}

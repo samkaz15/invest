@@ -1,0 +1,33 @@
+{
+  "id": "20261116T131356Z-jp-initial",
+  "as_of": "2026-11-16T22:13:56+09:00",
+  "check_from": "2026-11-13T22:13:56+09:00",
+  "source_status": [
+    {
+      "source": "財務省国債入札",
+      "status": "入札発行と結果の個別表を確認",
+      "coverage": "11月16日の該当2資料。72時間の全資料網羅は未確認"
+    },
+    {
+      "source": "日本銀行オペ",
+      "status": "11月16日のXLSX公開を確認したが表の内容未取得",
+      "retry": true
+    },
+    {
+      "source": "日本銀行講演",
+      "status": "高田委員11月16日講演は既存レコードと重複。PDF全49ページの網羅確認未了",
+      "retry": true
+    },
+    {
+      "source": "総裁会見・決定会合・国債売買・財務省買戻し",
+      "status": "対象期間の全件照合未完了",
+      "retry": true
+    }
+  ],
+  "document_ids": [
+    "mof-20261116-inflation-jgb31-auction-offer",
+    "mof-20261116-inflation-jgb31-auction-result"
+  ],
+  "mac_notification": "GitHub保存と独立。実機通知は未確認。",
+  "note": "通知内容は決定事実であり、価格方向の断定はしない。"
+}
