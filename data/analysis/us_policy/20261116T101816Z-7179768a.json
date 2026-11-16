@@ -1,0 +1,118 @@
+{
+  "id": "20261116T101816Z-7179768a",
+  "as_of": "2026-11-16T10:18:16Z",
+  "document_ids": [],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-16T10:18:16Z",
+      "status": "index_accessible_complete_difference_unverified",
+      "reason": "前回保存からの差分始点・各本文・表・メール重複は未確定"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T10:18:16Z",
+      "status": "index_accessible_complete_difference_unverified",
+      "reason": "前回保存からの差分始点・各本文・表・メール重複は未確定"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T10:18:16Z",
+      "status": "index_accessible_complete_difference_unverified",
+      "reason": "前回保存からの差分始点・各本文・表・メール重複は未確定"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-16T10:18:16Z",
+      "status": "index_accessible_complete_difference_unverified",
+      "reason": "前回保存からの差分始点・各本文・表・メール重複は未確定"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-16T10:18:16Z",
+      "status": "index_accessible_complete_difference_unverified",
+      "reason": "前回保存からの差分始点・各本文・表・メール重複は未確定"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T10:18:16Z",
+      "status": "index_accessible_complete_difference_unverified",
+      "reason": "前回保存からの差分始点・各本文・表・メール重複は未確定"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-16T10:18:16Z",
+      "status": "index_accessible_complete_difference_unverified",
+      "reason": "前回保存からの差分始点・各本文・表・メール重複は未確定"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T10:18:16Z",
+      "status": "index_accessible_complete_difference_unverified",
+      "reason": "前回保存からの差分始点・各本文・表・メール重複は未確定"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T10:18:16Z",
+      "status": "index_accessible_complete_difference_unverified",
+      "reason": "前回保存からの差分始点・各本文・表・メール重複は未確定"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T10:18:16Z",
+      "status": "index_accessible_complete_difference_unverified",
+      "reason": "前回保存からの差分始点・各本文・表・メール重複は未確定"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "coverage",
+      "reason": "入口10件を取得したが個別本文・表・PDFの全件照合、差分期間の確定は未了。未確認を新着なしとしない。"
+    },
+    {
+      "id": "historical_review",
+      "reason": "歴史比較と期限到来分レビューは未了。"
+    },
+    {
+      "id": "db",
+      "reason": "US knowledge database sync run 43794228195 failure; PostgreSQL反映未確認。"
+    }
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "horizon": "days_weeks_months",
+      "pair": "USD/JPY EUR/USD USD/CHF USD/CAD AUD/USD",
+      "status": "hold",
+      "reason": "双方の資料不足"
+    }
+  ],
+  "invalidations": [
+    "両国の金利・景気・需給と個別発表の確認後に再評価"
+  ],
+  "review_after": "2026-11-17T10:18:16Z"
+}
