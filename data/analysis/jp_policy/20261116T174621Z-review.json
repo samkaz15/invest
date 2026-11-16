@@ -1,0 +1,37 @@
+{
+  "id": "20261116T174621Z-review",
+  "as_of": "2026-11-17T02:46:21+09:00",
+  "previous_check": "2026-11-17T02:10:05+09:00",
+  "document_ids": [],
+  "source_status": [
+    {
+      "source": "日銀講演一覧",
+      "source_url": "https://www.boj.or.jp/about/press/koen_2026/index.htm",
+      "status": "一覧上の最新は11月16日高田委員講演。既存登録済み。PDF全図表確認未了。",
+      "retry": true
+    },
+    {
+      "source": "日銀金融政策決定事項一覧",
+      "source_url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/index.htm",
+      "status": "一覧の最新掲載は11月13日。個別PDFの差分確認未完了。",
+      "retry": true
+    },
+    {
+      "source": "日銀オペ・財務省新着",
+      "status": "入口を取得。個別資料全件・前回以降の完全照合は未完了。",
+      "retry": true
+    },
+    {
+      "source": "総裁会見・財務省国債買戻し",
+      "status": "対象期間の全件照合未完了。",
+      "retry": true
+    }
+  ],
+  "result": "確認済みの講演は既存と一致。全対象を確認しておらず新着なしとは断定しない。",
+  "mac_notification": "GitHub保存と別。Mac実機通知未確認。",
+  "retry": [
+    "高田委員講演PDFの未確認部分",
+    "日銀決定事項PDFと総裁会見",
+    "財務省国債買戻しと対象期間の全件照合"
+  ]
+}
