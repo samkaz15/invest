@@ -1,0 +1,31 @@
+{
+  "id": "boj-20261116-takata-speech-01",
+  "source_url": "https://www.boj.or.jp/about/press/koen_2026/ko261116a.htm",
+  "pdf_url": "https://www.boj.or.jp/about/press/koen_2026/data/ko261116a1.pdf",
+  "title_ja": "高田日銀審議委員の徳島講演",
+  "published_date": "2026-11-16",
+  "published_at": null,
+  "scheduled_publication_at": "2026-11-16T13:00:00+09:00",
+  "published_time_note": "日銀の公表予定。実際の公開時刻は未確認",
+  "retrieved_at": null,
+  "checked_at": "2026-11-16T12:59:30Z",
+  "retrieval_note": "前回の出典確認時にPDFの一部を閲覧したが正確な取得時刻は記録されていない。今回の再取得は失敗。",
+  "notification_eligible": true,
+  "summary_ja": "高田日銀審議委員、機動的な政策対応と物価上振れリスクを説明。",
+  "facts_ja": [
+    "高田委員は10月会合で政策金利を1.5％程度とする提案を行ったと講演で述べた。",
+    "日銀総裁の10月会合後の会見によれば同提案は反対多数で否決され、1.25％程度の方針が維持された。",
+    "講演では物価経済環境に応じた対応を重視する個人の認識を示した。"
+  ],
+  "inference_ja": [
+    "米国側を含む金利見通しと市場の織込みを確認する必要があり、金やドル円の方向は断定できない。"
+  ],
+  "content_scope": "summary_with_user_excerpt",
+  "translation_status": "not_applicable_original_japanese",
+  "missing_parts": [
+    "講演原稿PDF全49ページの本文・図表の網羅取得と再配布権の確認は未完了。原本PDFは未保存。",
+    "実際の公開時刻と日米双方の金利・市場織込みは未確認。",
+    "今回の日銀サイト再取得は失敗。"
+  ],
+  "notification_url": "https://www.boj.or.jp/about/press/koen_2026/ko261116a.htm"
+}
