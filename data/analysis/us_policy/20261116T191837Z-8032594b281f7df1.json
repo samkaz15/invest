@@ -1,0 +1,223 @@
+{
+  "id": "20261116T191837Z-8032594b281f7df1",
+  "as_of": "2026-11-16T19:18:37Z",
+  "input_document_ids": [
+    "nyfed-treasury-20261116-20261211-schedule-20261114"
+  ],
+  "input_hash": "8032594b281f7df16677d70b36a7ba8d7f7c0852396333edd9f0050e78238e3f",
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "財務省の仮予定表を検索で確認、実績未取得",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "財務省の仮予定表を検索で確認、実績未取得",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_start": null,
+      "period_end": "2026-11-16T19:18:37Z",
+      "status": "個別本文・期間の全件照合未完了",
+      "missing": "情報源の水位・未取得期間・個別資料と表、PDFを再確認"
+    }
+  ],
+  "facts": [
+    {
+      "label": "FACT",
+      "source_url": "https://home.treasury.gov/system/files/221/TentativeAuctionScheduleQ42026.pdf",
+      "published_at": null,
+      "retrieved_at": "2026-11-16T19:18:37Z",
+      "description_ja": "仮予定表では13週・26週短期証券の入札日を11月16日としている。予定表であり入札結果・公表日時は未確認。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    {
+      "label": "INFERENCE",
+      "description_ja": "入札の発行額と償還額の差は資金需給に影響し得る。実績、市場織り込み、日米金利が未確認のため資産方向は判断保留。"
+    }
+  ],
+  "historical_comparisons": [
+    {
+      "case_id": "fed-response-2020-03-15",
+      "common": "国債需給に関係",
+      "difference": "FRBによる市場機能支援と財務省発行は主体と目的が異なる",
+      "missing": "当初の物価・実質金利・流動性・エネルギー構造の比較未確認"
+    }
+  ],
+  "scenarios": [
+    {
+      "horizon": "days",
+      "condition": "入札実績と償還を確認"
+    },
+    {
+      "horizon": "weeks",
+      "condition": "純供給と買入需要を確認"
+    },
+    {
+      "horizon": "months",
+      "condition": "物価・各国金利を確認。相手国資料不足で通貨ペアは保留"
+    }
+  ],
+  "invalidations": [
+    "純発行の影響が償還や資金流入で相殺される場合"
+  ],
+  "review_after": "2026-11-17T19:18:37Z",
+  "retry": [
+    "入札の個別結果とPDF",
+    "10情報源の未取得資料と水位",
+    "過去分析の期限到来分",
+    "DB同期の最新状態"
+  ],
+  "postgresql_status": "過去確認の同期43858396900は失敗。最新状態と反映は未確認。",
+  "pc_status": "実機未確認",
+  "coverage_note": "予定は実績ではない。未取得を新着なしと扱わない。"
+}
