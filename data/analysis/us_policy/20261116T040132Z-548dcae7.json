@@ -1,0 +1,130 @@
+{
+  "id": "20261116T040132Z-548dcae7",
+  "as_of": "2026-11-16T04:01:32Z",
+  "document_ids": [],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-16T04:01:32Z",
+      "status": "not_checked_this_run",
+      "reason": "前回以降の差分開始点と網羅未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T04:01:32Z",
+      "status": "not_checked_this_run",
+      "reason": "前回以降の差分開始点と網羅未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T04:01:32Z",
+      "status": "not_checked_this_run",
+      "reason": "前回以降の差分開始点と網羅未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-16T04:01:32Z",
+      "status": "not_checked_this_run",
+      "reason": "前回以降の差分開始点と網羅未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-16T04:01:32Z",
+      "status": "search_result_found_individual_table_not_confirmed",
+      "reason": "前回以降の差分開始点と網羅未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T04:01:32Z",
+      "status": "not_checked_this_run",
+      "reason": "前回以降の差分開始点と網羅未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-16T04:01:32Z",
+      "status": "individual_body_checked_dedup_unverified",
+      "reason": "前回以降の差分開始点と網羅未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T04:01:32Z",
+      "status": "not_checked_this_run",
+      "reason": "前回以降の差分開始点と網羅未確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T04:01:32Z",
+      "status": "not_checked_this_run",
+      "reason": "前回以降の差分開始点と網羅未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T04:01:32Z",
+      "status": "not_checked_this_run",
+      "reason": "前回以降の差分開始点と網羅未確認"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "ofac",
+      "reason": "OFAC本文は確認済み。財務省メール経路との完全な重複照合、JSONと全文訳の保存未了、次回再試行。"
+    },
+    {
+      "id": "other",
+      "reason": "9ソース個別本文と表の全件確認なし。NY連銀ダッシュボードは動的表が開いた本文に現れず未取得扱い。"
+    },
+    {
+      "id": "history_review",
+      "reason": "歴史比較と期限到来レビュー未実施"
+    },
+    {
+      "id": "db",
+      "reason": "同期run 43771783364失敗、その後のDB実反映未確認"
+    }
+  ],
+  "facts": [
+    {
+      "source": "https://ofac.treasury.gov/recent-actions/20261113",
+      "published_at": null,
+      "published_local_date": "2026-11-13",
+      "retrieved_at": "2026-11-16T04:01:32Z",
+      "summary": "OFACはLos LorenzanasとLos MendozaをSDNリストに追加、既存のLos HuistasについてSDGT等の情報を更新。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "pair": "USD/JPY, EUR/USD, USD/CHF, USD/CAD, AUD/USD",
+      "horizon": "days_weeks_months",
+      "status": "hold",
+      "reason": "双方の金利・景気・需給資料不足"
+    }
+  ],
+  "invalidations": [
+    "追加情報の確認により再評価"
+  ],
+  "review_after": "2026-11-17T04:01:32Z"
+}
