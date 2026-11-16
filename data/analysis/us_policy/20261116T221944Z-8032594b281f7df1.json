@@ -1,0 +1,142 @@
+{
+  "as_of": "2026-11-16T22:19:44Z",
+  "document_ids": [
+    "nyfed-treasury-20261116-20261211-schedule-20261114"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-16T22:19:44Z",
+      "status": "入口取得試行、個別資料照合未了",
+      "missing": "前回水位が不明、24時間重複差分・本文・表・PDFの網羅未確認",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T22:19:44Z",
+      "status": "入口取得試行、個別資料照合未了",
+      "missing": "前回水位が不明、24時間重複差分・本文・表・PDFの網羅未確認",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T22:19:44Z",
+      "status": "入口取得試行、個別資料照合未了",
+      "missing": "前回水位が不明、24時間重複差分・本文・表・PDFの網羅未確認",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-16T22:19:44Z",
+      "status": "入口取得試行、個別資料照合未了",
+      "missing": "前回水位が不明、24時間重複差分・本文・表・PDFの網羅未確認",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-16T22:19:44Z",
+      "status": "入口と月次表確認",
+      "missing": "前回水位が不明、24時間重複差分・本文・表・PDFの網羅未確認",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T22:19:44Z",
+      "status": "入口取得試行、個別資料照合未了",
+      "missing": "前回水位が不明、24時間重複差分・本文・表・PDFの網羅未確認",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-16T22:19:44Z",
+      "status": "入口取得試行、個別資料照合未了",
+      "missing": "前回水位が不明、24時間重複差分・本文・表・PDFの網羅未確認",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T22:19:44Z",
+      "status": "入口取得試行、個別資料照合未了",
+      "missing": "前回水位が不明、24時間重複差分・本文・表・PDFの網羅未確認",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T22:19:44Z",
+      "status": "入口取得試行、個別資料照合未了",
+      "missing": "前回水位が不明、24時間重複差分・本文・表・PDFの網羅未確認",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T22:19:44Z",
+      "status": "入口取得試行、個別資料照合未了",
+      "missing": "前回水位が不明、24時間重複差分・本文・表・PDFの網羅未確認",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "入札・買戻しの個別結果とPDF",
+    "NY連銀の個別オペ実績",
+    "10情報源の期間別差分とPDF",
+    "メール経路との完全な重複照合",
+    "州認証と独立戦況検証",
+    "歴史史料の当初条件と到来レビュー",
+    "PostgreSQL同期の最新結果"
+  ],
+  "facts": [
+    {
+      "source_url": "https://www.newyorkfed.org/markets/domestic-market-operations/monetary-policy-implementation/treasury-securities/treasury-securities-operational-details",
+      "published_at": null,
+      "received_at": "2026-11-16T22:19:44Z",
+      "description_ja": "既存記録にある11月16日〜12月11日の国債再投資買入れ約140億ドル、準備管理買入れ予定なしの月次表を再確認。予定であり実績ではない。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "推論：再投資需要が純発行等を上回れば国債需給を支え得る。実績、織り込み、両国金利が不足し金・USDJPYの方向は判断保留。"
+  ],
+  "historical_comparisons": [
+    "2020年の緊急買入れとの違いは目的・規模。元史料と当初物価、実質金利、流動性、エネルギー構造の比較は未完了。"
+  ],
+  "scenarios": {
+    "days": "実施結果と発行・償還を確認",
+    "weeks": "純供給と資金需給を確認",
+    "months": "物価と各国金利・景気を確認、通貨方向は保留"
+  },
+  "invalidations": [
+    "国債供給増、織り込み、買入中止または減額が需要効果を相殺",
+    "日米実質金利差の変化が想定と逆"
+  ],
+  "review_after": "2026-11-17T22:19:44Z",
+  "review_status": "期限到来レビューの一覧と観測値は未取得・未評価",
+  "retry": [
+    "各情報源の時刻別差分・個別資料",
+    "財務省メール5件の未処理記録",
+    "事後レビュー",
+    "DB同期状態"
+  ],
+  "postgresql_status": "以前の実行43858396900は失敗。今回の最新結果と反映未確認",
+  "pc_status": "実機未確認",
+  "coverage_note": "取得失敗を新着なしと同一視しない"
+}
