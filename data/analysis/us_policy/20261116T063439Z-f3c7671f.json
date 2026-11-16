@@ -1,0 +1,128 @@
+{
+  "id": "20261116T063439Z-f3c7671f",
+  "as_of": "2026-11-16T06:34:39Z",
+  "document_ids": [
+    "eia-20261112-wpsr-summary-f3c7671f",
+    "eia-20261112-wpsr-table1-f08f4997",
+    "eia-20261112-wpsr-district-stocks-b9a0984b"
+  ],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-16T06:34:39Z",
+      "status": "not_checked_this_run",
+      "reason": "完全差分の開始時刻と当回の網羅確認未完了"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T06:34:39Z",
+      "status": "not_checked_this_run",
+      "reason": "完全差分の開始時刻と当回の網羅確認未完了"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T06:34:39Z",
+      "status": "not_checked_this_run",
+      "reason": "完全差分の開始時刻と当回の網羅確認未完了"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-16T06:34:39Z",
+      "status": "not_checked_this_run",
+      "reason": "完全差分の開始時刻と当回の網羅確認未完了"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-16T06:34:39Z",
+      "status": "not_checked_this_run",
+      "reason": "完全差分の開始時刻と当回の網羅確認未完了"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T06:34:39Z",
+      "status": "not_checked_this_run",
+      "reason": "完全差分の開始時刻と当回の網羅確認未完了"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-16T06:34:39Z",
+      "status": "not_checked_this_run",
+      "reason": "完全差分の開始時刻と当回の網羅確認未完了"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T06:34:39Z",
+      "status": "existing_records_and_translation_confirmed",
+      "reason": "完全差分の開始時刻と当回の網羅確認未完了"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T06:34:39Z",
+      "status": "not_checked_this_run",
+      "reason": "完全差分の開始時刻と当回の網羅確認未完了"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T06:34:39Z",
+      "status": "not_checked_this_run",
+      "reason": "完全差分の開始時刻と当回の網羅確認未完了"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "coverage",
+      "reason": "EIA以外9情報源の個別発表を今回は未確認。各情報源の差分始点は不明。"
+    },
+    {
+      "id": "db",
+      "reason": "過去のrun 43771783364は失敗、今回のDB反映未確認"
+    },
+    {
+      "id": "review",
+      "reason": "期限到来分の全件レビュー未完了"
+    }
+  ],
+  "facts": [
+    {
+      "source": "https://github.com/samkaz15/invest/blob/main/data/knowledge/us/eia-20261112-wpsr-summary-f3c7671f.json",
+      "text": "11月12日発表のEIA概要は既存保存済みで全文訳も記録済み。前回の未保存との記載を訂正する。関連CSV・PDFの既存記録も確認。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "horizon": "days_weeks_months",
+      "pair": "USD/JPY EUR/USD USD/CHF USD/CAD AUD/USD",
+      "status": "hold",
+      "reason": "双方の金利・景気・需給不足"
+    }
+  ],
+  "invalidations": [
+    "双方の資料を確認後に再評価"
+  ],
+  "review_after": "2026-11-17T06:34:39Z",
+  "supersedes_analysis": "20261116T050702Z-69e4333b"
+}
