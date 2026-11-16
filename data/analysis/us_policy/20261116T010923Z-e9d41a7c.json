@@ -1,0 +1,120 @@
+{
+  "id": "20261116T010923Z-e9d41a7c",
+  "as_of": "2026-11-16T01:09:23Z",
+  "document_ids": [],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-16T01:09:23Z",
+      "status": "今回の完全差分未確認。前回入口確認は2026-11-15T23:52:38Zまで。再試行対象"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T01:09:23Z",
+      "status": "今回の完全差分未確認。前回入口確認は2026-11-15T23:52:38Zまで。再試行対象"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T01:09:23Z",
+      "status": "今回の完全差分未確認。前回入口確認は2026-11-15T23:52:38Zまで。再試行対象"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-16T01:09:23Z",
+      "status": "今回の完全差分未確認。前回入口確認は2026-11-15T23:52:38Zまで。再試行対象"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-16T01:09:23Z",
+      "status": "今回の完全差分未確認。前回入口確認は2026-11-15T23:52:38Zまで。再試行対象"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T01:09:23Z",
+      "status": "今回の完全差分未確認。前回入口確認は2026-11-15T23:52:38Zまで。再試行対象"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-16T01:09:23Z",
+      "status": "今回の完全差分未確認。前回入口確認は2026-11-15T23:52:38Zまで。再試行対象"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T01:09:23Z",
+      "status": "今回の完全差分未確認。前回入口確認は2026-11-15T23:52:38Zまで。再試行対象"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T01:09:23Z",
+      "status": "今回の完全差分未確認。前回入口確認は2026-11-15T23:52:38Zまで。再試行対象"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T01:09:23Z",
+      "status": "今回の完全差分未確認。前回入口確認は2026-11-15T23:52:38Zまで。再試行対象"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "all",
+      "reason": "各ソースの差分開始点、個別文書・表・PDFの網羅取得、メール経路との重複照合は未完了。未確認は新着なしを意味しない。"
+    },
+    {
+      "id": "ncsbe",
+      "reason": "2026-11-13州選管本文を確認。発表時刻は不明でJSTの日付を確定できない。関連PDF、原文・全文訳の保存および既存メールレコード全件照合は未完了。"
+    },
+    {
+      "id": "db",
+      "reason": "run 43771783364 はDB接続時にtenant/user not foundで失敗。今回コミットのDB反映は未確認。"
+    },
+    {
+      "id": "history_review",
+      "reason": "史料とレビュー期限到来分の照合未完了。"
+    }
+  ],
+  "facts": [
+    {
+      "source": "https://www.ncsbe.gov/news/press-releases/2026/11/13/north-carolinas-recount-process-explained",
+      "published_date_local": "2026-11-13",
+      "published_time": "unknown",
+      "retrieved_at": "2026-11-16T01:09:23Z",
+      "text": "ノースカロライナ州選管は再集計手続きを説明し、州全体の認証を審議する会合は11月24日予定と記載。認証済みとの発表ではない。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "horizon": "days_weeks_months",
+      "pair": "USD/JPY, EUR/USD, USD/CHF, USD/CAD, AUD/USD",
+      "status": "hold",
+      "reason": "米国と相手国双方の金利・景気・需給資料不足"
+    }
+  ],
+  "invalidations": [
+    "双方の公式金利・需給情報と州の実際の認証状況を確認して再評価"
+  ],
+  "review_after": "2026-11-17T01:09:23Z"
+}
