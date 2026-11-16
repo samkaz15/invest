@@ -1,0 +1,118 @@
+{
+  "as_of": "2026-11-16T20:57:16Z",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "status": "入口確認のみ",
+      "coverage": "前回記録の最終時刻を確定できず差分期間未確定。個別一次資料・表・脚注・PDFの網羅確認は未了",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "status": "入口確認のみ",
+      "coverage": "前回記録の最終時刻を確定できず差分期間未確定。個別一次資料・表・脚注・PDFの網羅確認は未了",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "status": "入口確認のみ",
+      "coverage": "前回記録の最終時刻を確定できず差分期間未確定。個別一次資料・表・脚注・PDFの網羅確認は未了",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "status": "入口確認のみ",
+      "coverage": "前回記録の最終時刻を確定できず差分期間未確定。個別一次資料・表・脚注・PDFの網羅確認は未了",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "status": "入口確認のみ",
+      "coverage": "前回記録の最終時刻を確定できず差分期間未確定。個別一次資料・表・脚注・PDFの網羅確認は未了",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "status": "入口確認のみ",
+      "coverage": "前回記録の最終時刻を確定できず差分期間未確定。個別一次資料・表・脚注・PDFの網羅確認は未了",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "status": "入口確認のみ",
+      "coverage": "前回記録の最終時刻を確定できず差分期間未確定。個別一次資料・表・脚注・PDFの網羅確認は未了",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "status": "入口確認のみ",
+      "coverage": "前回記録の最終時刻を確定できず差分期間未確定。個別一次資料・表・脚注・PDFの網羅確認は未了",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "status": "入口確認のみ",
+      "coverage": "前回記録の最終時刻を確定できず差分期間未確定。個別一次資料・表・脚注・PDFの網羅確認は未了",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "status": "入口確認のみ",
+      "coverage": "前回記録の最終時刻を確定できず差分期間未確定。個別一次資料・表・脚注・PDFの網羅確認は未了",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "既存レコード一覧および前回基準時刻の照合",
+    "国債入札・買戻しの動的な個別結果",
+    "NY連銀オペ個別データ",
+    "州の認証",
+    "EIA個別表",
+    "その他8情報源の個別資料",
+    "歴史ケースと過去分析一覧",
+    "財務省メールとの重複確認"
+  ],
+  "facts": [
+    "財務省とOFACの一覧では最新表示は11月13日、ホワイトハウス大統領措置一覧では11月12日。公表時刻は未確認であり調査対象期間への適合は判定保留。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "一次資料の個別本文・表を確認できておらず、今回新たな因果判断は保留。"
+  ],
+  "historical_comparisons": [
+    "史料付きケース一覧を取得できず比較未了。"
+  ],
+  "scenarios": {
+    "days": "判断保留",
+    "weeks": "判断保留",
+    "months": "判断保留"
+  },
+  "invalidations": [
+    "一次資料、両通貨の状況および重複確認が完了した時点で再評価"
+  ],
+  "review_after": "2026-11-17T20:57:16Z",
+  "operational_status": {
+    "github": "本分析・報告の保存結果はコミット確認が必要",
+    "postgresql": "未確認",
+    "pc_notification": "実機未確認",
+    "mail_webhook": "変更なし"
+  },
+  "retry": [
+    "10情報源の個別原文・表、欠損PDF",
+    "既存記録の期間・重複照合",
+    "財務省メール3件の翻訳・保存とリンク先表",
+    "US knowledge database syncの実行結果",
+    "史料比較と到来したreview_afterの事後レビュー"
+  ]
+}
