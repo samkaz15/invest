@@ -1,0 +1,38 @@
+{
+  "id": "20261116T163237Z-review",
+  "as_of": "2026-11-17T01:32:37+09:00",
+  "previous_check": "2026-11-17T00:50:46+09:00",
+  "document_ids": [
+    "boj-20261116-securities-lending-results"
+  ],
+  "source_status": [
+    {
+      "source": "日銀オペ",
+      "source_url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261116.xlsx",
+      "status": "前回失敗したXLSXを再取得し、オファー・結果および脚注を確認。新規レコードを追加。",
+      "retry": false
+    },
+    {
+      "source": "日銀講演",
+      "status": "前回指摘した講演PDFの全図表確認は未了。",
+      "retry": true
+    },
+    {
+      "source": "財務省国債・買戻し、日銀会見・決定会合",
+      "status": "前回以降の全件照合未了。",
+      "retry": true
+    },
+    {
+      "source": "日銀国債補完供給の銘柄別表",
+      "status": "未取得。",
+      "retry": true
+    }
+  ],
+  "dedup": "公開URLのリポジトリ内検索で一致なし。検索網羅性は未確認。",
+  "mac_notification": "GitHub保存と独立。Mac実機での通知は未確認。",
+  "retry": [
+    "国債補完供給の銘柄別表",
+    "講演PDFの図表・未読部分",
+    "財務省と日銀のその他情報の差分確認"
+  ]
+}

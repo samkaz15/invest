@@ -1,0 +1,24 @@
+{
+  "id": "boj-20261116-securities-lending-results",
+  "source_url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261116.xlsx",
+  "title_ja": "日銀の国債補完供給オペ結果（11月16日）",
+  "summary_ja": "日銀の国債補完供給、11月16日は午前2101億円、午後17億円が落札。",
+  "published_at": null,
+  "published_date": "2026-11-16",
+  "published_time_note": "掲載日のみ確認、公開時刻不明",
+  "retrieved_at": "2026-11-17T01:32:37+09:00",
+  "notification_eligible": true,
+  "content_scope": "official_summary",
+  "facts_ja": [
+    "国債補完供給（国債売現先）の即日開始分は、午前オファーの応札額・落札額とも2101億円、午後はともに17億円。開始日は11月16日、買戻日は11月17日。",
+    "午前・午後の上限期間利回り、全取レート、平均落札レートはいずれも0.8％。"
+  ],
+  "inference_ja": [
+    "国債の一時供給と市場の資金・証券需給に関係し得る。買戻し条件付き取引であり、国債の恒久的な売切りや財務省の買戻しと区別する。市場予想と日米金利が不足し、金やドル円の方向は判断保留。"
+  ],
+  "missing_parts": [
+    "公表時刻は未確認。売却対象銘柄の別表は未取得。市場予想や同時刻の金利・為替は未確認。"
+  ],
+  "rights_note": "原本を複製せず公開資料から要点を要約。",
+  "source_sha256": "c13501c0f461aecbb67fcde0d3dc735f7dc8f95bec3f6b73c8f486a6e406d18c"
+}
