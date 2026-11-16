@@ -1,0 +1,130 @@
+{
+  "id": "20261116T024241Z-faa17dec",
+  "as_of": "2026-11-16T02:42:41Z",
+  "document_ids": [],
+  "new_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_from": null,
+      "requested_through": "2026-11-16T02:42:41Z",
+      "status": "individual_body_retrieved_dedup_and_translation_pending",
+      "reason": "個別資料の網羅・期間・保存済みとの照合は未完了"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T02:42:41Z",
+      "status": "not_checked_this_run",
+      "reason": "個別資料の網羅・期間・保存済みとの照合は未完了"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T02:42:41Z",
+      "status": "not_checked_this_run",
+      "reason": "個別資料の網羅・期間・保存済みとの照合は未完了"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_from": null,
+      "requested_through": "2026-11-16T02:42:41Z",
+      "status": "not_checked_this_run",
+      "reason": "個別資料の網羅・期間・保存済みとの照合は未完了"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_from": null,
+      "requested_through": "2026-11-16T02:42:41Z",
+      "status": "individual_fetch_failed",
+      "reason": "個別資料の網羅・期間・保存済みとの照合は未完了"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T02:42:41Z",
+      "status": "not_checked_this_run",
+      "reason": "個別資料の網羅・期間・保存済みとの照合は未完了"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_from": null,
+      "requested_through": "2026-11-16T02:42:41Z",
+      "status": "not_checked_this_run",
+      "reason": "個別資料の網羅・期間・保存済みとの照合は未完了"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T02:42:41Z",
+      "status": "not_checked_this_run",
+      "reason": "個別資料の網羅・期間・保存済みとの照合は未完了"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T02:42:41Z",
+      "status": "not_checked_this_run",
+      "reason": "個別資料の網羅・期間・保存済みとの照合は未完了"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_from": null,
+      "requested_through": "2026-11-16T02:42:41Z",
+      "status": "not_checked_this_run",
+      "reason": "個別資料の網羅・期間・保存済みとの照合は未完了"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "dedup",
+      "reason": "財務省発表はURL検索0件だがメール経路との完全照合未了、個人情報排除・原文と訳のJSON保存未了。関連OFAC指定詳細未取得。次回再試行。"
+    },
+    {
+      "id": "coverage",
+      "reason": "指定10ソースの差分始点未確定。今回8情報源は未確認、NY連銀個別取得失敗。"
+    },
+    {
+      "id": "history_review",
+      "reason": "歴史ケースと期限到来レビュー未実施。"
+    },
+    {
+      "id": "db",
+      "reason": "前回確認した同期run 43771783364は失敗、現在のDB反映未確認。"
+    }
+  ],
+  "facts": [
+    {
+      "source": "https://home.treasury.gov/news/press-releases/sb0689/",
+      "published_at": null,
+      "published_local_date": "2026-11-13",
+      "retrieved_at": "2026-11-16T02:42:41Z",
+      "summary": "OFACはLos Mendoza DTOとLos Huistas DTOを制裁指定したと発表。組織の犯罪行為に関する記述は米政府の主張。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "pair": "USD/JPY, EUR/USD, USD/CHF, USD/CAD, AUD/USD",
+      "horizon": "days_weeks_months",
+      "status": "hold",
+      "reason": "双方の金利・需給資料不足"
+    }
+  ],
+  "invalidations": [
+    "両国資料と制裁のエネルギー・金融経路を確認後に再評価"
+  ],
+  "review_after": "2026-11-17T02:42:41Z"
+}
