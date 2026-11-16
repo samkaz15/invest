@@ -1,0 +1,46 @@
+{
+  "id": "20261116T155046Z-jp-review",
+  "as_of": "2026-11-17T00:50:46+09:00",
+  "previous_check": "2026-11-16T22:52:40+09:00",
+  "source_status": [
+    {
+      "source": "財務省国債入札",
+      "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261116.htm",
+      "status": "11月16日10年物価連動国債第31回の結果表を再確認。既存資料と重複。公表時刻不明。",
+      "retry": true
+    },
+    {
+      "source": "日銀講演",
+      "source_url": "https://www.boj.or.jp/about/press/koen_2026/ko261116a.htm",
+      "status": "高田委員11月16日の講演ページを再確認、既存資料と重複。49ページの全図表の確認は未了。",
+      "retry": true
+    },
+    {
+      "source": "日銀オペ",
+      "source_url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "11月16日のオファー／落札結果と国債補完供給のXLSXを開こうとしたが、取得ツールがXLSX形式をサポートせず内容を取得できなかった。",
+      "failed_urls": [
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261116.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx"
+      ],
+      "retry": true
+    },
+    {
+      "source": "金融政策決定会合・総裁会見・財務省買戻し",
+      "status": "個別資料の対象期間全件照合未完了。",
+      "retry": true
+    }
+  ],
+  "document_ids": [
+    "boj-20261116-takata-speech-01",
+    "mof-20261116-inflation-jgb31-auction-result"
+  ],
+  "new_document_ids": [],
+  "result": "新着の有無は網羅未確認。",
+  "mac_notification": "GitHub保存とは別。Mac実機通知は未確認。",
+  "retry": [
+    "XLSX形式でオペ結果を取得して表を読む",
+    "高田講演PDF未読ページ・図表を確認",
+    "全対象の前回差分を確認"
+  ]
+}
