@@ -1,0 +1,31 @@
+{
+  "id": "eia-global-energy-security-20261116",
+  "source_url": "https://www.eia.gov/outlooks/steo/report/energysecurity/article.php",
+  "title_en": "Global Energy Security Data",
+  "title_ja": "EIA世界エネルギー安全保障データ",
+  "published_at": null,
+  "published_date": "2026-11-16",
+  "published_time_note": "公表時刻・タイムゾーン未確認",
+  "received_at": "2026-11-17T01:29:50Z",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil"
+  ],
+  "original_text": "Strait of Hormuz | 21.1 | 21.4 | 21.6 | 15.0 | 5.1 | 9.1",
+  "translation_ja": "ホルムズ海峡の原油・石油液体輸送量（単位：日量百万バレル）は、2025年第2四半期から2026年第3四半期まで順に21.1、21.4、21.6、15.0、5.1、9.1。",
+  "facts_ja": [
+    "EIAの推計ではホルムズ海峡の原油・石油液体輸送量は2026年第2四半期の日量510万バレルから第3四半期に同910万バレルとなった。船舶追跡情報を基にEIAが補正した推計値。",
+    "AIS信号の欠落・操作などの制約があり、2026年のホルムズ海峡のデータは頻繁に改定される。"
+  ],
+  "inference_ja": [
+    "供給経路の輸送制約が持続し、代替供給も不足すれば原油価格や物価を押し上げ、景気・金利に影響し得る。代替経路の増加や需要減は反証条件。金・ドル円の方向は他国経済と市場織り込みが未確認のため保留。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "表2のホルムズ海峡行のみ原文・訳を収録。その他の全表、出典注、方法論全体は未収録・未翻訳。",
+    "公表時刻不明。既存メール経路および全既存知見との完全な重複照合は未完了。",
+    "民間データ提供元の再配布権は未確認のためデータ全文を複製しない。"
+  ],
+  "notification_eligible": false
+}
