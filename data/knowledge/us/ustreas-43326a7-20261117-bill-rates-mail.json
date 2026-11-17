@@ -1,0 +1,30 @@
+{
+  "id": "ustreas-43326a7-20261117-bill-rates-mail",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/43326a7",
+  "primary_source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Bill Rates Update",
+  "title_ja": "米財務省短期証券金利表の更新通知",
+  "published_at": null,
+  "received_at": "2026-11-18T05:56:22+09:00",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Bill Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.",
+  "translation_ja": "米財務省の短期証券日次金利を購読されています。この情報は最近更新され、利用できるようになりました。",
+  "facts_ja": [
+    "メールは金利表の更新を通知しているが、金利数値や表の公表時刻は本文に含まれない。",
+    "公式表は取得できたが、通知に対応する最新行と列・脚注の完全照合は未完了。"
+  ],
+  "inference_ja": [
+    "短期金利の変化は金融環境やドル資金需給に関連し得るが、数値の変化や相場方向は未確認。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [
+    "メール本文以外の配送情報・購読管理情報は個人情報保護のため除外。",
+    "リンク先表の全体・最新行・脚注の正確な照合と別文書としての保存は未完了。表公表時刻は不明で再試行対象。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省が短期証券の金利表更新を通知、数値と公表時刻は未確認で再取得が必要です。"
+}
