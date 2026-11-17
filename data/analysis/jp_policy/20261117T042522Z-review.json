@@ -1,0 +1,36 @@
+{
+  "id": "20261117T042522Z-review",
+  "as_of": "2026-11-17T13:25:22+09:00",
+  "previous_check": "2026-11-17T11:36:58+09:00",
+  "document_ids": [
+    "mof-20261117-special-account-loan-auction"
+  ],
+  "source_status": [
+    {
+      "source": "財務省新着",
+      "url": "https://www.mof.go.jp/public_relations/whats_new/202611.html",
+      "status": "特別会計の借入金入札結果本文・表を取得。公表時刻不明。国債入札と区別。",
+      "retry": false
+    },
+    {
+      "source": "日銀オペ",
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "11月17日のオファー／落札結果XLSX掲載を確認。形式非対応により表未取得。",
+      "retry": true,
+      "retry_url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261117.xlsx"
+    },
+    {
+      "source": "日銀会見・決定会合・国債買入れ、財務省買戻し",
+      "status": "個別資料と対象期間の網羅的照合は未完了。",
+      "retry": true
+    }
+  ],
+  "retry": [
+    "日銀オペXLSX表を取得し個別国債取引を確認",
+    "財務省金利CSV",
+    "講演PDF全ページ・図表",
+    "会見・決定会合・買戻しの差分",
+    "URL・公表時刻による既存知見の全件照合"
+  ],
+  "mac_notification": "Mac実機通知未確認。GitHub保存とは独立。"
+}
