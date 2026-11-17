@@ -1,0 +1,37 @@
+{
+  "id": "fincen-20261117-customer-due-diligence-proposal-email",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/4331579",
+  "title_en": "FinCEN Issues Proposed Rule to Strengthen Customer Due Diligence Requirements for Covered Financial Institutions",
+  "title_ja": "FinCENが金融機関の顧客管理規則案を公表",
+  "published_at": null,
+  "published_date": "2026-11-17",
+  "received_at": "2026-11-18T01:07:00+09:00",
+  "topics": [
+    "other_us"
+  ],
+  "original_text": "**FinCEN Issues Proposed Rule to Strengthen Customer Due Diligence Requirements for Covered Financial Institutions**\r\n\r\n*WASHINGTON *— Today, the U.S. Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN) issued a proposed rule to strengthen customer due diligence requirements, which are integral to efforts to combat money laundering and counter the financing of terrorism. FinCEN issues this proposal as a part of Treasury’s implementation of Executive Order 14406, \"Restoring Integrity to America’s Financial System\".  \r\n\r\n“Financial institutions are on the front lines of protecting our financial systems from criminal organizations and cartels that target law-abiding businesses and workers,” said *Secretary of the Treasury Scott Bessent*. “This proposed rule cuts unnecessary burden, gives institutions more flexibility to effectively combat risk, and strengthens our fight against financial crime.”\r\n\r\nThe proposed rule would amend customer due diligence requirements to:\r\n\r\n\r\n  * explicitly provide that covered financial institutions can obtain additional information about beneficial owners of a legal entity customer that may be useful in mitigating risk or addressing supervisory concerns; \r\n\r\n  * codify exceptive relief FinCEN issued removing the requirement for covered financial institutions to identify and verify the beneficial owners of a legal entity customer each time the customer opens a new account; and \r\n  * specify information that a covered financial institution must obtain about each beneficial owner of a legal entity customer. \r\n\r\nFinCEN welcomes public comments. The comment period closes 60 days after the proposed rule’s publication in the \"Federal Register\".\r\n\r\n*Resources*\r\n\r\n\r\n  * Notice of Proposed Rulemaking \r\n  * Fact Sheet",
+  "translation_ja": "FinCENは対象金融機関の顧客デューデリジェンス要件を強化する規則案を公表\n\nワシントン発――財務省の金融犯罪取締ネットワーク（FinCEN）は本日、マネーロンダリング防止とテロ資金対策に不可欠な顧客デューデリジェンスの要件を強化する規則案を発表した。この提案は、大統領令14406号「米国金融システムの健全性の回復」の財務省による実施の一環である。\n\nベッセント財務長官は、金融機関は法を守る企業や労働者を狙う犯罪組織やカルテルから金融システムを守る最前線にあり、規則案は不要な負担を削減し、リスクに効果的に対処する柔軟性を与え、金融犯罪との闘いを強化すると述べた。\n\n規則案は顧客デューデリジェンス要件を次のように改める。\n\n・対象金融機関が、リスクの軽減や監督上の懸念への対応に有用な、法人顧客の実質的所有者に関する追加情報を取得できることを明確にする。\n・法人顧客が新たな口座を開くたびに実質的所有者の特定と本人確認を求める義務を除いた、FinCENの適用除外措置を規則に明文化する。\n・対象金融機関が法人顧客の各実質的所有者について取得しなければならない情報を定める。\n\nFinCENは意見を募集しており、提出期限は規則案の連邦官報掲載から60日後である。\n\n資料：規則案とファクトシート。両PDFは今回取得できていない。",
+  "facts_ja": [
+    "顧客管理に関する提案段階で、施行済みの最終規則ではない。公表時刻不明。"
+  ],
+  "inference_ja": [
+    "金融機関の本人確認やコンプライアンス実務に影響し得るが、金・原油・米国債の需給への直接影響は本文から確認できない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [
+    "規則案PDFおよびファクトシートPDFの取得・ページ数・原文・表・脚注・翻訳・視覚確認は未完了。",
+    "公表時刻不明。"
+  ],
+  "related_documents": [
+    {
+      "url": "https://content.govdelivery.com/attachments/USTREAS/2026/11/17/file_attachments/3860390/CDD_NPRM_11_12_2026_508FINAL.pdf",
+      "status": "unretrieved_retry"
+    },
+    {
+      "url": "https://content.govdelivery.com/attachments/USTREAS/2026/11/17/file_attachments/3860429/CDD%20Fact%20Sheet%20Updatev2.pdf",
+      "status": "unretrieved_retry"
+    }
+  ],
+  "notification_eligible": false
+}
