@@ -1,0 +1,44 @@
+{
+  "id": "20261117T050934Z-review",
+  "as_of": "2026-11-17T14:09:34+09:00",
+  "previous_check": "2026-11-17T13:25:22+09:00",
+  "document_ids": [
+    "mof-20261117-special-account-loan-auction"
+  ],
+  "source_status": [
+    {
+      "source": "財務省新着",
+      "url": "https://www.mof.go.jp/public_relations/whats_new/202611.html",
+      "status": "一覧取得。特別会計の借入金結果は既存記録と一致し重複保存せず。金利CSVは形式非対応で取得失敗。",
+      "retry": true,
+      "retry_url": "https://www.mof.go.jp/jgbs/reference/interest_rate/jgbcm.csv"
+    },
+    {
+      "source": "日銀オペ",
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "11月17日のXLSXを再取得試行、形式非対応で失敗。結果の表は未確認。",
+      "retry": true,
+      "retry_url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261117.xlsx"
+    },
+    {
+      "source": "日銀ニュース",
+      "url": "https://www.boj.or.jp/whatsnew/index.htm",
+      "status": "一覧取得。貸出統計の訂正案内など個別数値、会見・決定事項の差分照合は未完了。",
+      "retry": true
+    },
+    {
+      "source": "財務省買戻し・日銀講演",
+      "status": "個別資料と講演PDF全49ページ・図表は未確認。",
+      "retry": true
+    }
+  ],
+  "result": "未取得箇所があり新着なしとは判定できない。",
+  "mac_notification": "Mac実機は未確認。GitHub保存とは別。",
+  "retry": [
+    "国債金利CSV",
+    "日銀オペXLSX",
+    "講演PDF全ページ",
+    "会見・会合・財務省買戻し差分",
+    "既存レコードの完全照合"
+  ]
+}
