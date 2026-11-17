@@ -1,0 +1,103 @@
+{
+  "as_of": "2026-11-18T00:32:19+09:00",
+  "document_ids": [
+    "census-20261117-october-retail-advance-excerpt",
+    "eia-global-energy-security-20261116"
+  ],
+  "sources_checked": [
+    {
+      "source": "treasury_news",
+      "period": "前回2026-11-17 23:23 JST以降を中心に確認、24時間重複の公表水位は未確定",
+      "status": "入口取得、個別の網羅確認未完了"
+    },
+    {
+      "source": "treasury_auctions",
+      "period": "前回2026-11-17 23:23 JST以降を中心に確認、24時間重複の公表水位は未確定",
+      "status": "入口取得、個別の網羅確認未完了"
+    },
+    {
+      "source": "treasury_buybacks",
+      "period": "前回2026-11-17 23:23 JST以降を中心に確認、24時間重複の公表水位は未確定",
+      "status": "入口取得、個別の網羅確認未完了"
+    },
+    {
+      "source": "fed_fomc",
+      "period": "前回2026-11-17 23:23 JST以降を中心に確認、24時間重複の公表水位は未確定",
+      "status": "入口取得、個別の網羅確認未完了"
+    },
+    {
+      "source": "nyfed_operations",
+      "period": "前回2026-11-17 23:23 JST以降を中心に確認、24時間重複の公表水位は未確定",
+      "status": "入口取得、個別の網羅確認未完了"
+    },
+    {
+      "source": "white_house",
+      "period": "前回2026-11-17 23:23 JST以降を中心に確認、24時間重複の公表水位は未確定",
+      "status": "入口取得、個別の網羅確認未完了"
+    },
+    {
+      "source": "ofac",
+      "period": "前回2026-11-17 23:23 JST以降を中心に確認、24時間重複の公表水位は未確定",
+      "status": "入口取得、個別の網羅確認未完了"
+    },
+    {
+      "source": "eia_petroleum",
+      "period": "前回2026-11-17 23:23 JST以降を中心に確認、24時間重複の公表水位は未確定",
+      "status": "入口取得、個別の網羅確認未完了"
+    },
+    {
+      "source": "fec_results",
+      "period": "前回2026-11-17 23:23 JST以降を中心に確認、24時間重複の公表水位は未確定",
+      "status": "入口取得、個別の網羅確認未完了"
+    },
+    {
+      "source": "cfius",
+      "period": "前回2026-11-17 23:23 JST以降を中心に確認、24時間重複の公表水位は未確定",
+      "status": "入口取得、個別の網羅確認未完了"
+    }
+  ],
+  "missing_sources": [
+    "財務省入札個別PDF",
+    "財務省買い戻し結果表",
+    "NY連銀個別取引",
+    "FOMC個別声明照合",
+    "大統領令・OFAC本文網羅",
+    "EIA週報全表",
+    "州認証",
+    "CFIUS個別資料",
+    "小売PDF全頁原文・訳・表・視覚確認",
+    "歴史vintage",
+    "期限到来分析レビュー",
+    "日米の市場予想・実質金利"
+  ],
+  "facts": [
+    "米10月小売売上前月比0.2％増±0.4％は名目値で90％信頼区間にゼロを含む。",
+    "EIA 11月16日公表のホルムズ海峡輸送推計2026年第2四半期510万、第3四半期910万バレル／日。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "エネルギー供給制約が続けば価格と実質所得に影響し、金融政策期待・実質金利・資金需要に波及する可能性。"
+  ],
+  "historical_comparisons": [
+    "1973年禁輸・減産は供給制約という共通点。当時のインフレ・実質金利・流動性・エネルギー構造のvintage未取得、原因は異なる。"
+  ],
+  "scenarios": {
+    "days": "小売名目値と市場予想・物価を照合。米日双方の資料不足でUSDJPY及び金は方向保留。",
+    "weeks": "輸送・代替供給と在庫の変化を検証。",
+    "months": "実質消費・インフレ・政策金利の応答を確認。"
+  },
+  "invalidations": [
+    "輸送回復",
+    "代替供給拡大",
+    "需要後退",
+    "統計改定"
+  ],
+  "review_after": "2026-11-24T15:32:19Z",
+  "review_status": "既存の期限到来分はデータ不足と時間制約により未評価、再試行",
+  "database_sync": {
+    "conclusion": "failure",
+    "run_url": "https://github.com/samkaz15/invest/actions/runs/44102658389",
+    "failed_step": "Run python ops/import_us_knowledge.py",
+    "reason": "未確認"
+  }
+}
