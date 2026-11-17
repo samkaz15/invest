@@ -1,0 +1,123 @@
+{
+  "as_of": "2026-11-17T09:31:17Z",
+  "document_ids": [
+    "eia-global-energy-security-20261116"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "from": null,
+      "through": "2026-11-17T09:31:17Z",
+      "status": "入口取得・個別文書網羅未確認",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "from": null,
+      "through": "2026-11-17T09:31:17Z",
+      "status": "入口取得・個別落札PDF未取得",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "from": null,
+      "through": "2026-11-17T09:31:17Z",
+      "status": "入口取得・動的個別結果未取得",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "from": null,
+      "through": "2026-11-17T09:31:17Z",
+      "status": "会合一覧取得・個別声明未照合",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "from": null,
+      "through": "2026-11-17T09:31:17Z",
+      "status": "入口取得・個別オペ未取得",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "from": null,
+      "through": "2026-11-17T09:31:17Z",
+      "status": "入口取得・個別文書未照合",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "from": null,
+      "through": "2026-11-17T09:31:17Z",
+      "status": "一覧取得・個別措置網羅未確認",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "from": null,
+      "through": "2026-11-17T09:31:17Z",
+      "status": "週報入口と別途EIA表を取得・週報全表未確認",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "from": null,
+      "through": "2026-11-17T09:31:17Z",
+      "status": "入口取得・州認証未確認",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "from": null,
+      "through": "2026-11-17T09:31:17Z",
+      "status": "入口取得・個別資料未確認",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "情報源別公表水位と24時間重複起点",
+    "入札PDF・買戻し・FRB個別オペ",
+    "メール経路との完全な重複照合",
+    "EIAの残りの表・脚注・再配布条件",
+    "当時物価・金利・流動性・エネルギー構造vintage",
+    "期限到来レビュー",
+    "最新DB同期状況"
+  ],
+  "facts": [
+    {
+      "document_id": "eia-global-energy-security-20261116",
+      "source_url": "https://www.eia.gov/outlooks/steo/report/energysecurity/article.php",
+      "published_date": "2026-11-16",
+      "published_at": null,
+      "description_ja": "既存部分訳。EIAによるホルムズ海峡の石油輸送量推計は2026年第2四半期日量510万バレル、第3四半期910万バレル。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "推論：輸送制約と代替供給不足が継続すれば、供給減→エネルギー物価上昇・実質所得減→景気・金利・資金需給に波及し得る。"
+  ],
+  "historical_comparisons": [
+    {
+      "case_id": "oil-shock-1973-1974",
+      "analysis": "後年の公的史料による初期要約では禁輸と減産が供給を制約。今回の海峡輸送推計と原因・強度は異なり得る。当時のvintage未取得で当時の予測情報として後年解説は使えない。"
+    }
+  ],
+  "scenarios": {
+    "days": "輸送と在庫を確認",
+    "weeks": "代替供給・需要を確認",
+    "months": "物価と各国政策を確認。USD/JPYは両側資料不足で判断保留"
+  },
+  "invalidations": [
+    "輸送回復、供給増、需要減、推計改定"
+  ],
+  "review_after": "2026-11-18T09:31:17Z",
+  "retry": [
+    "個別入札PDF・買戻し・FRBオペ",
+    "メール経路照合",
+    "歴史vintage・期限到来レビュー",
+    "DB同期確認"
+  ],
+  "postgresql_status": "過去のrun 43858396900は失敗。最新は未確認。",
+  "pc_status": "実機未確認"
+}
