@@ -1,0 +1,134 @@
+{
+  "as_of": "2026-11-17T06:25:55Z",
+  "document_ids": [
+    "eia-global-energy-security-20261116"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "requested_from": null,
+      "requested_through": "2026-11-17T06:25:55Z",
+      "observed_previous_run_as_of": "2026-11-17T05:22:01Z",
+      "status": "入口取得。対象期間の個別資料・表は未照合",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "requested_from": null,
+      "requested_through": "2026-11-17T06:25:55Z",
+      "observed_previous_run_as_of": "2026-11-17T05:22:01Z",
+      "status": "入口取得。結果表は動的表示のため未取得、13週・26週PDF未取得",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "requested_from": null,
+      "requested_through": "2026-11-17T06:25:55Z",
+      "observed_previous_run_as_of": "2026-11-17T05:22:01Z",
+      "status": "入口取得。動的な個別結果表未取得",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "requested_from": null,
+      "requested_through": "2026-11-17T06:25:55Z",
+      "observed_previous_run_as_of": "2026-11-17T05:22:01Z",
+      "status": "会合一覧取得。期間内の個別文書の完全照合未了",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "requested_from": null,
+      "requested_through": "2026-11-17T06:25:55Z",
+      "observed_previous_run_as_of": "2026-11-17T05:22:01Z",
+      "status": "入口取得。個別売買オペ未取得",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "requested_from": null,
+      "requested_through": "2026-11-17T06:25:55Z",
+      "observed_previous_run_as_of": "2026-11-17T05:22:01Z",
+      "status": "一覧および11月16日付上院への人事指名本文を確認。発表時刻不明。他の対象文書の網羅性未確認",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "requested_from": null,
+      "requested_through": "2026-11-17T06:25:55Z",
+      "observed_previous_run_as_of": "2026-11-17T05:22:01Z",
+      "status": "一覧取得。最新表示は11月13日付。期間全体の完全性未検証",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "requested_from": null,
+      "requested_through": "2026-11-17T06:25:55Z",
+      "observed_previous_run_as_of": "2026-11-17T05:22:01Z",
+      "status": "入口取得。既存EIAエネルギー安全保障表1〜4を再確認。週報全表未確認",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "requested_from": null,
+      "requested_through": "2026-11-17T06:25:55Z",
+      "observed_previous_run_as_of": "2026-11-17T05:22:01Z",
+      "status": "入口取得。各州の認証未確認",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "requested_from": null,
+      "requested_through": "2026-11-17T06:25:55Z",
+      "observed_previous_run_as_of": "2026-11-17T05:22:01Z",
+      "status": "入口取得。個別政策資料未確認",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "情報源ごとの実際の公表水位と24時間重複期間",
+    "財務省13週・26週入札PDFと買戻し・NY連銀売買の個別結果",
+    "全メール経路とのURL・公表時刻・ハッシュ照合",
+    "EIA表5以降の訳、方法論・再配布権と関連PDFの確認",
+    "州認証と戦況の独立検証",
+    "史料付き歴史比較と期限到来レビュー",
+    "最新PostgreSQL同期結果"
+  ],
+  "facts": [
+    {
+      "document_id": "eia-global-energy-security-20261116",
+      "published_date": "2026-11-16",
+      "published_at": null,
+      "source_url": "https://www.eia.gov/outlooks/steo/report/energysecurity/article.php",
+      "description_ja": "既存文書のEIA表を再確認。ホルムズ海峡の石油輸送量推計は2026年第2四半期日量510万バレル、第3四半期910万バレル。表1では米国の戦略石油在庫推計は第2四半期3億2100万バレル、第3四半期2億8300万バレル。公表時刻不明。表には民間データが含まれ、再配布権未確認。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "推論：輸送障害と代替供給不足が同時に生じれば原油供給が逼迫し、物価を押し上げ、実質所得と景気を圧迫し得る。政策金利と実質金利は各国の反応次第。"
+  ],
+  "historical_comparisons": [
+    "今回史料に基づく照合未了。3件は初期ケースであり全経済史の学習や予測精度の検証を意味しない。"
+  ],
+  "scenarios": {
+    "days": "航路・輸送・在庫の情報を確認。米日両側の資料不足によりUSD/JPY方向は保留。",
+    "weeks": "輸送障害が持続し代替供給が不足する場合、エネルギー価格と物価の押上げがあり得る。金への影響は実質金利等次第。",
+    "months": "供給回復や需要減で物価圧力が緩む可能性。通貨ペアの方向は各国の金利・景気資料不足で保留。"
+  },
+  "invalidations": [
+    "輸送量の回復、備蓄・代替供給の増加、需要減少",
+    "輸送推計の改定、各国の政策・実質金利の変化"
+  ],
+  "review_after": "2026-11-18T06:25:55Z",
+  "review_status": "到来分の検索・事後評価未了。",
+  "retry": [
+    "入札PDF、買戻し・NY連銀個別結果",
+    "10情報源の個別資料と既存メール経路の完全照合",
+    "EIA残りの表・脚注・権利確認",
+    "歴史比較・期限到来レビュー",
+    "PostgreSQL同期状況"
+  ],
+  "postgresql_status": "以前のUS knowledge database sync run 43858396900は失敗。今回の最新状況未確認。GitHub保存とは別。",
+  "pc_status": "実機未確認",
+  "chatgpt_individual_notifications": "行っていない"
+}
