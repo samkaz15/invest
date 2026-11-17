@@ -1,0 +1,28 @@
+{
+  "id": "treasury-20261117-nominal-10y-excerpt-2cbe81f5",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "title_en": "Treasury par yield curve: 10-year excerpt",
+  "title_ja": "米財務省の10年名目パー利回り（抜粋）",
+  "published_at": null,
+  "publication_note": "11月17日分の観測値。表の公表時刻不明。",
+  "received_at": "2026-11-18T07:44:57+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "11/17/2026 | 10 Yr | 5.10",
+  "translation_ja": "2026年11月17日 | 10年 | 5.10％",
+  "facts_ja": [
+    "11月17日の10年名目パー利回りは5.10％。前営業日11月16日は5.12％。財務省の気配値由来の補間値で、約定利回りではない。"
+  ],
+  "inference_ja": [
+    "実質金利の変化は金の保有機会費用に影響し得るが、他要因や織り込みも必要。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "10年列の2日分以外の表全体、方法論の全文訳、公表時刻は未確認。"
+  ],
+  "content_sha256": "2cbe81f50b8834bcf490a9b06c3fdb6c88d5825bbb1e1573b708a2092d96d351",
+  "notification_eligible": false
+}
