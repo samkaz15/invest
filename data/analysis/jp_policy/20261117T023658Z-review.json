@@ -1,0 +1,34 @@
+{
+  "id": "20261117T023658Z-review",
+  "as_of": "2026-11-17T11:36:58+09:00",
+  "previous_check": "2026-11-17T11:10:52+09:00",
+  "document_ids": [],
+  "source_status": [
+    {
+      "source": "財務省新着",
+      "url": "https://www.mof.go.jp/public_relations/whats_new/202611.html",
+      "status": "入口確認、国債金利CSVの個別データ未取得",
+      "retry": true
+    },
+    {
+      "source": "日銀オペ",
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "入口確認、日次表XLSX未取得",
+      "retry": true
+    },
+    {
+      "source": "日銀・財務省その他",
+      "status": "会見・政策会合・買戻し、講演PDF・図表の網羅照合未了",
+      "retry": true
+    }
+  ],
+  "result": "一覧確認のみ。取得失敗・未確認を新着なしと扱わない。",
+  "mac_notification": "実機未確認",
+  "retry": [
+    "財務省金利CSV",
+    "日銀オペXLSX",
+    "講演PDF全ページ",
+    "会見・会合・買戻し差分",
+    "既存レコードとの完全照合"
+  ]
+}
