@@ -1,0 +1,52 @@
+{
+  "as_of": "2026-11-17T02:37:06Z",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_auctions",
+      "url": "https://fiscaldata.treasury.gov/datasets/treasury-securities-auctions-data/",
+      "requested_from": null,
+      "requested_through": "2026-11-17T02:37:06Z",
+      "status": "データセット入口取得、11月16日入札の個別PDF再取得失敗。表・数値・公表時刻未確認",
+      "retry": true
+    },
+    {
+      "id": "remaining_nine_sources",
+      "status": "今回未確認",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "入札結果PDF原文と表",
+    "10情報源の期間差分とメール照合",
+    "歴史比較・期限到来レビュー",
+    "戦況独立検証と州認証",
+    "DB同期"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [
+    "国債発行・償還と需要の差が需給に影響し得る。入札条件と市場織り込み・日米双方の金利不足により金・ドル円は保留。"
+  ],
+  "historical_comparisons": [
+    "当初条件の史料確認が不足し比較保留。"
+  ],
+  "scenarios": {
+    "days": "入札結果と需給確認",
+    "weeks": "純供給と需要確認",
+    "months": "物価、景気、各国政策確認"
+  },
+  "invalidations": [
+    "償還や需要が純供給を相殺",
+    "各国金利差・市場織込が仮定と異なる"
+  ],
+  "review_after": "2026-11-18T02:37:06Z",
+  "retry": [
+    "結果PDF2件",
+    "情報源差分とメールの重複照合",
+    "期限到来レビュー",
+    "DB同期"
+  ],
+  "postgresql_status": "過去43858396900失敗、最新の反映未確認",
+  "pc_status": "実機未確認"
+}
