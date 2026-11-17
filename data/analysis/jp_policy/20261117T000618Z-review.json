@@ -1,0 +1,51 @@
+{
+  "id": "20261117T000618Z-review",
+  "as_of": "2026-11-17T09:06:18+09:00",
+  "previous_check": "2026-11-17T08:07:27+09:00",
+  "document_ids": [],
+  "source_status": [
+    {
+      "source": "日銀ニュース一覧",
+      "url": "https://www.boj.or.jp/whatsnew/index.htm",
+      "status": "入口取得。対象期間と個別本文の網羅照合は未完了",
+      "retry": true
+    },
+    {
+      "source": "日銀オペ",
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "入口取得、個別XLSXの表未取得",
+      "retry": true
+    },
+    {
+      "source": "財務省新着",
+      "url": "https://www.mof.go.jp/public_relations/whats_new/202611.html",
+      "status": "入口取得、入札と買戻し個別資料の完全照合未了",
+      "retry": true
+    },
+    {
+      "source": "高田委員講演",
+      "url": "https://www.boj.or.jp/about/press/koen_2026/ko261116a.htm",
+      "status": "今回個別ページ取得失敗。講演は既存記録あり、PDF49ページと図表は未確認",
+      "retry": true
+    },
+    {
+      "source": "10年物価連動国債31回入札結果",
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261116.htm",
+      "status": "今回個別ページ取得失敗。入札結果の既存記録あり",
+      "retry": true
+    },
+    {
+      "source": "会見と金融政策決定会合",
+      "status": "個別資料・期間の全件確認未了",
+      "retry": true
+    }
+  ],
+  "result": "取得失敗と未確認期間あり、新着なしとは判断できない。",
+  "mac_notification": "GitHub保存と別。実機未確認",
+  "retry": [
+    "個別ページの再取得",
+    "オペXLSXの表",
+    "講演PDF全ページ・図表",
+    "日銀会見・決定会合と財務省入札・買戻しの差分"
+  ]
+}
