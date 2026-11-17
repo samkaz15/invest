@@ -1,0 +1,28 @@
+{
+  "id": "treasury-20261117-real-10y-excerpt-80dcd91f",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026",
+  "title_en": "Treasury par real yield curve: 10-year excerpt",
+  "title_ja": "米財務省の10年実質パー利回り（抜粋）",
+  "published_at": null,
+  "publication_note": "11月17日分の観測値。表の公表時刻不明。",
+  "received_at": "2026-11-18T07:44:57+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "11/17/2026 | 10 YR | 2.89",
+  "translation_ja": "2026年11月17日 | 10年 | 2.89％",
+  "facts_ja": [
+    "11月17日の10年実質パー利回りは2.89％。前営業日11月16日は2.92％。"
+  ],
+  "inference_ja": [
+    "実質金利の変化は金の保有機会費用に影響し得るが、他要因や織り込みも必要。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "10年列の2日分以外の表全体、方法論の全文訳、公表時刻は未確認。"
+  ],
+  "content_sha256": "80dcd91fa4ba8da7876374f567662c2d5a33e9aa4e554aafc9bf35c766859030",
+  "notification_eligible": false
+}
