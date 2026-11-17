@@ -1,0 +1,52 @@
+{
+  "as_of": "2026-11-17T20:32:55Z",
+  "document_ids": [],
+  "sources_checked": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "missing_sources": [
+    "24時間重複期間・全件照合",
+    "入札結果",
+    "買戻し結果",
+    "NY連銀売買表",
+    "個別制裁",
+    "EIA本文・全表",
+    "州選挙認証",
+    "CFIUS個別政策",
+    "小売・FinCEN PDF",
+    "DB同期",
+    "過去分析の事後レビュー"
+  ],
+  "facts": [
+    "10機関の入口を確認。各種個別表と時刻に欠損。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "原油供給制約→価格と実質所得→物価・景気→金利期待・資金需給"
+  ],
+  "historical_comparisons": [
+    "1973年の供給制約との定性的比較、当時値は未取得"
+  ],
+  "scenarios": {
+    "days": "実質小売と予想の確認待ち",
+    "weeks": "原油輸送・在庫の確認待ち",
+    "months": "実質消費と政策反応の確認待ち",
+    "pairs": "日米欧等の両側資料が不足し判断保留"
+  },
+  "invalidations": [
+    "輸送回復",
+    "供給増",
+    "需要減"
+  ],
+  "review_after": "2026-11-18T20:32:55Z",
+  "status": "partial"
+}
