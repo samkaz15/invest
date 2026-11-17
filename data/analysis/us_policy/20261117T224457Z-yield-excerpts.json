@@ -1,0 +1,55 @@
+{
+  "as_of": "2026-11-17T22:44:57Z",
+  "document_ids": [
+    "treasury-20261117-nominal-10y-excerpt-2cbe81f5",
+    "treasury-20261117-real-10y-excerpt-80dcd91f"
+  ],
+  "sources_checked": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "missing_sources": [
+    "個別入札・買戻し結果表",
+    "NY連銀個別売買",
+    "FOMC・OFAC・CFIUS個別文書の網羅",
+    "州認証",
+    "EIA全表",
+    "金利表全期間・脚注全文",
+    "日米双方の金利・市場予想",
+    "各情報源の24時間重複期間",
+    "期限到来分の包括レビュー"
+  ],
+  "facts": [
+    "11月17日の名目10年パー利回り5.10％、前営業日5.12％。",
+    "11月17日の実質10年パー利回り2.89％、前営業日2.92％。公表時刻不明。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "実質金利低下は金の保有機会費用の低下を通じ支援し得るがドル・期待・リスク回避も作用する。"
+  ],
+  "historical_comparisons": [
+    "1973年の供給制約との比較は当時の物価・実質金利・流動性・エネルギーのvintage不足。2020年はFRBが緊急緩和と資産購入を発表したが、現在の条件との詳細比較は未了。"
+  ],
+  "scenarios": {
+    "days": "利回り変化が持続し他条件が一定なら金を支援し得る",
+    "weeks": "原油供給・在庫と金利見通しを確認",
+    "months": "実質消費・インフレと金融政策反応を確認",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは相手国資料不足により判断保留"
+  },
+  "invalidations": [
+    "実質金利反発",
+    "ドル上昇",
+    "需要減",
+    "データ改定"
+  ],
+  "review_after": "2026-11-18T22:44:57Z",
+  "status": "partial"
+}
