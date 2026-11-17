@@ -1,0 +1,100 @@
+{
+  "as_of": "2026-11-18T02:42:46+09:00",
+  "document_ids": [
+    "census-20261117-october-retail-advance-excerpt",
+    "fincen-20261117-customer-due-diligence-proposal-email",
+    "eia-global-energy-security-20261116"
+  ],
+  "sources_checked": [
+    {
+      "source": "treasury_news",
+      "period": "前回01:50 JST以降、24時間重複起点は未確定",
+      "status": "入口取得、個別文書及び表の網羅は未確認"
+    },
+    {
+      "source": "treasury_auctions",
+      "period": "前回01:50 JST以降、24時間重複起点は未確定",
+      "status": "入口取得、個別文書及び表の網羅は未確認"
+    },
+    {
+      "source": "treasury_buybacks",
+      "period": "前回01:50 JST以降、24時間重複起点は未確定",
+      "status": "入口取得、個別文書及び表の網羅は未確認"
+    },
+    {
+      "source": "fed_fomc",
+      "period": "前回01:50 JST以降、24時間重複起点は未確定",
+      "status": "入口取得、個別文書及び表の網羅は未確認"
+    },
+    {
+      "source": "nyfed_operations",
+      "period": "前回01:50 JST以降、24時間重複起点は未確定",
+      "status": "入口取得、個別文書及び表の網羅は未確認"
+    },
+    {
+      "source": "white_house",
+      "period": "前回01:50 JST以降、24時間重複起点は未確定",
+      "status": "入口取得、個別文書及び表の網羅は未確認"
+    },
+    {
+      "source": "ofac",
+      "period": "前回01:50 JST以降、24時間重複起点は未確定",
+      "status": "入口取得、個別文書及び表の網羅は未確認"
+    },
+    {
+      "source": "eia_petroleum",
+      "period": "前回01:50 JST以降、24時間重複起点は未確定",
+      "status": "入口取得、個別文書及び表の網羅は未確認"
+    },
+    {
+      "source": "fec_results",
+      "period": "前回01:50 JST以降、24時間重複起点は未確定",
+      "status": "入口取得、個別文書及び表の網羅は未確認"
+    },
+    {
+      "source": "cfius",
+      "period": "前回01:50 JST以降、24時間重複起点は未確定",
+      "status": "入口取得、個別文書及び表の網羅は未確認"
+    }
+  ],
+  "missing_sources": [
+    "10情報源の個別本文・表の網羅",
+    "入札・財務省買戻し・FRB個別売買",
+    "FOMC原文",
+    "州選挙認証",
+    "FinCEN規則案・説明PDF",
+    "小売PDFの全頁・表・脚注・翻訳",
+    "歴史の当時vintage",
+    "期限到来分析のレビュー",
+    "日米市場予想・名目実質金利"
+  ],
+  "facts": [
+    "米10月の名目小売・飲食売上速報は前月比0.2％増±0.4％、90％信頼区間はゼロを含む。",
+    "FinCEN顧客管理は提案段階。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "石油供給制約→価格・実質所得→景気・金融政策期待→金利・資金需給は条件付き仮説。"
+  ],
+  "historical_comparisons": [
+    "1973年は禁輸・減産による供給制約。原因・規模は異なり、当時物価・金利・流動性・エネルギー構造のvintageは未取得。"
+  ],
+  "scenarios": {
+    "days": "名目売上と市場予想、物価を比較。資料不足で金・USDJPYの方向判断を保留。",
+    "weeks": "輸送・代替供給と在庫を確認。",
+    "months": "実質需要と物価、政策反応を検証。"
+  },
+  "invalidations": [
+    "輸送回復",
+    "代替供給拡大",
+    "需要減",
+    "統計改定"
+  ],
+  "review_after": "2026-11-25T17:42:46Z",
+  "review_status": "過去の期限到来分の包括レビュー未了、再試行",
+  "database_sync": {
+    "conclusion": "failure",
+    "url": "https://github.com/samkaz15/invest/actions/runs/44122449574",
+    "reason": "未確認"
+  }
+}
