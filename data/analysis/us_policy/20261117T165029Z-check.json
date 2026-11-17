@@ -1,0 +1,99 @@
+{
+  "as_of": "2026-11-18T01:50:29+09:00",
+  "document_ids": [
+    "census-20261117-october-retail-advance-excerpt",
+    "fincen-20261117-customer-due-diligence-proposal-email",
+    "eia-global-energy-security-20261116"
+  ],
+  "sources_checked": [
+    {
+      "source": "treasury_news",
+      "period": "前回01:31 JST以降、必要な24時間重複確認の公表水位は未確定",
+      "status": "入口取得、個別原文・表の網羅性未確認"
+    },
+    {
+      "source": "treasury_auctions",
+      "period": "前回01:31 JST以降、必要な24時間重複確認の公表水位は未確定",
+      "status": "入口取得、個別原文・表の網羅性未確認"
+    },
+    {
+      "source": "treasury_buybacks",
+      "period": "前回01:31 JST以降、必要な24時間重複確認の公表水位は未確定",
+      "status": "入口取得、個別原文・表の網羅性未確認"
+    },
+    {
+      "source": "fed_fomc",
+      "period": "前回01:31 JST以降、必要な24時間重複確認の公表水位は未確定",
+      "status": "入口取得、個別原文・表の網羅性未確認"
+    },
+    {
+      "source": "nyfed_operations",
+      "period": "前回01:31 JST以降、必要な24時間重複確認の公表水位は未確定",
+      "status": "入口取得、個別原文・表の網羅性未確認"
+    },
+    {
+      "source": "white_house",
+      "period": "前回01:31 JST以降、必要な24時間重複確認の公表水位は未確定",
+      "status": "入口取得、個別原文・表の網羅性未確認"
+    },
+    {
+      "source": "ofac",
+      "period": "前回01:31 JST以降、必要な24時間重複確認の公表水位は未確定",
+      "status": "入口取得、個別原文・表の網羅性未確認"
+    },
+    {
+      "source": "eia_petroleum",
+      "period": "前回01:31 JST以降、必要な24時間重複確認の公表水位は未確定",
+      "status": "入口取得、個別原文・表の網羅性未確認"
+    },
+    {
+      "source": "fec_results",
+      "period": "前回01:31 JST以降、必要な24時間重複確認の公表水位は未確定",
+      "status": "入口取得、個別原文・表の網羅性未確認"
+    },
+    {
+      "source": "cfius",
+      "period": "前回01:31 JST以降、必要な24時間重複確認の公表水位は未確定",
+      "status": "入口取得、個別原文・表の網羅性未確認"
+    }
+  ],
+  "missing_sources": [
+    "各情報源の24時間重複照合と個別文書網羅",
+    "入札・買戻し・NY連銀オペの個別結果",
+    "FinCEN規則案PDF・説明PDF",
+    "小売PDF全ページ原文・訳・図表",
+    "FECの州認証",
+    "歴史vintage",
+    "期限到来分のレビュー",
+    "日米の市場予想と名目・実質金利"
+  ],
+  "facts": [
+    "米10月名目小売売上の前月比0.2％増±0.4％の90％信頼区間はゼロを含む。",
+    "FinCENの法人顧客管理に関する提案はメール経路に保存済み。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "石油供給制約が続き代替が不足すれば、エネルギー価格・実質所得を経て景気、政策期待や資金需給に波及する可能性。"
+  ],
+  "historical_comparisons": [
+    "1973年石油危機と供給制約に共通点があるが原因・規模・構造は異なる。当時のインフレ、実質金利、流動性、エネルギー構造のvintage未取得。"
+  ],
+  "scenarios": {
+    "days": "名目小売の実質化と市場予想を照合。米日双方の資料不足のため金とUSDJPYは方向保留。",
+    "weeks": "海峡輸送・石油在庫・代替供給を確認。",
+    "months": "実質消費・物価・政策反応を検証。"
+  },
+  "invalidations": [
+    "輸送回復",
+    "供給増",
+    "需要減",
+    "統計の改定"
+  ],
+  "review_after": "2026-11-25T16:50:29Z",
+  "review_status": "期限到来の過去分析は包括レビュー未完了",
+  "database_sync": {
+    "conclusion": "failure",
+    "run_url": "https://github.com/samkaz15/invest/actions/runs/44122449574",
+    "reason": "未確認"
+  }
+}
