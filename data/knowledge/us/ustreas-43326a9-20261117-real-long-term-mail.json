@@ -1,0 +1,30 @@
+{
+  "id": "ustreas-43326a9-20261117-real-long-term-mail",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/43326a9",
+  "primary_source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Real Long-Term Rates Update",
+  "title_ja": "米財務省長期実質金利の更新通知",
+  "published_at": null,
+  "received_at": "2026-11-18T05:56:31+09:00",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Real Long-Term Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.",
+  "translation_ja": "米財務省の長期実質金利の日次情報を購読されています。この情報は最近更新され、利用できるようになりました。",
+  "facts_ja": [
+    "メール本文は表の更新を通知しているが、数値や表の公表時刻は含まない。",
+    "公式表は開いたが更新行・列・脚注は今回未照合。"
+  ],
+  "inference_ja": [
+    "金利の変化は国債需給や金・為替に影響し得るが、方向は確認できない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [
+    "リンク先表の更新行、見出し、脚注および公表時刻の確認と別文書としての保存は再試行対象。",
+    "配送・購読管理の個人情報を除外。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省が長期実質金利の更新を通知、金利数値と公表時刻は確認できず再取得が必要。"
+}
