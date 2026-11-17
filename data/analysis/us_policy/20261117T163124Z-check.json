@@ -1,0 +1,105 @@
+{
+  "as_of": "2026-11-18T01:31:24+09:00",
+  "document_ids": [
+    "census-20261117-october-retail-advance-excerpt",
+    "fincen-20261117-customer-due-diligence-proposal-email",
+    "eia-global-energy-security-20261116"
+  ],
+  "sources_checked": [
+    {
+      "source": "treasury_news",
+      "period": "前回2026-11-18 00:32 JST以降。24時間重複の公表水位未確定",
+      "status": "入口取得、個別資料の網羅性未確認"
+    },
+    {
+      "source": "treasury_auctions",
+      "period": "前回2026-11-18 00:32 JST以降。24時間重複の公表水位未確定",
+      "status": "入口取得、個別資料の網羅性未確認"
+    },
+    {
+      "source": "treasury_buybacks",
+      "period": "前回2026-11-18 00:32 JST以降。24時間重複の公表水位未確定",
+      "status": "入口取得、個別資料の網羅性未確認"
+    },
+    {
+      "source": "fed_fomc",
+      "period": "前回2026-11-18 00:32 JST以降。24時間重複の公表水位未確定",
+      "status": "入口取得、個別資料の網羅性未確認"
+    },
+    {
+      "source": "nyfed_operations",
+      "period": "前回2026-11-18 00:32 JST以降。24時間重複の公表水位未確定",
+      "status": "入口取得、個別資料の網羅性未確認"
+    },
+    {
+      "source": "white_house",
+      "period": "前回2026-11-18 00:32 JST以降。24時間重複の公表水位未確定",
+      "status": "入口取得、個別資料の網羅性未確認"
+    },
+    {
+      "source": "ofac",
+      "period": "前回2026-11-18 00:32 JST以降。24時間重複の公表水位未確定",
+      "status": "入口取得、個別資料の網羅性未確認"
+    },
+    {
+      "source": "eia_petroleum",
+      "period": "前回2026-11-18 00:32 JST以降。24時間重複の公表水位未確定",
+      "status": "入口取得、個別資料の網羅性未確認"
+    },
+    {
+      "source": "fec_results",
+      "period": "前回2026-11-18 00:32 JST以降。24時間重複の公表水位未確定",
+      "status": "入口取得、個別資料の網羅性未確認"
+    },
+    {
+      "source": "cfius",
+      "period": "前回2026-11-18 00:32 JST以降。24時間重複の公表水位未確定",
+      "status": "入口取得、個別資料の網羅性未確認"
+    }
+  ],
+  "missing_sources": [
+    "財務省入札の個別PDF",
+    "財務省買い戻し結果表",
+    "NY連銀SOMA取引",
+    "FOMC個別文書",
+    "ホワイトハウス個別文書",
+    "OFAC個別文書",
+    "EIA週報全表",
+    "各州選挙認証",
+    "CFIUS個別文書",
+    "FinCEN規則案及び説明PDF",
+    "小売PDF全ページの原文・訳・図表",
+    "歴史vintage",
+    "期限到来レビュー",
+    "両国の市場予想・実質金利"
+  ],
+  "facts": [
+    "米10月小売売上は名目7482億ドル、前月比0.2％増±0.4％。90％信頼区間はゼロを含む。",
+    "財務省は顧客管理のFinCEN規則案を11月17日付で公表。時刻不明、案の段階。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "エネルギー供給制約が続く場合、価格・実質所得を経て景気、金利、資金需給に波及し得る。"
+  ],
+  "historical_comparisons": [
+    "1973年禁輸・減産による供給制約との比較には時代・原因の相違があり、当時のインフレ、金利、流動性、米国のエネルギー構造のvintageは未取得。"
+  ],
+  "scenarios": {
+    "days": "小売売上は物価調整前。市場予想と日米金利不足のため金・USDJPYは方向保留。",
+    "weeks": "石油輸送・在庫と代替供給を追跡。",
+    "months": "実質消費・物価・政策期待を照合。"
+  },
+  "invalidations": [
+    "輸送回復",
+    "供給増加",
+    "需要減",
+    "統計改定"
+  ],
+  "review_after": "2026-11-25T16:31:24Z",
+  "review_status": "過去の期限到来分析は包括評価未完了",
+  "database_sync": {
+    "conclusion": "failure",
+    "run_url": "https://github.com/samkaz15/invest/actions/runs/44122449574",
+    "reason": "未確認"
+  }
+}
