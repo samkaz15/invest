@@ -1,0 +1,41 @@
+{
+  "id": "20261117T021052Z-review",
+  "as_of": "2026-11-17T11:10:52+09:00",
+  "previous_check": "2026-11-17T10:12:01+09:00",
+  "document_ids": [],
+  "source_status": [
+    {
+      "source": "日本銀行ニュース一覧",
+      "url": "https://www.boj.or.jp/whatsnew/index.htm",
+      "status": "一覧取得。個別本文と前回以降の全件照合は未完了",
+      "retry": true
+    },
+    {
+      "source": "財務省新着",
+      "url": "https://www.mof.go.jp/public_relations/whats_new/202611.html",
+      "status": "一覧取得。前回取得失敗の国債金利CSV内容・発表時刻は未確認",
+      "retry": true,
+      "retry_url": "https://www.mof.go.jp/jgbs/reference/interest_rate/jgbcm.csv"
+    },
+    {
+      "source": "日銀オペ",
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "入口取得、個別の11月16日XLSXの内容は未取得",
+      "retry": true
+    },
+    {
+      "source": "金融政策決定・買戻し・会見",
+      "status": "日銀決定事項・国債買入れページ及び財務省カレンダーを検索。個別資料・期間の網羅照合は未完了",
+      "retry": true
+    }
+  ],
+  "result": "取得・差分照合に欠損があり、新着なしとは判断できない。",
+  "mac_notification": "実機未確認",
+  "retry": [
+    "財務省金利CSV",
+    "日銀オペXLSX",
+    "講演PDF全ページ・図表",
+    "財務省買戻し・日銀会見及び政策会合の個別文書",
+    "既存記録と公開URL・公表時刻の全照合"
+  ]
+}
