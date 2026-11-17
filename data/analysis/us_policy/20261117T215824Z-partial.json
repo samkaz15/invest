@@ -1,0 +1,56 @@
+{
+  "as_of": "2026-11-17T21:58:24Z",
+  "document_ids": [
+    "ustreas-43326a6-20261117-long-term-mail",
+    "ustreas-43326a9-20261117-real-long-term-mail",
+    "ustreas-43326a2-20261117-yield-curve-mail",
+    "ustreas-4332706-20261117-real-yield-curve-mail"
+  ],
+  "sources_checked": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "missing_sources": [
+    "各情報源の24時間重複期間と個別原文網羅性",
+    "国債入札・買戻し結果表",
+    "NY連銀個別売買",
+    "州選挙認証",
+    "EIA全表",
+    "金利表の更新値・脚注",
+    "小売速報及びFinCEN PDF全ページ",
+    "期限到来分の包括事後レビュー"
+  ],
+  "facts": [
+    "財務省メール経路に金利表更新通知4件が既存保存、金利の値自体は本文なし。",
+    "DB同期実行44175149588は失敗、PostgreSQL状態は未確認。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "エネルギー供給が制約されれば物価と実質所得を通じて景気や金利期待に波及し得る。"
+  ],
+  "historical_comparisons": [
+    "1973年の供給制約と比較できるが初期物価・金利・流動性・エネルギー構造のvintageは未取得。初期3ケースは予測検証済みではない。"
+  ],
+  "scenarios": {
+    "days": "金利更新値と実質消費を確認",
+    "weeks": "供給・輸送・在庫を確認",
+    "months": "実質消費と金融政策反応を確認",
+    "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両通貨の情報不足で保留"
+  },
+  "invalidations": [
+    "輸送回復",
+    "代替供給増",
+    "需要減",
+    "統計改定"
+  ],
+  "review_after": "2026-11-18T21:58:24Z",
+  "status": "partial"
+}
