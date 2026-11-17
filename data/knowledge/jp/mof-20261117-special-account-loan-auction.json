@@ -1,0 +1,26 @@
+{
+  "id": "mof-20261117-special-account-loan-auction",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/kariire/kari-result261117.htm",
+  "title_ja": "交付税・譲与税特別会計の借入金入札結果",
+  "summary_ja": "特別会計の借入金入札で約1兆2000億円を決定。最高利率は年1.600％。",
+  "published_at": null,
+  "published_date": "2026-11-17",
+  "published_time_note": "公表時刻は不明（日本時間）",
+  "retrieved_at": "2026-11-17T13:25:22+09:00",
+  "facts_ja": [
+    "交付税及び譲与税配付金特別会計の借入金について、応募額4兆4003億円、募入決定額1兆1999億9900万円、募入最高利率年1.600％、平均利率年1.588％。",
+    "借入日は2026年11月26日、償還期限は2027年5月27日。非競争入札は応募なし。",
+    "特別会計の借入金入札であり、国債の入札や日銀による売買ではない。"
+  ],
+  "inference_ja": [
+    "政府の資金調達には関連するが、この一件だけから国債利回り、金、ドル円の方向は判断できない。市場金利や日米双方の状況が異なる場合は評価を見直す。"
+  ],
+  "notification_eligible": true,
+  "content_scope": "official_summary",
+  "rights_note": "公式資料の要約とURLを記録。原文全文は再配布しない。",
+  "missing_parts": [
+    "公表時刻は未確認。",
+    "市場予想、同時点の名目・実質金利と米国側資料は未取得。"
+  ],
+  "dedup_note": "指定IDは未存在、検索では同URLを検出せず。検索インデックスの網羅性は未確認。"
+}
