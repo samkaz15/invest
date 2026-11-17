@@ -1,0 +1,26 @@
+{
+  "id": "census-20261117-october-retail-advance-excerpt",
+  "source_url": "https://www.census.gov/retail/sales.html",
+  "title_en": "Advance Monthly Sales for Retail and Food Services October 2026",
+  "title_ja": "2026年10月の米小売・飲食売上高速報",
+  "published_at": "2026-11-17T08:30:00-05:00",
+  "received_at": "2026-11-17T23:23:35+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "other_us"
+  ],
+  "original_text": "Advance estimates of U.S. retail and food services sales for October 2026, adjusted for seasonal variation and holiday and trading-day differences, but not for price changes, were $748.2 billion, up 0.2 percent (±0.4 percent)* from the previous month, and up 6.8 percent (±0.5 percent) from October 2025. Total sales for the August 2026 through October 2026 period were up 6.4 percent (±0.5 percent) from the same period a year ago. The August 2026 to September 2026 percent change was unrevised from up 0.8 percent (±0.2 percent).",
+  "translation_ja": "2026年10月の米小売・飲食サービス売上速報は、季節・祝日・営業日数の差を調整し物価変動を調整しない額で7482億ドル。前月比0.2％増（±0.4％）で、前年同月比6.8％増（±0.5％）。2026年8～10月の売上合計は前年同期比6.4％増（±0.5％）。8月から9月への変化率は0.8％増（±0.2％）から改定されなかった。PDFの注記によれば、10月の前月比の90％信頼区間にはゼロが含まれ、実際の変化がゼロと異なると結論する十分な統計的証拠はない。",
+  "facts_ja": [
+    "数値は名目・季節調整済み。前月比は統計的にゼロと区別できない。"
+  ],
+  "inference_ja": [
+    "実質消費の方向と市場反応は物価・市場予想・改定値などの確認が必要。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "リンク先PDFの全ページの原文、表、脚注、図表の視覚確認と日本語訳は未完了。PDF原本は未保存。"
+  ],
+  "notification_eligible": false
+}
