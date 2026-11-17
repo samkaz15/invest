@@ -1,0 +1,111 @@
+{
+  "as_of": "2026-11-17T04:29:38Z",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "requested_from": null,
+      "requested_through": "2026-11-17T04:29:38Z",
+      "status": "今回未確認",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "requested_from": null,
+      "requested_through": "2026-11-17T04:29:38Z",
+      "status": "データ一覧・2結果PDFへのアクセスを試みPDF取得失敗",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "requested_from": null,
+      "requested_through": "2026-11-17T04:29:38Z",
+      "status": "今回未確認",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "requested_from": null,
+      "requested_through": "2026-11-17T04:29:38Z",
+      "status": "今回未確認",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "requested_from": null,
+      "requested_through": "2026-11-17T04:29:38Z",
+      "status": "入口確認・個別本文未照合",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "requested_from": null,
+      "requested_through": "2026-11-17T04:29:38Z",
+      "status": "今回未確認",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "requested_from": null,
+      "requested_through": "2026-11-17T04:29:38Z",
+      "status": "入口確認・個別本文未照合",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "requested_from": null,
+      "requested_through": "2026-11-17T04:29:38Z",
+      "status": "今回未確認",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "requested_from": null,
+      "requested_through": "2026-11-17T04:29:38Z",
+      "status": "今回未確認",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "requested_from": null,
+      "requested_through": "2026-11-17T04:29:38Z",
+      "status": "今回未確認",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "13週・26週入札結果の原文・表・公表時刻",
+    "各ソースの公表水位・24時間重複差分",
+    "メール経路の重複確認",
+    "史料付き歴史比較・期限到来レビュー",
+    "戦況独立検証と州認証",
+    "DB同期最新結果"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [
+    "推論：純国債供給と投資需要が需給や金利に波及する可能性はあるが、結果と事前織り込み・日米双方の金利不足により金と通貨方向は保留。"
+  ],
+  "historical_comparisons": [
+    "当初物価・金利・流動性・エネルギー構造を含む史料との比較未了。"
+  ],
+  "scenarios": {
+    "days": "落札結果の取得",
+    "weeks": "純供給と資金需要の確認",
+    "months": "物価と各国政策の確認"
+  },
+  "invalidations": [
+    "需要や償還による供給圧力の相殺",
+    "各国の金利差と織り込みが仮定と異なる"
+  ],
+  "review_after": "2026-11-18T04:29:38Z",
+  "review_status": "期限到来分の検出と観測データ未取得のため未評価",
+  "retry": [
+    "2つの結果PDFと表",
+    "10情報源の差分とメール重複照合",
+    "歴史比較・事後レビュー",
+    "DB同期"
+  ],
+  "postgresql_status": "過去43858396900失敗、最新反映未確認",
+  "pc_status": "Mac実機未確認"
+}
