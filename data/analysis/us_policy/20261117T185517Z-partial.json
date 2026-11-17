@@ -1,0 +1,52 @@
+{
+  "as_of": "2026-11-17T18:55:17Z",
+  "document_ids": [
+    "census-20261117-october-retail-advance-excerpt",
+    "fincen-20261117-customer-due-diligence-proposal-email"
+  ],
+  "sources_checked": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "missing_sources": [
+    "10情報源の個別本文・表を通じた24時間重複期間の網羅性",
+    "財務省入札・買戻しの個別結果",
+    "NY連銀個別オペ結果",
+    "OFAC個別制裁",
+    "EIA週報の全表",
+    "州選挙当局の認証",
+    "小売速報PDF全ページと翻訳",
+    "期限到来分析の包括的事後レビュー",
+    "PostgreSQL同期状態"
+  ],
+  "facts": [
+    "財務省一覧には11月17日付FinCEN規則案が掲載され、メール経路で既存保存。公表時刻不明。",
+    "EIA週報入口では11月12日版が直近の過去号として表示されている。本文・全表は今回未確認。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "供給制約が継続し代替供給が不足すれば、エネルギー価格と実質所得を経由しインフレ・景気、政策金利期待、資金需給に影響し得る。"
+  ],
+  "historical_comparisons": [
+    "1973年供給制約は比較対象だが、当時の実質金利・流動性と当時および現在のエネルギー構造の検証が未完。後年の解説を当時の情報と扱わない。3件の初期ケースは予測精度検証済みではない。"
+  ],
+  "scenarios": {
+    "days": "小売の物価調整と市場予想の確認待ち",
+    "weeks": "原油輸送・在庫と代替供給の確認待ち",
+    "months": "実質消費・政策反応を確認。通貨ペアは両側の資料不足により判断保留。"
+  },
+  "invalidations": [
+    "輸送の回復、代替供給の増加、需要減退、統計改定"
+  ],
+  "review_after": "2026-11-18T18:55:17Z",
+  "status": "partial",
+  "prior_review": "期限到来分は包括確認未了"
+}
