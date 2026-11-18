@@ -1,0 +1,133 @@
+{
+  "id": "20261118T203006Z-check",
+  "as_of": "2026-11-19T05:30:06+09:00",
+  "document_ids": [
+    "treasury-20261118-iran-proxy-gold-public-url",
+    "eia-20261113-wpsr-overview-partial-20261118"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_start": "2026-11-18T03:55:17+09:00",
+      "period_end": "2026-11-19T05:30:06+09:00",
+      "scope": "11月18日制裁記事は既存保存、期間内の他文書網羅未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_start": "2026-11-18T03:55:17+09:00",
+      "period_end": "2026-11-19T05:30:06+09:00",
+      "scope": "20年債入札の動的結果表未取得",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_start": "2026-11-18T03:55:17+09:00",
+      "period_end": "2026-11-19T05:30:06+09:00",
+      "scope": "11月17日買戻し実績表未取得",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_start": "2026-11-18T03:55:17+09:00",
+      "period_end": "2026-11-19T05:30:06+09:00",
+      "scope": "会合一覧取得、個別本文網羅未完",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_start": "2026-11-18T03:55:17+09:00",
+      "period_end": "2026-11-19T05:30:06+09:00",
+      "scope": "国債売買の動的表未取得",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_start": "2026-11-18T03:55:17+09:00",
+      "period_end": "2026-11-19T05:30:06+09:00",
+      "scope": "個別本文と発効日の網羅未完",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_start": "2026-11-18T03:55:17+09:00",
+      "period_end": "2026-11-19T05:30:06+09:00",
+      "scope": "個別指定原ページ直接取得失敗、検索インデックスで対象概要を照合",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_start": "2026-11-18T03:55:17+09:00",
+      "period_end": "2026-11-19T05:30:06+09:00",
+      "scope": "11月13日週PDF既存部分訳のみ、他の頁未完",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_start": "2026-11-18T03:55:17+09:00",
+      "period_end": "2026-11-19T05:30:06+09:00",
+      "scope": "州の認証未確認",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_start": "2026-11-18T03:55:17+09:00",
+      "period_end": "2026-11-19T05:30:06+09:00",
+      "scope": "個別政策文書網羅未完",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "財務省の11月18日付公開記事とOFAC当日ページの検索インデックスは、ヒズボラ関連の個人・団体および金取引関連事業者への指定を示す。公表時刻不明。",
+    "米政府の組織関係・行為に関する記述は独立検証していない。"
+  ],
+  "reported": [],
+  "causal_channels": "指定対象の金と決済経路、原油需給から物価・景気・実質金利に波及する可能性。全市場や代替経路への影響は未確認。",
+  "historical_comparisons": "1973原油供給制約は後年の解説で、今回の制裁や単週の在庫変化と同一視しない。初期の物価・金利・流動性・エネルギー構造は資料不足。",
+  "scenarios": {
+    "days": "指定詳細と市場予想を確認",
+    "weeks": "金取引・決済、原油供給需要を確認",
+    "months": "物価・政策・実質金利を確認",
+    "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは双方の資料不足で保留",
+    "gold": "代替経路と実質金利の根拠不足で方向保留"
+  },
+  "invalidations": [
+    "対象外の代替経路が機能",
+    "需給が市場予想と異なる",
+    "相手国金利・政策が変化"
+  ],
+  "review_after": "2026-11-19T20:30:06Z",
+  "review_status": "過去期限到来分は時系列不足で未評価",
+  "missing_parts": [
+    "OFAC指定ページの直接取得と鮮度の確認",
+    "個人情報を含む原文の再配布は行わない",
+    "EIA PDF大部分の翻訳・目視・原本保存",
+    "財務省入札・買戻し・NY連銀実売買",
+    "州認証・戦況独立検証",
+    "期限到来レビュー"
+  ],
+  "db_status": "US knowledge database sync直近3回failure、PostgreSQL実反映未確認",
+  "pc_status": "未確認"
+}
