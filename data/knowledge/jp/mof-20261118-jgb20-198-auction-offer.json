@@ -1,0 +1,27 @@
+{
+  "id": "mof-20261118-jgb20-198-auction-offer",
+  "title_ja": "20年国債第198回の入札発行通知",
+  "summary_ja": "財務省は20年利付国債第198回の入札を通知し、発行予定額を約7000億円としました。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/offer20261118.htm",
+  "published_at": null,
+  "published_date": "2026-11-18",
+  "published_time_note": "公表時刻不明（JST）",
+  "retrieved_at": "2026-11-18T14:26:06+09:00",
+  "notification_eligible": true,
+  "topics": [
+    "jgb",
+    "auction"
+  ],
+  "facts_ja": [
+    "表面利率3.8％、11月19日発行、2046年9月20日償還、申込締切11月18日11時50分。"
+  ],
+  "inference_ja": [
+    "発行条件は国債需給に関係するが、通知時点では実際の落札結果ではない。",
+    "日米の金利と期待の両方が不足し、金・ドル円の方向は保留。"
+  ],
+  "source_scope": "財務省の公開本文と表の要約。権利確認が不十分なため全文転載せず。",
+  "missing_parts": [
+    "公表時刻・市場予想は未確認。"
+  ],
+  "supersedes": null
+}
