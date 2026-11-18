@@ -1,0 +1,27 @@
+{
+  "id": "mof-20261118-tbill1420-auction-result",
+  "title_ja": "国庫短期証券第1420回の入札結果",
+  "summary_ja": "国庫短期証券第1420回の価格競争入札は応募5兆6637億円、募入1兆4672億8000万円でした。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/tbill/tbill_nyusatsu/resul20261118.htm",
+  "published_at": null,
+  "published_date": "2026-11-18",
+  "published_time_note": "公表時刻不明（JST）",
+  "retrieved_at": "2026-11-18T14:26:06+09:00",
+  "notification_eligible": true,
+  "topics": [
+    "jgb",
+    "auction"
+  ],
+  "facts_ja": [
+    "最高利回り1.6551％、平均利回り1.6469％。第Ⅰ非価格募入4327億円。"
+  ],
+  "inference_ja": [
+    "短期資金需給に影響し得るが、同時期の償還や市場需要を確認する必要がある。",
+    "日米の金利と期待の両方が不足し、金・ドル円の方向は保留。"
+  ],
+  "source_scope": "財務省の公開本文と表の要約。権利確認が不十分なため全文転載せず。",
+  "missing_parts": [
+    "市場予想・二次市場売買は未確認。発表時刻不明。"
+  ],
+  "supersedes": null
+}
