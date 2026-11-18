@@ -1,0 +1,99 @@
+{
+  "id": "20261118T010827Z-source-check",
+  "created_at": "2026-11-18T10:08:27+09:00",
+  "period_start": "2026-11-17T09:02:35+09:00",
+  "period_end": "2026-11-18T10:08:27+09:00",
+  "period_method": "前回実行時刻から、24時間の重複確認を目標としたが一覧・個別資料に欠損あり",
+  "sources": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "status": "一覧2件11月17日、記事取得は部分、本文・関連資料確認を再試行",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "status": "一覧の動的表が取得できず、個別入札結果未確認",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "status": "一覧の動的表が空、個別買戻結果未確認",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "status": "会合一覧は取得、10月会合議事要旨リンクは表示されず、個別資料未再確認",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "status": "入口取得、個別売買結果未取得",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "status": "一覧先頭は11月16日人事、本文未確認・一覧のみで全期間網羅不可",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "status": "一覧先頭11月13日、個別指定・許可書未取得",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "status": "一覧では11月12日版が前回号、最新週の見出し日付と数値は動的表示されず、個別表未確認",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "status": "入口のみ、各州認証未確認",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "status": "入口とニュース入口を取得、関連政策の全件・本文未確認",
+      "coverage": "partial",
+      "retry": true
+    }
+  ],
+  "facts": [
+    "既存の前回報告は2026年11月17日の米10年名目5.10%、実質2.89%を記録。本実行で原表の再検証はしていない。",
+    "財務省の11月17日付一覧に顧客管理規則案と退職関連最終規則がある。本文と波及の評価は未完了。"
+  ],
+  "inference": "新たな市場方向を判断する十分な資料なし。USD/JPY、EUR、CHF、CAD、AUDはいずれも両側の一次資料不足で保留。",
+  "scenarios": {
+    "days": "入札や売買額が確認できれば需給と金利を検討。",
+    "weeks": "原油供給の変化が継続すれば物価や景気に波及し得るがEIAの表と需要次第。",
+    "months": "物価・景気・金融政策の反応を追加資料で検証。反証は供給正常化、需要低下、金利差の逆転。"
+  },
+  "history": "史料付き3件は初期要約。今回、当時のインフレ・金利・流動性・エネルギー構造の一次比較は未完了。推論に使わない。",
+  "dedup": "前回報告を確認。全知識・メール記録のURL/時刻/ハッシュ照合は未完了。新規knowledge文書は作成せず、候補再試行。",
+  "reviews": "期限到来分の網羅的照合は未完了。次回再試行。",
+  "database": "前回報告はUS knowledge database syncの2件失敗を記録、PostgreSQL実反映は未確認。今回新しいknowledge文書なし。",
+  "notification": "個別通知なし。Mac/PC通知未確認。",
+  "limitations": [
+    "指定10ソースは入口確認のみを含み、本文・表の確認は不十分。未取得を新着なしと扱わない。",
+    "Gmail、継続スケジュールの設定は変更していない。"
+  ],
+  "review_after": "2026-11-19T01:08:27Z"
+}
