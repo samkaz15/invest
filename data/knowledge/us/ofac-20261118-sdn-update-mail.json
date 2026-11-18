@@ -1,0 +1,31 @@
+{
+  "id": "ofac-20261118-sdn-update-mail",
+  "source_url": "https://ofac.treasury.gov/recent-actions/20261118",
+  "title_en": "OFAC SDN List Update: Counter Terrorism Designations",
+  "title_ja": "OFACの対テロ指定に伴うSDNリスト更新案内",
+  "published_at": null,
+  "published_time_note": "この通知本文に公表時刻の記載なし",
+  "received_at": "2026-11-19T03:02:51+09:00",
+  "topics": [
+    "sanctions",
+    "other_us"
+  ],
+  "original_text": "Update to OFAC's list of Specially Designated Nationals (SDN) and Blocked Persons\n\nThe SDN list has recently been updated. Please visit this page to access the latest version of the SDN list. Check this page periodically as it may also be updated if a new list-related format or product is offered.\n\nPlease visit this link for more information on today's update.",
+  "translation_ja": "OFACの特別指定国民（SDN）および資産凍結対象者リストの更新\n\nSDNリストが最近更新されました。最新版は制裁リストサービスのページから確認してください。新たなリスト関連の形式や製品が提供される場合にも更新される可能性があるため、定期的に確認してください。\n\n本日の更新の詳細については、当日の措置ページを参照してください。",
+  "facts_ja": [
+    "OFACの配信メールはSDNリスト更新を案内した。個別指定の詳細はメール本文にない。",
+    "同じ公表ページにリンクする財務省の金・現金網に関するメールは別途保存済み。両者の個別指定の完全一致はページ取得不能のため未確認。"
+  ],
+  "inference_ja": [],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "notification_eligible": false,
+  "missing_parts": [
+    "当日の個別指定ページは取得できず、別の公開文書の内容と指定対象者一覧は未確認・再試行。"
+  ],
+  "related_documents": [
+    "treasury-20261118-iran-proxy-gold-mail"
+  ],
+  "supersedes": null,
+  "source_kind": "treasury_ofac_email"
+}
