@@ -1,0 +1,97 @@
+{
+  "as_of": "2026-11-18T00:02:35Z",
+  "document_ids": [
+    "treasury-20261117-nominal-10y-excerpt-2cbe81f5",
+    "treasury-20261117-real-10y-excerpt-80dcd91f"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "window": "2026-11-18T07:44:57+09:00–2026-11-18T09:02:35+09:00 を中心に入口取得、24時間重複期間の起点・個別原文網羅は未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "window": "2026-11-18T07:44:57+09:00–2026-11-18T09:02:35+09:00 を中心に入口取得、24時間重複期間の起点・個別原文網羅は未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "window": "2026-11-18T07:44:57+09:00–2026-11-18T09:02:35+09:00 を中心に入口取得、24時間重複期間の起点・個別原文網羅は未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "window": "2026-11-18T07:44:57+09:00–2026-11-18T09:02:35+09:00 を中心に入口取得、24時間重複期間の起点・個別原文網羅は未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "window": "2026-11-18T07:44:57+09:00–2026-11-18T09:02:35+09:00 を中心に入口取得、24時間重複期間の起点・個別原文網羅は未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "window": "2026-11-18T07:44:57+09:00–2026-11-18T09:02:35+09:00 を中心に入口取得、24時間重複期間の起点・個別原文網羅は未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "window": "2026-11-18T07:44:57+09:00–2026-11-18T09:02:35+09:00 を中心に入口取得、24時間重複期間の起点・個別原文網羅は未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "window": "2026-11-18T07:44:57+09:00–2026-11-18T09:02:35+09:00 を中心に入口取得、24時間重複期間の起点・個別原文網羅は未確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "window": "2026-11-18T07:44:57+09:00–2026-11-18T09:02:35+09:00 を中心に入口取得、24時間重複期間の起点・個別原文網羅は未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "window": "2026-11-18T07:44:57+09:00–2026-11-18T09:02:35+09:00 を中心に入口取得、24時間重複期間の起点・個別原文網羅は未確認"
+    }
+  ],
+  "missing_sources": [
+    "入札・買戻しの個別結果表",
+    "NY連銀のSOMA取引",
+    "FOMC個別声明",
+    "ホワイトハウス個別本文",
+    "OFAC個別制裁・許可",
+    "EIA週報表",
+    "州選挙認証",
+    "CFIUS個別資料",
+    "金利表全体・注記訳",
+    "小売・FinCEN PDF全頁",
+    "review_after到来分の包括レビュー"
+  ],
+  "facts": [
+    "既存の財務省表抜粋では11月17日の10年名目パー利回り5.10％、10年実質パー利回り2.89％。公表時刻不明。",
+    "この2件の各GitHub DB同期実行は失敗。実DBの現在値は未確認。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "実質金利低下は金の機会費用を低下させ得るがドル・市場期待等も作用。"
+  ],
+  "historical_comparisons": [
+    "1973年の石油供給制約は比較対象だが当時の物価・金利・流動性・エネルギー構造の当時値は未取得。2020年FRB緩和は別の流動性事例で比較条件は未整備。"
+  ],
+  "scenarios": {
+    "days": "利回り・予想・インフレを確認",
+    "weeks": "エネルギー供給・在庫を確認",
+    "months": "実質消費・金融政策反応を確認",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両国資料不足により方向保留"
+  },
+  "invalidations": [
+    "実質金利反発",
+    "ドル上昇",
+    "供給回復",
+    "統計改定"
+  ],
+  "review_after": "2026-11-19T00:02:35Z",
+  "status": "partial"
+}
