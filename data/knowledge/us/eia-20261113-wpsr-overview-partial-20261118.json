@@ -1,0 +1,101 @@
+{
+  "id": "eia-20261113-wpsr-overview-partial-20261118",
+  "source_url": "https://ir.eia.gov/wpsr/overview.pdf",
+  "title_en": "Weekly Petroleum Status Report: Table 1 and Table 9",
+  "title_ja": "米週間石油需給表：11月13日までの週（部分取得）",
+  "published_at": null,
+  "published_time_note": "公表日・時刻は当該PDFで確認できず",
+  "received_at": "2026-11-19T00:42:23+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil"
+  ],
+  "original_text": "Table 1. U.S. Petroleum Balance Sheet, Week Ending 11/13/2026\nCommercial (Excluding SPR): Current Week 417.8; Week Ago 414.4; Difference 3.4 (Million Barrels).\nStrategic Petroleum Reserve (SPR): Current Week 276.4; Week Ago 279.5; Difference -3.2 (Million Barrels).",
+  "translation_ja": "表1：2026年11月13日までの週の米国石油需給表。単位は100万バレル。商業原油在庫（戦略石油備蓄を除く）は当週417.8、前週414.4、前週差プラス3.4。戦略石油備蓄は当週276.4、前週279.5、前週差マイナス3.2。",
+  "facts_ja": [
+    "EIAの11月13日までの週の表1で商業原油在庫は4億1780万バレル、前週比340万バレル増。",
+    "戦略石油備蓄は2億7640万バレル、前週比320万バレル減。増減は丸め前の数値から算出。"
+  ],
+  "inference_ja": [
+    "市場予想との差と需要・供給の内訳を確認するまで価格方向は保留。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "表1のその他の行・脚注を未翻訳",
+    "PDF2〜8ページの表9、脚注と図表の日本語訳・目視確認未完",
+    "公表日時・原本SHA256・原本メタデータ安全性未確認",
+    "PDF原本はGitHubに未保存",
+    "CSV・本文要約は403で取得できず"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "EIAの米原油在庫は戦略備蓄を除き前週比340万バレル増、11月13日までの週。",
+  "pdf": {
+    "sha256": null,
+    "page_count": 8,
+    "ocr_used": false,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "storage_status": "not_saved",
+    "storage_reason": "原本バイナリ未取得、メタデータ検査未実施",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "Table 1. U.S. Petroleum Balance Sheet, Week Ending 11/13/2026\nCommercial (Excluding SPR): Current Week 417.8; Week Ago 414.4; Difference 3.4 (Million Barrels).\nStrategic Petroleum Reserve (SPR): Current Week 276.4; Week Ago 279.5; Difference -3.2 (Million Barrels).",
+        "extraction_status": "partial",
+        "translation_ja": "表1：2026年11月13日までの週の米国石油需給表。単位は100万バレル。商業原油在庫（戦略石油備蓄を除く）は当週417.8、前週414.4、前週差プラス3.4。戦略石油備蓄は当週276.4、前週279.5、前週差マイナス3.2。",
+        "translation_status": "partial"
+      },
+      {
+        "page": 2,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 4,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 5,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 7,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 8,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      }
+    ]
+  },
+  "supersedes": null
+}
