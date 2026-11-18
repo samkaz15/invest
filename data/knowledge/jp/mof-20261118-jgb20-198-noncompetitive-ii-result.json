@@ -1,0 +1,28 @@
+{
+  "id": "mof-20261118-jgb20-198-noncompetitive-ii-result",
+  "title_ja": "20年国債第198回の第Ⅱ非価格競争入札は応募なし",
+  "summary_ja": "財務省によると、20年利付国債第198回の第Ⅱ非価格競争入札への応募はありませんでした。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261118a.htm",
+  "published_at": null,
+  "published_date": "2026-11-18",
+  "published_time_note": "公表時刻不明（JST）",
+  "retrieved_at": "2026-11-18T17:36:45+09:00",
+  "notification_eligible": true,
+  "topics": [
+    "jgb",
+    "auction"
+  ],
+  "facts_ja": [
+    "財務省は11月18日実施の20年利付国債第198回の第Ⅱ非価格競争入札について、応募がなかったと公表。",
+    "価格競争及び第Ⅰ非価格競争の結果は別文書として既存保存済み。"
+  ],
+  "inference_ja": [
+    "第Ⅱ入札への参加状況は追加発行と国債需給を考える一材料だが、応募なしのみで投資家全体の需要や利回りの方向は判断できない。",
+    "日米両方の金利・市場予想が不足し、金・ドル円の方向は保留。"
+  ],
+  "source_scope": "公式本文を確認して要約。公表文全文の再配布権を確認できず、全文複製しない。",
+  "missing_parts": [
+    "実際の公表時刻、事前予想、二次市場の売買は未確認。"
+  ],
+  "supersedes": null
+}
