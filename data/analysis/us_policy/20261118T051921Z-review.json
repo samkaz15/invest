@@ -1,0 +1,138 @@
+{
+  "id": "20261118T051921Z-review",
+  "as_of": "2026-11-18T14:19:21+09:00",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_start": "2026-11-17T12:45:45+09:00",
+      "period_end": "2026-11-18T14:19:21+09:00",
+      "scope": "入口を取得。期間内の個別本文・表を網羅できず",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_start": "2026-11-17T12:45:45+09:00",
+      "period_end": "2026-11-18T14:19:21+09:00",
+      "scope": "入口を取得。期間内の個別本文・表を網羅できず",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_start": "2026-11-17T12:45:45+09:00",
+      "period_end": "2026-11-18T14:19:21+09:00",
+      "scope": "入口を取得。期間内の個別本文・表を網羅できず",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_start": "2026-11-17T12:45:45+09:00",
+      "period_end": "2026-11-18T14:19:21+09:00",
+      "scope": "入口を取得。期間内の個別本文・表を網羅できず",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_start": "2026-11-17T12:45:45+09:00",
+      "period_end": "2026-11-18T14:19:21+09:00",
+      "scope": "入口を取得。期間内の個別本文・表を網羅できず",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_start": "2026-11-17T12:45:45+09:00",
+      "period_end": "2026-11-18T14:19:21+09:00",
+      "scope": "入口を取得。期間内の個別本文・表を網羅できず",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_start": "2026-11-17T12:45:45+09:00",
+      "period_end": "2026-11-18T14:19:21+09:00",
+      "scope": "入口を取得。期間内の個別本文・表を網羅できず",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_start": "2026-11-17T12:45:45+09:00",
+      "period_end": "2026-11-18T14:19:21+09:00",
+      "scope": "入口を取得。期間内の個別本文・表を網羅できず",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_start": "2026-11-17T12:45:45+09:00",
+      "period_end": "2026-11-18T14:19:21+09:00",
+      "scope": "入口を取得。期間内の個別本文・表を網羅できず",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_start": "2026-11-17T12:45:45+09:00",
+      "period_end": "2026-11-18T14:19:21+09:00",
+      "scope": "入口を取得。期間内の個別本文・表を網羅できず",
+      "status": "partial",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "NY連銀証券貸付ページ本文はSOMA保有の米国債・政府機関債をプライマリーディーラーに一時貸付すると説明。売却や購入ではない。"
+  ],
+  "reported": [
+    "検索表示上11月17日の貸付結果候補を発見したが、公式本文の結果表は表示されず数値未検証。"
+  ],
+  "causal_channels": "貸付は決済円滑化を支え得るが、数量や市場の需要が不足し価格・利回りへの方向は判断保留。",
+  "historical_comparisons": "3件は初期要約、当時の初期条件の一次資料比較未完。",
+  "scenarios": {
+    "days": "現物・貸付決済需給を確認",
+    "weeks": "原油供給と需要から物価・景気への経路を検証",
+    "months": "政策反応と資金需給の変化を確認",
+    "currencies": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両側資料不足で保留"
+  },
+  "invalidations": [
+    "貸付の円滑化効果が確認できない",
+    "供給正常化",
+    "相対金利差逆転"
+  ],
+  "review_after": "2026-11-19T05:19:21Z",
+  "review_status": "過去レビューの網羅照合未了",
+  "missing_parts": [
+    "NY連銀11月17日貸付結果表は検索表示のみ、公式本文で表未取得",
+    "10情報源の期間内の個別資料・PDF・表・脚注の網羅確認未完",
+    "既存メール記録の全件照合未完",
+    "戦況の独立検証・州の認証未確認"
+  ],
+  "db_status": "先行報告にsync失敗2件、PostgreSQL実反映未確認",
+  "pc_status": "未確認"
+}
