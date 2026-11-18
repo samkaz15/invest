@@ -1,0 +1,133 @@
+{
+  "id": "20261118T164643Z-check",
+  "as_of": "2026-11-19T01:46:43+09:00",
+  "document_ids": [
+    "eia-20261113-wpsr-overview-partial-20261118"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_start": "2026-11-18T00:42:23+09:00",
+      "period_end": "2026-11-19T01:46:43+09:00",
+      "scope": "入口取得、期間内個別本文未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_start": "2026-11-18T00:42:23+09:00",
+      "period_end": "2026-11-19T01:46:43+09:00",
+      "scope": "動的結果・PDF未取得",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_start": "2026-11-18T00:42:23+09:00",
+      "period_end": "2026-11-19T01:46:43+09:00",
+      "scope": "11月17日実績表未取得",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_start": "2026-11-18T00:42:23+09:00",
+      "period_end": "2026-11-19T01:46:43+09:00",
+      "scope": "会合一覧、個別本文網羅未完",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_start": "2026-11-18T00:42:23+09:00",
+      "period_end": "2026-11-19T01:46:43+09:00",
+      "scope": "動的実売買結果未取得",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_start": "2026-11-18T00:42:23+09:00",
+      "period_end": "2026-11-19T01:46:43+09:00",
+      "scope": "個別文書・発効日網羅未完",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_start": "2026-11-18T00:42:23+09:00",
+      "period_end": "2026-11-19T01:46:43+09:00",
+      "scope": "一覧取得、個別文書網羅未完",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_start": "2026-11-18T00:42:23+09:00",
+      "period_end": "2026-11-19T01:46:43+09:00",
+      "scope": "週報PDF取得、第1頁2行以外の訳と目視未完",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_start": "2026-11-18T00:42:23+09:00",
+      "period_end": "2026-11-19T01:46:43+09:00",
+      "scope": "州の認証未確認",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_start": "2026-11-18T00:42:23+09:00",
+      "period_end": "2026-11-19T01:46:43+09:00",
+      "scope": "個別政策文書網羅未完",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "EIA表の11月13日週商業原油在庫は前週比340万バレル増、SPRは320万バレル減。",
+    "2026-11-18T15:43:18Z起動のUS knowledge database syncはimport_us_knowledge.pyで失敗。"
+  ],
+  "reported": [],
+  "causal_channels": "原油在庫と生産・輸出入・需要が物価と景気を通じて政策・実質金利に波及し得る。予想と需給の内訳不足で方向は未確定。",
+  "historical_comparisons": "1973年の供給制約は後年史料。週次在庫の増加と単純に比較できない。初期の物価・金利・流動性・エネルギー構造は資料不足。",
+  "scenarios": {
+    "days": "在庫と市場予想の差を確認",
+    "weeks": "原油供給需要と備蓄を追う",
+    "months": "物価と実質金利を確認",
+    "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両側資料不足で保留",
+    "gold": "実質金利・リスク需要不足で保留"
+  },
+  "invalidations": [
+    "予想差が想定と異なる",
+    "供給制約の発生",
+    "需要が増加",
+    "相手国金利・政策が変化"
+  ],
+  "review_after": "2026-11-19T16:46:43Z",
+  "review_status": "期限到来分は未評価、再試行",
+  "missing_parts": [
+    "EIAの8頁表の第1頁2行以外の翻訳と目視",
+    "PDF原本のSHA256・安全性",
+    "入札・買戻し・実売買の動的表",
+    "州認証・戦況の独立検証",
+    "メール経路との全件照合",
+    "事後レビュー"
+  ],
+  "db_status": "US knowledge database sync 44338883270 failure、import_us_knowledge.py step failure。DB反映未確認",
+  "pc_status": "未確認"
+}
