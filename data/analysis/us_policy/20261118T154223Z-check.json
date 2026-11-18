@@ -1,0 +1,131 @@
+{
+  "id": "20261118T154223Z-check",
+  "as_of": "2026-11-19T00:42:23+09:00",
+  "document_ids": [
+    "eia-20261113-wpsr-overview-partial-20261118"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_start": "2026-11-18T00:20:10+09:00",
+      "period_end": "2026-11-19T00:42:23+09:00",
+      "scope": "入口確認、本文網羅未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_start": "2026-11-18T00:20:10+09:00",
+      "period_end": "2026-11-19T00:42:23+09:00",
+      "scope": "動的入札表未取得",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_start": "2026-11-18T00:20:10+09:00",
+      "period_end": "2026-11-19T00:42:23+09:00",
+      "scope": "買戻し実績表未取得",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_start": "2026-11-18T00:20:10+09:00",
+      "period_end": "2026-11-19T00:42:23+09:00",
+      "scope": "入口確認、個別文書網羅未完",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_start": "2026-11-18T00:20:10+09:00",
+      "period_end": "2026-11-19T00:42:23+09:00",
+      "scope": "動的実売買結果未取得",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_start": "2026-11-18T00:20:10+09:00",
+      "period_end": "2026-11-19T00:42:23+09:00",
+      "scope": "入口確認、本文網羅未完",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_start": "2026-11-18T00:20:10+09:00",
+      "period_end": "2026-11-19T00:42:23+09:00",
+      "scope": "入口確認、個別文書網羅未完",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_start": "2026-11-18T00:20:10+09:00",
+      "period_end": "2026-11-19T00:42:23+09:00",
+      "scope": "PDF表1の原油在庫2行取得、8ページ中残りは未翻訳・未目視",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_start": "2026-11-18T00:20:10+09:00",
+      "period_end": "2026-11-19T00:42:23+09:00",
+      "scope": "州認証未確認",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_start": "2026-11-18T00:20:10+09:00",
+      "period_end": "2026-11-19T00:42:23+09:00",
+      "scope": "個別政策文書網羅未完",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "11月13日週の商業原油在庫は4億1780万バレル、前週比340万バレル増。",
+    "SPRは2億7640万バレル、前週比320万バレル減。"
+  ],
+  "reported": [],
+  "causal_channels": "在庫の増加が供給余裕と解釈されれば原油価格を抑える可能性があるが、SPR変動・輸入・需要・予想との差が不明で方向は確定しない。原油を通じ物価・景気、金融政策と実質金利に波及し得る。",
+  "historical_comparisons": "1973年の供給制約は後年の解説であり、在庫の一週変化と同一視できない。当時・現在のインフレ、金利、流動性と輸入構造の照合は未完。",
+  "scenarios": {
+    "days": "市場予想と実績を比較",
+    "weeks": "在庫・需要・供給・SPRの変化を追跡",
+    "months": "物価・政策・実質金利への波及を確認",
+    "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは相手国側情報不足で方向保留",
+    "gold": "実質金利・リスク需要不足で方向保留"
+  },
+  "invalidations": [
+    "増加が予想を下回る",
+    "供給障害の発生",
+    "需要増やSPR変化に起因",
+    "相手国の金利・政策の変化"
+  ],
+  "review_after": "2026-11-19T15:42:23Z",
+  "review_status": "既存到来分は未評価、再試行",
+  "missing_parts": [
+    "8頁のうち第1頁2行以外の翻訳・視覚確認",
+    "公表時刻とPDF原本の安全確認",
+    "その他9情報源の個別本文・表網羅",
+    "過去事後レビューとDB反映"
+  ],
+  "db_status": "最新同期はqueued、先行実行failure",
+  "pc_status": "未確認"
+}
