@@ -1,0 +1,132 @@
+{
+  "id": "20261118T132323Z-check",
+  "as_of": "2026-11-18T22:23:23+09:00",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_start": "2026-11-17T20:38:42+09:00",
+      "period_end": "2026-11-18T22:23:23+09:00",
+      "scope": "一覧の最新表示は11月17日、本文の期間内網羅未了",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_start": "2026-11-17T20:38:42+09:00",
+      "period_end": "2026-11-18T22:23:23+09:00",
+      "scope": "結果表の動的行・個別PDF未取得",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_start": "2026-11-17T20:38:42+09:00",
+      "period_end": "2026-11-18T22:23:23+09:00",
+      "scope": "11月17日分の動的実績表・PDF未取得",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_start": "2026-11-17T20:38:42+09:00",
+      "period_end": "2026-11-18T22:23:23+09:00",
+      "scope": "入口は取得、最新の議事要旨個別本文未確認",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_start": "2026-11-17T20:38:42+09:00",
+      "period_end": "2026-11-18T22:23:23+09:00",
+      "scope": "動的な国債売買結果未取得。貸付と売買は別",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_start": "2026-11-17T20:38:42+09:00",
+      "period_end": "2026-11-18T22:23:23+09:00",
+      "scope": "入口確認、個別文書の期間内網羅未了",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_start": "2026-11-17T20:38:42+09:00",
+      "period_end": "2026-11-18T22:23:23+09:00",
+      "scope": "一覧最新表示は11月13日、遅延可能性あり",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_start": "2026-11-17T20:38:42+09:00",
+      "period_end": "2026-11-18T22:23:23+09:00",
+      "scope": "最新欄の日付が空欄、対象週の数値と表未取得",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_start": "2026-11-17T20:38:42+09:00",
+      "period_end": "2026-11-18T22:23:23+09:00",
+      "scope": "州の認証情報を未確認",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_start": "2026-11-17T20:38:42+09:00",
+      "period_end": "2026-11-18T22:23:23+09:00",
+      "scope": "入口確認、個別政策文書の網羅未了",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "財務省入札予定PDFの検索結果は11月18日20年債入札を予定として示すが、結果は未取得。",
+    "OFAC一覧は11月13日付が先頭に表示されるが一覧遅延を排除できない。"
+  ],
+  "reported": [],
+  "causal_channels": "入札・買戻し・FRB売買の実行規模と予想との差が国債需給・流動性を通じて金利に影響し得る。原油需給の変化は物価・景気を介し政策と実質金利に波及し得る。実績と織り込みは未確認。",
+  "historical_comparisons": "既存の初期3ケース報告参照。各ケースの当初の物価、実質金利、流動性、政策余地、エネルギー構造と現状の比較はデータ不足で未完。後年資料を当時の情報として使わない。",
+  "scenarios": {
+    "days": "入札・買戻しの実績と市場予想を確認",
+    "weeks": "原油需給と物価・景気の波及を確認",
+    "months": "政策と実質金利、資金需給を確認",
+    "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両通貨側資料不足により保留",
+    "gold": "実質金利とリスク需要を確認するまで方向保留"
+  },
+  "invalidations": [
+    "発行・買戻し実績が仮定と異なる",
+    "流動性が改善しない",
+    "原油供給制約が解消する",
+    "相手国の金利や政策が想定と異なる"
+  ],
+  "review_after": "2026-11-19T13:23:23Z",
+  "review_status": "到来分の網羅確認未完、再試行",
+  "missing_parts": [
+    "情報源ごとの個別本文・表・脚注・PDF網羅",
+    "11月17日買戻し実績",
+    "11月18日20年債入札結果",
+    "NY連銀実売買",
+    "州認証・戦況独立検証",
+    "メール経路との全件重複照合",
+    "過去シナリオの事後評価"
+  ],
+  "db_status": "前回報告で同期2件失敗、現在のPostgreSQL実反映未確認",
+  "pc_status": "未確認"
+}
