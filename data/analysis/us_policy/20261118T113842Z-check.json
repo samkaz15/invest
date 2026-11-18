@@ -1,0 +1,133 @@
+{
+  "id": "20261118T113842Z-check",
+  "as_of": "2026-11-18T20:38:42+09:00",
+  "previous_report": "docs/reports/us_policy/20261118T111759Z-check.md",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_start": "2026-11-17T20:17:59+09:00",
+      "period_end": "2026-11-18T20:38:42+09:00",
+      "scope": "11月17日付2件が掲載。本文の網羅・更新時刻未確認",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_start": "2026-11-17T20:17:59+09:00",
+      "period_end": "2026-11-18T20:38:42+09:00",
+      "scope": "結果表の行・個別結果PDF未取得",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_start": "2026-11-17T20:17:59+09:00",
+      "period_end": "2026-11-18T20:38:42+09:00",
+      "scope": "動的結果表を取得できず。11月17日実績PDF再取得必要",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_start": "2026-11-17T20:17:59+09:00",
+      "period_end": "2026-11-18T20:38:42+09:00",
+      "scope": "会合一覧を確認。10月会合議事要旨のリンクは取得表示にない",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_start": "2026-11-17T20:17:59+09:00",
+      "period_end": "2026-11-18T20:38:42+09:00",
+      "scope": "動的な国債売買結果を取得できず",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_start": "2026-11-17T20:17:59+09:00",
+      "period_end": "2026-11-18T20:38:42+09:00",
+      "scope": "入口を取得。期間内の個別本文・発効日網羅未確認",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_start": "2026-11-17T20:17:59+09:00",
+      "period_end": "2026-11-18T20:38:42+09:00",
+      "scope": "最新一覧に11月13日付を表示。時間情報・詳細網羅未確認",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_start": "2026-11-17T20:17:59+09:00",
+      "period_end": "2026-11-18T20:38:42+09:00",
+      "scope": "入口は11月12日号を表示、最新表の動的日付欄は空",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_start": "2026-11-17T20:17:59+09:00",
+      "period_end": "2026-11-18T20:38:42+09:00",
+      "scope": "州当局の個別認証を未確認",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_start": "2026-11-17T20:17:59+09:00",
+      "period_end": "2026-11-18T20:38:42+09:00",
+      "scope": "入口を確認、期間内の個別政策文書は未確認",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "OFAC一覧先頭は11月13日付。更新遅延の可能性があり期間内の不存在は断定できない。",
+    "EIA一覧では11月12日号が見えるが動的な最新号欄は取得できない。"
+  ],
+  "reported": [],
+  "causal_channels": "買戻し実行時、対象債の供給と流動性を通じて資金需給・金利に影響し得る。実行規模と市場予想は未確認。原油供給・需要は物価と景気を介し金利に波及し得る。",
+  "historical_comparisons": "既存の初期3ケース参照。1973年と2020年の相違を十分に確認する当時の物価・金利・流動性・エネルギー資料が欠けるため今回新しい比較の結論は保留。",
+  "scenarios": {
+    "days": "買戻し・入札・FRB実売買の実績と予想の差を確認",
+    "weeks": "原油供給・需要の変化と物価、景気を確認",
+    "months": "実質金利・金融政策・資金需給を確認",
+    "currencies": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両側資料不足のため方向判断保留"
+  },
+  "invalidations": [
+    "買戻し実績や市場予想が想定と異なる",
+    "流動性改善が確認できない",
+    "原油の供給制約が解消する",
+    "相手国金利・政策が逆方向に変化する"
+  ],
+  "review_after": "2026-11-19T11:38:42Z",
+  "review_status": "期限到来分の網羅レビュー未完・再試行",
+  "missing_parts": [
+    "10情報源すべての期間内個別本文・表・脚注・PDFの網羅",
+    "11月17日財務省買戻し実績表とPDF",
+    "NY連銀の実売買個別結果",
+    "州選挙認証と戦況の独立検証",
+    "既存メール経路との全件照合",
+    "期限到来レビュー",
+    "PostgreSQL実反映"
+  ],
+  "db_status": "前回報告にsync失敗2件、現在のPostgreSQL反映未確認",
+  "pc_status": "未確認",
+  "notification_status": "個別ChatGPT通知なし"
+}
