@@ -1,0 +1,125 @@
+{
+  "id": "20261118T015409Z-source-check",
+  "as_of": "2026-11-18T10:54:09+09:00",
+  "document_ids": [
+    "nyfed-treasury-20261116-20261211-schedule-20261114"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-18T10:54:09+09:00",
+      "coverage": "入口のみ、一部未取得。最新公表から24時間の全範囲と個別資料の網羅は未確認",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-18T10:54:09+09:00",
+      "coverage": "入口のみ、一部未取得。最新公表から24時間の全範囲と個別資料の網羅は未確認",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-18T10:54:09+09:00",
+      "coverage": "入口のみ、一部未取得。最新公表から24時間の全範囲と個別資料の網羅は未確認",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-18T10:54:09+09:00",
+      "coverage": "入口のみ、一部未取得。最新公表から24時間の全範囲と個別資料の網羅は未確認",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-18T10:54:09+09:00",
+      "coverage": "入口のみ、一部未取得。最新公表から24時間の全範囲と個別資料の網羅は未確認",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-18T10:54:09+09:00",
+      "coverage": "入口のみ、一部未取得。最新公表から24時間の全範囲と個別資料の網羅は未確認",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-18T10:54:09+09:00",
+      "coverage": "入口のみ、一部未取得。最新公表から24時間の全範囲と個別資料の網羅は未確認",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-18T10:54:09+09:00",
+      "coverage": "入口のみ、一部未取得。最新公表から24時間の全範囲と個別資料の網羅は未確認",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-18T10:54:09+09:00",
+      "coverage": "入口のみ、一部未取得。最新公表から24時間の全範囲と個別資料の網羅は未確認",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-18T10:54:09+09:00",
+      "coverage": "入口のみ、一部未取得。最新公表から24時間の全範囲と個別資料の網羅は未確認",
+      "status": "partial",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "NY連銀国債オペ詳細の月次表は11月16日〜12月11日、再投資買入予定約140億ドル、準備管理買入予定ゼロ。既存記録あり。予定であり実取引ではない。公表日時不明。",
+    "EIAの公表済み直近週報は11月12日版。11月18日の新版の有無は未確認。"
+  ],
+  "reported": [],
+  "causal_channels": "入札・買戻し・FRB実行額、需要、原油供給が物価と金利・資金需給に波及し得るが、未確認のため方向は断定しない。",
+  "historical_comparisons": "初期3件の同時点一次資料による条件比較は未実施。過去の値動きは適用しない。",
+  "scenarios": {
+    "days": "実際の入札やオペ結果次第",
+    "weeks": "原油供給変化の持続と需要次第",
+    "months": "物価・景気・政策反応次第",
+    "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDはいずれも両側資料不足で保留。"
+  },
+  "invalidations": [
+    "需給改善",
+    "需要悪化",
+    "両国金利差の逆転"
+  ],
+  "review_after": "2026-11-19T01:54:09Z",
+  "reviews": "期限到来の全分析を確認できず、次回再試行。",
+  "dedup": "上記NY連銀URLの既存文書を確認し重複作成なし。他の候補と既存メール経路の包括的照合未完。",
+  "database": "前回記録で同期2件失敗、今回PostgreSQL実反映は確認できず",
+  "notification": "PC通知未確認",
+  "retry": "全10源の個別一次文書と表・PDF、既存メールとの照合、期限到来レビュー"
+}
