@@ -1,0 +1,131 @@
+{
+  "id": "20261118T185517Z-check",
+  "as_of": "2026-11-19T03:55:17+09:00",
+  "document_ids": [
+    "treasury-20261118-iran-proxy-gold-public-url",
+    "eia-20261113-wpsr-overview-partial-20261118"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_start": "2026-11-18T03:18:16+09:00",
+      "period_end": "2026-11-19T03:55:17+09:00",
+      "scope": "新規の制裁個別本文を取得、時刻不明",
+      "retry": false
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_start": "2026-11-18T03:18:16+09:00",
+      "period_end": "2026-11-19T03:55:17+09:00",
+      "scope": "動的結果表・個別PDF未取得",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_start": "2026-11-18T03:18:16+09:00",
+      "period_end": "2026-11-19T03:55:17+09:00",
+      "scope": "11月17日買戻し結果未取得",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_start": "2026-11-18T03:18:16+09:00",
+      "period_end": "2026-11-19T03:55:17+09:00",
+      "scope": "入口確認、個別文書網羅未完",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_start": "2026-11-18T03:18:16+09:00",
+      "period_end": "2026-11-19T03:55:17+09:00",
+      "scope": "動的実売買表未取得",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_start": "2026-11-18T03:18:16+09:00",
+      "period_end": "2026-11-19T03:55:17+09:00",
+      "scope": "個別本文・発効日の網羅未完",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_start": "2026-11-18T03:18:16+09:00",
+      "period_end": "2026-11-19T03:55:17+09:00",
+      "scope": "当日指定ページは取得失敗",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_start": "2026-11-18T03:18:16+09:00",
+      "period_end": "2026-11-19T03:55:17+09:00",
+      "scope": "11月13日週PDF既存部分訳のみ",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_start": "2026-11-18T03:18:16+09:00",
+      "period_end": "2026-11-19T03:55:17+09:00",
+      "scope": "州認証未確認",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_start": "2026-11-18T03:18:16+09:00",
+      "period_end": "2026-11-19T03:55:17+09:00",
+      "scope": "個別政策文書網羅未完",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "米財務省の公式公開記事はヒズボラ関連団体と金・現金網の指定を発表。組織との関係や行為は政府の主張。公表時刻不明。"
+  ],
+  "reported": [],
+  "causal_channels": "指定対象の金と決済経路の制約を通じ金需給に影響し得るが全市場への影響は不明。原油需給は物価・景気を通じ実質金利へ波及し得る。",
+  "historical_comparisons": "1973原油ショックは供給制約の後年解説であり今回の指定や在庫変化と同一視しない。初期物価・金利・流動性・エネルギー構造は資料不足。",
+  "scenarios": {
+    "days": "指定対象と市場予想を確認",
+    "weeks": "決済・金取引、原油供給需要を確認",
+    "months": "物価と政策・実質金利を確認",
+    "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDの方向は両側資料不足で保留",
+    "gold": "市場全体の需給や実質金利の資料不足で保留"
+  },
+  "invalidations": [
+    "制裁対象外の代替経路が利用可能",
+    "需給が市場予想と異なる",
+    "相手国の金利・政策が変化"
+  ],
+  "review_after": "2026-11-19T18:55:17Z",
+  "review_status": "期限到来の過去レビュー未評価・再試行",
+  "missing_parts": [
+    "OFAC詳細リスト",
+    "EIA週報PDFの大部分の翻訳・視覚確認・原本保存",
+    "入札・買戻し・NY連銀実売買結果",
+    "州認証・戦況独立検証",
+    "期限到来レビュー"
+  ],
+  "db_status": "直近の同期2回failure、新たなJSONに対する同期は別途確認必要",
+  "pc_status": "未確認"
+}
