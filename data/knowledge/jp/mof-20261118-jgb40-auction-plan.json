@@ -1,0 +1,27 @@
+{
+  "id": "mof-20261118-jgb40-auction-plan",
+  "title_ja": "40年国債11月債の発行予定額を公表",
+  "summary_ja": "財務省は40年利付国債11月債を約3000億円発行する予定を公表しました。入札予定日は11月25日です。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/yotei/auct20261118.htm",
+  "published_at": null,
+  "published_date": "2026-11-18",
+  "published_time_note": "公表時刻不明（JST）",
+  "retrieved_at": "2026-11-18T14:26:06+09:00",
+  "notification_eligible": true,
+  "topics": [
+    "jgb",
+    "auction"
+  ],
+  "facts_ja": [
+    "5月発行の第19回債のリオープン。発行予定日11月26日、償還予定日2066年3月20日。"
+  ],
+  "inference_ja": [
+    "超長期債の供給予定は需給に影響し得るが、発行予定と入札結果は異なり、市場の織り込みは未確認。",
+    "日米の金利と期待の両方が不足し、金・ドル円の方向は保留。"
+  ],
+  "source_scope": "財務省の公開本文と表の要約。権利確認が不十分なため全文転載せず。",
+  "missing_parts": [
+    "公表時刻・市場予想は未確認。"
+  ],
+  "supersedes": null
+}
