@@ -1,0 +1,130 @@
+{
+  "id": "20261118T094806Z-review",
+  "as_of": "2026-11-18T18:48:06+09:00",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_start": "2026-11-17T17:47:23+09:00",
+      "period_end": "2026-11-18T18:48:06+09:00",
+      "scope": "入口のみ、個別本文・表・PDF網羅未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_start": "2026-11-17T17:47:23+09:00",
+      "period_end": "2026-11-18T18:48:06+09:00",
+      "scope": "入口のみ、個別本文・表・PDF網羅未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_start": "2026-11-17T17:47:23+09:00",
+      "period_end": "2026-11-18T18:48:06+09:00",
+      "scope": "入口のみ、個別本文・表・PDF網羅未完",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_start": "2026-11-17T17:47:23+09:00",
+      "period_end": "2026-11-18T18:48:06+09:00",
+      "scope": "入口のみ、個別本文・表・PDF網羅未完",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_start": "2026-11-17T17:47:23+09:00",
+      "period_end": "2026-11-18T18:48:06+09:00",
+      "scope": "入口のみ、個別本文・表・PDF網羅未完",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_start": "2026-11-17T17:47:23+09:00",
+      "period_end": "2026-11-18T18:48:06+09:00",
+      "scope": "入口のみ、個別本文・表・PDF網羅未完",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_start": "2026-11-17T17:47:23+09:00",
+      "period_end": "2026-11-18T18:48:06+09:00",
+      "scope": "入口のみ、個別本文・表・PDF網羅未完",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_start": "2026-11-17T17:47:23+09:00",
+      "period_end": "2026-11-18T18:48:06+09:00",
+      "scope": "入口のみ、個別本文・表・PDF網羅未完",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_start": "2026-11-17T17:47:23+09:00",
+      "period_end": "2026-11-18T18:48:06+09:00",
+      "scope": "入口のみ、個別本文・表・PDF網羅未完",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_start": "2026-11-17T17:47:23+09:00",
+      "period_end": "2026-11-18T18:48:06+09:00",
+      "scope": "入口のみ、個別本文・表・PDF網羅未完",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "米財務省の8月TIC発表は9月分を現地11月18日に公表予定と記載。時刻は当該本文から未確認。これは予定で9月分実績ではない。"
+  ],
+  "reported": [
+    "NY連銀の11月17日証券貸付の検索結果は表示されたが動的な一次表を今回確認していない。"
+  ],
+  "causal_channels": "海外投資家の資金流入・流出は債券需要、利回り、資金需給や為替の一要因となるが月次観測と評価替え・償還などを区別する。",
+  "historical_comparisons": "初期3件に限る。既存報告を参照し1973年は後年解説、2020年3月は同時代FRB資料と区別。初期状態の詳細は欠損。",
+  "scenarios": {
+    "days": "TIC資料公表後、正しい対象月・取引と保有残高を確認",
+    "weeks": "国債需給と原油の供給・需要の物価への影響を検証",
+    "months": "資金フローと金融政策・実質金利の反応を検証",
+    "fx": "USD/JPY・EUR/USD・USD/CHF・USD/CAD・AUD/USDは双方の資料不足で保留"
+  },
+  "invalidations": [
+    "フローが一時的で継続しない",
+    "相手国の資金フローや金利差が逆転",
+    "供給正常化"
+  ],
+  "review_after": "2026-11-19T09:48:06Z",
+  "review_status": "期限到来レビューの網羅確認未完",
+  "missing_parts": [
+    "11月17日財務省買戻し個別結果表・PDF",
+    "NY連銀貸付・国債売買の動的表",
+    "最新TIC本文と図表",
+    "10情報源の期間内資料・PDF・脚注の網羅",
+    "既存メール経路全件照合",
+    "州認証と戦況独立検証"
+  ],
+  "db_status": "過去のsync失敗2件の実反映未確認",
+  "pc_status": "未確認"
+}
