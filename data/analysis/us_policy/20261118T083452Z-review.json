@@ -1,0 +1,129 @@
+{
+  "id": "20261118T083452Z-review",
+  "as_of": "2026-11-18T17:34:52+09:00",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_start": "2026-11-17T16:07:41+09:00",
+      "period_end": "2026-11-18T17:34:52+09:00",
+      "coverage": "入口または公的一覧。個別資料・表・PDFの網羅未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_start": "2026-11-17T16:07:41+09:00",
+      "period_end": "2026-11-18T17:34:52+09:00",
+      "coverage": "入口または公的一覧。個別資料・表・PDFの網羅未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_start": "2026-11-17T16:07:41+09:00",
+      "period_end": "2026-11-18T17:34:52+09:00",
+      "coverage": "入口または公的一覧。個別資料・表・PDFの網羅未完",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_start": "2026-11-17T16:07:41+09:00",
+      "period_end": "2026-11-18T17:34:52+09:00",
+      "coverage": "入口または公的一覧。個別資料・表・PDFの網羅未完",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_start": "2026-11-17T16:07:41+09:00",
+      "period_end": "2026-11-18T17:34:52+09:00",
+      "coverage": "入口または公的一覧。個別資料・表・PDFの網羅未完",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_start": "2026-11-17T16:07:41+09:00",
+      "period_end": "2026-11-18T17:34:52+09:00",
+      "coverage": "入口または公的一覧。個別資料・表・PDFの網羅未完",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_start": "2026-11-17T16:07:41+09:00",
+      "period_end": "2026-11-18T17:34:52+09:00",
+      "coverage": "入口または公的一覧。個別資料・表・PDFの網羅未完",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_start": "2026-11-17T16:07:41+09:00",
+      "period_end": "2026-11-18T17:34:52+09:00",
+      "coverage": "入口または公的一覧。個別資料・表・PDFの網羅未完",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_start": "2026-11-17T16:07:41+09:00",
+      "period_end": "2026-11-18T17:34:52+09:00",
+      "coverage": "入口または公的一覧。個別資料・表・PDFの網羅未完",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_start": "2026-11-17T16:07:41+09:00",
+      "period_end": "2026-11-18T17:34:52+09:00",
+      "coverage": "入口または公的一覧。個別資料・表・PDFの網羅未完",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "財務省の11月4日公表予定表は11月17日に20〜30年名目債を対象とする流動性支援買戻しを最大60億ドルと予定。実績は公式結果表を確認できず。"
+  ],
+  "reported": [
+    "第三者による買戻し実績の報告は存在するが公式結果の確認未了。"
+  ],
+  "causal_channels": "財務省買戻しは対象債の流動性を支えうるが、実額とオファー条件の未確認により需給・利回りは判断保留。",
+  "historical_comparisons": "1973年・2020年の初期ケースとの比較の制約は前回報告参照。",
+  "scenarios": {
+    "days": "実施結果、売り手のオファーと市場需給を確認",
+    "weeks": "原油の供給と需要が物価・景気へ及ぼす影響を確認",
+    "months": "金融政策・実質金利と資金需給の反応を確認",
+    "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDはいずれも双方資料不足で保留"
+  },
+  "invalidations": [
+    "買戻し結果が予定より少ない",
+    "対象市場の流動性が改善しない",
+    "原油供給正常化",
+    "相対金利差の逆転"
+  ],
+  "review_after": "2026-11-19T08:34:52Z",
+  "review_status": "期限到来分の網羅確認未了",
+  "missing_parts": [
+    "11月17日買戻し個別結果・表・PDF原文と和訳",
+    "NY連銀貸付・購入の結果表",
+    "10情報源の期間内本文・表の網羅確認",
+    "既存メール経路全件照合と州認証・戦況の独立検証"
+  ],
+  "db_status": "前回2件のsync失敗記録、PostgreSQL実反映は未確認",
+  "pc_status": "未確認"
+}
