@@ -1,0 +1,117 @@
+{
+  "id": "20261118T025444Z-check",
+  "as_of": "2026-11-18T11:54:44+09:00",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "scope": "入口のみ",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "scope": "入口のみ",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "scope": "入口のみ",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "scope": "入口のみ",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "scope": "入口のみ",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "scope": "入口のみ",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "scope": "入口のみ",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "scope": "入口のみ",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "scope": "入口のみ",
+      "coverage": "partial",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "scope": "入口のみ",
+      "coverage": "partial",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "OFACの一覧先頭は2026年11月13日付。ページの更新遅延を否定できず期間中の全件を保証しない。"
+  ],
+  "reported": [],
+  "causal_channels": "供給・需要や国債の需給が物価、景気、金利及び資金需給へ波及しうる。結果は取得不足。",
+  "historical_comparisons": "3件は初期要約。当初条件と一次史料の詳細な照合は未了。",
+  "scenarios": {
+    "days": "入札とオペ実績、需要を確認",
+    "weeks": "エネルギー供給と需要の継続度を確認",
+    "months": "物価と景気に対する金融政策反応を確認",
+    "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDはいずれも両側資料不足につき保留"
+  },
+  "invalidations": [
+    "原油供給正常化",
+    "需要の変化",
+    "金利差の逆転"
+  ],
+  "review_after": "2026-11-19T02:54:44Z",
+  "review_status": "期限到来分未確認、再試行",
+  "missing_parts": [
+    "TreasuryDirectの2026年11月17日入札API取得不可",
+    "10情報源の個別文書本文・表・PDFの網羅未完",
+    "メール経路とのURL・公表時刻・ハッシュ照合未完",
+    "戦況の独立検証と州認証は未確認"
+  ],
+  "db_status": "過去報告ではsync失敗2件。今回DBの実反映を確認できず",
+  "delivery": "PC通知未確認",
+  "lookback": "前回10:54 JSTから今回を中心、24時間の重複範囲の完全確認は未了"
+}
