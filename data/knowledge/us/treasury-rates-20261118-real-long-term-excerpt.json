@@ -1,0 +1,27 @@
+{
+  "id": "treasury-rates-20261118-real-long-term-excerpt",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+  "title_en": "Daily Treasury Real Long-Term Rates",
+  "title_ja": "米財務省長期実質金利（日次表・一部）",
+  "published_at": null,
+  "received_at": "2026-11-19T05:56:07+09:00",
+  "retrieved_at": "2026-11-18 20:58:19 UTC",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "original_text": "Date | LT Real Average (10> Yrs)\n11/18/2026 | 3.24\nLong Term Real Rate Average: The Long-Term Real Rate Average is the unweighted average of bid real yields on all outstanding TIPS with remaining maturities of more than 10 years and is intended as a proxy for long-term real rates.",
+  "translation_ja": "日付｜長期実質金利平均（残存10年超）\n2026年11月18日｜3.24\n長期実質金利平均は、残存期間が10年を超える発行済み物価連動国債の買い気配実質利回りの単純平均であり、長期実質金利の代理指標を意図する。",
+  "facts_ja": [
+    "11月18日行の数値は3.24。公表時刻は不明。"
+  ],
+  "inference_ja": [
+    "市場への影響方向は単独の数値から断定できない。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "年次表の他の行および他系列に関する脚注は未収録。表示上の数値の単位表記の独立確認。"
+  ],
+  "notification_eligible": false
+}
