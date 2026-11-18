@@ -1,0 +1,31 @@
+{
+  "id": "boj-20261118-fsb-2027-plenary",
+  "title_ja": "FSBが国債市場のレバレッジなど金融安定上のリスクを議論",
+  "summary_ja": "FSBは国債市場のレバレッジなどを議論し、関連する脆弱性の監視指標について市中協議案を検討しました。",
+  "source_url": "https://www.fsb.org/2026/11/fsb-sets-out-its-priorities-for-2027/",
+  "related_source_url": "https://www.boj.or.jp/intl_finance/meeting/group/gro261118a.htm",
+  "published_at": null,
+  "published_date": "2026-11-17",
+  "published_time_note": "FSBの公表時刻と日本時間の日付は不明。日銀掲載日は11月18日、時刻不明。",
+  "retrieved_at": "2026-11-18T19:43:25+09:00",
+  "notification_eligible": true,
+  "topics": [
+    "financial_stability",
+    "jgb",
+    "rates"
+  ],
+  "facts_ja": [
+    "FSBは11月16〜17日にバーゼルで会合を開催し、政府債市場のレバレッジ、特にノンバンクの利用拡大について議論した。",
+    "国債市場のレバレッジ取引戦略の脆弱性を監視する指標について、公開市中協議の案を議論した。",
+    "2027年の作業計画は2027年初めに確定版を公表する予定。FSBの議論であり日本銀行の金融政策決定ではない。"
+  ],
+  "inference_ja": [
+    "レバレッジの巻き戻しが生じる場合には国債市場の流動性や利回りに影響し得るが、本資料だけで発生や価格方向は判断できない。",
+    "日米双方の金利・市場予想が不足し金とドル円の方向は保留。"
+  ],
+  "source_scope": "FSBの公的プレスリリース本文を読み要約。権利確認未了のため全文複製しない。",
+  "missing_parts": [
+    "公表時刻、追加リンク先の詳細文書、日銀オペ実績、市場価格は未確認。"
+  ],
+  "supersedes": null
+}
