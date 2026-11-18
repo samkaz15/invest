@@ -1,0 +1,28 @@
+{
+  "id": "mof-20261118-tbill1420-auction-offer",
+  "title_ja": "国庫短期証券第1420回の入札を通知、発行予定は約1.9兆円",
+  "summary_ja": "財務省は国庫短期証券第1420回の入札実施を通知し、発行予定額を約1兆9000億円としました。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/tbill/tbill_nyusatsu/offer20261118.htm",
+  "published_at": null,
+  "published_date": "2026-11-18",
+  "published_time_note": "公表時刻不明（JST）",
+  "retrieved_at": "2026-11-18T10:44:19+09:00",
+  "notification_eligible": true,
+  "topics": [
+    "jgb",
+    "auction",
+    "liquidity"
+  ],
+  "facts_ja": [
+    "財務省は価格競争入札及び第Ⅰ非価格競争入札の実施を通知。発行予定額は額面1兆9000億円程度。",
+    "発行日2026年11月20日、償還期限2027年11月22日、申込締切は11月18日11時30分。"
+  ],
+  "inference_ja": [
+    "供給が市場の資金需給に影響し得るが、応募状況や資金需要次第で金利への影響は変わる。ドル円・金への方向は判断保留。"
+  ],
+  "source_scope": "財務省の公表文・表を確認し要約。入札通知であり落札結果や売買実績ではない。",
+  "missing_parts": [
+    "入札結果・応募状況は未公表または未確認。実際の公表時刻は不明。"
+  ],
+  "supersedes": null
+}
