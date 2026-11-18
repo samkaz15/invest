@@ -1,0 +1,29 @@
+{
+  "id": "ustreas-4334d99-20261118-long-term-mail",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/4334d99",
+  "primary_source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Long-Term Rates Update",
+  "title_ja": "米財務省の日次長期金利更新通知",
+  "published_at": null,
+  "received_at": "2026-11-19T05:56:25+09:00",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Long-Term Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.",
+  "translation_ja": "米財務省の日次長期金利情報を購読されています。この情報は最近更新され、利用できるようになりました。",
+  "facts_ja": [
+    "メールは更新を通知。数値および公式表の公表時刻は記載されていない。",
+    "リンク先表は開いたが全行・脚注の翻訳保存は未完。"
+  ],
+  "inference_ja": [
+    "金利変化は金や為替に影響し得るが方向は断定できない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [
+    "公開リンク先の表・脚注の完全な別文書保存、発表時刻の確認は再試行。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省の米国債金利情報が更新、数値と公表時刻はメール本文には記載されていない。"
+}
