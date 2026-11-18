@@ -1,0 +1,28 @@
+{
+  "id": "mof-20261118-jgb20-198-auction-result",
+  "title_ja": "20年国債第198回の入札結果",
+  "summary_ja": "20年国債第198回の価格競争入札は応募1兆9140億円、募入5258億円、最高利回り3.782％でした。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261118.htm",
+  "published_at": null,
+  "published_date": "2026-11-18",
+  "published_time_note": "公表時刻不明（JST）",
+  "retrieved_at": "2026-11-18T14:26:06+09:00",
+  "notification_eligible": true,
+  "topics": [
+    "jgb",
+    "auction"
+  ],
+  "facts_ja": [
+    "表面利率3.8％、価格競争募入平均利回り3.756％。第Ⅰ非価格募入1738億円。",
+    "第Ⅱ非価格競争は別途実施、結果未確認。"
+  ],
+  "inference_ja": [
+    "入札需給は金利に影響し得るが、市場予想や既存の織り込みが不足し方向は保留。",
+    "日米の金利と期待の両方が不足し、金・ドル円の方向は保留。"
+  ],
+  "source_scope": "財務省の公開本文と表の要約。権利確認が不十分なため全文転載せず。",
+  "missing_parts": [
+    "市場予想・二次市場売買は未確認。発表時刻不明。"
+  ],
+  "supersedes": null
+}
