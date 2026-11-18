@@ -1,0 +1,101 @@
+{
+  "id": "eia-20261113-wpsr-overview-partial-20261119-p2-time-correction",
+  "source_url": "https://ir.eia.gov/wpsr/overview.pdf",
+  "title_en": "Weekly Petroleum Status Report: Table 1 and Table 9",
+  "title_ja": "米週間石油需給表：11月13日までの週（部分取得）",
+  "published_at": null,
+  "published_time_note": "公表日・時刻は当該PDFで確認できず",
+  "received_at": "2026-11-19T08:06:39+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil"
+  ],
+  "original_text": "Table 1. U.S. Petroleum Balance Sheet, Week Ending 11/13/2026\nCommercial (Excluding SPR): Current Week 417.8; Week Ago 414.4; Difference 3.4 (Million Barrels).\nStrategic Petroleum Reserve (SPR): Current Week 276.4; Week Ago 279.5; Difference -3.2 (Million Barrels).\nTable 9. U.S. and PAD District Weekly Estimates (Thousand Barrels per Day Except Where Noted)\nCrude Oil Inputs: Current Week 16,918; Last Week 17,047; Year Ago 16,232.",
+  "translation_ja": "表1：2026年11月13日までの週の米国石油需給表。単位は100万バレル。商業原油在庫（戦略石油備蓄を除く）は当週417.8、前週414.4、前週差プラス3.4。戦略石油備蓄は当週276.4、前週279.5、前週差マイナス3.2。\n表9：米国および石油行政地区の週間推計（特記のない限り日量千バレル）。製油所への原油投入量は当週16,918、前週17,047、前年同週16,232。",
+  "facts_ja": [
+    "EIAの11月13日までの週の表1で商業原油在庫は4億1780万バレル、前週比340万バレル増。",
+    "戦略石油備蓄は2億7640万バレル、前週比320万バレル減。増減は丸め前の数値から算出。",
+    "表9の米国製油所原油投入量は11月13日までの週に日量1691.8万バレル、前週1704.7万バレル。",
+    "前記録の取得時刻08:07:00 JSTは未来時刻を誤記したため訂正。08:06:39 JSTは取得後に記録した時刻で正確な取得秒ではない。"
+  ],
+  "inference_ja": [
+    "市場予想との差と需要・供給の内訳を確認するまで価格方向は保留。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "1〜2ページは一部の行のみ翻訳。残りの表・脚注は未翻訳。",
+    "PDF3〜8ページは原文・訳文・視覚確認未完。",
+    "公表日時・原本SHA256・原本メタデータ安全性未確認。",
+    "PDF原本はGitHubに未保存。"
+  ],
+  "notification_eligible": false,
+  "pdf": {
+    "sha256": null,
+    "page_count": 8,
+    "ocr_used": false,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "storage_status": "not_saved",
+    "storage_reason": "原本バイナリ未取得、メタデータ検査未実施",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "Table 1. U.S. Petroleum Balance Sheet, Week Ending 11/13/2026\nCommercial (Excluding SPR): Current Week 417.8; Week Ago 414.4; Difference 3.4 (Million Barrels).\nStrategic Petroleum Reserve (SPR): Current Week 276.4; Week Ago 279.5; Difference -3.2 (Million Barrels).",
+        "extraction_status": "partial",
+        "translation_ja": "表1：2026年11月13日までの週の米国石油需給表。単位は100万バレル。商業原油在庫（戦略石油備蓄を除く）は当週417.8、前週414.4、前週差プラス3.4。戦略石油備蓄は当週276.4、前週279.5、前週差マイナス3.2。",
+        "translation_status": "partial"
+      },
+      {
+        "page": 2,
+        "original_text": "Table 9. U.S. and PAD District Weekly Estimates (Thousand Barrels per Day Except Where Noted)\nCrude Oil Inputs: Current Week 16,918; Last Week 17,047; Year Ago 16,232.",
+        "extraction_status": "partial_visual_review",
+        "translation_ja": "表9：米国および石油行政地区の週間推計（特記のない限り日量千バレル）。製油所への原油投入量は当週16,918、前週17,047、前年同週16,232。",
+        "translation_status": "partial"
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 4,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 5,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 7,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 8,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      }
+    ]
+  },
+  "supersedes": "eia-20261113-wpsr-overview-partial-20261119-p2"
+}
