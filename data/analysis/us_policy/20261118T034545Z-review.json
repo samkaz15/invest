@@ -1,0 +1,132 @@
+{
+  "id": "20261118T034545Z-review",
+  "as_of": "2026-11-18T12:45:45+09:00",
+  "document_ids": [
+    "fincen-20261117-customer-due-diligence-proposal-email",
+    "ustreas-20261117-secure2-auto-enrollment-email"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "status": "一覧と個別財務省発表2件を本文確認、関連する規則本文は未確認",
+      "period_start": "2026-11-17T11:54:44+09:00",
+      "period_end": "2026-11-18T12:45:45+09:00",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "status": "入口、個別入札結果は未取得",
+      "period_start": "2026-11-17T11:54:44+09:00",
+      "period_end": "2026-11-18T12:45:45+09:00",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "status": "入口、動的な個別買戻し結果未取得",
+      "period_start": "2026-11-17T11:54:44+09:00",
+      "period_end": "2026-11-18T12:45:45+09:00",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "status": "会合一覧のみ、個別議事要旨未確認",
+      "period_start": "2026-11-17T11:54:44+09:00",
+      "period_end": "2026-11-18T12:45:45+09:00",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "status": "入口のみ、個別売買未取得",
+      "period_start": "2026-11-17T11:54:44+09:00",
+      "period_end": "2026-11-18T12:45:45+09:00",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "status": "入口のみ、個別大統領措置本文未確認",
+      "period_start": "2026-11-17T11:54:44+09:00",
+      "period_end": "2026-11-18T12:45:45+09:00",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "status": "一覧のみ、個別制裁本文未取得",
+      "period_start": "2026-11-17T11:54:44+09:00",
+      "period_end": "2026-11-18T12:45:45+09:00",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "status": "入口のみ、個別最新週表未取得",
+      "period_start": "2026-11-17T11:54:44+09:00",
+      "period_end": "2026-11-18T12:45:45+09:00",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "status": "入口のみ、州認証未確認",
+      "period_start": "2026-11-17T11:54:44+09:00",
+      "period_end": "2026-11-18T12:45:45+09:00",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "status": "入口のみ、個別投資審査資料未確認",
+      "period_start": "2026-11-17T11:54:44+09:00",
+      "period_end": "2026-11-18T12:45:45+09:00",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "FinCENは顧客管理規則案を発表。最終施行済みではない。公表時刻不明。",
+    "財務省・IRSは年金自動加入の最終規則を発表。一般に2027年12月31日後開始の制度年度から適用。公表時刻不明。"
+  ],
+  "reported": [],
+  "causal_channels": "規則が退職貯蓄を変化させても資産配分に依存し国債・金への影響は未確定。",
+  "historical_comparisons": "3件は初期要約。今回、当時のインフレ・金利・流動性・エネルギー構造の十分な比較は未完。",
+  "scenarios": {
+    "days": "入札・実売買と金融市場需給を確認。",
+    "weeks": "エネルギー供給と需要が物価・景気に及ぼす影響を確認。",
+    "months": "貯蓄制度の実施時期と資産配分、金融政策反応を確認。",
+    "currencies": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは双方の資料不足により保留。"
+  },
+  "invalidations": [
+    "実際の資産配分の変化が小さい",
+    "供給が正常化",
+    "日米などの金利差が逆転"
+  ],
+  "review_after": "2026-11-19T03:45:45Z",
+  "review_status": "既存の到来分は網羅確認未了",
+  "dedup": "財務省メール経路の2件について本文・日付を照合、重複保存なし。その他の照合未了。",
+  "db_status": "過去の2件のsync失敗記録、PostgreSQL実反映は今回未確認",
+  "missing_parts": [
+    "官報の規則本文・PDF・図表・脚注",
+    "個別入札、買戻し、NY連銀オペ実績",
+    "全既存文書との完全照合",
+    "歴史の同時点比較",
+    "州認証・戦況の独立検証"
+  ],
+  "pc_notification": "未確認"
+}
