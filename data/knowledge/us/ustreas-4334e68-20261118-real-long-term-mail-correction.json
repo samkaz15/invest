@@ -1,0 +1,30 @@
+{
+  "id": "ustreas-4334e68-20261118-real-long-term-mail-correction",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/4334e68",
+  "primary_source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Real Long-Term Rates Update",
+  "title_ja": "米財務省長期実質金利の更新通知",
+  "published_at": null,
+  "received_at": "2026-11-19T05:56:07+09:00",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Real Long-Term Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.",
+  "translation_ja": "米財務省の長期実質金利の日次情報を購読されています。この情報は最近更新され、利用できるようになりました。",
+  "facts_ja": [
+    "メールには数値と公表時刻の記載がない。",
+    "公式表の11月18日行は長期実質金利平均3.24を示す。旧記録の40字要約の『金利数値を確認できず』は公式表の確認結果を反映していなかった。"
+  ],
+  "inference_ja": [
+    "実質金利は金や為替に影響し得るが方向は断定できない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [
+    "リンク先公式表の全期間と脚注の別文書保存は再試行。",
+    "公式表の公表時刻不明。"
+  ],
+  "notification_eligible": false,
+  "supersedes": "ustreas-4334e68-20261118-real-long-term-mail"
+}
