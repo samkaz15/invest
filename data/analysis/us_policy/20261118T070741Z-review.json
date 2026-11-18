@@ -1,0 +1,126 @@
+{
+  "id": "20261118T070741Z-review",
+  "as_of": "2026-11-18T16:07:41+09:00",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "coverage": "入口のみ。個別資料・表・脚注・PDFは網羅未完",
+      "period_start": "2026-11-17T15:32:12+09:00",
+      "period_end": "2026-11-18T16:07:41+09:00",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "coverage": "入口のみ。個別資料・表・脚注・PDFは網羅未完",
+      "period_start": "2026-11-17T15:32:12+09:00",
+      "period_end": "2026-11-18T16:07:41+09:00",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "coverage": "入口のみ。個別資料・表・脚注・PDFは網羅未完",
+      "period_start": "2026-11-17T15:32:12+09:00",
+      "period_end": "2026-11-18T16:07:41+09:00",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "coverage": "入口のみ。個別資料・表・脚注・PDFは網羅未完",
+      "period_start": "2026-11-17T15:32:12+09:00",
+      "period_end": "2026-11-18T16:07:41+09:00",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "coverage": "入口のみ。個別資料・表・脚注・PDFは網羅未完",
+      "period_start": "2026-11-17T15:32:12+09:00",
+      "period_end": "2026-11-18T16:07:41+09:00",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "coverage": "入口のみ。個別資料・表・脚注・PDFは網羅未完",
+      "period_start": "2026-11-17T15:32:12+09:00",
+      "period_end": "2026-11-18T16:07:41+09:00",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "coverage": "入口のみ。個別資料・表・脚注・PDFは網羅未完",
+      "period_start": "2026-11-17T15:32:12+09:00",
+      "period_end": "2026-11-18T16:07:41+09:00",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "coverage": "入口のみ。個別資料・表・脚注・PDFは網羅未完",
+      "period_start": "2026-11-17T15:32:12+09:00",
+      "period_end": "2026-11-18T16:07:41+09:00",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "coverage": "入口のみ。個別資料・表・脚注・PDFは網羅未完",
+      "period_start": "2026-11-17T15:32:12+09:00",
+      "period_end": "2026-11-18T16:07:41+09:00",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "coverage": "入口のみ。個別資料・表・脚注・PDFは網羅未完",
+      "period_start": "2026-11-17T15:32:12+09:00",
+      "period_end": "2026-11-18T16:07:41+09:00",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [],
+  "reported": [
+    "NY連銀貸付結果は検索断片で候補を確認したが公式本文の動的表は未取得。"
+  ],
+  "causal_channels": "国債供給・FRB取引・原油供給や需要はインフレ、景気、資金需給と金利に影響し得るが最新の実数が不足。",
+  "historical_comparisons": "1973〜74年と2020年の比較及び各初期条件の欠損は前回レポート参照。2020年の同時代資料と1973年の後年解説を区別。",
+  "scenarios": {
+    "days": "入札・実売買と需要",
+    "weeks": "原油供給と需要の変動",
+    "months": "物価・成長と政策金利・資金需給",
+    "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両側資料不足で保留"
+  },
+  "invalidations": [
+    "原油供給正常化",
+    "需要の減退",
+    "相対金利差の逆転"
+  ],
+  "review_after": "2026-11-19T07:07:41Z",
+  "review_status": "期限到来分の網羅確認未完、再試行",
+  "missing_parts": [
+    "NY連銀の貸付・国債オペ検索APIへのアクセス不可",
+    "10情報源の個別本文・表・脚注・PDF",
+    "既存メール経路の全件照合",
+    "戦況の独立検証と州認証"
+  ],
+  "db": "過去2件sync失敗の実反映は未確認",
+  "pc": "未確認"
+}
