@@ -1,0 +1,132 @@
+{
+  "id": "20261119T094816Z-check",
+  "as_of": "2026-11-19T18:48:16+09:00",
+  "document_ids": [
+    "treasury-20261118-tic-september-2026-body",
+    "treasury-20261118-iran-proxy-gold-public-url",
+    "eia-20261113-wpsr-overview-partial-20261119-p5"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_start": "2026-11-18T17:45:05+09:00",
+      "period_end": "2026-11-19T18:48:16+09:00",
+      "scope": "入口と9月TIC個別本文を再取得、表・脚注の訳は未完。",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_start": "2026-11-18T17:45:05+09:00",
+      "period_end": "2026-11-19T18:48:16+09:00",
+      "scope": "入口を再取得。期間内の個別資料と表の網羅は未完。",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_start": "2026-11-18T17:45:05+09:00",
+      "period_end": "2026-11-19T18:48:16+09:00",
+      "scope": "入口を再取得。期間内の個別資料と表の網羅は未完。",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_start": "2026-11-18T17:45:05+09:00",
+      "period_end": "2026-11-19T18:48:16+09:00",
+      "scope": "入口を再取得。期間内の個別資料と表の網羅は未完。",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_start": "2026-11-18T17:45:05+09:00",
+      "period_end": "2026-11-19T18:48:16+09:00",
+      "scope": "入口を再取得。期間内の個別資料と表の網羅は未完。",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_start": "2026-11-18T17:45:05+09:00",
+      "period_end": "2026-11-19T18:48:16+09:00",
+      "scope": "入口を再取得。期間内の個別資料と表の網羅は未完。",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_start": "2026-11-18T17:45:05+09:00",
+      "period_end": "2026-11-19T18:48:16+09:00",
+      "scope": "入口と11月18日個別指定を確認。",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_start": "2026-11-18T17:45:05+09:00",
+      "period_end": "2026-11-19T18:48:16+09:00",
+      "scope": "入口を再取得。期間内の個別資料と表の網羅は未完。",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_start": "2026-11-18T17:45:05+09:00",
+      "period_end": "2026-11-19T18:48:16+09:00",
+      "scope": "入口を再取得。期間内の個別資料と表の網羅は未完。",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_start": "2026-11-18T17:45:05+09:00",
+      "period_end": "2026-11-19T18:48:16+09:00",
+      "scope": "入口を再取得。期間内の個別資料と表の網羅は未完。",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "財務省TIC：2026年9月の米長期証券について外国居住者の純購入1867億ドル、民間1483億ドル、公的384億ドル。月次TIC純流入2610億ドル。公表は米国日付11月18日、時刻・JST日付未確認。",
+    "OFACの11月18日指定は米政府の発表。組織・行為の主張は独立検証未実施。"
+  ],
+  "reported": [],
+  "causal_channels": "制裁が対象の金取引・決済を制限すれば供給経路を変え得る。原油需給の変化は物価・実質所得・景気を通じて政策・実質金利・資金需給に影響し得る。市場予想・代替供給・米国外データは不足。",
+  "historical_comparisons": "1973年供給制約は後年の解説で、現在の局所的制裁や在庫変化と同一ではない。2007–09年は信用収縮で、2020年のFRB購入方針は同時代発表。各ケースの当初物価・実質金利・流動性・エネルギー構造と現在の比較値は未充足。3件は初期要約で予測検証済みではない。",
+  "scenarios": {
+    "days": "入札・買戻し・国債売買実績と予想差を確認。実績未取得のため方向保留。",
+    "weeks": "供給制約が継続し代替供給が不足なら物価上昇圧力となり得る。供給回復・需要減なら影響は弱まる。",
+    "months": "物価上昇が持続し金融引締めが強まれば実質金利が高まり金に逆風となり得る。景気悪化や予想インフレの変化で逆もあり得る。",
+    "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDはいずれも双方の金利・景気資料が不足し買われやすさ・売られやすさを保留。",
+    "gold": "実質金利とドル・現物需給の同時確認まで方向保留。"
+  },
+  "invalidations": [
+    "代替供給の回復または需要縮小",
+    "実質金利や為替の反応が仮説と逆",
+    "国債取引実績が予定または市場予想と異なる"
+  ],
+  "review_after": "2026-11-20T09:48:16.000Z",
+  "review_status": "期限到来分の全件照合未完、市場時系列・予想不足のため未評価。",
+  "missing_parts": [
+    "TIC統計表・脚注とリンク先データの翻訳、既存メール全件とのハッシュ照合",
+    "EIA PDF全頁の表・脚注・視覚確認、原本安全確認・保存",
+    "個別入札・買戻し・FRB売買、州認証、独立戦況検証",
+    "通貨ペア双方の資料、史料当初値および期限到来レビュー全件"
+  ],
+  "db_status": "2026-11-19 06:24:37 UTC開始の同期はfailure。ログ上、DB接続時に接続先のテナント／ユーザーが見つからないと応答。原因の設定箇所は未確認、PostgreSQL反映未確認。",
+  "pc_status": "実機未確認"
+}
