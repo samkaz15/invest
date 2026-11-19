@@ -1,0 +1,28 @@
+{
+  "id": "boj-20261119-ueda-diet-statement",
+  "source_url": "https://www.boj.or.jp/mopo/diet/d_state/dst261119a.htm",
+  "pdf_url": "https://www.boj.or.jp/mopo/diet/d_state/data/dst261119a.pdf",
+  "notification_url": "https://www.boj.or.jp/mopo/diet/d_state/dst261119a.htm",
+  "title_ja": "植田総裁、国会で経済・金融政策を説明",
+  "published_date": "2026-11-19",
+  "published_at": null,
+  "published_time_note": "公表時刻不明",
+  "retrieved_at": "2026-11-19T12:19:29+09:00",
+  "notification_eligible": true,
+  "summary_ja": "植田総裁、経済・物価に応じた利上げ方針と物価上振れリスクを国会で説明。",
+  "facts_ja": [
+    "植田総裁は11月19日の参議院財政金融委員会で、先月会合における無担保コール翌日物1.25％程度の維持を説明した。今回の説明自体は新たな政策決定ではない。",
+    "経済・物価・金融情勢に応じて政策金利を引き上げる考えを示し、その時期とペースは見通しの実現確度とリスクを点検して検討すると述べた。",
+    "原油、AI関連需要、為替の影響や基調物価の上振れリスクに言及した。"
+  ],
+  "inference_ja": [
+    "見通しの実現や市場の織り込み次第で日本の金利や国債需給に影響し得る。日米実質金利と市場予想が未確認のため金・ドル円の方向は判断保留。"
+  ],
+  "content_scope": "summary",
+  "translation_status": "not_applicable_original_japanese",
+  "missing_parts": [
+    "PDF全3ページの抽出テキストを確認。視覚的なページ確認は未実施。",
+    "公表時刻、質疑応答、関連報告書全体、日米市場予想は未確認。",
+    "再配布条件の個別確認は未完のため全文・PDFは保存せず、要約と公式リンクを保存。"
+  ]
+}
