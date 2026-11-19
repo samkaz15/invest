@@ -1,0 +1,96 @@
+{
+  "as_of": "2026-11-20T05:17:42+09:00",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "status": "landing_page_only",
+      "coverage": "2026-11-19 04:17 JST 以降の完全な差分は未検証",
+      "missing": "個別資料、表、公開時刻、既存レコードとの照合は未完了"
+    },
+    {
+      "id": "treasury_auctions",
+      "status": "landing_page_only",
+      "coverage": "2026-11-19 04:17 JST 以降の完全な差分は未検証",
+      "missing": "個別資料、表、公開時刻、既存レコードとの照合は未完了"
+    },
+    {
+      "id": "treasury_buybacks",
+      "status": "landing_page_only",
+      "coverage": "2026-11-19 04:17 JST 以降の完全な差分は未検証",
+      "missing": "個別資料、表、公開時刻、既存レコードとの照合は未完了"
+    },
+    {
+      "id": "fed_fomc",
+      "status": "landing_page_only",
+      "coverage": "2026-11-19 04:17 JST 以降の完全な差分は未検証",
+      "missing": "個別資料、表、公開時刻、既存レコードとの照合は未完了"
+    },
+    {
+      "id": "nyfed_operations",
+      "status": "landing_page_only",
+      "coverage": "2026-11-19 04:17 JST 以降の完全な差分は未検証",
+      "missing": "個別資料、表、公開時刻、既存レコードとの照合は未完了"
+    },
+    {
+      "id": "white_house",
+      "status": "landing_page_only",
+      "coverage": "2026-11-19 04:17 JST 以降の完全な差分は未検証",
+      "missing": "個別資料、表、公開時刻、既存レコードとの照合は未完了"
+    },
+    {
+      "id": "ofac",
+      "status": "landing_page_only",
+      "coverage": "2026-11-19 04:17 JST 以降の完全な差分は未検証",
+      "missing": "個別資料、表、公開時刻、既存レコードとの照合は未完了"
+    },
+    {
+      "id": "eia_petroleum",
+      "status": "landing_page_only",
+      "coverage": "2026-11-19 04:17 JST 以降の完全な差分は未検証",
+      "missing": "個別資料、表、公開時刻、既存レコードとの照合は未完了"
+    },
+    {
+      "id": "fec_results",
+      "status": "landing_page_only",
+      "coverage": "2026-11-19 04:17 JST 以降の完全な差分は未検証",
+      "missing": "個別資料、表、公開時刻、既存レコードとの照合は未完了"
+    },
+    {
+      "id": "cfius",
+      "status": "landing_page_only",
+      "coverage": "2026-11-19 04:17 JST 以降の完全な差分は未検証",
+      "missing": "個別資料、表、公開時刻、既存レコードとの照合は未完了"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": [
+    {
+      "horizon": "日・週・月",
+      "assessment": "情報不足につき判断保留"
+    }
+  ],
+  "invalidations": [
+    "一次資料と比較対象国の情報取得後に検証"
+  ],
+  "review_after": null,
+  "retry": "全10情報源の個別文書・PDF、既存メール経路・過去分析・史料の確認を再試行",
+  "status": "incomplete",
+  "database_sync": "未確認",
+  "pc_notification": "未確認"
+}
