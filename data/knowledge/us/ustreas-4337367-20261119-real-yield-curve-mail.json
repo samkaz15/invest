@@ -1,0 +1,30 @@
+{
+  "id": "ustreas-4337367-20261119-real-yield-curve-mail",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/4337367",
+  "primary_source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Real Yield Curve Rates Update",
+  "title_ja": "米財務省の日次実質イールドカーブ更新通知",
+  "published_at": null,
+  "received_at": "2026-11-20T05:56:07+09:00",
+  "topics": [
+    "treasuries",
+    "monetary_policy",
+    "gold"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Real Yield Curve Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.",
+  "translation_ja": "米財務省の日次実質イールドカーブ情報を購読されています。この情報は最近更新され、利用できるようになりました。",
+  "facts_ja": [
+    "通知本文に利回りの数値と公表時刻はない。",
+    "公式表は取得できたが、確認できた最新行は11月18日。11月19日分を確認できない。"
+  ],
+  "inference_ja": [
+    "実質金利の変動は金の保有機会費用に影響し得るが、方向は断定できない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [
+    "公式表の11月19日分および完全な表・脚注の別文書保存、資料の公表時刻は未確認。再取得が必要。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省の米国債金利情報が更新、数値と公表時刻はメール本文には記載されていない。"
+}
