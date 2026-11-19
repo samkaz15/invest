@@ -1,0 +1,33 @@
+{
+  "id": "treasury-20261118-tic-september-2026-body",
+  "supersedes": "treasury-20261118-tic-september-2026-excerpt",
+  "source_url": "https://home.treasury.gov/news/press-releases/sb0693/",
+  "title_en": "Treasury International Capital Data for September",
+  "title_ja": "米財務省９月TIC統計の本文翻訳補完",
+  "published_at": null,
+  "published_date": "2026-11-18",
+  "published_time_note": "米国日付のみ確認。時刻・日本日付は不明。",
+  "received_at": "2026-11-19T06:24:34Z",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries",
+    "other_us"
+  ],
+  "original_text": "WASHINGTON – The U.S. Department of the Treasury today released Treasury International Capital (TIC) data for September 2026. The next release, which will report on data for October 2026, is scheduled for December 15, 2026.\nThe sum total in September of all net foreign acquisitions of long-term securities, short-term U.S. securities, and banking flows was a net TIC inflow of $261.0 billion. Of this, net foreign private inflows were $267.0 billion, and net foreign official outflows were $6.0 billion.\nForeign residents increased their holdings of long-term U.S. securities in September; their net purchases were $186.7 billion. Net purchases by private foreign investors were $148.3 billion, and net purchases by foreign official institutions were $38.4 billion.\nU.S. residents increased their holdings of long-term foreign securities, with net purchases of $31.4 billion.\nAfter including adjustments, such as estimated foreign portfolio acquisitions of U.S. stocks through stock swaps, overall net foreign purchases of long-term securities are estimated to have been $155.3 billion in September.\nForeign residents increased their holdings of U.S. Treasury bills by $3.5 billion. Foreign resident holdings of all dollar-denominated short-term U.S. securities and other custody liabilities decreased by $2.9 billion.\nBanks’ own net dollar-denominated liabilities to foreign residents increased by $108.6 billion.\nComplete data are available on the Treasury website.\nAbout TIC Data\nThe monthly data on holdings of long-term securities, as well as the monthly table on Major Foreign Holders of Treasury Securities, reflect foreign holdings of U.S. securities collected primarily on the basis of custodial data. These data help provide a window into foreign ownership of U.S. securities, but they cannot attribute holdings of U.S. securities with complete accuracy. For example, if a U.S. Treasury security purchased by a foreign resident is held in a custodial account in a third country, the true ownership of the security will not be reflected in the data. The custodial data will also not properly attribute U.S. Treasury securities managed by foreign private portfolio managers who invest on behalf of residents of other countries. In addition, foreign countries may hold dollars and other U.S. assets that are not captured in the TIC data. For these reasons, it is difficult to draw precise conclusions from TIC data about changes in the foreign holdings of U.S. financial assets by individual countries.",
+  "translation_ja": "ワシントン発。米財務省は2026年9月の対米証券投資（TIC）統計を公表した。2026年10月分を扱う次回公表は2026年12月15日を予定する。\n9月の外国人による長期証券、米短期証券の純取得と銀行フローを合計したTIC純流入は2610億ドルだった。内訳は外国民間部門が2670億ドルの純流入、外国公的部門が60億ドルの純流出だった。\n外国居住者の米長期証券保有は増加し、純購入額は1867億ドルだった。外国の民間投資家の純購入は1483億ドル、外国公的機関の純購入は384億ドルだった。\n米国居住者は外国長期証券の保有を増やし、純購入額は314億ドルだった。\n株式交換を通じた外国人の米株式取得推計などの調整を加えた長期証券全体の外国人純購入額は、9月に1553億ドルだったと推計される。\n外国居住者の米国財務省短期証券保有は35億ドル増加した。外国居住者のドル建て米短期証券全体とその他保管債務の保有は29億ドル減少した。\n銀行自身の外国居住者に対するドル建て純債務は1086億ドル増加した。\n完全なデータは財務省ウェブサイトで利用できる。\n【TIC統計について】\n長期証券保有の月次データと米国債の主要外国保有者の月次表は、主に保管機関のデータに基づいて収集された外国人の米国証券保有を反映する。これらは保有状況を知る手掛かりになるが、保有者を完全に正確には特定できない。例えば外国居住者が購入した米国債が第三国の保管口座にあれば、真の所有者は統計に反映されない。また、他国居住者のために投資する外国の民間運用会社が管理する米国債も、保管機関データでは適切に保有者に割り当てられない。さらに外国は、TICに捉えられないドルやその他の米国資産を保有している場合がある。こうした理由から、TIC統計を使って国別の米金融資産保有の変化について正確な結論を導くことは難しい。",
+  "facts_ja": [
+    "9月の長期証券・短期証券・銀行フロー合計TIC純流入は2610億ドル。",
+    "外国の米長期証券純購入は1867億ドルで、国債以外も含む。"
+  ],
+  "inference_ja": [
+    "資金需給の参考となるが観測対象は過去月で、日米金利や市場予想不足により金・為替の方向は保留。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "notification_eligible": false,
+  "missing_parts": [
+    "本文は翻訳済みだが、表全32行・脚注全体とリンク先データは未翻訳。",
+    "公表時刻・日本日付と既存メール全件との内容ハッシュ照合は未確認。"
+  ],
+  "note": "既存部分訳の補完。再通知しない。"
+}
