@@ -1,0 +1,117 @@
+{
+  "as_of": "2026-11-20T07:51:32+09:00",
+  "document_ids": [
+    "eia-20261113-wpsr-overview-partial-20261119-p5",
+    "ofac-20261119-sdn-russia-131l-mail"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period": "前回07:18 JST以降を中心に確認。既存最新公表時刻が未確定のため24時間重複範囲は未確定",
+      "status": "入口取得。期間内の個別本文・表の全件確認未完"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period": "前回07:18 JST以降を中心に確認。既存最新公表時刻が未確定のため24時間重複範囲は未確定",
+      "status": "入口取得。期間内の個別本文・表の全件確認未完"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period": "前回07:18 JST以降を中心に確認。既存最新公表時刻が未確定のため24時間重複範囲は未確定",
+      "status": "入口取得。期間内の個別本文・表の全件確認未完"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period": "前回07:18 JST以降を中心に確認。既存最新公表時刻が未確定のため24時間重複範囲は未確定",
+      "status": "入口取得。期間内の個別本文・表の全件確認未完"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period": "前回07:18 JST以降を中心に確認。既存最新公表時刻が未確定のため24時間重複範囲は未確定",
+      "status": "500エラー。実施結果未取得"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period": "前回07:18 JST以降を中心に確認。既存最新公表時刻が未確定のため24時間重複範囲は未確定",
+      "status": "入口取得。期間内の個別本文・表の全件確認未完"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period": "前回07:18 JST以降を中心に確認。既存最新公表時刻が未確定のため24時間重複範囲は未確定",
+      "status": "入口取得、11月19日更新および一般許可PDFは取得失敗"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period": "前回07:18 JST以降を中心に確認。既存最新公表時刻が未確定のため24時間重複範囲は未確定",
+      "status": "入口と11月13日週PDF本文表の一部を取得。全頁翻訳・視覚確認未完"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period": "前回07:18 JST以降を中心に確認。既存最新公表時刻が未確定のため24時間重複範囲は未確定",
+      "status": "入口取得。期間内の個別本文・表の全件確認未完"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period": "前回07:18 JST以降を中心に確認。既存最新公表時刻が未確定のため24時間重複範囲は未確定",
+      "status": "入口取得。期間内の個別本文・表の全件確認未完"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "EIAの11月13日週の商業原油在庫は4億1780万バレル、前週比340万バレル増。公表時刻不明。",
+    "OFACの既存メールは一般許可131Lの発行を伝える。公表時刻不明、許可文書は未取得。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "供給が実際に制限され代替も不足すれば、物価・景気を通じ金利・資金需給に影響し得る。"
+  ],
+  "historical_comparisons": [
+    "1973年の禁輸・減産は実供給の制約、今回許可は売却交渉に関するもので起点が異なる。1973年史料は事後解説。",
+    "2007年危機は信用収縮、2020年の当時のFRB発表は市場機能支援が主眼。"
+  ],
+  "scenarios": [
+    {
+      "horizon": "日",
+      "condition": "許可の内容と市場の織り込みが未確認で判断保留"
+    },
+    {
+      "horizon": "週",
+      "condition": "供給減少が持続し代替不足なら原油需給を引き締め得る"
+    },
+    {
+      "horizon": "月",
+      "condition": "価格上昇が持続すれば物価と実質所得・政策金利に波及し得る"
+    }
+  ],
+  "invalidations": [
+    "実供給の維持、代替供給増、需要減、日米金利差や実質金利の逆方向変化"
+  ],
+  "fx": "USD/JPY・EUR/USD・USD/CHF・USD/CAD・AUD/USDは双方の資料不足で方向保留。金も判断保留。",
+  "review_after": null,
+  "review_status": "期限到来分の全件照合・時系列取得未完",
+  "missing_comparisons": "当時と現在のインフレ、実質金利、流動性、エネルギー構造の定量比較未完。3件は精度未検証の初期要約。",
+  "database_sync": "直近実行failure、PostgreSQL反映未確認",
+  "pc_notification": "実機未確認",
+  "retry": true
+}
