@@ -1,0 +1,104 @@
+{
+  "id": "eia-20261113-wpsr-overview-partial-20261119-p5",
+  "source_url": "https://ir.eia.gov/wpsr/overview.pdf",
+  "title_en": "Weekly Petroleum Status Report: Table 1 and Table 9",
+  "title_ja": "米週間石油需給表：11月13日までの週（部分取得）",
+  "published_at": null,
+  "published_time_note": "公表日・時刻は当該PDFで確認できず",
+  "received_at": "2026-11-19T11:11:05+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil"
+  ],
+  "original_text": "Table 1. U.S. Petroleum Balance Sheet, Week Ending 11/13/2026\nCommercial (Excluding SPR): Current Week 417.8; Week Ago 414.4; Difference 3.4 (Million Barrels).\nStrategic Petroleum Reserve (SPR): Current Week 276.4; Week Ago 279.5; Difference -3.2 (Million Barrels).\nTable 9. U.S. and PAD District Weekly Estimates (Thousand Barrels per Day Except Where Noted)\nCrude Oil Inputs: Current Week 16,918; Last Week 17,047; Year Ago 16,232.\nTable 9, Refiner and Blender Net Production, Conventional: Current Week 6,468; Last Week 6,535; Year Ago 6,312. Thousand barrels per day.\nTable 9 Petroleum Stocks (Million Barrels): Total Motor Gasoline, Current Week 215.9; Last Week 210.8; Year Ago 207.4.\nTable 9. Stocks (Million Barrels): Motor Gasoline Blending Components: Current Week 202.0; Last Week 196.8; Year Ago 193.0.",
+  "translation_ja": "表1：2026年11月13日までの週の米国石油需給表。単位は100万バレル。商業原油在庫（戦略石油備蓄を除く）は当週417.8、前週414.4、前週差プラス3.4。戦略石油備蓄は当週276.4、前週279.5、前週差マイナス3.2。\n表9：米国および石油行政地区の週間推計（特記のない限り日量千バレル）。製油所への原油投入量は当週16,918、前週17,047、前年同週16,232。\n表9：製油所・混合業者の通常ガソリン純生産は当週日量646.8万バレル、前週653.5万バレル、前年同週631.2万バレル。\n表9：ガソリン総在庫は当週2億1590万バレル、前週2億1080万バレル、前年同週2億740万バレル。\n表9：ガソリン混合基材在庫は当週2億200万バレル、前週1億9680万バレル、前年同週1億9300万バレル。",
+  "facts_ja": [
+    "EIAの11月13日までの週の表1で商業原油在庫は4億1780万バレル、前週比340万バレル増。",
+    "戦略石油備蓄は2億7640万バレル、前週比320万バレル減。増減は丸め前の数値から算出。",
+    "表9の米国製油所原油投入量は11月13日までの週に日量1691.8万バレル、前週1704.7万バレル。",
+    "前記録の取得時刻08:07:00 JSTは未来時刻を誤記したため訂正。08:06:39 JSTは取得後に記録した時刻で正確な取得秒ではない。",
+    "11月13日までの週の通常ガソリン純生産は日量646.8万バレル。",
+    "表9のガソリン総在庫は2億1590万バレル。",
+    "ガソリン混合基材在庫は2億200万バレル。ガソリン総在庫の一部であり二重計上しない。"
+  ],
+  "inference_ja": [
+    "市場予想との差と需要・供給の内訳を確認するまで価格方向は保留。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "PDF1〜5頁は一部の行のみ翻訳。残りの表と脚注は未翻訳。",
+    "6〜8頁の原文・訳・視覚確認は未完。",
+    "公表時刻、原本SHA256・メタデータの安全性未確認。",
+    "PDF原本はGitHubに未保存。"
+  ],
+  "notification_eligible": false,
+  "pdf": {
+    "sha256": null,
+    "page_count": 8,
+    "ocr_used": false,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "storage_status": "not_saved",
+    "storage_reason": "原本バイナリ未取得、メタデータ検査未実施",
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "Table 1. U.S. Petroleum Balance Sheet, Week Ending 11/13/2026\nCommercial (Excluding SPR): Current Week 417.8; Week Ago 414.4; Difference 3.4 (Million Barrels).\nStrategic Petroleum Reserve (SPR): Current Week 276.4; Week Ago 279.5; Difference -3.2 (Million Barrels).",
+        "extraction_status": "partial",
+        "translation_ja": "表1：2026年11月13日までの週の米国石油需給表。単位は100万バレル。商業原油在庫（戦略石油備蓄を除く）は当週417.8、前週414.4、前週差プラス3.4。戦略石油備蓄は当週276.4、前週279.5、前週差マイナス3.2。",
+        "translation_status": "partial"
+      },
+      {
+        "page": 2,
+        "original_text": "Table 9. U.S. and PAD District Weekly Estimates (Thousand Barrels per Day Except Where Noted)\nCrude Oil Inputs: Current Week 16,918; Last Week 17,047; Year Ago 16,232.",
+        "extraction_status": "partial_visual_review",
+        "translation_ja": "表9：米国および石油行政地区の週間推計（特記のない限り日量千バレル）。製油所への原油投入量は当週16,918、前週17,047、前年同週16,232。",
+        "translation_status": "partial"
+      },
+      {
+        "page": 3,
+        "original_text": "Table 9, Refiner and Blender Net Production, Conventional: Current Week 6,468; Last Week 6,535; Year Ago 6,312. Thousand barrels per day.",
+        "extraction_status": "partial_visual_review",
+        "translation_ja": "表9：製油所・混合業者の通常ガソリン純生産は当週日量646.8万バレル、前週653.5万バレル、前年同週631.2万バレル。",
+        "translation_status": "partial"
+      },
+      {
+        "page": 4,
+        "original_text": "Table 9 Petroleum Stocks (Million Barrels): Total Motor Gasoline, Current Week 215.9; Last Week 210.8; Year Ago 207.4.",
+        "extraction_status": "partial_visual_review",
+        "translation_ja": "表9：ガソリン総在庫は当週2億1590万バレル、前週2億1080万バレル、前年同週2億740万バレル。",
+        "translation_status": "partial"
+      },
+      {
+        "page": 5,
+        "original_text": "Table 9. Stocks (Million Barrels): Motor Gasoline Blending Components: Current Week 202.0; Last Week 196.8; Year Ago 193.0.",
+        "extraction_status": "partial_visual_review",
+        "translation_ja": "表9：ガソリン混合基材在庫は当週2億200万バレル、前週1億9680万バレル、前年同週1億9300万バレル。",
+        "translation_status": "partial"
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 7,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 8,
+        "original_text": "",
+        "extraction_status": "not_processed",
+        "translation_ja": "",
+        "translation_status": "partial"
+      }
+    ]
+  },
+  "supersedes": "eia-20261113-wpsr-overview-partial-20261119-p4"
+}
