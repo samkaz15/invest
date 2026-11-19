@@ -1,0 +1,30 @@
+{
+  "id": "mof-20261119-weekly-securities-flows-publication",
+  "title_ja": "財務省が週次の対外・対内証券売買統計を公表",
+  "summary_ja": "財務省が週次の証券売買統計を公表しました。PDFの数値は取得できていません。",
+  "source_url": "https://www.mof.go.jp/policy/international_policy/reference/itn_transactions_in_securities/week.pdf",
+  "source_index_url": "https://www.mof.go.jp/policy/international_policy/reference/itn_transactions_in_securities/data.htm",
+  "published_at": null,
+  "published_date": "2026-11-19",
+  "published_time_note": "公表時刻は不明。08:50は公表予定時刻であり実際の時刻として扱わない。",
+  "retrieved_at": "2026-11-19T09:34:27+09:00",
+  "notification_eligible": true,
+  "topics": [
+    "securities_flows",
+    "jgb",
+    "currency"
+  ],
+  "facts_ja": [
+    "財務省の統計表一覧は週次の対外及び対内証券売買契約等の状況を11月19日発表と記載。",
+    "対象は指定報告機関ベース。PDFの取得はタイムアウトし対象週・数値は本文から未確認。"
+  ],
+  "inference_ja": [
+    "証券売買は債券需給や為替に影響し得るが、取引額と市場予想が未取得のため方向は保留。"
+  ],
+  "source_scope": "統計表一覧の事実を要約。PDF原文は取得失敗。財務省の公共データ利用規約に個別例外があるため原文全文は複製しない。",
+  "missing_parts": [
+    "公式PDF全ページ・本文・表・脚注・数値・公表時刻は取得失敗、再試行。",
+    "日銀オペXLSX・国債買入消却・会見等の期間内網羅は未完。"
+  ],
+  "supersedes": null
+}
