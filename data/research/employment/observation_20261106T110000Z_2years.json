@@ -1,0 +1,780 @@
+{
+  "schema_version": "employment-research-report/v1",
+  "as_of": "2026-11-06T11:00:00+00:00",
+  "scope": "retrospective observation; not a forecast or trading signal",
+  "consensus_warning": "historical media reports, not a contemporaneously captured vintage",
+  "price_method": "event 5m opening price to closing price at horizon; no interpolation",
+  "records": [
+    {
+      "reference_month": "2024-11",
+      "release_at": "2024-12-06T08:30:00-05:00",
+      "nfp_initial_thousands": 227,
+      "unemployment_initial_pct": 4.2,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_12062024.htm",
+      "reuters_consensus_thousands": null,
+      "consensus_source_url": null,
+      "consensus_provenance": "not_collected",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": null,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2024-12",
+      "release_at": "2025-01-10T08:30:00-05:00",
+      "nfp_initial_thousands": 256,
+      "unemployment_initial_pct": 4.1,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_01102025.htm",
+      "reuters_consensus_thousands": null,
+      "consensus_source_url": null,
+      "consensus_provenance": "not_collected",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": null,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2025-01",
+      "release_at": "2025-02-07T08:30:00-05:00",
+      "nfp_initial_thousands": 143,
+      "unemployment_initial_pct": 4.0,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_02072025.htm",
+      "reuters_consensus_thousands": null,
+      "consensus_source_url": null,
+      "consensus_provenance": "not_collected",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": null,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2025-02",
+      "release_at": "2025-03-07T08:30:00-05:00",
+      "nfp_initial_thousands": 151,
+      "unemployment_initial_pct": 4.1,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_03072025.htm",
+      "reuters_consensus_thousands": null,
+      "consensus_source_url": null,
+      "consensus_provenance": "not_collected",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": null,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2025-03",
+      "release_at": "2025-04-04T08:30:00-04:00",
+      "nfp_initial_thousands": 228,
+      "unemployment_initial_pct": 4.2,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_04042025.htm",
+      "reuters_consensus_thousands": null,
+      "consensus_source_url": null,
+      "consensus_provenance": "not_collected",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": null,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2025-04",
+      "release_at": "2025-05-02T08:30:00-04:00",
+      "nfp_initial_thousands": 177,
+      "unemployment_initial_pct": 4.2,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_05022025.htm",
+      "reuters_consensus_thousands": null,
+      "consensus_source_url": null,
+      "consensus_provenance": "not_collected",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "source_correction_note": "BLS reissued archive 2025-06-03; household errors did not affect headline unemployment rate.",
+      "nfp_surprise_thousands_retrospective": null,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2025-05",
+      "release_at": "2025-06-06T08:30:00-04:00",
+      "nfp_initial_thousands": 139,
+      "unemployment_initial_pct": 4.2,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_06062025.htm",
+      "reuters_consensus_thousands": null,
+      "consensus_source_url": null,
+      "consensus_provenance": "not_collected",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": null,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2025-06",
+      "release_at": "2025-07-03T08:30:00-04:00",
+      "nfp_initial_thousands": 147,
+      "unemployment_initial_pct": 4.1,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_07032025.htm",
+      "reuters_consensus_thousands": null,
+      "consensus_source_url": null,
+      "consensus_provenance": "not_collected",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": null,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2025-07",
+      "release_at": "2025-08-01T08:30:00-04:00",
+      "nfp_initial_thousands": 73,
+      "unemployment_initial_pct": 4.2,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_08012025.htm",
+      "reuters_consensus_thousands": null,
+      "consensus_source_url": null,
+      "consensus_provenance": "not_collected",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": null,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2025-08",
+      "release_at": "2025-09-05T08:30:00-04:00",
+      "nfp_initial_thousands": 22,
+      "unemployment_initial_pct": 4.3,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_09052025.htm",
+      "reuters_consensus_thousands": null,
+      "consensus_source_url": null,
+      "consensus_provenance": "not_collected",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": null,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2025-09",
+      "release_at": "2025-11-20T08:30:00-05:00",
+      "nfp_initial_thousands": 119,
+      "unemployment_initial_pct": 4.4,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_11202025.htm",
+      "reuters_consensus_thousands": 50,
+      "consensus_source_url": "https://www.investing.com/news/economy-news/job-growth-accelerated-in-september-unemployment-rate-ticks-up-4370667",
+      "consensus_provenance": "retrospective_media_report",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": 69,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2025-11",
+      "release_at": "2025-12-16T08:30:00-05:00",
+      "nfp_initial_thousands": 64,
+      "unemployment_initial_pct": 4.6,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_12162025.htm",
+      "reuters_consensus_thousands": 50,
+      "consensus_source_url": "https://www.investing.com/news/economy-news/job-growth-tops-expectations-in-november-retail-sales-unchanged-in-october-4410823",
+      "consensus_provenance": "retrospective_media_report",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": 14,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2025-12",
+      "release_at": "2026-01-09T08:30:00-05:00",
+      "nfp_initial_thousands": 50,
+      "unemployment_initial_pct": 4.4,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_01092026.htm",
+      "reuters_consensus_thousands": 60,
+      "consensus_source_url": "https://www.investing.com/news/economy-news/instant-view-us-job-growth-slows-in-december-backs-fed-ratecut-pause-this-month-4439689",
+      "consensus_provenance": "retrospective_media_report",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": -10,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2026-01",
+      "release_at": "2026-02-11T08:30:00-05:00",
+      "nfp_initial_thousands": 130,
+      "unemployment_initial_pct": 4.3,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_02112026.htm",
+      "reuters_consensus_thousands": 70,
+      "consensus_source_url": "https://www.investing.com/news/economy-news/us-stock-futures-extend-gains-after-january-payrolls-data-4499903",
+      "consensus_provenance": "retrospective_media_report",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": 60,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2026-02",
+      "release_at": "2026-03-06T08:30:00-05:00",
+      "nfp_initial_thousands": -92,
+      "unemployment_initial_pct": 4.4,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_03062026.htm",
+      "reuters_consensus_thousands": 59,
+      "consensus_source_url": "https://www.investing.com/news/economy-news/us-nonfarm-payrolls-decline-in-february-unemployment-rate-rises-to-44-4547006",
+      "consensus_provenance": "retrospective_media_report",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": -151,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2026-03",
+      "release_at": "2026-04-03T08:30:00-04:00",
+      "nfp_initial_thousands": 178,
+      "unemployment_initial_pct": 4.3,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_04032026.htm",
+      "reuters_consensus_thousands": 60,
+      "consensus_source_url": "https://www.investing.com/news/economy-news/us-jobs-report-for-march-is-stronger-than-expected-likely-keeping-fed-on-sidelines-4597088",
+      "consensus_provenance": "retrospective_media_report",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": 118,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2026-04",
+      "release_at": "2026-05-08T08:30:00-04:00",
+      "nfp_initial_thousands": 115,
+      "unemployment_initial_pct": 4.3,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_05082026.htm",
+      "reuters_consensus_thousands": 62,
+      "consensus_source_url": "https://www.investing.com/news/economy-news/us-job-growth-beats-expectations-in-april-unemployment-rate-steady-at-43-4672638",
+      "consensus_provenance": "retrospective_media_report",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": 53,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2026-05",
+      "release_at": "2026-06-05T08:30:00-04:00",
+      "nfp_initial_thousands": 172,
+      "unemployment_initial_pct": 4.3,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_06052026.htm",
+      "reuters_consensus_thousands": 85,
+      "consensus_source_url": "https://www.investing.com/news/economy-news/instant-view-strong-may-jobs-number-sends-yields-rate-expectations-higher-4728661",
+      "consensus_provenance": "retrospective_media_report",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": 87,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2026-06",
+      "release_at": "2026-07-02T08:30:00-04:00",
+      "nfp_initial_thousands": 57,
+      "unemployment_initial_pct": 4.2,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_07022026.htm",
+      "reuters_consensus_thousands": 110,
+      "consensus_source_url": "https://www.investing.com/news/economy-news/job-growth-falls-short-of-expectations-in-june-4773232",
+      "consensus_provenance": "retrospective_media_report",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": -53,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2026-07",
+      "release_at": "2026-08-07T08:30:00-04:00",
+      "nfp_initial_thousands": -23,
+      "unemployment_initial_pct": 4.1,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_08072026.htm",
+      "reuters_consensus_thousands": 80,
+      "consensus_source_url": "https://www.investing.com/news/economy-news/us-nonfarm-payrolls-fall-in-july-unemployment-rate-eases-to-41-4846486",
+      "consensus_provenance": "retrospective_media_report",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": -103,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2026-08",
+      "release_at": "2026-09-04T08:30:00-04:00",
+      "nfp_initial_thousands": 162,
+      "unemployment_initial_pct": 4.1,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_09042026.htm",
+      "reuters_consensus_thousands": 56,
+      "consensus_source_url": "https://www.investing.com/news/economy-news/instant-view-strong-august-jobs-report-sends-yields-higher-4889623",
+      "consensus_provenance": "retrospective_media_report",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": 106,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    },
+    {
+      "reference_month": "2026-09",
+      "release_at": "2026-10-02T08:30:00-04:00",
+      "nfp_initial_thousands": 29,
+      "unemployment_initial_pct": 4.2,
+      "actual_source_url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+      "reuters_consensus_thousands": 90,
+      "consensus_source_url": "https://www.investing.com/news/economy-news/us-job-growth-slows-sharply-in-september-unemployment-rate-rises-to-42-4929819",
+      "consensus_provenance": "retrospective_media_report",
+      "consensus_pre_release_capture_time": null,
+      "consensus_usable_asof": false,
+      "usdjpy_5m": null,
+      "usdjpy_30m": null,
+      "usdjpy_60m": null,
+      "usdjpy_24h": null,
+      "xauusd_5m": null,
+      "xauusd_30m": null,
+      "xauusd_60m": null,
+      "xauusd_24h": null,
+      "nfp_surprise_thousands_retrospective": -61,
+      "price_observations": {
+        "USDJPY": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        },
+        "XAUUSD": {
+          "5": null,
+          "30": null,
+          "60": null,
+          "1440": null
+        }
+      }
+    }
+  ]
+}
