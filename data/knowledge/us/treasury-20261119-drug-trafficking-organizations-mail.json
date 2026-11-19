@@ -1,0 +1,33 @@
+{
+  "id": "treasury-20261119-drug-trafficking-organizations-mail",
+  "source_url": "https://ofac.treasury.gov/recent-actions/20261119",
+  "title_en": "Treasury Sanctions Major Drug Trafficking Organizations Supporting Terrorist Cartels",
+  "title_ja": "米財務省、国際的な薬物密売組織を制裁対象に指定",
+  "published_at": null,
+  "published_time_note": "米国日付2026年11月19日。公表時刻不明。",
+  "received_at": "2026-11-20T00:11:16+09:00",
+  "topics": [
+    "sanctions",
+    "other_us"
+  ],
+  "original_text": "WASHINGTON—Today, the Department of the Treasury’s Office of Foreign Assets Control (OFAC) sanctioned two international drug trafficking organizations: the Australia-headquartered Comanchero Outlaw Motorcycle Gang (Comancheros) and the Italy-based ‘Ndrangheta, a mafia-type criminal syndicate. By providing essential logistical and operational support, the Comancheros and ‘Ndrangheta help terrorist cartels expand their international reach and sustain global narcotrafficking networks.",
+  "translation_ja": "米財務省外国資産管理局（OFAC）は、豪州を拠点とするコマンチェロと、イタリアを拠点とする犯罪組織ンドランゲタの2つの国際的な薬物密売組織を制裁対象に指定した。財務省は、両組織が重要な物流・運営面の支援を通じてテロ組織に指定されたカルテルの国際展開と薬物密売網の維持を助けていると主張している。",
+  "facts_ja": [
+    "OFACによる2組織の制裁指定は財務省メールによる発表。関係者や行為に関する内容は政府の主張で独立検証未実施。",
+    "財務省メール本文から金、原油、関税、米国債との直接・間接の関連は確認できず。"
+  ],
+  "inference_ja": [],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "メール本文の残りの段落および制裁の法的説明は未翻訳。",
+    "公式OFAC更新ページと2つの図表PDFは取得不能。ページ数、表、翻訳、原本の安全確認と再配布の確認は未完。",
+    "個別の財務省プレスリリースURLは未確認。"
+  ],
+  "notification_eligible": false,
+  "related_public_urls": [
+    "https://ofac.treasury.gov/media/937341/download",
+    "https://ofac.treasury.gov/media/937336/download"
+  ],
+  "supersedes": null
+}
