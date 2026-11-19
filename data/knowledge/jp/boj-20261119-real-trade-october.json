@@ -1,0 +1,28 @@
+{
+  "id": "boj-20261119-real-trade-october",
+  "source_url": "https://www.boj.or.jp/research/research_data/reri/index.htm",
+  "pdf_url": "https://www.boj.or.jp/research/research_data/reri/reri.pdf",
+  "notification_url": "https://www.boj.or.jp/research/research_data/reri/index.htm",
+  "title_ja": "日銀、10月の実質輸出入の動向を公表",
+  "published_date": "2026-11-19",
+  "published_at": null,
+  "published_time_note": "実際の公開時刻不明。公表予定は原則16時。",
+  "retrieved_at": "2026-11-19T17:13:42+09:00",
+  "notification_eligible": true,
+  "summary_ja": "日銀の10月実質輸出は季節調整済みで前月比4.1％増。",
+  "facts_ja": [
+    "10月の実質輸出計は季節調整済み前月比4.1％増。9月は0.6％減。",
+    "地域別は対米3.7％増、EU10.7％増、中国5.2％増。財別の自動車関連は7.1％増。",
+    "図表の2026年10〜12月期は10月の値を使用。その他財には金や再輸出品などを含む。"
+  ],
+  "inference_ja": [
+    "輸出の増加が持続すれば実質成長や政策判断の一材料となり得るが、実質輸入の数値、GDP全体、市場予想や日米金利が未確認のため為替・金の方向は保留。"
+  ],
+  "content_scope": "summary",
+  "translation_status": "not_applicable_original_japanese",
+  "missing_parts": [
+    "PDF2頁目の表をテキストと画像で確認。1頁目のグラフの視覚確認・実質輸入数値とXLSXは未取得。",
+    "実際の発表時刻、市場予想、将来の改定は未確認。",
+    "個別再配布条件を踏まえ、原文図表は複製せず要約と公式URLを記録。"
+  ]
+}
