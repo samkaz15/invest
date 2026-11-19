@@ -1,0 +1,32 @@
+{
+  "id": "treasury-20261118-tic-september-2026-excerpt",
+  "source_url": "https://home.treasury.gov/news/press-releases/sb0693/",
+  "title_en": "Treasury International Capital Data for September",
+  "title_ja": "米財務省、９月の対米証券投資統計を公表",
+  "published_at": null,
+  "published_date": "2026-11-18",
+  "published_time_note": "米国日付のみ確認。公表時刻と日本時間の日付は不明。",
+  "received_at": "2026-11-19T05:14:15Z",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries",
+    "other_us"
+  ],
+  "original_text": "Foreign residents increased their holdings of long-term U.S. securities in September; their net purchases were $186.7 billion. Net purchases by private foreign investors were $148.3 billion, and net purchases by foreign official institutions were $38.4 billion.",
+  "translation_ja": "９月の外国居住者による米長期証券保有は増加し、純購入額は1867億ドルだった。外国の民間投資家による純購入は1483億ドル、外国公的機関による純購入は384億ドルだった。",
+  "facts_ja": [
+    "９月分の外国居住者による米長期証券純購入は1867億ドル。長期証券には国債以外も含まれる。"
+  ],
+  "inference_ja": [
+    "過去月の純購入は需給の一指標だが、市場予想、償還、米国外金融政策を確認しておらず金・ドル円の方向は保留。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "本文の残り、統計表全行、脚注と完全な翻訳は未保存。",
+    "公表時刻および日本時間での公表日不明。",
+    "既存メール経路全件の原文ハッシュ照合未完。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省は９月中の外国人による米長期証券の純購入が１８６７億ドルと発表しました。"
+}
