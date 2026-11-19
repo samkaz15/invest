@@ -1,0 +1,28 @@
+{
+  "id": "treasury-20261119-southeast-asia-cyber-scams-mail",
+  "source_url": "https://ofac.treasury.gov/recent-actions/20261119",
+  "title_en": "Treasury Targets Cyber Scam Operators and Armed Group Facilitators in Southeast Asia",
+  "title_ja": "米財務省、東南アジアのサイバー詐欺関連者を制裁対象に指定",
+  "published_at": null,
+  "published_time_note": "2026年11月19日（米国日付）、公表時刻不明",
+  "received_at": "2026-11-20T00:08:37+09:00",
+  "topics": [
+    "sanctions",
+    "other_us"
+  ],
+  "original_text": "WASHINGTON—Today, the U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC) sanctioned three individuals involved in operating and facilitating cyber scam centers in Southeast Asia, as well as two affiliated companies. The individuals designated today include operators of scam compounds that target Americans through virtual currency investment fraud and affiliates of armed groups that provide protection and support to scam-center networks in Southeast Asia.",
+  "translation_ja": "米財務省外国資産管理局（OFAC）は、東南アジアのサイバー詐欺拠点の運営や支援に関与したとする3人と、関連する2社を制裁対象に指定した。財務省によると、対象には暗号資産投資詐欺で米国人を狙う拠点の運営者と、拠点のネットワークに保護や支援を提供する武装集団の関係者が含まれる。",
+  "facts_ja": [
+    "財務省は3人および関連2社の指定を発表。人物の行為・関係は政府の主張で独立検証未実施。",
+    "市場関連性は本文からは確認できず。公開一次ページは取得失敗。"
+  ],
+  "inference_ja": [],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "メール本文のその他の段落と制裁の法的説明は未翻訳。",
+    "公式個別プレスリリースURLを特定できず、関連OFACページも取得不能。再試行が必要。"
+  ],
+  "notification_eligible": false,
+  "supersedes": null
+}
