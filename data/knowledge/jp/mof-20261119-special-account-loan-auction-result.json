@@ -1,0 +1,26 @@
+{
+  "id": "mof-20261119-special-account-loan-auction-result",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/kariire/kari-result261119.htm",
+  "notification_url": "https://www.mof.go.jp/jgbs/auction/calendar/kariire/kari-result261119.htm",
+  "title_ja": "交付税特別会計の借入金入札結果",
+  "published_date": "2026-11-19",
+  "published_at": null,
+  "published_time_note": "実際の公表時刻は不明。週間予定は13時。",
+  "retrieved_at": "2026-11-19T14:12:55+09:00",
+  "notification_eligible": true,
+  "summary_ja": "交付税特別会計の借入金入札、平均利率は1.604％。",
+  "facts_ja": [
+    "2026年11月19日の借入利率競争入札の応募額は4兆35億円、募入決定額は1兆1,999億9,900万円。",
+    "募入最高利率1.615％、平均利率1.604％、最高利率での按分比率97.4199％。非競争入札への応募はなかった。",
+    "借入日は11月30日、償還期限は2027年5月31日。これは特別会計の借入金であり国債の入札ではない。"
+  ],
+  "inference_ja": [
+    "短期資金調達の需給・金利の参考となるが、市場予想や他の金利を確認しておらず、国債・金・ドル円の方向は判断できない。"
+  ],
+  "content_scope": "summary",
+  "translation_status": "not_applicable_original_japanese",
+  "missing_parts": [
+    "公表時刻の実績は不明。市場予想と他の短期金利は未取得。",
+    "個別の再配布条件は未確認のため全文を複製しない。"
+  ]
+}
