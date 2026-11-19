@@ -1,0 +1,31 @@
+{
+  "id": "mof-20261119-weekly-securities-flows-summary",
+  "title_ja": "週次証券投資：海外勢が日本の中長期債を6501億円取得超",
+  "summary_ja": "11月8〜14日、海外勢は日本の中長期債を6501億円取得超。居住者は外債4407億円処分超でした。",
+  "source_url": "https://www.mof.go.jp/policy/international_policy/reference/itn_transactions_in_securities/week.pdf",
+  "published_at": null,
+  "published_date": "2026-11-19",
+  "published_time_note": "実際の公表時刻不明。",
+  "retrieved_at": "2026-11-19T11:14:10+09:00",
+  "notification_eligible": true,
+  "topics": [
+    "securities_flows",
+    "bonds",
+    "currency"
+  ],
+  "facts_ja": [
+    "2026年11月8〜14日、指定報告機関ベースで非居住者による国内中長期債の取得超は6501億円（前週1兆3709億円）。国債だけの金額ではない。",
+    "居住者による対外中長期債は4407億円の処分超（前週5341億円の処分超）。",
+    "非居住者の国内短期債は1618億円の取得超。"
+  ],
+  "inference_ja": [
+    "債券需給に影響し得るが対象には国債以外を含み、市場予想・為替ヘッジ・日米両国の金利も不足するため金・ドル円の方向は保留。"
+  ],
+  "source_scope": "財務省のPDF第1ページ表および第2ページ要点の一部を要約。原文全文は複製しない。",
+  "missing_parts": [
+    "実際の公表時刻は不明。",
+    "第1ページの残りの項目・脚注および第2ページの完全性と画像確認は未完。",
+    "日銀オペXLSX・財務省買入消却・決定会合資料の網羅は未完。"
+  ],
+  "supersedes": "mof-20261119-weekly-securities-flows-publication"
+}
