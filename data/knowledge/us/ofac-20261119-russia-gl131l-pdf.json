@@ -1,0 +1,59 @@
+{
+  "id": "ofac-20261119-russia-gl131l-pdf",
+  "source_url": "https://ofac.treasury.gov/media/937386/download",
+  "title_en": "Russia-related General License 131L",
+  "title_ja": "米財務省、ルクオイル海外資産に関する一般許可131L",
+  "published_at": null,
+  "published_date": "2026-11-19",
+  "published_time_note": "時刻不明、米国日付。",
+  "received_at": "2026-11-20T10:34:00+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "sanctions",
+    "oil"
+  ],
+  "original_text": "DEPARTMENT OF THE TREASURY\nWASHINGTON, D.C.\nOFFICE OF FOREIGN ASSETS CONTROL\nRussian Harmful Foreign Activities Sanctions Regulations\n31 CFR part 587\nGENERAL LICENSE NO. 131L\nAuthorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities\n(a) Except as provided in paragraph (d) of this general license, all transactions prohibited by Executive Order (E.O.) 14024 that are ordinarily incident and necessary to the negotiation of and entry into contracts with Public Joint-Stock Company Oil Company Lukoil or any of its affiliates for the sale, disposition, or transfer of Lukoil International GmbH (“LIG”) or any entity in which LIG owns, directly or indirectly, individually or in the aggregate, a 50 percent or greater interest (collectively, “LIG Entities”) are authorized through 12:01 a.m. eastern standard time, December 19, 2026, provided that the performance of any such contract is made expressly contingent upon the receipt of separate authorization from the Office of Foreign Assets Control (“contingent contracts”).\nNote to Paragraph (a): For purposes of this general license, the term “contingent contracts” includes executory contracts, executory pro forma invoices, agreements in principle, executory offers capable of acceptance such as bids or proposals in response to public tenders, binding memoranda of understanding, or any other similar agreement.\n(b) Except as provided in paragraph (d) of this general license, all transactions prohibited by E.O. 14024 that are ordinarily incident and necessary to the maintenance or wind down of operations, contracts, or other agreements of LIG Entities are authorized through 12:01 a.m. eastern standard time, February 20, 2027.\n(c) All blocked accounts of LIG Entities may be used, debited, or credited for the transactions authorized in paragraph (b).\n(d) This general license does not authorize:\n(1) The unblocking of any property blocked pursuant to any part of 31 CFR chapter V, except as authorized in paragraph (c);\n(2) Any transactions otherwise prohibited by the Russian Harmful Foreign Activities Sanctions Regulations, 31 CFR part 587 (RuHSR), including transactions involving any person blocked pursuant to the RuHSR, other than blocked persons described in paragraph (a) of this general license, unless separately authorized; or\n(3) The transfer of funds to any person or account located in the Russian Federation.\n\n(e) Effective November 19, 2026, General License No. 131K, dated October 21, 2026, is replaced and superseded in its entirety by this General License No. 131L.\nBradley T. Smith\nDirector\nOffice of Foreign Assets Control\nDated: November 19, 2026",
+  "translation_ja": "米財務省 外国資産管理局（OFAC）\nロシアの有害な対外活動に関する制裁規則（連邦規則集31編587部）\n一般許可第131L号\nLukoil International GmbHの売却に係る条件付き契約の交渉・締結および関連する維持活動について、一定の取引を許可する。\n\n(a) 本一般許可(d)項に定める場合を除き、Lukoil International GmbH（LIG）またはLIGが直接・間接に単独もしくは合計で50％以上の持分を保有する事業体（総称してLIG事業体）の売却・処分・移転について、公開株式会社石油会社Lukoilまたはその関連会社と契約の交渉・締結を行うために通常付随し必要な、大統領令14024号で禁止されるすべての取引を、米東部標準時2026年12月19日午前0時01分まで許可する。ただし、その契約の履行は、OFACによる別途の許可の取得を明示的な条件としなければならない（条件付き契約）。\n\n(a)項への注記：本許可における「条件付き契約」には、未履行契約、未履行のプロフォーマ・インボイス、原則合意、公募への入札・提案など承諾可能な未履行の申出、拘束力ある覚書、その他類似の合意が含まれる。\n\n(b) 本一般許可(d)項に定める場合を除き、LIG事業体の事業、契約またはその他の合意を維持し、または終了させるために通常付随し必要な、大統領令14024号で禁止されるすべての取引を、米東部標準時2027年2月20日午前0時01分まで許可する。\n\n(c) LIG事業体のすべての封鎖口座は、(b)項で許可される取引のために使用し、引き落とし、または入金することができる。\n\n(d) 本一般許可は次を許可しない。\n(1) (c)項で許可される場合を除き、連邦規則集31編第V章のいずれかに基づき封鎖された財産の封鎖解除。\n(2) 別途許可がない限り、ロシアの有害な対外活動に関する制裁規則（連邦規則集31編587部、RuHSR）により別途禁止される取引。これには、本許可(a)項に記載された封鎖対象者を除き、RuHSRにより封鎖された者に関わる取引を含む。\n(3) ロシア連邦内に所在する者または口座への資金移転。\n\n(e) 2026年11月19日より、2026年10月21日付の一般許可第131K号は、本一般許可第131L号によって全面的に置き換えられ、失効する。\n\nブラッドリー・T・スミス\n外国資産管理局長\n2026年11月19日付",
+  "facts_ja": [
+    "条件付き契約の交渉・締結の許可は米東部標準時2026年12月19日00:01まで。履行には別途OFAC許可が必要。",
+    "維持・終了の許可は米東部標準時2027年2月20日00:01まで。ロシア連邦内への資金移転は許可されない。",
+    "131Kは11月19日より131Lに置換。売却完了の発表ではない。"
+  ],
+  "inference_ja": [
+    "取引・維持の許可条件が事業継続や供給期待に影響する可能性がある。実際の供給・織り込みは未確認で価格方向は保留。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "partial",
+  "missing_parts": [
+    "PDFテキスト・2ページを閲覧し目視確認したが、PDFバイナリ・SHA256・埋込メタデータ・再配布可否の安全確認は未取得。原本未保存。",
+    "公表時刻不明。関連FAQと旧131Kとの差分全体は未確認。"
+  ],
+  "notification_eligible": false,
+  "related_document_ids": [
+    "ofac-20261119-sdn-russia-131l-mail"
+  ],
+  "pdf": {
+    "sha256": null,
+    "page_count": 2,
+    "ocr_used": false,
+    "visual_review_complete": true,
+    "privacy_review_complete": false,
+    "original_saved": false,
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "DEPARTMENT OF THE TREASURY\nWASHINGTON, D.C.\nOFFICE OF FOREIGN ASSETS CONTROL\nRussian Harmful Foreign Activities Sanctions Regulations\n31 CFR part 587\nGENERAL LICENSE NO. 131L\nAuthorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities\n(a) Except as provided in paragraph (d) of this general license, all transactions prohibited by Executive Order (E.O.) 14024 that are ordinarily incident and necessary to the negotiation of and entry into contracts with Public Joint-Stock Company Oil Company Lukoil or any of its affiliates for the sale, disposition, or transfer of Lukoil International GmbH (“LIG”) or any entity in which LIG owns, directly or indirectly, individually or in the aggregate, a 50 percent or greater interest (collectively, “LIG Entities”) are authorized through 12:01 a.m. eastern standard time, December 19, 2026, provided that the performance of any such contract is made expressly contingent upon the receipt of separate authorization from the Office of Foreign Assets Control (“contingent contracts”).\nNote to Paragraph (a): For purposes of this general license, the term “contingent contracts” includes executory contracts, executory pro forma invoices, agreements in principle, executory offers capable of acceptance such as bids or proposals in response to public tenders, binding memoranda of understanding, or any other similar agreement.\n(b) Except as provided in paragraph (d) of this general license, all transactions prohibited by E.O. 14024 that are ordinarily incident and necessary to the maintenance or wind down of operations, contracts, or other agreements of LIG Entities are authorized through 12:01 a.m. eastern standard time, February 20, 2027.\n(c) All blocked accounts of LIG Entities may be used, debited, or credited for the transactions authorized in paragraph (b).\n(d) This general license does not authorize:\n(1) The unblocking of any property blocked pursuant to any part of 31 CFR chapter V, except as authorized in paragraph (c);\n(2) Any transactions otherwise prohibited by the Russian Harmful Foreign Activities Sanctions Regulations, 31 CFR part 587 (RuHSR), including transactions involving any person blocked pursuant to the RuHSR, other than blocked persons described in paragraph (a) of this general license, unless separately authorized; or\n(3) The transfer of funds to any person or account located in the Russian Federation.",
+        "translation_ja": "米財務省 外国資産管理局（OFAC）\nロシアの有害な対外活動に関する制裁規則（連邦規則集31編587部）\n一般許可第131L号\nLukoil International GmbHの売却に係る条件付き契約の交渉・締結および関連する維持活動について、一定の取引を許可する。\n\n(a) 本一般許可(d)項に定める場合を除き、Lukoil International GmbH（LIG）またはLIGが直接・間接に単独もしくは合計で50％以上の持分を保有する事業体（総称してLIG事業体）の売却・処分・移転について、公開株式会社石油会社Lukoilまたはその関連会社と契約の交渉・締結を行うために通常付随し必要な、大統領令14024号で禁止されるすべての取引を、米東部標準時2026年12月19日午前0時01分まで許可する。ただし、その契約の履行は、OFACによる別途の許可の取得を明示的な条件としなければならない（条件付き契約）。\n\n(a)項への注記：本許可における「条件付き契約」には、未履行契約、未履行のプロフォーマ・インボイス、原則合意、公募への入札・提案など承諾可能な未履行の申出、拘束力ある覚書、その他類似の合意が含まれる。\n\n(b) 本一般許可(d)項に定める場合を除き、LIG事業体の事業、契約またはその他の合意を維持し、または終了させるために通常付随し必要な、大統領令14024号で禁止されるすべての取引を、米東部標準時2027年2月20日午前0時01分まで許可する。\n\n(c) LIG事業体のすべての封鎖口座は、(b)項で許可される取引のために使用し、引き落とし、または入金することができる。\n\n(d) 本一般許可は次を許可しない。\n(1) (c)項で許可される場合を除き、連邦規則集31編第V章のいずれかに基づき封鎖された財産の封鎖解除。\n(2) 別途許可がない限り、ロシアの有害な対外活動に関する制裁規則（連邦規則集31編587部、RuHSR）により別途禁止される取引。これには、本許可(a)項に記載された封鎖対象者を除き、RuHSRにより封鎖された者に関わる取引を含む。\n(3) ロシア連邦内に所在する者または口座への資金移転。",
+        "extraction_status": "extracted",
+        "translation_status": "complete"
+      },
+      {
+        "page": 2,
+        "original_text": "(e) Effective November 19, 2026, General License No. 131K, dated October 21, 2026, is replaced and superseded in its entirety by this General License No. 131L.\nBradley T. Smith\nDirector\nOffice of Foreign Assets Control\nDated: November 19, 2026",
+        "translation_ja": "(e) 2026年11月19日より、2026年10月21日付の一般許可第131K号は、本一般許可第131L号によって全面的に置き換えられ、失効する。\n\nブラッドリー・T・スミス\n外国資産管理局長\n2026年11月19日付",
+        "extraction_status": "extracted",
+        "translation_status": "complete"
+      }
+    ]
+  }
+}
