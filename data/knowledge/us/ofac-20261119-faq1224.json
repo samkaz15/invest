@@ -1,0 +1,30 @@
+{
+  "id": "ofac-20261119-faq1224",
+  "source_url": "https://ofac.treasury.gov/faqs/1224",
+  "title_en": "# 1224. What negotiations does 【15†Russia-related General License 131L】 authorize, and what transaction conditions will OFAC consider when evaluating requests for further authorization to effectuate a sale of Lukoil International GmbH (LIG) assets?",
+  "title_ja": "OFAC FAQ 1224：LIG関連の一般許可",
+  "published_at": null,
+  "published_date_source": "2026-11-19 (更新日、時刻不明)",
+  "received_at": "2026-11-20T10:44:23+09:00",
+  "received_at_kind": "web_retrieval",
+  "topics": [
+    "sanctions",
+    "oil"
+  ],
+  "original_text": "# 1224. What negotiations does 【15†Russia-related General License 131L】 authorize, and what transaction conditions will OFAC consider when evaluating requests for further authorization to effectuate a sale of Lukoil International GmbH (LIG) assets?\nOn October 22, 2025, OFAC designated Public Joint-Stock Company Oil Company Lukoil (Lukoil) to increase pressure on Russia's energy sector and degrade Russia's ability to raise revenue for its war machine. OFAC is aware of potential efforts by Lukoil to divest its assets outside of Russia to non-blocked parties, given the impact of sanctions.\nTo support such divestments and further cut off funding to Russia, OFAC issued 【15†Russia-related General License (GL) 131L】, which authorizes negotiations and entry into contingent contracts with Lukoil for the sale of LIG or any of LIG's majority-owned subsidiaries. Authorized activities include negotiations on terms for definitive agreements and financial, legal, or operational due diligence, including engagement of outside counsel or advisors.\nThis authorization for negotiations and entry into contingent contracts expires on December 19, 2026.\n【15†GL 131L】 does not authorize transactions to effectuate the actual sale, disposition, or transfer of any LIG entity or asset. Any contract entered into pursuant to 【15†GL 131L】 must expressly be made contingent upon the receipt of a separate authorization from OFAC. The goal of OFAC's Russia sanctions is to place pressure on Moscow to end its war.\nAs such, Treasury would evaluate any proposed sale of LIG based on factors that support U.S. national security and foreign policy objectives. OFAC expects that, at a minimum, the proposed transaction must: completely sever LIG's ties with Lukoil; block any funds owed to Lukoil until sanctions are lifted by placing them in an account subject to U.S. jurisdiction; and not provide a windfall to Lukoil, such as by providing up-front value to Lukoil, including through asset or share swaps.\nFurther, as a condition of any future license for effectuating a sale of LIG, OFAC expects that it will require persons purchasing LIG's assets to seek OFAC review before further divestment of material LIG assets.\nOFAC may revoke 【15†GL 131L】 at any time, including if Lukoil and LIG do not appear to be engaging in good faith negotiations regarding the divestment of LIG or its assets.\n##### Date Updated: November 19, 2026\n\nNovember 19, 2025\n## Similar FAQs",
+  "translation_ja": "質問：一般許可131Lはどの交渉を認め、LIG資産の売却実行について追加許可を審査する際にOFACはどの条件を考慮するか。\n\n2025年10月22日、OFACはロシアのエネルギー部門への圧力を高め、戦争遂行のための資金調達能力を損なうため、ルクオイルを指定した。制裁の影響を踏まえ、同社がロシア国外資産を非封鎖者へ売却しようとする可能性をOFACは認識している。\nそうした売却を支援し、ロシアへの資金をさらに断つため、OFACは一般許可131Lを発出した。これはLIGまたはLIGが過半数を保有する子会社の売却についてルクオイルとの交渉および条件付き契約の締結を認める。最終契約の条件交渉、財務・法務・業務上のデューデリジェンス、外部弁護士や顧問の起用を含む。この交渉・条件付き契約の許可は2026年12月19日に終了する。\n131LはLIGの事業体または資産の実際の売却、処分、移転を実行する取引を許可しない。締結契約には別途OFAC許可取得を条件とすることを明記しなければならない。米国の対ロシア制裁は、戦争終結に向けモスクワに圧力をかけることを目的とする、とOFACは述べている。\n財務省は米国の国家安全保障および外交政策上の目的を支える要素に基づいてLIG売却案を評価する。OFACは少なくとも、LIGとルクオイルの関係を完全に断つこと、ルクオイルに支払う資金を米国の管轄下にある口座に置き制裁解除まで封鎖すること、資産や株式の交換を含めルクオイルに前払い価値などの棚ぼた利益を与えないことを求める見通しとする。\nさらに将来売却を実行する許可の条件として、LIG資産の買い手が重要資産を再売却する前にOFACの審査を求めることを義務付ける見通しである。ルクオイルとLIGが資産売却について誠実に交渉していないとみられる場合を含め、OFACは131Lをいつでも取り消し得る。更新日2026年11月19日。",
+  "facts_ja": [
+    "OFACの2026年11月19日更新。公表時刻不明。",
+    "許可の条件は本文を参照。"
+  ],
+  "inference_ja": [
+    "実際の供給と資金の流れへの影響は未確認。"
+  ],
+  "content_scope": "faq_body",
+  "translation_status": "complete",
+  "missing_parts": [
+    "元PDFの添付確認は別文書を参照"
+  ],
+  "notification_eligible": false,
+  "source_comparison": "FAQは既存131L PDFとは別文書。リポジトリのディレクトリ一覧および検索に該当番号なし。"
+}
