@@ -1,0 +1,109 @@
+{
+  "as_of": "2026-11-20T21:34:13+09:00",
+  "status": "partial",
+  "document_ids": [
+    "ofac-20261119-faq1224",
+    "eia-20261113-wpsr-overview-partial-20261119-p5"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period": "20:24〜21:34 JST差分中心。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別資料と表の全件確認未完。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period": "20:24〜21:34 JST差分中心。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別入札APIへの直接アクセスは失敗、結果表未取得。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period": "20:24〜21:34 JST差分中心。24時間重複期間の全件照合未完。",
+      "status": "入口取得。動的な結果表は未取得。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period": "20:24〜21:34 JST差分中心。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別資料と表の全件確認未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period": "20:24〜21:34 JST差分中心。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別資料と表の全件確認未完。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period": "20:24〜21:34 JST差分中心。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別資料と表の全件確認未完。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period": "20:24〜21:34 JST差分中心。24時間重複期間の全件照合未完。",
+      "status": "入口とFAQ1224本文を再取得。既存記録あり。全個別措置・PDFは未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period": "20:24〜21:34 JST差分中心。24時間重複期間の全件照合未完。",
+      "status": "入口と在庫の個別HTML表を再取得。既存PDF抜粋と照合する対象、PDF全頁・他品目は未完。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period": "20:24〜21:34 JST差分中心。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別資料と表の全件確認未完。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period": "20:24〜21:34 JST差分中心。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別資料と表の全件確認未完。"
+    }
+  ],
+  "missing_sources": [
+    "入札・買戻し・NY連銀売買の個別結果表",
+    "EIA PDF全頁訳・図表目視・原本の安全確認",
+    "州選挙認証",
+    "24時間重複期間の全件確認と全記録の内容ハッシュ照合",
+    "米日実質金利と市場織り込み",
+    "期限到来レビューの全件と事後時系列"
+  ],
+  "facts": [
+    {
+      "document_id": "ofac-20261119-faq1224",
+      "source_url": "https://ofac.treasury.gov/faqs/1224",
+      "text": "OFACの11月19日更新FAQはLIGの売却交渉と条件付き契約を認める一方、売却実行には別途許可が必要とする。時刻不明。今回21:34 JST再取得。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "INFERENCE: 原油の実供給・需要が変化すれば物価・成長、政策・実質金利、資金需給を通じて金や為替に影響し得る。交渉の許可から売却完了や供給変化は推定しない。"
+  ],
+  "historical_comparisons": [
+    "1973年は供給制約、2007〜09年は信用収縮、2020年は市場機能支援。前2件の史料は後年の回顧、2020年は当時のFRB発表。各当初のインフレ・実質金利・流動性・エネルギー構造・織り込みの定量比較は不足。3件は初期要約で精度未検証。"
+  ],
+  "scenarios": {
+    "days": "追加発表と市場の織り込み次第",
+    "weeks": "売却手続き・原油在庫・物流と生産の実績次第",
+    "months": "需給が持続し物価・成長・政策に波及するか次第",
+    "currency": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両側の資料不足で判断保留",
+    "gold": "実質金利・需要の資料不足で判断保留"
+  },
+  "invalidations": [
+    "売却不成立で供給が変化しない",
+    "代替供給増や需要減が相殺する",
+    "実質金利差が想定と逆方向"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分全件と事後時系列未確認。再試行。",
+  "database_sync": "今回未確認。従前の記録に同期失敗あり。",
+  "pc_status": "実機未確認",
+  "retry": true
+}
