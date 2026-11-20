@@ -1,0 +1,44 @@
+{
+  "id": "20261120T031100Z-review",
+  "created_at": "2026-11-20T12:11:00+09:00",
+  "status": "partial",
+  "coverage": "前回2026-11-20 10:49 JSTから今回12:11 JSTまでの差分を中心に、既存の11月18日以降も参照。全資料の網羅は未確認。",
+  "checked": [
+    {
+      "source": "財務省",
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "result": "11月20日の5件の入札通知・発行予定を個別の公式本文・表で確認し、既存一覧に該当IDがないため別々に保存。入札結果は12:30以降の予定であり未確認。新着一覧取得はタイムアウトしたため再試行。",
+      "retry": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html"
+    },
+    {
+      "source": "日本銀行",
+      "url": "https://www.boj.or.jp/",
+      "result": "新着と金融政策・講演一覧を確認、国会での総裁説明は既存。対象期間の全資料の確認は未完。"
+    },
+    {
+      "source": "日本銀行オペ",
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "result": "一覧は取得、11月19日XLSXは前回形式非対応で取得失敗。11月20日の表・買入れ結果も未確認。",
+      "retry": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261119.xlsx"
+    }
+  ],
+  "new_records": [
+    "mof-20261120-tbill1421-auction-offer",
+    "mof-20261120-liquidity465-auction-offer",
+    "mof-20261120-tbill1422-auction-plan",
+    "mof-20261120-liquidity466-auction-plan",
+    "mof-20261120-jgb2-auction-plan"
+  ],
+  "dedup": "既存JP一覧のID及び主要名称を照合。全レコードのURL・公表時刻・内容全件照合は未完。",
+  "rights": "全文転載せず要約と公式URLを保存。個別の再配布権は未確認。",
+  "missing": [
+    "公表時刻不明",
+    "日銀オペXLSX各シート",
+    "11月20日の各入札結果",
+    "財務省新着一覧",
+    "講演・総裁会見・会合および国債買戻しの個別資料全件",
+    "市場織り込みと日米実質金利"
+  ],
+  "mac_notification": "実機未確認。GitHub mainのJSON保存と区別。",
+  "retry": "上記未取得資料と入札結果を次回再試行。"
+}
