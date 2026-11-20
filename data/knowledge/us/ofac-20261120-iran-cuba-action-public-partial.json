@@ -1,0 +1,32 @@
+{
+  "id": "ofac-20261120-iran-cuba-action-public-partial",
+  "source_url": "https://ofac.treasury.gov/recent-actions/20261120",
+  "title_en": "Iran Designations; Issuance of Cuba Frequently Asked Questions",
+  "title_ja": "OFAC、イラン関連の指定とキューバ関連FAQを発出",
+  "published_at": null,
+  "published_date_source": "2026-11-20 米国日付、公表時刻不明",
+  "received_at": "2026-11-21T06:28:23+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "sanctions",
+    "oil"
+  ],
+  "original_text": "The Department of the Treasury's Office of Foreign Assets Control (OFAC) is issuing two new Cuba-related Frequently Asked Questions, FAQs 1277 and 1278. Additionally, OFAC has made the following changes to the list of Specially Designated Nationals and Blocked Persons (SDN List).",
+  "translation_ja": "米財務省外国資産管理局（OFAC）はキューバ関連の新しいFAQ 1277および1278を発出した。また特別指定国民・資産封鎖対象者リストを更新した。",
+  "facts_ja": [
+    "OFACは2026年11月20日付で4人のリスト追加を公表した。公表時刻は不明。",
+    "石油関連の経緯は財務省の発表であり、戦況や供給の独立検証は行っていない。"
+  ],
+  "inference_ja": [
+    "石油物流や決済の実際の制約が強まれば供給に波及し得るが、市場への影響方向は確定しない。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "指定リストの氏名以外の生年月日・旅券番号等の個人情報は保存対象外。リスト個別行の原文・訳文は未保存。",
+    "FAQ 1277・1278の本文、関連する財務省本文全訳は未完。",
+    "公表時刻不明。既存文書との全文内容ハッシュ照合は未完。"
+  ],
+  "notification_eligible": false,
+  "supersedes": null
+}
