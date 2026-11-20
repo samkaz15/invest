@@ -1,0 +1,29 @@
+{
+  "id": "mof-20261120-liquidity466-auction-plan",
+  "title_ja": "流動性供給第466回入札の発行予定",
+  "summary_ja": "財務省は流動性供給第466回入札で、国債を5000億円程度発行する予定を公表しました。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/yotei/auct20261120a.htm",
+  "notification_url": "https://www.mof.go.jp/jgbs/auction/calendar/yotei/auct20261120a.htm",
+  "published_date": "2026-11-20",
+  "published_at": null,
+  "published_time_note": "公表時刻不明（JST）。週間予定の予定時刻と実際の公表時刻は区別。",
+  "retrieved_at": "2026-11-20T12:10:45+09:00",
+  "notification_eligible": true,
+  "topics": [
+    "jgb",
+    "auction"
+  ],
+  "facts_ja": [
+    "11月27日入札予定、11月30日発行予定。対象は10年債第365〜383回、20年債第132〜162回、30年債第6〜27回。",
+    "発行予定・入札通知であり、落札結果や市場売買ではない。"
+  ],
+  "inference_ja": [
+    "国債供給と需要、事前の市場織り込みに応じて金利や需給に影響し得る。日米双方の実質金利や期待が不足し、金・ドル円の方向は判断保留。"
+  ],
+  "content_scope": "公式本文および表の要約",
+  "missing_parts": [
+    "実際の公表時刻と市場の織り込み、入札結果・二次市場売買は未確認。"
+  ],
+  "rights": "公式資料の全文複製・PDF再配布はせず要約とURLを保存。",
+  "supersedes": null
+}
