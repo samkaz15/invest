@@ -1,0 +1,34 @@
+{
+  "id": "treasury-20261120-iran-oil-outcast-mail-partial",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/43396e7",
+  "primary_source_url": "https://ofac.treasury.gov/recent-actions/20261120",
+  "title_en": "Operation Economic Outcast Targets Corrupt Regime Insiders Exploiting Iran’s Oil Sector for Personal Gain",
+  "title_ja": "米財務省、イランの石油取引に関わる人物を制裁対象に指定",
+  "published_at": null,
+  "published_date_source": "2026-11-20 米国日付、公表時刻不明",
+  "received_at": "2026-11-21T06:05:58+09:00",
+  "topics": [
+    "oil",
+    "sanctions"
+  ],
+  "original_text": "Today, as part of Operation Economic Outcast, the U.S. Department of the Treasury is targeting key “oil trustees” the Iranian regime relies on to facilitate the sale of oil abroad. With no oil on the water outside of the U.S. military blockade and no oil loaded onto vessels since the start of Operation Economic Outcast, the regime is attempting to recoup billions of dollars from its oil trustees. In many cases, these corrupt trustees have kept the oil revenue for personal gain.",
+  "translation_ja": "米財務省は、イラン政権による国外への石油販売を仲介する主要な「石油受託者」を制裁対象とすると発表した。同省は、米軍の封鎖外を航行する石油はなく、作戦開始以来、船舶への石油積載もないと主張し、政権が受託者から数十億ドルを回収しようとしていると述べた。また、多くの場合、受託者は石油収入を私益のために保持していたと主張した。これらの状況は独立検証されていない。",
+  "facts_ja": [
+    "財務省はイランの石油関連の人物に対する指定を発表した。",
+    "封鎖、積載、資金に関する記述は米政府の主張であり独立検証していない。",
+    "受信日時は2026年11月21日06:05:58 JST。公表時刻は不明。"
+  ],
+  "inference_ja": [
+    "制裁が実際の石油供給や決済に影響する場合、市場に波及し得るが方向は断定できない。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "メールの残余の人物別指定理由、法的説明、財務長官発言は未翻訳。",
+    "OFAC個別一次資料は取得失敗。本文・添付・表と更新日時の確認を再試行。",
+    "全既存レコードの本文・時刻・ハッシュによる重複照合は未完。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省はイランの石油販売に関与したとする人物を制裁対象に指定、詳細は要再確認。",
+  "supersedes": null
+}
