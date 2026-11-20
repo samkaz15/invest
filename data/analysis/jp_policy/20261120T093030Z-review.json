@@ -1,0 +1,55 @@
+{
+  "id": "20261120T093030Z-review",
+  "created_at": "2026-11-20T18:30:30+09:00",
+  "status": "partial",
+  "coverage": "前回16:39 JSTから今回18:30 JSTまでの差分を中心。全件の照合は未完。",
+  "sources": [
+    {
+      "source": "財務省国債",
+      "url": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+      "status": "第465回追加発行銘柄一覧の本文・表を取得し、既存の入札結果とは別資料として新規保存。その他掲載の既存記録は名称照合。買入消却の全個別結果照合は未完。"
+    },
+    {
+      "source": "日銀ホーム",
+      "url": "https://www.boj.or.jp/",
+      "status": "新着と金融政策・講演会見の一覧を確認。11月19日の総裁説明は既存記録あり。全件照合未完。"
+    },
+    {
+      "source": "日銀オペ",
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "11月20日の結果表と11月の補完供給銘柄表はXLSX非対応で取得失敗。売買の有無や金額は未確認。",
+      "retry_urls": [
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261120.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261119.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261118.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261117.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx"
+      ]
+    },
+    {
+      "source": "国債オンチェーン研究会",
+      "url": "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3.html",
+      "status": "資料1・3・4のPDF取得を再試行したがアクセス不可。資料4は前回の部分確認以外未読。",
+      "retry_urls": [
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-1.pdf",
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-3.pdf",
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-4.pdf"
+      ]
+    }
+  ],
+  "new_records": [
+    "mof-20261120-liquidity465-reopened-issues"
+  ],
+  "dedup": "既存一覧を確認。新規資料は既存の入札結果と公式URLおよび内容が異なる。全記録の内容ハッシュ照合は未完。",
+  "rights": "新規資料は全文を複製せず要約と出典を記録。財務省の利用規約を確認。",
+  "missing": [
+    "日銀オペXLSX各シート",
+    "研究会資料1・3および資料4の残り・図表",
+    "国債買入消却の個別結果",
+    "新規資料の公表時刻",
+    "政策会合・会見資料の全件照合"
+  ],
+  "inference": "銘柄別供給の影響は市場予想次第。実質金利と市場の織り込みが不足し金・ドル円の方向は判断保留。",
+  "mac_notification": "実機未確認。GitHub保存と通知成功は別。",
+  "retry": true
+}
