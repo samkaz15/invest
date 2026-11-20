@@ -1,0 +1,29 @@
+{
+  "id": "mof-20261120-tbill1421-auction-result",
+  "title_ja": "国庫短期証券第1421回の入札結果",
+  "summary_ja": "国庫短期証券第1421回の価格競争入札は応募8兆7885億円、募入2兆3928億円でした。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/tbill/tbill_nyusatsu/resul20261120.htm",
+  "facts_ja": [
+    "価格競争入札の募入最高利回り1.2742％、募入平均利回り1.2617％。第Ⅰ非価格競争の募入決定額は7072億円。",
+    "発行日は11月24日、償還期限は2027年3月1日。"
+  ],
+  "notification_url": "https://www.mof.go.jp/jgbs/auction/calendar/tbill/tbill_nyusatsu/resul20261120.htm",
+  "published_at": null,
+  "published_date": "2026-11-20",
+  "published_time_note": "公表時刻不明（JST）。発表予定時刻は実際の公表時刻と区別。",
+  "retrieved_at": "2026-11-20T13:05:35+09:00",
+  "notification_eligible": true,
+  "topics": [
+    "jgb",
+    "auction"
+  ],
+  "inference_ja": [
+    "需給が市場の事前予想と異なる場合、金利や国債需給に影響し得る。予想・市場の織り込みと日米実質金利が未確認のため金・ドル円の方向は保留。"
+  ],
+  "content_scope": "財務省の公式本文と表を要約。",
+  "missing_parts": [
+    "公表時刻、市場予想、二次市場の実売買を未確認。"
+  ],
+  "rights": "全文は複製せず要約と公式URLを記録。個別の再配布権は未確認。",
+  "supersedes": null
+}
