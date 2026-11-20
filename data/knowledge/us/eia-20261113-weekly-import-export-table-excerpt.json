@@ -1,0 +1,31 @@
+{
+  "id": "eia-20261113-weekly-import-export-table-excerpt",
+  "source_url": "https://www.eia.gov/dnav/pet/pet_move_wkly_dc_NUS-Z00_mbblpd_w.htm",
+  "title_en": "U.S. Weekly Imports & Exports",
+  "title_ja": "米国週間原油・石油製品の輸出入表（抜粋）",
+  "published_at": null,
+  "published_date_source": "2026-11-18（米国日付。公表時刻不明）",
+  "received_at": "2026-11-20T19:17:39+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil"
+  ],
+  "original_text": "Weekly Imports & Exports (Thousand Barrels per Day), 11/06/26 | 11/13/26. Imports: Crude Oil 6,698 | 5,576. Exports: Crude Oil 3,455 | 4,488. Net Imports: Crude Oil 3,243 | 1,088. Release Date: 11/18/2026.",
+  "translation_ja": "週間輸出入（単位：日量千バレル）。2026年11月6日週／11月13日週の順に、原油輸入は6,698／5,576、原油輸出は3,455／4,488、原油純輸入は3,243／1,088。公表日：2026年11月18日。",
+  "facts_ja": [
+    "2026年11月13日週の原油輸入は日量557.6万バレル、輸出は日量448.8万バレル。",
+    "原油の純輸入は日量108.8万バレル。対象週と発表日を区別する。"
+  ],
+  "inference_ja": [
+    "単週の輸入・輸出だけから恒常的な供給変化や市場価格の方向を結論できない。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "原油以外の輸入・輸出品目、他週、定義・脚注の全文訳は未完。",
+    "実際の公表時刻と市場予想は未確認。",
+    "既存全レコードのURL・内容ハッシュ照合は未完。"
+  ],
+  "notification_eligible": false,
+  "supersedes": null
+}
