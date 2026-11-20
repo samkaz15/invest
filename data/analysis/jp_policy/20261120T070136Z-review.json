@@ -1,0 +1,51 @@
+{
+  "id": "20261120T070136Z-review",
+  "created_at": "2026-11-20T16:01:36+09:00",
+  "status": "partial",
+  "coverage": "前回14:41 JSTから16:01 JSTまでの差分を中心。全資料の照合は未完。",
+  "sources": [
+    {
+      "source": "日銀オペ",
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "11月20日のオファー／落札結果と11月分国債補完供給売却銘柄の一覧掲載を確認。表ファイルを再取得したが、取得サービスがXLSX形式非対応で全シート未読。更新日だけから実売買の有無・金額を推測しない。",
+      "retry_urls": [
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261120.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261119.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx"
+      ]
+    },
+    {
+      "source": "財務省国債",
+      "url": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+      "status": "一覧取得。11月20日の短期証券・流動性供給の入札結果は既存記録あり。買入消却の個別結果照合は未完。"
+    },
+    {
+      "source": "国債オンチェーン研究会",
+      "url": "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3.html",
+      "status": "資料1・3・4を再取得試行したがアクセス不可。資料4は前回の部分確認以外未読。資料2の既存要約と区別。",
+      "retry_urls": [
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-1.pdf",
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-3.pdf",
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-4.pdf"
+      ]
+    },
+    {
+      "source": "日銀ホーム",
+      "url": "https://www.boj.or.jp/",
+      "status": "入口取得。政策・講演・会見の個別資料全件の照合未完。"
+    }
+  ],
+  "new_records": [],
+  "dedup": "既存JPの文書一覧と主要名称を照合。XLSX未読のため内容・公表時刻による重複判定は未完。",
+  "rights": "今回全文複製なし。資料ごとの再配布権の確認は未完。",
+  "missing": [
+    "日銀オペXLSX 3件の全シート",
+    "研究会資料1・3および資料4の残り・図表",
+    "国債買入消却の個別結果",
+    "公表時刻、市場期待、日米実質金利",
+    "政策会合・会見の個別資料全件"
+  ],
+  "inference": "実際の国債売買や金利・需給への影響は未取得データと織り込み次第。金・ドル円の方向は判断保留。",
+  "mac_notification": "実機未確認、GitHub保存と別。",
+  "retry": true
+}
