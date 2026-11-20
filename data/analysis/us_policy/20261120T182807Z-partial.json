@@ -1,0 +1,91 @@
+{
+  "as_of": "2026-11-21T03:28:07+09:00",
+  "status": "partial",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period": "11月21日01:44〜03:28 JSTを差分対象。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別原文・表・脚注・PDFの全件確認未完"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period": "11月21日01:44〜03:28 JSTを差分対象。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別原文・表・脚注・PDFの全件確認未完"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period": "11月21日01:44〜03:28 JSTを差分対象。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別原文・表・脚注・PDFの全件確認未完"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period": "11月21日01:44〜03:28 JSTを差分対象。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別原文・表・脚注・PDFの全件確認未完"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period": "11月21日01:44〜03:28 JSTを差分対象。24時間重複期間の全件照合未完。",
+      "status": "入口とオペの制度説明を取得。個別売買結果表は未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period": "11月21日01:44〜03:28 JSTを差分対象。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別原文・表・脚注・PDFの全件確認未完"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period": "11月21日01:44〜03:28 JSTを差分対象。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別原文・表・脚注・PDFの全件確認未完"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period": "11月21日01:44〜03:28 JSTを差分対象。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別原文・表・脚注・PDFの全件確認未完"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period": "11月21日01:44〜03:28 JSTを差分対象。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別原文・表・脚注・PDFの全件確認未完"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period": "11月21日01:44〜03:28 JSTを差分対象。24時間重複期間の全件照合未完。",
+      "status": "入口取得。個別原文・表・脚注・PDFの全件確認未完"
+    }
+  ],
+  "missing_sources": [
+    "入札、買戻し、NY連銀の個別結果表",
+    "州認証",
+    "EIA PDF全頁",
+    "既存メール文書とのURL・日時・内容ハッシュの全件照合",
+    "期限到来の事後レビュー"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [
+    "新規資料不足のため比較保留。3件は初期要約で検証済み学習ではない。"
+  ],
+  "scenarios": {
+    "days": "判断保留",
+    "weeks": "判断保留",
+    "months": "判断保留",
+    "currency": "両側資料不足で判断保留"
+  },
+  "invalidations": [],
+  "review_after": null,
+  "retry": true,
+  "database_sync": "前回確認時11月20日21:58 JST開始分が失敗。今回最新状態・PostgreSQL反映未確認。",
+  "pc_notification": "未確認"
+}
