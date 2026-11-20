@@ -1,0 +1,109 @@
+{
+  "id": "20261120T0145-partial",
+  "created_at": "2026-11-20T10:45:00+09:00",
+  "status": "partial",
+  "report_path": "docs/reports/us_policy/20261120T0145-partial.md",
+  "coverage": "前回10:34 JST以降中心、24時間重複の網羅未確認",
+  "new_documents": [
+    "ofac-20261119-faq1224",
+    "ofac-20261119-faq1225"
+  ],
+  "sources": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_window": "2026-11-20T10:34:00+09:00/2026-11-20T10:45:00+09:00",
+      "status": "partial",
+      "missing": "対象期間の個別文書・表の全件照合未完"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_window": "2026-11-20T10:34:00+09:00/2026-11-20T10:45:00+09:00",
+      "status": "partial",
+      "missing": "対象期間の個別文書・表の全件照合未完"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_window": "2026-11-20T10:34:00+09:00/2026-11-20T10:45:00+09:00",
+      "status": "partial",
+      "missing": "対象期間の個別文書・表の全件照合未完"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_window": "2026-11-20T10:34:00+09:00/2026-11-20T10:45:00+09:00",
+      "status": "partial",
+      "missing": "対象期間の個別文書・表の全件照合未完"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_window": "2026-11-20T10:34:00+09:00/2026-11-20T10:45:00+09:00",
+      "status": "partial",
+      "missing": "対象期間の個別文書・表の全件照合未完"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_window": "2026-11-20T10:34:00+09:00/2026-11-20T10:45:00+09:00",
+      "status": "partial",
+      "missing": "対象期間の個別文書・表の全件照合未完"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_window": "2026-11-20T10:34:00+09:00/2026-11-20T10:45:00+09:00",
+      "status": "partial",
+      "missing": "対象期間の個別文書・表の全件照合未完"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_window": "2026-11-20T10:34:00+09:00/2026-11-20T10:45:00+09:00",
+      "status": "partial",
+      "missing": "対象期間の個別文書・表の全件照合未完"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_window": "2026-11-20T10:34:00+09:00/2026-11-20T10:45:00+09:00",
+      "status": "partial",
+      "missing": "対象期間の個別文書・表の全件照合未完"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_window": "2026-11-20T10:34:00+09:00/2026-11-20T10:45:00+09:00",
+      "status": "partial",
+      "missing": "対象期間の個別文書・表の全件照合未完"
+    }
+  ],
+  "fact": "OFAC FAQ 1224・1225の更新本文を取得し別文書として記録。発表時刻不明。",
+  "inference": "実際の供給変化があれば原油・物価・景気・実質金利・資金需給に波及し得る。売却成立・方向は未確定。",
+  "scenarios": {
+    "days": "契約・織り込み",
+    "weeks": "供給・物流・在庫",
+    "months": "物価・景気・金融政策",
+    "invalidation": "供給変化なし、代替供給増、需要減、実質金利の逆方向変化"
+  },
+  "currency_pairs": {
+    "USD/JPY": "保留",
+    "EUR/USD": "保留",
+    "USD/CHF": "保留",
+    "USD/CAD": "保留",
+    "AUD/USD": "保留"
+  },
+  "history": "1973、2007〜09、2020初期要約と比較。初期構造の数値および同時代史料に欠損、後年解説は当時の情報としない。",
+  "retry": [
+    "全情報源の個別資料・表と24時間重複期間",
+    "重複のURL・時刻・内容ハッシュ照合",
+    "FAQ改訂差分と128D原本",
+    "EIA PDF全ページ",
+    "期限到来レビュー",
+    "PostgreSQL同期確認"
+  ],
+  "database_sync": "既知の実行44654617958失敗、今回分の反映未確認",
+  "notification": "個別通知なし、PC通知未確認"
+}
