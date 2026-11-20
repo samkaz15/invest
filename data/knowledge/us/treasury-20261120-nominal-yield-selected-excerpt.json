@@ -1,0 +1,31 @@
+{
+  "id": "treasury-20261120-nominal-yield-selected-excerpt",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "title_en": "Daily Treasury Par Yield Curve Rates selected maturities, November 19–20, 2026",
+  "title_ja": "米国債名目利回り表の2年・10年抜粋",
+  "published_at": null,
+  "published_date_source": "公表時刻不明、表の日付は観測日",
+  "received_at": "2026-11-21T08:20:45+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "original_text": "Date | 2 Yr | 10 Yr\n11/19/2026 | 4.76 | 5.04\n11/20/2026 | 4.63 | 4.92",
+  "translation_ja": "米国日付｜2年｜10年（単位：％）\n11月19日｜4.76｜5.04\n11月20日｜4.63｜4.92",
+  "facts_ja": [
+    "米国日付11月20日の2年は4.63％、10年は4.92％。",
+    "前日比はそれぞれ0.13ポイント、0.12ポイント低下。表の日付は公表時刻ではない。"
+  ],
+  "inference_ja": [
+    "名目利回りは期待インフレや実質利回り等の影響を受け、低下の原因はこの表だけでは特定できない。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "表の他年限・他日付と全脚注は未翻訳。公表時刻不明。",
+    "既存記録の全件内容ハッシュ照合は未完。"
+  ],
+  "notification_eligible": false,
+  "supersedes": null
+}
