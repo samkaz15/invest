@@ -1,0 +1,30 @@
+{
+  "id": "ustreas-4339a54-20261120-real-long-term-mail",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/4339a54",
+  "primary_source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Real Long-Term Rates Update",
+  "title_ja": "米財務省の日次長期実質金利更新通知",
+  "published_at": null,
+  "received_at": "2026-11-21T06:56:07+09:00",
+  "topics": [
+    "treasuries",
+    "monetary_policy",
+    "gold"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Real Long-Term Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.",
+  "translation_ja": "米財務省の日次長期実質金利情報をご購読いただいています。この情報が最近更新され、利用できるようになりました。",
+  "facts_ja": [
+    "通知本文に数値や公表時刻は記載されていない。",
+    "公式表を開き11月20日の行を確認したが、表見出しと値の完全な検証・別文書保存は未了。"
+  ],
+  "inference_ja": [],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [
+    "リンク先表・脚注の全文確認、訳文と別JSON保存、公表時刻の確認は再試行。",
+    "既存記録の内容ハッシュおよび公表時刻の全件照合は未完。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省の米国債金利情報が更新、数値と公表時刻はメール本文には記載されていない。",
+  "supersedes": null
+}
