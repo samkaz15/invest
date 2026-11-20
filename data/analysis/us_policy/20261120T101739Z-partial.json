@@ -1,0 +1,111 @@
+{
+  "as_of": "2026-11-20T19:17:39+09:00",
+  "status": "partial",
+  "document_ids": [
+    "eia-20261113-weekly-import-export-table-excerpt",
+    "eia-20261113-wpsr-overview-partial-20261119-p5"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period": "18:33〜19:17 JST差分中心、24時間重複期間の全件確認未完。",
+      "status": "入口取得。個別資料・表の全件確認未完。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period": "18:33〜19:17 JST差分中心、24時間重複期間の全件確認未完。",
+      "status": "入口取得。個別資料・表の全件確認未完。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period": "18:33〜19:17 JST差分中心、24時間重複期間の全件確認未完。",
+      "status": "入口取得。動的な個別結果表は表示されず未取得。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period": "18:33〜19:17 JST差分中心、24時間重複期間の全件確認未完。",
+      "status": "入口取得。個別資料・表の全件確認未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period": "18:33〜19:17 JST差分中心、24時間重複期間の全件確認未完。",
+      "status": "入口取得。個別資料・表の全件確認未完。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period": "18:33〜19:17 JST差分中心、24時間重複期間の全件確認未完。",
+      "status": "入口取得。個別資料・表の全件確認未完。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period": "18:33〜19:17 JST差分中心、24時間重複期間の全件確認未完。",
+      "status": "入口取得。個別資料・表の全件確認未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period": "18:33〜19:17 JST差分中心、24時間重複期間の全件確認未完。",
+      "status": "週間原油在庫と輸出入の個別HTML表を取得、輸出入表は原油部分のみ翻訳・保存。PDF残頁と他品目未完。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period": "18:33〜19:17 JST差分中心、24時間重複期間の全件確認未完。",
+      "status": "入口取得。個別資料・表の全件確認未完。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period": "18:33〜19:17 JST差分中心、24時間重複期間の全件確認未完。",
+      "status": "入口取得。個別資料・表の全件確認未完。"
+    }
+  ],
+  "missing_sources": [
+    "24時間重複期間の全件照合と全既存レコードの内容ハッシュ照合",
+    "財務省国債入札・買戻しとNY連銀売買の個別結果表",
+    "EIA輸出入表の他品目・定義・脚注の翻訳",
+    "EIA PDF全頁翻訳・目視・原本の権利と安全性確認",
+    "州選挙認証",
+    "過去のreview_after到来分の全件確認と市場時系列",
+    "米日両国の実質金利と織り込み"
+  ],
+  "facts": [
+    {
+      "document_id": "eia-20261113-weekly-import-export-table-excerpt",
+      "source_url": "https://www.eia.gov/dnav/pet/pet_move_wkly_dc_NUS-Z00_mbblpd_w.htm",
+      "text": "EIA: 11月13日週の原油輸入は日量557.6万バレル、輸出は448.8万バレル。米国日付11月18日公表、時刻不明。",
+      "retrieved_at": "2026-11-20T19:17:39+09:00"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "INFERENCE: 実需給の変化が持続すれば原油価格、物価・成長、政策と実質金利を通じ金・通貨に影響し得る。単週データから恒常的変化を断定しない。"
+  ],
+  "historical_comparisons": [
+    "1973年は原油供給制約、2007〜09年は信用収縮、2020年は市場機能支援。1973と2007〜09は後年の回顧、2020年は当時のFRB声明。今回と各当初のインフレ・金利・ドル流動性・エネルギー構造の定量比較は不足。初期3件は予測精度未検証。"
+  ],
+  "scenarios": {
+    "days": "統計と既存織り込みの差を確認",
+    "weeks": "輸出入・生産・在庫の継続性を確認",
+    "months": "物価・景気と金融政策の反応を確認",
+    "currency": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは双方の資料不足で判断保留",
+    "gold": "実質金利・リスク需要のデータ不足で判断保留"
+  },
+  "invalidations": [
+    "後続週で輸出入変化が反転",
+    "生産・需要・備蓄変化が相殺",
+    "実質金利が想定と逆に変化"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分の全件照合と事後系列が未取得。再試行。",
+  "database_sync": "今回未確認。過去記録には同期失敗あり。",
+  "pc_status": "実機未確認",
+  "retry": true
+}
