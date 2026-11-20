@@ -1,0 +1,50 @@
+{
+  "id": "20261120T050308Z-review",
+  "created_at": "2026-11-20T14:03:08+09:00",
+  "status": "partial",
+  "coverage": "前回11月20日13:05 JST以降の差分を中心に確認。対象期間の全件照合は未完。",
+  "sources": [
+    {
+      "source": "財務省国債新着",
+      "url": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+      "status": "一覧取得。11月20日の短期証券1421回と流動性供給465回の結果の個別本文・表を取得、既存JSONのURL・公表日・主要内容と一致し再保存しなかった。掲載時刻は不明。"
+    },
+    {
+      "source": "財務省入札カレンダー",
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "今回取得はタイムアウト。失敗を新着なしと扱わず次回再試行。"
+    },
+    {
+      "source": "日銀",
+      "url": "https://www.boj.or.jp/",
+      "status": "入口を取得。講演・会見・会合の個別資料全件の照合は未完。"
+    },
+    {
+      "source": "日銀オペ",
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "11月19日と20日のXLSXを再取得したが形式非対応で表を取得できず。両日の全シートは未読。",
+      "retry_urls": [
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261119.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261120.xlsx"
+      ]
+    },
+    {
+      "source": "財務省オンチェーン研究会第3回資料",
+      "url": "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3.html",
+      "status": "再取得に失敗、4件の配布資料PDF・図表と議事要旨は未読。前回の一覧確認以外の実質内容・政策決定は未確認。"
+    }
+  ],
+  "new_records": [],
+  "dedup": "2件の入札結果を個別にURL・公表日・主要内容で既存レコードと照合。全既存レコードの完全な内容照合は未了。",
+  "missing": [
+    "日銀オペXLSX各シート",
+    "国債オンチェーン研究会の配布資料PDF・図表・議事要旨",
+    "入札カレンダー今回取得",
+    "公表時刻、市場予想、実質金利と二次市場売買",
+    "政策会合・会見・買戻しの全個別資料"
+  ],
+  "rights": "今回全文複製なし。個別の再配布権は未確認。",
+  "inference": "入札需給が予想と異なる場合、金利に影響し得るが、金・ドル円の方向は日米双方の実質金利と市場予想が不足し保留。",
+  "mac_notification": "実機で未確認。GitHub保存とは別。",
+  "retry": true
+}
