@@ -1,0 +1,100 @@
+{
+  "as_of": "2026-11-20T17:07:28+09:00",
+  "status": "partial",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period": "2026-11-20 15:52〜17:07 JSTの差分を対象。24時間重複の個別照合未完",
+      "status": "入口ページ取得。個別本文・表の網羅的確認未完"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period": "2026-11-20 15:52〜17:07 JSTの差分を対象。24時間重複の個別照合未完",
+      "status": "入口ページ取得。個別本文・表の網羅的確認未完"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period": "2026-11-20 15:52〜17:07 JSTの差分を対象。24時間重複の個別照合未完",
+      "status": "入口ページ取得。個別本文・表の網羅的確認未完"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period": "2026-11-20 15:52〜17:07 JSTの差分を対象。24時間重複の個別照合未完",
+      "status": "入口ページ取得。個別本文・表の網羅的確認未完"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period": "2026-11-20 15:52〜17:07 JSTの差分を対象。24時間重複の個別照合未完",
+      "status": "入口ページ取得。個別本文・表の網羅的確認未完"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period": "2026-11-20 15:52〜17:07 JSTの差分を対象。24時間重複の個別照合未完",
+      "status": "入口ページ取得。個別本文・表の網羅的確認未完"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period": "2026-11-20 15:52〜17:07 JSTの差分を対象。24時間重複の個別照合未完",
+      "status": "入口ページ取得。個別本文・表の網羅的確認未完"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period": "2026-11-20 15:52〜17:07 JSTの差分を対象。24時間重複の個別照合未完",
+      "status": "入口ページ取得。個別本文・表の網羅的確認未完"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period": "2026-11-20 15:52〜17:07 JSTの差分を対象。24時間重複の個別照合未完",
+      "status": "入口ページ取得。個別本文・表の網羅的確認未完"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period": "2026-11-20 15:52〜17:07 JSTの差分を対象。24時間重複の個別照合未完",
+      "status": "入口ページ取得。個別本文・表の網羅的確認未完"
+    }
+  ],
+  "missing_sources": [
+    "指定10情報源の個別資料・表の差分照合",
+    "既存メール文書とのURL・時刻・ハッシュ照合",
+    "財務省入札・買戻しおよびNY連銀オペの個別結果",
+    "EIA PDF全頁訳・図表目視",
+    "州選挙認証",
+    "期限到来済み分析の全件と事後時系列"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [
+    "供給減が実現し需要が不変ならエネルギー価格を通じ物価・景気に波及し、実質金利と資金需要が変化し得る。方向や規模は織り込みと需要次第。"
+  ],
+  "historical_comparisons": [
+    "1973年は供給制約、2007〜09年は信用収縮、2020年は市場機能支援。前2件は後年の回顧資料で当時の情報ではない。各時点の物価・実質金利・流動性・エネルギー構造の定量比較は不足。初期3件は精度検証済みではない。"
+  ],
+  "scenarios": {
+    "days": "新たな発表と既存の織り込み次第",
+    "weeks": "供給と在庫、需要の実測次第",
+    "months": "物価・成長・政策対応次第",
+    "currency": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは双方のデータ不足で判断保留",
+    "gold": "実質金利と需要の資料不足で判断保留"
+  },
+  "invalidations": [
+    "供給減が実現しない",
+    "需要減や代替供給が相殺する",
+    "日米実質金利差が想定と逆に動く"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分の照合・事後評価は未完",
+  "database_sync": "今回未確認。前回記録では同期失敗、現在の状態は未確認。",
+  "pc_status": "実機未確認",
+  "retry": true
+}
