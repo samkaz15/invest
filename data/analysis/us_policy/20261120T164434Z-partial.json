@@ -1,0 +1,109 @@
+{
+  "as_of": "2026-11-21T01:44:34+09:00",
+  "status": "partial",
+  "document_ids": [
+    "eia-20261113-wpsr-overview-partial-20261118"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period": "11月21日01:06〜01:44 JSTの差分対象、24時間重複期間の全件照合未完",
+      "status": "入口取得、個別原文・表・PDFの差分全件確認未完"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period": "11月21日01:06〜01:44 JSTの差分対象、24時間重複期間の全件照合未完",
+      "status": "入口取得、個別原文・表・PDFの差分全件確認未完"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period": "11月21日01:06〜01:44 JSTの差分対象、24時間重複期間の全件照合未完",
+      "status": "入口取得、個別原文・表・PDFの差分全件確認未完"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period": "11月21日01:06〜01:44 JSTの差分対象、24時間重複期間の全件照合未完",
+      "status": "入口取得、個別原文・表・PDFの差分全件確認未完"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period": "11月21日01:06〜01:44 JSTの差分対象、24時間重複期間の全件照合未完",
+      "status": "入口取得、個別原文・表・PDFの差分全件確認未完"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period": "11月21日01:06〜01:44 JSTの差分対象、24時間重複期間の全件照合未完",
+      "status": "入口取得、個別原文・表・PDFの差分全件確認未完"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period": "11月21日01:06〜01:44 JSTの差分対象、24時間重複期間の全件照合未完",
+      "status": "入口取得、個別原文・表・PDFの差分全件確認未完"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period": "11月21日01:06〜01:44 JSTの差分対象、24時間重複期間の全件照合未完",
+      "status": "入口・11月13日週EIA原油在庫表を部分取得、同報告の既存部分記録あり。PDF全体未読"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period": "11月21日01:06〜01:44 JSTの差分対象、24時間重複期間の全件照合未完",
+      "status": "入口取得、個別原文・表・PDFの差分全件確認未完"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period": "11月21日01:06〜01:44 JSTの差分対象、24時間重複期間の全件照合未完",
+      "status": "入口取得、個別原文・表・PDFの差分全件確認未完"
+    }
+  ],
+  "missing_sources": [
+    "入札・買戻し・NY連銀個別結果表",
+    "EIA PDF全ページ・表・脚注の検証",
+    "州選挙認証",
+    "全源24時間重複期間と既存メールのURL・時刻・ハッシュ完全照合",
+    "事後レビューと市場時系列"
+  ],
+  "facts": [
+    {
+      "type": "FACT",
+      "source_url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "document_id": "eia-20261113-wpsr-overview-partial-20261118",
+      "retrieved_at": "2026-11-21T01:44:34+09:00",
+      "published_at": null,
+      "detail": "11月13日終了週の米商業原油在庫（SPR除く）は4億1780万バレル、前週比340万バレル増。EIA表の一部を確認。公表日は11月18日、時刻未確認。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "INFERENCE: 在庫増が予想を上回り供給余剰の拡大を示し、他条件が同じなら原油価格の下押し要因となり得る。市場予想・需要・生産を確認できず、実際の反応は未判定。"
+  ],
+  "historical_comparisons": [
+    "1973年供給制約と今回の単週在庫増は方向と背景が異なる。初期3事例は要約であり当初のインフレ・実質金利・流動性・エネルギー構造の詳細比較は未確認。"
+  ],
+  "scenarios": {
+    "days": "市場想定との差を確認",
+    "weeks": "生産・輸入・精製・在庫動向を確認",
+    "months": "需給とインフレへの持続性を確認",
+    "fx": "USDJPY、EURUSD、USDCHF、USDCAD、AUDUSDは両側データ不足で保留",
+    "gold": "実質金利と期待不足により保留"
+  },
+  "invalidations": [
+    "在庫増が予想以下、需要・供給制約で相殺",
+    "原油から物価への伝達が弱い"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分全件と事後データ未確認",
+  "database_sync": "前回01:06 JST確認時、最新同期run 44740301868は失敗。今回未再確認。PostgreSQL反映不明。",
+  "pc_notification": "未確認",
+  "retry": true
+}
