@@ -1,0 +1,32 @@
+{
+  "id": "mof-20261120-onchain-study3-mufg-material2",
+  "title_ja": "国債オンチェーン研究会でMUFGが投信トークン化を説明",
+  "summary_ja": "MUFGは研究会で、国債取引や決済の効率化の検証とトークン化投信の課題を説明しました。",
+  "source_url": "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-2.pdf",
+  "notification_url": "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3.html",
+  "published_at": null,
+  "published_date": "2026-11-20",
+  "published_time_note": "資料の日付は11月20日。公表時刻は不明。",
+  "retrieved_at": "2026-11-20T14:41:08+09:00",
+  "notification_eligible": true,
+  "topics": [
+    "jgb",
+    "market_infrastructure"
+  ],
+  "facts_ja": [
+    "MUFGグループのヒアリング資料は、現行の国債振替制度を前提に分散台帳技術を活用した国債取引・DvP決済・担保管理の効率化の可能性を実証で検証すると説明している。",
+    "トークン化投信の社会実装には法制度、運営体制、相互運用性の課題があると提出企業が述べた。将来の構想でありサービス実現を確約しない旨の注記がある。",
+    "これは民間の説明・構想であり、財務省の制度変更決定や国債の実取引量の発表ではない。"
+  ],
+  "inference_ja": [
+    "仮に制度・実務が整備され決済や担保利用の効率が改善すれば国債市場の流動性に影響し得るが、採用時期や効果、金利・金・ドル円の方向は判断できない。"
+  ],
+  "content_scope": "8ページPDFから抽出したテキストの一部の要約。",
+  "missing_parts": [
+    "ページ全体の図表・視覚確認は未実施。",
+    "他の配布資料1・3は取得タイムアウト、資料4は21ページの一部のみ確認、会議要旨未取得。",
+    "公表時刻と市場の織り込みは未確認。"
+  ],
+  "rights": "資料8ページ目に著作権はMUFGに帰属し事前承諾のない複製・転載等を禁じる旨あり。全文やPDFは複製せず要約と公式リンクのみ保存。",
+  "supersedes": null
+}
