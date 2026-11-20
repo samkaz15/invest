@@ -1,0 +1,91 @@
+{
+  "as_of": "2026-11-20T23:55:22+09:00",
+  "status": "partial",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period": "前回23:16から23:55 JSTまでの差分を確認すべき期間。入口取得のみで期間全体の個別文書確認は未完",
+      "status": "入口取得、個別文書・表の差分未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period": "前回23:16から23:55 JSTまでの差分を確認すべき期間。入口取得のみで期間全体の個別文書確認は未完",
+      "status": "入口取得、個別文書・表の差分未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period": "前回23:16から23:55 JSTまでの差分を確認すべき期間。入口取得のみで期間全体の個別文書確認は未完",
+      "status": "入口取得、個別文書・表の差分未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period": "前回23:16から23:55 JSTまでの差分を確認すべき期間。入口取得のみで期間全体の個別文書確認は未完",
+      "status": "入口取得、個別文書・表の差分未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period": "前回23:16から23:55 JSTまでの差分を確認すべき期間。入口取得のみで期間全体の個別文書確認は未完",
+      "status": "入口取得、個別文書・表の差分未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period": "前回23:16から23:55 JSTまでの差分を確認すべき期間。入口取得のみで期間全体の個別文書確認は未完",
+      "status": "入口取得、個別文書・表の差分未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period": "前回23:16から23:55 JSTまでの差分を確認すべき期間。入口取得のみで期間全体の個別文書確認は未完",
+      "status": "入口取得、個別文書・表の差分未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period": "前回23:16から23:55 JSTまでの差分を確認すべき期間。入口取得のみで期間全体の個別文書確認は未完",
+      "status": "入口取得、個別文書・表の差分未確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period": "前回23:16から23:55 JSTまでの差分を確認すべき期間。入口取得のみで期間全体の個別文書確認は未完",
+      "status": "入口取得、個別文書・表の差分未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period": "前回23:16から23:55 JSTまでの差分を確認すべき期間。入口取得のみで期間全体の個別文書確認は未完",
+      "status": "入口取得、個別文書・表の差分未確認"
+    }
+  ],
+  "missing_sources": [
+    "24時間重複期間および全10情報源の個別本文・表・脚注・PDF",
+    "既存記録とのURL・公表時刻・ハッシュ全件照合",
+    "過去のreview_after到来分と事後データ",
+    "US knowledge database sync最新状態"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [
+    "今回の新規事実確認不足により比較保留。前回分析を参照。"
+  ],
+  "scenarios": {
+    "days": "判断保留",
+    "weeks": "判断保留",
+    "months": "判断保留",
+    "currency": "両国資料不足のため判断保留"
+  },
+  "invalidations": [],
+  "review_after": null,
+  "retry": true,
+  "previous_analysis": "data/analysis/us_policy/20261120T141622Z-partial.json",
+  "database_sync": "前回確認は失敗、今回の最新状態未確認。PostgreSQL反映不明",
+  "pc_status": "未確認"
+}
