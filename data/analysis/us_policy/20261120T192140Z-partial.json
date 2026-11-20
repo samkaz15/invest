@@ -1,0 +1,107 @@
+{
+  "as_of": "2026-11-21T04:21:40+09:00",
+  "status": "partial",
+  "document_ids": [
+    "nyfed-treasury-20261116-20261211-schedule-20261114"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period": "11月21日03:28〜04:21 JST差分を対象。24時間重複期間の全件照合未完。",
+      "status": "入口を取得、個別資料・表・PDFの全件確認未完。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period": "11月21日03:28〜04:21 JST差分を対象。24時間重複期間の全件照合未完。",
+      "status": "入口を取得、個別資料・表・PDFの全件確認未完。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period": "11月21日03:28〜04:21 JST差分を対象。24時間重複期間の全件照合未完。",
+      "status": "入口を取得、個別資料・表・PDFの全件確認未完。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period": "11月21日03:28〜04:21 JST差分を対象。24時間重複期間の全件照合未完。",
+      "status": "入口を取得、個別資料・表・PDFの全件確認未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period": "11月21日03:28〜04:21 JST差分を対象。24時間重複期間の全件照合未完。",
+      "status": "入口及び既存NY連銀オペ予定表の行を再確認。個別実績・PDF未確認。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period": "11月21日03:28〜04:21 JST差分を対象。24時間重複期間の全件照合未完。",
+      "status": "入口を取得、個別資料・表・PDFの全件確認未完。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period": "11月21日03:28〜04:21 JST差分を対象。24時間重複期間の全件照合未完。",
+      "status": "入口を取得、個別資料・表・PDFの全件確認未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period": "11月21日03:28〜04:21 JST差分を対象。24時間重複期間の全件照合未完。",
+      "status": "入口を取得、個別資料・表・PDFの全件確認未完。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period": "11月21日03:28〜04:21 JST差分を対象。24時間重複期間の全件照合未完。",
+      "status": "入口を取得、個別資料・表・PDFの全件確認未完。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period": "11月21日03:28〜04:21 JST差分を対象。24時間重複期間の全件照合未完。",
+      "status": "入口を取得、個別資料・表・PDFの全件確認未完。"
+    }
+  ],
+  "missing_sources": [
+    "米国債個別入札・財務省買戻し・NY連銀売買結果",
+    "EIA PDF全頁",
+    "州別認証",
+    "既存メールとURL・日時・ハッシュの全件照合",
+    "期限到来分析の事後時系列"
+  ],
+  "facts": [
+    {
+      "source_url": "https://www.newyorkfed.org/markets/domestic-market-operations/monetary-policy-implementation/treasury-securities/treasury-securities-operational-details",
+      "document_id": "nyfed-treasury-20261116-20261211-schedule-20261114",
+      "published_at": null,
+      "retrieved_at": "2026-11-21T04:21:40+09:00",
+      "detail": "11月16日〜12月11日の再投資購入約140億ドル、準備管理購入なしは予定。実績ではない。公表時刻不明。既存記録と照合。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "INFERENCE: 実際の再投資購入が市場織り込みを超えて増加すれば、他の条件が同じ場合に民間保有すべき国債の需給を支え得る。予定額から実際の取引・利回り変化は断定できない。"
+  ],
+  "historical_comparisons": [
+    "2020年の市場機能支援と目的・条件が異なる。初期史料3件の定量比較は今回未確認。"
+  ],
+  "scenarios": {
+    "days": "個別買入結果の確認",
+    "weeks": "実行額と予想との差を確認",
+    "months": "他の発行・償還・物価や資金需給と合わせて評価",
+    "currency": "両国の実質金利・期待不足により全ペア判断保留",
+    "gold": "実質金利不足により判断保留"
+  },
+  "invalidations": [
+    "実際の購入が計画を下回る",
+    "発行供給や需要変化が影響を相殺"
+  ],
+  "review_after": null,
+  "retry": true,
+  "database_sync": "前回確認時同期失敗、今回再確認なし。PostgreSQL反映未確認",
+  "pc_notification": "未確認"
+}
