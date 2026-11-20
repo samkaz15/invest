@@ -1,0 +1,32 @@
+{
+  "id": "ustreas-4339ab2-20261120-real-yield-curve-mail",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/4339ab2",
+  "primary_source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Real Yield Curve Rates Update",
+  "title_ja": "米財務省、実質イールドカーブの更新を通知",
+  "published_at": null,
+  "received_at": "2026-11-21T06:55:38+09:00",
+  "topics": [
+    "treasuries",
+    "gold",
+    "monetary_policy"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Real Yield Curve Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.",
+  "translation_ja": "米財務省の日次実質イールドカーブ情報をご購読いただいています。この情報が最近更新され、利用できるようになりました。",
+  "facts_ja": [
+    "通知本文に公表時刻や数値はない。",
+    "別途取得した米国日付11月20日の公式表において10年は2.77％。"
+  ],
+  "inference_ja": [
+    "実質金利低下が持続し他条件が一定であれば金の保有機会費用を下げ得るが、金の値動きは断定できない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [
+    "表の全期間と脚注全文は別文書では部分記録。公表時刻不明。",
+    "既存記録の全内容・更新時刻による照合は未完。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省の実質利回り表が更新、米国日付11月20日の10年は2.77％となった。",
+  "supersedes": null
+}
