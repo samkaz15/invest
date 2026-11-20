@@ -1,0 +1,29 @@
+{
+  "id": "mof-20261120-liquidity465-auction-result",
+  "title_ja": "流動性供給第465回の入札結果",
+  "summary_ja": "流動性供給第465回入札の応募は2兆5568億円、募入決定額は6991億円でした。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261120.htm",
+  "facts_ja": [
+    "募入最大利回格差はマイナス0.017％、募入平均利回格差はマイナス0.020％。発行日は11月24日。",
+    "利回格差は基準利回りに対する差であり、国債そのものの利回りではない。"
+  ],
+  "notification_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261120.htm",
+  "published_at": null,
+  "published_date": "2026-11-20",
+  "published_time_note": "公表時刻不明（JST）。発表予定時刻は実際の公表時刻と区別。",
+  "retrieved_at": "2026-11-20T13:05:35+09:00",
+  "notification_eligible": true,
+  "topics": [
+    "jgb",
+    "auction"
+  ],
+  "inference_ja": [
+    "需給が市場の事前予想と異なる場合、金利や国債需給に影響し得る。予想・市場の織り込みと日米実質金利が未確認のため金・ドル円の方向は保留。"
+  ],
+  "content_scope": "財務省の公式本文と表を要約。",
+  "missing_parts": [
+    "公表時刻、市場予想、二次市場の実売買を未確認。"
+  ],
+  "rights": "全文は複製せず要約と公式URLを記録。個別の再配布権は未確認。",
+  "supersedes": null
+}
