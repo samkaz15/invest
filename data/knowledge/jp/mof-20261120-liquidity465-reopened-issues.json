@@ -1,0 +1,32 @@
+{
+  "id": "mof-20261120-liquidity465-reopened-issues",
+  "title_ja": "流動性供給第465回入札の追加発行銘柄",
+  "summary_ja": "財務省は流動性供給第465回入札で追加発行した国債の銘柄別発行額を公表しました。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261120a.htm",
+  "notification_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261120a.htm",
+  "published_at": null,
+  "published_date": "2026-11-20",
+  "published_time_note": "公表時刻は不明（JST）。",
+  "retrieved_at": "2026-11-20T18:30:27+09:00",
+  "notification_eligible": true,
+  "topics": [
+    "jgb",
+    "auction"
+  ],
+  "facts_ja": [
+    "財務省は第465回流動性供給入札で追加発行した国債の銘柄別額面を公表した。",
+    "表には10年債356回の1,209億円、20年債124回の1,036億円などが掲載されている。",
+    "この資料は発行銘柄の内訳であり、日銀の市場オペによる実際の売買ではない。"
+  ],
+  "inference_ja": [
+    "銘柄別供給が市場の事前想定と異なれば、個別銘柄の需給に影響し得る。市場の織り込みと日米実質金利は未確認であり、金・ドル円の方向は判断保留。"
+  ],
+  "content_scope": "本文と銘柄別表を確認し一部を要約。",
+  "missing_parts": [
+    "公表時刻",
+    "市場予想",
+    "二次市場の実売買と価格反応"
+  ],
+  "rights": "財務省の利用規約は特記・権利表記のないコンテンツに公共データ利用規約1.0を適用すると説明。原文は全文複製せず要約し出典URLを記載。 https://www.mof.go.jp/about_mof/notice/index.html",
+  "supersedes": null
+}
