@@ -1,0 +1,53 @@
+{
+  "id": "20261120T073900Z-review",
+  "created_at": "2026-11-20T16:39:00+09:00",
+  "status": "partial",
+  "coverage": "前回2026-11-20 16:01 JSTから16:39 JSTまでの差分を中心。全資料の内容・時刻照合は未完。",
+  "sources": [
+    {
+      "source": "日銀ホーム",
+      "url": "https://www.boj.or.jp/",
+      "status": "政策・講演・会見一覧を確認。表示された直近の対象である11月19日の植田総裁の国会説明は既存記録あり。新着一覧に表示されない資料の網羅性は未確認。"
+    },
+    {
+      "source": "日銀オペ",
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "11月17～20日のオファー／落札結果と11月分国債補完供給売却銘柄について再取得を試行。取得手段がXLSX非対応のため全シート未読。掲載から実売買の有無や規模は判定できない。",
+      "retry_urls": [
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261120.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261119.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261118.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261117.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx"
+      ]
+    },
+    {
+      "source": "財務省国債",
+      "url": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+      "status": "新着一覧を確認。11月20日の短期証券・流動性供給の入札結果と発行・入札予定には既存記録がある。買入消却の個別結果照合は未完。"
+    },
+    {
+      "source": "国債オンチェーン研究会",
+      "url": "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3.html",
+      "status": "資料1・3・4のPDFを再取得したがアクセス不可。資料4は以前の部分確認を除き未読。",
+      "retry_urls": [
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-1.pdf",
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-3.pdf",
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-4.pdf"
+      ]
+    }
+  ],
+  "new_records": [],
+  "dedup": "既存JP記録の一覧と主要名称を照合。未取得資料はURL・公表時刻・内容による照合未完のため新着なしとは判定しない。",
+  "rights": "今回、原文の全文複製なし。未取得資料の再配布条件は未確認。",
+  "missing": [
+    "日銀オペXLSX 5件の全シート",
+    "研究会資料1・3および資料4の残り・図表",
+    "国債買入消却の個別結果",
+    "政策会合・会見資料の全件照合",
+    "未取得資料の公表時刻"
+  ],
+  "inference": "国債需給・金利・金・ドル円の方向は未取得データと市場の織り込み次第であり判断保留。名目金利と実質金利を同一視しない。",
+  "mac_notification": "実機未確認。GitHub保存と通知成功は別。",
+  "retry": true
+}
