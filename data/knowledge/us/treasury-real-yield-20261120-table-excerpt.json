@@ -1,0 +1,30 @@
+{
+  "id": "treasury-real-yield-20261120-table-excerpt",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026",
+  "title_en": "Daily Treasury Par Real Yield Curve Rates — November 20, 2026",
+  "title_ja": "米財務省の実質イールドカーブ、2026年11月20日分",
+  "published_at": null,
+  "received_at": "2026-11-21T06:56:39+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries",
+    "gold"
+  ],
+  "original_text": "Date | 5 YR | 7 YR | 10 YR | 20 YR | 30 YR\n11/19/2026 | 2.64 | 2.76 | 2.88 | 3.12 | 3.24\n11/20/2026 | 2.53 | 2.64 | 2.77 | 3.03 | 3.17",
+  "translation_ja": "米国日付｜5年｜7年｜10年｜20年｜30年（単位：％）\n11月19日｜2.64｜2.76｜2.88｜3.12｜3.24\n11月20日｜2.53｜2.64｜2.77｜3.03｜3.17",
+  "facts_ja": [
+    "11月20日の10年実質利回りは2.77％。前日の2.88％から0.11ポイント低下。",
+    "日付は米国の日付であり、公表時刻ではない。"
+  ],
+  "inference_ja": [
+    "実質利回りの低下は他条件一定で金保有の機会費用を低下させ得るが、金価格への影響は他要因に左右される。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "年初来の他の日付と表の残りの列、注記全文、XML・CSVは未保存。",
+    "実際の公表時刻は未確認。全既存記録のハッシュ照合は未完。"
+  ],
+  "notification_eligible": false,
+  "supersedes": null
+}
