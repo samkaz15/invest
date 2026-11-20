@@ -1,0 +1,34 @@
+{
+  "id": "ofac-20261120-iran-cuba-update-mail",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/43397e4",
+  "primary_source_url": "https://ofac.treasury.gov/recent-actions/20261120",
+  "title_en": "OFAC SDN List Update: Iran Designations; Issuance of Cuba Frequently Asked Questions",
+  "title_ja": "OFAC、イラン関連の制裁対象リスト更新とキューバ関連FAQを発表",
+  "published_at": null,
+  "published_date_source": "公表時刻不明",
+  "received_at": "2026-11-21T06:06:50+09:00",
+  "topics": [
+    "sanctions",
+    "oil",
+    "other_us"
+  ],
+  "original_text": "Update to OFAC's list of Specially Designated Nationals (SDN) and Blocked Persons; Issuance of Cuba Frequently Asked Questions\nThe Department of the Treasury's Office of Foreign Assets Control (OFAC) is issuing two new Cuba-related Frequently Asked Questions, FAQs 1277 and 1278.\nAdditionally, OFAC has made the following changes to the list of Specially Designated Nationals and Blocked Persons (SDN List). Please visit this page to access the latest version of the SDN list. Check this page periodically as it may also be updated if a new list-related format or product is offered.\nPlease visit this link for more information on today's update.",
+  "translation_ja": "米財務省外国資産管理局（OFAC）の特別指定国民・資産封鎖対象者リストの更新およびキューバに関するよくある質問の発出。\nOFACは、キューバ関連の新たなFAQ 1277および1278を発出した。\nまた、OFACは特別指定国民・資産封鎖対象者（SDN）リストを更新した。最新のリストと今回の更新の詳細は、それぞれ公式ページを参照。",
+  "facts_ja": [
+    "メール本文はFAQ番号とSDNリスト更新を通知するが、指定の詳細は示さない。",
+    "イラン石油関連の別メールと同一の更新先を指すが、FAQを含む別のメール文書。",
+    "公式リンク先は取得失敗し、個別指定とFAQ本文は未確認。"
+  ],
+  "inference_ja": [
+    "指定が実際の石油供給や資金決済に及ぼす影響は、リンク先を確認できず判断保留。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [
+    "一次資料 https://ofac.treasury.gov/recent-actions/20261120 および https://ofac.treasury.gov/faqs/added/2026-11-20 の取得失敗。指定内容、FAQ本文、表、PDFの有無を再試行。",
+    "全既存レコードの内容ハッシュと公表時刻の照合は未完。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省がイラン関連制裁リストの更新とキューバ関連の新規の問答二件を新たに公表。",
+  "supersedes": null
+}
