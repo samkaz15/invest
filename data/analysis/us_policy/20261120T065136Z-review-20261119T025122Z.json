@@ -1,0 +1,21 @@
+{
+  "id": "20261120T065136Z-review-20261119T025122Z",
+  "review_of": "20261119T025122Z-check",
+  "original_as_of": "2026-11-19T11:51:22+09:00",
+  "review_after": "2026-11-20T02:51:22Z",
+  "reviewed_at": "2026-11-20T15:51:36+09:00",
+  "status": "partial",
+  "observations": [
+    {
+      "source_url": "https://ir.eia.gov/wpsr/overview.pdf",
+      "observation": "当初分析に記載した11月13日週のガソリン混合基材在庫202.0百万バレルは当初観測の再確認。事後の新観測として扱わない。"
+    }
+  ],
+  "unassessed": [
+    "発表後の原油・金・為替・実質金利の同時点時系列",
+    "実供給・制裁の影響",
+    "入札、買戻し、FRB実売買と市場の事前予想"
+  ],
+  "conclusion": "事後データ不足により仮説の的中・反証の評価は保留。再試行。",
+  "retry": true
+}
