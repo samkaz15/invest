@@ -1,0 +1,57 @@
+{
+  "id": "20261120T124235Z-review",
+  "created_at": "2026-11-20T21:42:35+09:00",
+  "status": "partial",
+  "coverage": "前回21:16 JSTから21:42 JSTまでの差分を中心。全資料の内容・時刻照合は未完。",
+  "sources": [
+    {
+      "source": "日銀ホーム",
+      "url": "https://www.boj.or.jp/",
+      "status": "政策・講演会見の新着一覧を確認。11月19日の総裁説明は既存記録あり。全件照合未完。"
+    },
+    {
+      "source": "財務省国債新着",
+      "url": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+      "status": "11月20日の一覧を既存記録名と照合。入札結果・追加発行銘柄は既存。全資料の内容・時刻照合未完。"
+    },
+    {
+      "source": "財務省買入消却",
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "カレンダーを取得。前回確認の9月29日計画では物価連動国債の11月買入消却入札は予定なし。他の買戻しの不存在を示すものではなく全実績未照合。"
+    },
+    {
+      "source": "日銀オペ",
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "11月20日の結果と11月補完供給銘柄のXLSXは形式非対応で取得できず。表の全シート未読。",
+      "retry_urls": [
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261120.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261119.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261118.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261117.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx"
+      ]
+    },
+    {
+      "source": "国債オンチェーン研究会",
+      "url": "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3.html",
+      "status": "資料1・3・4は再取得できず。資料4は既存の部分確認以外未読。",
+      "retry_urls": [
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-1.pdf",
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-3.pdf",
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-4.pdf"
+      ]
+    }
+  ],
+  "new_records": [],
+  "dedup": "既存ファイル名と主要一覧を照合。未取得分や全ファイルのURL・公表時刻・内容照合は未完。取得失敗を新着なしと判断しない。",
+  "rights": "今回、一次資料の全文複製なし。未取得資料の再配布条件は未確認。",
+  "missing": [
+    "日銀オペXLSX各シート",
+    "研究会資料1・3と資料4の未読部分・図表",
+    "買入消却全種の実績",
+    "政策会合・会見資料の全件"
+  ],
+  "inference": "国債需給、金、ドル円の影響は実際の売買と市場想定、日米実質金利次第。方向は保留。",
+  "mac_notification": "実機未確認。GitHub保存と通知成功は別。",
+  "retry": true
+}
