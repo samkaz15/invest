@@ -1,0 +1,48 @@
+{
+  "id": "20261120T054108Z-review",
+  "created_at": "2026-11-20T14:41:08+09:00",
+  "status": "partial",
+  "coverage": "2026年11月20日14:03〜14:41 JSTの差分中心。全件網羅未確認。",
+  "sources": [
+    {
+      "source": "財務省入札カレンダー",
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "前回のタイムアウトから再取得成功。11月20日の入札結果2件は既存JSONあり。買入消却の個別結果は未照合。"
+    },
+    {
+      "source": "財務省オンチェーン研究会",
+      "url": "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3.html",
+      "status": "議事次第1頁および資料2の8頁抽出テキストを取得、MUFG側の見解を要約保存。資料1・3はタイムアウト。資料4は21頁の一部のみ確認、図表・議事要旨未確認。",
+      "retry_urls": [
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-1.pdf",
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-3.pdf",
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-4.pdf"
+      ]
+    },
+    {
+      "source": "日銀オペ",
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "11月20日XLSXを再試行したが取得サービスが形式非対応、表と実売買内容は未確認。11月19日分も前回未取得。",
+      "retry_url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261120.xlsx"
+    },
+    {
+      "source": "日銀ホーム",
+      "url": "https://www.boj.or.jp/",
+      "status": "入口確認、政策・講演・会見個別資料の全件照合は未完。"
+    }
+  ],
+  "new_records": [
+    "mof-20261120-onchain-study3-mufg-material2"
+  ],
+  "dedup": "既存JP文書一覧に同一資料の名称・IDがないことを確認。全レコードのURL・内容照合は未完。",
+  "rights": "資料2はMUFGに著作権があり無許可複製等を禁止する旨を確認。要約とリンクのみ記録。",
+  "missing": [
+    "研究会資料1・3および資料4の残り、資料2の図表の視覚確認",
+    "会議議事要旨",
+    "日銀オペ11月19・20日のXLSX全シート",
+    "買入消却の個別結果",
+    "日米実質金利と市場予想"
+  ],
+  "mac_notification": "実機未確認。GitHub保存と別。",
+  "retry": true
+}
