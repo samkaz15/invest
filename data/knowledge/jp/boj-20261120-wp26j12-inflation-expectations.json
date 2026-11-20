@@ -1,0 +1,24 @@
+{
+  "id": "boj-20261120-wp26j12-inflation-expectations",
+  "title_ja": "日銀論文、家計のインフレ予想と過去の物価経験を分析",
+  "source_url": "https://www.boj.or.jp/research/wps_rev/wps_2026/wp26j12.htm",
+  "published_at": null,
+  "published_date": "2026-11-20",
+  "published_time_note": "時刻不明",
+  "retrieved_at": "2026-11-21T06:11:18+09:00",
+  "summary_ja": "日銀の研究論文は、家計のインフレ予想の長期的な変動に過去の物価経験が関係すると分析しました。執筆者個人の見解です。",
+  "facts_ja": [
+    "掲載要旨によると、短期的な変動は主に足元の物価実感の変化を通じて生じたと分析。",
+    "論文の見解は執筆者個人に属し、日本銀行の公式見解を示すものではない。"
+  ],
+  "inference_ja": [
+    "予想インフレ率が実勢として持続的に変化すれば、名目金利から予想物価上昇率を差し引く実質金利に影響し得る。市場への波及や方向は資料不足で判断保留。"
+  ],
+  "missing_parts": [
+    "PDF本文、全ページ、表・図、推計方法と限界は未確認。",
+    "既存記録はファイル名で照合したが、URL・内容ハッシュの全件照合は未完。"
+  ],
+  "rights_note": "公式サイトは商用転載・複製について事前相談を要請。原文全文は保存せず要約と出典のみ。",
+  "notification_eligible": true,
+  "supersedes": null
+}
