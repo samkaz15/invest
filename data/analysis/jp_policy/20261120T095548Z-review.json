@@ -1,0 +1,53 @@
+{
+  "id": "20261120T095548Z-review",
+  "created_at": "2026-11-20T18:55:48+09:00",
+  "status": "partial",
+  "coverage": "前回18:30 JSTから18:55 JSTまでの差分を中心。全個別資料の照合は未完。",
+  "sources": [
+    {
+      "source": "日銀ホーム",
+      "url": "https://www.boj.or.jp/",
+      "status": "新着・金融政策・講演会見一覧を確認。掲載された11月19日の総裁国会説明は既存記録あり。全件照合未完。"
+    },
+    {
+      "source": "財務省国債",
+      "url": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+      "status": "11月20日の新着一覧を既存JPファイル名と照合。第465回追加発行銘柄・結果などは既存記録。買入消却の個別結果照合は未完。"
+    },
+    {
+      "source": "日銀オペ",
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "11月20日オファー・結果と11月補完供給銘柄のXLSXを再取得できず。掲載から実売買の有無を判断しない。",
+      "retry_urls": [
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261120.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261119.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261118.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261117.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx"
+      ]
+    },
+    {
+      "source": "国債オンチェーン研究会",
+      "url": "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3.html",
+      "status": "資料1・3・4を再取得したがアクセス不可。資料4は以前の部分確認を除き未読。",
+      "retry_urls": [
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-1.pdf",
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-3.pdf",
+        "https://www.mof.go.jp/about_mof/councils/study_on_chain/on_chain_shiryo3/o20261120-4.pdf"
+      ]
+    }
+  ],
+  "new_records": [],
+  "dedup": "既存JPファイル名と主要資料名を照合。未取得分はURL・時刻・内容による照合が未完で、新着なしとは判定しない。",
+  "rights": "今回の全文複製なし。未取得資料ごとの権利確認は未完。",
+  "missing": [
+    "日銀オペXLSX各シート",
+    "研究会資料1・3および資料4の残り・図表",
+    "国債買入消却の個別結果",
+    "政策会合・会見資料の全件照合",
+    "未取得資料の公表時刻"
+  ],
+  "inference": "国債需給・金利・金・ドル円への影響は市場予想と未取得データ次第。名目金利と実質金利を区別し方向は保留。",
+  "mac_notification": "実機未確認。GitHub保存と通知成功は別。",
+  "retry": true
+}
