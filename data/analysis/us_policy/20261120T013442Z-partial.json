@@ -1,0 +1,116 @@
+{
+  "as_of": "2026-11-20T10:34:42+09:00",
+  "document_ids": [
+    "ofac-20261119-russia-gl131l-pdf",
+    "ofac-20261119-sdn-russia-131l-mail",
+    "eia-20261113-wpsr-overview-partial-20261119-p5"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period": "09:02〜10:34 JSTの差分を中心に確認。既存最新公表時刻が不明で24時間の重複確認は未完",
+      "status": "入口取得、期間内の個別資料・表の全件照合未完"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period": "09:02〜10:34 JSTの差分を中心に確認。既存最新公表時刻が不明で24時間の重複確認は未完",
+      "status": "入口取得、期間内の個別資料・表の全件照合未完"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period": "09:02〜10:34 JSTの差分を中心に確認。既存最新公表時刻が不明で24時間の重複確認は未完",
+      "status": "入口取得、期間内の個別資料・表の全件照合未完"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period": "09:02〜10:34 JSTの差分を中心に確認。既存最新公表時刻が不明で24時間の重複確認は未完",
+      "status": "入口取得、期間内の個別資料・表の全件照合未完"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period": "09:02〜10:34 JSTの差分を中心に確認。既存最新公表時刻が不明で24時間の重複確認は未完",
+      "status": "入口取得、期間内の個別資料・表の全件照合未完"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period": "09:02〜10:34 JSTの差分を中心に確認。既存最新公表時刻が不明で24時間の重複確認は未完",
+      "status": "入口取得、期間内の個別資料・表の全件照合未完"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period": "09:02〜10:34 JSTの差分を中心に確認。既存最新公表時刻が不明で24時間の重複確認は未完",
+      "status": "入口・11月19日個別更新と131Lの2頁PDFを取得・目視・翻訳"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period": "09:02〜10:34 JSTの差分を中心に確認。既存最新公表時刻が不明で24時間の重複確認は未完",
+      "status": "入口と11月13日週PDF、表の一部を取得。全訳・目視未完"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period": "09:02〜10:34 JSTの差分を中心に確認。既存最新公表時刻が不明で24時間の重複確認は未完",
+      "status": "入口取得、期間内の個別資料・表の全件照合未完"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period": "09:02〜10:34 JSTの差分を中心に確認。既存最新公表時刻が不明で24時間の重複確認は未完",
+      "status": "入口取得、期間内の個別資料・表の全件照合未完"
+    }
+  ],
+  "missing_sources": [
+    "個別入札・買戻し・FRB実績全件",
+    "131L関連FAQ・旧131Kとの差分",
+    "EIA全ページ表・脚注の翻訳と目視",
+    "選挙州認証",
+    "既存レコード全件のハッシュ照合"
+  ],
+  "facts": [
+    "131Lは条件付き契約の交渉・締結を2026年12月19日00:01米東部標準時まで許可するが、履行にはOFACの別許可が必要。",
+    "事業の維持・終了に必要な取引は2027年2月20日00:01米東部標準時まで許可。",
+    "ロシア連邦内の者または口座への資金移転は許可しない。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "条件付きで維持が続けば事業供給の維持に寄与し得る。実際の供給・市場織り込みは未確認。供給変化は物価・景気・実質金利を経由し金・通貨へ影響し得る。"
+  ],
+  "historical_comparisons": [
+    "1973年は実際の禁輸・減産であり、現時点で供給変化が未確認の今回と異なる。1973年史料は後年解説。",
+    "2007〜09年は信用収縮、2020年は当時FRBによる市場機能支援で起点が異なる。"
+  ],
+  "scenarios": [
+    {
+      "horizon": "日",
+      "condition": "契約の条件と市場織込みを確認、価格方向保留"
+    },
+    {
+      "horizon": "週",
+      "condition": "供給維持・制約の有無と代替供給を確認"
+    },
+    {
+      "horizon": "月",
+      "condition": "エネルギー価格が持続変化すれば物価・実質所得・政策金利に波及し得る"
+    }
+  ],
+  "invalidations": [
+    "別途許可や物流・代替供給により実供給が変化しない",
+    "需要の変化",
+    "実質金利・各国金利差の反対方向の変化"
+  ],
+  "fx": "USD/JPY EUR/USD USD/CHF USD/CAD AUD/USDは両国の金利・景気材料不足で判断保留。金も方向保留。",
+  "review_after": null,
+  "review_status": "期限到来分析の全件照合と時系列未確認",
+  "missing_comparisons": "当初インフレ・実質金利・流動性・エネルギー構造の定量比較未完。3件は精度未検証の初期要約。",
+  "database_sync": "今回JSON保存後の実行は進行中、前回失敗。反映未確認",
+  "pc_notification": "未確認",
+  "retry": true
+}
