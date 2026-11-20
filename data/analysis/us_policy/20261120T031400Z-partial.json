@@ -1,0 +1,127 @@
+{
+  "as_of": "2026-11-20T12:14:00+09:00",
+  "document_ids": [
+    "treasury-20261118-tic-september-2026-body",
+    "ofac-20261119-russia-gl131l-pdf",
+    "ofac-20261119-faq1224",
+    "ofac-20261119-faq1225",
+    "eia-20261113-wpsr-overview-partial-20261119-p5"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period": "2026-11-20 10:45〜12:14 JSTの差分中心、24時間重複の全件照合未完",
+      "status": "入口取得、9月TIC個別本文・表の主要行と脚注を確認。全32行翻訳・関連データ未完。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period": "2026-11-20 10:45〜12:14 JSTの差分中心、24時間重複の全件照合未完",
+      "status": "入口取得、個別入札の結果表未取得。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period": "2026-11-20 10:45〜12:14 JSTの差分中心、24時間重複の全件照合未完",
+      "status": "入口取得、実施結果は動的表の内容未取得。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period": "2026-11-20 10:45〜12:14 JSTの差分中心、24時間重複の全件照合未完",
+      "status": "入口取得、対象期間の声明等の全件照合未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period": "2026-11-20 10:45〜12:14 JSTの差分中心、24時間重複の全件照合未完",
+      "status": "入口取得、個別購入・売却の実績表未取得。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period": "2026-11-20 10:45〜12:14 JSTの差分中心、24時間重複の全件照合未完",
+      "status": "入口取得、個別大統領文書の全件照合未完。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period": "2026-11-20 10:45〜12:14 JSTの差分中心、24時間重複の全件照合未完",
+      "status": "入口と11月19日個別更新を取得。一般許可131L・FAQは既存記録、個人識別情報の記録は避けた。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period": "2026-11-20 10:45〜12:14 JSTの差分中心、24時間重複の全件照合未完",
+      "status": "入口と11月13日週の8ページPDFを取得し表1の一部を確認。全ページの翻訳・目視・原本保管未完。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period": "2026-11-20 10:45〜12:14 JSTの差分中心、24時間重複の全件照合未完",
+      "status": "入口取得、州別の認証状況未取得。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period": "2026-11-20 10:45〜12:14 JSTの差分中心、24時間重複の全件照合未完",
+      "status": "入口取得、個別政策文書の照合未完。"
+    }
+  ],
+  "missing_sources": [
+    "入札・買戻し・FRB操作の各実績表",
+    "EIA PDF全ページ翻訳・目視・保管",
+    "TIC全表・脚注翻訳",
+    "州認証",
+    "24時間重複の全件・内容ハッシュ照合",
+    "期限到来review_afterの全件確認",
+    "日本・欧州等の金利・景気資料"
+  ],
+  "facts": [
+    "財務省TICの9月長期米国債純購入は表で民間531億ドル、公的276億ドル。TICは保管機関の所在地による制約があり国別最終保有者を正確に示さない。公表は米国時間11月18日、時刻不明。",
+    "EIAによる11月13日週の商業原油在庫は4億1780万バレル、前週比340万バレル増。",
+    "OFACの131Lは条件付き交渉を許可し、売却履行には別の許可が必要。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "原油の供給制約や需要低下は物価と景気を経て政策・実質金利や資金需給に波及し得る。実際の供給と織り込みは未確認。",
+    "TICは過去月の投資フローで、現在の入札結果や価格・保有残高の変化とは異なる。"
+  ],
+  "historical_comparisons": [
+    "1973年は実際の禁輸と減産。今回の条件付き交渉許可では供給変化は未確認。",
+    "2007〜09年は信用収縮、2020年は市場機能支援で起点が異なる。1973年・2007〜09年のケースは後年解説。初期インフレ・実質金利・財政余地・エネルギー構造の数値比較は資料不足。3件は初期要約、予測精度未検証。"
+  ],
+  "scenarios": [
+    {
+      "horizon": "日",
+      "condition": "許可条件、入札結果と市場の織り込みを確認"
+    },
+    {
+      "horizon": "週",
+      "condition": "実供給、物流、在庫と資金調達条件を確認"
+    },
+    {
+      "horizon": "月",
+      "condition": "エネルギー価格変化が持続すれば物価・実質所得・政策と実質金利へ波及し得る"
+    }
+  ],
+  "invalidations": [
+    "供給変化がない",
+    "代替供給増または需要減が優勢",
+    "実質金利差が逆方向に変化"
+  ],
+  "currency_pairs": {
+    "USD/JPY": "両国資料不足で保留",
+    "EUR/USD": "両地域資料不足で保留",
+    "USD/CHF": "両国資料不足で保留",
+    "USD/CAD": "両国資料不足で保留",
+    "AUD/USD": "両国資料不足で保留",
+    "gold": "実質金利と需要情報不足で方向保留"
+  },
+  "review_after": null,
+  "review_status": "期限到来分の全件確認・事後データ不足で未評価、再試行",
+  "database_sync": "US knowledge database sync run 44655925039 は failure、PostgreSQL反映未確認",
+  "pc_notification": "未確認",
+  "retry": true
+}
