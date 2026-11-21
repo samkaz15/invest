@@ -1,0 +1,96 @@
+{
+  "id": "20261121T195943Z-policy-partial",
+  "as_of_jst": "2026-11-22T04:59:43+09:00",
+  "status": "partial",
+  "source_coverage": [
+    {
+      "source": "米財務省報道発表",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_jst": "2026-11-22 03:43–04:59 JST（前回報告後の差分確認を試行。各一覧の取得時点と網羅性は未検証）",
+      "status": "一覧取得、対象時間帯の全個別本文は未照合"
+    },
+    {
+      "source": "TreasuryDirect入札結果",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_jst": "2026-11-22 03:43–04:59 JST（前回報告後の差分確認を試行。各一覧の取得時点と網羅性は未検証）",
+      "status": "一覧取得、個別入札結果・表の網羅確認未了"
+    },
+    {
+      "source": "TreasuryDirect買戻し",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_jst": "2026-11-22 03:43–04:59 JST（前回報告後の差分確認を試行。各一覧の取得時点と網羅性は未検証）",
+      "status": "一覧取得、個別発表と実際の買戻し結果の照合未了"
+    },
+    {
+      "source": "FRB FOMC",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_jst": "2026-11-22 03:43–04:59 JST（前回報告後の差分確認を試行。各一覧の取得時点と網羅性は未検証）",
+      "status": "会合一覧取得、対象時間帯の個別本文未照合"
+    },
+    {
+      "source": "NY連銀国債オペ",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_jst": "2026-11-22 03:43–04:59 JST（前回報告後の差分確認を試行。各一覧の取得時点と網羅性は未検証）",
+      "status": "案内取得、個別オペと約定結果未取得"
+    },
+    {
+      "source": "ホワイトハウス大統領措置",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_jst": "2026-11-22 03:43–04:59 JST（前回報告後の差分確認を試行。各一覧の取得時点と網羅性は未検証）",
+      "status": "一覧取得、対象期間の全本文未確認"
+    },
+    {
+      "source": "OFAC制裁",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_jst": "2026-11-22 03:43–04:59 JST（前回報告後の差分確認を試行。各一覧の取得時点と網羅性は未検証）",
+      "status": "一覧と11月20日付個別ページ取得、リンクFAQの独立記録未確認"
+    },
+    {
+      "source": "EIA石油週報",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_jst": "2026-11-22 03:43–04:59 JST（前回報告後の差分確認を試行。各一覧の取得時点と網羅性は未検証）",
+      "status": "一覧と輸出入表を取得、週報PDFの全ページ未読"
+    },
+    {
+      "source": "FEC選挙",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_jst": "2026-11-22 03:43–04:59 JST（前回報告後の差分確認を試行。各一覧の取得時点と網羅性は未検証）",
+      "status": "案内取得、州別認証の確認未了"
+    },
+    {
+      "source": "CFIUS",
+      "url": "https://www.cfius.gov/",
+      "period_jst": "2026-11-22 03:43–04:59 JST（前回報告後の差分確認を試行。各一覧の取得時点と網羅性は未検証）",
+      "status": "案内取得、全個別措置未確認"
+    }
+  ],
+  "existing_record_refs": [
+    "ofac-20261120-iran-cuba-action-public-partial"
+  ],
+  "facts": [
+    {
+      "description": "OFACは2026年11月20日付でイラン関連指定とキューバ関連FAQ 1277・1278の発出を掲載。公表時刻不明。発表は既存記録と照合が必要。",
+      "url": "https://ofac.treasury.gov/recent-actions/20261120"
+    },
+    {
+      "description": "EIAの週次表は11月13日終了週の米原油輸入を日量557.6万バレルと表示。公表時刻不明。対象週の値であって当日の取引量ではない。",
+      "url": "https://www.eia.gov/dnav/pet/pet_move_wkly_dc_NUS-Z00_mbblpd_w.htm"
+    }
+  ],
+  "conditional_inference": "制裁が実際に石油供給や輸送を制約するなら供給減から物価圧力を通じて金利に影響し得る。代替供給や需要減は反証条件。具体的な供給影響は未検証。通貨ペア別判断は相手通貨側資料不足で保留。",
+  "history": "史料付きケースの今回の具体的な照合・当時のインフレ、金利、流動性、エネルギー構造の確認は未了。事後レビュー未了。",
+  "missing_parts": [
+    "10情報源の対象期間内の個別本文・表の網羅的確認",
+    "入札・買戻し・NY連銀オペ個別結果",
+    "EIA週報PDF全ページと表・図の翻訳",
+    "OFAC FAQの独立記録・既存レコードのURL/時刻/ハッシュ照合",
+    "州別選挙認証",
+    "歴史事例比較と期限到来レビュー",
+    "対象期間内の新規文書のADR-016/017形式保存"
+  ],
+  "retry_required": true,
+  "prior_db_sync": "過去のUS knowledge database sync run 44855507045は失敗。今回のDB反映状況は未確認。",
+  "github_save": "本分析の保存結果はGitHubコミットで確認する。",
+  "pc_notification": "実機未確認",
+  "review_after": "2026-11-23T04:59:43+09:00"
+}
