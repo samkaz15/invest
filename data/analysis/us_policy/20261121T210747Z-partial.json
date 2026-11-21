@@ -1,0 +1,117 @@
+{
+  "id": "20261121T210747Z-partial",
+  "as_of": "2026-11-22T06:07:47+09:00",
+  "document_ids": [
+    "ofac-20261120-iran-cuba-action-public-partial"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "status": "入口取得",
+      "detail": "個別資料と24時間重複期間の完全照合は未完",
+      "requested_period_jst": "2026-11-21T04:59:43+09:00/2026-11-22T06:07:47+09:00"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "status": "入口取得",
+      "detail": "個別資料と24時間重複期間の完全照合は未完",
+      "requested_period_jst": "2026-11-21T04:59:43+09:00/2026-11-22T06:07:47+09:00"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "status": "入口取得",
+      "detail": "個別資料と24時間重複期間の完全照合は未完",
+      "requested_period_jst": "2026-11-21T04:59:43+09:00/2026-11-22T06:07:47+09:00"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "status": "入口取得",
+      "detail": "個別資料と24時間重複期間の完全照合は未完",
+      "requested_period_jst": "2026-11-21T04:59:43+09:00/2026-11-22T06:07:47+09:00"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "status": "入口取得",
+      "detail": "個別資料と24時間重複期間の完全照合は未完",
+      "requested_period_jst": "2026-11-21T04:59:43+09:00/2026-11-22T06:07:47+09:00"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "status": "入口取得",
+      "detail": "個別資料と24時間重複期間の完全照合は未完",
+      "requested_period_jst": "2026-11-21T04:59:43+09:00/2026-11-22T06:07:47+09:00"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "status": "入口取得",
+      "detail": "個別資料と24時間重複期間の完全照合は未完",
+      "requested_period_jst": "2026-11-21T04:59:43+09:00/2026-11-22T06:07:47+09:00"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "status": "入口取得",
+      "detail": "個別資料と24時間重複期間の完全照合は未完",
+      "requested_period_jst": "2026-11-21T04:59:43+09:00/2026-11-22T06:07:47+09:00"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "status": "入口取得",
+      "detail": "個別資料と24時間重複期間の完全照合は未完",
+      "requested_period_jst": "2026-11-21T04:59:43+09:00/2026-11-22T06:07:47+09:00"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "status": "入口取得",
+      "detail": "個別資料と24時間重複期間の完全照合は未完",
+      "requested_period_jst": "2026-11-21T04:59:43+09:00/2026-11-22T06:07:47+09:00"
+    }
+  ],
+  "missing_sources": [
+    "指定10情報源の個別資料・表と24時間重複期間の全件照合",
+    "財務省買戻しの別URLは取得失敗、個別結果未取得",
+    "米国債入札及びNY連銀個別実績",
+    "EIA PDF全ページ・脚注",
+    "OFAC FAQ独立本文",
+    "選挙州認証",
+    "既存メール経路の全URL・公表時刻・内容ハッシュ照合",
+    "歴史事例の当初条件と過去のreview_after到来分"
+  ],
+  "facts": [
+    {
+      "document_id": "ofac-20261120-iran-cuba-action-public-partial",
+      "source_url": "https://ofac.treasury.gov/recent-actions/20261120",
+      "published_at": null,
+      "published_date": "2026-11-20 US",
+      "retrieved_at": "2026-11-22T06:07:47+09:00",
+      "summary_ja": "OFACはイラン関連4人の指定とキューバ関連FAQ二件の発出を掲載。既存記録と同一文書。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "制裁で輸送・決済が実際に制約され供給が減れば、エネルギー価格、物価・景気、金融政策、資金需要を通じて波及し得る。実供給への影響は未確認。"
+  ],
+  "historical_comparisons": "1973年の供給制約との共通点は供給経路の仮説。今回は供給減の実測がなく、当時のインフレ・金利・流動性・能源構造の照合未完で相違の定量判断は保留。3事例は初期要約。",
+  "scenarios": {
+    "days": "輸送・決済の制約の実現を確認",
+    "weeks": "出荷・在庫と代替供給を確認",
+    "months": "持続時は物価・成長と金融政策の反応を確認。両通貨の資料不足でUSD/JPY等の方向判断保留。"
+  },
+  "invalidations": [
+    "制約が発生しない",
+    "代替供給増や需要減で価格影響が相殺される"
+  ],
+  "review_after": "2026-11-23T06:07:47+09:00",
+  "retry_required": true,
+  "db_sync": "以前の https://github.com/samkaz15/invest/actions/runs/44855507045 は失敗。現在のDB反映未確認",
+  "pc_notification": "実機未確認"
+}
