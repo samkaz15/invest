@@ -1,0 +1,29 @@
+{
+  "id": "ofac-20261120-cuba-faq-1278",
+  "source_url": "https://ofac.treasury.gov/faqs/1278",
+  "title_en": "May authorized activity involving the Cuban marine sector continue?",
+  "title_ja": "キューバの海運分野に関するFAQ 1278",
+  "original_text": "I am conducting authorized activities that require interaction with the Cuban marine sector, such as payments at Cuban ports for authorized trade. Following the determination of November 5, 2026 pursuant to E.O. 14404 which identified the marine sector of the Cuban economy, can I continue this activity?\n\nYes. U.S. persons conducting activities authorized pursuant to the Cuba Sanctions Regulations or the Cuban Assets Control Regulations may continue to conduct such activity, including making payments to and engaging with Cuban ports, to include the Mariel Port.\nGenerally, the U.S. government does not target non-U.S. persons for engaging in transactions that are authorized for U.S. persons and persons subject to U.S. jurisdiction pursuant to the Cuba Sanctions Regulations and the Cuban Assets Control Regulations, respectively. Consistent with FAQ 1264, the U.S. government does not intend to target non-U.S. persons under E.O. 14404 for operating in the marine sector, including interacting with Mariel Port, where those non-U.S. persons conduct transactions related to the provision of agricultural commodities to Cuba, including food; medicine; medical devices; replacement parts and components for medical devices; and software updates for medical devices.",
+  "translation_ja": "質問：許可された貿易に関してキューバの港で支払うなど、キューバの海運分野との関係を伴う許可済みの活動を行っています。大統領令14404に基づきキューバ経済の海運分野を指定した2026年11月5日の決定後も、この活動を継続できますか。\n\n回答：はい。キューバ制裁規則またはキューバ資産管理規則に基づき許可された活動を行う米国人は、マリエル港を含むキューバの港への支払いや港との取引を含め、当該活動を続けることができます。\n一般に米国政府は、それぞれキューバ制裁規則やキューバ資産管理規則により米国人または米国の管轄に服する者に許可された取引を行うことを理由として、米国人以外を制裁対象にはしません。FAQ 1264と整合的に、米国政府は、米国人以外の者が食料を含む農産物、医薬品、医療機器、医療機器の交換部品・構成部品および医療機器のソフトウェア更新をキューバに提供することに関する取引を行う場合、マリエル港との取引を含む海運分野での事業を理由に、大統領令14404に基づく制裁対象とする意図はありません。",
+  "published_at": null,
+  "published_date_source": "2026-11-20 米国日付、公表時刻不明",
+  "received_at": "2026-11-22T06:40:15+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "sanctions",
+    "other_us"
+  ],
+  "facts_ja": [
+    "OFACは規則により許可された活動と港への支払いを継続できると説明。"
+  ],
+  "inference_ja": [
+    "交易や物流への波及は実際の取引と決済の状況次第であり、価格への影響は未確認。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [
+    "公表時刻不明。関連する大統領令・一般許可等の全文は別文書で未取得。既存レコードの網羅的内容ハッシュ照合は未完。"
+  ],
+  "notification_eligible": false,
+  "supersedes": null
+}
