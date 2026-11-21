@@ -1,0 +1,29 @@
+{
+  "id": "ofac-20261120-cuba-faq-1277",
+  "source_url": "https://ofac.treasury.gov/faqs/1277",
+  "title_en": "Does the November 5 sector determination mean all persons operating in the identified sectors are sanctioned?",
+  "title_ja": "キューバの指定分野に関するFAQ 1277",
+  "original_text": "Does the determination of November 5, 2026 pursuant to Executive Order (E.O.) 14404 with regards to the manufacturing, technology, electronics, and marine sectors of the Cuban economy mean that all persons that operate or have operated in these sectors of the Cuban economy are sanctioned by OFAC?\n\nNo. On November 5, 2026, the Director of OFAC, in consultation with the State Department, issued a determination pursuant to E.O. 14404 that authorizes the imposition of economic sanctions on any foreign person determined to operate or have operated in the manufacturing, technology, electronics, and marine sectors of the Cuban economy.\nA sector determination pursuant to E.O. 14404 exposes persons that operate or have operated in an identified sector to the risk of being sanctioned; however, a sector determination does not automatically impose sanctions on all persons who operate or have operated in the sector. Only persons determined pursuant to E.O. 14404 to operate or have operated in the above-identified sector are subject to sanctions under E.O. 14404. As a result, non-U.S. persons operating in or having operated in these sectors of the Cuban economy may face sanctions risk, absent an exemption or authorization, such as a specific or general license, including Cuba General License 1.\nUnless exempt or otherwise authorized under the Cuban Assets Control Regulations, U.S. persons continue to be prohibited from transactions with all Cuban nationals irrespective of whether those Cuban nationals operate or have operated in the identified sectors.",
+  "translation_ja": "質問：大統領令14404に基づく2026年11月5日のキューバ経済の製造、技術、電子、海運分野についての決定は、これらの分野で事業を行っている、または過去に行った全ての者がOFACの制裁を受けることを意味しますか。\n\n回答：いいえ。2026年11月5日、OFAC局長は国務省との協議の上、大統領令14404に基づき、キューバ経済の製造、技術、電子、海運分野で事業を行っている、または過去に行ったと認定された外国人に経済制裁を課すことを認める決定を出しました。\n大統領令14404に基づく分野の決定により、その分野で事業を行う、または行った者には制裁リスクが生じますが、その分野で事業を行う、または行った全ての者に自動的に制裁が課されるわけではありません。上記分野で事業を行う、または行ったと同大統領令に基づいて認定された者のみが、同令に基づく制裁の対象です。このため、キューバ一般許可1を含む個別許可・一般許可などの適用除外や許可がなければ、その分野で事業を行う、または行った米国人以外の者は制裁リスクに直面する可能性があります。\nキューバ資産管理規則に基づく適用除外や別途の許可がない限り、米国人は、当該キューバ国民が指定分野で事業を行っているか過去に行ったかにかかわらず、全てのキューバ国民との取引を引き続き禁じられます。",
+  "published_at": null,
+  "published_date_source": "2026-11-20 米国日付、公表時刻不明",
+  "received_at": "2026-11-22T06:40:15+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "sanctions",
+    "other_us"
+  ],
+  "facts_ja": [
+    "分野指定だけでは当該分野の全事業者が自動的に制裁されないとOFACは説明。"
+  ],
+  "inference_ja": [
+    "交易や物流への波及は実際の取引と決済の状況次第であり、価格への影響は未確認。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [
+    "公表時刻不明。関連する大統領令・一般許可等の全文は別文書で未取得。既存レコードの網羅的内容ハッシュ照合は未完。"
+  ],
+  "notification_eligible": false,
+  "supersedes": null
+}
