@@ -1,0 +1,107 @@
+{
+  "id": "20261121T214015Z-partial",
+  "as_of": "2026-11-22T06:40:15+09:00",
+  "document_ids": [
+    "ofac-20261120-cuba-faq-1277",
+    "ofac-20261120-cuba-faq-1278"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_requested_jst": "2026-11-21T06:07:47+09:00/2026-11-22T06:40:15+09:00",
+      "status": "入口取得、個別本文・表の全件照合未完"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_requested_jst": "2026-11-21T06:07:47+09:00/2026-11-22T06:40:15+09:00",
+      "status": "入口取得、個別本文・表の全件照合未完"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_requested_jst": "2026-11-21T06:07:47+09:00/2026-11-22T06:40:15+09:00",
+      "status": "入口取得、個別本文・表の全件照合未完"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_requested_jst": "2026-11-21T06:07:47+09:00/2026-11-22T06:40:15+09:00",
+      "status": "入口取得、個別本文・表の全件照合未完"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_requested_jst": "2026-11-21T06:07:47+09:00/2026-11-22T06:40:15+09:00",
+      "status": "入口取得、個別本文・表の全件照合未完"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_requested_jst": "2026-11-21T06:07:47+09:00/2026-11-22T06:40:15+09:00",
+      "status": "入口取得、個別本文・表の全件照合未完"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_requested_jst": "2026-11-21T06:07:47+09:00/2026-11-22T06:40:15+09:00",
+      "status": "入口取得、個別本文・表の全件照合未完"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_requested_jst": "2026-11-21T06:07:47+09:00/2026-11-22T06:40:15+09:00",
+      "status": "入口取得、個別本文・表の全件照合未完"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_requested_jst": "2026-11-21T06:07:47+09:00/2026-11-22T06:40:15+09:00",
+      "status": "入口取得、個別本文・表の全件照合未完"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_requested_jst": "2026-11-21T06:07:47+09:00/2026-11-22T06:40:15+09:00",
+      "status": "入口取得、個別本文・表の全件照合未完"
+    }
+  ],
+  "missing_sources": [
+    "Treasury入札・買戻し、NY連銀オペ個別結果と表",
+    "EIA PDF全ページ、図、脚注",
+    "全既存メール記録と原文ハッシュ照合",
+    "FAQ関連法令・許可の全文",
+    "州選挙認証",
+    "歴史ケース当初条件・review_after到来分"
+  ],
+  "facts": [
+    {
+      "id": "ofac-20261120-cuba-faq-1277",
+      "detail": "OFACは分野指定だけでは全事業者に制裁が自動適用されないと説明。公表米国日付11月20日、時刻不明。"
+    },
+    {
+      "id": "ofac-20261120-cuba-faq-1278",
+      "detail": "OFACは許可された活動に伴う港湾取引の継続と、人道物資に関する米国人以外の取引について方針を説明。公表時刻不明。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "許可された取引の継続は物流制約を和らげる可能性があるが、実際の取引・決済や供給は未確認。"
+  ],
+  "historical_comparisons": "制裁に伴う供給制約という点で1973年事例と経路を比較できるが、当時と現在のインフレ、金利、流動性、エネルギー輸出入構造は未比較。3事例は初期要約で予測精度未検証。",
+  "scenarios": {
+    "day": "規則や適用範囲の変化と実際の取引を確認",
+    "week": "港湾稼働や物流への波及を確認",
+    "month": "影響が持続する場合に物価・金融政策への経路を確認",
+    "currency": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは双方の資料不足で判断保留"
+  },
+  "invalidations": [
+    "許可済み取引が通常通り継続し供給制約が発生しない",
+    "他の供給増または需要減が影響を相殺"
+  ],
+  "review_after": "2026-11-23T06:40:15+09:00",
+  "retry_required": true,
+  "db_sync": "以前のUS knowledge database sync run 44855507045失敗。今回のDB反映未確認。",
+  "pc_notification": "実機未確認"
+}
