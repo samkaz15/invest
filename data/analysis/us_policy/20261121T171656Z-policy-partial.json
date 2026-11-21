@@ -1,0 +1,92 @@
+{
+  "as_of": "2026-11-22T02:16:56+09:00",
+  "document_ids": [
+    "ofac-20261120-iran-cuba-action-public-partial"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "period": "01:36〜02:16 JST差分対象、24時間重複期間全件確認未完",
+      "status": "入口取得、個別資料と表の網羅未完"
+    },
+    {
+      "id": "treasury_auctions",
+      "period": "01:36〜02:16 JST差分対象、24時間重複期間全件確認未完",
+      "status": "入口取得、個別資料と表の網羅未完"
+    },
+    {
+      "id": "treasury_buybacks",
+      "period": "01:36〜02:16 JST差分対象、24時間重複期間全件確認未完",
+      "status": "入口取得、個別資料と表の網羅未完"
+    },
+    {
+      "id": "fed_fomc",
+      "period": "01:36〜02:16 JST差分対象、24時間重複期間全件確認未完",
+      "status": "入口取得、個別資料と表の網羅未完"
+    },
+    {
+      "id": "nyfed_operations",
+      "period": "01:36〜02:16 JST差分対象、24時間重複期間全件確認未完",
+      "status": "入口取得、個別資料と表の網羅未完"
+    },
+    {
+      "id": "white_house",
+      "period": "01:36〜02:16 JST差分対象、24時間重複期間全件確認未完",
+      "status": "入口取得、個別資料と表の網羅未完"
+    },
+    {
+      "id": "ofac",
+      "period": "01:36〜02:16 JST差分対象、24時間重複期間全件確認未完",
+      "status": "入口と11月20日既存資料を再取得"
+    },
+    {
+      "id": "eia_petroleum",
+      "period": "01:36〜02:16 JST差分対象、24時間重複期間全件確認未完",
+      "status": "入口と輸出入表を再取得、PDF未取得"
+    },
+    {
+      "id": "fec_results",
+      "period": "01:36〜02:16 JST差分対象、24時間重複期間全件確認未完",
+      "status": "入口取得、個別資料と表の網羅未完"
+    },
+    {
+      "id": "cfius",
+      "period": "01:36〜02:16 JST差分対象、24時間重複期間全件確認未完",
+      "status": "入口取得、個別資料と表の網羅未完"
+    }
+  ],
+  "facts": [
+    "OFACの11月20日付資料は既存の部分記録と同一URL。",
+    "EIA輸出入表は11月13日終了週、11月18日公表。"
+  ],
+  "reported": [],
+  "missing_sources": [
+    "国債入札・買戻し・NY連銀個別結果",
+    "EIA PDF全頁",
+    "OFAC FAQの独立文書保存と既存照合",
+    "州認証",
+    "24時間重複期間とメール経路のハッシュ照合",
+    "歴史の当初条件・史料",
+    "期限到来分析レビュー"
+  ],
+  "causal_channels": [
+    "原油の実供給減少は物価・景気を経て金利・資金需給に波及し得る。"
+  ],
+  "historical_comparisons": [
+    "史料・当初条件の照合未完。初期3例の予測精度は未検証。"
+  ],
+  "scenarios": {
+    "days": "物流",
+    "weeks": "在庫・代替供給",
+    "months": "物価・景気・政策",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは双方資料不足で判断保留"
+  },
+  "invalidations": [
+    "実供給が減らない",
+    "代替供給・需要減で相殺",
+    "実質金利差・織り込みの変化"
+  ],
+  "review_after": "2026-11-23T02:16:56+09:00",
+  "database_sync": "前回確認時失敗、今回未確認",
+  "pc_notification": "実機未確認"
+}
