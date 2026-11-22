@@ -1,0 +1,102 @@
+{
+  "id": "20261122T024443Z",
+  "created_at_utc": "2026-11-22T02:44:43Z",
+  "status": "partial",
+  "window_note": "前回記録からの差分に24時間重複を付けた暫定対象。情報源ごとの最終完全確認点は不明。",
+  "source_coverage": [
+    {
+      "source": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_window_jst": "2026-11-21T11:36:00+09:00/2026-11-22T11:44:43+09:00",
+      "coverage": "入口ページを確認。対象期間の個別文書の網羅性・本文と表の確認は未完了。新着なしとは判断しない",
+      "retry": true
+    },
+    {
+      "source": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_window_jst": "2026-11-21T11:36:00+09:00/2026-11-22T11:44:43+09:00",
+      "coverage": "入口ページを確認。対象期間の個別文書の網羅性・本文と表の確認は未完了。新着なしとは判断しない",
+      "retry": true
+    },
+    {
+      "source": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_window_jst": "2026-11-21T11:36:00+09:00/2026-11-22T11:44:43+09:00",
+      "coverage": "入口ページを確認。対象期間の個別文書の網羅性・本文と表の確認は未完了。新着なしとは判断しない",
+      "retry": true
+    },
+    {
+      "source": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_window_jst": "2026-11-21T11:36:00+09:00/2026-11-22T11:44:43+09:00",
+      "coverage": "入口ページを確認。対象期間の個別文書の網羅性・本文と表の確認は未完了。新着なしとは判断しない",
+      "retry": true
+    },
+    {
+      "source": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_window_jst": "2026-11-21T11:36:00+09:00/2026-11-22T11:44:43+09:00",
+      "coverage": "入口ページを確認。対象期間の個別文書の網羅性・本文と表の確認は未完了。新着なしとは判断しない",
+      "retry": true
+    },
+    {
+      "source": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_window_jst": "2026-11-21T11:36:00+09:00/2026-11-22T11:44:43+09:00",
+      "coverage": "入口ページを確認。対象期間の個別文書の網羅性・本文と表の確認は未完了。新着なしとは判断しない",
+      "retry": true
+    },
+    {
+      "source": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_window_jst": "2026-11-21T11:36:00+09:00/2026-11-22T11:44:43+09:00",
+      "coverage": "入口ページを確認。対象期間の個別文書の網羅性・本文と表の確認は未完了。新着なしとは判断しない",
+      "retry": true
+    },
+    {
+      "source": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_window_jst": "2026-11-21T11:36:00+09:00/2026-11-22T11:44:43+09:00",
+      "coverage": "入口ページを確認。対象期間の個別文書の網羅性・本文と表の確認は未完了。新着なしとは判断しない",
+      "retry": true
+    },
+    {
+      "source": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_window_jst": "2026-11-21T11:36:00+09:00/2026-11-22T11:44:43+09:00",
+      "coverage": "入口ページを確認。対象期間の個別文書の網羅性・本文と表の確認は未完了。新着なしとは判断しない",
+      "retry": true
+    },
+    {
+      "source": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_window_jst": "2026-11-21T11:36:00+09:00/2026-11-22T11:44:43+09:00",
+      "coverage": "入口ページを確認。対象期間の個別文書の網羅性・本文と表の確認は未完了。新着なしとは判断しない",
+      "retry": true
+    }
+  ],
+  "observations": [
+    {
+      "kind": "既存資料の表を再確認",
+      "url": "https://www.eia.gov/dnav/pet/pet_stoc_wstk_dcu_nus_w.htm",
+      "publication_time": "不明",
+      "reference_week_ending": "2026-11-13",
+      "retrieved_at_jst": "2026-11-22T11:44:43+09:00",
+      "facts_ja": "米国商業用原油在庫は11月13日週417,797千バレル、11月6日週414,417千バレル。既存記録 eia-20261113-commercial-crude-table0 と照合済み。新規文書として保存しない。",
+      "missing": "当該表以外の原油・製品の表、関連PDF・脚注、在庫以外の要因、同時期市場価格は未確認。"
+    }
+  ],
+  "analysis_ja": "在庫増加は、それ単独では供給超過や今後の原油価格下落を証明しない。供給増または需要減が持続すればエネルギー価格やインフレを抑える方向があり得る一方、輸入・輸出や精製稼働、季節要因で逆転し得る。金とドル円は実質金利・相手通貨の金融政策が未確認のため判断保留。日・週・月とも、持続性と日米双方の政策・実質金利資料の取得が条件。",
+  "history": "1973–74石油ショックと2020年3月のFRB声明を参照。供給制約と流動性対策という論点はあるが、現在の供給障害や買入れの存在は本調査で確認していない。初期物価・実質金利・流動性・エネルギー構造の当時公表値と現在値が未照合のため、類似性や市場反応は判断保留。3件は未検証の初期要約。",
+  "review": "review_after到来案件の全件確認・事後レビュー未実施。再試行。",
+  "dedup": "EIA表は既存IDと照合。その他は個別資料の取得・既存メール照合が未完。",
+  "database": "過去のUS knowledge database sync失敗 run 44855507045。現在のDB反映は未確認。GitHub保存と区別。",
+  "retry": [
+    "10情報源の各個別本文・表と期間全体",
+    "Treasury buybacks 個別発表の再取得",
+    "PDF・脚注と翻訳欠損",
+    "メール経路を含む重複照合",
+    "review_after到来分",
+    "PostgreSQL同期"
+  ]
+}
