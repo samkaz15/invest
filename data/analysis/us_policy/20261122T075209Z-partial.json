@@ -1,0 +1,113 @@
+{
+  "id": "20261122T075209Z-partial",
+  "as_of": "2026-11-22T16:52:09+09:00",
+  "document_ids": [
+    "treasury-20261120-iran-oil-outcast-mail-partial",
+    "eia-20261113-commercial-crude-table0"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "window": "2026-11-21T15:45:27+09:00/2026-11-22T16:52:09+09:00",
+      "status": "入口確認、個別文書と表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "window": "2026-11-21T15:45:27+09:00/2026-11-22T16:52:09+09:00",
+      "status": "入口確認、個別文書と表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "window": "2026-11-21T15:45:27+09:00/2026-11-22T16:52:09+09:00",
+      "status": "入口確認、個別文書と表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "window": "2026-11-21T15:45:27+09:00/2026-11-22T16:52:09+09:00",
+      "status": "入口確認、個別文書と表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "window": "2026-11-21T15:45:27+09:00/2026-11-22T16:52:09+09:00",
+      "status": "入口確認、個別文書と表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "window": "2026-11-21T15:45:27+09:00/2026-11-22T16:52:09+09:00",
+      "status": "入口確認、個別文書と表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "window": "2026-11-21T15:45:27+09:00/2026-11-22T16:52:09+09:00",
+      "status": "入口確認、個別文書と表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "window": "2026-11-21T15:45:27+09:00/2026-11-22T16:52:09+09:00",
+      "status": "入口確認、個別文書と表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "window": "2026-11-21T15:45:27+09:00/2026-11-22T16:52:09+09:00",
+      "status": "入口確認、個別文書と表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "window": "2026-11-21T15:45:27+09:00/2026-11-22T16:52:09+09:00",
+      "status": "入口確認、個別文書と表の網羅確認未完",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "個別入札、買戻し、FRBオペの表",
+    "州選挙認証",
+    "戦況の独立検証",
+    "原文全文訳とPDF",
+    "既存メール全文ハッシュ照合",
+    "期限到来分の事後レビュー"
+  ],
+  "facts": [
+    {
+      "source_url": "https://www.eia.gov/dnav/pet/pet_stoc_wstk_dcu_nus_w.htm",
+      "published_at": null,
+      "retrieved_at": "2026-11-22T16:52:09+09:00",
+      "fact": "11月13日週の商業用原油在庫417797千バレル、11月6日週414417千バレル。週は公表日ではない。既存記録と照合。",
+      "translation_ja": "Commercial Crude Oil (Excl. Lease Stock)：商業用原油（リース在庫除く）。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": "供給減が持続すれば原油価格・物価・景気・実質金利と資金需給に影響し得るが、輸送制約の実際の影響は未検証。",
+  "historical_comparisons": "1973–74年供給ショックは比較候補。初期インフレ、実質金利、流動性、エネルギー構造の当時公表値と現在値は未照合。後年解説を当時の情報にしない。3件は未検証の初期要約。",
+  "scenarios": {
+    "days": "輸送・決済の実態確認",
+    "weeks": "輸出・代替供給確認",
+    "months": "物価・景気・政策反応確認",
+    "pairs": "USD/JPY EUR/USD USD/CHF USD/CAD AUD/USD は両側の資料不足で判断保留"
+  },
+  "invalidations": [
+    "輸出減が確認されない",
+    "代替供給が減少を埋める"
+  ],
+  "review_after": null,
+  "review_status": "到来分の網羅照合未完",
+  "database": "過去の同期失敗あり、現在のPostgreSQL反映は未確認"
+}
