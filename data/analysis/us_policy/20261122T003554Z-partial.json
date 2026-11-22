@@ -1,0 +1,106 @@
+{
+  "id": "20261122T003554Z-partial",
+  "as_of": "2026-11-22T09:35:54+09:00",
+  "document_ids": [
+    "eia-20261113-weekly-petroleum-summary"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_requested_jst": "2026-11-21T08:10:20+09:00/2026-11-22T09:35:54+09:00",
+      "status": "入口取得、個別資料の網羅照合未完"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_requested_jst": "2026-11-21T08:10:20+09:00/2026-11-22T09:35:54+09:00",
+      "status": "入口取得、個別資料の網羅照合未完"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_requested_jst": "2026-11-21T08:10:20+09:00/2026-11-22T09:35:54+09:00",
+      "status": "入口取得、個別資料の網羅照合未完"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_requested_jst": "2026-11-21T08:10:20+09:00/2026-11-22T09:35:54+09:00",
+      "status": "入口取得、個別資料の網羅照合未完"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_requested_jst": "2026-11-21T08:10:20+09:00/2026-11-22T09:35:54+09:00",
+      "status": "入口取得、個別資料の網羅照合未完"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_requested_jst": "2026-11-21T08:10:20+09:00/2026-11-22T09:35:54+09:00",
+      "status": "入口取得、個別資料の網羅照合未完"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_requested_jst": "2026-11-21T08:10:20+09:00/2026-11-22T09:35:54+09:00",
+      "status": "入口取得、個別資料の網羅照合未完"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_requested_jst": "2026-11-21T08:10:20+09:00/2026-11-22T09:35:54+09:00",
+      "status": "入口取得、個別資料の網羅照合未完"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_requested_jst": "2026-11-21T08:10:20+09:00/2026-11-22T09:35:54+09:00",
+      "status": "入口取得、個別資料の網羅照合未完"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_requested_jst": "2026-11-21T08:10:20+09:00/2026-11-22T09:35:54+09:00",
+      "status": "入口取得、個別資料の網羅照合未完"
+    }
+  ],
+  "facts": [
+    {
+      "id": "eia-20261113-weekly-petroleum-summary",
+      "url": "https://ir.eia.gov/wpsr/summary.txt",
+      "published_at": null,
+      "retrieved_at": "2026-11-22T09:35:54+09:00",
+      "summary_ja": "11月13日終了週の米商業原油在庫は前週比340万バレル増の4億1780万バレル。対象週は公表日時ではない。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "在庫増が供給超過を示し他条件が一定であれば原油価格の上昇圧力を弱め、エネルギー物価を通じて物価・金利に影響し得る。供給障害や需要回復は反証条件。"
+  ],
+  "historical_comparisons": "史料付きケースの当初インフレ、金利、流動性、エネルギー構造との照合は未完。3件は初期要約で予測精度未検証。",
+  "scenarios": {
+    "day": "在庫・供給障害の有無を確認",
+    "week": "追加の生産、輸出入、製品需給を確認",
+    "month": "価格が持続した場合の物価・金利への波及を確認",
+    "fx": "USD/JPY等は相手国双方の条件不足で方向判断保留"
+  },
+  "invalidations": [
+    "在庫増が一時要因",
+    "供給障害や需要増が影響を相殺"
+  ],
+  "missing_sources": [
+    "全情報源の最新保存公表時刻と重複期間の個別資料・表の網羅照合",
+    "国債入札・財務省買戻し・NY連銀の個別結果",
+    "EIA週報全体の全PDF・表・脚注、PDF原本の安全・権利確認",
+    "EIA表PDF table0は1ページ表示を確認したが原本・ページ別原文訳の保存未完",
+    "州認証",
+    "全文書URL・内容ハッシュ照合",
+    "歴史事例と期限到来レビュー"
+  ],
+  "review_after": "2026-11-23T09:35:54+09:00",
+  "retry_required": true,
+  "db_sync": "以前のrun 44855507045失敗。今回のPostgreSQL反映未確認",
+  "pc_notification": "実機未確認"
+}
