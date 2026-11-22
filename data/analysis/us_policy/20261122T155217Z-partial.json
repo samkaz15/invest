@@ -1,0 +1,160 @@
+{
+  "id": "20261122T155217Z-partial",
+  "as_of": "2026-11-23T00:52:17+09:00",
+  "document_ids": [
+    "treasury-20261120-iran-oil-outcast-mail-partial"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "window_start": "2026-11-21T23:24:58+09:00",
+      "window_end": "2026-11-23T00:52:17+09:00",
+      "checked_at": "2026-11-23T00:52:17+09:00",
+      "status": "partial",
+      "missing": "入口を取得、個別本文・表・PDFの全件照合未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "window_start": "2026-11-21T23:24:58+09:00",
+      "window_end": "2026-11-23T00:52:17+09:00",
+      "checked_at": "2026-11-23T00:52:17+09:00",
+      "status": "partial",
+      "missing": "入口を取得、個別本文・表・PDFの全件照合未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "window_start": "2026-11-21T23:24:58+09:00",
+      "window_end": "2026-11-23T00:52:17+09:00",
+      "checked_at": "2026-11-23T00:52:17+09:00",
+      "status": "partial",
+      "missing": "動的な個別買戻し結果表の行未確認",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "window_start": "2026-11-21T23:24:58+09:00",
+      "window_end": "2026-11-23T00:52:17+09:00",
+      "checked_at": "2026-11-23T00:52:17+09:00",
+      "status": "partial",
+      "missing": "入口を取得、個別本文・表・PDFの全件照合未完",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "window_start": "2026-11-21T23:24:58+09:00",
+      "window_end": "2026-11-23T00:52:17+09:00",
+      "checked_at": "2026-11-23T00:52:17+09:00",
+      "status": "partial",
+      "missing": "入口を取得、個別本文・表・PDFの全件照合未完",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "window_start": "2026-11-21T23:24:58+09:00",
+      "window_end": "2026-11-23T00:52:17+09:00",
+      "checked_at": "2026-11-23T00:52:17+09:00",
+      "status": "partial",
+      "missing": "入口を取得、個別本文・表・PDFの全件照合未完",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "window_start": "2026-11-21T23:24:58+09:00",
+      "window_end": "2026-11-23T00:52:17+09:00",
+      "checked_at": "2026-11-23T00:52:17+09:00",
+      "status": "partial",
+      "missing": "11月20日既存指定ページを再取得、詳細・添付・最新期間の完全照合未完",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "window_start": "2026-11-21T23:24:58+09:00",
+      "window_end": "2026-11-23T00:52:17+09:00",
+      "checked_at": "2026-11-23T00:52:17+09:00",
+      "status": "partial",
+      "missing": "入口を取得、個別本文・表・PDFの全件照合未完",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "window_start": "2026-11-21T23:24:58+09:00",
+      "window_end": "2026-11-23T00:52:17+09:00",
+      "checked_at": "2026-11-23T00:52:17+09:00",
+      "status": "partial",
+      "missing": "入口を取得、個別本文・表・PDFの全件照合未完",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "window_start": "2026-11-21T23:24:58+09:00",
+      "window_end": "2026-11-23T00:52:17+09:00",
+      "checked_at": "2026-11-23T00:52:17+09:00",
+      "status": "partial",
+      "missing": "入口を取得、個別本文・表・PDFの全件照合未完",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    {
+      "source": "https://ofac.treasury.gov/recent-actions/20261120",
+      "published_at": null,
+      "publication_date": "2026-11-20",
+      "retrieved_at": "2026-11-23T00:52:17+09:00",
+      "description": "OFACのイラン指定は既存メール経路と関連。公表時刻不明。政府による戦況・供給の主張は独立検証未実施。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "制裁で輸出が実際に減れば供給・物価・景気を経て実質金利、金、通貨に影響し得る。"
+  ],
+  "historical_comparisons": [
+    {
+      "case": "data/history/us_policy/oil-shock-1973-1974.json",
+      "common": "供給制約の可能性",
+      "difference": "当時の禁輸と減産は事実、現在の供給影響は未検証",
+      "missing": "当時公表されたインフレ、実質金利、流動性、エネルギー構造未取得。後年の解説を当時の情報としない。"
+    }
+  ],
+  "scenarios": {
+    "days": "輸送と在庫を確認",
+    "weeks": "輸出と代替供給・需要を確認",
+    "months": "物価・景気・実質金利への波及を確認",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両側の資料不足のため方向判断保留"
+  },
+  "invalidations": [
+    "輸出・決済継続",
+    "代替供給や需要減が供給減を相殺"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分の探索と時系列による事後レビュー未完",
+  "missing_parts": [
+    "個別本文・表・PDF、既存記録全件との照合と翻訳未完",
+    "PostgreSQL同期結果未確認",
+    "過去のDB同期失敗記録あり"
+  ],
+  "retry_required": true
+}
