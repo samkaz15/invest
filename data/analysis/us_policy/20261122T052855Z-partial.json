@@ -1,0 +1,118 @@
+{
+  "id": "20261122T052855Z-partial",
+  "as_of": "2026-11-22T14:28:55+09:00",
+  "status": "partial",
+  "document_ids": [
+    "treasury-20261120-iran-oil-outcast-mail-partial",
+    "ofac-20261120-iran-cuba-action-public-partial"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "window": "2026-11-21T13:08:57+09:00/2026-11-22T14:28:55+09:00",
+      "status": "入口確認、期間全体の個別資料照合は未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "window": "2026-11-21T13:08:57+09:00/2026-11-22T14:28:55+09:00",
+      "status": "入口確認、期間全体の個別資料照合は未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "window": "2026-11-21T13:08:57+09:00/2026-11-22T14:28:55+09:00",
+      "status": "入口確認、期間全体の個別資料照合は未完",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "window": "2026-11-21T13:08:57+09:00/2026-11-22T14:28:55+09:00",
+      "status": "入口確認、期間全体の個別資料照合は未完",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "window": "2026-11-21T13:08:57+09:00/2026-11-22T14:28:55+09:00",
+      "status": "入口確認、期間全体の個別資料照合は未完",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "window": "2026-11-21T13:08:57+09:00/2026-11-22T14:28:55+09:00",
+      "status": "入口確認、期間全体の個別資料照合は未完",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "window": "2026-11-21T13:08:57+09:00/2026-11-22T14:28:55+09:00",
+      "status": "入口確認、期間全体の個別資料照合は未完",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "window": "2026-11-21T13:08:57+09:00/2026-11-22T14:28:55+09:00",
+      "status": "入口確認、期間全体の個別資料照合は未完",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "window": "2026-11-21T13:08:57+09:00/2026-11-22T14:28:55+09:00",
+      "status": "入口確認、期間全体の個別資料照合は未完",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "window": "2026-11-21T13:08:57+09:00/2026-11-22T14:28:55+09:00",
+      "status": "入口確認、期間全体の個別資料照合は未完",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "対象期間全体の個別入札・買戻し・FRBオペ",
+    "選挙州認証",
+    "戦況・石油輸送の独立検証",
+    "過去分析の期限到来確認",
+    "原文全文の既存ハッシュ照合",
+    "詳細全文訳と連結先の個人情報を除いた資料の補完"
+  ],
+  "facts": [
+    {
+      "url": "https://home.treasury.gov/news/press-releases/sb0697/",
+      "published_at": null,
+      "published_date_source": "2026-11-20 US time; exact time unknown",
+      "retrieved_at": "2026-11-22T14:28:55+09:00",
+      "fact": "財務省は2026年11月20日、イラン石油取引に関連する人物を指定。米政府の海上封鎖・積載状況の記述は主張で独立検証していない。",
+      "original_excerpt": "The designations imposed today are being taken pursuant to Executive Order (E.O.) 13902 ... and E.O. 13224, as amended",
+      "translation_ja": "本日の指定は大統領令13902号および改正された13224号に基づいて実施される。",
+      "scope": "excerpt; US Treasury statement全文訳未完",
+      "dedup": "同文題と冒頭は既存メール partial と重複。全文ハッシュ未照合、既存記録に不足があり補完は後日 supersedes で行う。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": "石油の物流・決済が制約され実供給が減少すれば、価格・インフレ、成長、政策金利・資金需給へ波及し得る。供給代替や制裁の実効性不足は反証条件。",
+  "historical_comparisons": "1973–74事例は供給制約に関する比較候補。現在の実際の供給制約は未検証で当時と現在のインフレ・実質金利・エネルギー構造も未照合。後年の解説を当時の情報に混ぜない。3件は初期要約。",
+  "scenarios": {
+    "days": "輸送・取引決済を検証",
+    "weeks": "実際の輸出・代替供給を検証",
+    "months": "物価・成長と政策反応を確認",
+    "currency": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両側の資料不足につき判断保留"
+  },
+  "invalidations": [
+    "実際の輸出減が確認されない",
+    "代替供給増で世界供給に影響が出ない"
+  ],
+  "review_after": null,
+  "review_status": "期限到来案件の照合未完・再試行",
+  "db_status": "過去の失敗あり、今回の反映未確認"
+}
