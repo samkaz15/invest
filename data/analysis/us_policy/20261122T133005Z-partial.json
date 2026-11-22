@@ -1,0 +1,115 @@
+{
+  "id": "20261122T133005Z-partial",
+  "as_of": "2026-11-22T22:30:05+09:00",
+  "document_ids": [
+    "treasury-20261120-iran-oil-outcast-mail-partial"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "window": "2026-11-21T20:40:12+09:00/2026-11-22T22:30:05+09:00",
+      "status": "入口を確認、個別資料の本文・表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "window": "2026-11-21T20:40:12+09:00/2026-11-22T22:30:05+09:00",
+      "status": "入口を確認、個別資料の本文・表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "window": "2026-11-21T20:40:12+09:00/2026-11-22T22:30:05+09:00",
+      "status": "入口を確認、個別資料の本文・表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "window": "2026-11-21T20:40:12+09:00/2026-11-22T22:30:05+09:00",
+      "status": "入口を確認、個別資料の本文・表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "window": "2026-11-21T20:40:12+09:00/2026-11-22T22:30:05+09:00",
+      "status": "入口を確認、個別資料の本文・表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "window": "2026-11-21T20:40:12+09:00/2026-11-22T22:30:05+09:00",
+      "status": "入口を確認、個別資料の本文・表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "window": "2026-11-21T20:40:12+09:00/2026-11-22T22:30:05+09:00",
+      "status": "入口を確認、個別資料の本文・表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "window": "2026-11-21T20:40:12+09:00/2026-11-22T22:30:05+09:00",
+      "status": "入口を確認、個別資料の本文・表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "window": "2026-11-21T20:40:12+09:00/2026-11-22T22:30:05+09:00",
+      "status": "入口を確認、個別資料の本文・表の網羅確認未完",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "window": "2026-11-21T20:40:12+09:00/2026-11-22T22:30:05+09:00",
+      "status": "入口を確認、個別資料の本文・表の網羅確認未完",
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "個別入札・財務省買戻し・FRB売買の表",
+    "選挙の州認証",
+    "戦況・輸送の独立検証",
+    "PDF・全文訳",
+    "メール全文ハッシュ照合",
+    "期限到来レビュー"
+  ],
+  "facts": [
+    {
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0697/",
+      "published_at": null,
+      "published_date": "2026-11-20 米国日付",
+      "retrieved_at": "2026-11-22T22:30:05+09:00",
+      "fact": "米財務省はイラン石油取引に関連するとする人物を制裁指定したと発表。封鎖・積載については政府の主張で、独立検証していない。",
+      "original_excerpt": "The designations imposed today are being taken pursuant to Executive Order (E.O.) 13902 ... and E.O. 13224, as amended",
+      "translation_ja": "本日の指定は大統領令13902号および改正された13224号に基づいて実施される。",
+      "scope": "抜粋、全文訳未完。既存メール記録と表題・冒頭が一致。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": "実際の世界供給減は原油価格、物価・景気、金利・資金需給に波及し得る。",
+  "historical_comparisons": "1973–74供給ショックは比較候補。今回の供給減と当時・現在の物価、実質金利、流動性、エネルギー構造は未照合。後年解説を当時の情報としない。3事例は未検証の初期要約。",
+  "scenarios": {
+    "days": "輸送の実態を確認",
+    "weeks": "輸出・代替供給を確認",
+    "months": "物価・景気と政策反応を確認",
+    "pairs": "USD/JPY EUR/USD USD/CHF USD/CAD AUD/USDは双方の資料不足で保留"
+  },
+  "invalidations": [
+    "輸出減を確認できない",
+    "代替供給が不足を補う"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分の照合未完",
+  "database": "過去の同期失敗あり、今回のPostgreSQL反映は未確認"
+}
