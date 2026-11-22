@@ -1,0 +1,161 @@
+{
+  "id": "20261122T142413Z-partial",
+  "created_at": "2026-11-22T23:24:58+09:00",
+  "status": "partial",
+  "scope": "前回22:30 JSTからの差分、24時間重複。取得欠損のため新着なしと結論しない",
+  "coverage": [
+    {
+      "source_id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "requested_window_start_jst": "2026-11-21T22:30:05+09:00",
+      "requested_window_end_jst": "2026-11-22T23:24:58+09:00",
+      "checked_at_jst": "2026-11-22T23:24:58+09:00",
+      "status": "partial",
+      "missing_parts": [
+        "一覧・入口のみ、対象期間の個別文書と表の網羅確認未完"
+      ],
+      "retry": true
+    },
+    {
+      "source_id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "requested_window_start_jst": "2026-11-21T22:30:05+09:00",
+      "requested_window_end_jst": "2026-11-22T23:24:58+09:00",
+      "checked_at_jst": "2026-11-22T23:24:58+09:00",
+      "status": "partial",
+      "missing_parts": [
+        "一覧・入口のみ、対象期間の個別文書と表の網羅確認未完"
+      ],
+      "retry": true
+    },
+    {
+      "source_id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "requested_window_start_jst": "2026-11-21T22:30:05+09:00",
+      "requested_window_end_jst": "2026-11-22T23:24:58+09:00",
+      "checked_at_jst": "2026-11-22T23:24:58+09:00",
+      "status": "partial",
+      "missing_parts": [
+        "結果表は動的で行が取得できず、個別実績未確認"
+      ],
+      "retry": true
+    },
+    {
+      "source_id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "requested_window_start_jst": "2026-11-21T22:30:05+09:00",
+      "requested_window_end_jst": "2026-11-22T23:24:58+09:00",
+      "checked_at_jst": "2026-11-22T23:24:58+09:00",
+      "status": "partial",
+      "missing_parts": [
+        "一覧・入口のみ、対象期間の個別文書と表の網羅確認未完"
+      ],
+      "retry": true
+    },
+    {
+      "source_id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "requested_window_start_jst": "2026-11-21T22:30:05+09:00",
+      "requested_window_end_jst": "2026-11-22T23:24:58+09:00",
+      "checked_at_jst": "2026-11-22T23:24:58+09:00",
+      "status": "partial",
+      "missing_parts": [
+        "一覧・入口のみ、対象期間の個別文書と表の網羅確認未完"
+      ],
+      "retry": true
+    },
+    {
+      "source_id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "requested_window_start_jst": "2026-11-21T22:30:05+09:00",
+      "requested_window_end_jst": "2026-11-22T23:24:58+09:00",
+      "checked_at_jst": "2026-11-22T23:24:58+09:00",
+      "status": "partial",
+      "missing_parts": [
+        "一覧・入口のみ、対象期間の個別文書と表の網羅確認未完"
+      ],
+      "retry": true
+    },
+    {
+      "source_id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "requested_window_start_jst": "2026-11-21T22:30:05+09:00",
+      "requested_window_end_jst": "2026-11-22T23:24:58+09:00",
+      "checked_at_jst": "2026-11-22T23:24:58+09:00",
+      "status": "partial",
+      "missing_parts": [
+        "11月20日の指定ページを取得。詳細指定・添付全文の照合は未完"
+      ],
+      "retry": true
+    },
+    {
+      "source_id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "requested_window_start_jst": "2026-11-21T22:30:05+09:00",
+      "requested_window_end_jst": "2026-11-22T23:24:58+09:00",
+      "checked_at_jst": "2026-11-22T23:24:58+09:00",
+      "status": "partial",
+      "missing_parts": [
+        "11月18日公開の表を一部取得。期間内の個別資料・PDF全文の網羅は未確認"
+      ],
+      "retry": true
+    },
+    {
+      "source_id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "requested_window_start_jst": "2026-11-21T22:30:05+09:00",
+      "requested_window_end_jst": "2026-11-22T23:24:58+09:00",
+      "checked_at_jst": "2026-11-22T23:24:58+09:00",
+      "status": "partial",
+      "missing_parts": [
+        "州の速報及び認証の個別資料未確認"
+      ],
+      "retry": true
+    },
+    {
+      "source_id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "requested_window_start_jst": "2026-11-21T22:30:05+09:00",
+      "requested_window_end_jst": "2026-11-22T23:24:58+09:00",
+      "checked_at_jst": "2026-11-22T23:24:58+09:00",
+      "status": "partial",
+      "missing_parts": [
+        "一覧・入口のみ、対象期間の個別文書と表の網羅確認未完"
+      ],
+      "retry": true
+    }
+  ],
+  "facts": [
+    {
+      "description_ja": "OFAC一覧に11月20日付イラン指定が掲載され、財務省メール経路の既存部分記録がある。公表時刻不明、独立検証未実施。",
+      "source_url": "https://ofac.treasury.gov/recent-actions/20261120",
+      "existing_record": "data/knowledge/us/treasury-20261120-iran-oil-outcast-mail-partial.json"
+    },
+    {
+      "description_ja": "EIA表の11月13日終了週の商業原油在庫は4億1779万7000バレル、前週4億1441万7000バレル。対象週と公開日を区別。11月18日版。",
+      "source_url": "https://www.eia.gov/dnav/pet/pet_stoc_wstk_dcu_nus_w.htm"
+    }
+  ],
+  "inference_ja": [
+    "実際に原油輸出の減少が確認されれば供給制約から物価を押し上げ、成長や実質金利を通じて金と通貨に影響し得る。代替供給や需要減少が反証条件。",
+    "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両通貨の最新資料が不足し方向判断保留。"
+  ],
+  "history": {
+    "case": "data/history/us_policy/oil-shock-1973-1974.json",
+    "common": "供給制約の可能性",
+    "differences": "1973年の実際の禁輸・減産と現時点の影響未検証を区別。輸入依存、為替制度、金融政策環境が異なる。",
+    "missing": "当時の公表時点のインフレ・金利・流動性、現在の比較値と原油実需は未取得。後年の解説を当時情報としない。"
+  },
+  "scenarios": {
+    "days": "供給・在庫・輸送の実測を確認。代替供給増なら制約仮説後退。",
+    "weeks": "輸出・保険・決済の制約が持続すれば価格・物価に波及し得る。取引継続や需要減は反証。",
+    "months": "供給制約が続き賃金・期待に波及する場合に政策や実質金利に波及し得る。波及不在なら仮説後退。"
+  },
+  "missing_parts": [
+    "個別資料の全文・表・PDF及び新規文書の完全照合と翻訳未完",
+    "期限到来レビューの事後データ未確認",
+    "PostgreSQL同期の現況未確認。過去の同期失敗記録がある",
+    "GitHub保存とMac通知・DB反映は別。実機通知未確認"
+  ],
+  "retry_required": true
+}
