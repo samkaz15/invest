@@ -1,0 +1,28 @@
+{
+  "id": "treasury-mail-20261123-yield-curve-update",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "title_en": "Daily Treasury Yield Curve Rates Update",
+  "title_ja": "米財務省：国債名目利回り曲線の更新通知",
+  "published_at": null,
+  "received_at": "2026-11-24T05:56:25+09:00",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Yield Curve Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.",
+  "translation_ja": "米国財務省の「国債名目利回り曲線」を購読しています。この情報は最近更新され、現在利用できます。",
+  "facts_ja": [
+    "米国財務省の「国債名目利回り曲線」を購読しています。この情報は最近更新され、現在利用できます。"
+  ],
+  "inference_ja": [
+    "金利の影響は市場環境にも左右され方向は未確定。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [
+    "リンク先表の独立文書保存・全行と脚注確認は未完了",
+    "既存記録との完全な重複照合は未完了",
+    "DB同期とMac通知は未確認"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省は日次の国債名目利回り曲線を更新したと通知、資料の公表時刻など不明です。"
+}
