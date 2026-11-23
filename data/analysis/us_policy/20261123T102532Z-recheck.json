@@ -1,0 +1,139 @@
+{
+  "id": "20261123T102532Z-recheck",
+  "as_of": "2026-11-23T19:25:32+09:00",
+  "document_ids": [
+    "ofac-20261120-iran-cuba-action-public-partial",
+    "treasury-20261120-iran-oil-outcast-mail-partial"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "attempted_window": "2026-11-21T23:24:58+09:00/2026-11-23T19:25:32+09:00",
+      "status": "一覧・既存11月20日の発表にアクセス。対象期間の個別発表の網羅照合未完",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "attempted_window": "2026-11-21T23:24:58+09:00/2026-11-23T19:25:32+09:00",
+      "status": "一覧取得、動的な個別結果と表は未確認",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "attempted_window": "2026-11-21T23:24:58+09:00/2026-11-23T19:25:32+09:00",
+      "status": "入口取得。結果表が動的表示で全行未取得、買い戻しの有無は未判定",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "attempted_window": "2026-11-21T23:24:58+09:00/2026-11-23T19:25:32+09:00",
+      "status": "会合入口のみ、個別資料の網羅照合未完",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "attempted_window": "2026-11-21T23:24:58+09:00/2026-11-23T19:25:32+09:00",
+      "status": "入口取得。実際の取引明細と発表時刻未取得",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "attempted_window": "2026-11-21T23:24:58+09:00/2026-11-23T19:25:32+09:00",
+      "status": "一覧取得。個別命令・公表時刻未照合",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "attempted_window": "2026-11-21T23:24:58+09:00/2026-11-23T19:25:32+09:00",
+      "status": "一覧と11月20日個別本文を取得。時刻は不明、同URL既存記録あり",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "attempted_window": "2026-11-21T23:24:58+09:00/2026-11-23T19:25:32+09:00",
+      "status": "11月18日号までの一覧取得、PDF・表全体未確認",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "attempted_window": "2026-11-21T23:24:58+09:00/2026-11-23T19:25:32+09:00",
+      "status": "入口取得。州認証の資料は未取得",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "attempted_window": "2026-11-21T23:24:58+09:00/2026-11-23T19:25:32+09:00",
+      "status": "入口取得。期間内個別文書未確認",
+      "complete": false,
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    {
+      "source_url": "https://ofac.treasury.gov/recent-actions/20261120",
+      "published_at": null,
+      "retrieved_at": "2026-11-23T19:25:32+09:00",
+      "fact": "米国日付11月20日のOFAC案内はイラン関連指定とキューバ関連FAQ発出を記す。公表時刻不明。対象期間内か確定できない。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "条件付き推論：石油の実際の物流・決済制約が供給を減らせば物価・景気、金利と資金需給に波及し得る。供給減・戦況は独立検証未了。"
+  ],
+  "historical_comparisons": [
+    "1973年石油ショックの事例は後年の史料による禁輸と減産の要約。今回は制裁による実際の供給減未確認。当時公表のインフレ、金利、流動性、輸入構造は欠損。"
+  ],
+  "scenarios": {
+    "days": "物流・制裁対象を確認",
+    "weeks": "輸出量と代替供給、需要を確認",
+    "months": "物価、景気、実質金利を確認",
+    "currencies": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両通貨側資料不足で方向保留。金も実質金利等不足で保留。"
+  },
+  "invalidations": [
+    "輸出減が観測されない",
+    "代替供給と需要減が制約を相殺する"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分析の網羅調査未完。元記録は変更せず再試行。",
+  "dedup": "OFAC同一URLの既存JSONと財務省メール抜粋を確認。全文ハッシュ、全既存文書との照合未完。新文書は保存せず。",
+  "db_sync": "最新確認の2026年11月23日11:50 JST開始runはfailure: https://github.com/samkaz15/invest/actions/runs/45102464945 。今回反映は未確認。",
+  "pc_notification": "実機未確認",
+  "retry": [
+    "動的買い戻し・入札結果表とNY連銀取引結果",
+    "10情報源の個別本文・表・PDFの欠損",
+    "既存メール経路とのURL・公表時刻・ハッシュ照合",
+    "履歴の当時一次史料・レビュー",
+    "PostgreSQL同期"
+  ]
+}
