@@ -1,0 +1,142 @@
+{
+  "id": "20261123T111932Z-recheck",
+  "as_of": "2026-11-23T20:19:32+09:00",
+  "document_ids": [
+    "ofac-20261120-iran-cuba-action-public-partial"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T20:19:32+09:00",
+      "status": "入口確認、個別発表の網羅照合未完",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T20:19:32+09:00",
+      "status": "入口確認、動的結果表・個別入札発表未取得",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T20:19:32+09:00",
+      "status": "入口確認、結果表の実行データ行が未取得",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T20:19:32+09:00",
+      "status": "会合一覧確認、個別本文の網羅照合未完",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T20:19:32+09:00",
+      "status": "入口確認、個別の実取引結果未取得",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T20:19:32+09:00",
+      "status": "一覧確認、個別文書・掲載日時の照合未完",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T20:19:32+09:00",
+      "status": "入口確認、11月20日付文書は既存、時刻不明",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T20:19:32+09:00",
+      "status": "入口確認、原油PDF全頁と表の網羅未完",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T20:19:32+09:00",
+      "status": "入口確認、州認証個別資料未取得",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T20:19:32+09:00",
+      "status": "入口確認、個別政策文書の網羅照合未完",
+      "complete": false,
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [
+    "前回資料の条件付き仮説：制裁が実際の石油供給を減らせば物価・景気・金利・資金需給に波及し得る。実際の供給減は未検証。"
+  ],
+  "historical_comparisons": [
+    "1973〜74年初期事例は後年の史料で禁輸・減産を要約。今回の供給減、当時の物価・金利・流動性およびエネルギー構造の同時点データは未確認。"
+  ],
+  "scenarios": {
+    "days": "物流に実影響があるか確認",
+    "weeks": "輸出量、代替供給と需要の確認",
+    "months": "物価・景気・実質金利を確認",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDおよび金は資料不足で方向保留"
+  },
+  "invalidations": [
+    "輸出減がない",
+    "代替供給・需要減で相殺"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分の網羅確認未完",
+  "duplicate_check": "前回OFAC資料の既存URLを確認済み。全メール記録の日時・ハッシュ照合未完。",
+  "db_status": "11月23日11:50 JST開始の最新確認済み同期実行は失敗 https://github.com/samkaz15/invest/actions/runs/45102464945 。今回の反映は未確認",
+  "pc_status": "未確認",
+  "retry": [
+    "入札・買戻しの動的結果表および個別資料",
+    "NY連銀実取引",
+    "各種本文・PDF・表の未取得部分",
+    "URL・時刻・ハッシュによるメール重複照合",
+    "期限到来レビュー",
+    "DB同期"
+  ]
+}
