@@ -1,0 +1,63 @@
+{
+  "id": "20261123T083729Z-review",
+  "as_of_jst": "2026-11-23T17:37:29+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "window_reason": "前回の未完範囲を再確認し、既存記録を重ねて照合",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/about/press/koen_2026/index.htm",
+      "result": "講演一覧の最新開催日11月16日を確認。開催日と掲載日は異なり得る。",
+      "missing": "期間内の更新・個別資料の網羅照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/press/kaiken_2026/index.htm",
+      "result": "会見一覧の最新掲載日11月13日を確認。",
+      "missing": "遅延掲載や改訂の網羅確認未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "result": "決定事項一覧を確認",
+      "missing": "個別PDFの網羅確認未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/index.htm",
+      "result": "11月20日の日次オファー・落札結果xlsxへのリンクを発見。",
+      "missing": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261120.xlsx は閲覧ツールがXLSX形式非対応で取得失敗、全シート・表未読、公表時刻不明。再取得要。"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "result": "入札・買入消却リンクを確認。財務省の物価連動債買入消却予定では11月は実施予定なしとする9月29日公表文書を確認、これは過去の予定であり実績ではない。",
+      "missing": "他の買入消却・発行資料の網羅確認未完"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/syokyaku/ichiran224.htm",
+      "result": "11月4日公表の10月実施分の買入消却表を確認。期間外の既存資料。",
+      "missing": "同種の新たな実績の網羅確認未完"
+    }
+  ],
+  "duplicates": [
+    {
+      "existing_id": "mof-20261120-tbill1421-auction-result",
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/tbill/tbill_nyusatsu/resul20261120.htm",
+      "comparison": "URL、11月20日の日付、応募額と募入額が一致。公表時刻は不明。既存取得時刻は11月20日13:05:35 JSTで確認期間より前。全文ハッシュ照合は未実施。"
+    },
+    {
+      "existing_id": "mof-20261120-liquidity465-auction-result",
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261120.htm",
+      "comparison": "URL、11月20日の日付、応募額・募入額・利回格差が一致。公表時刻は不明。全文ハッシュ照合未実施。"
+    }
+  ],
+  "new_document_ids": [],
+  "new_information_status": "新規登録が必要と確認できた文書なし。調査未完のため新着なしとは断定しない。",
+  "rights": "権利ページ候補は取得失敗。一次文書全文は複製せず要点とURLのみ。再配布条件を再確認。",
+  "inference": "米日実質金利と市場予想が不足し、金・ドル円の方向は判断保留。",
+  "retry": [
+    "日銀11月20日オペXLSXを取得し全シート・表を確認、掲載時刻・既存URLと内容を照合",
+    "講演・会見・決定の新規掲載とPDFを確認",
+    "財務省の発行・買入消却の個別資料を網羅照合",
+    "日銀と財務省の再配布条件ページを確認"
+  ],
+  "mac_notification": "実機未確認。GitHub保存は通知成功を意味しない。",
+  "existing_integrations": "変更せず"
+}
