@@ -1,0 +1,50 @@
+{
+  "id": "20261123T140903Z-review",
+  "as_of_jst": "2026-11-23T23:09:03+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "window_reason": "前回未完範囲を継続",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/mopo/r_menu_koen/index.htm",
+      "status": "講演一覧確認。最新の表示は11月16日開催。掲載遅延の全個別資料照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/press/kaiken_2026/index.htm",
+      "status": "会見一覧取得。個別PDF全頁照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "決定事項一覧取得。個別資料全件照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/index.htm",
+      "status": "日次一覧の最新は11月20日。11月20日XLSXの再取得は形式非対応で失敗、全シート未読",
+      "retry_url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261120.xlsx"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "月別入札表取得。発行・入札・買戻し個別資料の全件照合未完"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261120.htm",
+      "status": "本文・表を確認。既存レコードとURL、公表日、応募額・募入額・利回格差が一致。時刻不明。全文内容ハッシュ未比較"
+    }
+  ],
+  "existing_document_ids": [
+    "mof-20261120-liquidity465-auction-result"
+  ],
+  "new_document_ids": [],
+  "dedup": "第465回結果は既存を再利用。全記録のURL・時刻・内容の一括照合未完",
+  "rights": "個別の再配布権は未確認。原文全文は複製せず。",
+  "inference": "名目・実質金利と日米両側の材料が不足し金・ドル円の方向は保留。入札結果と実売買を区別。",
+  "missing": "日銀XLSX全シート、個別PDF全頁、買戻しの網羅確認、公表時刻、全文ハッシュ",
+  "retry": [
+    "日銀オペXLSXを対応手段で取得",
+    "講演・会見・決定の個別PDFと財務省発行・入札・買戻しの全件照合",
+    "既存レコードのURL・公表時刻・内容照合",
+    "利用条件と各資料の個別権利"
+  ],
+  "mac_notification": "実機未確認",
+  "integrations": "米国業務、Gmail webhook、朝のまとめとタスクは変更しない"
+}
