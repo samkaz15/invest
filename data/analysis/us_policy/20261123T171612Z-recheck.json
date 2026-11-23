@@ -1,0 +1,115 @@
+{
+  "id": "20261123T171612Z-recheck",
+  "as_of": "2026-11-24T02:16:12+09:00",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T02:16:12+09:00",
+      "status": "一覧取得、個別本文全件・メール照合未完"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T02:16:12+09:00",
+      "status": "入口取得、動的結果表と個票未取得。11月23日予定分を再試行"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T02:16:12+09:00",
+      "status": "入口取得、買戻し個票・実績表未取得"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T02:16:12+09:00",
+      "status": "会合一覧取得、期間内本文全件照合未完"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T02:16:12+09:00",
+      "status": "入口取得、購入・売却の実績表未取得"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T02:16:12+09:00",
+      "status": "一覧取得、個別文書全件照合未完"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T02:16:12+09:00",
+      "status": "入口取得したが一覧の新着内容が表示されず取得失敗"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T02:16:12+09:00",
+      "status": "入口取得、個別表・PDF全頁未照合"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T02:16:12+09:00",
+      "status": "案内取得、州認証資料未取得"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T02:16:12+09:00",
+      "status": "入口取得、個別発表資料未照合"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [
+    "仮の供給減→物価・実質所得・景気→金利と資金需給。今回の供給減は未確認"
+  ],
+  "historical_comparisons": [
+    "1973年石油ショックと2007〜09年景気後退は後年史料による初期要約、2020年FRB対応は当時声明。現在との当初インフレ・実質金利・流動性・エネルギー構造の比較未完"
+  ],
+  "scenarios": {
+    "day": "入札・買戻し結果",
+    "week": "石油在庫・代替供給",
+    "month": "物価・景気・実質金利",
+    "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDおよび金は双方の資料不足で保留"
+  },
+  "invalidations": [
+    "代替供給や需要減が供給不足を相殺"
+  ],
+  "review_after": null,
+  "review_status": "過去の期限到来分の検証未完",
+  "database": "2026-11-23 21:56 JST開始の最新確認済みDB同期は失敗。今回反映未確認",
+  "retry": [
+    "個別本文・表・PDF",
+    "既存メールとURL・時刻・原文ハッシュの照合",
+    "期限到来分の事後レビュー",
+    "PostgreSQL同期"
+  ]
+}
