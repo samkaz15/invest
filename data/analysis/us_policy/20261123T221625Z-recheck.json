@@ -1,0 +1,160 @@
+{
+  "id": "20261123T221625Z-recheck",
+  "as_of": "2026-11-24T07:16:25+09:00",
+  "document_ids": [
+    "treasury-mail-20261123-iran-shadow-banking-partial",
+    "treasury-mail-20261123-fincen-iran-shadow-banking",
+    "treasury-mail-20261123-long-term-rate-update",
+    "treasury-mail-20261123-real-yield-curve-update",
+    "treasury-mail-20261123-real-long-term-update",
+    "treasury-mail-20261123-yield-curve-update"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "attempted_window_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T07:16:25+09:00"
+      ],
+      "status": "partial",
+      "detail": "一覧取得、個別本文と全ハッシュ照合未完。11月23日付イラン関連2件は既存メール記録参照。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "attempted_window_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T07:16:25+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、動的な個別入札表・結果本文は未取得。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "attempted_window_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T07:16:25+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、個別の予定・実績表は未取得。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "attempted_window_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T07:16:25+09:00"
+      ],
+      "status": "partial",
+      "detail": "会合一覧取得、個別声明・議事要旨の差分照合未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "attempted_window_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T07:16:25+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、国債購入・売却の個別結果表未取得。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "attempted_window_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T07:16:25+09:00"
+      ],
+      "status": "partial",
+      "detail": "一覧取得、各政策文書・他発表の網羅確認未完。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "attempted_window_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T07:16:25+09:00"
+      ],
+      "status": "partial",
+      "detail": "一覧取得、11月23日個別指定本文は再取得失敗。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "attempted_window_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T07:16:25+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、週報の対象週・個別表を未照合。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "attempted_window_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T07:16:25+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、州別認証資料未確認。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "attempted_window_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T07:16:25+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、個別投資政策資料未照合。"
+    }
+  ],
+  "missing_sources": [
+    "OFAC個別本文",
+    "FinCEN分析PDF全頁・翻訳",
+    "財務省入札・買戻し、NY連銀購入売却の個別表",
+    "FEC州認証",
+    "資料とメールのURL・時刻・ハッシュ完全照合",
+    "期限到来レビューと市場時系列",
+    "日米の実質金利・エネルギー構造の同時点比較"
+  ],
+  "facts": [
+    "財務省メール経路にイラン関連の措置およびFinCENの疑わしい金融活動に関する既存記録。政府の説明は独立検証された戦況や全額の違法性の確定ではない。",
+    "財務省の4件の利回り更新メールは既存保存済み。リンク先の個別データと全脚注の独立保存・照合は未了。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "制裁により決済や供給が実際に制約されるなら、原油供給減→物価上昇と実質所得低下→政策金利・実質金利と資金需給に影響し得る。現時点では実供給減は未確認。"
+  ],
+  "historical_comparisons": [
+    {
+      "id": "oil-shock-1973-1974",
+      "commonality": "供給制約を比較するための初期要約",
+      "difference": "今回は実供給の変化が未確認。1973年の記録は後年の解説で当時の情報として使用不可。",
+      "missing": "当初のインフレ・金利・流動性・エネルギー構造の定量比較"
+    },
+    {
+      "id": "fed-response-2020-03-15",
+      "commonality": "資金需給と政策余地の比較",
+      "difference": "2020年は当時の声明による市場機能支援で、今回の制裁と原因・政策が異なる。",
+      "missing": "現在との当初条件比較と事後価格時系列"
+    }
+  ],
+  "scenarios": {
+    "days": "制裁の詳細と入札・オペ結果を確認。供給や決済に実変化がなければ市場波及は限定され得る。",
+    "weeks": "輸送・原油在庫や代替供給を確認。代替供給が損失を補えば供給懸念は弱まる。",
+    "months": "物価、需要、実質金利を確認。需要減が供給減を上回れば物価への影響は弱まる。",
+    "currency_pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両側の資料不足で方向判断保留。金も実質金利と不確実性の両面から方向保留。"
+  },
+  "invalidations": [
+    "実供給の制限なし",
+    "代替供給や需要減が供給損失を相殺",
+    "相手国の政策・金利の変化が米国側を上回る"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分の網羅的列挙と検証未了。再試行。",
+  "database_sync": "前回記録された同期失敗を参照。今回最新反映は未確認。GitHub保存と区別。",
+  "pc_notification": "実機未確認"
+}
