@@ -1,0 +1,120 @@
+{
+  "id": "20261123T131305Z-coverage-recheck",
+  "created_at": "2026-11-23T22:13:05+09:00",
+  "window_start": "2026-11-21T23:24:58+09:00",
+  "window_end": "2026-11-23T22:13:05+09:00",
+  "window_status": "未完の前回期間を含む再確認。入口の取得のみで網羅性なし",
+  "status": "partial",
+  "sources": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_from": "2026-11-21T23:24:58+09:00",
+      "checked_until": "2026-11-23T22:13:05+09:00",
+      "coverage": "一覧表示の最新は11月20日、時刻なし。期間内の個別資料全件・メール照合未完",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_from": "2026-11-21T23:24:58+09:00",
+      "checked_until": "2026-11-23T22:13:05+09:00",
+      "coverage": "入口取得、動的な個別入札結果・表未取得",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_from": "2026-11-21T23:24:58+09:00",
+      "checked_until": "2026-11-23T22:13:05+09:00",
+      "coverage": "入口取得、個別発表・約定結果表未取得",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_from": "2026-11-21T23:24:58+09:00",
+      "checked_until": "2026-11-23T22:13:05+09:00",
+      "coverage": "会合一覧取得、期間内の個別本文の全件照合未完",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_from": "2026-11-21T23:24:58+09:00",
+      "checked_until": "2026-11-23T22:13:05+09:00",
+      "coverage": "入口取得、個別購入・売却実績の表未取得",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_from": "2026-11-21T23:24:58+09:00",
+      "checked_until": "2026-11-23T22:13:05+09:00",
+      "coverage": "一覧の最新表示は11月20日、時刻なし。期間内の個別文書の全件照合未完",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_from": "2026-11-21T23:24:58+09:00",
+      "checked_until": "2026-11-23T22:13:05+09:00",
+      "coverage": "一覧最新は11月20日、時刻なし。既存の同日資料の全文ハッシュ・メール照合未完",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_from": "2026-11-21T23:24:58+09:00",
+      "checked_until": "2026-11-23T22:13:05+09:00",
+      "coverage": "一覧の前回号は11月18日。個別表とPDF全頁未照合",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_from": "2026-11-21T23:24:58+09:00",
+      "checked_until": "2026-11-23T22:13:05+09:00",
+      "coverage": "入口取得、各州の認証済み結果未取得",
+      "status": "partial",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_from": "2026-11-21T23:24:58+09:00",
+      "checked_until": "2026-11-23T22:13:05+09:00",
+      "coverage": "入口取得、期間内の個別資料照合未完",
+      "status": "partial",
+      "retry": true
+    }
+  ],
+  "new_verified_records": [],
+  "dedup": "既存OFAC記録あり。URL・公表時刻・全文ハッシュとメール経路の全件照合は未完。新規文書の不存在は確認できない。",
+  "pdf": "個別PDFの原文・訳文・図表・ページ確認未完。未取得を翻訳済みとしない。",
+  "inference": "仮に石油供給が減ると物価上昇と需要低下を通じて金利・資金需給に波及し得る。供給減や代替供給の実績未検証。日：国債入札・買戻し結果、週：供給・在庫、月：物価・実質金利・需要を確認。代替供給や需要減が相殺すれば仮説は弱まる。",
+  "fx": "USD/JPY、EUR/USD等は通貨双方の資料不足で判断保留",
+  "history": "1973〜74は後年の史料による供給制約の初期要約。現時点の供給減は未検証で、当時公表値も未取得。2020年3月15日のFRB声明は当時の流動性支援と政策金利を確認できるが今回の実施状況は未取得。3件はいずれも初期要約、検証済みモデルではない。",
+  "review_after": "期限到来分の一覧・実績照合未完。再試行",
+  "database": {
+    "status": "failure",
+    "run": "https://github.com/samkaz15/invest/actions/runs/45178983790",
+    "started_at": "2026-11-23T21:56:09+09:00",
+    "current_record_synced": "unknown"
+  },
+  "notification": "PC通知未確認",
+  "retry": [
+    "10情報源の期間内個別資料・表・PDF",
+    "既存メールとURL・時刻・全文ハッシュの照合",
+    "期限到来分析の事後レビュー",
+    "PostgreSQL同期"
+  ]
+}
