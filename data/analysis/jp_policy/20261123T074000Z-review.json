@@ -1,0 +1,44 @@
+{
+  "id": "20261123T074000Z-review",
+  "checked_at_jst": "2026-11-23T16:40:00+09:00",
+  "window_start_jst": "2026-11-20T16:40:00+09:00",
+  "window_note": "直近72時間を再確認。前回の完全性を確認できず重複を持たせた。",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "11月の入札一覧および買入消却リンクを確認。11月20日の第1421回入札・流動性供給入札は既存ファイル名と一致。各レコードの内容・公表時刻は未照合。",
+      "missing": "買入消却リンク先および期間内すべての本文確認は未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "決定事項一覧を確認。最新掲載日は11月13日と表示。",
+      "missing": "個別PDF未読、一覧の遅延・改定を排除できない"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/press/koen_2026/index.htm",
+      "status": "一覧取得",
+      "missing": "対象期間の各発言・会見の網羅照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/measures/mkt_ope/index.htm",
+      "status": "オペ案内取得",
+      "missing": "各国債買入れ・売却結果表未取得"
+    },
+    {
+      "url": "https://www.boj.or.jp/announcements/release_2026/index.htm",
+      "status": "取得エラー",
+      "missing": "正しい新着一覧と個別資料を再取得"
+    }
+  ],
+  "existing_record_check": "data/knowledge/jp/のファイル名一覧確認のみ。公開URL、公表時刻、内容の全件比較は未実施。通知対象新規JSONを作成せず、新着なしとは判定しない。",
+  "retry": [
+    "日銀の講演、会見、決定、国債オペの個別一次資料とPDF・表の再取得",
+    "財務省の買入消却、発行、入札の個別本文確認",
+    "既存レコードとURL・公表時刻・内容の照合、訂正確認",
+    "再配布条件の確認"
+  ],
+  "mac_notification": "実機未確認",
+  "inference": "取得範囲が不完全なため金利、金、ドル円の方向判断は保留。",
+  "preservation": "Gmail webhook、米国業務、朝刊、定期タスクは変更なし"
+}
