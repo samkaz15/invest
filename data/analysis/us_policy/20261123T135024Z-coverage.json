@@ -1,0 +1,108 @@
+{
+  "id": "20261123T135024Z",
+  "as_of": "2026-11-23T22:50:24+09:00",
+  "window_start": "2026-11-21T23:24:58+09:00",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "status": "一覧を再取得。個別文書・メール照合未完",
+      "checked_through": "2026-11-23T22:50:24+09:00"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "status": "入口再取得。動的な入札個票・結果表未取得",
+      "checked_through": "2026-11-23T22:50:24+09:00"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "status": "入口再取得。買戻し個票・実績表未取得",
+      "checked_through": "2026-11-23T22:50:24+09:00"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "status": "会合一覧再取得。個別本文全件の差分照合未完",
+      "checked_through": "2026-11-23T22:50:24+09:00"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "status": "入口再取得。購入・売却の個別実績未取得",
+      "checked_through": "2026-11-23T22:50:24+09:00"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "status": "一覧再取得。個別資料の期間内全件照合未完",
+      "checked_through": "2026-11-23T22:50:24+09:00"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "status": "一覧再取得。最新表示は米国11月20日、時刻不明。既存文書との全文ハッシュ照合未完",
+      "checked_through": "2026-11-23T22:50:24+09:00"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "status": "入口再取得。個別表・PDFの全頁未照合",
+      "checked_through": "2026-11-23T22:50:24+09:00"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "status": "案内取得、州別認証文書未取得",
+      "checked_through": "2026-11-23T22:50:24+09:00"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "status": "入口再取得、個別公表資料未照合",
+      "checked_through": "2026-11-23T22:50:24+09:00"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "OFAC一覧の最新表示は米国11月20日付、公表時刻不明"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "仮の供給減→物価・実質所得・景気→金利・資金需給。実際の供給減は未検証"
+  ],
+  "historical_comparisons": [
+    "1973年供給制約は後年史料。2020年金融支援は当時の声明。現在との差の定量比較未完"
+  ],
+  "scenarios": {
+    "day": "入札・買戻し実績を確認",
+    "week": "原油在庫・代替供給を確認",
+    "month": "物価・実質金利・需要を確認",
+    "fx": "通貨双方のデータ不足で方向保留"
+  },
+  "invalidations": [
+    "代替供給または需要減が供給減を相殺"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分の照合未完、再試行",
+  "database": "2026-11-23 21:56 JST 開始の同期失敗。今回のDB反映未確認",
+  "retry": [
+    "個別原文・表・PDF",
+    "既存メール・本文ハッシュ照合",
+    "期限到来分レビュー",
+    "DB同期"
+  ]
+}
