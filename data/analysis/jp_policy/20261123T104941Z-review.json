@@ -1,0 +1,51 @@
+{
+  "id": "20261123T104941Z-review",
+  "as_of_jst": "2026-11-23T19:49:41+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/about/press/koen_2026/index.htm",
+      "status": "一覧取得。期間内の遅延掲載・個別本文照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/press/kaiken_2026/index.htm",
+      "status": "一覧取得。個別会見PDFの改訂確認未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "一覧取得。期間内の個別決定文とPDFの完全照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/index.htm",
+      "status": "一覧取得。11月20日オペXLSXを再試行したが利用する取得手段が形式非対応のため全シート・表未取得",
+      "retry_url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261120.xlsx"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "国債入札・買入消却一覧取得。対象期間の個別発表の網羅確認未完"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261120.htm",
+      "status": "第465回流動性供給入札結果を取得。前回既存記録とURLおよび主要数値を照合済み。時刻不明で今回対象期間内か確定しない。"
+    }
+  ],
+  "rights": {
+    "mof_url": "https://www.mof.go.jp/about_mof/notice/index.html",
+    "mof": "財務省本省サイトは特記のない著作権表記のない情報に公共データ利用規約第1.0版が適用されると記載。別サイト、個別法令や第三者権利等の適用範囲は個別確認が必要。",
+    "boj_url": "https://www.boj.or.jp/about/copyright.htm",
+    "boj": "出所明記の転載・複製を原則認めるが、商用・転載禁止明記・写真画像は事前相談、無断改変禁止。",
+    "policy": "今回は一次資料全文の複製なし。"
+  },
+  "existing_record_check": "前回確認済みの財務省既存JSONを参照。全レコードのURL・公表時刻・内容ハッシュの一括照合未完。",
+  "new_document_ids": [],
+  "new_status": "新しい通知対象と確認できた資料はないが、未取得・未照合があるため新着なしとは判定しない。",
+  "inference": "日米実質金利と市場予想、未取得資料が不足するため金とドル円の方向は保留。",
+  "retry": [
+    "日銀11月20日オペXLSXと全表",
+    "講演・会見・決定PDFおよび財務省の国債発行、入札、買入消却の個別資料",
+    "既存記録とURL・日時・本文の重複照合"
+  ],
+  "mac_notification": "実機未確認。GitHub保存と通知は別。",
+  "integrations": "変更なし"
+}
