@@ -1,0 +1,100 @@
+{
+  "id": "20261123T204113Z-recheck",
+  "created_at": "2026-11-24T05:41:13+09:00",
+  "previous_report": "docs/reports/us_policy/20261123T203457Z-recheck.md",
+  "coverage_start": "2026-11-21T23:24:58+09:00",
+  "coverage_end": "2026-11-24T05:41:13+09:00",
+  "coverage_limit": "前回確認の重複期間を含む。情報源一覧の確認のみで期間全体の網羅性は未検証。",
+  "sources": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "check_period_jst": "2026-11-21T23:24:58+09:00/2026-11-24T05:41:13+09:00",
+      "status": "partial",
+      "finding": "一覧に11月23日付イラン関連2件。既存メール経路の記録との照合は先行回で実施。今回個別本文の再取得・完全照合は未実施。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "check_period_jst": "2026-11-21T23:24:58+09:00/2026-11-24T05:41:13+09:00",
+      "status": "partial",
+      "finding": "一覧は取得できたが動的な結果表の行が取得できず、個別入札の本文・表を確認できない。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "check_period_jst": "2026-11-21T23:24:58+09:00/2026-11-24T05:41:13+09:00",
+      "status": "partial",
+      "finding": "一覧と表見出しは取得できたが動的な実績行は取得できず、個別買戻しを確認できない。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "check_period_jst": "2026-11-21T23:24:58+09:00/2026-11-24T05:41:13+09:00",
+      "status": "partial",
+      "finding": "会合一覧を確認。次回は12月8–9日、10月議事要旨は11月18日公表と記載。個別文書の差分完全確認は未実施。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "check_period_jst": "2026-11-21T23:24:58+09:00/2026-11-24T05:41:13+09:00",
+      "status": "partial",
+      "finding": "入口ページは取得したが対象期間の個別購入・売却結果表は確認できない。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "check_period_jst": "2026-11-21T23:24:58+09:00/2026-11-24T05:41:13+09:00",
+      "status": "partial",
+      "finding": "大統領行動の一覧先頭は11月20日付。時刻・他の発表種別・個別本文の確認は不十分。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "check_period_jst": "2026-11-21T23:24:58+09:00/2026-11-24T05:41:13+09:00",
+      "status": "partial",
+      "finding": "一覧に11月23日付イラン関連指定。個別対象と詳細の本文は今回未確認。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "check_period_jst": "2026-11-21T23:24:58+09:00/2026-11-24T05:41:13+09:00",
+      "status": "partial",
+      "finding": "週報入口の直近過去号は11月18日付。対象週の個別表を今回未確認。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "check_period_jst": "2026-11-21T23:24:58+09:00/2026-11-24T05:41:13+09:00",
+      "status": "partial",
+      "finding": "FEC入口を取得。個別州の選挙結果・認証資料は未確認。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "check_period_jst": "2026-11-21T23:24:58+09:00/2026-11-24T05:41:13+09:00",
+      "status": "partial",
+      "finding": "CFIUS入口を取得。個別政策資料の網羅確認は未実施。"
+    }
+  ],
+  "new_knowledge_records": [],
+  "new_records_status": "新規該当なしと結論できない。個別資料と既存記録の完全照合が未完了。",
+  "facts": [
+    "財務省一覧に11月23日付イラン関連2件、OFAC一覧に同日付指定を掲載。公表時刻は未確認。政府側発表であり戦況の独立検証ではない。"
+  ],
+  "inference": [
+    "仮に制裁が原油供給・送金経路を実際に制約すれば供給や資金決済を通じ価格・インフレと金利に影響し得る。実際の影響は制裁の適用範囲・遵守・代替供給次第。"
+  ],
+  "currency_pairs": "米国以外の金利・金融政策・需給資料が不足しUSD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDの方向判断は保留。",
+  "historical_comparison": "既存の史料付き事例の構造・当時の基準値を今回検証し直せず、比較は保留。",
+  "review_after": "過去の到来分の列挙とデータ照合が未了。次回再試行。",
+  "pdf": "前回残ったFinCEN関連PDF等の未取得ページと訳文は再取得・検証未完了。",
+  "database": "先行回にUS knowledge database sync失敗が記録された。今回最新のDB同期結果は確認できていない。GitHub保存と区別する。",
+  "retry": [
+    "各資料の個別本文・表、入札と買戻しの動的データ",
+    "OFAC個別指定詳細とFinCEN関連PDFの全ページ",
+    "既存レコードURL・日時・内容ハッシュとの完全照合",
+    "履歴ケースとreview_after到来分",
+    "最新DB同期状態"
+  ]
+}
