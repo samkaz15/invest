@@ -1,0 +1,34 @@
+{
+  "id": "ofac-mail-20261123-iran-sdn-update",
+  "source_url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/433d218",
+  "title_en": "OFAC SDN List Update: Iran-related Designations",
+  "title_ja": "OFAC、イラン関連の制裁リスト更新を通知",
+  "published_at": null,
+  "published_date": "2026-11-23",
+  "published_time_note": "公表時刻不明。メール送信日時と区別。",
+  "received_at": "2026-11-24T03:04:22+09:00",
+  "email_sent_at": "2026-11-24T03:04:22+09:00",
+  "topics": [
+    "sanctions",
+    "other_us"
+  ],
+  "original_text": "Update to OFAC's list of Specially Designated Nationals (SDN) and Blocked Persons\n\nThe SDN list has recently been updated. Please visit this page to access the latest version of the SDN list. Check this page periodically as it may also be updated if a new list-related format or product is offered.\n\nPlease visit this link for more information on today's update.",
+  "translation_ja": "OFACの特別指定国民（SDN）および資産凍結対象者リストの更新\n\nSDNリストは最近更新されました。最新版は制裁リストサービスのページで確認してください。新しいリスト形式や提供物が追加される場合にも更新されるため、定期的に確認してください。\n\n本日の更新の詳細は、下記の公式更新ページをご覧ください。",
+  "facts_ja": [
+    "米財務省からイラン関連指定に関するSDNリスト更新通知を受信した。",
+    "リンク先の公式更新本文は取得できず、対象や石油・金への直接関係は未確認。"
+  ],
+  "inference_ja": [
+    "対象が原油輸送や貿易を含む場合、制裁の実効性や代替供給次第で需給に影響し得るが、今回の対象は未確認。"
+  ],
+  "official_source_url": "https://ofac.treasury.gov/recent-actions/20261123",
+  "content_scope": "メールの実質的本文を全訳。定型ナビゲーション・購読管理を除外。",
+  "translation_status": "complete",
+  "missing_parts": [
+    "リンク先の公表本文、リスト・対象・図表・PDFの有無を取得できていない。原油・金への関連性を判定するため再試行。",
+    "メール本文とリンク先は別文書。リンク先文書は取得・保存していない。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省がイラン関連の制裁リスト更新を通知したが対象の詳細は現時点で未確認です。",
+  "supersedes": null
+}
