@@ -1,0 +1,50 @@
+{
+  "id": "20261123T144342Z-review",
+  "as_of_jst": "2026-11-23T23:43:42+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "window_reason": "前回未完範囲を維持",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/mopo/r_menu_koen/index.htm",
+      "status": "講演一覧取得。開催日と公表日時・個別文書の全件照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/press/kaiken_2026/index.htm",
+      "status": "会見一覧取得、個別PDF全頁照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "決定事項一覧取得、個別資料の全件照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/index.htm",
+      "status": "一覧取得。11月20日XLSXの再取得は形式非対応で失敗、全シート未読",
+      "retry_url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261120.xlsx"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "月別表を取得。発行・入札・買戻し個別資料の全件照合未完"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261120.htm",
+      "status": "本文表再取得。前回照合した既存第465回記録に対応。公表時刻不明。内容ハッシュの比較未完"
+    }
+  ],
+  "existing_document_ids": [
+    "mof-20261120-liquidity465-auction-result"
+  ],
+  "new_document_ids": [],
+  "dedup": "既存JPファイル名一覧を確認。個別文書のURL、日時、内容の全件比較未完。既存第465回結果を重複保存せず。",
+  "rights": "日銀著作権案内 https://www.boj.or.jp/about/copyright.htm 、財務省利用案内 https://www.mof.go.jp/about_mof/notice/index.html を検索で確認。財務省案内は原則PDL1.0と例外・第三者権利の確認を要する。個別権利判断未完。全文複製なし。",
+  "inference": "日米の名目・実質金利と予想の資料が不足し、金とドル円の方向を保留。入札と二次市場の実売買を区別する。",
+  "missing": "日銀オペXLSX全シート、個別PDF全頁・図表、買戻し全件、公表時刻、全文ハッシュ",
+  "retry": [
+    "日銀オペXLSXを対応手段で取得",
+    "講演・会見・決定の個別PDFと財務省発行・入札・買戻しの全件照合",
+    "既存レコードのURL・時刻・内容照合",
+    "個別資料の再配布権"
+  ],
+  "mac_notification": "実機未確認",
+  "integrations": "米国業務、Gmail webhook、朝のまとめとタスクは変更しない"
+}
