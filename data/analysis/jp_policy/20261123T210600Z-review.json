@@ -1,0 +1,60 @@
+{
+  "id": "20261123T210600Z-review",
+  "as_of_jst": "2026-11-24T06:06:00+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "window_reason": "前回の未完範囲を引き継ぐ",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/mopo/r_menu_koen/index.htm",
+      "status": "一覧取得、先頭の開催日は11月16日。掲載時刻・個別資料全件の差分照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/press/kaiken_2026/index.htm",
+      "status": "一覧取得、先頭掲載日11月13日。個別PDF全頁未照合。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "一覧取得、先頭掲載日11月13日。個別資料全件照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/index.htm",
+      "status": "一覧取得。国債補完供給の11月分と11月20日のオペXLSXは取得インターフェースが形式非対応、全シート未読。",
+      "retry_url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261120.xlsx"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "一覧取得。11月20日の2件について既存JSONとURL・主要数値を照合。買入消却等の全件照合は未完。"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/tbill/tbill_nyusatsu/resul20261120.htm",
+      "status": "第1421回の本文・表を読み、既存記録と主要数値一致。公表時刻と全文ハッシュ未確認。"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261120.htm",
+      "status": "第465回の本文・表を読み、既存記録と主要数値一致。公表時刻と全文ハッシュ未確認。"
+    }
+  ],
+  "existing_document_ids": [
+    "mof-20261120-tbill1421-auction-result",
+    "mof-20261120-liquidity465-auction-result"
+  ],
+  "new_document_ids": [],
+  "dedup": "上記2件のURLと主要数値を照合し再保存を回避。全既存文書の内容ハッシュ・時刻の照合は未完。新着なしとは判断できない。",
+  "rights": "公式資料の要約とURLのみを使用。各資料の再配布権・例外は今回確認未完。",
+  "inference": "日米の名目・実質金利と予想の資料が不足し金・ドル円の方向を保留。入札と二次市場売買を区別。",
+  "missing": [
+    "日銀のオペと国債補完供給のXLSX",
+    "個別PDF全頁と図表",
+    "財務省買入消却の全件",
+    "各資料の公表時刻と全文ハッシュ",
+    "個別再配布権"
+  ],
+  "retry": [
+    "日銀の2種類のXLSXを取得可能な手段で再試行",
+    "未照合の講演・会見・政策資料と財務省の発行・入札・買戻しを確認",
+    "既存資料のURL・公表日時・内容を全件照合"
+  ],
+  "mac_notification": "実機未確認",
+  "integrations": "米国業務・Gmail webhook・朝のまとめ・タスクは変更しない"
+}
