@@ -1,0 +1,120 @@
+{
+  "id": "20261123T071500Z-partial",
+  "created_at": "2026-11-23T16:15:00+09:00",
+  "coverage": "partial",
+  "prior_report": "docs/reports/us_policy/20261123T055513Z-policy-partial.md",
+  "sources": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "window_start_jst": "2026-11-21T23:24:58+09:00",
+      "window_end_jst": "2026-11-23T16:15:00+09:00",
+      "checked_at_jst": "2026-11-23T16:15:00+09:00",
+      "status": "一覧取得。対象期間の個別本文・公表時刻の網羅照合未完",
+      "complete": false
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "window_start_jst": "2026-11-21T23:24:58+09:00",
+      "window_end_jst": "2026-11-23T16:15:00+09:00",
+      "checked_at_jst": "2026-11-23T16:15:00+09:00",
+      "status": "一覧取得。個別入札結果表の対象期間網羅確認未完",
+      "complete": false
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "window_start_jst": "2026-11-21T23:24:58+09:00",
+      "window_end_jst": "2026-11-23T16:15:00+09:00",
+      "checked_at_jst": "2026-11-23T16:15:00+09:00",
+      "status": "一覧取得。個別買戻し表の対象期間網羅確認未完",
+      "complete": false
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "window_start_jst": "2026-11-21T23:24:58+09:00",
+      "window_end_jst": "2026-11-23T16:15:00+09:00",
+      "checked_at_jst": "2026-11-23T16:15:00+09:00",
+      "status": "会合一覧取得。対象期間の声明等の個別本文確認未完",
+      "complete": false
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "window_start_jst": "2026-11-21T23:24:58+09:00",
+      "window_end_jst": "2026-11-23T16:15:00+09:00",
+      "checked_at_jst": "2026-11-23T16:15:00+09:00",
+      "status": "入口取得。個別の実施結果と予定表の確認未完",
+      "complete": false
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "window_start_jst": "2026-11-21T23:24:58+09:00",
+      "window_end_jst": "2026-11-23T16:15:00+09:00",
+      "checked_at_jst": "2026-11-23T16:15:00+09:00",
+      "status": "入口取得。対象期間の各文書と時刻の照合未完",
+      "complete": false
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "window_start_jst": "2026-11-21T23:24:58+09:00",
+      "window_end_jst": "2026-11-23T16:15:00+09:00",
+      "checked_at_jst": "2026-11-23T16:15:00+09:00",
+      "status": "一覧が No results found を返却。既存既知文書と整合せず取得不全として再試行",
+      "complete": false
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "window_start_jst": "2026-11-21T23:24:58+09:00",
+      "window_end_jst": "2026-11-23T16:15:00+09:00",
+      "checked_at_jst": "2026-11-23T16:15:00+09:00",
+      "status": "入口取得、11月18日号が表示。各表・PDF全頁の対象期間照合未完",
+      "complete": false
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "window_start_jst": "2026-11-21T23:24:58+09:00",
+      "window_end_jst": "2026-11-23T16:15:00+09:00",
+      "checked_at_jst": "2026-11-23T16:15:00+09:00",
+      "status": "入口取得。州の認証・公表時刻は未確認",
+      "complete": false
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "window_start_jst": "2026-11-21T23:24:58+09:00",
+      "window_end_jst": "2026-11-23T16:15:00+09:00",
+      "checked_at_jst": "2026-11-23T16:15:00+09:00",
+      "status": "入口取得。個別発表確認未完",
+      "complete": false
+    }
+  ],
+  "events": [],
+  "dedup": "新規文書未登録。既存メール経路との完全照合未完。新着なしの判断不可。",
+  "analysis": {
+    "facts": "対象期間における新規個別文書の網羅的確認は未完。",
+    "scenario": "原油供給が制約され持続する場合はエネルギー価格からインフレ期待・金利に波及し得るが、需要減や代替供給は反証条件。",
+    "currency_pairs": "相手通貨側の一次資料不足につき USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USD の方向は判断保留。",
+    "history": "既存3事例は初期要約。当時の数値資料と現在の基礎条件を揃えられず厳密な比較は未実施。",
+    "review": "期限到来分の完全確認未完、次回再試行。"
+  },
+  "retry": [
+    "10情報源の期間内各文書・本文・表、欠損PDFを再取得",
+    "メール経路とのURL、公表時刻、内容ハッシュ照合",
+    "履歴の当時の一次資料およびreview_after到来分",
+    "US knowledge database sync の失敗原因・再実行後反映確認"
+  ],
+  "database_sync": {
+    "status": "failure",
+    "run": "https://github.com/samkaz15/invest/actions/runs/45102464945",
+    "created_at": "2026-11-23T11:50:23+09:00",
+    "note": "直近50件の実行履歴で確認できた最新該当run。今回作成記録のDB反映は未確認。"
+  },
+  "pc_notification": "未確認"
+}
