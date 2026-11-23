@@ -1,0 +1,47 @@
+{
+  "id": "20261123T131410Z-review",
+  "as_of_jst": "2026-11-23T22:14:10+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "window_reason": "前回の未完範囲を保持",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/mopo/r_menu_koen/index.htm",
+      "status": "講演一覧を取得。最新の表示は11月16日。開催日と掲載日の照合・個別PDFは未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/whatsnew/index.htm",
+      "status": "ニュース一覧を取得。発言・決定事項の全個別文書照合は未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/measures/mkt_ope/index.htm",
+      "status": "オペの案内一覧取得。個別買入・売却実績と表は未取得"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "入札カレンダーを取得。個別発行・入札・買戻し結果の完全照合は未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/announcements/release_2026/index.htm",
+      "status": "取得失敗"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/index.html",
+      "status": "404。月別カレンダーは取得"
+    }
+  ],
+  "rights": "前回確認は各資料の第三者権利など個別判断未完。今回利用条件ページの試行は取得失敗。全文は複製しない。",
+  "existing_check": "既存JSON一覧を確認。個別文書のURL・発表時刻・全文内容の網羅照合は未完。",
+  "new_document_ids": [],
+  "status_note": "資料取得と重複照合が未完のため新着なしとはしない。",
+  "inference": "名目・実質金利、米国側条件と資料が不足し金・ドル円の方向は判断保留。",
+  "retry": [
+    "日銀のオペXLSX全シート・表",
+    "講演・会見・決定の個別文書とPDF全頁",
+    "財務省発行・入札・買戻しの個別資料",
+    "既存レコードのURL・公表時刻・内容の照合",
+    "利用条件と各資料の個別権利"
+  ],
+  "mac_notification": "実機未確認",
+  "integrations": "米国業務、Gmail webhook、朝のまとめ及びタスクは変更しない"
+}
