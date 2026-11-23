@@ -1,0 +1,124 @@
+{
+  "id": "20261123T192516Z-recheck",
+  "as_of": "2026-11-24T04:25:16+09:00",
+  "document_ids": [
+    "ofac-mail-20261123-iran-sdn-update",
+    "treasury-mail-20261123-iran-shadow-banking-partial",
+    "treasury-mail-20261123-fincen-iran-shadow-banking"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T04:25:16+09:00",
+      "status": "一覧取得。イラン制裁とFinCEN発表の公式個別本文・全文ハッシュ照合未完"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T04:25:16+09:00",
+      "status": "入口取得。動的な入札結果表・個票及び財務省API未取得"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T04:25:16+09:00",
+      "status": "入口取得。買戻し個票・実績表未取得"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T04:25:16+09:00",
+      "status": "会合一覧取得。個別文書全件照合未完"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T04:25:16+09:00",
+      "status": "入口取得。国債売買個別実績表未取得"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T04:25:16+09:00",
+      "status": "一覧取得。個別文書全件照合未完"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T04:25:16+09:00",
+      "status": "一覧を取得し米国11月23日付イラン関連指定を確認、公表時刻不明。個別本文取得失敗"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T04:25:16+09:00",
+      "status": "入口取得。個別表・PDF全頁未照合"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T04:25:16+09:00",
+      "status": "案内取得。州認証資料未取得"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "from_jst": "2026-11-21T23:24:58+09:00",
+      "through_jst": "2026-11-24T04:25:16+09:00",
+      "status": "入口取得。個別資料未照合"
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "OFAC一覧に米国11月23日付イラン関連指定。時刻不明。個別本文は取得できず",
+    "既存財務省メールはイラン金融網への措置と原油・金関連への言及を記録。政府の説明で独立検証未実施",
+    "FinCENメールはイラン関連の影の銀行取引の可能性がある金融活動約147億ドルを分析対象期間中に特定したと伝える。全額の違法性は未確定"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "制裁が決済・輸送を制限し供給が減少すれば物価・景気を経て金利・資金需給に波及し得る。実際の供給変化は未確認"
+  ],
+  "historical_comparisons": [
+    "1973年供給制約は後年史料の初期要約。2020年FRBは当時声明の流動性支援。共通点や初期インフレ・金利・流動性・エネルギー構造の定量比較は未完"
+  ],
+  "scenarios": {
+    "day": "入札・買戻し実績と制裁詳細確認",
+    "week": "供給・在庫・代替輸送確認",
+    "month": "物価・景気・実質金利確認",
+    "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDおよび金は両側資料不足で方向保留"
+  },
+  "invalidations": [
+    "輸送・決済の迂回、代替供給又は需要減で実供給への影響が相殺される場合"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分の事後レビュー未完",
+  "database": "最新確認済み同期 45237202076 は失敗。今回のDB反映とPC通知は未確認",
+  "retry": [
+    "OFAC個別文書・FinCEN PDF",
+    "入札・買戻し・FRB売買個別表",
+    "メール経路の公表時刻・内容ハッシュ照合",
+    "期限到来レビュー",
+    "DB同期"
+  ]
+}
