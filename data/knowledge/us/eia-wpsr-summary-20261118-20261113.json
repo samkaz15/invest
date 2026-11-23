@@ -1,0 +1,33 @@
+{
+  "id": "eia-wpsr-summary-20261118-20261113",
+  "source_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_11_18/download/summary.txt",
+  "title_en": "Weekly Petroleum Status Report Summary, week ending November 13, 2026",
+  "title_ja": "EIA週間石油需給報告の要約（11月13日終了週）",
+  "published_at": null,
+  "published_date": "2026-11-18",
+  "published_time_note": "アーカイブは公表日を示すが、この要約の実際の時刻・JSTは未確認",
+  "received_at": "2026-11-23T09:50:49+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil"
+  ],
+  "original_text": "For the week ending November 13, 2026, U.S. refineries processed 16.9 million barrels per day (b/d), down 129,000 b/d from the previous week, at 95.7% capacity utilization. Gasoline output averaged 9.4 million b/d, and distillate production increased to 5.2 million b/d.\n\nCrude oil imports decreased 1.1 million b/d to 5.6 million b/d, although the four-week average of 6.3 million b/d is 13.0% above the year-ago level. Gasoline imports averaged 533,000 b/d; distillate imports averaged 133,000 b/d.\n\nCommercial crude oil inventories (excluding the Strategic Petroleum Reserve) increased 3.4 million barrels to 417.8 million barrels, 3% below the five-year average. Gasoline inventories increased 5.2 million barrels, 3% above the five-year average. Distillate inventories increased 1.6 million barrels, 7% below the five-year average. Propane/propylene inventories remained unchanged, 12% above the five-year average. Total commercial petroleum inventories increased by 9.2 million barrels for the week.\n\nOver the past four weeks, total product supplied averaged 20.6 million b/d, down 0.3% year over year. The four-week average for gasoline product supplied decreased 1.8% year over year to 8.7 million b/d, while the four-week average for distillate product supplied increased 4.3% to 4.0 million b/d. The four-week average for jet fuel product supplied increased 0.3% year over year.",
+  "translation_ja": "2026年11月13日終了週、米製油所の原油処理量は日量1690万バレルで前週比12万9000バレル減、稼働率は95.7％だった。ガソリン生産は日量平均940万バレル、留出油生産は日量520万バレルに増加した。\n\n原油輸入は日量110万バレル減の560万バレルだったが、4週平均630万バレルは前年同期比13.0％増だった。ガソリン輸入は日量平均53万3000バレル、留出油輸入は13万3000バレルだった。\n\n商業原油在庫（戦略石油備蓄を除く）は340万バレル増の4億1780万バレルで、5年平均を3％下回った。ガソリン在庫は520万バレル増で5年平均を3％上回った。留出油在庫は160万バレル増で5年平均を7％下回った。プロパン・プロピレン在庫は横ばいで5年平均を12％上回った。商業石油在庫全体は週間920万バレル増えた。\n\n直近4週間の石油製品供給量は日量平均2060万バレルで前年同期比0.3％減。ガソリンは同1.8％減の日量870万バレル、留出油は同4.3％増の日量400万バレルだった。航空燃料の4週平均供給量は前年同期比0.3％増だった。",
+  "facts_ja": [
+    "11月13日終了週の商業原油在庫は4億1780万バレルで前週比340万バレル増。",
+    "当資料は11月18日公表の週報に含まれるが実公表時刻は未確認。"
+  ],
+  "inference_ja": [
+    "在庫増だけでは期待との差や輸送制約を特定できず、価格や為替方向は保留。"
+  ],
+  "content_scope": "要約テキスト全文",
+  "translation_status": "complete_for_summary_only",
+  "missing_parts": [
+    "関連する全表およびPDFの全ページ・図表は未取得・未翻訳。",
+    "公表時刻と同一文書の既存全文ハッシュ照合は未確認。"
+  ],
+  "supersedes": null,
+  "related_document_ids": [
+    "eia-20261113-wpsr-overview-partial-20261118"
+  ]
+}
