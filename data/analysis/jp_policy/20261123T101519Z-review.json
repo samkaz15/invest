@@ -1,0 +1,50 @@
+{
+  "id": "20261123T101519Z-review",
+  "as_of_jst": "2026-11-23T19:15:19+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "window_note": "前回の未完範囲を重ねて確認。",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/about/press/koen_2026/index.htm",
+      "status": "一覧取得。開催日と公表日の差や個別文書の改訂照合は未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/press/kaiken_2026/index.htm",
+      "status": "会見一覧取得。対象期間の個別PDFの網羅照合は未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "決定事項一覧取得。個別PDF・改訂の網羅照合は未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/index.htm",
+      "status": "一覧に11月20日付オファー・落札結果を確認。XLSXを再取得したが閲覧手段が形式非対応で失敗。全シート未読、公表時刻不明。"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "入札・買入消却カレンダーを取得。個別結果・予定の期間内全件照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/whatsnew/",
+      "status": "新着一覧を取得。年別混在のため開催日と掲載日を判別し個別確認する必要がある。"
+    }
+  ],
+  "rights": {
+    "boj_url": "https://www.boj.or.jp/about/copyright.htm",
+    "summary": "日銀サイトは出所明記の転載・複製を原則可能とするが、商用、転載禁止の注記、写真・画像には事前相談を求め、無断改変を禁じる。資料ごとの注記と用途の適用は未確認。本文は複製しない。",
+    "mof_status": "財務省本省の各資料の再配布条件は未確認。全文複製せず。"
+  },
+  "existing_comparison": "前回記録で財務省第1421回・流動性供給465回のURLと主要数値を照合済み。今回、既存全レコードの時刻・内容ハッシュは未照合。",
+  "new_document_ids": [],
+  "status_note": "未取得・未照合を新着なしと扱わない。",
+  "retry": [
+    "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261120.xlsx の全シート取得と対象期間内更新確認",
+    "日銀講演・会見・決定の個別PDF及び財務省国債入札・買戻し個別資料を再確認",
+    "既存JSONのURL・公表時刻・内容照合",
+    "財務省本省の再配布条件を確認"
+  ],
+  "inference": "新規資料の内容や実質金利・日米両側の資料不足により金・ドル円の方向は保留。",
+  "mac_notification": "実機未確認",
+  "integrations": "既存の米国業務・Gmail webhook・朝まとめ・タスクは変更せず"
+}
