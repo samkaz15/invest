@@ -1,0 +1,132 @@
+{
+  "id": "20261123T083500Z-ofac-check",
+  "as_of": "2026-11-23T17:35:00+09:00",
+  "document_ids": [
+    "ofac-20261120-iran-cuba-action-public-partial"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "status": "一覧取得、期間内の各本文未照合",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "attempted_window_start": "2026-11-21T23:24:58+09:00",
+      "attempted_window_end": "2026-11-23T17:35:00+09:00",
+      "coverage_complete": false
+    },
+    {
+      "id": "treasury_auctions",
+      "status": "結果入口取得、個別結果の網羅確認未完",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "attempted_window_start": "2026-11-21T23:24:58+09:00",
+      "attempted_window_end": "2026-11-23T17:35:00+09:00",
+      "coverage_complete": false
+    },
+    {
+      "id": "treasury_buybacks",
+      "status": "入口取得失敗、個別結果未取得",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "attempted_window_start": "2026-11-21T23:24:58+09:00",
+      "attempted_window_end": "2026-11-23T17:35:00+09:00",
+      "coverage_complete": false
+    },
+    {
+      "id": "fed_fomc",
+      "status": "会合一覧取得、対象期間の本文照合未完",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "attempted_window_start": "2026-11-21T23:24:58+09:00",
+      "attempted_window_end": "2026-11-23T17:35:00+09:00",
+      "coverage_complete": false
+    },
+    {
+      "id": "nyfed_operations",
+      "status": "国債オペ入口取得、個別取引結果未取得",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "attempted_window_start": "2026-11-21T23:24:58+09:00",
+      "attempted_window_end": "2026-11-23T17:35:00+09:00",
+      "coverage_complete": false
+    },
+    {
+      "id": "white_house",
+      "status": "一覧取得、個別文書・時刻の網羅確認未完",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "attempted_window_start": "2026-11-21T23:24:58+09:00",
+      "attempted_window_end": "2026-11-23T17:35:00+09:00",
+      "coverage_complete": false
+    },
+    {
+      "id": "ofac",
+      "status": "一覧復旧、11月20日の個別文書確認、既存URL一致。時刻と全文ハッシュ照合未完",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "attempted_window_start": "2026-11-21T23:24:58+09:00",
+      "attempted_window_end": "2026-11-23T17:35:00+09:00",
+      "coverage_complete": false
+    },
+    {
+      "id": "eia_petroleum",
+      "status": "一覧取得、対象期間のPDF・表の網羅確認未完",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "attempted_window_start": "2026-11-21T23:24:58+09:00",
+      "attempted_window_end": "2026-11-23T17:35:00+09:00",
+      "coverage_complete": false
+    },
+    {
+      "id": "fec_results",
+      "status": "入口取得、州認証は未確認",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "attempted_window_start": "2026-11-21T23:24:58+09:00",
+      "attempted_window_end": "2026-11-23T17:35:00+09:00",
+      "coverage_complete": false
+    },
+    {
+      "id": "cfius",
+      "status": "入口取得、対象期間の各文書未確認",
+      "url": "https://www.cfius.gov/",
+      "attempted_window_start": "2026-11-21T23:24:58+09:00",
+      "attempted_window_end": "2026-11-23T17:35:00+09:00",
+      "coverage_complete": false
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [
+    "OFAC 11月20日付のイラン指定とキューバFAQ案内のURLが既存レコードと一致。米国日付のみで公表時刻不明。前回一覧取得不全から今回は個別本文取得に改善。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "仮説: 制裁によって実際の原油物流・決済の制約が強まれば供給を通じて物価、景気、金利・資金需給に波及し得る。発表だけでは実際の供給減を確認できない。"
+  ],
+  "historical_comparisons": [
+    "1973-74石油危機は実際の禁輸と減産という供給制約が史後資料に記載される。今回の制裁との共通経路は供給制約の可能性だが、実際の供給減は未確認。当時のインフレ・金利・流動性、輸入構造の当時公表値と現状の比較は未完。後年の解説を当時の予測情報に使わない。"
+  ],
+  "scenarios": {
+    "days": "制裁の対象範囲と実際の物流影響の確認待ち",
+    "weeks": "供給に制約が続けば価格・物価に波及し得るが、代替供給や需要減が相殺し得る",
+    "months": "供給制約の持続と物価、実質金利の実績を確認。金・通貨方向は保留",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両側資料不足で保留"
+  },
+  "invalidations": [
+    "原油輸出、輸送量や価格に持続的な影響が確認されない",
+    "代替供給増、需要減が上回る"
+  ],
+  "review_after": null,
+  "review_status": "過去の到来分は未調査、再試行",
+  "dedup": "OFAC同一URL一致。公表時刻不明、全文内容ハッシュ照合・全メール経路照合未完。新JSON未追加。",
+  "database_sync": "最新確認済み2026-11-23 11:50:23 JST開始run失敗 https://github.com/samkaz15/invest/actions/runs/45102464945 。今回の同期は未確認",
+  "pc_notification": "未確認",
+  "retry": [
+    "個別一次資料・PDF・表の期間全体取得",
+    "OFAC全文ハッシュ・既存メール経路照合",
+    "過去review_afterの事後評価",
+    "DB同期の原因と反映確認"
+  ]
+}
