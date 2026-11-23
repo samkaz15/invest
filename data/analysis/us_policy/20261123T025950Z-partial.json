@@ -1,0 +1,160 @@
+{
+  "as_of": "2026-11-23T11:59:50+09:00",
+  "document_ids": [
+    "treasury-20261120-iran-oil-outcast-mail-partial",
+    "eia-wpsr-summary-20261118-20261113"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_start": "2026-11-21T23:24:58+09:00",
+      "period_end": "2026-11-23T11:59:50+09:00",
+      "status": "一覧確認、全個別資料未照合"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_start": "2026-11-21T23:24:58+09:00",
+      "period_end": "2026-11-23T11:59:50+09:00",
+      "status": "動的結果未取得。検索で見つけた個別入札PDFは5月18日公表で期間外"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_start": "2026-11-21T23:24:58+09:00",
+      "period_end": "2026-11-23T11:59:50+09:00",
+      "status": "結果行未取得"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_start": "2026-11-21T23:24:58+09:00",
+      "period_end": "2026-11-23T11:59:50+09:00",
+      "status": "入口取得、個別PDF未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_start": "2026-11-21T23:24:58+09:00",
+      "period_end": "2026-11-23T11:59:50+09:00",
+      "status": "入口とデータページ取得、対象期間の個別売買結果未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_start": "2026-11-21T23:24:58+09:00",
+      "period_end": "2026-11-23T11:59:50+09:00",
+      "status": "一覧取得、個別文書全件未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_start": "2026-11-21T23:24:58+09:00",
+      "period_end": "2026-11-23T11:59:50+09:00",
+      "status": "一覧と11月20日資料確認、個人情報を除き関連FAQ未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_start": "2026-11-21T23:24:58+09:00",
+      "period_end": "2026-11-23T11:59:50+09:00",
+      "status": "11月18日アーカイブ入口確認、残余表・PDF未読"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_start": "2026-11-21T23:24:58+09:00",
+      "period_end": "2026-11-23T11:59:50+09:00",
+      "status": "州認証文書未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_start": "2026-11-21T23:24:58+09:00",
+      "period_end": "2026-11-23T11:59:50+09:00",
+      "status": "入口取得、個別文書未確認"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "treasury_news",
+      "reason": "一覧確認、全個別資料未照合",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "reason": "動的結果未取得。検索で見つけた個別入札PDFは5月18日公表で期間外",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "reason": "結果行未取得",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "reason": "入口取得、個別PDF未確認",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "reason": "入口とデータページ取得、対象期間の個別売買結果未確認",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "reason": "一覧取得、個別文書全件未確認",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "reason": "一覧と11月20日資料確認、個人情報を除き関連FAQ未確認",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "reason": "11月18日アーカイブ入口確認、残余表・PDF未読",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "reason": "州認証文書未確認",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "reason": "入口取得、個別文書未確認",
+      "retry": true
+    }
+  ],
+  "facts": [
+    "検索で見つけた財務省の入札結果PDFは満期日が11月19日だが公表日は5月18日で、今回の期間外。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "石油供給の実際の変化は物価・景気と実質金利、資金需給を通じて資産に影響し得るが未検証。"
+  ],
+  "historical_comparisons": [
+    {
+      "case_id": "oil-shock-1973-1974",
+      "common": "供給と物価・景気の関係",
+      "difference": "当時の実際の禁輸・減産と現在の供給影響未確認を区別",
+      "missing": "当時と現在の物価、実質金利、流動性、エネルギー構造の比較値未取得"
+    }
+  ],
+  "scenarios": {
+    "days": "輸送と在庫",
+    "weeks": "輸出と代替供給・需要",
+    "months": "物価・景気と政策",
+    "fx": "両側資料不足のためUSDJPY EURUSD USDCHF USDCAD AUDUSDは判断保留"
+  },
+  "invalidations": [
+    "輸送・輸出継続、代替供給、需要減"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分の一覧・実績未確認",
+  "database_sync": "2026-11-23T11:50:23+09:00開始分失敗、個別DB反映未確認",
+  "pc_notification": "未確認",
+  "dedup": "関連する既存メール・EIA記録を前回照合。全件URL・時刻・ハッシュ照合未完"
+}
