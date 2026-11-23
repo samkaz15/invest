@@ -1,0 +1,160 @@
+{
+  "as_of": "2026-11-23T09:50:49+09:00",
+  "document_ids": [
+    "eia-wpsr-summary-20261118-20261113"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "coverage_start": "2026-11-21T23:24:58+09:00",
+      "coverage_end": "2026-11-23T09:50:49+09:00",
+      "status": "一覧確認、個別期間の完全照合未完"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "coverage_start": "2026-11-21T23:24:58+09:00",
+      "coverage_end": "2026-11-23T09:50:49+09:00",
+      "status": "動的結果表未取得"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "coverage_start": "2026-11-21T23:24:58+09:00",
+      "coverage_end": "2026-11-23T09:50:49+09:00",
+      "status": "結果表の行未取得"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "coverage_start": "2026-11-21T23:24:58+09:00",
+      "coverage_end": "2026-11-23T09:50:49+09:00",
+      "status": "入口取得、個別本文PDF未照合"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "coverage_start": "2026-11-21T23:24:58+09:00",
+      "coverage_end": "2026-11-23T09:50:49+09:00",
+      "status": "入口取得、個別オペ結果未取得"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "coverage_start": "2026-11-21T23:24:58+09:00",
+      "coverage_end": "2026-11-23T09:50:49+09:00",
+      "status": "一覧取得、全ページと個別資料未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "coverage_start": "2026-11-21T23:24:58+09:00",
+      "coverage_end": "2026-11-23T09:50:49+09:00",
+      "status": "11月20日個別資料確認、FAQ・全件照合未完"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "coverage_start": "2026-11-21T23:24:58+09:00",
+      "coverage_end": "2026-11-23T09:50:49+09:00",
+      "status": "11月18日版要約全文と別の1ページPDFを取得、表1 CSV取得失敗、残余PDF未読"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "coverage_start": "2026-11-21T23:24:58+09:00",
+      "coverage_end": "2026-11-23T09:50:49+09:00",
+      "status": "州認証個別資料未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "coverage_start": "2026-11-21T23:24:58+09:00",
+      "coverage_end": "2026-11-23T09:50:49+09:00",
+      "status": "入口取得、関連資料全件未確認"
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "treasury_news",
+      "reason": "一覧確認、個別期間の完全照合未完",
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "reason": "動的結果表未取得",
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "reason": "結果表の行未取得",
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "reason": "入口取得、個別本文PDF未照合",
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "reason": "入口取得、個別オペ結果未取得",
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "reason": "一覧取得、全ページと個別資料未確認",
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "reason": "11月20日個別資料確認、FAQ・全件照合未完",
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "reason": "11月18日版要約全文と別の1ページPDFを取得、表1 CSV取得失敗、残余PDF未読",
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "reason": "州認証個別資料未確認",
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "reason": "入口取得、関連資料全件未確認",
+      "retry": true
+    }
+  ],
+  "facts": [
+    "EIA週報要約は11月13日終了週の商業原油在庫417.8百万バレル、前週比3.4百万バレル増と記載。公表日11月18日、時刻未確認。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "推論: 供給・需要と在庫、予想との差が物価・景気、政策と実質金利を通じ金や通貨に波及し得るが、単一週の在庫で方向は決まらない。"
+  ],
+  "historical_comparisons": [
+    {
+      "case_id": "oil-shock-1973-1974",
+      "common": "石油供給の物価・景気への波及",
+      "difference": "当時の禁輸・減産と今回の在庫増を同一視できない",
+      "missing": "当時と現在のインフレ・実質金利・流動性・エネルギー構造の検証値未取得。後年の史料を当時の予想根拠に使わない"
+    }
+  ],
+  "scenarios": {
+    "day": "輸送・在庫を確認",
+    "week": "生産・輸出入と需要の継続を確認",
+    "month": "物価・景気・政策反応を確認",
+    "fx": "USDJPY EURUSD USDCHF USDCAD AUDUSD は両通貨側の資料不足で判断保留"
+  },
+  "invalidations": [
+    "実供給の減少が観測されない場合や代替供給・需要減は供給不足仮説を弱める"
+  ],
+  "review_after": null,
+  "review_status": "過去の期限到来分一覧と実績データ未確認",
+  "dedup": "11月18日版の別PDF部分記録と照合済み。要約本文は別URLの別資料、全記録のハッシュ照合未完",
+  "pdf_status": "1ページの別PDFのテキスト確認、他のPDFページと図表・全訳は未取得",
+  "db": "最新確認された同期実行は失敗、個別DB反映未確認",
+  "pc": "未確認"
+}
