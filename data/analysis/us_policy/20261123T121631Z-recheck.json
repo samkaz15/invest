@@ -1,0 +1,139 @@
+{
+  "id": "20261123T121631Z-recheck",
+  "as_of": "2026-11-23T21:16:31+09:00",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T21:16:31+09:00",
+      "status": "入口取得、個別文書の期間内全件照合未完",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T21:16:31+09:00",
+      "status": "入口取得、動的入札結果表と個別発表未取得",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T21:16:31+09:00",
+      "status": "入口取得、結果表の実績データ行未取得",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T21:16:31+09:00",
+      "status": "会合一覧取得、関連本文の全件照合未完",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T21:16:31+09:00",
+      "status": "入口取得、個別売買の実績未取得",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T21:16:31+09:00",
+      "status": "入口取得、個別文書の期間内全件確認未完",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T21:16:31+09:00",
+      "status": "一覧取得、11月20日付既存資料の全文ハッシュ照合未完",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T21:16:31+09:00",
+      "status": "入口取得、原油PDF全頁と表の照合未完",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T21:16:31+09:00",
+      "status": "入口取得、州認証の個別資料未取得",
+      "complete": false,
+      "retry": true
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "attempted_from": "2026-11-21T23:24:58+09:00",
+      "attempted_until": "2026-11-23T21:16:31+09:00",
+      "status": "入口取得、関連個別文書未照合",
+      "complete": false,
+      "retry": true
+    }
+  ],
+  "missing_sources": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [
+    "資料不足のため今回新たな事実からの因果推論は保留。"
+  ],
+  "historical_comparisons": [
+    "1973〜74年の初期要約は後年史料、当時公表値と今回の実際の供給変化が欠損。"
+  ],
+  "scenarios": {
+    "days": "入札・買戻しの実績と予定の区別を確認",
+    "weeks": "原油物流と代替供給を確認",
+    "months": "物価・景気・実質金利を確認",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDと金は根拠不足で方向保留"
+  },
+  "invalidations": [
+    "推定した供給制約が実測されない",
+    "代替供給や需要減が制約を相殺"
+  ],
+  "review_after": null,
+  "review_status": "過去の期限到来分は未照合",
+  "dedup": "新規資料の完全な既存メール・公開URL・時刻・内容ハッシュ照合未完。新規文書なしと確定しない。",
+  "db": "確認した最新の2026-11-23 11:50 JST開始runが失敗 https://github.com/samkaz15/invest/actions/runs/45102464945 。今回の反映未確認。",
+  "pc": "実機未確認",
+  "retry": [
+    "個別発表・入札・買戻し・NY連銀実績",
+    "PDF、表と日本語訳",
+    "メール経路のURL・日時・ハッシュ照合",
+    "期限到来レビュー",
+    "DB反映"
+  ]
+}
