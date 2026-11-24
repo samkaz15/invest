@@ -1,0 +1,144 @@
+{
+  "id": "20261124T020830Z-recheck",
+  "as_of": "2026-11-24T11:08:30+09:00",
+  "document_ids": [
+    "fincen-20261123-iran-shadow-banking-pdf-partial",
+    "treasury-mail-20261123-fincen-iran-shadow-banking",
+    "ofac-20261123-iran-designations-official-partial"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T11:08:30+09:00"
+      ],
+      "status": "partial",
+      "detail": "一覧取得、個別資料全件照合未完。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T11:08:30+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、動的個別入札結果未取得。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T11:08:30+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、個別買戻し表未取得。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T11:08:30+09:00"
+      ],
+      "status": "partial",
+      "detail": "会合一覧取得、個別文書全件照合未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T11:08:30+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、個別売買実績表未取得。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T11:08:30+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、個別文書全件照合未完。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T11:08:30+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口・11月23日指定資料取得、個人情報を除いた既存抜粋を参照。法人リスト全訳未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T11:08:30+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、週報の個別表と脚注未照合。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T11:08:30+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、州別選挙認証未確認。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T11:08:30+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、個別資料全件照合未完。"
+    }
+  ],
+  "missing_sources": [
+    "FinCEN PDFの図表の視覚確認・残り7頁以上の完全翻訳と原本保存",
+    "入札・買戻し・NY連銀個別表",
+    "州別認証",
+    "既存文書の全文ハッシュ照合",
+    "期限到来レビュー"
+  ],
+  "facts": [
+    "FinCEN PDFを取得し全8頁の抽出テキストを取得。図表を含む視覚確認は未実施。",
+    "2025年1月〜2026年8月、イラン関連の影の銀行業務の可能性がある約147億ドルの活動を分析。疑わしい活動の報告だけでは違法行為の証明ではないとFinCENは注記。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "制裁による決済や供給の制限が実際に生じれば、原油供給→物価・景気→金利・資金需給に波及し得るが、実供給減は未確認。"
+  ],
+  "historical_comparisons": [
+    "1973年石油危機の後年資料は供給制約を示す初期要約。今回の実供給減は未確認。",
+    "2020年FRBの市場機能支援は政策と原因が異なる。初期のインフレ・実質金利・流動性・エネルギー構造の定量比較は未完。"
+  ],
+  "scenarios": {
+    "days": "個別指定と入札結果を確認。",
+    "weeks": "輸送・在庫・代替供給を確認。",
+    "months": "需要・物価・実質金利を確認。",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両国資料不足で保留。金も方向保留。"
+  },
+  "invalidations": [
+    "実供給の変化なし",
+    "代替供給・需要減が影響を相殺"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分の列挙・検証未完",
+  "database_sync": "先行回に失敗、最新PostgreSQL反映は未確認。",
+  "mac_notification": "実機未確認"
+}
