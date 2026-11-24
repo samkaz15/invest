@@ -1,0 +1,48 @@
+{
+  "id": "20261124T211254Z-review",
+  "as_of_jst": "2026-11-25T06:12:54+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "previous_run": "data/analysis/jp_policy/20261124T202215Z-review.json",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/about/press/index.htm",
+      "status": "一覧取得。個別講演・会見の全件照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "一覧取得。政策資料PDF全頁照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/index.htm",
+      "status": "一覧取得。11月24日XLSXを再取得失敗、全シート未読",
+      "retry_url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261124.xlsx"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "カレンダー取得。入札と買入消却の個別結果全件照合未完"
+    },
+    {
+      "url": "https://www.mof.go.jp/about_mof/councils/meeting_of_jgbsp/press_release/261124.html",
+      "status": "開催日程の本文確認。公表日2026-11-24、時刻不明。12月14日会合は予定であり政策決定・入札・取引ではない。",
+      "notification_eligible": false
+    }
+  ],
+  "new_document_ids": [],
+  "dedup": "検索による部分確認のみ。既存JSON全件と日時・内容照合は未完。新着なしとは判定しない。",
+  "rights": "原文全文の複製なし。財務省の著作権ページの取得に失敗、再配布条件未確認。",
+  "inference": "オペ種別・金額、日米名目・実質金利や期待が未確認のため金とドル円の方向は保留。",
+  "missing": [
+    "日銀11月24日オペXLSX全シート",
+    "個別会見・政策PDF全頁",
+    "財務省入札・買入消却の個別結果",
+    "既存文書全件との重複照合",
+    "個別再配布条件"
+  ],
+  "retry": [
+    "XLSX再取得",
+    "個別資料と既存JSONのURL・日時・内容照合",
+    "財務省著作権条件の再確認"
+  ],
+  "mac_notification": "実機未確認"
+}
