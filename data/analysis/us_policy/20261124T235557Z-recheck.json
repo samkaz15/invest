@@ -1,0 +1,139 @@
+{
+  "id": "20261124T235557Z-recheck",
+  "as_of": "2026-11-24T23:55:57Z",
+  "previous_analysis": "data/analysis/us_policy/20261124T230821Z-recheck.json",
+  "document_ids": [
+    "nyfed-20261124-securities-lending-exercise"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "status": "partial",
+      "details": "一覧取得、個別本文全件照合未完",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:55:57+09:00"
+      ]
+    },
+    {
+      "id": "treasury_auctions",
+      "status": "partial",
+      "details": "入口取得、検索APIアクセス不可、個別結果未取得",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:55:57+09:00"
+      ]
+    },
+    {
+      "id": "treasury_buybacks",
+      "status": "partial",
+      "details": "入口取得、個別結果表未照合",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:55:57+09:00"
+      ]
+    },
+    {
+      "id": "fed_fomc",
+      "status": "partial",
+      "details": "入口取得、個別文書の差分未照合",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:55:57+09:00"
+      ]
+    },
+    {
+      "id": "nyfed_operations",
+      "status": "partial",
+      "details": "入口及び証券貸出結果検索、11月23日オペ表の一部を確認。直接売買結果は未取得",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:55:57+09:00"
+      ]
+    },
+    {
+      "id": "white_house",
+      "status": "partial",
+      "details": "入口取得、個別文書未照合",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:55:57+09:00"
+      ]
+    },
+    {
+      "id": "ofac",
+      "status": "partial",
+      "details": "入口取得、個別指定・既存メールとのハッシュ照合未完",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:55:57+09:00"
+      ]
+    },
+    {
+      "id": "eia_petroleum",
+      "status": "partial",
+      "details": "入口取得、期間内の個別表・脚注未照合",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:55:57+09:00"
+      ]
+    },
+    {
+      "id": "fec_results",
+      "status": "partial",
+      "details": "入口取得、州認証未確認",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:55:57+09:00"
+      ]
+    },
+    {
+      "id": "cfius",
+      "status": "partial",
+      "details": "入口取得、個別資料未照合",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:55:57+09:00"
+      ]
+    }
+  ],
+  "missing_sources": [
+    "財務省入札・買戻し・NY連銀直接売買の個別結果表",
+    "既存メールとの原文ハッシュ照合",
+    "FinCEN PDF残頁と図表",
+    "各国金利・為替の両側資料",
+    "期限到来レビュー一覧と実績"
+  ],
+  "facts": [
+    "11月23日NY連銀の証券貸出結果は応募額386億3300万ドル、落札額386億1500万ドル。貸出であり直接売買ではない。公表時刻不明。結果表全行・脚注は未照合。https://www.newyorkfed.org/markets/desk-operations/securities-lending",
+    "NY連銀の11月24日付証券貸出訓練は既存記録を参照。公表時刻不明。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "推論：証券貸出は証券の決済機能を支え得るが、貸出額だけでは国債の現物購入・売却や金利・金・為替の方向を示さない。"
+  ],
+  "historical_comparisons": [
+    "2020年FRB購入は市場機能を支える方針であり証券貸出と目的・規模・取引形態が異なる。初期の物価・金利・流動性・エネルギー構造は未比較。"
+  ],
+  "scenarios": {
+    "days": "直接売買結果・資金調達を確認",
+    "weeks": "証券貸出訓練の実績を確認",
+    "months": "需要・物価・実質金利を確認",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USD及び金は資料不足で方向保留"
+  },
+  "invalidations": [
+    "貸出運営が変更・中止される",
+    "市場決済への影響が確認されない"
+  ],
+  "review_after": null,
+  "review_status": "過去期限到来分は未照合",
+  "database_sync": "先行回に失敗記録。今回未確認",
+  "mac_notification": "実機未確認",
+  "retry": [
+    "11月23日証券貸出結果表全行・脚注および公表時刻",
+    "財務省入札・買戻し・NY連銀直接売買結果",
+    "既存メールと資料の原文ハッシュ照合",
+    "FinCEN PDF残頁・図表",
+    "期限到来レビューとPostgreSQL同期"
+  ]
+}
