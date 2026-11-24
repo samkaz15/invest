@@ -1,0 +1,38 @@
+{
+  "id": "ofac-20261123-iran-designations-official-partial",
+  "source_url": "https://ofac.treasury.gov/recent-actions/20261123",
+  "title_en": "Iran-related Designations",
+  "title_ja": "OFACのイラン関連指定：公式更新の確認",
+  "published_at": null,
+  "published_date": "2026-11-23",
+  "published_time_note": "米国側の日付のみ、公表時刻・日本時間の日付は不明。",
+  "received_at": "2026-11-24T10:06:58+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "sanctions",
+    "oil",
+    "gold"
+  ],
+  "original_text": "Iran-related Designations\nSpecially Designated Nationals List Updates\nThe following individuals have been added to OFAC's SDN List:\nThe following entities have been added to OFAC's SDN List:\nUnrelated Administrative List Changes: None",
+  "translation_ja": "イラン関連指定。特別指定国民リストの更新。以下の個人がOFACのSDNリストに追加された。以下の法人がOFACのSDNリストに追加された。無関係の事務的なリスト変更：なし。",
+  "facts_ja": [
+    "公式更新には個人と法人のSDN追加がある。",
+    "法人の項目にはイラン通貨・金取引センターが含まれる。",
+    "既存メール通知と関連する別の公式文書である。"
+  ],
+  "inference_ja": [
+    "決済や実供給に制約が及ぶかは適用・代替経路次第であり、金や原油の方向は判断保留。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "個人情報を含む指定者リストは原文・訳を保存せず。本人識別情報を含むため全文翻訳を省略。",
+    "法人リストの全項目・根拠・脚注の保存は未完。",
+    "公表時刻と全文ハッシュ、他の既存文書との完全照合は未確認。"
+  ],
+  "notification_eligible": false,
+  "supersedes": null,
+  "related_documents": [
+    "ofac-mail-20261123-iran-sdn-update"
+  ]
+}
