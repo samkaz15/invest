@@ -1,0 +1,34 @@
+{
+  "id": "nyfed-20261124-securities-lending-exercise",
+  "source_url": "https://www.newyorkfed.org/markets/opolicy/operating_policy_261124",
+  "title_en": "Statement Regarding Securities Lending Small Value Exercise",
+  "title_ja": "NY連銀、小規模の臨時証券貸出訓練を予定",
+  "published_at": null,
+  "published_date_source": "2026-11-24",
+  "published_date_jst": "不明",
+  "received_at": "2026-11-25T08:08:21+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries",
+    "monetary_policy"
+  ],
+  "original_text": "The New York Fed undertakes certain small value open market transactions from time to time for the purpose of testing operational readiness to implement existing and potential policy directives from the Federal Open Market Committee (FOMC). The FOMC directs the New York Fed's Open Market Trading Desk (the Desk) to conduct these exercises to test its operational readiness in the FOMC Authorizations and Continuing Directives for Open Market Operations.\n\nIn connection with these directives, the New York Fed’s Open Market Trading Desk intends to conduct a small value contingency securities lending operation for the purpose of testing its contingency operation infrastructure. The small value contingency operation will be conducted in addition to the regularly scheduled securities lending operation, and will occur on Thursday, December 3, 2026, beginning at 12:30 PM ET and ending at 12:45 PM ET. The exercise will have a maximum size of $125 million.\n\nResults will be posted on the New York Fed's website following the completion of the operation. The results will include the securities and total amounts accepted and submitted.",
+  "translation_ja": "NY連銀は、連邦公開市場委員会（FOMC）の既存または将来の政策指令を実施する運営上の準備を試すため、ときどき小規模な公開市場取引を実施する。FOMCは公開市場操作に関する授権および継続指令において、NY連銀の公開市場デスクに、このような訓練によって運営上の準備を試すよう指示している。\n\nこれらの指令に関連し、NY連銀の公開市場デスクは、臨時対応の運営基盤を試験するため、小規模な臨時証券貸出オペを行う予定である。このオペは定例の証券貸出オペに加えて実施し、2026年12月3日木曜日の米東部時間午後12時30分から午後12時45分まで行う。訓練の上限額は1億2500万ドルである。\n\n結果はオペ終了後にNY連銀のウェブサイトに掲載される。結果には対象証券と、応札額および落札額の合計が含まれる。",
+  "facts_ja": [
+    "2026年12月3日12:30〜12:45米東部時間、臨時証券貸出訓練を予定。上限1億2500万ドル。",
+    "これは証券貸出訓練の予定であり、米国債の買入れ・売却の実績ではない。"
+  ],
+  "inference_ja": [
+    "市場機能を支える運営準備に関係し得るが、訓練の発表自体から金利・金・ドル円の方向は判定できない。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [
+    "発表時刻と公表日の日本時間換算は不明",
+    "実施結果は公表前",
+    "関連するNY連銀サイトの授権文書本文は未取得",
+    "メール経路の全記録との原文ハッシュ照合未完"
+  ],
+  "notification_eligible": false,
+  "rights": "© 2026 Federal Reserve Bank of New York. Content from the New York Fed subject to the Terms of Use at newyorkfed.org. https://www.newyorkfed.org/privacy/termsofuse ; 上記日本語訳は利用者による翻訳でありNY連銀によるものではない。NY連銀の推奨・承認を意味しない。原文と訳には同規約の許諾条件と制限が適用される。"
+}
