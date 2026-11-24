@@ -1,0 +1,137 @@
+{
+  "id": "20261124T230821Z-recheck",
+  "as_of": "2026-11-24T23:08:21Z",
+  "previous_analysis": "data/analysis/us_policy/20261124T214200Z-recheck.json",
+  "document_ids": [
+    "nyfed-20261124-securities-lending-exercise"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "status": "partial",
+      "details": "入口取得、個別資料全件未照合",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:08:21+09:00"
+      ]
+    },
+    {
+      "id": "treasury_auctions",
+      "status": "partial",
+      "details": "結果一覧取得、個別結果表未取得",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:08:21+09:00"
+      ]
+    },
+    {
+      "id": "treasury_buybacks",
+      "status": "partial",
+      "details": "入口取得、個別買戻し結果表未取得",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:08:21+09:00"
+      ]
+    },
+    {
+      "id": "fed_fomc",
+      "status": "partial",
+      "details": "会合一覧取得、個別文書未照合",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:08:21+09:00"
+      ]
+    },
+    {
+      "id": "nyfed_operations",
+      "status": "partial",
+      "details": "個別証券貸出訓練声明本文取得。直接買入・売却結果表未取得",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:08:21+09:00"
+      ]
+    },
+    {
+      "id": "white_house",
+      "status": "partial",
+      "details": "入口取得、個別文書未照合",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:08:21+09:00"
+      ]
+    },
+    {
+      "id": "ofac",
+      "status": "partial",
+      "details": "入口取得、個別指定のハッシュ照合未完",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:08:21+09:00"
+      ]
+    },
+    {
+      "id": "eia_petroleum",
+      "status": "partial",
+      "details": "入口取得。11月18日公表の在庫表一部確認、週報全表と脚注未完",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:08:21+09:00"
+      ]
+    },
+    {
+      "id": "fec_results",
+      "status": "partial",
+      "details": "入口取得、州別認証未確認",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:08:21+09:00"
+      ]
+    },
+    {
+      "id": "cfius",
+      "status": "partial",
+      "details": "入口取得、個別資料未照合",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T08:08:21+09:00"
+      ]
+    }
+  ],
+  "missing_sources": [
+    "財務省入札・買戻し及びNY連銀直接売買の個別結果表",
+    "10情報源の個別資料・表・脚注の完全照合",
+    "既存メール記録との原文ハッシュ照合",
+    "FinCEN PDF残頁・図表",
+    "過去review_afterと価格実績"
+  ],
+  "facts": [
+    "NY連銀は米国11月24日付で12月3日12:30〜12:45米東部時間の臨時証券貸出訓練を予定、上限1億2500万ドル。発表時刻不明。証券貸出予定であり国債売買の実績ではない。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "推論：証券貸出は決済機能に関係するが、小規模訓練の予定のみから金利・金・ドル円の方向は判断できない。"
+  ],
+  "historical_comparisons": [
+    "2020年3月のFRB資産購入は市場機能を支える実際の政策方針であり、今回の小規模貸出訓練予定とは規模・目的・取引形態が異なる。当初インフレ、実質金利、流動性、エネルギー構造の定量比較は未完。"
+  ],
+  "scenarios": {
+    "days": "実績・資金調達状況を確認",
+    "weeks": "実施予定の訓練結果を確認",
+    "months": "流動性・インフレと実質金利を確認",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDと金は資料不足により方向保留"
+  },
+  "invalidations": [
+    "訓練が中止・変更される",
+    "市場機能への影響が確認できない"
+  ],
+  "review_after": "2026-12-04T00:00:00Z",
+  "database_sync": "先行回に失敗記録あり、今回の反映未確認",
+  "mac_notification": "実機未確認",
+  "retry": [
+    "個別入札・買戻し・NY連銀売買表",
+    "残りの個別資料と既存記録の全文照合",
+    "FinCEN PDF残頁・図表",
+    "過去のレビュー期限到来分",
+    "PostgreSQL同期"
+  ]
+}
