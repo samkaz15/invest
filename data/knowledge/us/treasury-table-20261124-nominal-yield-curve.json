@@ -1,0 +1,26 @@
+{
+  "id": "treasury-table-20261124-nominal-yield-curve",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Yield Curve Rates Update",
+  "title_ja": "米財務省：名目利回り曲線表の部分記録",
+  "published_at": null,
+  "received_at": "2026-11-25T05:57:00+09:00",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "11/23/2026 | 10 Yr 4.92; 11/24/2026 | 10 Yr 4.91",
+  "translation_ja": "11月23日の10年物4.92％、11月24日の10年物4.91％。",
+  "facts_ja": [
+    "公式表で11月24日の10年名目利回りは4.91％、前日は4.92％。"
+  ],
+  "inference_ja": [],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "年次表の他の日付・脚注全文の原文・訳文未保存。",
+    "公表時刻不明、既存全記録とのハッシュ照合未完。"
+  ],
+  "notification_eligible": false,
+  "supersedes": null,
+  "received_at_kind": "web_retrieved"
+}
