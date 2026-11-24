@@ -1,0 +1,51 @@
+{
+  "id": "20261124T231338Z-review",
+  "as_of_jst": "2026-11-25T08:13:38+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "previous_run": "data/analysis/jp_policy/20261124T221721Z-review.json",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/about/press/index.htm",
+      "status": "一覧取得。個別講演・会見全件未照合"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "政策決定一覧取得、個別PDF全頁未照合"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261124.xlsx",
+      "status": "再取得失敗、全シート未読"
+    },
+    {
+      "url": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+      "status": "国債新着一覧取得。個別資料全件未照合"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/yotei/auct20261118.htm",
+      "status": "11月18日公表、25日入札予定の40年債の発行予定本文と表を確認。3,000億円程度。予定であり落札・実売買の結果ではない。旧公表であり今回新規扱いしない。"
+    }
+  ],
+  "new_document_ids": [],
+  "dedup": "11月18日発表は前回確認期間以前のため新規扱いしない。既存文書全件とのURL・内容照合未完。新着なしと判定しない。",
+  "rights": "日本語原文全文は複製していない。再配布条件は未確認。",
+  "facts": [
+    "40年国債の入札は11月25日予定、予定額3,000億円程度。11月18日付の既存公表情報。結果未確認。"
+  ],
+  "inference": "予定だけでは需給や利回り変化を判断できない。日米名目・実質金利、日銀オペ、市場期待不足により金・ドル円の方向は保留。",
+  "missing": [
+    "11月24日日銀オペXLSX全シート",
+    "講演・会見・政策PDF全頁",
+    "財務省入札・買入消却の個別結果",
+    "金利CSV内容",
+    "既存文書との完全な重複照合",
+    "再配布条件"
+  ],
+  "retry": [
+    "日銀XLSXを再取得",
+    "40年国債の入札結果を公表後に確認",
+    "個別買入消却と既存文書を照合",
+    "再配布条件確認"
+  ],
+  "mac_notification": "実機未確認"
+}
