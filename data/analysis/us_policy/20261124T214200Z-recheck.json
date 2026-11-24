@@ -1,0 +1,138 @@
+{
+  "id": "20261124T214200Z-recheck",
+  "as_of": "2026-11-24T21:42:00Z",
+  "document_ids": [],
+  "previous_analysis": "data/analysis/us_policy/20261124T210839Z-coverage.json",
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "status": "個別sb0699本文確認、11月23日付・時刻不明。個人情報と既存メール重複の照合未完",
+      "url": "https://home.treasury.gov/news/press-releases/sb0699",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:42:00+09:00"
+      ]
+    },
+    {
+      "id": "treasury_auctions",
+      "status": "結果一覧とAPIを再試行、APIアクセス不可・結果表未取得",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:42:00+09:00"
+      ]
+    },
+    {
+      "id": "treasury_buybacks",
+      "status": "入口取得、個別結果表未取得",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:42:00+09:00"
+      ]
+    },
+    {
+      "id": "fed_fomc",
+      "status": "入口取得、個別文書の差分未照合",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:42:00+09:00"
+      ]
+    },
+    {
+      "id": "nyfed_operations",
+      "status": "入口取得・API試行失敗、個別売買結果未取得",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:42:00+09:00"
+      ]
+    },
+    {
+      "id": "white_house",
+      "status": "入口取得、個別文書差分未照合",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:42:00+09:00"
+      ]
+    },
+    {
+      "id": "ofac",
+      "status": "一覧取得、11月23日指定の既存記録あり、全文ハッシュ照合未完",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:42:00+09:00"
+      ]
+    },
+    {
+      "id": "eia_petroleum",
+      "status": "入口取得、個別表・脚注未確認",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:42:00+09:00"
+      ]
+    },
+    {
+      "id": "fec_results",
+      "status": "入口取得、州認証未確認",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:42:00+09:00"
+      ]
+    },
+    {
+      "id": "cfius",
+      "status": "入口取得、個別資料差分未照合",
+      "url": "https://www.cfius.gov/",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:42:00+09:00"
+      ]
+    }
+  ],
+  "missing_sources": [
+    "TreasuryDirectとNY連銀APIは検索サービスでアクセス不可",
+    "入札・買戻し・FRB売買の個別結果表",
+    "財務省sb0699の既存メールとの完全なハッシュ照合・図版・日本語訳",
+    "FinCEN PDF全頁・図表訳",
+    "EIA表・脚注、州認証",
+    "期限到来レビューと価格実績"
+  ],
+  "facts": [
+    "米財務省sb0699は米国11月23日付、公表時刻不明。イラン関連の両替所、企業、個人を制裁対象に指定したと発表。金・通貨交換センターも含む。記載されたネットワークの説明は米政府の主張。公式本文は取得したが図版・完全翻訳・既存文書照合未完。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "仮説：制裁が決済・輸送を制約して実供給を減らせばエネルギー価格・物価・実質所得・景気を通して金利・資金需給に影響しうる。実供給減は未確認。"
+  ],
+  "historical_comparisons": [
+    "1973年は禁輸・減産で供給が実際に制約されたという後年史料であり、現在の供給減は未確認。2020年のFRB市場機能支援とは原因と政策が異なる。初期のインフレ、実質金利、流動性、エネルギー構造の定量比較は未完。"
+  ],
+  "scenarios": {
+    "days": "制裁適用と入札結果を確認",
+    "weeks": "輸送・原油在庫と代替供給を確認",
+    "months": "需要・物価・実質金利を確認",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両側の根拠不足で方向判断保留。金も保留。"
+  },
+  "invalidations": [
+    "実供給が減らない",
+    "代替供給や需要減が相殺"
+  ],
+  "review_after": null,
+  "review_status": "過去の期限到来分の一覧と実績未確認",
+  "database_sync": "先行回に失敗記録あり、今回未確認",
+  "mac_notification": "実機未確認",
+  "retry": [
+    "sb0699の既存メール原文との完全照合、未読図版と日本語訳",
+    "TreasuryDirect・NY連銀の個別データ",
+    "10情報源の個別資料と表・脚注",
+    "FinCEN PDF残頁",
+    "期限到来レビュー",
+    "PostgreSQL同期"
+  ]
+}
