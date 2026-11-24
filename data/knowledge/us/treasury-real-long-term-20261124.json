@@ -1,0 +1,33 @@
+{
+  "id": "treasury-real-long-term-20261124",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&field_tdr_date_value=2026",
+  "title_en": "Daily Treasury Real Long-Term Rates: November 24, 2026",
+  "title_ja": "米財務省の長期実質金利平均、11月24日は3.19％",
+  "published_at": null,
+  "observation_date": "2026-11-24",
+  "received_at": "2026-11-25T05:56:52+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "treasuries",
+    "gold"
+  ],
+  "original_text": "11/23/2026 | 3.17; 11/24/2026 | 3.19. Long Term Real Rate Average: The Long-Term Real Rate Average is the unweighted average of bid real yields on all outstanding TIPS with remaining maturities of more than 10 years and is intended as a proxy for long-term real rates.",
+  "translation_ja": "長期実質金利平均：2026年11月23日は3.17％、11月24日は3.19％。長期実質金利平均は、残存期間が10年を超える全ての既発物価連動国債（TIPS）の買い気配実質利回りの単純平均であり、長期実質金利の代用指標である。",
+  "facts_ja": [
+    "11月24日の長期実質金利平均は3.19％で、11月23日の3.17％から0.02ポイント上昇した。これは10年TIPS実質金利そのものではない。"
+  ],
+  "inference_ja": [
+    "他の条件が一定なら実質金利上昇は利息を生まない金の保有機会費用を高め得るが、金相場の方向は他の要因にも左右される。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "年次表全行と共通脚注全文の保存・訳は未完。公表時刻不明。既存全レコードのURL・日時・ハッシュ照合未完。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省の長期実質金利平均は11月24日に3.19％、前日比0.02ポイント上昇",
+  "supersedes": null,
+  "related_documents": [
+    "treasury-mail-20261124-real-long-term-update"
+  ]
+}
