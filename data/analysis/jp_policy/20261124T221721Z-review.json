@@ -1,0 +1,51 @@
+{
+  "id": "20261124T221721Z-review",
+  "as_of_jst": "2026-11-25T07:17:21+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "previous_run": "data/analysis/jp_policy/20261124T211254Z-review.json",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/about/press/index.htm",
+      "status": "講演・会見一覧の検索と入口確認。期間内の個別資料全件照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "政策決定資料の一覧取得。個別PDF全頁未照合。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261124.xlsx",
+      "status": "再取得を試行、検索サービスはアクセス不可と回答。全シート未読。"
+    },
+    {
+      "url": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+      "status": "財務省国債新着一覧を確認。11月24日には特別参加者会合予定と11月20日分金利CSVが掲載。掲載日は利回り観測日ではない。入札・買戻し全件の確認は未完。"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "11月のカレンダー入口を確認。個別結果への全件照合未完。"
+    }
+  ],
+  "new_document_ids": [],
+  "dedup": "既存記録全件との内容照合未完。新着なしと判定しない。",
+  "rights": "今回は日本語一次資料の全文複製なし。個別再配布条件未確認。",
+  "facts": [
+    "財務省の国債新着一覧では11月24日掲載分として会合日程と11月20日分国債金利CSVが挙がる。金利CSVの数値は未取得。"
+  ],
+  "inference": "日米名目・実質金利、市場期待、日銀オペ詳細の不足により金とドル円の方向は保留。",
+  "missing": [
+    "2026年11月24日日銀オペXLSXの全シート",
+    "講演・会見・政策関連PDF全頁",
+    "財務省の入札・買入消却の個別結果",
+    "11月20日分国債金利CSVの内容",
+    "既存文書とのURL・公表時刻・内容照合",
+    "個別再配布条件"
+  ],
+  "retry": [
+    "オペXLSXの再取得",
+    "金利CSV・入札・買入消却の個別資料を確認",
+    "既存記録との重複照合",
+    "再配布条件を確認"
+  ],
+  "mac_notification": "実機未確認"
+}
