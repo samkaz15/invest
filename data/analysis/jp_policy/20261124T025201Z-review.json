@@ -1,0 +1,52 @@
+{
+  "id": "20261124T025201Z-review",
+  "as_of_jst": "2026-11-24T11:52:01+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "previous_run": "data/analysis/jp_policy/20261124T013653Z-review.json",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/mopo/r_menu_koen/index.htm",
+      "status": "一覧取得、個別資料の全件照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/press/kaiken_2026/index.htm",
+      "status": "一覧取得、会見PDF全頁未照合。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "一覧取得、個別政策PDF全頁未照合。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/index.htm",
+      "status": "11月24日分オファー／落札結果XLSXを一覧で新たに確認。XLSXは形式非対応で取得失敗、内容・取引種別・公表時刻不明。11月20日分と国債補完供給も再取得失敗。",
+      "retry_urls": [
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261124.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261120.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx"
+      ]
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "今回2回取得を試行しタイムアウト。発行・入札・買入消却を今回再確認できない。"
+    }
+  ],
+  "new_document_ids": [],
+  "dedup": "11月24日のXLSXは本文未読のため内容・通知対象性と既存データの完全照合ができない。新着なしとは判定しない。",
+  "rights": "全文複製なし。各資料の再配布条件は未確認。",
+  "inference": "国債の買入れ・売却の有無や金額はデータ未取得のため判断保留。金・ドル円の方向も日米の金利等が不足し保留。",
+  "missing": [
+    "11月24日と20日のオペXLSX全シート",
+    "国債補完供給XLSX",
+    "財務省入札カレンダー再取得",
+    "会見・政策決定PDF全頁",
+    "既存資料とのURL・日時・内容照合"
+  ],
+  "retry": [
+    "日銀3種類XLSXを対応手段で再取得",
+    "財務省の一覧・個別結果を再取得",
+    "個別資料と既存文書の全件照合"
+  ],
+  "mac_notification": "実機未確認",
+  "integrations": "米国業務・Gmail webhook・朝のまとめ・調査タスクは変更していない"
+}
