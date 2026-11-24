@@ -1,0 +1,55 @@
+{
+  "id": "20261124T013653Z-review",
+  "as_of_jst": "2026-11-24T10:36:53+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "previous_run": "data/analysis/jp_policy/20261124T004702Z-review.json",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/mopo/r_menu_koen/index.htm",
+      "status": "一覧取得。個別文書の日時・全件照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/press/kaiken_2026/index.htm",
+      "status": "一覧取得。個別会見PDF全頁未照合。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "一覧取得。個別政策文書のPDF全頁未照合。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/index.htm",
+      "status": "一覧取得。オペ結果・国債補完供給のXLSX再取得は形式非対応で失敗し全シート未読。",
+      "retry_urls": [
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261120.xlsx",
+        "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx"
+      ]
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "一覧取得。個別入札・買入消却の全件照合未完。"
+    }
+  ],
+  "existing_document_ids": [
+    "mof-20261120-tbill1421-auction-result",
+    "mof-20261120-liquidity465-auction-result"
+  ],
+  "new_document_ids": [],
+  "dedup": "先行回に上記2件のURLと主要数値を照合。今回全記録の日時・ハッシュ照合未完。新着なしとは判定しない。",
+  "rights": "全文複製なし。個別再配布条件未確認。",
+  "inference": "日米の名目・実質金利や予想が不足し金・ドル円の方向判断は保留。入札と市場売買、オファーと落札結果を区別。",
+  "missing": [
+    "2種類のXLSX全シート",
+    "個別会見・政策資料のPDF全頁",
+    "買入消却個別資料",
+    "各資料の公表時刻と内容ハッシュ",
+    "再配布条件"
+  ],
+  "retry": [
+    "XLSXの対応手段による再取得",
+    "既存資料とURL・日時・内容を全件照合",
+    "再配布条件を確認"
+  ],
+  "mac_notification": "実機未確認",
+  "integrations": "米国業務・Gmail webhook・朝のまとめ・調査タスクを変更していない"
+}
