@@ -1,0 +1,153 @@
+{
+  "id": "20261124T122816Z-recheck",
+  "as_of": "2026-11-24T12:28:16Z",
+  "document_ids": [
+    "ofac-20261123-iran-designations-official-partial",
+    "fincen-20261123-iran-shadow-banking-pdf-partial"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T21:28:16+09:00"
+      ],
+      "status": "partial",
+      "details": "一覧を取得。11月23日2件は既存関連文書あり。本文全件とハッシュ照合未完。今回入口を再取得、個別資料の全件照合は未完。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T21:28:16+09:00"
+      ],
+      "status": "partial",
+      "details": "動的な個別入札結果表未取得。今回入口を再取得、個別資料の全件照合は未完。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T21:28:16+09:00"
+      ],
+      "status": "partial",
+      "details": "結果表はヘッダーのみ、個別取引未取得。今回入口を再取得、個別資料の全件照合は未完。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T21:28:16+09:00"
+      ],
+      "status": "partial",
+      "details": "一覧を確認。11月18日議事要旨以降の個別文書照合未完。今回入口を再取得、個別資料の全件照合は未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T21:28:16+09:00"
+      ],
+      "status": "partial",
+      "details": "入口取得、実行別売買結果未取得。今回入口を再取得、個別資料の全件照合は未完。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T21:28:16+09:00"
+      ],
+      "status": "partial",
+      "details": "一覧取得、個別文書の全件照合未完。今回入口を再取得、個別資料の全件照合は未完。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T21:28:16+09:00"
+      ],
+      "status": "partial",
+      "details": "前回取得失敗した一覧と11月23日個別指定を再取得。法人項目全訳・ハッシュ照合未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T21:28:16+09:00"
+      ],
+      "status": "partial",
+      "details": "一覧取得、11月18日週報の個別表・脚注未照合。今回入口を再取得、個別資料の全件照合は未完。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T21:28:16+09:00"
+      ],
+      "status": "partial",
+      "details": "入口取得、州別認証未確認。今回入口を再取得、個別資料の全件照合は未完。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T21:28:16+09:00"
+      ],
+      "status": "partial",
+      "details": "入口取得、個別資料未照合。今回入口を再取得、個別資料の全件照合は未完。"
+    }
+  ],
+  "missing_sources": [
+    "入札・財務省買戻し・NY連銀の個別結果表",
+    "FinCEN PDFの1–3、5–8頁と4頁残部の原文・訳、図1–5の視覚確認",
+    "法人指定一覧の全訳、既存メール記録との全文ハッシュ照合",
+    "州別選挙認証、各国の金利・景気データ",
+    "史料3件と過去review_afterの一覧・実績確認",
+    "TreasuryDirect検索APIは取得不可（ツール内部エラー）"
+  ],
+  "facts": [
+    "OFACの11月23日付イラン関連指定には個人と法人が含まれる。公表時刻不明。既存部分記録を参照。",
+    "FinCENの既存PDF部分記録では不審活動報告そのものは違法性の証拠ではない。PDF全文は未訳。",
+    "FinCEN PDFの検索サービスによるテキスト抽出を再試行したが、全頁の視覚確認・全文訳は未完。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "推論：決済や輸送の制約が実際に供給を減らせば、物価・景気を通じ金利と資金需給へ影響し得る。実供給への影響は未確認。"
+  ],
+  "historical_comparisons": [
+    "既存分析の1973年石油ショックと2020年市場機能支援は初期要約であり、今回の史料本体確認・当初インフレ、金利、流動性、エネルギー構造の比較は未完。"
+  ],
+  "scenarios": {
+    "days": "指定の適用と個別入札実績を確認",
+    "weeks": "輸送・在庫と代替供給を確認",
+    "months": "需要・物価・実質金利を確認",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両側の資料不足により方向判断保留。金も実質金利等の確認待ち。"
+  },
+  "invalidations": [
+    "実供給が影響を受けない",
+    "代替供給や需要減が影響を相殺"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分の一覧と実績確認は未完",
+  "database_sync": "過去に同期失敗の記録あり。今回のPostgreSQL反映状況は未確認。",
+  "mac_notification": "実機未確認",
+  "retry": [
+    "全情報源の期間内個別一次資料",
+    "未取得の入札・買戻し・NY連銀結果表",
+    "FinCEN PDF全文と図表",
+    "既存レコードの全文ハッシュ照合",
+    "DB同期結果と期限到来レビュー",
+    "TreasuryDirect検索APIの再取得"
+  ],
+  "previous_analysis": "data/analysis/us_policy/20261124T112252Z-recheck.json"
+}
