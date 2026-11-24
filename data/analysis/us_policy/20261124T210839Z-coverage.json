@@ -1,0 +1,139 @@
+{
+  "id": "20261124T210839Z-coverage",
+  "as_of": "2026-11-24T21:08:39Z",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:08:39+09:00"
+      ],
+      "status": "partial",
+      "details": "入口を開いた。一覧のみ、個別本文と重複照合未完"
+    },
+    {
+      "id": "treasury_auctions",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:08:39+09:00"
+      ],
+      "status": "partial",
+      "details": "入口を開いた。動的な個別結果表未取得"
+    },
+    {
+      "id": "treasury_buybacks",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:08:39+09:00"
+      ],
+      "status": "partial",
+      "details": "入口を開いた。個別買戻し結果表未取得"
+    },
+    {
+      "id": "fed_fomc",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:08:39+09:00"
+      ],
+      "status": "partial",
+      "details": "入口を開いた。個別文書の差分未照合"
+    },
+    {
+      "id": "nyfed_operations",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:08:39+09:00"
+      ],
+      "status": "partial",
+      "details": "入口を開いた。個別売買実績未取得"
+    },
+    {
+      "id": "white_house",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:08:39+09:00"
+      ],
+      "status": "partial",
+      "details": "入口を開いた。個別文書未照合"
+    },
+    {
+      "id": "ofac",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:08:39+09:00"
+      ],
+      "status": "partial",
+      "details": "入口を開いた。個別指定・法人一覧とハッシュ再照合未完"
+    },
+    {
+      "id": "eia_petroleum",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:08:39+09:00"
+      ],
+      "status": "partial",
+      "details": "入口を開いた。個別週報表・脚注未照合"
+    },
+    {
+      "id": "fec_results",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:08:39+09:00"
+      ],
+      "status": "partial",
+      "details": "入口を開いた。州認証未確認"
+    },
+    {
+      "id": "cfius",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T06:08:39+09:00"
+      ],
+      "status": "partial",
+      "details": "入口を開いた。個別資料未照合"
+    }
+  ],
+  "missing_sources": [
+    "一覧のみ、個別本文と重複照合未完",
+    "動的な個別結果表未取得",
+    "個別買戻し結果表未取得",
+    "個別文書の差分未照合",
+    "個別売買実績未取得",
+    "個別文書未照合",
+    "個別指定・法人一覧とハッシュ再照合未完",
+    "個別週報表・脚注未照合",
+    "州認証未確認",
+    "個別資料未照合"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [
+    "仮説：決済・輸送制約が実際の原油供給を減らせば、物価・実質所得・景気を通じて金利や資金需給に波及しうる。実供給減は未確認。"
+  ],
+  "historical_comparisons": [
+    "1973年は実際の禁輸・減産を扱う後年の史料であり、現在の実供給減は未確認。2020年のFRB市場機能支援とは原因・手段が異なる。実質金利、当初インフレ、流動性、エネルギー構造の定量比較は未完。後年解説は当時利用可能な情報ではない。"
+  ],
+  "scenarios": {
+    "days": "指定の適用と個別入札を再確認",
+    "weeks": "供給・在庫・代替輸送を確認",
+    "months": "需要・物価・実質金利を確認",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両側の資料不足で保留。金も保留。"
+  },
+  "invalidations": [
+    "実供給が減少しない",
+    "代替供給又は需要減が相殺"
+  ],
+  "review_after": null,
+  "review_status": "過去の期限到来レビュー未照合",
+  "database_sync": "先行回に失敗記録あり、今回未確認",
+  "mac_notification": "実機未確認",
+  "retry": [
+    "10情報源の個別資料と表・脚注",
+    "直近の保存済み公表時刻から24時間重ねた差分照合",
+    "FinCEN全頁翻訳・図表",
+    "期限到来レビュー",
+    "PostgreSQL同期"
+  ],
+  "previous_analysis": "data/analysis/us_policy/20261124T193939Z-recheck.json"
+}
