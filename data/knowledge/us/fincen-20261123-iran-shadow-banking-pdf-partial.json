@@ -1,0 +1,101 @@
+{
+  "id": "fincen-20261123-iran-shadow-banking-pdf-partial",
+  "source_url": "https://www.fincen.gov/sites/default/files/100/FTA-Iran-Shadow-Banking.pdf",
+  "title_en": "Iranian Shadow Banking: Update on Trends in Bank Secrecy Act Data",
+  "title_ja": "FinCEN：イラン関連金融活動の動向（PDF部分訳）",
+  "published_at": null,
+  "published_date": "2026-11-23",
+  "received_at": "2026-11-24T11:08:30+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "sanctions",
+    "oil"
+  ],
+  "original_text": "BSA reporting is merely tip and lead information, and the mere reporting of suspicious activity does not serve as proof of illegal activity.",
+  "translation_ja": "銀行秘密法に基づく報告は端緒・手掛かりにすぎず、不審な活動が報告されたというだけでは違法行為の証拠にはならない。",
+  "facts_ja": [
+    "米金融機関の報告に基づき、2025年1月から2026年8月にイランの影の銀行業務に関連する可能性がある約147億ドルの金融活動を分析した。",
+    "不審活動報告それ自体は違法性の証明ではなく、重複や適法な活動を含み得る。",
+    "PDFの図表は視覚確認を完了していない。"
+  ],
+  "inference_ja": [
+    "金融活動の調査額を実際の石油供給量の変化と同一視できない。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "8ページ中、第4ページの一文のみ原文・訳文を保存。残りの本文・全脚注と図表の訳文は未保存。",
+    "図1〜5は視覚確認・数値転記未完。PDFバイナリ、ハッシュ、再配布・プライバシー検証未完。",
+    "公表時刻と既存資料との全文ハッシュ照合は未確認。"
+  ],
+  "pdf": {
+    "page_count": 8,
+    "sha256": null,
+    "ocr_used": false,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "",
+        "extraction_status": "not_saved",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 2,
+        "original_text": "",
+        "extraction_status": "not_saved",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "extraction_status": "not_saved",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 4,
+        "original_text": "BSA reporting is merely tip and lead information, and the mere reporting of suspicious activity does not serve as proof of illegal activity.",
+        "extraction_status": "partial",
+        "translation_ja": "銀行秘密法に基づく報告は端緒・手掛かりにすぎず、不審な活動が報告されたというだけでは違法行為の証拠にはならない。",
+        "translation_status": "partial"
+      },
+      {
+        "page": 5,
+        "original_text": "",
+        "extraction_status": "not_saved",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "extraction_status": "not_saved",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 7,
+        "original_text": "",
+        "extraction_status": "not_saved",
+        "translation_ja": "",
+        "translation_status": "partial"
+      },
+      {
+        "page": 8,
+        "original_text": "",
+        "extraction_status": "not_saved",
+        "translation_ja": "",
+        "translation_status": "partial"
+      }
+    ]
+  },
+  "notification_eligible": false,
+  "supersedes": null,
+  "related_documents": [
+    "treasury-mail-20261123-fincen-iran-shadow-banking"
+  ]
+}
