@@ -1,0 +1,26 @@
+{
+  "id": "treasury-mail-20261124-long-term-rates",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Long-Term Rates Update",
+  "title_ja": "米財務省：日次長期国債金利の更新",
+  "published_at": null,
+  "received_at": "2026-11-25T05:56:49+09:00",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Long-Term Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.",
+  "translation_ja": "米財務省の日次長期国債金利を購読されています。この情報が最近更新され、閲覧できるようになりました。",
+  "facts_ja": [
+    "更新通知を受信。11月24日の表の行は今回取得できず数値は未確認。"
+  ],
+  "inference_ja": [],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [
+    "リンク先の11月24日行が未取得、再試行対象。表・脚注の全文訳と既存全記録のハッシュ照合は未完。",
+    "公表時刻不明。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省が日次長期国債金利表の更新を通知、当日分の数値は現在も確認できていません",
+  "supersedes": null
+}
