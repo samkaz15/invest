@@ -1,0 +1,148 @@
+{
+  "id": "20261124T010658Z-recheck",
+  "as_of": "2026-11-24T10:06:58+09:00",
+  "document_ids": [
+    "ofac-20261123-iran-designations-official-partial",
+    "ofac-mail-20261123-iran-sdn-update"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T10:06:58+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得。先行回に財務省個別資料を確認、全件照合未完。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T10:06:58+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、個別入札・結果表未取得。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T10:06:58+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、個別買戻し実績表未取得。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T10:06:58+09:00"
+      ],
+      "status": "partial",
+      "detail": "一覧取得、個別文書の全件照合未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T10:06:58+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、個別売買結果表未取得。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T10:06:58+09:00"
+      ],
+      "status": "partial",
+      "detail": "一覧取得、個別政策文書全件照合未完。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T10:06:58+09:00"
+      ],
+      "status": "partial",
+      "detail": "一覧と11月23日個別指定を取得。個人情報を除いた一部を保存、法人一覧全訳と全文ハッシュ照合未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T10:06:58+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、個別週報の表・脚注未確認。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T10:06:58+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、州選挙認証未確認。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T10:06:58+09:00"
+      ],
+      "status": "partial",
+      "detail": "入口取得、個別政策資料の全件照合未完。"
+    }
+  ],
+  "missing_sources": [
+    "FinCEN PDF全頁・訳",
+    "OFAC法人指定の全訳、個人情報を含む部分の保存は禁止",
+    "個別入札・買戻し・FRB売買表",
+    "州認証",
+    "既存情報の全文ハッシュ照合",
+    "レビュー到来分・時系列"
+  ],
+  "facts": [
+    {
+      "source_url": "https://ofac.treasury.gov/recent-actions/20261123",
+      "published_at": null,
+      "retrieved_at": "2026-11-24T10:06:58+09:00",
+      "text": "OFACが11月23日付で個人・法人をSDNに追加。法人にイラン通貨・金取引センターを含む。公表時刻不明。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": [
+    "決済制約が実際の供給を減らすなら原油価格・物価・景気・金利・資金需給に波及し得る。実供給減は未確認。"
+  ],
+  "historical_comparisons": [
+    "1973年の石油供給制約は後年の史料による初期要約。今回の供給変化は未確認。",
+    "2020年FRBの市場機能支援とは原因・政策が異なる。両時点の初期インフレ、金利、流動性、エネルギー構造の定量比較は未完。"
+  ],
+  "scenarios": {
+    "days": "個別指定の適用と入札の実績を確認。",
+    "weeks": "実際の原油供給、輸送、在庫と代替経路を確認。",
+    "months": "物価・需要・実質金利を確認。",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは相手国を含む資料不足で方向判断保留。金も保留。"
+  },
+  "invalidations": [
+    "供給に実変化がない",
+    "代替供給や需要減が影響を相殺"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分の列挙と事後評価未完",
+  "database_sync": "先行回に同期失敗。今回の最新DB反映未確認。",
+  "mac_notification": "実機未確認"
+}
