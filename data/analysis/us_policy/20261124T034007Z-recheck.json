@@ -1,0 +1,143 @@
+{
+  "id": "20261124T034007Z-recheck",
+  "as_of": "2026-11-24T12:40:07+09:00",
+  "document_ids": [
+    "fincen-20261123-iran-shadow-banking-pdf-partial",
+    "ofac-20261123-iran-designations-official-partial"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T12:40:07+09:00"
+      ],
+      "status": "partial",
+      "details": "入口取得、個別発表の全件照合未完。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T12:40:07+09:00"
+      ],
+      "status": "partial",
+      "details": "入口取得、動的な個別入札表未取得。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T12:40:07+09:00"
+      ],
+      "status": "partial",
+      "details": "入口取得、個別買戻し結果表未取得。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T12:40:07+09:00"
+      ],
+      "status": "partial",
+      "details": "一覧取得、個別声明等の全件照合未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T12:40:07+09:00"
+      ],
+      "status": "partial",
+      "details": "入口取得、個別売買結果表未取得。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T12:40:07+09:00"
+      ],
+      "status": "partial",
+      "details": "入口取得、個別政策文書全件照合未完。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T12:40:07+09:00"
+      ],
+      "status": "partial",
+      "details": "入口取得、先行回の指定抜粋を参照。法人一覧全訳未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T12:40:07+09:00"
+      ],
+      "status": "partial",
+      "details": "入口取得、個別週報の表と脚注未照合。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T12:40:07+09:00"
+      ],
+      "status": "partial",
+      "details": "入口取得、州別認証資料未確認。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-24T12:40:07+09:00"
+      ],
+      "status": "partial",
+      "details": "入口取得、個別資料全件照合未完。"
+    }
+  ],
+  "missing_sources": [
+    "入札・買戻し・FRB売買の個別結果表",
+    "FinCEN PDF図表の視覚確認と残りの訳文",
+    "州選挙認証",
+    "既存文書の全文ハッシュ照合",
+    "期限到来レビュー・市場時系列"
+  ],
+  "facts": [
+    "先行回に取得したFinCENの8頁PDFは部分訳のみ保存。疑わしい活動の報告自体は違法性の証明ではない。",
+    "OFAC指定の既存抜粋ではイラン通貨・金取引センターが法人の一つ。発表時刻は不明。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "決済・輸送への制約が実際に供給を減らす場合、物価・景気を経て金利と資金需給に影響し得る。実供給変化は未確認。"
+  ],
+  "historical_comparisons": [
+    "1973年石油ショックは後年史料による初期要約で今回の実供給変化は未確認。",
+    "2020年FRB対応は当時声明による市場機能支援で原因・政策が異なる。インフレ、金利、流動性、エネルギー構造の定量比較未完。"
+  ],
+  "scenarios": {
+    "days": "指定適用と入札実績の確認。",
+    "weeks": "輸送・在庫・代替供給の確認。",
+    "months": "需要・物価・実質金利の確認。",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDおよび金は資料不足で方向判断保留。"
+  },
+  "invalidations": [
+    "実供給に影響がない",
+    "代替供給や需要減が影響を相殺"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分の一覧と検証は未完",
+  "database_sync": "先行回に同期失敗。最新のPostgreSQL反映未確認。",
+  "mac_notification": "実機未確認"
+}
