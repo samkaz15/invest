@@ -1,0 +1,48 @@
+{
+  "id": "20261124T192750Z-review",
+  "as_of_jst": "2026-11-25T04:27:50+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "previous_run": "data/analysis/jp_policy/20261124T180642Z-review.json",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/mopo/r_menu_koen/index.htm",
+      "status": "一覧再取得、個別文書の全件照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/press/kaiken_2026/index.htm",
+      "status": "一覧再取得、個別PDF全頁照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "一覧再取得、個別政策PDF全頁照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/index.htm",
+      "status": "11月24日XLSXは検索サービスで再取得できず全シート未読。",
+      "retry_url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261124.xlsx"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "カレンダー再取得。個別入札・買入消却の全件照合未完。"
+    }
+  ],
+  "new_document_ids": [],
+  "dedup": "前回XLSXは未読で内容比較不可。既存全件のURL・時刻・内容照合未完、新着なしとは判定しない。",
+  "rights": "今回全文複製なし。個別再配布条件未確認。",
+  "inference": "オペ種別・金額未確認。日米の名目・実質金利と市場期待が不足し金・ドル円は方向保留。",
+  "missing": [
+    "日銀オペ・国債補完供給のXLSX全シート",
+    "個別会見・政策PDF全頁",
+    "財務省買入消却個別資料",
+    "公表時刻と既存文書の全文ハッシュ",
+    "再配布条件"
+  ],
+  "retry": [
+    "XLSXの対応手段による再取得",
+    "個別資料と既存文書を日時・内容で照合",
+    "再配布条件を確認"
+  ],
+  "mac_notification": "実機未確認",
+  "integrations": "米国業務、Gmail webhook、朝のまとめ、調査タスクを変更していない"
+}
