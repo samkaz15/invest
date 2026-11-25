@@ -1,0 +1,62 @@
+{
+  "id": "20261125T042745Z-partial",
+  "as_of": "2026-11-25T13:27:45+09:00",
+  "input_document_ids": [],
+  "sources_checked": [
+    "treasury_news",
+    "treasury_auctions",
+    "treasury_buybacks",
+    "fed_fomc",
+    "nyfed_operations",
+    "white_house",
+    "ofac",
+    "eia_petroleum",
+    "fec_results",
+    "cfius"
+  ],
+  "coverage": "各情報源の入口のみを確認。個別資料と既存記録の網羅的照合・最終保存日時の確認は未完。確認下限を確定できず、初回72時間確認も未完。",
+  "missing_sources": [
+    "入札・買戻し動的な結果表",
+    "NY連銀個別オペ",
+    "EIA個別表・PDF",
+    "州認証",
+    "政策資料個別PDF",
+    "既存知識の完全な重複照合とレビュー期限到来分",
+    "歴史ケース・当初の経済条件",
+    "PostgreSQL同期の実績"
+  ],
+  "facts": [
+    {
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0699/",
+      "published_date": "2026-11-23",
+      "published_at": null,
+      "retrieved_at": "2026-11-25T13:27:45+09:00",
+      "fact": "財務省はイラン関連の両替商、フロント企業、関係者を制裁対象としたと発表。対象ネットワークや取引の説明は同省の主張。個別本文を部分確認。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": "推論：制裁が原油輸出の決済を制約するなら供給や価格に影響しうるが、実際の供給量や迂回、需要を未確認。",
+  "historical_comparisons": "史料と当初条件未確認のため比較保留。",
+  "scenarios": {
+    "日": "決済障害の実態待ち",
+    "週": "原油供給と在庫の実測確認待ち",
+    "月": "政策継続と需要の確認待ち",
+    "USDJPY": "両通貨側の実質・名目金利等が不足し判断保留",
+    "EURUSD": "両通貨側の資料不足で保留"
+  },
+  "invalidations": [
+    "輸出量が維持・増加する場合、供給制約仮説は弱まる",
+    "需要減退が供給減を上回る場合、物価経路は変化する"
+  ],
+  "review_after": null,
+  "retry": [
+    "公式個別資料・表・脚注・PDFを取得",
+    "最新保存記録から24時間重複期間を確定しメール経路と照合",
+    "未取得資料の原文と訳をADRに沿って保存",
+    "史料ケースと期限到来レビュー確認",
+    "DB同期を確認"
+  ],
+  "github_status": "本文書以外の今回の知識レコードは未保存。",
+  "database_status": "未確認",
+  "pc_notification": "未確認"
+}
