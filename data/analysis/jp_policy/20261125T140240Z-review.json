@@ -1,0 +1,55 @@
+{
+  "id": "20261125T140240Z-review",
+  "as_of_jst": "2026-11-25T23:02:40+09:00",
+  "previous_run": "data/analysis/jp_policy/20261125T124141Z-review.json",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "delta_window_start_jst": "2026-11-25T21:41:41+09:00",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/about/press/index.htm",
+      "status": "一覧を確認。最新掲載講演・会見は11月16日・13日。個別PDFの全ページ照合は未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "一覧を確認。最新掲載は11月13日。個別PDFの全ページ照合は未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261125.xlsx",
+      "status": "再取得失敗、全シート未読。11月24日の資料も未取得。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx",
+      "status": "今回未取得、銘柄別表未読。"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "一覧及び11月25日の40年入札・第II非価格結果本文と表を確認、両方とも既存JSONに記録あり。"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/topics/press_release/20260929-01.htm",
+      "status": "物価連動債の11月買入消却は実施予定なしとの過去の予定を確認。実績の不存在は証明しない。他の買入消却結果の個別照合は未完。"
+    },
+    {
+      "url": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+      "status": "一覧取得。個別文書の網羅照合未完。"
+    }
+  ],
+  "new_document_ids": [],
+  "dedup": "40年入札結果と第II非価格入札結果について既存ファイルを確認。未取得資料は内容照合不能。全体の新着なしとは判断しない。",
+  "rights": "今回の公的資料は要点の記録のみ。全文複製なし。",
+  "missing": [
+    "11月24日・25日の日銀オペXLSX全シート",
+    "国債補完供給XLSX",
+    "講演・政策PDFの全頁",
+    "買入消却の個別実績",
+    "全既存資料との網羅照合"
+  ],
+  "retry": [
+    "日銀オペおよび国債補完供給XLSXの取得と照合",
+    "対象PDFのページ別確認",
+    "財務省買入消却個別実績の照合"
+  ],
+  "mac_notification": "実機未確認",
+  "automation": "既存設定に変更なし"
+}
