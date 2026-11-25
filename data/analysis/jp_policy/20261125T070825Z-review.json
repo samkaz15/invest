@@ -1,0 +1,38 @@
+{
+  "id": "20261125T070825Z-review",
+  "as_of_jst": "2026-11-25T16:08:25+09:00",
+  "previous_run": "data/analysis/jp_policy/20261125T055234Z-review.json",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261125a.htm",
+      "status": "公式カレンダーからリンク先の本文・表を取得。第Ⅱ非価格競争入札の結果として保存。公表時刻は不明。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "一覧取得。11月24日XLSXは検索サービス非対応で再取得失敗、全シート未読。"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "一覧取得。買入消却ほか個別結果の全件照合は未完。"
+    }
+  ],
+  "new_document_ids": [
+    "mof-20261125-jgb40-19-noncompetitive-2-result"
+  ],
+  "dedup": "公式URLのGitHub検索は一致なし。競争入札結果とは別文書。全レコード照合は未完。",
+  "rights": "財務省の利用条件を確認し、全文複製せず要約と公式URLを記録。",
+  "missing": [
+    "日銀オペXLSX全シート",
+    "講演・政策関連PDF全頁",
+    "国債買入消却の個別結果",
+    "既存文書全件照合",
+    "実際の公表時刻"
+  ],
+  "retry": [
+    "XLSX取得と照合",
+    "買入消却・PDF・既存文書を照合"
+  ],
+  "mac_notification": "実機未確認。GitHub保存はMac通知成功を意味しない。"
+}
