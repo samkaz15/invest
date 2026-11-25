@@ -1,0 +1,48 @@
+{
+  "id": "20261125T224204Z-review",
+  "as_of_jst": "2026-11-26T07:42:04+09:00",
+  "previous_run": "data/analysis/jp_policy/20261125T214404Z-review.json",
+  "delta_window_start_jst": "2026-11-26T06:44:04+09:00",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/about/press/index.htm",
+      "status": "講演・会見一覧確認。26日田村委員挨拶は予定、本文未公開。会見PDF本文未確認。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "一覧確認。国債補完供給の11月分XLSXは取得エラー、全シート未確認。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/other/tmei/index.htm",
+      "status": "25日掲載の20日現在買入額XLSXを発見。取得エラー、全シート未確認。"
+    },
+    {
+      "url": "https://www.mof.go.jp/public_relations/whats_new/202611.html",
+      "status": "新着一覧を確認。25日の40年債関係3件は既存IDを確認。個別資料の全照合未完。"
+    },
+    {
+      "url": "https://www.mof.go.jp/public_relations/weekly_schedule/index.htm",
+      "status": "週間予定を確認。26日10時30分の予定は予定であり決定済み情報ではない。"
+    }
+  ],
+  "new_document_ids": [],
+  "dedup": "既存の40年債告示・結果・第II結果3件のIDを確認。文書内容と発表時刻の全照合は未完。新着なしとは判定しない。",
+  "missing": [
+    "国庫短期証券銘柄別買入額XLSX全シート",
+    "国債補完供給XLSX全シート",
+    "日銀オペ個別結果・関連PDF",
+    "財務省買入消却個別実績",
+    "既存記録と公表時刻・内容の完全照合",
+    "転載条件の個別確認"
+  ],
+  "retry": [
+    "https://www.boj.or.jp/statistics/boj/other/tmei/release/2026/tmei261120.xlsx",
+    "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx",
+    "日銀オペの個別結果とPDF",
+    "財務省買入消却結果",
+    "26日田村委員挨拶の公開後確認"
+  ],
+  "rights": "日本語本文の全文複製なし。",
+  "mac_notification": "実機未確認"
+}
