@@ -1,0 +1,111 @@
+{
+  "id": "20261125T215146Z-partial",
+  "as_of": "2026-11-26T06:51:46+09:00",
+  "previous_run": "data/analysis/us_policy/20261125T204854Z-partial.json",
+  "input_document_ids": [
+    "nyfed-20261124-securities-lending-exercise"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "checked_at_jst": "2026-11-26T06:51:46+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、個別文書・表と既存メール経路を含む24時間重複照合未完。"
+    },
+    {
+      "id": "treasury_auctions",
+      "checked_at_jst": "2026-11-26T06:51:46+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、個別文書・表と既存メール経路を含む24時間重複照合未完。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "checked_at_jst": "2026-11-26T06:51:46+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、個別文書・表と既存メール経路を含む24時間重複照合未完。"
+    },
+    {
+      "id": "fed_fomc",
+      "checked_at_jst": "2026-11-26T06:51:46+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、個別文書・表と既存メール経路を含む24時間重複照合未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "checked_at_jst": "2026-11-26T06:51:46+09:00",
+      "coverage_start_jst": null,
+      "status": "入口と11月24日付の小規模貸出訓練声明本文を確認。同一URLの既存JSONに全文と訳あり。公表時刻不明、他のオペ結果の照合未完。"
+    },
+    {
+      "id": "white_house",
+      "checked_at_jst": "2026-11-26T06:51:46+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、個別文書・表と既存メール経路を含む24時間重複照合未完。"
+    },
+    {
+      "id": "ofac",
+      "checked_at_jst": "2026-11-26T06:51:46+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、個別文書・表と既存メール経路を含む24時間重複照合未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "checked_at_jst": "2026-11-26T06:51:46+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、個別文書・表と既存メール経路を含む24時間重複照合未完。"
+    },
+    {
+      "id": "fec_results",
+      "checked_at_jst": "2026-11-26T06:51:46+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、個別文書・表と既存メール経路を含む24時間重複照合未完。"
+    },
+    {
+      "id": "cfius",
+      "checked_at_jst": "2026-11-26T06:51:46+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、個別文書・表と既存メール経路を含む24時間重複照合未完。"
+    }
+  ],
+  "coverage": "各情報源の最新保存公表時刻は未確定。未取得を新着なしと扱わない。",
+  "missing_sources": [
+    "国債入札・買戻し・FRB売買の個別結果",
+    "EIA週報PDF全ページ訳と公表時刻",
+    "その他個別資料の網羅照合",
+    "両通貨の金融条件",
+    "期限到来レビュー",
+    "DB同期"
+  ],
+  "facts": [
+    {
+      "source_url": "https://www.newyorkfed.org/markets/opolicy/operating_policy_261124",
+      "existing_id": "nyfed-20261124-securities-lending-exercise",
+      "published_at": null,
+      "published_date": "2026-11-24",
+      "description": "NY連銀は12月3日に最大1億2500万ドルの臨時証券貸出訓練を予定。国債の買入・売却の実績ではない。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": "貸出訓練は市場機能に関係するが発表だけでは金利や資産価格の方向は判断できない。",
+  "historical_comparisons": "2020年のFRB国債購入方針と、今回の小規模な証券貸出訓練は目的・手段・規模が異なる。初期金利と流動性の詳細比較は未完。",
+  "scenarios": {
+    "days": "予定の内容を確認",
+    "weeks": "訓練実施後の結果を確認",
+    "months": "流動性と需給の追加情報を確認",
+    "USDJPY": "両国の金融条件不足で保留",
+    "EURUSD": "双方の条件不足で保留"
+  },
+  "invalidations": [
+    "訓練内容が変更・中止される",
+    "市場機能に影響する実績が確認されない"
+  ],
+  "review_after": null,
+  "retry": [
+    "EIA全頁・時刻・翻訳・重複照合",
+    "国債売買・入札・買戻し等の個別資料",
+    "期限到来レビューとDB同期"
+  ],
+  "knowledge_status": "NY連銀の既存レコードを再確認し重複保存せず。他の資料は未照合",
+  "database_status": "未確認",
+  "pc_notification": "未確認"
+}
