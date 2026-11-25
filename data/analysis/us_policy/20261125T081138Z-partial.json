@@ -1,0 +1,101 @@
+{
+  "id": "20261125T081138Z-partial",
+  "as_of": "2026-11-25T17:11:38+09:00",
+  "previous_run": "data/analysis/us_policy/20261125T064901Z-partial.json",
+  "input_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_auctions",
+      "checked_at_jst": "2026-11-25T17:11:38+09:00",
+      "coverage_start_jst": null,
+      "status": "一覧取得失敗"
+    },
+    {
+      "id": "treasury_buybacks",
+      "checked_at_jst": "2026-11-25T17:11:38+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、個別結果表未取得"
+    },
+    {
+      "id": "nyfed_operations",
+      "checked_at_jst": "2026-11-25T17:11:38+09:00",
+      "coverage_start_jst": null,
+      "status": "入口一覧を取得、個別資料の全件照合未完"
+    },
+    {
+      "id": "fed_fomc",
+      "checked_at_jst": "2026-11-25T17:11:38+09:00",
+      "coverage_start_jst": null,
+      "status": "入口一覧を取得、個別資料の全件照合未完"
+    },
+    {
+      "id": "treasury_news",
+      "checked_at_jst": "2026-11-25T17:11:38+09:00",
+      "coverage_start_jst": null,
+      "status": "入口一覧を取得、個別資料の全件照合未完"
+    },
+    {
+      "id": "white_house",
+      "checked_at_jst": "2026-11-25T17:11:38+09:00",
+      "coverage_start_jst": null,
+      "status": "入口一覧を取得、個別資料の全件照合未完"
+    },
+    {
+      "id": "ofac",
+      "checked_at_jst": "2026-11-25T17:11:38+09:00",
+      "coverage_start_jst": null,
+      "status": "入口一覧を取得、個別資料の全件照合未完"
+    },
+    {
+      "id": "eia_petroleum",
+      "checked_at_jst": "2026-11-25T17:11:38+09:00",
+      "coverage_start_jst": null,
+      "status": "入口一覧を取得、個別資料の全件照合未完"
+    },
+    {
+      "id": "fec_results",
+      "checked_at_jst": "2026-11-25T17:11:38+09:00",
+      "coverage_start_jst": null,
+      "status": "入口一覧を取得、個別資料の全件照合未完"
+    },
+    {
+      "id": "cfius",
+      "checked_at_jst": "2026-11-25T17:11:38+09:00",
+      "coverage_start_jst": null,
+      "status": "入口一覧を取得、個別資料の全件照合未完"
+    }
+  ],
+  "missing_sources": [
+    "入札・買戻し・FRB売買の個別結果",
+    "石油表・PDF",
+    "州選挙認証",
+    "対象期間及び既存メールレコードとの完全照合",
+    "歴史ケース・事後レビュー",
+    "PostgreSQL"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": "確認可能な新規個別事実及び相手国データが不足し、判断保留。",
+  "historical_comparisons": "史料未確認につき保留",
+  "scenarios": {
+    "days": "未評価",
+    "weeks": "未評価",
+    "months": "未評価",
+    "USDJPY": "資料不足につき保留",
+    "EURUSD": "資料不足につき保留"
+  },
+  "invalidations": [
+    "個別資料と両通貨の金融条件を取得した時点で再評価"
+  ],
+  "review_after": null,
+  "retry": [
+    "個別入札、買戻し、FRB取引を再取得",
+    "他の情報源の個別資料、本文、表、PDFを取得",
+    "最新保存時刻と重複を照合",
+    "史料と期限到来レビューを確認",
+    "DB反映を確認"
+  ],
+  "database_status": "未確認",
+  "pc_notification": "未確認",
+  "knowledge_status": "既存文書との重複照合が未完のため新規知識JSONは保存していない"
+}
