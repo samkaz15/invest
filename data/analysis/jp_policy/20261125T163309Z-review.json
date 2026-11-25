@@ -1,0 +1,51 @@
+{
+  "id": "20261125T163309Z-review",
+  "as_of_jst": "2026-11-26T01:33:09+09:00",
+  "previous_run": "data/analysis/jp_policy/20261125T162227Z-review.json",
+  "delta_window_start_jst": "2026-11-26T01:22:27+09:00",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/about/press/index.htm",
+      "status": "一覧取得。個別資料の網羅的照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "一覧取得。個別PDF全頁未照合。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261125.xlsx",
+      "status": "再取得失敗、全シート未読。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx",
+      "status": "再取得失敗、XLSX非対応で全シート未読。"
+    },
+    {
+      "url": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+      "status": "一覧取得、個別資料の網羅的照合未完。"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/syokyaku/ichiran224.htm",
+      "status": "11月4日公表の10月実施分の本文と表・注を確認。10月の買入消却累計151億円。新規11月の実績ではない。11月実績の個別照合は未完。"
+    }
+  ],
+  "new_document_ids": [],
+  "dedup": "確認した10月の資料は今回の差分期間外。未取得資料の網羅照合は未完で新着なしとは結論しない。",
+  "rights": "要点と公式URLのみ。全文複製なし。",
+  "missing": [
+    "日銀オペ11月24日・25日XLSX",
+    "国債補完供給XLSX",
+    "関連PDF全頁",
+    "11月買入消却個別実績",
+    "既存記録全件照合"
+  ],
+  "retry": [
+    "日銀XLSXの再取得",
+    "11月買入消却実績の個別確認",
+    "既存資料のURL・公表時刻・内容照合",
+    "PDF全ページ確認"
+  ],
+  "mac_notification": "実機未確認",
+  "automation": "設定変更なし"
+}
