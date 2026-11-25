@@ -1,0 +1,63 @@
+{
+  "id": "20261125T054250Z-partial",
+  "as_of": "2026-11-25T14:42:50+09:00",
+  "previous_run": "data/analysis/us_policy/20261125T052932Z-partial.json",
+  "input_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_auctions",
+      "status": "個別結果一覧は動的表未表示",
+      "coverage_start_jst": null
+    },
+    {
+      "id": "ofac",
+      "status": "11月23日の個別指定ページを再取得、個人情報は保存しない",
+      "coverage_start_jst": null
+    },
+    {
+      "id": "eia_petroleum",
+      "status": "在庫JSONを取得。公表日は11月18日、観測最終日11月13日。長い全系列と他の表・PDFは未読。",
+      "coverage_start_jst": null
+    }
+  ],
+  "missing_sources": [
+    "残る7情報源は今回未確認",
+    "入札・買戻し・NY連銀個別結果",
+    "EIAの全系列・他の表及びPDF",
+    "公表時刻基準の既存記録・メール経路照合",
+    "歴史ケース、期限到来レビュー",
+    "翻訳及び知識JSON",
+    "DB同期"
+  ],
+  "facts": [
+    {
+      "source_url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "fact": "EIAの商業原油在庫JSONに記載された公表日は11月18日、対象の最終観測日は11月13日。",
+      "published_at": null,
+      "retrieved_at": "2026-11-25T14:42:50+09:00"
+    }
+  ],
+  "reported": [],
+  "causal_channels": "資料不足で評価保留。",
+  "historical_comparisons": "史料未確認のため保留",
+  "scenarios": {
+    "days": "供給の実測を待つ",
+    "weeks": "在庫と輸出入を確認",
+    "months": "供給需要と金融条件を確認",
+    "USDJPY": "日米両方の資料不足で保留",
+    "EURUSD": "米欧両方の資料不足で保留"
+  },
+  "invalidations": [
+    "供給制約が確認されなければ供給減の仮説は弱まる"
+  ],
+  "review_after": null,
+  "retry": [
+    "指定10情報源の期間を確定し個別資料を確認",
+    "既存JSONと公式URL・公表時刻・ハッシュで照合",
+    "EIA原文・表・PDF・翻訳を取得",
+    "史料と既存分析をレビュー",
+    "DB反映を確認"
+  ],
+  "database_status": "未確認",
+  "pc_notification": "未確認"
+}
