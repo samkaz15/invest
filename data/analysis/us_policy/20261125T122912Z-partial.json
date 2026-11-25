@@ -1,0 +1,102 @@
+{
+  "id": "20261125T122912Z-partial",
+  "as_of": "2026-11-25T21:29:12+09:00",
+  "previous_run": "data/analysis/us_policy/20261125T111215Z-partial.json",
+  "input_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_auctions",
+      "checked_at_jst": "2026-11-25T21:29:12+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表及び既存記録との網羅的照合は未完。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "checked_at_jst": "2026-11-25T21:29:12+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表及び既存記録との網羅的照合は未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "checked_at_jst": "2026-11-25T21:29:12+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表及び既存記録との網羅的照合は未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "checked_at_jst": "2026-11-25T21:29:12+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表及び既存記録との網羅的照合は未完。"
+    },
+    {
+      "id": "ofac",
+      "checked_at_jst": "2026-11-25T21:29:12+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表及び既存記録との網羅的照合は未完。"
+    },
+    {
+      "id": "fed_fomc",
+      "checked_at_jst": "2026-11-25T21:29:12+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表及び既存記録との網羅的照合は未完。"
+    },
+    {
+      "id": "treasury_news",
+      "checked_at_jst": "2026-11-25T21:29:12+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表及び既存記録との網羅的照合は未完。"
+    },
+    {
+      "id": "white_house",
+      "checked_at_jst": "2026-11-25T21:29:12+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表及び既存記録との網羅的照合は未完。"
+    },
+    {
+      "id": "cfius",
+      "checked_at_jst": "2026-11-25T21:29:12+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表及び既存記録との網羅的照合は未完。"
+    },
+    {
+      "id": "fec_results",
+      "checked_at_jst": "2026-11-25T21:29:12+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表及び既存記録との網羅的照合は未完。"
+    }
+  ],
+  "coverage": "各情報源の最新保存時刻が不明で差分確認期間を確定できない。",
+  "missing_sources": [
+    "財務省の個別入札・買戻し結果",
+    "NY連銀の個別買入・売却結果",
+    "EIA個別表とPDF",
+    "州選挙認証",
+    "既存メール経路とのURL・公表時刻・ハッシュ照合",
+    "歴史ケースと事後レビュー",
+    "PostgreSQL同期"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": "新規個別資料と両通貨側の資料不足により保留。",
+  "historical_comparisons": "史料未確認につき保留。",
+  "scenarios": {
+    "days": "未評価",
+    "weeks": "未評価",
+    "months": "未評価",
+    "USDJPY": "資料不足により保留",
+    "EURUSD": "資料不足により保留"
+  },
+  "invalidations": [
+    "個別事実と両通貨の金融条件を確認し再評価"
+  ],
+  "review_after": null,
+  "retry": [
+    "各情報源の個別資料・表・PDF取得",
+    "既存知識とメール経路を照合",
+    "史料・期限到来レビュー確認",
+    "DB同期確認"
+  ],
+  "knowledge_status": "重複照合が未完のため新規知識JSON未保存",
+  "database_status": "未確認",
+  "pc_notification": "未確認"
+}
