@@ -1,0 +1,59 @@
+{
+  "id": "20261125T083852Z-partial",
+  "as_of": "2026-11-25T17:38:52+09:00",
+  "previous_run": "data/analysis/us_policy/20261125T081138Z-partial.json",
+  "input_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_auctions",
+      "status": "入口取得。個別入札結果は未取得。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "status": "入口取得。動的結果表は未取得。"
+    },
+    {
+      "id": "nyfed_operations",
+      "status": "データ画面を再取得したが個別取引表は表示されず未確認。"
+    },
+    {
+      "id": "eia_petroleum",
+      "status": "入口取得、表・PDF未取得。"
+    }
+  ],
+  "coverage": "上記4情報源以外は今回未確認。保存時刻が未確定で差分期間を確定できない。",
+  "missing_sources": [
+    "財務省入札・買戻しの個別結果",
+    "NY連銀の個別売買結果",
+    "原油表・PDF",
+    "残る6情報源の今回再確認",
+    "既存記録及びメール経路との照合",
+    "歴史ケース・事後レビュー",
+    "PostgreSQL同期"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": "対象となる新規個別事実と両通貨の経済資料が不足しており保留。",
+  "historical_comparisons": "史料未確認につき保留。",
+  "scenarios": {
+    "days": "未評価",
+    "weeks": "未評価",
+    "months": "未評価",
+    "USDJPY": "両国側資料不足により保留",
+    "EURUSD": "両国側資料不足により保留"
+  },
+  "invalidations": [
+    "個別資料と両通貨の金融条件を取得して再評価"
+  ],
+  "review_after": null,
+  "retry": [
+    "NY連銀個別取引表を再取得",
+    "財務省個別入札・買戻し結果を取得",
+    "各資料の原文とPDF、既存データを照合",
+    "歴史ケース・レビューを確認",
+    "DB同期を確認"
+  ],
+  "knowledge_status": "今回新規知識JSONは保存なし",
+  "database_status": "未確認",
+  "pc_notification": "未確認"
+}
