@@ -1,0 +1,25 @@
+{
+  "id": "boj-20261125-balance-20261120",
+  "title_ja": "日銀、11月20日時点の営業毎旬報告を公表",
+  "summary_ja": "日銀の11月20日時点の国債資産は約506.2兆円で、内訳は全て長期国債でした。",
+  "source_url": "https://www.boj.or.jp/statistics/boj/other/acmai/release/2026/ac261120.htm",
+  "published_at": null,
+  "published_date_jst": "2026-11-25",
+  "retrieved_at": "2026-11-25T13:13:39+09:00",
+  "notification_eligible": true,
+  "document_type": "営業毎旬報告",
+  "facts_ja": [
+    "11月20日現在の資産の国債は506,211,260,704千円。内訳は長期国債が同額、国庫短期証券はゼロ。",
+    "これは所定日時点の会計残高であり、個別の国債買入れ・売却オペの実施額ではない。"
+  ],
+  "inference_ja": [
+    "国債の保有残高は需給を考える材料となるが、この残高だけで売買額や金利・金・ドル円の方向は判断できない。"
+  ],
+  "missing_parts": [
+    "公表時刻不明",
+    "前回残高との増減要因や個別オペ結果は未照合",
+    "既存記録の全件内容照合は未完"
+  ],
+  "content_scope": "日本語要約",
+  "rights_status": "全文複製せず要約と公式URLを記載。個別の全文再配布条件は未確認。"
+}
