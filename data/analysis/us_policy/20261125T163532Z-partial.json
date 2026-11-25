@@ -1,0 +1,101 @@
+{
+  "id": "20261125T163532Z-partial",
+  "as_of": "2026-11-26T01:35:32+09:00",
+  "previous_run": "data/analysis/us_policy/20261125T153250Z-partial.json",
+  "input_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "checked_at_jst": "2026-11-26T01:35:32+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。対象期間中の個別文書と既存記録の網羅照合は未完。"
+    },
+    {
+      "id": "treasury_auctions",
+      "checked_at_jst": "2026-11-26T01:35:32+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。対象期間中の個別文書と既存記録の網羅照合は未完。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "checked_at_jst": "2026-11-26T01:35:32+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。対象期間中の個別文書と既存記録の網羅照合は未完。"
+    },
+    {
+      "id": "fed_fomc",
+      "checked_at_jst": "2026-11-26T01:35:32+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。対象期間中の個別文書と既存記録の網羅照合は未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "checked_at_jst": "2026-11-26T01:35:32+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。対象期間中の個別文書と既存記録の網羅照合は未完。"
+    },
+    {
+      "id": "white_house",
+      "checked_at_jst": "2026-11-26T01:35:32+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。対象期間中の個別文書と既存記録の網羅照合は未完。"
+    },
+    {
+      "id": "ofac",
+      "checked_at_jst": "2026-11-26T01:35:32+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。対象期間中の個別文書と既存記録の網羅照合は未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "checked_at_jst": "2026-11-26T01:35:32+09:00",
+      "coverage_start_jst": null,
+      "status": "入口及び要約を再取得。提供されたテキストは検索サービスによる書き換えのため原文として保存不可。表CSV取得時文字コードエラー。公表時刻未確認。"
+    },
+    {
+      "id": "fec_results",
+      "checked_at_jst": "2026-11-26T01:35:32+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。対象期間中の個別文書と既存記録の網羅照合は未完。"
+    },
+    {
+      "id": "cfius",
+      "checked_at_jst": "2026-11-26T01:35:32+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。対象期間中の個別文書と既存記録の網羅照合は未完。"
+    }
+  ],
+  "coverage": "各情報源の最新保存日時と重複24時間の期間は未確定。新着なしと判断しない。",
+  "missing_sources": [
+    "EIA原文、11月20日週の表・脚注・PDF、公表時刻",
+    "個別入札・財務省買戻し・FRB売買",
+    "他情報源の個別資料",
+    "メール経路とのURL・日時・ハッシュ照合",
+    "残る歴史ケースと事後レビュー",
+    "DB同期"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": "個別一次資料と相手国情報が不足し保留。",
+  "historical_comparisons": "1973年石油危機のケースを読了。これは後年の公的解説による初期要約で当時の情報ではない。供給制約と輸入依存が比較項目だが現状との共通点・差異を判定するデータ不足。",
+  "scenarios": {
+    "days": "保留",
+    "weeks": "保留",
+    "months": "保留",
+    "USDJPY": "双方の条件資料不足で保留",
+    "EURUSD": "双方の条件資料不足で保留"
+  },
+  "invalidations": [
+    "一次表と相手国の金融条件を取得後に具体化"
+  ],
+  "review_after": null,
+  "retry": [
+    "EIAの原文、表、公開時刻を取得",
+    "既存文書との重複照合と翻訳保存",
+    "他の個別資料と事後レビューを確認",
+    "DB同期を確認"
+  ],
+  "knowledge_status": "原文取得・重複照合未完のため新規JSON未保存",
+  "database_status": "未確認",
+  "pc_notification": "実機未確認"
+}
