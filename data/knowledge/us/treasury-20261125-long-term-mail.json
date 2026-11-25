@@ -1,0 +1,27 @@
+{
+  "id": "treasury-20261125-long-term-mail",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "published_at": null,
+  "received_at": "2026-11-26T06:56:23+09:00",
+  "topics": [
+    "treasuries"
+  ],
+  "inference_ja": "国債利回りや実質金利が変化した場合、資金調達費用や金の保有機会費用に影響し得るが、この表だけで相場の方向は決まらない。",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Long-Term Rates Update",
+  "title_ja": "米財務省：名目長期国債金利の更新通知",
+  "original_text": "You are subscribed to Daily Treasury Long-Term Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "translation_ja": "米財務省の名目長期国債金利について、情報が最近更新され、閲覧できるようになりました。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "facts_ja": [
+    "メールは名目長期国債金利の更新を通知している。",
+    "公式表の公表時刻は不明。メール受信日時は2026-11-26T06:56:23+09:00。"
+  ],
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省が１１月２５日の名目長期国債金利を更新し、最新の金利一覧を公表しました。",
+  "linked_document_id": "treasury-20261125-long-term-table",
+  "source_type": "email",
+  "published_at_note": "表の公表時刻不明。メール送信時刻と区別。",
+  "mail_sent_at": "2026-11-26T06:56:23+09:00"
+}

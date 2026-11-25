@@ -1,0 +1,30 @@
+{
+  "id": "treasury-20261125-long-term-table",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&field_tdr_date_value=2026",
+  "published_at": null,
+  "received_at": "2026-11-26T06:56:23+09:00",
+  "topics": [
+    "treasuries"
+  ],
+  "inference_ja": "国債利回りや実質金利が変化した場合、資金調達費用や金の保有機会費用に影響し得るが、この表だけで相場の方向は決まらない。",
+  "title_en": "Daily Treasury Long-Term Rates",
+  "title_ja": "米財務省 名目長期国債金利 2026年11月25日分",
+  "original_text": "Date | LT COMPOSITE (>10 Yrs) | TREASURY 20-Yr CMT\n11/25/2026 | 5.23 | 5.28",
+  "translation_ja": "名目長期国債金利、2026年11月25日。利回りは％：長期総合金利（10年超）5.23、20年定率利回り5.28。該当しない列はN/A。",
+  "facts_ja": [
+    "公式表の11月25日分：長期総合金利（10年超）5.23、20年定率利回り5.28（％）。",
+    "公表時刻は不明。日付は観測日であり発表時刻ではない。",
+    "短期証券の金利は流通市場の気配であり、入札結果ではない。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "2026年のその他の日付の全行、全脚注と方法論は全文翻訳・網羅確認していない。",
+    "表の正確な公表時刻は不明。"
+  ],
+  "notification_eligible": false,
+  "source_type": "official_table",
+  "data_date": "2026-11-25",
+  "retrieved_at": "2026-11-26T06:58:11+09:00",
+  "related_mail_id": "treasury-20261125-long-term-mail"
+}

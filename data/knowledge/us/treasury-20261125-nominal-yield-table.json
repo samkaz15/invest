@@ -1,0 +1,30 @@
+{
+  "id": "treasury-20261125-nominal-yield-table",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "published_at": null,
+  "received_at": "2026-11-26T06:56:56+09:00",
+  "topics": [
+    "treasuries"
+  ],
+  "inference_ja": "国債利回りや実質金利が変化した場合、資金調達費用や金の保有機会費用に影響し得るが、この表だけで相場の方向は決まらない。",
+  "title_en": "Daily Treasury Yield Curve Rates",
+  "title_ja": "米財務省 名目国債利回り曲線 2026年11月25日分",
+  "original_text": "Date | 1 Mo | 1.5 Mo | 2 Mo | 3 Mo | 4 Mo | 6 Mo | 1 Yr | 2 Yr | 3 Yr | 5 Yr | 7 Yr | 10 Yr | 20 Yr | 30 Yr\n11/25/2026 | 4.27 | 4.27 | 4.30 | 4.34 | 4.37 | 4.44 | 4.56 | 4.61 | 4.64 | 4.65 | 4.74 | 4.85 | 5.28 | 5.24",
+  "translation_ja": "名目国債利回り曲線、2026年11月25日。利回りは％：1か月4.27、1.5か月4.27、2か月4.30、3か月4.34、4か月4.37、6か月4.44、1年4.56、2年4.61、3年4.64、5年4.65、7年4.74、10年4.85、20年5.28、30年5.24。該当しない列はN/A。",
+  "facts_ja": [
+    "公式表の11月25日分：1か月4.27、1.5か月4.27、2か月4.30、3か月4.34、4か月4.37、6か月4.44、1年4.56、2年4.61、3年4.64、5年4.65、7年4.74、10年4.85、20年5.28、30年5.24（％）。",
+    "公表時刻は不明。日付は観測日であり発表時刻ではない。",
+    "短期証券の金利は流通市場の気配であり、入札結果ではない。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "2026年のその他の日付の全行、全脚注と方法論は全文翻訳・網羅確認していない。",
+    "表の正確な公表時刻は不明。"
+  ],
+  "notification_eligible": false,
+  "source_type": "official_table",
+  "data_date": "2026-11-25",
+  "retrieved_at": "2026-11-26T06:58:11+09:00",
+  "related_mail_id": "treasury-20261125-nominal-yield-mail"
+}
