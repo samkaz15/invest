@@ -1,0 +1,100 @@
+{
+  "id": "20261125T204537Z-partial",
+  "as_of": "2026-11-26T05:45:37+09:00",
+  "previous_run": "data/analysis/us_policy/20261125T195508Z-partial.json",
+  "input_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "checked_at_jst": "2026-11-26T05:45:37+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を再取得。個別文書・表と既存メール経路を含む24時間重複照合は未完。"
+    },
+    {
+      "id": "treasury_auctions",
+      "checked_at_jst": "2026-11-26T05:45:37+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を再取得。個別文書・表と既存メール経路を含む24時間重複照合は未完。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "checked_at_jst": "2026-11-26T05:45:37+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を再取得。個別文書・表と既存メール経路を含む24時間重複照合は未完。"
+    },
+    {
+      "id": "fed_fomc",
+      "checked_at_jst": "2026-11-26T05:45:37+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を再取得。個別文書・表と既存メール経路を含む24時間重複照合は未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "checked_at_jst": "2026-11-26T05:45:37+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を再取得。個別文書・表と既存メール経路を含む24時間重複照合は未完。"
+    },
+    {
+      "id": "white_house",
+      "checked_at_jst": "2026-11-26T05:45:37+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を再取得。個別文書・表と既存メール経路を含む24時間重複照合は未完。"
+    },
+    {
+      "id": "ofac",
+      "checked_at_jst": "2026-11-26T05:45:37+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を再取得。個別文書・表と既存メール経路を含む24時間重複照合は未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "checked_at_jst": "2026-11-26T05:45:37+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を再取得。個別文書・表と既存メール経路を含む24時間重複照合は未完。"
+    },
+    {
+      "id": "fec_results",
+      "checked_at_jst": "2026-11-26T05:45:37+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を再取得。個別文書・表と既存メール経路を含む24時間重複照合は未完。"
+    },
+    {
+      "id": "cfius",
+      "checked_at_jst": "2026-11-26T05:45:37+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を再取得。個別文書・表と既存メール経路を含む24時間重複照合は未完。"
+    }
+  ],
+  "coverage": "最新保存公表時刻は情報源ごとに未確定。取得不足を新着なしと扱わない。",
+  "missing_sources": [
+    "EIA週報PDFの全頁原文と訳、公表時刻および重複照合",
+    "国債入札・買戻し・FRB売買の個別資料",
+    "他の情報源の個別文書・表",
+    "相手通貨の金融条件",
+    "期限到来レビュー",
+    "PostgreSQL同期"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": "資料不足につき評価保留。",
+  "historical_comparisons": "3件は未検証の初期要約。1973年と2007年のケースは後年の解説、2020年FRB実施要領は当時資料。現在との当初構造比較は未完。",
+  "scenarios": {
+    "days": "保留",
+    "weeks": "保留",
+    "months": "保留",
+    "USDJPY": "両国資料不足で保留",
+    "EURUSD": "双方資料不足で保留"
+  },
+  "invalidations": [
+    "個別資料と両通貨金融条件確認後に設定"
+  ],
+  "review_after": null,
+  "retry": [
+    "EIA全ページ・公表時刻・重複照合と翻訳",
+    "他の個別資料・表と事後レビュー",
+    "DB同期確認"
+  ],
+  "knowledge_status": "個別文書と重複照合未完のため新規JSON未保存",
+  "database_status": "未確認",
+  "pc_notification": "未確認"
+}
