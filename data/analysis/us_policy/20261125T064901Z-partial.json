@@ -1,0 +1,83 @@
+{
+  "id": "20261125T064901Z-partial",
+  "as_of": "2026-11-25T15:49:01+09:00",
+  "previous_run": "data/analysis/us_policy/20261125T054250Z-partial.json",
+  "input_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_auctions",
+      "status": "API再取得失敗。結果未確認。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "status": "直接URL再取得失敗。個別結果未確認。"
+    },
+    {
+      "id": "treasury_news",
+      "status": "一覧取得。個別資料・既存記録照合未完。"
+    },
+    {
+      "id": "fed_fomc",
+      "status": "一覧取得。個別文書未照合。"
+    },
+    {
+      "id": "nyfed_operations",
+      "status": "入口取得。個別オペ未取得。"
+    },
+    {
+      "id": "white_house",
+      "status": "一覧取得。個別文書未照合。"
+    },
+    {
+      "id": "ofac",
+      "status": "一覧取得。11月23日指定を表示、既存照合未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "status": "入口取得。個別新規資料・表未確認。"
+    },
+    {
+      "id": "fec_results",
+      "status": "入口取得。州別認証未確認。"
+    },
+    {
+      "id": "cfius",
+      "status": "入口取得。個別文書未確認。"
+    }
+  ],
+  "coverage": "各情報源の既存保存時刻を確定できず、差分の確認期間は未確定。10情報源全ての個別原文・表・PDFは確認未了。",
+  "missing_sources": [
+    "財務省入札API・買戻し個別結果",
+    "FRB売買結果",
+    "EIA表・PDF",
+    "州認証",
+    "各情報源の記録との重複照合",
+    "史料・事後レビュー",
+    "PostgreSQL"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": "新規事実と相手国側のデータ不足のため判断保留。",
+  "historical_comparisons": "史料未確認のため保留。",
+  "scenarios": {
+    "days": "未評価",
+    "weeks": "未評価",
+    "months": "未評価",
+    "USDJPY": "日米両通貨資料不足で保留",
+    "EURUSD": "米欧両通貨資料不足で保留"
+  },
+  "invalidations": [
+    "個別取引・原油需給と両通貨の金融条件が取得された時点で再評価"
+  ],
+  "review_after": null,
+  "retry": [
+    "財務省入札・買戻し取得を再試行",
+    "各情報源の個別本文・PDF・表の取得",
+    "既存メール経路とのURL・時刻・ハッシュ照合",
+    "歴史ケース・期限到来分のレビュー",
+    "DB同期確認"
+  ],
+  "github_status": "この履歴以外の知識JSONは新規保存なし",
+  "database_status": "未確認",
+  "pc_notification": "未確認"
+}
