@@ -1,0 +1,46 @@
+{
+  "id": "20261125T044413Z-review",
+  "as_of_jst": "2026-11-25T13:44:13+09:00",
+  "previous_run": "data/analysis/jp_policy/20261125T041339Z-review.json",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/about/press/index.htm",
+      "status": "一覧取得。表示上の最新講演11月16日、最新会見掲載11月13日。個別資料・過去分全件の照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "決定事項一覧取得。最新掲載11月13日。各PDF全頁照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261124.xlsx",
+      "status": "再取得失敗。検索サービスはXLSX非対応、全シート未読。"
+    },
+    {
+      "url": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+      "status": "一覧取得。全個別入札・買戻し結果の照合未完。"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261125.htm",
+      "status": "今回再取得失敗。前回保存済み入札結果を再検証できず。第II非価格競争入札結果も未確認。"
+    }
+  ],
+  "new_document_ids": [],
+  "dedup": "新規個別文書の完全照合未完。新着なしとは判断しない。",
+  "rights": "原文全文を複製せず。個別の全文再配布条件は未確認。",
+  "missing": [
+    "オペXLSX全シート",
+    "政策・会見PDF全頁",
+    "買入消却個別結果",
+    "第II非価格競争入札結果",
+    "既存文書全件照合",
+    "再配布条件"
+  ],
+  "retry": [
+    "XLSX及び個別結果を再取得",
+    "PDFと既存記録を照合",
+    "再配布条件を確認"
+  ],
+  "mac_notification": "実機未確認"
+}
