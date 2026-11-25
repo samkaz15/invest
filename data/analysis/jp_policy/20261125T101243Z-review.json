@@ -1,0 +1,44 @@
+{
+  "id": "20261125T101243Z-review",
+  "as_of_jst": "2026-11-25T19:12:43+09:00",
+  "previous_run": "data/analysis/jp_policy/20261125T093116Z-review.json",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "一覧取得。11月25日の個別オペXLSXは再取得失敗、本文未読。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx",
+      "status": "再取得失敗、検索サービスXLSX非対応。全シート未読。"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "一覧取得。買入消却個別結果の全件照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/press/index.htm",
+      "status": "一覧取得。講演・会見PDF全頁未照合。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "一覧取得。個別政策PDF全頁未照合。"
+    }
+  ],
+  "new_document_ids": [],
+  "dedup": "個別資料の内容及び既存記録全件の照合は未完。取得失敗を新着なしと扱わない。",
+  "rights": "全文複製なし。個別XLSXの再配布条件未確認。",
+  "missing": [
+    "11月24日・25日のオペ結果XLSX",
+    "11月分国債補完供給XLSX",
+    "講演・政策PDF",
+    "買入消却個別結果",
+    "既存記録全件照合"
+  ],
+  "retry": [
+    "XLSXを取得し国債買入れ・売却と補完供給を区別",
+    "個別PDFと買入消却結果及び既存記録を照合"
+  ],
+  "mac_notification": "実機未確認"
+}
