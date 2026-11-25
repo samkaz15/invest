@@ -1,0 +1,102 @@
+{
+  "id": "20261125T102858Z-partial",
+  "as_of": "2026-11-25T19:28:58+09:00",
+  "previous_run": "data/analysis/us_policy/20261125T083852Z-partial.json",
+  "input_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_auctions",
+      "checked_at_jst": "2026-11-25T19:28:58+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、個別入札結果未取得"
+    },
+    {
+      "id": "treasury_buybacks",
+      "checked_at_jst": "2026-11-25T19:28:58+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、動的な個別結果表未取得"
+    },
+    {
+      "id": "nyfed_operations",
+      "checked_at_jst": "2026-11-25T19:28:58+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、個別売買結果未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "checked_at_jst": "2026-11-25T19:28:58+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、個別表とPDF未確認"
+    },
+    {
+      "id": "ofac",
+      "checked_at_jst": "2026-11-25T19:28:58+09:00",
+      "coverage_start_jst": null,
+      "status": "一覧取得、個別指定と既存記録の全件照合未完"
+    },
+    {
+      "id": "fed_fomc",
+      "checked_at_jst": "2026-11-25T19:28:58+09:00",
+      "coverage_start_jst": null,
+      "status": "一覧取得、個別声明とPDF未照合"
+    },
+    {
+      "id": "treasury_news",
+      "checked_at_jst": "2026-11-25T19:28:58+09:00",
+      "coverage_start_jst": null,
+      "status": "一覧取得、個別本文と既存記録の照合未完"
+    },
+    {
+      "id": "white_house",
+      "checked_at_jst": "2026-11-25T19:28:58+09:00",
+      "coverage_start_jst": null,
+      "status": "一覧取得、個別文書未照合"
+    },
+    {
+      "id": "cfius",
+      "checked_at_jst": "2026-11-25T19:28:58+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、個別文書未照合"
+    },
+    {
+      "id": "fec_results",
+      "checked_at_jst": "2026-11-25T19:28:58+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、州認証未確認"
+    }
+  ],
+  "coverage": "最新保存公表時刻が未確定で差分期間を確定できない。指定10情報源の入口のみ確認し、個別資料の網羅的確認は未完。",
+  "missing_sources": [
+    "個別入札・買戻し・FRB売買結果",
+    "原油資料の表とPDF",
+    "州の認証",
+    "公開URL・公表時刻・ハッシュによる既存知識照合",
+    "歴史ケースと期限到来レビュー",
+    "PostgreSQL反映"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": "新規個別資料と両通貨の金融条件の不足により保留。",
+  "historical_comparisons": "史料未確認につき保留。",
+  "scenarios": {
+    "days": "未評価",
+    "weeks": "未評価",
+    "months": "未評価",
+    "USDJPY": "資料不足で保留",
+    "EURUSD": "資料不足で保留"
+  },
+  "invalidations": [
+    "個別資料と通貨双方の金融条件取得後に再評価"
+  ],
+  "review_after": null,
+  "retry": [
+    "個別入札・買戻し・FRB取引の取得",
+    "原油表・PDFと他機関の個別資料取得",
+    "既存メール経路との照合",
+    "史料・期限到来レビューの確認",
+    "DB同期の確認"
+  ],
+  "knowledge_status": "個別文書と重複照合が未完のため新規知識JSONは未保存",
+  "database_status": "未確認",
+  "pc_notification": "未確認"
+}
