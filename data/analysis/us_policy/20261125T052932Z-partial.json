@@ -1,0 +1,110 @@
+{
+  "id": "20261125T052932Z-partial",
+  "as_of": "2026-11-25T14:29:32+09:00",
+  "previous_run": "data/analysis/us_policy/20261125T042745Z-partial.json",
+  "input_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "checked_at_jst": "2026-11-25T14:29:32+09:00",
+      "coverage_start_jst": null,
+      "status": "一覧取得。個別最新発表の網羅・既存レコード照合未完"
+    },
+    {
+      "id": "treasury_auctions",
+      "checked_at_jst": "2026-11-25T14:29:32+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別入札結果表未取得"
+    },
+    {
+      "id": "treasury_buybacks",
+      "checked_at_jst": "2026-11-25T14:29:32+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。動的結果表未取得"
+    },
+    {
+      "id": "fed_fomc",
+      "checked_at_jst": "2026-11-25T14:29:32+09:00",
+      "coverage_start_jst": null,
+      "status": "一覧取得。期間内の声明・議事要旨PDF未照合"
+    },
+    {
+      "id": "nyfed_operations",
+      "checked_at_jst": "2026-11-25T14:29:32+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別購入・売却結果未取得"
+    },
+    {
+      "id": "white_house",
+      "checked_at_jst": "2026-11-25T14:29:32+09:00",
+      "coverage_start_jst": null,
+      "status": "一覧取得。個別政策文書未照合"
+    },
+    {
+      "id": "ofac",
+      "checked_at_jst": "2026-11-25T14:29:32+09:00",
+      "coverage_start_jst": null,
+      "status": "11月23日のイラン関連指定の個別ページを取得。個人情報を含むため原文を保存せず。既存レコードとの照合未完"
+    },
+    {
+      "id": "eia_petroleum",
+      "checked_at_jst": "2026-11-25T14:29:32+09:00",
+      "coverage_start_jst": null,
+      "status": "11月18日公表・11月13日終了週のアーカイブ入口を取得。本文の表・PDF全頁未取得"
+    },
+    {
+      "id": "fec_results",
+      "checked_at_jst": "2026-11-25T14:29:32+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。州別認証を未確認"
+    },
+    {
+      "id": "cfius",
+      "checked_at_jst": "2026-11-25T14:29:32+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別政策文書未確認"
+    }
+  ],
+  "missing_sources": [
+    "各ソースの最終保存発表日時と差分期間",
+    "個別入札・買戻し・FRB取引・原油表",
+    "指定資料の翻訳・PDF",
+    "既存メール経路との完全照合",
+    "歴史ケース・過去レビュー",
+    "PostgreSQL同期"
+  ],
+  "facts": [
+    {
+      "source_url": "https://ofac.treasury.gov/recent-actions/20261123",
+      "published_at": null,
+      "published_date": "2026-11-23",
+      "retrieved_at": "2026-11-25T14:29:32+09:00",
+      "fact": "OFACはイラン関連の指定者をSDNリストに追加したと公表。個別掲載には個人情報が含まれるため転載しない。財務省の前回確認済み発表にリンク。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": "推論：決済制限が輸出量を減らす場合に原油供給、物価、実質金利に影響しうる。実際の輸出、需要、相殺措置は未確認。",
+  "historical_comparisons": "史料・当初の経済条件を確認できず比較保留。",
+  "scenarios": {
+    "日": "制裁の運用と供給への影響を確認",
+    "週": "輸出・在庫と需要の実績を確認",
+    "月": "供給の持続性と政策を確認",
+    "USDJPY": "日米双方の資料不足で判断保留",
+    "EURUSD": "米欧双方の資料不足で判断保留"
+  },
+  "invalidations": [
+    "輸出が維持されれば供給減少の仮説は弱まる",
+    "需要減が供給減を上回れば物価経路は変わる"
+  ],
+  "review_after": null,
+  "retry": [
+    "前回の未処理資料を含む原文・表・PDFを取得",
+    "既存文書のURL・公表日時・内容ハッシュの照合",
+    "歴史史料と期限到来レビューを確認",
+    "DB同期の確認"
+  ],
+  "knowledge_save": "新規文書の重複照合未完につき未保存",
+  "github_status": "本分析・報告の保存を別途確認",
+  "database_status": "未確認",
+  "pc_notification": "未確認"
+}
