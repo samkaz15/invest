@@ -1,0 +1,55 @@
+{
+  "id": "20261125T041339Z-review",
+  "as_of_jst": "2026-11-25T13:13:39+09:00",
+  "previous_run": "data/analysis/jp_policy/20261125T025224Z-review.json",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261125.htm",
+      "status": "本文・入札結果表を取得。公表時刻は不明。第II非価格競争入札の結果は未確認。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/other/acmai/release/2026/ac261120.htm",
+      "status": "本文・残高表・別表を取得。公表時刻不明。前回残高および個別オペとの照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/press/index.htm",
+      "status": "講演・会見の個別資料全件照合未完、次回再確認。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "政策決定資料のPDF全頁照合未完、次回再確認。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261124.xlsx",
+      "status": "前回取得失敗、全シート未読。今回再取得未完。"
+    },
+    {
+      "url": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+      "status": "入札・買入消却の個別結果の全件照合未完。"
+    }
+  ],
+  "new_document_ids": [
+    "mof-20261125-jgb40-19-auction-result",
+    "boj-20261125-balance-20261120"
+  ],
+  "dedup": "各資料のURLで既存GitHub検索は一致なし。入札実施通知は既存だが今回の結果は別文書。検索索引や全レコードの内容照合は未完。",
+  "rights": "原文全文を複製せず要約と公式URLを記録。再配布条件ページの取得に失敗し、個別の全文再配布条件は未確認。",
+  "missing": [
+    "各資料の公表時刻",
+    "既存記録の全件照合",
+    "11月24日オペXLSX全シート",
+    "講演・会見・政策PDF全頁",
+    "買入消却の個別結果",
+    "40年債第II非価格競争入札結果"
+  ],
+  "retry": [
+    "未取得XLSX・PDFおよび買入消却資料の取得と照合",
+    "既存記録の全件照合",
+    "再配布条件ページの再取得",
+    "第II非価格競争入札結果の確認"
+  ],
+  "mac_notification": "実機未確認。GitHub保存は通知成功を意味しない。",
+  "github_save": "新規2件はmainに保存済み。本履歴自体の保存結果はGitHub上で確認する。"
+}
