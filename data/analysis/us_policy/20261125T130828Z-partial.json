@@ -1,0 +1,101 @@
+{
+  "id": "20261125T130828Z-partial",
+  "as_of": "2026-11-25T22:08:28+09:00",
+  "previous_run": "data/analysis/us_policy/20261125T122912Z-partial.json",
+  "input_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_auctions",
+      "checked_at_jst": "2026-11-25T22:08:28+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得、個別文書・表及び既存記録の完全照合は未完。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "checked_at_jst": "2026-11-25T22:08:28+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得、個別文書・表及び既存記録の完全照合は未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "checked_at_jst": "2026-11-25T22:08:28+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得、個別文書・表及び既存記録の完全照合は未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "checked_at_jst": "2026-11-25T22:08:28+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得、個別文書・表及び既存記録の完全照合は未完。"
+    },
+    {
+      "id": "ofac",
+      "checked_at_jst": "2026-11-25T22:08:28+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得、個別文書・表及び既存記録の完全照合は未完。"
+    },
+    {
+      "id": "fed_fomc",
+      "checked_at_jst": "2026-11-25T22:08:28+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得、個別文書・表及び既存記録の完全照合は未完。"
+    },
+    {
+      "id": "treasury_news",
+      "checked_at_jst": "2026-11-25T22:08:28+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得、個別文書・表及び既存記録の完全照合は未完。"
+    },
+    {
+      "id": "white_house",
+      "checked_at_jst": "2026-11-25T22:08:28+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得、個別文書・表及び既存記録の完全照合は未完。"
+    },
+    {
+      "id": "cfius",
+      "checked_at_jst": "2026-11-25T22:08:28+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得、個別文書・表及び既存記録の完全照合は未完。"
+    },
+    {
+      "id": "fec_results",
+      "checked_at_jst": "2026-11-25T22:08:28+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得、個別文書・表及び既存記録の完全照合は未完。"
+    }
+  ],
+  "coverage": "各情報源の最新保存時刻が不明で差分期間は未確定。",
+  "missing_sources": [
+    "個別入札・買戻し・FRB売買結果",
+    "EIA表とPDF",
+    "州認証",
+    "既存メール経路とのURL・公表時刻・内容ハッシュ照合",
+    "歴史ケース・期限到来レビュー",
+    "PostgreSQL同期"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": "個別資料及び両通貨の金融条件不足で保留。",
+  "historical_comparisons": "史料未確認のため保留。",
+  "scenarios": {
+    "days": "未評価",
+    "weeks": "未評価",
+    "months": "未評価",
+    "USDJPY": "資料不足により保留",
+    "EURUSD": "資料不足により保留"
+  },
+  "invalidations": [
+    "個別結果と両通貨の金融条件を取得して再評価"
+  ],
+  "review_after": null,
+  "retry": [
+    "個別結果・本文・表・PDFを取得",
+    "既存知識とメール経路を照合",
+    "史料・期限到来レビューを確認",
+    "DB同期を確認"
+  ],
+  "knowledge_status": "重複照合が未完のため新規知識JSON未保存",
+  "database_status": "未確認",
+  "pc_notification": "未確認"
+}
