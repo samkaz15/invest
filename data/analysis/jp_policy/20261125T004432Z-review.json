@@ -1,0 +1,47 @@
+{
+  "id": "20261125T004432Z-review",
+  "as_of_jst": "2026-11-25T09:44:32+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "previous_run": "data/analysis/jp_policy/20261125T002019Z-review.json",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/about/press/index.htm",
+      "status": "一覧取得。個別講演・会見と既存記録の全件照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "一覧取得、政策PDF全頁未照合"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261124.xlsx",
+      "status": "検索サービスで再取得失敗、全シート未読"
+    },
+    {
+      "url": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+      "status": "一覧取得、個別入札・買戻し全件照合未完"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "一覧取得。40年債入札結果は未確認。"
+    }
+  ],
+  "new_document_ids": [],
+  "dedup": "既存文書とのURL・公表時刻・内容の全件照合未完。取得失敗を新着なしと扱わない。",
+  "rights": "全文複製なし。個別再配布条件未確認。",
+  "inference": "日米の名目・実質金利、日銀オペ、相対景況と市場期待が不足し金・ドル円は方向保留。",
+  "missing": [
+    "11月24日オペXLSX全シート",
+    "個別講演・会見・政策PDF全頁",
+    "国債入札・買入消却の個別結果",
+    "既存資料との全件照合",
+    "再配布条件"
+  ],
+  "retry": [
+    "日銀XLSX再取得",
+    "40年国債の入札結果を公表後確認",
+    "個別資料と既存記録の照合",
+    "再配布条件確認"
+  ],
+  "mac_notification": "実機未確認"
+}
