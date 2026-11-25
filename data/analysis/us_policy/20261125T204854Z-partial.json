@@ -1,0 +1,115 @@
+{
+  "id": "20261125T204854Z-partial",
+  "as_of": "2026-11-26T05:48:54+09:00",
+  "previous_run": "data/analysis/us_policy/20261125T204537Z-partial.json",
+  "input_document_ids": [
+    "ofac-20261123-iran-designations-official-partial",
+    "ofac-mail-20261123-iran-sdn-update"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "checked_at_jst": "2026-11-26T05:48:54+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別資料・表及び既存メール経路との24時間重複照合未完。"
+    },
+    {
+      "id": "treasury_auctions",
+      "checked_at_jst": "2026-11-26T05:48:54+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別資料・表及び既存メール経路との24時間重複照合未完。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "checked_at_jst": "2026-11-26T05:48:54+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別資料・表及び既存メール経路との24時間重複照合未完。"
+    },
+    {
+      "id": "fed_fomc",
+      "checked_at_jst": "2026-11-26T05:48:54+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別資料・表及び既存メール経路との24時間重複照合未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "checked_at_jst": "2026-11-26T05:48:54+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別資料・表及び既存メール経路との24時間重複照合未完。"
+    },
+    {
+      "id": "white_house",
+      "checked_at_jst": "2026-11-26T05:48:54+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別資料・表及び既存メール経路との24時間重複照合未完。"
+    },
+    {
+      "id": "ofac",
+      "checked_at_jst": "2026-11-26T05:48:54+09:00",
+      "coverage_start_jst": null,
+      "status": "入口と11月23日の個別文書を確認。同一URLの既存公式レコードとメール経路の関連記録を読み、重複保存せず。公表時刻・内容完全照合未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "checked_at_jst": "2026-11-26T05:48:54+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別資料・表及び既存メール経路との24時間重複照合未完。"
+    },
+    {
+      "id": "fec_results",
+      "checked_at_jst": "2026-11-26T05:48:54+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別資料・表及び既存メール経路との24時間重複照合未完。"
+    },
+    {
+      "id": "cfius",
+      "checked_at_jst": "2026-11-26T05:48:54+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別資料・表及び既存メール経路との24時間重複照合未完。"
+    }
+  ],
+  "coverage": "情報源ごとの最新公表時刻は未確定。未取得を新着なしと扱わない。",
+  "missing_sources": [
+    "EIA PDF全頁原文・訳と公開時刻",
+    "個別入札・買戻し・FRB売買",
+    "その他の個別資料と表",
+    "OFAC指定者リストの個人情報を除く対象範囲の完全照合",
+    "通貨双方の金融条件",
+    "期限到来レビュー",
+    "PostgreSQL同期"
+  ],
+  "facts": [
+    {
+      "source_url": "https://ofac.treasury.gov/recent-actions/20261123",
+      "published_at": null,
+      "published_date": "2026-11-23",
+      "retrieved_at": "2026-11-26T05:48:54+09:00",
+      "description": "OFACはイラン関連SDN指定で法人にイラン通貨・金取引センターを追加。個人情報を含む一覧の全文複製はしない。",
+      "existing_id": "ofac-20261123-iran-designations-official-partial"
+    }
+  ],
+  "reported": [],
+  "causal_channels": "指定対象の金取引や決済への実効的な影響は代替経路や実施状況次第。金価格の方向は不明。",
+  "historical_comparisons": "3件は未検証の初期要約。現在の金融・エネルギー構造との比較資料が不足。",
+  "scenarios": {
+    "days": "制裁の実施状況を確認",
+    "weeks": "対象取引と代替経路を確認",
+    "months": "金需給と金融条件の実績を確認",
+    "USDJPY": "両国の金融条件不足で保留",
+    "EURUSD": "双方の資料不足で保留"
+  },
+  "invalidations": [
+    "取引が制裁の適用対象外または代替経路で維持されること",
+    "金利・需要等の影響が支配的となること"
+  ],
+  "review_after": null,
+  "retry": [
+    "EIA全頁・時刻・翻訳・重複照合",
+    "OFAC法人リストと既存レコードの個人情報を除く照合",
+    "他の個別文書・表と事後レビュー",
+    "DB同期確認"
+  ],
+  "knowledge_status": "OFAC既存レコードを確認し重複保存せず。他の未確認文書は未保存",
+  "database_status": "未確認",
+  "pc_notification": "未確認"
+}
