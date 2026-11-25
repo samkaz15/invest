@@ -1,0 +1,99 @@
+{
+  "id": "20261125T140419Z-partial",
+  "as_of": "2026-11-25T23:04:19+09:00",
+  "previous_run": "data/analysis/us_policy/20261125T130828Z-partial.json",
+  "input_document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "checked_at_jst": "2026-11-25T23:04:19+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別本文・表の確認、24時間重複照合未完。"
+    },
+    {
+      "id": "treasury_auctions",
+      "checked_at_jst": "2026-11-25T23:04:19+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別本文・表の確認、24時間重複照合未完。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "checked_at_jst": "2026-11-25T23:04:19+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別本文・表の確認、24時間重複照合未完。"
+    },
+    {
+      "id": "fed_fomc",
+      "checked_at_jst": "2026-11-25T23:04:19+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別本文・表の確認、24時間重複照合未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "checked_at_jst": "2026-11-25T23:04:19+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別本文・表の確認、24時間重複照合未完。"
+    },
+    {
+      "id": "white_house",
+      "checked_at_jst": "2026-11-25T23:04:19+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別本文・表の確認、24時間重複照合未完。"
+    },
+    {
+      "id": "ofac",
+      "checked_at_jst": "2026-11-25T23:04:19+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別本文・表の確認、24時間重複照合未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "checked_at_jst": "2026-11-25T23:04:19+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別本文・表の確認、24時間重複照合未完。"
+    },
+    {
+      "id": "fec_results",
+      "checked_at_jst": "2026-11-25T23:04:19+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別本文・表の確認、24時間重複照合未完。"
+    },
+    {
+      "id": "cfius",
+      "checked_at_jst": "2026-11-25T23:04:19+09:00",
+      "coverage_start_jst": null,
+      "status": "入口を取得。個別本文・表の確認、24時間重複照合未完。"
+    }
+  ],
+  "coverage": "前回22:08 JST以降の差分と既存文書から24時間重複した期間を確認する必要があるが、各情報源の最新保存公表時刻は未特定。入口のみでは期間の網羅性を確認できない。",
+  "missing_sources": [
+    "各10情報源の個別資料・表・PDFと取得範囲",
+    "既存メールを含む文書のURL・公表時刻・ハッシュ重複照合",
+    "史料3件と到来済みレビューの確認",
+    "米国・相手通貨双方の金融条件",
+    "PostgreSQL同期状態"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": "個別資料不足により評価保留",
+  "historical_comparisons": "史料確認未完により保留",
+  "scenarios": {
+    "days": "保留",
+    "weeks": "保留",
+    "months": "保留",
+    "USDJPY": "両通貨資料不足で保留",
+    "EURUSD": "両通貨資料不足で保留"
+  },
+  "invalidations": [
+    "資料取得後に因果仮説と反証条件を検討"
+  ],
+  "review_after": null,
+  "retry": [
+    "個別資料・表・PDFと既存文書を照合",
+    "史料と期限到来の事後レビュー",
+    "DB同期の確認"
+  ],
+  "knowledge_status": "個別資料と重複未確認のため新規JSON保存なし",
+  "database_status": "未確認。ワークフロー一覧取得はコネクタがURLを拒否。",
+  "pc_notification": "未確認"
+}
