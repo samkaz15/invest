@@ -1,0 +1,26 @@
+{
+  "id": "mof-20261125-jgb40-19-noncompetitive-2-result",
+  "title_ja": "財務省、40年国債の第Ⅱ非価格競争入札結果を公表",
+  "summary_ja": "40年国債第19回の第Ⅱ非価格競争入札は282億円の募入が決定しました。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261125a.htm",
+  "published_at": null,
+  "published_date_jst": "2026-11-25",
+  "retrieved_at": "2026-11-25T16:08:25+09:00",
+  "notification_eligible": true,
+  "document_type": "第Ⅱ非価格競争入札結果",
+  "facts_ja": [
+    "募入決定額は282億円。発行価格は94円35銭、利回りは4.090％。この発行価格は当日の利回り競争入札によるもの。",
+    "表面利率3.8％、発行日11月26日、償還期限2066年3月20日。",
+    "前回保存の利回り競争入札結果とは別の第Ⅱ非価格競争入札結果であり、日銀の市場買入れを示すものではない。"
+  ],
+  "inference_ja": [
+    "発行による国債需給を考える材料だが、単独では金利や金、ドル円の方向を判断できない。"
+  ],
+  "missing_parts": [
+    "公表時刻は不明。15時15分は週間予定上の予定時刻であり実際の公表時刻ではない。",
+    "既存レコードの全件照合は未完"
+  ],
+  "content_scope": "日本語要約",
+  "rights_status": "財務省利用規約を確認。権利表記等により例外があり得るため、原文の全文複製をせず要約と公式URLを記載。",
+  "rights_url": "https://www.mof.go.jp/about_mof/notice/index.html"
+}
