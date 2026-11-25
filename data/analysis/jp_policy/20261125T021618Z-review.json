@@ -1,0 +1,49 @@
+{
+  "id": "20261125T021618Z-review",
+  "as_of_jst": "2026-11-25T11:16:18+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "previous_run": "data/analysis/jp_policy/20261125T004432Z-review.json",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/about/press/index.htm",
+      "status": "一覧取得、講演・会見の全件照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "一覧取得、政策PDF全頁照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261124.xlsx",
+      "status": "検索サービスではXLSX非対応、全シート未読"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/offer20261125.htm",
+      "status": "40年債第19回の入札実施通知の本文・表を確認、公式URLの既存検索で一致なし。公表時刻不明、結果は未確認。"
+    },
+    {
+      "url": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+      "status": "一覧取得、買入消却その他の個別全件照合未完"
+    }
+  ],
+  "new_document_ids": [
+    "mof-20261125-jgb40-19-auction-notice"
+  ],
+  "dedup": "入札通知の公式URLについて既存検索結果なし。既存全件の内容照合は未完。",
+  "rights": "日本語原文全文は複製せず、要約と公式URLのみ保存。個別再配布条件未確認。",
+  "missing": [
+    "11月24日オペXLSX全シート",
+    "個別講演・会見・政策PDF全頁",
+    "40年債の落札結果",
+    "買入消却の個別結果",
+    "既存文書との完全照合",
+    "再配布条件"
+  ],
+  "retry": [
+    "XLSX再取得",
+    "40年国債入札結果を公表後に確認",
+    "買入消却と既存文書の照合",
+    "再配布条件確認"
+  ],
+  "mac_notification": "実機未確認"
+}
