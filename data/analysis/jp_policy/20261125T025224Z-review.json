@@ -1,0 +1,51 @@
+{
+  "id": "20261125T025224Z-review",
+  "as_of_jst": "2026-11-25T11:52:24+09:00",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "previous_run": "data/analysis/jp_policy/20261125T021618Z-review.json",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/about/press/index.htm",
+      "status": "一覧取得。期間内個別講演・会見の全件照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "一覧取得。個別政策PDF全頁照合未完"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261124.xlsx",
+      "status": "検索サービスはXLSX非対応で再取得失敗。全シート未読"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/offer20261125.htm",
+      "status": "先行回の40年債第19回入札通知を確認、既存記録あり。結果未確認。"
+    },
+    {
+      "url": "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+      "status": "一覧取得。個別入札・買入消却の全件照合未完"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "一覧取得。40年債の入札結果は未確認"
+    }
+  ],
+  "new_document_ids": [],
+  "dedup": "40年債の実施通知は既存記録につき再保存しない。既存記録全件の内容照合は未完。",
+  "rights": "全文複製なし。個別の再配布条件未確認。",
+  "inference": "入札通知は結果ではなく、日米の名目・実質金利、日銀オペ、市場期待も不足するため金・ドル円の方向判断は保留。",
+  "missing": [
+    "11月24日オペXLSX全シート",
+    "講演・会見・政策PDF全頁",
+    "40年債の入札結果",
+    "買入消却の個別結果",
+    "既存記録全件との照合"
+  ],
+  "retry": [
+    "XLSX再取得",
+    "40年債の結果公表後確認",
+    "個別買入消却と既存記録を照合",
+    "再配布条件確認"
+  ],
+  "mac_notification": "実機未確認"
+}
