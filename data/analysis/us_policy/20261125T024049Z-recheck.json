@@ -1,0 +1,140 @@
+{
+  "id": "20261125T024049Z-recheck",
+  "as_of": "2026-11-25T02:40:49Z",
+  "previous_analysis": "data/analysis/us_policy/20261125T013815Z-recheck.json",
+  "document_ids": [
+    "nyfed-20261124-securities-lending-exercise",
+    "fincen-20261123-iran-shadow-banking-pdf-partial"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "status": "partial",
+      "details": "一覧取得、個別本文の全件照合未完",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T11:40:49+09:00"
+      ]
+    },
+    {
+      "id": "treasury_auctions",
+      "status": "partial",
+      "details": "一覧取得、検索APIアクセス不可・個別結果未取得",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T11:40:49+09:00"
+      ]
+    },
+    {
+      "id": "treasury_buybacks",
+      "status": "partial",
+      "details": "一覧取得、個別結果表未取得",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T11:40:49+09:00"
+      ]
+    },
+    {
+      "id": "fed_fomc",
+      "status": "partial",
+      "details": "一覧取得、個別文書未照合",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T11:40:49+09:00"
+      ]
+    },
+    {
+      "id": "nyfed_operations",
+      "status": "partial",
+      "details": "入口取得、直接売買の個別結果未取得",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T11:40:49+09:00"
+      ]
+    },
+    {
+      "id": "white_house",
+      "status": "partial",
+      "details": "一覧取得、個別文書未照合",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T11:40:49+09:00"
+      ]
+    },
+    {
+      "id": "ofac",
+      "status": "partial",
+      "details": "一覧取得、個別指定とメール経路のハッシュ照合未完",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T11:40:49+09:00"
+      ]
+    },
+    {
+      "id": "eia_petroleum",
+      "status": "partial",
+      "details": "一覧取得、個別表と脚注未照合",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T11:40:49+09:00"
+      ]
+    },
+    {
+      "id": "fec_results",
+      "status": "partial",
+      "details": "入口取得、州認証未確認",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T11:40:49+09:00"
+      ]
+    },
+    {
+      "id": "cfius",
+      "status": "partial",
+      "details": "入口取得、個別文書未照合",
+      "attempted_period_jst": [
+        "2026-11-21T23:24:58+09:00",
+        "2026-11-25T11:40:49+09:00"
+      ]
+    }
+  ],
+  "missing_sources": [
+    "TreasuryDirect APIアクセス不可・入札結果表未取得",
+    "買戻し・NY連銀直接売買の個別結果表",
+    "FinCEN PDF残頁・図表の訳と視覚確認",
+    "個別資料の全件照合・メール経路とのハッシュ照合",
+    "期限到来レビュー・価格実績"
+  ],
+  "facts": [
+    "NY連銀の既存声明は12月3日の小規模証券貸出訓練予定で、直接買入れや売却の実績ではない。",
+    "FinCEN PDFは既存部分訳を参照。政府の分析額は実際の原油供給減の証明ではない。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "推論：決済・輸送の制約が実際に原油供給を減らせば物価・景気・金利・資金需給に波及し得る。実供給減は未確認。"
+  ],
+  "historical_comparisons": [
+    "1973年の禁輸・減産は後年の史料であり現在の実供給減は未確認。2020年FRB国債購入と小規模証券貸出訓練は取引形態と規模が異なる。初期の物価・実質金利・流動性・エネルギー構造の定量比較未完。"
+  ],
+  "scenarios": {
+    "days": "入札・措置適用を確認",
+    "weeks": "在庫・代替供給・貸出訓練の結果を確認",
+    "months": "需要・物価・実質金利を確認",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDおよび金は資料不足で方向保留"
+  },
+  "invalidations": [
+    "実供給に影響がない",
+    "代替供給や需要減が相殺"
+  ],
+  "review_after": null,
+  "review_status": "期限到来分未照合",
+  "database_sync": "先行回に同期失敗の記録、今回未確認",
+  "mac_notification": "実機未確認",
+  "retry": [
+    "入札・買戻し・直接売買結果",
+    "FinCEN残頁と図表",
+    "既存メール経路との全文ハッシュ照合",
+    "期限到来レビュー",
+    "PostgreSQL同期"
+  ]
+}
