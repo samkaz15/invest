@@ -1,0 +1,51 @@
+{
+  "id": "20261125T055234Z-review",
+  "as_of_jst": "2026-11-25T14:52:34+09:00",
+  "previous_run": "data/analysis/jp_policy/20261125T044413Z-review.json",
+  "attempted_window_start_jst": "2026-11-20T16:39:36+09:00",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.mof.go.jp/public_relations/weekly_schedule/",
+      "status": "週間予定を取得。40年債第II非価格競争入札結果は11月25日15:15公表予定。時刻は予定であり実際の公表時刻ではない。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "一覧を取得。表示上の最新日次ファイルは11月24日。翌日分を新着なしと確定できない。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261124.xlsx",
+      "status": "再取得失敗。検索サービスがXLSXに非対応、全シート未読。"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "一覧取得。結果の個別全件照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/press/index.htm",
+      "status": "一覧取得、個別講演・会見PDF全頁照合未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "一覧取得、個別政策PDF照合未完。"
+    }
+  ],
+  "new_document_ids": [],
+  "dedup": "既存記録と個別文書の全件照合未完。取得欠損があり新着なしと断定しない。",
+  "rights": "全文複製は行わず。個別再配布条件未確認。",
+  "missing": [
+    "11月24日オペXLSX全シート",
+    "講演・政策関連PDF全頁",
+    "国債買入消却の個別結果",
+    "第II非価格競争入札結果",
+    "既存文書全件照合",
+    "個別の再配布条件"
+  ],
+  "retry": [
+    "XLSX取得と照合",
+    "財務省の15:15公表予定後に第II非価格競争入札結果を確認",
+    "買入消却・PDF・既存文書を照合",
+    "再配布条件を確認"
+  ],
+  "mac_notification": "実機未確認。GitHub保存とは別。"
+}
