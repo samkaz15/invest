@@ -1,0 +1,120 @@
+{
+  "id": "20261126T015326Z-partial",
+  "as_of": "2026-11-26T10:53:26+09:00",
+  "previous_run": "data/analysis/us_policy/20261126T013214Z-partial.json",
+  "input_document_ids": [
+    "nyfed-treasury-20261116-20261211-schedule-20261114",
+    "eia-wpsr-20261125-summary-20261120"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at_jst": "2026-11-26T10:53:26+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表および24時間重複照合未完。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at_jst": "2026-11-26T10:53:26+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表および24時間重複照合未完。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at_jst": "2026-11-26T10:53:26+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表および24時間重複照合未完。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at_jst": "2026-11-26T10:53:26+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表および24時間重複照合未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at_jst": "2026-11-26T10:53:26+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得、以前確認した再投資計画の既存JSONをURL・数値・期間で照合済み。個別実績と24時間網羅は未確認。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at_jst": "2026-11-26T10:53:26+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表および24時間重複照合未完。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at_jst": "2026-11-26T10:53:26+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表および24時間重複照合未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at_jst": "2026-11-26T10:53:26+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。概況PDFの安定URLは今回アクセスできず。個別PDF全8頁未確認。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at_jst": "2026-11-26T10:53:26+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表および24時間重複照合未完。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at_jst": "2026-11-26T10:53:26+09:00",
+      "coverage_start_jst": null,
+      "status": "入口取得。個別本文・表および24時間重複照合未完。"
+    }
+  ],
+  "missing_sources": [
+    "財務省入札・買戻し・FRB売買の個別結果",
+    "EIA概況PDF8頁の原文・訳・表・脚注・視覚確認",
+    "10情報源の公表時刻24時間重複分の網羅",
+    "通貨ペア双方の金融条件",
+    "期限到来レビュー"
+  ],
+  "facts": [
+    {
+      "document_id": "nyfed-treasury-20261116-20261211-schedule-20261114",
+      "description": "NY連銀の再投資購入計画は既存JSONのURL・期間・額と一致。約140億ドルは計画であり実績ではない。published_atは不明。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": "再投資購入が実際に行われ他の要因が一定なら国債需要・市場流動性に作用し得る。相場方向は未確定。",
+  "historical_comparisons": "2020年危機対応との初期金利・流動性・実施目的の比較は未確認で保留。",
+  "scenarios": {
+    "days": "実際のオペ結果を確認",
+    "weeks": "需給と購入ペースを確認",
+    "months": "再投資規模と政策方針を確認",
+    "USDJPY": "双方の金融条件不足で保留",
+    "EURUSD": "双方の金融条件不足で保留",
+    "USDCHF": "双方の金融条件不足で保留",
+    "USDCAD": "双方の金融条件不足で保留",
+    "AUDUSD": "双方の金融条件不足で保留"
+  },
+  "invalidations": [
+    "実績が計画と異なる",
+    "他の需給要因が支配的"
+  ],
+  "review_after": null,
+  "retry": [
+    "EIAのPDF8ページおよび正式な公表時刻",
+    "各情報源の個別発表と既存記録の内容照合",
+    "期限到来レビュー",
+    "DB接続設定を確認し同期を再実行"
+  ],
+  "database_status": "US knowledge database sync 45728587988 のインポートで接続エラー。ログにtenant/user not foundと記載。PostgreSQL反映は未確認。",
+  "pc_notification": "実機未確認"
+}
