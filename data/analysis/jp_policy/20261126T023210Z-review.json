@@ -1,0 +1,51 @@
+{
+  "id": "20261126T023210Z-review",
+  "as_of_jst": "2026-11-26T11:32:10+09:00",
+  "previous_run": "data/analysis/jp_policy/20261126T005037Z-review.json",
+  "delta_window_start_jst": "2026-11-26T09:50:37+09:00",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/about/press/koen_2026/ko261126a.htm",
+      "status": "田村委員の挨拶の掲載ページとPDFの主要部分を確認。図表・全ページの網羅確認は未完。"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/yotei/auct20261126.htm",
+      "status": "10年国債の発行予定本文・表を確認。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "一覧確認。XLSX２件は形式非対応で再取得失敗。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "一覧取得、決定資料PDF全頁の照合未完。"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "一覧取得、買入消却個別実績の照合未完。"
+    }
+  ],
+  "new_document_ids": [
+    "boj-20261126-tamura-yamanashi-speech",
+    "mof-20261126-jgb10-december-auction-plan"
+  ],
+  "dedup": "既存日本文書一覧に両対象のIDは見当たらず。URL・公表時刻・内容について全件の完全照合は未完。",
+  "missing": [
+    "田村委員PDFの全ページ・図表・脚注の完全な確認",
+    "日銀国庫短期証券買入額と国債補完供給のXLSX全シート",
+    "日銀オペ個別結果",
+    "財務省買入消却個別実績",
+    "個別の実公表時刻",
+    "日本語資料の個別転載許諾"
+  ],
+  "retry": [
+    "田村委員PDF全ページと図表の照合",
+    "https://www.boj.or.jp/statistics/boj/other/tmei/release/2026/tmei261120.xlsx",
+    "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx",
+    "財務省買入消却実績"
+  ],
+  "rights": "日本語一次資料の全文複製は行わず、確認済み部分の要約と公式URLを記録。",
+  "github_save": "2件ともmain保存成功",
+  "mac_notification": "実機未確認"
+}
