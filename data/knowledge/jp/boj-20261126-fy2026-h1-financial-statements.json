@@ -1,0 +1,30 @@
+{
+  "id": "boj-20261126-fy2026-h1-financial-statements",
+  "title_ja": "日銀、2026年度上半期末の長期国債保有残高を公表",
+  "summary_ja": "日銀の上半期末の長期国債残高は504兆79億円となり、前年同期末を51兆429億円下回りました。",
+  "notification_eligible": true,
+  "source_url": "https://www.boj.or.jp/about/account/zai2611a.htm",
+  "published_at": null,
+  "published_date_jst": "2026-11-26",
+  "published_time_note": "公表時刻不明",
+  "retrieved_at": "2026-11-27T03:27:50+09:00",
+  "topics": [
+    "日銀",
+    "国債",
+    "資金需給"
+  ],
+  "facts_ja": [
+    "日銀は2026年度上半期末の長期国債残高を504兆79億円、前年同期末比51兆429億円減と公表した。",
+    "日銀当座預金残高は416兆5953億円で前年同期末比85兆4815億円減。"
+  ],
+  "inference_ja": [
+    "保有残高の縮小が続き他条件が一定なら、市中の国債需給に影響し得る。償還と買入額を区別する必要があり、金利や為替の方向は断定できない。"
+  ],
+  "missing_parts": [
+    "リンク先財務諸表PDF全ページと図表の個別確認は未完。",
+    "公表時刻は不明。"
+  ],
+  "content_scope": "公式HTMLの要約。全文は複製しない",
+  "rights": "全文の再配布権は未確認のため要約と出典URLのみ",
+  "supersedes": null
+}
