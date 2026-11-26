@@ -1,0 +1,128 @@
+{
+  "id": "20261126T220346Z-partial",
+  "as_of": "2026-11-27T07:03:46+09:00",
+  "previous_run": "data/analysis/us_policy/20261126T203946Z-partial.json",
+  "input_document_ids": [
+    "eia-wpsr-20261125-summary-20261120"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at_jst": "2026-11-27T07:03:46+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T07:03:46+09:00",
+      "status": "入口を取得、対象期間の個別資料・表の網羅は未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at_jst": "2026-11-27T07:03:46+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T07:03:46+09:00",
+      "status": "入口を取得、対象期間の個別資料・表の網羅は未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at_jst": "2026-11-27T07:03:46+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T07:03:46+09:00",
+      "status": "入口を取得、対象期間の個別資料・表の網羅は未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at_jst": "2026-11-27T07:03:46+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T07:03:46+09:00",
+      "status": "入口を取得、対象期間の個別資料・表の網羅は未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at_jst": "2026-11-27T07:03:46+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T07:03:46+09:00",
+      "status": "入口を取得、対象期間の個別資料・表の網羅は未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at_jst": "2026-11-27T07:03:46+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T07:03:46+09:00",
+      "status": "入口を取得、対象期間の個別資料・表の網羅は未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at_jst": "2026-11-27T07:03:46+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T07:03:46+09:00",
+      "status": "入口を取得、対象期間の個別資料・表の網羅は未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at_jst": "2026-11-27T07:03:46+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T07:03:46+09:00",
+      "status": "入口を取得、対象期間の個別資料・表の網羅は未確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at_jst": "2026-11-27T07:03:46+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T07:03:46+09:00",
+      "status": "入口を取得、対象期間の個別資料・表の網羅は未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at_jst": "2026-11-27T07:03:46+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T07:03:46+09:00",
+      "status": "入口を取得、対象期間の個別資料・表の網羅は未確認"
+    }
+  ],
+  "missing_sources": [
+    "各情報源の期間内の個別資料・表の網羅と重複完全照合",
+    "入札・買戻し・NY連銀個別売買、州認証",
+    "EIA概況PDF全頁・表・脚注の原文、訳文、視覚確認",
+    "歴史初期の物価・実質金利・流動性・エネルギー構造の比較",
+    "期限到来レビュー、PostgreSQL実反映"
+  ],
+  "facts": [
+    {
+      "document_id": "eia-wpsr-20261125-summary-20261120",
+      "description": "既存記録：11月20日終了週の米商業原油在庫は前週比110万バレル増の4億1890万バレル。11月25日付、公表時刻不明。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": "推論：他条件一定で在庫増が継続すれば需給緩和から物価と金利に波及し得る。単週の変化のみで価格を断定できない。",
+  "historical_comparisons": "史料3件を確認。1973年は供給制約、2007–09年は信用収縮、2020年は市場機能とFRBの支援。前2件は後年の解説であり当時の利用可能情報ではない。初期値比較と市場時系列は未確認。",
+  "scenarios": {
+    "days": "入札結果と供給障害を確認",
+    "weeks": "原油在庫や製品需要の持続を確認",
+    "months": "物価・実質金利・政策を確認",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両側の資料不足により判断保留"
+  },
+  "invalidations": [
+    "原油供給障害",
+    "需要増",
+    "在庫増の反転"
+  ],
+  "review_after": null,
+  "retry": [
+    "各情報源の期間内の個別資料・表の網羅と重複完全照合",
+    "入札・買戻し・NY連銀個別売買、州認証",
+    "EIA概況PDF全頁・表・脚注の原文、訳文、視覚確認",
+    "歴史初期の物価・実質金利・流動性・エネルギー構造の比較",
+    "期限到来レビュー、PostgreSQL実反映"
+  ],
+  "database_status": "前回記録では同期run 45885340789失敗。今回の最新状態・PostgreSQL実反映は未確認。",
+  "pc_notification": "実機未確認",
+  "new_documents_saved": 0
+}
