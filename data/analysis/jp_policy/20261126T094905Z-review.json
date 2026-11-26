@@ -1,0 +1,55 @@
+{
+  "run_id": "20261126T094905Z",
+  "as_of_jst": "2026-11-26T18:49:05+09:00",
+  "coverage_start_jst": "2026-11-26T18:24:04+09:00",
+  "coverage_end_jst": "2026-11-26T18:49:05+09:00",
+  "status": "partial",
+  "result": "確認した一覧で新規通知対象は特定せず。オペ表未取得につき新着なしとは断定できない。",
+  "source_checks": [
+    {
+      "source": "日銀オペ・講演・会見",
+      "urls": [
+        "https://www.boj.or.jp/statistics/boj/fm/ope/",
+        "https://www.boj.or.jp/about/press/index.htm",
+        "https://www.boj.or.jp/about/calendar/"
+      ],
+      "detail": "11月26日オペ表と国債補完供給一覧の存在を確認したが表本体は再取得失敗。田村委員講演は既存記録。11月26日会見分は27日公表予定。"
+    },
+    {
+      "source": "財務省国債入札・買戻し",
+      "urls": [
+        "https://www.mof.go.jp/public_relations/whats_new/2026jgbs.html",
+        "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm"
+      ],
+      "detail": "10年債発行予定および25日40年債入札結果は既存。買戻し全件は未確認。"
+    }
+  ],
+  "dedup_existing": [
+    "boj-20261126-tamura-yamanashi-speech.json",
+    "mof-20261126-jgb10-december-auction-plan.json",
+    "mof-20261125-jgb40-19-auction-result.json"
+  ],
+  "new_knowledge_documents": [],
+  "missing_parts": [
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/ope/2026/ope20261126.xlsx",
+      "detail": "再取得失敗、全シート未読。",
+      "retry": true
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx",
+      "detail": "再取得失敗、XLSX非対応、全シート未読。",
+      "retry": true
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/other/tmei/release/2026/tmei261120.xlsx",
+      "detail": "前回取得失敗、当回未取得。",
+      "retry": true
+    },
+    {
+      "detail": "田村講演PDF・図表、財務省買戻しと日銀オペ個別実績の網羅は未確認。",
+      "retry": true
+    }
+  ],
+  "mac_notification": "Mac実機通知は未確認。GitHub保存とは別。"
+}
