@@ -1,0 +1,46 @@
+{
+  "run_id": "20261126T042408Z",
+  "as_of_jst": "2026-11-26T13:24:08+09:00",
+  "coverage_start_jst": "2026-11-26T11:48:42+09:00",
+  "coverage_end_jst": "2026-11-26T13:24:08+09:00",
+  "status": "partial",
+  "result": "確認できた範囲では新規通知対象を特定せず。取得欠損があるため新着なしの確定ではない。",
+  "source_checks": [
+    {
+      "source": "日本銀行：公表資料・金融政策・金融市場調節",
+      "scope": "一覧および確認可能な個別資料",
+      "result": "既存の田村委員講演を確認。掲載一覧だけでは関連文書全体の完全性を保証できない。"
+    },
+    {
+      "source": "財務省：新着情報・国債入札・買入消却",
+      "scope": "一覧および個別資料",
+      "result": "12月10年国債入札予定は既存記録。10月買入消却の詳細は11月4日公表で今回の差分期間外。",
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/syokyaku/ichiran224.htm"
+    }
+  ],
+  "dedup_existing": [
+    "boj-20261126-tamura-yamanashi-speech.json",
+    "mof-20261126-jgb10-december-auction-plan.json"
+  ],
+  "new_knowledge_documents": [],
+  "missing_parts": [
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/other/tmei/release/2026/tmei261120.xlsx",
+      "status": "取得失敗",
+      "detail": "取得手段がXLSXを未対応とし全シート未読",
+      "retry": true
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx",
+      "status": "取得失敗",
+      "detail": "取得手段がXLSXを未対応とし全シート未読",
+      "retry": true
+    },
+    {
+      "detail": "田村委員講演PDF・図表の未取得部分および財務省買入消却関連の全件網羅は未確認。",
+      "retry": true
+    }
+  ],
+  "notification_delivery": "Mac実機の通知成功は未確認。GitHub保存と通知成功は別。",
+  "schedule": "既存タスク・米国業務・Gmail webhook・朝6時まとめに変更を加えていない。"
+}
