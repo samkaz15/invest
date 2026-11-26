@@ -1,0 +1,125 @@
+{
+  "id": "20261126T013214Z-partial",
+  "as_of": "2026-11-26T10:32:14+09:00",
+  "previous_run": "data/analysis/us_policy/20261126T002435Z-partial.json",
+  "input_document_ids": [
+    "eia-wpsr-20261125-summary-20261120"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "coverage_start_jst": null,
+      "checked_at_jst": "2026-11-26T10:32:14+09:00",
+      "status": "入口取得。個別本文・表の24時間差分照合未完。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "coverage_start_jst": null,
+      "checked_at_jst": "2026-11-26T10:32:14+09:00",
+      "status": "入口取得。個別本文・表の24時間差分照合未完。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "coverage_start_jst": null,
+      "checked_at_jst": "2026-11-26T10:32:14+09:00",
+      "status": "入口取得。個別本文・表の24時間差分照合未完。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "coverage_start_jst": null,
+      "checked_at_jst": "2026-11-26T10:32:14+09:00",
+      "status": "入口取得。個別本文・表の24時間差分照合未完。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "coverage_start_jst": null,
+      "checked_at_jst": "2026-11-26T10:32:14+09:00",
+      "status": "入口および運用詳細表を確認。11月16日〜12月11日再投資購入計画は実績ではない。公表時刻、個別約定・24時間の網羅照合未完。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "coverage_start_jst": null,
+      "checked_at_jst": "2026-11-26T10:32:14+09:00",
+      "status": "入口取得。個別本文・表の24時間差分照合未完。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "coverage_start_jst": null,
+      "checked_at_jst": "2026-11-26T10:32:14+09:00",
+      "status": "入口取得。個別本文・表の24時間差分照合未完。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "coverage_start_jst": null,
+      "checked_at_jst": "2026-11-26T10:32:14+09:00",
+      "status": "入口取得。前回取得の概要本文の安定URLは本実行で取得不可。PDF全8頁未翻訳。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "coverage_start_jst": null,
+      "checked_at_jst": "2026-11-26T10:32:14+09:00",
+      "status": "入口取得。個別本文・表の24時間差分照合未完。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "coverage_start_jst": null,
+      "checked_at_jst": "2026-11-26T10:32:14+09:00",
+      "status": "入口取得。個別本文・表の24時間差分照合未完。"
+    }
+  ],
+  "missing_sources": [
+    "10情報源の24時間重複分の個別資料の網羅",
+    "EIA概要PDF8頁の原文・訳・表・脚注・視覚確認",
+    "財務省入札・買戻しとFRB売買の個別結果",
+    "通貨ペア双方の金融条件",
+    "期限到来レビュー"
+  ],
+  "facts": [
+    {
+      "source_url": "https://www.newyorkfed.org/markets/domestic-market-operations/monetary-policy-implementation/treasury-securities/treasury-securities-operational-details",
+      "published_at": null,
+      "description": "NY連銀の運用詳細表は11月16日〜12月11日に約140億ドルの再投資購入を計画し、準備管理目的の購入は予定しないと表示。日次実績ではない。個別の発表時刻は未確認。",
+      "retrieved_at": "2026-11-26T10:32:14+09:00"
+    },
+    {
+      "document_id": "eia-wpsr-20261125-summary-20261120",
+      "description": "前回保存のEIA概要：11月20日終了週の商業原油在庫は前週比110万バレル増。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": "再投資購入が実施され他の条件が一定なら国債需要と市場流動性に作用し得る。予定額は実際の購入や金利方向を意味しない。",
+  "historical_comparisons": "2020年の危機対応と比較するには当時と現在の初期金利・流動性・目的・規模の確認が必要で、今回は保留。",
+  "scenarios": {
+    "days": "日次の約定を確認",
+    "weeks": "購入ペースと市場需給を確認",
+    "months": "再投資額とFRBの方針更新を確認",
+    "USDJPY": "両国の金融条件不足で判断保留",
+    "EURUSD": "双方の情報不足で判断保留",
+    "USDCHF": "双方の情報不足で判断保留",
+    "USDCAD": "双方の情報不足で判断保留",
+    "AUDUSD": "双方の情報不足で判断保留"
+  },
+  "invalidations": [
+    "予定変更、実績の不一致",
+    "金利・需給を他の要因が上回る"
+  ],
+  "review_after": null,
+  "retry": [
+    "EIA全表・PDF全頁と正確な公表時刻",
+    "全情報源の個別一次資料と既存記録照合",
+    "期限到来レビュー",
+    "PostgreSQL同期失敗の原因と再実行"
+  ],
+  "database_status": "US knowledge database sync 45728587988 はimport_us_knowledge.pyのステップがfailure。DB反映は確認できない。",
+  "pc_notification": "実機未確認"
+}
