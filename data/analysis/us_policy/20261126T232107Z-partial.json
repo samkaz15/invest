@@ -1,0 +1,120 @@
+{
+  "id": "20261126T232107Z-partial",
+  "as_of": "2026-11-27T08:21:07+09:00",
+  "previous_run": "data/analysis/us_policy/20261126T220346Z-partial.json",
+  "input_document_ids": [
+    "eia-wpsr-20261125-summary-20261120"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "status": "今回未確認",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T08:21:07+09:00"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "status": "入口確認、個別入札結果未取得",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T08:21:07+09:00"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "status": "今回未確認",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T08:21:07+09:00"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "status": "今回未確認",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T08:21:07+09:00"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/domestic-market-operations/monetary-policy-implementation/treasury-securities/treasury-securities-operational-details",
+      "status": "月間予定表確認、個別実施結果未確認",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T08:21:07+09:00"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "status": "一覧と11月25日布告を確認、優先対象全件の確認未完",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T08:21:07+09:00"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "status": "一覧確認、個別資料の期間内網羅未完",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T08:21:07+09:00"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_11_25/download/summary.txt",
+      "status": "個別原文の再取得不可、既存の原文・訳を参照",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T08:21:07+09:00"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "status": "今回未確認",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T08:21:07+09:00"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "status": "今回未確認",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-27T08:21:07+09:00"
+    }
+  ],
+  "missing_sources": [
+    "全10情報源について最新保存時刻から24時間重複した期間の確認、最新公表時刻は未確定",
+    "財務省入札・買戻しとNY連銀個別取引",
+    "EIA原文再取得とPDF全頁・図表・脚注の視覚確認",
+    "公開URL・公表時刻・ハッシュによる全件照合",
+    "歴史の当初物価・実質金利・流動性・エネルギー構造",
+    "期限到来の事後レビューとPostgreSQL反映確認"
+  ],
+  "facts": [
+    {
+      "source_url": "https://www.newyorkfed.org/markets/domestic-market-operations/monetary-policy-implementation/treasury-securities/treasury-securities-operational-details",
+      "description": "11月16日〜12月11日の国債再投資購入予定約140億ドル、準備管理購入予定なし。既存予定であり実取引額・新規発表とは未確認。公表時刻不明。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": "推論：国債の購入予定が実施され他条件が同じなら民間吸収額を変え得るが、発行、償還と民間需要を含めない方向判断は不可。",
+  "historical_comparisons": "1973年供給制約、2007〜09年信用収縮、2020年中央銀行の市場機能支援。前2件は後年の回顧。初期の実質金利・インフレ・流動性・エネルギー構造の定量比較は未完。",
+  "scenarios": {
+    "days": "入札および国債購入実績を確認",
+    "weeks": "再投資購入、財務省の買戻し、原油在庫を区別して確認",
+    "months": "需給と物価・実質金利・政策を確認",
+    "pairs": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは両国資料不足のため保留"
+  },
+  "invalidations": [
+    "予定の変更や未実施",
+    "国債発行または需要の相殺",
+    "原油供給障害や需要変化"
+  ],
+  "review_after": null,
+  "retry": [
+    "全10情報源について最新保存時刻から24時間重複した期間の確認、最新公表時刻は未確定",
+    "財務省入札・買戻しとNY連銀個別取引",
+    "EIA原文再取得とPDF全頁・図表・脚注の視覚確認",
+    "公開URL・公表時刻・ハッシュによる全件照合",
+    "歴史の当初物価・実質金利・流動性・エネルギー構造",
+    "期限到来の事後レビューとPostgreSQL反映確認"
+  ],
+  "database_status": "前回記録は同期run 45885340789失敗、今回の最新実行およびPostgreSQL反映は未確認。",
+  "pc_notification": "実機未確認",
+  "new_documents_saved": 0
+}
