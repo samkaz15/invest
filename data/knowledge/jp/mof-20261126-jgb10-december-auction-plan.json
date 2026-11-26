@@ -1,0 +1,24 @@
+{
+  "id": "mof-20261126-jgb10-december-auction-plan",
+  "title_ja": "財務省、12月の10年国債発行予定を公表",
+  "summary_ja": "財務省は10年債を約２兆６千億円発行する予定で、入札予定日は12月３日と公表しました。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/yotei/auct20261126.htm",
+  "published_at": null,
+  "published_date_jst": "2026-11-26",
+  "published_time_note": "実際の公表時刻は未確認。",
+  "retrieved_at": "2026-11-26T11:31:39+09:00",
+  "notification_eligible": true,
+  "document_type": "国債発行・入札予定",
+  "facts_ja": [
+    "発行予定額は額面約２兆6000億円、入札予定日は12月３日、発行予定日は12月４日、償還予定日は2036年９月20日。",
+    "入札結果を踏まえ同日午後２時から第II非価格競争入札を実施予定。これは予定であり、落札結果や市場での実売買ではない。"
+  ],
+  "inference_ja": [
+    "市場の吸収力や他の発行・買入れを含む需給によっては長期金利に影響し得るが、この予定だけでは方向を判断できない。"
+  ],
+  "missing_parts": [
+    "実際の公表時刻は未確認。"
+  ],
+  "content_scope": "日本語要約",
+  "rights_status": "全文複製せず公式URLと要約を記録。個別転載許諾条件は未確認。"
+}
