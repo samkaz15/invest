@@ -1,0 +1,50 @@
+{
+  "id": "20261126T002629Z-review",
+  "as_of_jst": "2026-11-26T09:26:29+09:00",
+  "previous_run": "data/analysis/jp_policy/20261125T224204Z-review.json",
+  "delta_window_start_jst": "2026-11-26T07:42:04+09:00",
+  "result": "partial",
+  "sources": [
+    {
+      "url": "https://www.boj.or.jp/about/press/index.htm",
+      "status": "講演・会見一覧確認。田村委員挨拶は10時公表予定で、実際の本文は未確認。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/",
+      "status": "決定事項一覧を取得。個別PDFの全頁確認は未完。"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/boj/fm/ope/",
+      "status": "一覧を取得。銘柄別XLSXは非対応で再取得失敗。"
+    },
+    {
+      "url": "https://www.mof.go.jp/jgbs/auction/calendar/2611.htm",
+      "status": "入札・買入消却一覧を取得。40年債入札結果の本文と既存記録を照合。買入消却の詳細は10月分のリンクを確認、個別本文未照合。"
+    },
+    {
+      "url": "https://www.mof.go.jp/public_relations/whats_new/202611.html",
+      "status": "新着一覧取得。個別文書の網羅確認は未完。"
+    }
+  ],
+  "facts": [
+    "40年利付国債第19回の11月25日入札結果について、公式本文の応募額7865億円、募入決定額2996億円、最高利回り4.090％は既存JSONと一致。これは入札結果であり日銀の実売買ではない。",
+    "26日の田村委員挨拶は10時の公表予定であり、本文は今回未確認。"
+  ],
+  "new_document_ids": [],
+  "dedup": "公式URLと日付・内容について40年債入札結果の既存記録との一致を確認。その他全件の重複照合は未完。",
+  "missing": [
+    "国庫短期証券銘柄別買入額XLSX全シート",
+    "国債補完供給XLSX全シート",
+    "日銀オペ個別結果と決定会合関連PDF",
+    "財務省買入消却の個別実績",
+    "個別資料の再配布条件"
+  ],
+  "retry": [
+    "https://www.boj.or.jp/statistics/boj/other/tmei/release/2026/tmei261120.xlsx",
+    "https://www.boj.or.jp/statistics/boj/fm/ope/d_release/slf/2026/slf202611.xlsx",
+    "田村委員の挨拶を10時以降に確認",
+    "日銀オペ・財務省買入消却の個別資料"
+  ],
+  "rights": "本文全文の複製なし。",
+  "mac_notification": "実機未確認"
+}
