@@ -1,0 +1,94 @@
+{
+  "id": "eia-wpsr-20261125-overview-p1-excerpt",
+  "source_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_11_25/download/overview.pdf",
+  "title_en": "Weekly Petroleum Status Report Overview, Table 1",
+  "title_ja": "EIA週次石油需給概況・表１の一部（11月20日終了週）",
+  "published_at": null,
+  "published_date_jst": null,
+  "published_date_source": "2026-11-25（米国日付、時刻とJST日付は未確認）",
+  "received_at": "2026-11-26T12:10:49+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil"
+  ],
+  "original_text": "Table 1. U.S. Petroleum Balance Sheet, Week Ending 11/20/2026\nPetroleum Stocks (Million Barrels)\nCommercial (Excluding SPR) | 11/20/26: 418.9 | 11/13/26: 417.8 | Difference: 1.1 | Percent Change: 0.3 | 11/21/25: 426.9 | Difference: -8.0 | Percent Change: -1.9",
+  "translation_ja": "表１：2026年11月20日終了週の米国石油需給表。石油在庫（単位：百万バレル）：戦略石油備蓄を除く商業原油在庫は11月20日418.9、11月13日417.8、前週差1.1、前週比0.3％。前年11月21日426.9、前年比の差はマイナス8.0、前年比マイナス1.9％。",
+  "facts_ja": [
+    "概況PDFの１ページの一部から商業原油在庫の前週・前年比較を確認。"
+  ],
+  "inference_ja": [
+    "単週の在庫増だけでは原油価格の方向を判断できない。"
+  ],
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "PDF１ページの残りの全行・脚注、２〜８ページの原文・翻訳・全図表・脚注は未確認。",
+    "全ページの目視確認およびPDFバイナリの安全性・再配布確認は未完。PDF原本は未保存。",
+    "公表時刻と公表日のJST換算は不明。"
+  ],
+  "notification_eligible": false,
+  "pdf": {
+    "page_count": 8,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "Commercial (Excluding SPR) | 418.9 | 417.8 | 1.1 | 0.3 | 426.9 | -8.0 | -1.9",
+        "extraction_status": "partial",
+        "translation_ja": "商業原油在庫（戦略石油備蓄を除く）：当週418.9、前週417.8、差1.1、前週比0.3％、前年426.9、差マイナス8.0、前年比マイナス1.9％（百万バレル）。",
+        "translation_status": "partial"
+      },
+      {
+        "page": 2,
+        "original_text": "",
+        "extraction_status": "missing",
+        "translation_ja": "",
+        "translation_status": "pending"
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "extraction_status": "missing",
+        "translation_ja": "",
+        "translation_status": "pending"
+      },
+      {
+        "page": 4,
+        "original_text": "",
+        "extraction_status": "missing",
+        "translation_ja": "",
+        "translation_status": "pending"
+      },
+      {
+        "page": 5,
+        "original_text": "",
+        "extraction_status": "missing",
+        "translation_ja": "",
+        "translation_status": "pending"
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "extraction_status": "missing",
+        "translation_ja": "",
+        "translation_status": "pending"
+      },
+      {
+        "page": 7,
+        "original_text": "",
+        "extraction_status": "missing",
+        "translation_ja": "",
+        "translation_status": "pending"
+      },
+      {
+        "page": 8,
+        "original_text": "",
+        "extraction_status": "missing",
+        "translation_ja": "",
+        "translation_status": "pending"
+      }
+    ],
+    "binary_saved": false
+  }
+}
