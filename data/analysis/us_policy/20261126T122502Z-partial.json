@@ -1,0 +1,135 @@
+{
+  "id": "20261126T122502Z-partial",
+  "as_of": "2026-11-26T21:25:02+09:00",
+  "previous_run": "data/analysis/us_policy/20261126T110700Z-partial.json",
+  "input_document_ids": [
+    "eia-wpsr-20261125-overview-p1-excerpt"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "status": "入口のみ再取得、個別資料および24時間重複期間の網羅未確認",
+      "checked_at_jst": "2026-11-26T21:25:02+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-26T21:25:02+09:00"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "status": "入口のみ再取得、個別資料および24時間重複期間の網羅未確認",
+      "checked_at_jst": "2026-11-26T21:25:02+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-26T21:25:02+09:00"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "status": "入口のみ再取得、個別資料および24時間重複期間の網羅未確認",
+      "checked_at_jst": "2026-11-26T21:25:02+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-26T21:25:02+09:00"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "status": "入口のみ再取得、個別資料および24時間重複期間の網羅未確認",
+      "checked_at_jst": "2026-11-26T21:25:02+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-26T21:25:02+09:00"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "status": "入口のみ再取得、個別資料および24時間重複期間の網羅未確認",
+      "checked_at_jst": "2026-11-26T21:25:02+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-26T21:25:02+09:00"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "status": "入口のみ再取得、個別資料および24時間重複期間の網羅未確認",
+      "checked_at_jst": "2026-11-26T21:25:02+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-26T21:25:02+09:00"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "status": "入口のみ再取得、個別資料および24時間重複期間の網羅未確認",
+      "checked_at_jst": "2026-11-26T21:25:02+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-26T21:25:02+09:00"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "status": "入口のみ再取得、個別資料および24時間重複期間の網羅未確認",
+      "checked_at_jst": "2026-11-26T21:25:02+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-26T21:25:02+09:00"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "status": "入口のみ再取得、個別資料および24時間重複期間の網羅未確認",
+      "checked_at_jst": "2026-11-26T21:25:02+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-26T21:25:02+09:00"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "status": "入口のみ再取得、個別資料および24時間重複期間の網羅未確認",
+      "checked_at_jst": "2026-11-26T21:25:02+09:00",
+      "coverage_start_jst": null,
+      "coverage_end_jst": "2026-11-26T21:25:02+09:00"
+    }
+  ],
+  "missing_sources": [
+    "10情報源の個別資料・表と期間内差分の網羅",
+    "財務省買戻し結果・国債個別入札結果・NY連銀個別売買結果",
+    "EIA概況PDF第1頁残り、2〜8頁の原文・訳・表・脚注・目視確認",
+    "メール経路を含む全件重複照合",
+    "歴史3事例の詳細比較と期限到来レビュー"
+  ],
+  "facts": [
+    {
+      "document_id": "eia-wpsr-20261125-overview-p1-excerpt",
+      "description": "既存記録の商業原油在庫は11月20日終了週418.9百万バレル。公表時刻不明。"
+    }
+  ],
+  "reported": [],
+  "causal_channels": "推論：他条件が等しく在庫増が持続すると原油需給・物価を介し金利へ波及し得る。",
+  "historical_comparisons": "1973年の供給途絶と単週在庫は異なる。物価・実質金利・流動性・エネルギー構造の詳細比較は未完。後年解説を当時情報に混ぜない。",
+  "scenarios": {
+    "days": "入札・在庫内訳を確認",
+    "weeks": "在庫と供給障害を確認",
+    "months": "需要と政策を確認",
+    "pairs": "双方の資料不足で判断保留"
+  },
+  "invalidations": [
+    "供給障害",
+    "需要増",
+    "在庫減"
+  ],
+  "review_after": null,
+  "retry": [
+    "10情報源の個別資料・表と期間内差分の網羅",
+    "財務省買戻し結果・国債個別入札結果・NY連銀個別売買結果",
+    "EIA概況PDF第1頁残り、2〜8頁の原文・訳・表・脚注・目視確認",
+    "メール経路を含む全件重複照合",
+    "歴史3事例の詳細比較と期限到来レビュー"
+  ],
+  "database_status": "過去に確認された同期run 45747295405は失敗。今回の最新同期・PostgreSQL反映は未確認",
+  "pc_notification": "実機未確認",
+  "pdf_status": {
+    "url": "https://ir.eia.gov/wpsr/overview.pdf",
+    "page_count": 8,
+    "complete": false,
+    "missing_pages": "第1頁残り及び第2〜8頁の翻訳・表・脚注・視覚確認",
+    "archive_url_attempt": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_11_25/download/overview.pdf",
+    "archive_result": "取得失敗"
+  }
+}
