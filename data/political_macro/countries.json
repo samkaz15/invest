@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "retrieved_at": null,
+  "countries": [
+    {"id":"JP","name":"日本","currency":"JPY","system":"議院内閣制・二院制","chambers":[{"name":"衆議院","seats":465,"source":"https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/kokkai/kokkai_kousei.htm"}],"sources":{"government":"https://www.kantei.go.jp/","central_bank":"https://www.boj.or.jp/","legislature":"https://www.shugiin.go.jp/","elections":"https://www.soumu.go.jp/senkyo/"},"missing":["政党別議席・有権者数・改選数・政策・公示済み日程","制度改正案の成立状況"]},
+    {"id":"ES","name":"スペイン","currency":"EUR","system":"議院内閣制・二院制","chambers":[{"name":"下院","seats":350,"source":"https://www.congreso.es/es/cem/funciones1"}],"sources":{"government":"https://www.lamoncloa.gob.es/","central_bank":"https://www.bde.es/","monetary_policy":"https://www.ecb.europa.eu/","legislature":"https://www.congreso.es/","elections":"https://www.juntaelectoralcentral.es/"},"missing":["上院の定数・政党別議席・有権者数・政策・公示済み日程"]},
+    {"id":"US","name":"米国","currency":"USD","system":"大統領制・二院制","chambers":[{"name":"上院","seats":100,"source":"https://www.senate.gov/senators/"}],"sources":{"government":"https://www.whitehouse.gov/","central_bank":"https://www.federalreserve.gov/","legislature":"https://www.congress.gov/","elections":"https://www.fec.gov/"},"missing":["下院の定数・政党別議席・有権者数・州認証・政策・公示済み日程"]}
+  ]
+}
