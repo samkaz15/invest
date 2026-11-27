@@ -1,0 +1,25 @@
+{
+  "published_at": null,
+  "published_date_jst": "2026-11-27",
+  "published_time_note": "公式掲載時刻不明。会合日時や入札予定時刻と混同しない。",
+  "retrieved_at": "2026-11-27T23:25:20+09:00",
+  "notification_eligible": true,
+  "rights_status": "財務省利用案内を確認。権利表示のないコンテンツには原則PDL1.0、例外あり。全文複製せず要約と公式URLを記録。https://www.mof.go.jp/about_mof/notice/index.html",
+  "content_scope": "本文・表の要約",
+  "id": "mof-20261127-jgb-special-participants-121-summary",
+  "title_ja": "国債市場特別参加者会合の議事の要点",
+  "summary_ja": "財務省の会合で国債発行の需給や変動利付債の発行見送り案について意見が示されました。",
+  "source_url": "https://www.mof.go.jp/about_mof/councils/meeting_of_jgbsp/proceedings/261126pd.html",
+  "document_type": "財務省会合議事の要点",
+  "facts_ja": [
+    "11月26日開催会合で、超長期債の一部年限に減額余地があるとの参加者意見や、長期債の発行据え置きを望む意見が示された。",
+    "財務省は限定的な需要を理由に2027年1〜3月の変動利付国債を発行しない案を示し、参加者全員から支持する意見があった。案と最終決定は区別する。",
+    "物価連動債の主幹事方式について、当局は部分導入の検討を提案し、参加者から期待と慎重な制度設計を求める意見が出た。"
+  ],
+  "inference_ja": [
+    "意見や案が実際の発行計画に反映されれば年限別需給に影響し得るが、現時点で発行額や金・為替の方向は確定できない。"
+  ],
+  "missing_parts": [
+    "公表時刻不明。検索サービス経由のため公式サイト更新時点の直接確認未完。会合の関連資料PDFと後日公表される議事要旨は未取得。"
+  ]
+}
