@@ -1,0 +1,113 @@
+{
+  "as_of": "2026-11-28T05:04:14+09:00",
+  "document_ids": [
+    "treasury-20261127-nominal-yield-table",
+    "treasury-20261127-real-yield-table"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-28T05:04:14+09:00",
+      "scope": "入口取得のみ。個別本文・表・対象期間の網羅は未確認",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-28T05:04:14+09:00",
+      "scope": "入口取得のみ。個別本文・表・対象期間の網羅は未確認",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-28T05:04:14+09:00",
+      "scope": "入口取得のみ。個別本文・表・対象期間の網羅は未確認",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-28T05:04:14+09:00",
+      "scope": "入口取得のみ。個別本文・表・対象期間の網羅は未確認",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-28T05:04:14+09:00",
+      "scope": "入口取得のみ。個別本文・表・対象期間の網羅は未確認",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-28T05:04:14+09:00",
+      "scope": "入口取得のみ。個別本文・表・対象期間の網羅は未確認",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-28T05:04:14+09:00",
+      "scope": "入口取得のみ。個別本文・表・対象期間の網羅は未確認",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-28T05:04:14+09:00",
+      "scope": "入口取得のみ。個別本文・表・対象期間の網羅は未確認",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-28T05:04:14+09:00",
+      "scope": "入口取得のみ。個別本文・表・対象期間の網羅は未確認",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-28T05:04:14+09:00",
+      "scope": "入口取得のみ。個別本文・表・対象期間の網羅は未確認",
+      "coverage_start": null,
+      "coverage_end": null
+    }
+  ],
+  "missing_sources": [
+    "全10源の個別本文・表の差分と前回保存時刻から24時間の重複確認は未完。入札、買戻し、NY連銀オペ、州認証、EIA PDF全ページは再取得対象。",
+    "米財務省表の11月27日分は公表時刻不明、観測時間と取得時間の整合性未確認。短期証券表の同日行は未確認。",
+    "既存分析のreview_afterと事後価格は未評価。"
+  ],
+  "facts": [
+    "既存の財務省メール経路に11月27日付の名目・実質利回り表の抜粋がある。観測日と公表時刻は異なり、更新時刻不明。",
+    "GitHub US knowledge database sync は直前のメール保存コミットで失敗、PostgreSQL反映未確認。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "条件付き推論：実質金利が上昇すれば金の保有機会費用が上がり得るが、為替・リスク選好等も作用する。"
+  ],
+  "historical_comparisons": [
+    "1973年は供給制約、2007〜09年は信用収縮、2020年は市場機能への支援が中心。後年の解説と当時の資料を区別し、初期のインフレ・金利・流動性・エネルギー構造の定量比較は未取得。"
+  ],
+  "scenarios": [
+    "日・週・月の通貨ペア別方向は米国外の資料と公表時刻の確認不足により保留。"
+  ],
+  "invalidations": [
+    "実質金利や相手国金利、供給と需要の実測が仮定と異なる場合。"
+  ],
+  "review_after": null,
+  "status": "partial"
+}
