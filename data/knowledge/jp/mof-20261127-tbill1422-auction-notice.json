@@ -1,0 +1,24 @@
+{
+  "id": "mof-20261127-tbill1422-auction-notice",
+  "title_ja": "財務省、国庫短期証券第1422回の入札を通知",
+  "summary_ja": "財務省は国庫短期証券第1422回の入札を通知し、発行予定額を約３兆1000億円としました。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/tbill/tbill_nyusatsu/offer20261127.htm",
+  "facts_ja": [
+    "発行予定額は額面約3兆1000億円、発行日11月30日、償還期限2027年3月8日。",
+    "価格競争入札と第Ⅰ非価格競争入札を通知。応募締切は11月27日11時30分。入札結果ではない。"
+  ],
+  "published_at": null,
+  "published_date_jst": "2026-11-27",
+  "published_time_note": "公式ページに実際の公表時刻の記載なし。",
+  "retrieved_at": "2026-11-27T11:25:40+09:00",
+  "notification_eligible": true,
+  "document_type": "財務省入札実施通知",
+  "inference_ja": [
+    "発行と投資家需要、償還および日銀買入れが重なれば国債需給や金利に影響し得るが、この通知だけで市場の方向は判断できない。"
+  ],
+  "missing_parts": [
+    "落札結果と実際の公表時刻は未確認。"
+  ],
+  "content_scope": "本文・表の要約",
+  "rights_status": "財務省利用案内では権利表記のないコンテンツに原則PDL1.0が適用され、例外もある。全文複製せず要約と公式URLを記録。 https://www.mof.go.jp/about_mof/notice/index.html"
+}
