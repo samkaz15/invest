@@ -1,0 +1,24 @@
+{
+  "id": "mof-20261127-liquidity466-auction-notice",
+  "title_ja": "財務省、流動性供給第466回の入札を通知",
+  "summary_ja": "財務省は流動性供給入札を通知し、既発債の追加発行予定額を約5000億円としました。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/offer20261127.htm",
+  "facts_ja": [
+    "発行予定総額は額面約5000億円、発行日は11月30日。対象は10年債365〜383回、20年債132〜162回、30年債6〜27回。",
+    "締切は11月27日11時50分。希望利回格差による入札の通知であり、落札結果や日銀のオペではない。"
+  ],
+  "published_at": null,
+  "published_date_jst": "2026-11-27",
+  "published_time_note": "公式ページに実際の公表時刻の記載なし。",
+  "retrieved_at": "2026-11-27T11:25:40+09:00",
+  "notification_eligible": true,
+  "document_type": "財務省入札実施通知",
+  "inference_ja": [
+    "発行と投資家需要、償還および日銀買入れが重なれば国債需給や金利に影響し得るが、この通知だけで市場の方向は判断できない。"
+  ],
+  "missing_parts": [
+    "落札結果と実際の公表時刻は未確認。"
+  ],
+  "content_scope": "本文・表の要約",
+  "rights_status": "財務省利用案内では権利表記のないコンテンツに原則PDL1.0が適用され、例外もある。全文複製せず要約と公式URLを記録。 https://www.mof.go.jp/about_mof/notice/index.html"
+}
