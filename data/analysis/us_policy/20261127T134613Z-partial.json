@@ -1,0 +1,99 @@
+{
+  "as_of": "2026-11-27T22:46:13+09:00",
+  "document_ids": [
+    "nyfed-treasury-20261116-20261211-schedule-20261114"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-27T22:46:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "scope": "入口のみ、個別入札表未確認",
+      "checked_at": "2026-11-27T22:46:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "scope": "入口のみ、動的結果表未確認",
+      "checked_at": "2026-11-27T22:46:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "scope": "入口のみ、個別声明未確認",
+      "checked_at": "2026-11-27T22:46:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "scope": "入口と月次オペ表を確認、個別実績未確認",
+      "checked_at": "2026-11-27T22:46:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-27T22:46:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "scope": "入口のみ、個別資料未確認",
+      "checked_at": "2026-11-27T22:46:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "scope": "入口取得、11月25日号PDF取得失敗",
+      "checked_at": "2026-11-27T22:46:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "scope": "入口のみ、州認証未確認",
+      "checked_at": "2026-11-27T22:46:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-27T22:46:13+09:00",
+      "coverage_start": null
+    }
+  ],
+  "missing_sources": [
+    "情報源別の既存最新公表時刻・24時間重複、個別本文・表、EIA PDF全頁と翻訳、既存メール経路重複照合、事後レビューは未完。"
+  ],
+  "facts": [
+    "NY連銀の11月16日〜12月11日の再投資国債買入れ約140億ドルは既存の予定であり、実績ではない。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "買入れが実施されれば需要に影響し得るが発行・償還・民間需要と併せて判断する。"
+  ],
+  "historical_comparisons": [
+    "2020年の市場機能支援とは政策目的・初期条件が異なり比較は未完。"
+  ],
+  "scenarios": [
+    "日：実施結果、週：国債需給、月：物価・金利を確認。通貨ペアは両側資料不足により保留。"
+  ],
+  "invalidations": [
+    "実施額の変更、民間需要や発行額の変化、日米双方の金利差の変化"
+  ],
+  "review_after": null,
+  "status": "partial"
+}
