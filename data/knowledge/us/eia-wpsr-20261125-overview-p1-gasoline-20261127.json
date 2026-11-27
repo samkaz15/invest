@@ -1,0 +1,94 @@
+{
+  "id": "eia-wpsr-20261125-overview-p1-gasoline-20261127",
+  "supersedes": "eia-wpsr-20261125-overview-p1-supplement-20261127",
+  "source_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_11_25/download/overview.pdf",
+  "title_en": "Weekly Petroleum Status Report Overview, Table 1 partial stock rows",
+  "title_ja": "EIA週次石油需給概況・在庫３行補足（11月20日終了週）",
+  "published_at": null,
+  "published_date_source": "2026-11-25（米国日付、公表時刻とJST公表日は不明）",
+  "received_at": "2026-11-27T17:52:22+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil"
+  ],
+  "original_text": "Table 1. U.S. Petroleum Balance Sheet, Week Ending 11/20/2026. Petroleum Stocks (Million Barrels). Commercial (Excluding SPR): Current Week 418.9; Week Ago 417.8; Difference 1.1; Percent Change 0.3; Year Ago 426.9; Difference -8.0; Percent Change -1.9. Strategic Petroleum Reserve (SPR): Current Week 273.5; Week Ago 276.4; Difference -2.9; Percent Change -1.0; Year Ago 411.4; Difference -138.0; Percent Change -33.5. Total Motor Gasoline: Current Week 217.7; Week Ago 215.9; Difference 1.7; Percent Change 0.8; Year Ago 209.9; Difference 7.8; Percent Change 3.7.",
+  "translation_ja": "表１：2026年11月20日終了週の米国石油需給表。石油在庫（百万バレル）。商業原油在庫（SPR除く）：当週418.9、前週417.8、差1.1、前週比0.3％、前年426.9、前年差マイナス8.0、前年比マイナス1.9％。戦略石油備蓄（SPR）：当週273.5、前週276.4、差マイナス2.9、前週比マイナス1.0％、前年411.4、前年差マイナス138.0、前年比マイナス33.5％。自動車用ガソリン合計：当週217.7、前週215.9、差1.7、前週比0.8％、前年209.9、前年差7.8、前年比3.7％。",
+  "facts_ja": [
+    "ガソリン合計在庫は2億1770万バレル、前週差170万バレル増。差は独立した丸めのため表示値同士の差と一致しない場合がある。"
+  ],
+  "inference_ja": [
+    "在庫の増加が持続し、他条件が同じなら需給緩和に寄与し得るが単週の統計だけで価格方向は決まらない。"
+  ],
+  "content_scope": "PDF表１の３行のみ。検索インデックス経由で取得。",
+  "translation_status": "partial",
+  "notification_eligible": false,
+  "missing_parts": [
+    "表１の残りの行・脚注と第２〜８頁の原文・訳・表・脚注は未処理。",
+    "PDF全頁の視覚確認、原本の安全性および再配布可否確認は未完。原本は未保存。",
+    "公表時刻と公表日のJST換算は不明。"
+  ],
+  "pdf": {
+    "page_count": 8,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "binary_saved": false,
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "Total Motor Gasoline: 217.7 | 215.9 | 1.7 | 0.8 | 209.9 | 7.8 | 3.7.",
+        "translation_ja": "自動車用ガソリン合計：当週217.7、前週215.9、差1.7、前週比0.8％、前年209.9、前年差7.8、前年比3.7％（百万バレル）。",
+        "extraction_status": "partial",
+        "translation_status": "partial"
+      },
+      {
+        "page": 2,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 4,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 5,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 7,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 8,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      }
+    ]
+  }
+}
