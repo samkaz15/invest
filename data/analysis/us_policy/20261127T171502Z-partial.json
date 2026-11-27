@@ -1,0 +1,97 @@
+{
+  "as_of": "2026-11-28T02:15:02+09:00",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-28T02:15:02+09:00",
+      "scope": "入口のみ",
+      "coverage_start": null
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-28T02:15:02+09:00",
+      "scope": "入口のみ",
+      "coverage_start": null
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-28T02:15:02+09:00",
+      "scope": "入口のみ",
+      "coverage_start": null
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-28T02:15:02+09:00",
+      "scope": "入口のみ",
+      "coverage_start": null
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-28T02:15:02+09:00",
+      "scope": "入口のみ",
+      "coverage_start": null
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-28T02:15:02+09:00",
+      "scope": "入口のみ",
+      "coverage_start": null
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-28T02:15:02+09:00",
+      "scope": "入口のみ",
+      "coverage_start": null
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-28T02:15:02+09:00",
+      "scope": "入口のみ",
+      "coverage_start": null
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-28T02:15:02+09:00",
+      "scope": "入口のみ",
+      "coverage_start": null
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-28T02:15:02+09:00",
+      "scope": "入口のみ",
+      "coverage_start": null
+    }
+  ],
+  "missing_sources": [
+    "個別本文・表と指定期間の網羅、PDF全頁・原文・訳・視覚確認、既存メール経路とのURL・公表時刻・内容ハッシュ照合、州認証・事後レビューは未完。情報源別の最新保存公表時刻および24時間重複の始点は未特定。"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [
+    "国債の発行・償還・買入れと民間需要が需給に影響し、エネルギー需給は物価・景気、金利・資金需給を通じ資産に影響し得る。"
+  ],
+  "historical_comparisons": [
+    "1973年の供給制約、2007〜09年の信用収縮、2020年の市場機能支援は起点が異なる。初期条件の定量比較は未完。"
+  ],
+  "scenarios": [
+    "日：入札・オペ、週：在庫、月：物価・金利を確認。通貨ペアは両側の根拠不足で判断保留。"
+  ],
+  "invalidations": [
+    "供給・需要、政策、金利差の実測が想定に反する場合"
+  ],
+  "review_after": null,
+  "status": "partial",
+  "db_sync": "最新未確認",
+  "pc_notification": "未確認"
+}
