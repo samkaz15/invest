@@ -1,0 +1,101 @@
+{
+  "as_of": "2026-11-28T00:32:13+09:00",
+  "document_ids": [
+    "eia-wpsr-20261125-overview-p1-gasoline-20261127"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-28T00:32:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "scope": "入口のみ、個別入札結果未確認",
+      "checked_at": "2026-11-28T00:32:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "scope": "入口のみ、動的結果表未確認",
+      "checked_at": "2026-11-28T00:32:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-28T00:32:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "scope": "入口のみ、個別売買未確認",
+      "checked_at": "2026-11-28T00:32:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-28T00:32:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-28T00:32:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "scope": "週報の検索経由PDF抽出テキストを部分取得。アーカイブPDF原本との同一性未検証",
+      "checked_at": "2026-11-28T00:32:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "scope": "入口のみ、州認証未確認",
+      "checked_at": "2026-11-28T00:32:13+09:00",
+      "coverage_start": null
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-28T00:32:13+09:00",
+      "coverage_start": null
+    }
+  ],
+  "missing_sources": [
+    "全ソースの個別本文・表と差分の開始点、メール経路との完全照合、EIA原PDF同一性・全頁・脚注・翻訳・保存、レビュー期限を再試行。"
+  ],
+  "facts": [
+    "検索サービスが返した11月20日終了週の週報表では蒸留燃料油在庫105.6百万バレル、前週比0.7百万バレル増。アーカイブ原PDFとの同一性未確認。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "原油・燃料の供給と需要が在庫、物価・景気、実質金利・資金需給に波及する可能性。"
+  ],
+  "historical_comparisons": [
+    "1973年の供給制約、2007〜09年の信用収縮、2020年の流動性支援は異なる。初期条件の定量比較は未完。"
+  ],
+  "scenarios": [
+    "日：入札・オペの実績、週：在庫動向、月：物価・金利の変化を確認。通貨ペアは双方の資料不足により保留。"
+  ],
+  "invalidations": [
+    "供給障害、需要変化、在庫傾向の反転"
+  ],
+  "review_after": null,
+  "status": "partial",
+  "db_sync": "最新未確認",
+  "pc_notification": "未確認"
+}
