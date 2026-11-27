@@ -1,0 +1,25 @@
+{
+  "id": "boj-20261127-tamura-press-conference-supplement-20261128",
+  "supersedes": "boj-20261127-tamura-press-conference",
+  "title_ja": "田村委員会見の補足：金融環境は段階的に変化との見解",
+  "summary_ja": "田村委員は、金融環境が緩和的か引き締め的かを観察しながら、利上げを進める考えを述べました。",
+  "source_url": "https://www.boj.or.jp/about/press/kaiken_2026/kk261127a.pdf",
+  "published_at": null,
+  "published_date_jst": "2026-11-27",
+  "retrieved_at": "2026-11-28T07:46:22+09:00",
+  "notification_eligible": true,
+  "document_type": "審議委員記者会見記録の補足",
+  "facts_ja": [
+    "田村委員は金融環境が緩和的か中立的か引き締め的かを確認しながら利上げを進める考えを述べ、経済主体ごとの環境は段階的に変化するとの見解を示した。",
+    "これは個人の意見であり、金融政策決定会合の決定ではない。会見は11月26日14時開始で、資料の正確な公表時刻は不明。"
+  ],
+  "inference_ja": [
+    "金融環境の評価が政策金利の見通しを変えれば国債需給や実質金利、金・為替に影響し得るが、発言だけでは市場の方向を決められない。"
+  ],
+  "content_scope": "検索サービス経由でPDF末尾を抽出し、第7頁末〜第8頁の発言を部分要約。",
+  "missing_parts": [
+    "直接のPDF取得に失敗。PDF全ページ・図表・脚注の視覚確認は未実施。",
+    "実際の公表時刻不明。検索サービスの抽出表示と原本の同一性を再確認する。"
+  ],
+  "rights_status": "全文複製せず要約と公式URLを記録。https://www.boj.or.jp/about/copyright.htm"
+}
