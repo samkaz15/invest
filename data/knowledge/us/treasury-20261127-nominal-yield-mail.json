@@ -1,0 +1,27 @@
+{
+  "id": "treasury-20261127-nominal-yield-mail",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "title_en": "U.S. Department of the Treasury Daily Treasury Yield Curve Rates Update",
+  "title_ja": "米財務省：名目国債利回り曲線の更新通知",
+  "published_at": null,
+  "received_at": "2026-11-28T04:56:56+09:00",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "You are subscribed to Daily Treasury Yield Curve Rates for U.S. Department of the Treasury. This information has recently been updated, and is now available.\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "translation_ja": "米国財務省の「日次名目国債利回り曲線」を購読しています。この情報は最近更新され、閲覧できるようになりました。\n\nhttps://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "facts_ja": [
+    "メールは名目国債利回り曲線の更新を通知。",
+    "表の公表時刻および更新対象行の確定は未確認。"
+  ],
+  "inference_ja": "利回りの変化は資金調達費用や金の保有機会費用に影響し得るが、これだけで市場の方向は決まらない。",
+  "source_type": "email",
+  "content_scope": "full_translation",
+  "translation_status": "complete",
+  "missing_parts": [
+    "表の正確な公表時刻およびメールが指す更新行は未確認。11月27日行と通常の米東部時刻15時30分頃の市場気配に関する方法論の時間関係を再確認する。"
+  ],
+  "notification_eligible": true,
+  "summary_ja_40": "米財務省が名目国債利回り曲線の更新を通知、公表時刻と更新内容は確認できていません",
+  "linked_document_id": "treasury-20261127-nominal-yield-table"
+}

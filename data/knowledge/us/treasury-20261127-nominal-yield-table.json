@@ -1,0 +1,30 @@
+{
+  "id": "treasury-20261127-nominal-yield-table",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "title_en": "Daily Treasury Yield Curve Rates",
+  "title_ja": "米財務省 名目国債利回り曲線 2026年11月27日分の抜粋",
+  "published_at": null,
+  "received_at": "2026-11-28T04:56:56+09:00",
+  "retrieved_at": "2026-11-28T04:57:53+09:00",
+  "topics": [
+    "treasuries"
+  ],
+  "original_text": "Date | 1 Mo | 1.5 Mo | 2 Mo | 3 Mo | 4 Mo | 6 Mo | 1 Yr | 2 Yr | 3 Yr | 5 Yr | 7 Yr | 10 Yr | 20 Yr | 30 Yr\n11/27/2026 | 4.27 | 4.28 | 4.30 | 4.35 | 4.38 | 4.46 | 4.61 | 4.69 | 4.72 | 4.74 | 4.82 | 4.94 | 5.36 | 5.33",
+  "translation_ja": "2026年11月27日。名目利回りは1か月4.27％、1.5か月4.28％、2か月4.30％、3か月4.35％、4か月4.38％、6か月4.46％、1年4.61％、2年4.69％、3年4.72％、5年4.74％、7年4.82％、10年4.94％、20年5.36％、30年5.33％。",
+  "facts_ja": [
+    "公式表で11月27日行を確認。日付は観測日であり公表時刻ではない。",
+    "表の公表時刻は不明。利回りは入札結果や実売買の記録ではない。",
+    "財務省の名目曲線の説明には通常の気配取得時刻が米東部午後3時30分頃とあり、今回の取得時刻との関係は未確認。"
+  ],
+  "inference_ja": "金利の変化は国債の調達費用や金の保有機会費用に影響し得るが、相場の方向は断定できない。",
+  "source_type": "official_table",
+  "data_date": "2026-11-27",
+  "content_scope": "excerpt",
+  "translation_status": "partial",
+  "missing_parts": [
+    "対象行以外の2026年の行と全脚注・方法論は全文翻訳していない。",
+    "更新時刻および通常の市場気配の取得時刻との関係を再確認する。"
+  ],
+  "notification_eligible": false,
+  "related_mail_id": "treasury-20261127-nominal-yield-mail"
+}
