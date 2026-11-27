@@ -1,0 +1,26 @@
+{
+  "id": "boj-20261127-kamiyama-tokenized-jgb-settlement",
+  "title_ja": "日銀理事、トークン化国債の資金決済を検証対象に挙げる",
+  "summary_ja": "神山理事は、日銀の実験でトークン化された日本国債の資金決済を検討していると説明しました。",
+  "source_url": "https://www.boj.or.jp/about/press/koen_2026/data/ko261127a.pdf",
+  "published_at": null,
+  "published_date_jst": "2026-11-27",
+  "published_time_note": "正確な公表時刻は不明。",
+  "retrieved_at": "2026-11-28T08:43:05+09:00",
+  "notification_eligible": true,
+  "document_type": "日銀理事講演の部分要約",
+  "facts_ja": [
+    "神山理事は日銀のDLT連携サンドボックスの検討例として、トークン化された日本国債の資金決済、国内銀行間決済、クロスボーダー決済を挙げた。",
+    "中央銀行マネーのトークン化と既存インフラとの接続を選択肢として説明。一般利用型CBDCの発行は決定されていないと述べた。",
+    "国債の発行・買入れ・売却や政策金利の変更を決定した文書ではない。"
+  ],
+  "inference_ja": [
+    "実用化と広範な利用が進めば決済の効率性や流動性管理に影響し得るが、発言だけで国債需給、金利、金・ドル円の方向は判断できない。"
+  ],
+  "content_scope": "検索サービスが抽出した講演PDF本文の要約。",
+  "missing_parts": [
+    "PDF原本の直接取得に失敗。全ページの図表・脚注・視覚確認は未完。検索抽出と原本の一致は再確認する。",
+    "公表時刻不明。"
+  ],
+  "rights_status": "全文は複製せず要約と公式URLを記録。https://www.boj.or.jp/about/copyright.htm"
+}
