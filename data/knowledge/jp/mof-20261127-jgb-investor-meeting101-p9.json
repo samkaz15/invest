@@ -1,0 +1,25 @@
+{
+  "id": "mof-20261127-jgb-investor-meeting101-p9",
+  "title_ja": "財務省、個人向け国債の11月発行額を説明",
+  "summary_ja": "財務省の国債投資家懇談会資料によると、個人向け国債の11月発行額は約２兆円でした。",
+  "source_url": "https://www.mof.go.jp/about_mof/councils/meeting_of_jgbi/proceedings/261127toushika101.pdf",
+  "published_at": null,
+  "published_date_jst": "2026-11-27",
+  "published_time_note": "資料上の日付は11月27日。実際の公表時刻は不明。",
+  "retrieved_at": "2026-11-28T00:10:27+09:00",
+  "notification_eligible": true,
+  "document_type": "財務省国債投資家懇談会の説明資料",
+  "facts_ja": [
+    "財務省の説明資料9ページは、個人向け国債の2026年11月の発行額を約2.0兆円、前年同月比4.5倍と記載。",
+    "発行額の増加と金利上昇との関係は資料作成者の説明であり、独立した因果検証ではない。"
+  ],
+  "inference_ja": [
+    "個人向け国債の需要の持続は国債の保有者構成・需給に影響し得るが、他の発行・償還や投資家需要、日銀買入れも重要であり、金利や金・ドル円の方向は確定できない。"
+  ],
+  "missing_parts": [
+    "22ページのうち視覚確認はPDFの9ページのみ。1〜8、10〜22ページの図表・注記は未確認。原本ファイルはGitHub未保存。",
+    "掲載時刻不明。元PDFは検索サービス経由で取得。検索インデックスの最新性を要再確認。"
+  ],
+  "content_scope": "PDF全22ページのうち9ページの部分要約",
+  "rights_status": "財務省利用案内を確認。権利表示がない資料には原則PDL1.0、例外あり。資料の全文複製をせず要約と公式URLを記録。https://www.mof.go.jp/about_mof/notice/index.html"
+}
