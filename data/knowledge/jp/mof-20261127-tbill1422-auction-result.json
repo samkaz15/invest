@@ -1,0 +1,24 @@
+{
+  "published_at": null,
+  "published_date_jst": "2026-11-27",
+  "published_time_note": "実際の公表時刻は公式ページに記載なし。",
+  "retrieved_at": "2026-11-27T13:18:57+09:00",
+  "notification_eligible": true,
+  "document_type": "財務省入札結果",
+  "missing_parts": [
+    "実際の公表時刻は不明。検索サービス経由で取得したため原サイトの更新時点を再確認。"
+  ],
+  "content_scope": "本文と表の要約",
+  "rights_status": "全文複製せず要約と公式URLを記録。 https://www.mof.go.jp/about_mof/notice/index.html",
+  "inference_ja": [
+    "発行額と投資家需要、償還、日銀の国債買入れ次第で需給・金利への影響は変わる。入札結果のみで金・ドル円の方向は判断できない。"
+  ],
+  "id": "mof-20261127-tbill1422-auction-result",
+  "title_ja": "国庫短期証券第1422回の入札結果",
+  "summary_ja": "国庫短期証券第1422回の価格競争入札は、募入決定額が２兆3927億8000万円、平均利回りが1.2582％でした。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/tbill/tbill_nyusatsu/resul20261127.htm",
+  "facts_ja": [
+    "価格競争入札の応募額8兆8946億円、募入決定額2兆3927億8000万円、最高利回り1.2706％、平均利回り1.2582％。",
+    "第Ⅰ非価格競争入札の募入決定額7072億円。発行日11月30日、償還期限2027年3月8日。入札結果であり日銀の売買ではない。"
+  ]
+}
