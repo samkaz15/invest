@@ -1,0 +1,24 @@
+{
+  "published_at": null,
+  "published_date_jst": "2026-11-27",
+  "published_time_note": "実際の公表時刻は公式ページに記載なし。",
+  "retrieved_at": "2026-11-27T13:18:57+09:00",
+  "notification_eligible": true,
+  "document_type": "財務省入札結果",
+  "missing_parts": [
+    "実際の公表時刻は不明。検索サービス経由で取得したため原サイトの更新時点を再確認。"
+  ],
+  "content_scope": "本文と表の要約",
+  "rights_status": "全文複製せず要約と公式URLを記録。 https://www.mof.go.jp/about_mof/notice/index.html",
+  "inference_ja": [
+    "発行額と投資家需要、償還、日銀の国債買入れ次第で需給・金利への影響は変わる。入札結果のみで金・ドル円の方向は判断できない。"
+  ],
+  "id": "mof-20261127-liquidity466-auction-result",
+  "title_ja": "第466回流動性供給入札の結果",
+  "summary_ja": "財務省の第466回流動性供給入札は、応募額１兆9437億円に対し、額面4991億円の募入を決定しました。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261127.htm",
+  "facts_ja": [
+    "応募額は額面1兆9437億円、募入決定額は額面4991億円。募入最大利回格差はマイナス0.013％、平均利回格差はマイナス0.014％。",
+    "発行日は11月30日。利回格差は利回りそのものではなく、財務省の入札結果は日銀の売買ではない。"
+  ]
+}
