@@ -1,0 +1,89 @@
+{
+  "as_of": "2026-11-27T19:37:17+09:00",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-27T19:37:17+09:00",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "treasury_auctions",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-27T19:37:17+09:00",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "treasury_buybacks",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-27T19:37:17+09:00",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "fed_fomc",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-27T19:37:17+09:00",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "nyfed_operations",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-27T19:37:17+09:00",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "white_house",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-27T19:37:17+09:00",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "ofac",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-27T19:37:17+09:00",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "eia_petroleum",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-27T19:37:17+09:00",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "fec_results",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-27T19:37:17+09:00",
+      "coverage_start": null,
+      "coverage_end": null
+    },
+    {
+      "id": "cfius",
+      "scope": "入口のみ",
+      "checked_at": "2026-11-27T19:37:17+09:00",
+      "coverage_start": null,
+      "coverage_end": null
+    }
+  ],
+  "missing_sources": [
+    "10情報源の入口を取得したが、各個別資料の本文・表・PDF、既存メール経路を含む全レコードの重複照合と情報源ごとの確認開始時点は未確認。既存履歴の最新公表時刻を特定できず差分期間を確定できない。過去レビュー期限と歴史3事例は未確認。各項目を再試行。"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [],
+  "historical_comparisons": [],
+  "scenarios": [],
+  "invalidations": [],
+  "review_after": null,
+  "status": "partial",
+  "database_sync": "未確認",
+  "pc_notification": "未確認"
+}
