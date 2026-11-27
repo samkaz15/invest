@@ -1,0 +1,24 @@
+{
+  "published_at": null,
+  "published_date_jst": "2026-11-27",
+  "published_time_note": "公式掲載時刻不明。会合日時や入札予定時刻と混同しない。",
+  "retrieved_at": "2026-11-27T23:25:20+09:00",
+  "notification_eligible": true,
+  "rights_status": "財務省利用案内を確認。権利表示のないコンテンツには原則PDL1.0、例外あり。全文複製せず要約と公式URLを記録。https://www.mof.go.jp/about_mof/notice/index.html",
+  "content_scope": "本文・表の要約",
+  "id": "mof-20261127-tbill1423-auction-plan",
+  "title_ja": "国庫短期証券第1423回の発行予定額",
+  "summary_ja": "財務省は国庫短期証券第1423回を約３兆1000億円発行する予定と公表しました。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/tbill/tbill_auct/auct20261127.htm",
+  "document_type": "財務省発行予定",
+  "facts_ja": [
+    "入札予定日は2026年12月4日、発行予定日は12月7日、償還予定日は2027年3月15日。",
+    "発行予定額は額面約3兆1000億円。変更時は入札前日に再公表予定。入札結果や実売買ではない。"
+  ],
+  "inference_ja": [
+    "発行予定と償還、日銀買入れ、投資家需要の組み合わせによって国債需給や金利に影響し得る。金・ドル円の方向は確定できない。"
+  ],
+  "missing_parts": [
+    "実際の公表時刻不明。検索サービス経由のため公式サイト更新時点の直接確認未完。"
+  ]
+}
