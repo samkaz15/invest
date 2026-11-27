@@ -1,0 +1,24 @@
+{
+  "id": "mof-20261127-liquidity466-reopened-issues",
+  "title_ja": "第466回流動性供給入札の追加発行銘柄",
+  "summary_ja": "財務省は第466回流動性供給入札の追加発行銘柄を公表し、10年債、20年債、30年債の内訳を示しました。",
+  "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/nyusatsu/resul20261127a.htm",
+  "published_at": null,
+  "published_date_jst": "2026-11-27",
+  "published_time_note": "公式本文に時刻なし。予定時刻と実際の公表時刻は区別する。",
+  "retrieved_at": "2026-11-27T22:13:26+09:00",
+  "notification_eligible": true,
+  "document_type": "財務省追加発行銘柄一覧",
+  "facts_ja": [
+    "額面ベースの銘柄別内訳は10年債第365回637億円、20年債第153～162回のうち各銘柄、30年債第24回140億円・第27回100億円。",
+    "20年債第158回は1275億円、第162回は827億円。財務省による既発債の追加発行であり日銀の国債売買ではない。"
+  ],
+  "inference_ja": [
+    "銘柄ごとの供給は投資家需要、償還、日銀買入れとあわせて国債需給に影響し得る。金・ドル円の方向はこの一覧から判断できない。"
+  ],
+  "missing_parts": [
+    "掲載時刻不明。検索サービス経由の表示を取得し原サイトの更新状況は未確認。"
+  ],
+  "content_scope": "本文・表の要約",
+  "rights_status": "財務省の利用案内を確認。権利表示がない場合は原則PDL1.0、例外あり。全文は複製せず要約・公式URLを記録。https://www.mof.go.jp/about_mof/notice/index.html"
+}
