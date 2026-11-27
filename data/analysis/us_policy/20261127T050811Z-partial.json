@@ -1,0 +1,99 @@
+{
+  "as_of": "2026-11-27T05:08:11Z",
+  "input_document_ids": [
+    "eia-wpsr-20261125-overview-p1-supplement-20261127"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "attempted_interval": "前回2026-11-27 12:40 JSTから14:08 JST、開始基準未確定・24時間重複未完",
+      "status": "入口のみ、個別資料の網羅未確認"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "attempted_interval": "前回2026-11-27 12:40 JSTから14:08 JST、開始基準未確定・24時間重複未完",
+      "status": "入口のみ、個別資料の網羅未確認"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "attempted_interval": "前回2026-11-27 12:40 JSTから14:08 JST、開始基準未確定・24時間重複未完",
+      "status": "入口のみ、個別資料の網羅未確認"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "attempted_interval": "前回2026-11-27 12:40 JSTから14:08 JST、開始基準未確定・24時間重複未完",
+      "status": "入口のみ、個別資料の網羅未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "attempted_interval": "前回2026-11-27 12:40 JSTから14:08 JST、開始基準未確定・24時間重複未完",
+      "status": "入口のみ、個別資料の網羅未確認"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "attempted_interval": "前回2026-11-27 12:40 JSTから14:08 JST、開始基準未確定・24時間重複未完",
+      "status": "入口のみ、個別資料の網羅未確認"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "attempted_interval": "前回2026-11-27 12:40 JSTから14:08 JST、開始基準未確定・24時間重複未完",
+      "status": "入口のみ、個別資料の網羅未確認"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "attempted_interval": "前回2026-11-27 12:40 JSTから14:08 JST、開始基準未確定・24時間重複未完",
+      "status": "入口のみ、個別資料の網羅未確認"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "attempted_interval": "前回2026-11-27 12:40 JSTから14:08 JST、開始基準未確定・24時間重複未完",
+      "status": "入口のみ、個別資料の網羅未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "attempted_interval": "前回2026-11-27 12:40 JSTから14:08 JST、開始基準未確定・24時間重複未完",
+      "status": "入口のみ、個別資料の網羅未確認"
+    }
+  ],
+  "missing_sources": [
+    "10情報源の期間内個別資料・表・脚注の網羅、各完全確認開始点と24時間重複",
+    "11月25日入札・買戻しの個別結果とNY連銀の個別売買",
+    "EIA PDF原本：検索サービスで取得エラー、全頁の本文・図表・脚注・訳と視覚確認",
+    "州の選挙認証、既存レコード全件のURL・時刻・内容ハッシュ照合",
+    "期限到来の事後レビュー、歴史ケースの初期インフレ・実質金利・流動性・エネルギー構造",
+    "最新DB同期とPostgreSQL実反映"
+  ],
+  "facts": [
+    "既存EIA記録：11月20日終了週の商業原油在庫は418.9百万バレル、前週比1.1百万増、SPRは2.9百万減。公表米国日付11月25日、時刻不明、取得11月27日10:40 JST。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "供給・需要変化は原油価格から物価・景気、金利・資金需給へ波及し得る。単週の在庫では方向を確定できない。"
+  ],
+  "historical_comparisons": [
+    "1973石油供給、2007–09信用収縮、2020市場機能支援は構造が異なる。前2件は後年の回顧。当初条件の比較は未完。"
+  ],
+  "scenarios": {
+    "days": "入札と実売買を確認",
+    "weeks": "在庫・生産・需要を確認",
+    "months": "物価・景気・実質金利を確認",
+    "fx": "USD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USD は両側資料不足のため方向判断保留"
+  },
+  "invalidations": [
+    "供給障害・需要増・在庫傾向の反転",
+    "金利差および実際の市場反応が想定経路と一致しない"
+  ],
+  "review_after": "2026-11-28T05:08:11Z",
+  "db": "過去の同期run 45885340789は失敗、最新状態とPostgreSQL反映は未確認",
+  "new_knowledge": 0
+}
