@@ -1,0 +1,94 @@
+{
+  "id": "eia-wpsr-20261125-overview-p1-supplement-20261127",
+  "supersedes": "eia-wpsr-20261125-overview-p1-excerpt",
+  "source_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_11_25/download/overview.pdf",
+  "title_en": "Weekly Petroleum Status Report Overview, Table 1",
+  "title_ja": "EIA週次石油需給概況・表１補足（11月20日終了週）",
+  "published_at": null,
+  "published_date_source": "2026-11-25（米国日付、時刻・日本時間の公表日は不明）",
+  "received_at": "2026-11-27T10:40:11+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil"
+  ],
+  "original_text": "Table 1. U.S. Petroleum Balance Sheet, Week Ending 11/20/2026. Petroleum Stocks (Million Barrels). Commercial (Excluding SPR): Current Week 418.9; Week Ago 417.8; Difference 1.1; Percent Change 0.3; Year Ago 426.9; Difference -8.0; Percent Change -1.9. Strategic Petroleum Reserve (SPR): Current Week 273.5; Week Ago 276.4; Difference -2.9; Percent Change -1.0; Year Ago 411.4; Difference -138.0; Percent Change -33.5.",
+  "translation_ja": "表１：2026年11月20日終了週の米国石油需給表。石油在庫（百万バレル）。戦略石油備蓄を除く商業原油在庫：当週418.9、前週417.8、差1.1、前週比0.3％、前年426.9、前年差マイナス8.0、前年比マイナス1.9％。戦略石油備蓄：当週273.5、前週276.4、差マイナス2.9、前週比マイナス1.0％、前年411.4、前年差マイナス138.0、前年比マイナス33.5％。",
+  "facts_ja": [
+    "商業原油在庫は前週比110万バレル増、戦略石油備蓄は290万バレル減。統計上の在庫変化であり放出・売却そのものと同一視しない。"
+  ],
+  "inference_ja": [
+    "在庫が増加し他条件が同じなら需給緩和に寄与し得るが、単週の数値だけでは価格方向は決まらない。"
+  ],
+  "content_scope": "PDF第１頁の２行の抜粋",
+  "translation_status": "partial",
+  "notification_eligible": false,
+  "missing_parts": [
+    "第1頁の他の行と脚注、第2〜8頁の全文・訳・表・脚注は未処理。",
+    "PDF全ページの視覚確認、原本の安全性および再配布可否の確認は未完。PDF原本は未保存。",
+    "公表時刻と公表日のJST換算は不明。"
+  ],
+  "pdf": {
+    "page_count": 8,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "binary_saved": false,
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "Commercial (Excluding SPR): 418.9 | 417.8 | 1.1 | 0.3 | 426.9 | -8.0 | -1.9; Strategic Petroleum Reserve (SPR): 273.5 | 276.4 | -2.9 | -1.0 | 411.4 | -138.0 | -33.5.",
+        "translation_ja": "商業原油在庫：当週418.9、前週417.8、差1.1、前週比0.3％、前年426.9、前年差マイナス8.0、前年比マイナス1.9％。戦略石油備蓄：当週273.5、前週276.4、差マイナス2.9、前週比マイナス1.0％、前年411.4、前年差マイナス138.0、前年比マイナス33.5％（百万バレル）。",
+        "extraction_status": "partial",
+        "translation_status": "partial"
+      },
+      {
+        "page": 2,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 4,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 5,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 7,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 8,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      }
+    ]
+  }
+}
