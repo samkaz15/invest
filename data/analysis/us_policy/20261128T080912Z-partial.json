@@ -1,0 +1,180 @@
+{
+  "id": "20261128T080912Z-partial",
+  "as_of": "2026-11-28T08:09:12Z",
+  "document_ids": [
+    "eia-wpsr-20261125-overview-p1-excerpt"
+  ],
+  "sources_checked": [
+    {
+      "source_id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-28T08:09:12Z",
+      "requested_window_start": "2026-11-27T06:44:31Z",
+      "requested_window_end": "2026-11-28T08:09:12Z",
+      "status": "partial",
+      "missing": "入口取得、個別発表の全件照合未了"
+    },
+    {
+      "source_id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-28T08:09:12Z",
+      "requested_window_start": "2026-11-27T06:44:31Z",
+      "requested_window_end": "2026-11-28T08:09:12Z",
+      "status": "partial",
+      "missing": "動的結果表、個別発表・結果未取得"
+    },
+    {
+      "source_id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-28T08:09:12Z",
+      "requested_window_start": "2026-11-27T06:44:31Z",
+      "requested_window_end": "2026-11-28T08:09:12Z",
+      "status": "partial",
+      "missing": "動的結果表、個別買戻し未取得"
+    },
+    {
+      "source_id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-28T08:09:12Z",
+      "requested_window_start": "2026-11-27T06:44:31Z",
+      "requested_window_end": "2026-11-28T08:09:12Z",
+      "status": "partial",
+      "missing": "予定表取得、臨時会合等の全件確認未了"
+    },
+    {
+      "source_id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-28T08:09:12Z",
+      "requested_window_start": "2026-11-27T06:44:31Z",
+      "requested_window_end": "2026-11-28T08:09:12Z",
+      "status": "partial",
+      "missing": "入口取得、対象期間の個別売買実績未取得"
+    },
+    {
+      "source_id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-28T08:09:12Z",
+      "requested_window_start": "2026-11-27T06:44:31Z",
+      "requested_window_end": "2026-11-28T08:09:12Z",
+      "status": "partial",
+      "missing": "入口取得、関連する個別政策資料未確認"
+    },
+    {
+      "source_id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-28T08:09:12Z",
+      "requested_window_start": "2026-11-27T06:44:31Z",
+      "requested_window_end": "2026-11-28T08:09:12Z",
+      "status": "partial",
+      "missing": "一覧取得、個別制裁資料の全件照合未了"
+    },
+    {
+      "source_id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-28T08:09:12Z",
+      "requested_window_start": "2026-11-27T06:44:31Z",
+      "requested_window_end": "2026-11-28T08:09:12Z",
+      "status": "partial",
+      "missing": "11月25日週報の既存部分訳を確認。PDF未読箇所の翻訳・視覚確認未了"
+    },
+    {
+      "source_id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-28T08:09:12Z",
+      "requested_window_start": "2026-11-27T06:44:31Z",
+      "requested_window_end": "2026-11-28T08:09:12Z",
+      "status": "partial",
+      "missing": "入口取得、州ごとの認証情報未確認"
+    },
+    {
+      "source_id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-28T08:09:12Z",
+      "requested_window_start": "2026-11-27T06:44:31Z",
+      "requested_window_end": "2026-11-28T08:09:12Z",
+      "status": "partial",
+      "missing": "入口取得、個別の投資政策資料未確認"
+    }
+  ],
+  "missing_sources": [
+    {
+      "source_id": "treasury_news",
+      "missing": "入口取得、個別発表の全件照合未了"
+    },
+    {
+      "source_id": "treasury_auctions",
+      "missing": "動的結果表、個別発表・結果未取得"
+    },
+    {
+      "source_id": "treasury_buybacks",
+      "missing": "動的結果表、個別買戻し未取得"
+    },
+    {
+      "source_id": "fed_fomc",
+      "missing": "予定表取得、臨時会合等の全件確認未了"
+    },
+    {
+      "source_id": "nyfed_operations",
+      "missing": "入口取得、対象期間の個別売買実績未取得"
+    },
+    {
+      "source_id": "white_house",
+      "missing": "入口取得、関連する個別政策資料未確認"
+    },
+    {
+      "source_id": "ofac",
+      "missing": "一覧取得、個別制裁資料の全件照合未了"
+    },
+    {
+      "source_id": "eia_petroleum",
+      "missing": "11月25日週報の既存部分訳を確認。PDF未読箇所の翻訳・視覚確認未了"
+    },
+    {
+      "source_id": "fec_results",
+      "missing": "入口取得、州ごとの認証情報未確認"
+    },
+    {
+      "source_id": "cfius",
+      "missing": "入口取得、個別の投資政策資料未確認"
+    }
+  ],
+  "facts": [
+    "既存のEIA週報部分訳は公表時刻不明、11月20日終了週の商業原油在庫418.9百万バレルと前週417.8百万バレルを記録。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "単週在庫増は需給判断の一材料だが、それのみで原油・金・ドル円の方向は判断できない。"
+  ],
+  "historical_comparisons": [
+    {
+      "status": "保留",
+      "reason": "1973年、2007年は後年史料、2020年は当時のFRB資料。経済初期条件・価格時系列未確認。"
+    }
+  ],
+  "scenarios": {
+    "days": "判断保留",
+    "weeks": "判断保留",
+    "months": "判断保留",
+    "currency_pairs": "USD/JPY EUR/USD USD/CHF USD/CAD AUD/USD は両側資料不足で保留",
+    "gold": "実質金利資料不足で保留"
+  },
+  "invalidations": [
+    "一次資料・他国の景気と実質金利・市場反応を取得し再評価"
+  ],
+  "review_after": "2026-11-29T08:09:12Z",
+  "reviews_due": "過去レビューの反証・価格時系列未取得、未評価として再試行",
+  "database_sync": "過去のrun 46086409870失敗。今回のDB状態未確認。",
+  "retry": [
+    "入口取得、個別発表の全件照合未了",
+    "動的結果表、個別発表・結果未取得",
+    "動的結果表、個別買戻し未取得",
+    "予定表取得、臨時会合等の全件確認未了",
+    "入口取得、対象期間の個別売買実績未取得",
+    "入口取得、関連する個別政策資料未確認",
+    "一覧取得、個別制裁資料の全件照合未了",
+    "11月25日週報の既存部分訳を確認。PDF未読箇所の翻訳・視覚確認未了",
+    "入口取得、州ごとの認証情報未確認",
+    "入口取得、個別の投資政策資料未確認"
+  ],
+  "notes": "前回確認時刻から24時間の暫定重複を設定。情報源別の最終公表時刻や古い未確認期間は未確定。"
+}
