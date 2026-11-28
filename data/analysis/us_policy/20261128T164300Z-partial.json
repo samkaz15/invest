@@ -1,0 +1,112 @@
+{
+  "as_of": "2026-11-28T16:43:00Z",
+  "document_ids": [
+    "eia-wpsr-20261125-overview-p1-excerpt"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-28T16:43:00Z",
+      "scope_jst": "11月28日00:39〜11月29日01:43を暫定対象、個別資料全件ではない",
+      "missing": "個別発表の網羅照合未了"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-28T16:43:00Z",
+      "scope_jst": "11月28日00:39〜11月29日01:43を暫定対象、個別資料全件ではない",
+      "missing": "個別入札結果・動的表未取得"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-28T16:43:00Z",
+      "scope_jst": "11月28日00:39〜11月29日01:43を暫定対象、個別資料全件ではない",
+      "missing": "動的表の個別結果未取得"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-28T16:43:00Z",
+      "scope_jst": "11月28日00:39〜11月29日01:43を暫定対象、個別資料全件ではない",
+      "missing": "臨時会合等の網羅確認未了"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-28T16:43:00Z",
+      "scope_jst": "11月28日00:39〜11月29日01:43を暫定対象、個別資料全件ではない",
+      "missing": "個別オペ実績未取得"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-28T16:43:00Z",
+      "scope_jst": "11月28日00:39〜11月29日01:43を暫定対象、個別資料全件ではない",
+      "missing": "個別政策文書全文未照合"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-28T16:43:00Z",
+      "scope_jst": "11月28日00:39〜11月29日01:43を暫定対象、個別資料全件ではない",
+      "missing": "個別制裁文書未照合"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-28T16:43:00Z",
+      "scope_jst": "11月28日00:39〜11月29日01:43を暫定対象、個別資料全件ではない",
+      "missing": "11月25日概況PDFはアクセス不可、前回の1ページ抜粋のみ"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-28T16:43:00Z",
+      "scope_jst": "11月28日00:39〜11月29日01:43を暫定対象、個別資料全件ではない",
+      "missing": "州別認証未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-28T16:43:00Z",
+      "scope_jst": "11月28日00:39〜11月29日01:43を暫定対象、個別資料全件ではない",
+      "missing": "個別投資政策文書未確認"
+    }
+  ],
+  "missing_sources": [
+    "個別発表の網羅照合未了",
+    "個別入札結果・動的表未取得",
+    "動的表の個別結果未取得",
+    "臨時会合等の網羅確認未了",
+    "個別オペ実績未取得",
+    "個別政策文書全文未照合",
+    "個別制裁文書未照合",
+    "11月25日概況PDFはアクセス不可、前回の1ページ抜粋のみ",
+    "州別認証未確認",
+    "個別投資政策文書未確認"
+  ],
+  "facts": [
+    "EIAアーカイブは2026年11月20日終了週の週報を11月25日公表と表示。時刻とJST公表日は未確認。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "仮に原油供給が減り需要が一定なら物価圧力と成長下押しが生じ得る。実際の供給減は未確認。"
+  ],
+  "historical_comparisons": [
+    "2020年FRB緊急措置は当時の金利引下げと国債・MBS保有増の方針。現在の需給やインフレ・実質金利・流動性・エネルギー構造は比較に必要なデータ不足。"
+  ],
+  "scenarios": {
+    "days": "USDJPY・EURUSD・金は資料不足で判断保留",
+    "weeks": "同左",
+    "months": "同左"
+  },
+  "invalidations": [
+    "供給・需要や両国の実質金利の実測が仮説に反する場合"
+  ],
+  "review_after": "2026-11-29T16:43:00Z",
+  "review_status": "期限到来の個別分析と価格・反証データの照合未完了",
+  "db_sync": "今回未確認",
+  "pc_notification": "未確認"
+}
