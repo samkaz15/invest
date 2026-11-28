@@ -1,0 +1,94 @@
+{
+  "id": "eia-wpsr-20261125-overview-p1-production-20261128",
+  "supersedes": "eia-wpsr-20261125-overview-p1-gasoline-20261127",
+  "source_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_11_25/download/overview.pdf",
+  "title_en": "Weekly Petroleum Status Report Overview, Table 1 domestic production row",
+  "title_ja": "EIA週報の国内原油生産行を補足（11月20日終了週）",
+  "published_at": null,
+  "published_date": "2026-11-25",
+  "received_at": "2026-11-28T09:09:04+09:00",
+  "received_at_kind": "web_retrieved",
+  "topics": [
+    "oil"
+  ],
+  "original_text": "Table 1. U.S. Petroleum Balance Sheet, Week Ending 11/20/2026. Petroleum Supply (Thousand Barrels per Day). Domestic Production: Current week 14,065; week ago 14,032; difference 33; year ago 13,814; difference 251; four-week average 14,028; year-ago four-week average 13,790; percent change 1.7; cumulative daily average 13,765; year-ago cumulative daily average 13,487; percent change 2.1.",
+  "translation_ja": "表1：2026年11月20日終了週の米国石油需給表。石油供給（日量千バレル）。国内原油生産：当週14,065、前週14,032、差33、前年13,814、差251、4週平均14,028、前年の4週平均13,790、前年比1.7％、累積日量平均13,765、前年の累積日量平均13,487、前年比2.1％。",
+  "facts_ja": [
+    "週次推計の国内原油生産は日量1,406.5万バレル、前週比3.3万バレル増。",
+    "前レコードにある商業原油在庫・SPR・ガソリン在庫の抜粋も引き続き参照。"
+  ],
+  "inference_ja": "供給増が需要増を上回る状態が続けば在庫を押し上げ得るが、輸出入・精製・需要なども影響する。単週の数字では価格方向は決まらない。",
+  "content_scope": "PDF表1の国内生産1行のみの補足。",
+  "translation_status": "partial",
+  "notification_eligible": false,
+  "missing_parts": [
+    "表1のその他の行と脚注、第2〜8頁の本文・訳・表・脚注は未確認。旧記録の在庫行は旧IDを参照。",
+    "公式アーカイブ原本の直接取得失敗。検索インデックスで抽出したため全頁の視覚確認と原本の安全確認は未実施、原本未保存。",
+    "公表時刻は不明。"
+  ],
+  "pdf": {
+    "page_count": 8,
+    "visual_review_complete": false,
+    "privacy_review_complete": false,
+    "binary_saved": false,
+    "ocr_used": false,
+    "pages": [
+      {
+        "page": 1,
+        "original_text": "Table 1. U.S. Petroleum Balance Sheet, Week Ending 11/20/2026. Petroleum Supply (Thousand Barrels per Day). Domestic Production: Current week 14,065; week ago 14,032; difference 33; year ago 13,814; difference 251; four-week average 14,028; year-ago four-week average 13,790; percent change 1.7; cumulative daily average 13,765; year-ago cumulative daily average 13,487; percent change 2.1.",
+        "translation_ja": "表1：2026年11月20日終了週の米国石油需給表。石油供給（日量千バレル）。国内原油生産：当週14,065、前週14,032、差33、前年13,814、差251、4週平均14,028、前年の4週平均13,790、前年比1.7％、累積日量平均13,765、前年の累積日量平均13,487、前年比2.1％。",
+        "extraction_status": "partial",
+        "translation_status": "partial"
+      },
+      {
+        "page": 2,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 3,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 4,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 5,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 6,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 7,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      },
+      {
+        "page": 8,
+        "original_text": "",
+        "translation_ja": "",
+        "extraction_status": "missing",
+        "translation_status": "pending"
+      }
+    ]
+  }
+}

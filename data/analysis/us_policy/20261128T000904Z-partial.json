@@ -1,0 +1,113 @@
+{
+  "as_of": "2026-11-28T09:09:04+09:00",
+  "document_ids": [
+    "eia-wpsr-20261125-overview-p1-production-20261128",
+    "eia-wpsr-20261125-overview-p1-gasoline-20261127"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-28T09:09:04+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。EIAはPDF抽出の表1一部を追加確認、他資料・期間の網羅未確認。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-28T09:09:04+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。EIAはPDF抽出の表1一部を追加確認、他資料・期間の網羅未確認。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-28T09:09:04+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。EIAはPDF抽出の表1一部を追加確認、他資料・期間の網羅未確認。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-28T09:09:04+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。EIAはPDF抽出の表1一部を追加確認、他資料・期間の網羅未確認。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-28T09:09:04+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。EIAはPDF抽出の表1一部を追加確認、他資料・期間の網羅未確認。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-28T09:09:04+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。EIAはPDF抽出の表1一部を追加確認、他資料・期間の網羅未確認。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-28T09:09:04+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。EIAはPDF抽出の表1一部を追加確認、他資料・期間の網羅未確認。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-28T09:09:04+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。EIAはPDF抽出の表1一部を追加確認、他資料・期間の網羅未確認。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-28T09:09:04+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。EIAはPDF抽出の表1一部を追加確認、他資料・期間の網羅未確認。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-28T09:09:04+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。EIAはPDF抽出の表1一部を追加確認、他資料・期間の網羅未確認。"
+    }
+  ],
+  "missing_sources": [
+    "10情報源の24時間の差分と個別本文・表の網羅は未確認。入札、買戻し、NY連銀オペ、州認証は再確認。",
+    "EIA公式アーカイブ原本取得失敗、PDF2〜8頁・表脚注の全体確認と視覚確認は未完。",
+    "財務省利回り表の発表時刻・取得時刻の整合性と過去分析の事後レビューは未確認。"
+  ],
+  "facts": [
+    "11月20日終了週のEIA米国原油国内生産推計は日量14,065千バレル。公表は11月25日米国日付、時刻不明。",
+    "DB同期の直近確認実行は失敗、PostgreSQL反映は未確認。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "推論：供給増が需要増を上回って継続すれば在庫・エネルギー物価を経由し金利へ影響し得る。"
+  ],
+  "historical_comparisons": [
+    "1973年供給制約、2007〜09年信用収縮、2020年流動性支援は起点が異なる。初期のインフレ、金利、財政、エネルギー構造の定量比較は未完。"
+  ],
+  "scenarios": [
+    "日：入札・オペ確認待ち。週：供給・需要の差が在庫に影響し得る。月：物価・実質金利への波及は実績次第。USD/JPY等は両国資料不足で保留。"
+  ],
+  "invalidations": [
+    "需要増や輸出入・相手国金利が仮定と異なること。"
+  ],
+  "review_after": null,
+  "status": "partial"
+}
