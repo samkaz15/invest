@@ -1,0 +1,128 @@
+{
+  "as_of": "2026-11-28T15:39:04Z",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-28T15:39:04Z",
+      "coverage_start_jst": "2026-11-27T23:39:05+09:00",
+      "coverage_end_jst": "2026-11-29T00:39:04+09:00",
+      "coverage_status": "partial",
+      "missing": "一覧取得、個別発表全件未照合"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-28T15:39:04Z",
+      "coverage_start_jst": "2026-11-27T23:39:05+09:00",
+      "coverage_end_jst": "2026-11-29T00:39:04+09:00",
+      "coverage_status": "partial",
+      "missing": "動的入札表・個別結果未取得"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-28T15:39:04Z",
+      "coverage_start_jst": "2026-11-27T23:39:05+09:00",
+      "coverage_end_jst": "2026-11-29T00:39:04+09:00",
+      "coverage_status": "partial",
+      "missing": "動的買戻し表・個別結果未取得"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-28T15:39:04Z",
+      "coverage_start_jst": "2026-11-27T23:39:05+09:00",
+      "coverage_end_jst": "2026-11-29T00:39:04+09:00",
+      "coverage_status": "partial",
+      "missing": "予定表のみ、臨時会合網羅未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-28T15:39:04Z",
+      "coverage_start_jst": "2026-11-27T23:39:05+09:00",
+      "coverage_end_jst": "2026-11-29T00:39:04+09:00",
+      "coverage_status": "partial",
+      "missing": "個別売買結果未取得"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-28T15:39:04Z",
+      "coverage_start_jst": "2026-11-27T23:39:05+09:00",
+      "coverage_end_jst": "2026-11-29T00:39:04+09:00",
+      "coverage_status": "partial",
+      "missing": "一覧取得、個別政策全文未照合"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-28T15:39:04Z",
+      "coverage_start_jst": "2026-11-27T23:39:05+09:00",
+      "coverage_end_jst": "2026-11-29T00:39:04+09:00",
+      "coverage_status": "partial",
+      "missing": "一覧取得、個別制裁文書未照合"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-28T15:39:04Z",
+      "coverage_start_jst": "2026-11-27T23:39:05+09:00",
+      "coverage_end_jst": "2026-11-29T00:39:04+09:00",
+      "coverage_status": "partial",
+      "missing": "週報PDF取得失敗、前回部分訳のみ"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-28T15:39:04Z",
+      "coverage_start_jst": "2026-11-27T23:39:05+09:00",
+      "coverage_end_jst": "2026-11-29T00:39:04+09:00",
+      "coverage_status": "partial",
+      "missing": "入口取得、各州認証未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-28T15:39:04Z",
+      "coverage_start_jst": "2026-11-27T23:39:05+09:00",
+      "coverage_end_jst": "2026-11-29T00:39:04+09:00",
+      "coverage_status": "partial",
+      "missing": "入口取得、個別政策文書未確認"
+    }
+  ],
+  "missing_sources": [
+    "一覧取得、個別発表全件未照合",
+    "動的入札表・個別結果未取得",
+    "動的買戻し表・個別結果未取得",
+    "予定表のみ、臨時会合網羅未確認",
+    "個別売買結果未取得",
+    "一覧取得、個別政策全文未照合",
+    "一覧取得、個別制裁文書未照合",
+    "週報PDF取得失敗、前回部分訳のみ",
+    "入口取得、各州認証未確認",
+    "入口取得、個別政策文書未確認"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [
+    "仮説：原油供給が減り需要が一定なら物価上昇圧力と成長下押しの経路がある。ただし現在の供給障害は確認していない。"
+  ],
+  "historical_comparisons": [
+    "1973年原油ショックは供給制約の比較材料だが、初期物価・実質金利・金融流動性とエネルギー構造の比較が不足。後年史料を当時の情報として使用しない。"
+  ],
+  "scenarios": {
+    "days": "個別資料と両通貨の根拠不足のため判断保留",
+    "weeks": "同左",
+    "months": "同左"
+  },
+  "invalidations": [
+    "供給、需要、日米実質金利や市場反応の実測が仮説に反する場合"
+  ],
+  "review_after": "2026-11-30T15:39:04Z",
+  "review_status": "過去期限分は当初シナリオと価格・反証データの照合未了",
+  "database_sync": "今回未確認。前回報告に失敗記録あり",
+  "pc_notification": "未確認"
+}
