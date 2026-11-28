@@ -1,0 +1,113 @@
+{
+  "as_of": "2026-11-28T11:23:09+09:00",
+  "document_ids": [
+    "nyfed-treasury-20261116-20261211-schedule-20261114",
+    "eia-wpsr-20261125-overview-p1-production-20261128"
+  ],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-28T11:23:09+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。対象24時間の個別資料・表の網羅は未確認。"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-28T11:23:09+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。対象24時間の個別資料・表の網羅は未確認。"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-28T11:23:09+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。対象24時間の個別資料・表の網羅は未確認。"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-28T11:23:09+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。対象24時間の個別資料・表の網羅は未確認。"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-28T11:23:09+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "公式月次オペ予定行を既存記録と照合。実績と対象期間の網羅は未確認。"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-28T11:23:09+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。対象24時間の個別資料・表の網羅は未確認。"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-28T11:23:09+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。対象24時間の個別資料・表の網羅は未確認。"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-28T11:23:09+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。対象24時間の個別資料・表の網羅は未確認。"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-28T11:23:09+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。対象24時間の個別資料・表の網羅は未確認。"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-28T11:23:09+09:00",
+      "coverage_start": null,
+      "coverage_end": null,
+      "scope": "入口取得。対象24時間の個別資料・表の網羅は未確認。"
+    }
+  ],
+  "missing_sources": [
+    "各情報源の24時間重複期間、入札・買戻し・NY連銀実績、州認証、外交の個別資料は未網羅。",
+    "EIA週報PDF原本・第2〜8頁と全頁視覚確認は未完。",
+    "利回り表の公表・取得時刻の整合性、review_after到来分の事後レビューは未完。"
+  ],
+  "facts": [
+    "NY連銀の11月16日〜12月11日の約140億ドル再投資買入れは既存記録済みの予定で、実績ではない。",
+    "直近確認のDB同期は失敗、PostgreSQL反映は未確認。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "条件付き推論：実際の国債供給、償還とFRB・民間の需要は国債需給と実質金利へ影響し得る。"
+  ],
+  "historical_comparisons": [
+    "1973年の供給制約、2007〜09年の信用収縮、2020年の市場機能支援は起点が異なる。初期の物価・実質金利・財政・流動性・エネルギー構造は定量比較未完。"
+  ],
+  "scenarios": [
+    "日：入札・オペ実績の確認待ち。週：原油供給と需要が在庫へ波及し得る。月：物価と金融政策の実績次第。USD/JPY等は相手国資料不足で判断保留。"
+  ],
+  "invalidations": [
+    "民間需要・国債供給・エネルギー需給・相手国金利が仮定と異なる場合。"
+  ],
+  "review_after": null,
+  "status": "partial"
+}
