@@ -1,0 +1,177 @@
+{
+  "id": "20261128T031441Z-partial",
+  "as_of": "2026-11-28T03:14:41Z",
+  "as_of_jst": "2026-11-28T12:14:41+09:00",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "source_id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-28T03:14:41Z",
+      "requested_window_start": "2026-11-27T02:23:09Z",
+      "requested_window_end": "2026-11-28T03:14:41Z",
+      "status": "partial",
+      "missing": "一覧先頭11月23日。24時間重複期間の個別発表・全ページ完全性は未検証。"
+    },
+    {
+      "source_id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-28T03:14:41Z",
+      "requested_window_start": "2026-11-27T02:23:09Z",
+      "requested_window_end": "2026-11-28T03:14:41Z",
+      "status": "partial",
+      "missing": "一覧ページを取得したが、入札結果表は動的で行を取得できず、個別入札の発表と結果は未確認。"
+    },
+    {
+      "source_id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-28T03:14:41Z",
+      "requested_window_start": "2026-11-27T02:23:09Z",
+      "requested_window_end": "2026-11-28T03:14:41Z",
+      "status": "partial",
+      "missing": "一覧ページの表見出しのみで行を取得できず、個別買戻し結果は未確認。"
+    },
+    {
+      "source_id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-28T03:14:41Z",
+      "requested_window_start": "2026-11-27T02:23:09Z",
+      "requested_window_end": "2026-11-28T03:14:41Z",
+      "status": "partial",
+      "missing": "会合予定表を取得。直近議事要旨公表11月18日と掲載されるが、臨時会合等の網羅性は未検証。"
+    },
+    {
+      "source_id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-28T03:14:41Z",
+      "requested_window_start": "2026-11-27T02:23:09Z",
+      "requested_window_end": "2026-11-28T03:14:41Z",
+      "status": "partial",
+      "missing": "国債オペ入口・実施要領を取得したが、期間中の個別取引結果・実施額を確認できず。"
+    },
+    {
+      "source_id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-28T03:14:41Z",
+      "requested_window_start": "2026-11-27T02:23:09Z",
+      "requested_window_end": "2026-11-28T03:14:41Z",
+      "status": "partial",
+      "missing": "一覧の直近項目は11月25日付の感謝祭布告。個別本文の網羅的確認は未実施、公表時刻不明。"
+    },
+    {
+      "source_id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-28T03:14:41Z",
+      "requested_window_start": "2026-11-27T02:23:09Z",
+      "requested_window_end": "2026-11-28T03:14:41Z",
+      "status": "partial",
+      "missing": "一覧の最新表示は11月23日。既存の日時境界と照合する必要があり、全件の個別文書確認は未実施。"
+    },
+    {
+      "source_id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-28T03:14:41Z",
+      "requested_window_start": "2026-11-27T02:23:09Z",
+      "requested_window_end": "2026-11-28T03:14:41Z",
+      "status": "partial",
+      "missing": "11月25日公表の11月20日終了週報告PDF抽出を再取得。既存記録と重複候補。全ページ視覚確認と全文翻訳未完了。"
+    },
+    {
+      "source_id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-28T03:14:41Z",
+      "requested_window_start": "2026-11-27T02:23:09Z",
+      "requested_window_end": "2026-11-28T03:14:41Z",
+      "status": "partial",
+      "missing": "選挙情報入口を確認。州別集計・認証の個別記録と対象期間の変更は未確認。"
+    },
+    {
+      "source_id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-28T03:14:41Z",
+      "requested_window_start": "2026-11-27T02:23:09Z",
+      "requested_window_end": "2026-11-28T03:14:41Z",
+      "status": "partial",
+      "missing": "CFIUS入口を確認。個別発表・政策資料と公表日時の網羅確認は未実施。"
+    }
+  ],
+  "missing_sources": [
+    {
+      "source_id": "treasury_news",
+      "missing": "一覧先頭11月23日。24時間重複期間の個別発表・全ページ完全性は未検証。"
+    },
+    {
+      "source_id": "treasury_auctions",
+      "missing": "一覧ページを取得したが、入札結果表は動的で行を取得できず、個別入札の発表と結果は未確認。"
+    },
+    {
+      "source_id": "treasury_buybacks",
+      "missing": "一覧ページの表見出しのみで行を取得できず、個別買戻し結果は未確認。"
+    },
+    {
+      "source_id": "fed_fomc",
+      "missing": "会合予定表を取得。直近議事要旨公表11月18日と掲載されるが、臨時会合等の網羅性は未検証。"
+    },
+    {
+      "source_id": "nyfed_operations",
+      "missing": "国債オペ入口・実施要領を取得したが、期間中の個別取引結果・実施額を確認できず。"
+    },
+    {
+      "source_id": "white_house",
+      "missing": "一覧の直近項目は11月25日付の感謝祭布告。個別本文の網羅的確認は未実施、公表時刻不明。"
+    },
+    {
+      "source_id": "ofac",
+      "missing": "一覧の最新表示は11月23日。既存の日時境界と照合する必要があり、全件の個別文書確認は未実施。"
+    },
+    {
+      "source_id": "eia_petroleum",
+      "missing": "11月25日公表の11月20日終了週報告PDF抽出を再取得。既存記録と重複候補。全ページ視覚確認と全文翻訳未完了。"
+    },
+    {
+      "source_id": "fec_results",
+      "missing": "選挙情報入口を確認。州別集計・認証の個別記録と対象期間の変更は未確認。"
+    },
+    {
+      "source_id": "cfius",
+      "missing": "CFIUS入口を確認。個別発表・政策資料と公表日時の網羅確認は未実施。"
+    }
+  ],
+  "facts": [
+    "OFAC一覧の最新表示は2026-11-23。",
+    "FOMC予定表は10月会合議事要旨の公表日を2026-11-18と記載。",
+    "EIAの11月25日公表週報PDFの抽出テキストを取得。既存記録と重複候補であり、新規文書としては保存していない。"
+  ],
+  "reported": [],
+  "causal_channels": [
+    "資料不足のため今回の新規発表に基づく因果経路を評価保留。"
+  ],
+  "historical_comparisons": [
+    {
+      "status": "not_evaluated",
+      "reason": "比較対象となる新規文書と当初条件・市場データの確認不足。過去3件は初期要約であり全経済史ではない。"
+    }
+  ],
+  "scenarios": {
+    "days": "判断保留",
+    "weeks": "判断保留",
+    "months": "判断保留",
+    "currency_pairs": "両側の資料不足につきUSD/JPY、EUR/USD、USD/CHF、USD/CAD、AUD/USDは判断保留。",
+    "gold": "実質金利等の確認不足により判断保留"
+  },
+  "invalidations": [
+    "対象個別文書、反対通貨の資料、価格・利回りデータを確認した後に再評価する。"
+  ],
+  "review_after": "2026-11-29T03:14:41Z",
+  "reviews_due": "過去の期限到来分は時系列・反証資料の検証が未了で未評価。次回再試行。",
+  "database_sync": "前回確認したUS knowledge database sync run 46086409870 は失敗。今回のPostgreSQL反映は未確認。",
+  "retry": [
+    "動的入札・買戻しの個別結果",
+    "NY連銀の取引結果",
+    "EIA PDF全ページ視覚確認・訳文と既存記録照合",
+    "10情報源の対象期間を完走",
+    "期限到来済みレビュー",
+    "PostgreSQL同期状態確認"
+  ],
+  "notes": "新着なしと結論できない。検索時刻の24時間前への重複を暫定利用し、前回以前の未確認期間も継続再試行。個別本文の網羅確認未完了。"
+}
