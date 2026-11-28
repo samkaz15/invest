@@ -1,0 +1,108 @@
+{
+  "as_of": "2026-11-28T18:35:42Z",
+  "document_ids": [],
+  "sources_checked": [
+    {
+      "id": "treasury_news",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "checked_at": "2026-11-28T18:35:42Z",
+      "scope_jst": "2026-11-28 01:43〜2026-11-29 03:35、一覧中心、網羅せず",
+      "missing": "個別発表の網羅照合未了"
+    },
+    {
+      "id": "treasury_auctions",
+      "url": "https://www.treasurydirect.gov/auctions/results/",
+      "checked_at": "2026-11-28T18:35:42Z",
+      "scope_jst": "2026-11-28 01:43〜2026-11-29 03:35、一覧中心、網羅せず",
+      "missing": "個別入札結果・動的表未取得"
+    },
+    {
+      "id": "treasury_buybacks",
+      "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "checked_at": "2026-11-28T18:35:42Z",
+      "scope_jst": "2026-11-28 01:43〜2026-11-29 03:35、一覧中心、網羅せず",
+      "missing": "個別買戻し結果・動的表未取得"
+    },
+    {
+      "id": "fed_fomc",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "checked_at": "2026-11-28T18:35:42Z",
+      "scope_jst": "2026-11-28 01:43〜2026-11-29 03:35、一覧中心、網羅せず",
+      "missing": "臨時会合の網羅未確認"
+    },
+    {
+      "id": "nyfed_operations",
+      "url": "https://www.newyorkfed.org/markets/desk-operations/treasury-securities",
+      "checked_at": "2026-11-28T18:35:42Z",
+      "scope_jst": "2026-11-28 01:43〜2026-11-29 03:35、一覧中心、網羅せず",
+      "missing": "個別売買結果未取得"
+    },
+    {
+      "id": "white_house",
+      "url": "https://www.whitehouse.gov/presidential-actions/",
+      "checked_at": "2026-11-28T18:35:42Z",
+      "scope_jst": "2026-11-28 01:43〜2026-11-29 03:35、一覧中心、網羅せず",
+      "missing": "政策文書全文未照合"
+    },
+    {
+      "id": "ofac",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "checked_at": "2026-11-28T18:35:42Z",
+      "scope_jst": "2026-11-28 01:43〜2026-11-29 03:35、一覧中心、網羅せず",
+      "missing": "個別制裁文書未照合"
+    },
+    {
+      "id": "eia_petroleum",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "checked_at": "2026-11-28T18:35:42Z",
+      "scope_jst": "2026-11-28 01:43〜2026-11-29 03:35、一覧中心、網羅せず",
+      "missing": "概況PDF再取得失敗、前回の抜粋のみ"
+    },
+    {
+      "id": "fec_results",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "checked_at": "2026-11-28T18:35:42Z",
+      "scope_jst": "2026-11-28 01:43〜2026-11-29 03:35、一覧中心、網羅せず",
+      "missing": "州別認証未確認"
+    },
+    {
+      "id": "cfius",
+      "url": "https://www.cfius.gov/",
+      "checked_at": "2026-11-28T18:35:42Z",
+      "scope_jst": "2026-11-28 01:43〜2026-11-29 03:35、一覧中心、網羅せず",
+      "missing": "個別投資政策未確認"
+    }
+  ],
+  "missing_sources": [
+    "個別発表の網羅照合未了",
+    "個別入札結果・動的表未取得",
+    "個別買戻し結果・動的表未取得",
+    "臨時会合の網羅未確認",
+    "個別売買結果未取得",
+    "政策文書全文未照合",
+    "個別制裁文書未照合",
+    "概況PDF再取得失敗、前回の抜粋のみ",
+    "州別認証未確認",
+    "個別投資政策未確認"
+  ],
+  "facts": [],
+  "reported": [],
+  "causal_channels": [
+    "仮に供給が減り需要が一定なら物価上昇と成長下押しが生じ得る。実際の供給障害は未確認。"
+  ],
+  "historical_comparisons": [
+    "1973年石油危機は後年の公的史料による供給制約の初期要約であり、当時と現在の物価・実質金利・流動性・エネルギー構造の定量比較は不足。"
+  ],
+  "scenarios": {
+    "days": "USDJPY・EURUSD・金は双方の資料不足で判断保留",
+    "weeks": "判断保留",
+    "months": "判断保留"
+  },
+  "invalidations": [
+    "供給需要や各国の実質金利の実測が仮説に反する場合"
+  ],
+  "review_after": "2026-11-29T18:35:42Z",
+  "review_status": "過去分の反証・価格データ照合未完",
+  "database_sync": "今回未確認",
+  "pc_notification": "未確認"
+}
